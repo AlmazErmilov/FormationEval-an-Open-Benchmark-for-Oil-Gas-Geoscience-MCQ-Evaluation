@@ -62,12 +62,12 @@ Each item MUST include:
   "topic": "Porosity",
   "difficulty": "medium",
   "language": "en",
-**  "question": "In a clean sandstone with highly saline formation water, what is the most typical neutron–density response in a water-filled interval (assuming logs are plotted on a compatible sandstone porosity scale)?",
+"question": "In a clean sandstone with highly saline formation water, what is the most typical neutron–density response in a water-filled interval (assuming logs are plotted on a compatible sandstone porosity scale)?",
   "choices": [
     "Large crossover consistent with gas effect",
     "Little to no separation; curves track closely",
     "Reverse crossover where density indicates much higher porosity than neutron",
-    "Both curves read extremely low porosity regardless of lithology"**
+    "Both curves read extremely low porosity regardless of lithology"
   ],
   "answer_index": 1,
   "answer_key": "B",
@@ -88,3 +88,27 @@ Each item MUST include:
   "derivation_mode": "concept_based",
   "metadata": { "time_limit_sec": 90, "calc_required": false, "contamination_risk": "medium" }
 }
+
+---
+
+## Public Release Policy: Licensing & Compliance
+
+FormationEval is designed to avoid redistributing copyrighted content.
+
+### Allowed for public release
+Only the following item derivation modes are accepted in any dataset published in this repo:
+
+1) **open_licensed**  
+   Items derived from sources with explicit reuse terms (e.g., permissive government open data, CC licenses that allow derivatives), with required attribution.
+
+2) **concept_based**  
+   Items written **from scratch** based on concepts/facts learned from sources.  
+   This explicitly **avoids** reproducing the source’s unique phrasing, structure or distinctive problem statements.
+
+### Prohibited for public release
+- **Verbatim copying** of questions/answers/explanations from copyrighted sources.
+- **Close paraphrases** (same question with minor wording changes).
+- Reproducing copyrighted tables/figures/diagrams or large excerpts.
+
+### BYO Sources (private mode)
+Users may generate private question sets from textbooks/exams they are legally entitled to use (“Bring Your Own Sources”). Outputs remain private; this repo provides only schema + tooling.
