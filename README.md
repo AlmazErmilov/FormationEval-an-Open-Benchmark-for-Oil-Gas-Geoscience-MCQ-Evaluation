@@ -20,7 +20,7 @@ Planned but optional “future-proof” fields exist (e.g., `image`, `rationale`
 
 ## Why this benchmark
 
-Subsurface/O&G benchmarks for LLMs are rare or limited. FormationEval aims to provide:
+Subsurface/O&G benchmarks for LLMs are rare or limited (or probably hidden with many resources remaining proprietary or access restricted). FormationEval aims to provide:
 
 - a **well-defined schema** and validation rules,
 - **transparent origin** for every item,
@@ -111,4 +111,23 @@ Only the following item derivation modes are accepted in any dataset published i
 - Reproducing copyrighted tables/figures/diagrams or large excerpts.
 
 ### BYO Sources (private mode)
-Users may generate private question sets from textbooks/exams they are legally entitled to use (“Bring Your Own Sources”). Outputs remain private; this repo provides only schema + tooling.
+Users may generate private question sets from textbooks/exams they are legally entitled to use ("Bring Your Own Sources"). Outputs remain private; this repo provides only schema + tooling.
+
+---
+
+## Repository Structure
+
+```
+├── data/
+│   ├── benchmark/          # Final verified MCQ datasets (the deliverable)
+│   ├── sources/
+│   │   ├── open/           # Open-licensed materials (commited)
+│   │   └── private/        # BYO/copyrighted materials owned legally (gitignored)
+│   └── working/            # Intermediate outputs: chunks, candidates (gitignored)
+├── src/                    # Pipeline scripts
+├── eval/                   # Evaluation harness
+│   └── results/            # Local evaluation runs (gitignored)
+└── docs/                   # Documentation & source registry
+```
+
+See [`data/sources/open/README.md`](data/sources/open/README.md) for the registry of open-licensed materials.
