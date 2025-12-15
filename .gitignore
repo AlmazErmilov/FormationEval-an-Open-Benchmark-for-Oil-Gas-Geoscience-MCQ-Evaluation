@@ -1,0 +1,23 @@
+# Private/BYO sources (copyrighted materials owned legally)
+data/sources/private/
+
+# Working/intermediate files (can be regenerated)
+data/working/
+
+# Local evaluation results
+eval/results/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
