@@ -88,6 +88,7 @@ Each item MUST include:
   "derivation_mode": "concept_based",
   "metadata": { "time_limit_sec": 90, "calc_required": false, "contamination_risk": "medium" }
 }
+```
 
 ---
 
