@@ -1,11 +1,16 @@
 # Private/BYO sources (copyrighted materials owned legally)
-data/sources/private/
+data/sources/private/*
+!data/sources/private/.gitkeep
 
 # Working/intermediate files (can be regenerated)
-data/working/
+data/working/chunks/*
+!data/working/chunks/.gitkeep
+data/working/candidates/*
+!data/working/candidates/.gitkeep
 
 # Local evaluation results
-eval/results/
+eval/results/*
+!eval/results/.gitkeep
 
 # Python
 __pycache__/
