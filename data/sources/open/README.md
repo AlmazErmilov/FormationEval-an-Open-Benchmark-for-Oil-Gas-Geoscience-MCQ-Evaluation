@@ -6,18 +6,13 @@ Registry of open-licensed materials for public MCQ generation. Actual PDFs/mater
 
 ## Source Catalog
 
-| Domain | Resource | License | Risk | Good for | Link |
-|--------|----------|---------|------|----------|------|
-| Reservoir Engineering | **Petroleum Reservoir Dynamics** (Zeidouni, LSU) | CC BY-NC 4.0 | NC only | Darcy flow, transient analysis, well tests. Includes chapter quizzes. | [LSU Repository](https://repository.lsu.edu/etext/4/) |
-| PVT / Thermodynamics | **Phase Relations in Reservoir Engineering** (Adewumi, Penn State) | CC BY-NC-SA 4.0 | NC only | Phase behavior, EOS, phase diagrams, VLE calculations. | [LibreTexts](https://eng.libretexts.org/Bookshelves/Chemical_Engineering/Phase_Relations_in_Reservoir_Engineering_(Adewumi)) |
-| Mathematics | **Applied Mathematics in Reservoir Engineering** (Archer, Stanford) | Open Courseware | Verify | Derivations, diffusivity equation, dimensionless variables, Laplace transforms. | [Stanford PE 281](https://pangea.stanford.edu/ERE/research/ERE.html) |
-| Simulation | **Introduction to Reservoir Simulation Using MATLAB/GNU Octave** (Lie, SINTEF) | Open Access | Unrestricted | Code generation, MRST scripts, grid generation, flow solvers. | [Cambridge Open Access](https://www.cambridge.org/core/books/an-introduction-to-reservoir-simulation-using-matlabgnu-octave/F48C3D8C88A3F67E4D97D4E16970F894) |
-| Petrophysics | **Borehole Geophysics Applied to Ground-Water Investigations** (Keys, USGS) | Public Domain | Unrestricted | Tool physics: GR, Neutron, Density, Sonic, Resistivity. Log interpretation. | [USGS TWRI 2-E2](https://pubs.usgs.gov/twri/twri2-e2/) |
-| Petrophysics | **Principles of Formation Evaluation** (NPTEL / IIT) | CC BY-SA | Unrestricted | Modern tools: NMR, FMI/image logs. Shaly sand models (Simandoux, Indonesian). | [NPTEL Course](https://archive.nptel.ac.in/courses/103/105/103105158/) |
-| Petroleum Geology | **Petroleum Geology** (TU Delft OCW) | CC BY-NC-SA 4.0 | NC only | Petroleum systems, basin analysis, exploration workflow. | [TU Delft OCW](https://ocw.tudelft.nl/courses/petroleum-geology/) |
-| Sedimentology | **Sedimentary Geology** (Rygel & Quinton, SUNY) | CC BY-SA 4.0 | Unrestricted | Visual interpretation, sedimentary structures, facies analysis. Image-rich. | [LibreTexts](https://geo.libretexts.org/Courses/SUNY_Potsdam/Sedimentary_Geology) |
-| Drilling | **Drilling Fluid Engineering** (Skalle, NTNU) | Open Access | Verify | Rheology, hydraulics, hole cleaning, mud properties. | [Bookboon](https://bookboon.com/en/drilling-fluid-engineering-ebook) |
-| CCUS (future) | **Carbon Storage Atlas V** (NETL / DOE) | Public Domain | Unrestricted | CO2 storage capacity, saline aquifers, depleted reservoirs. Energy transition. | [NETL Atlas](https://netl.doe.gov/coal/carbon-storage/strategic-program-support/natcarb-atlas) |
+| Domain | Resource | License | Risk | Good for | Link | Local |
+|--------|----------|---------|------|----------|------|-------|
+| Reservoir Engineering | **Petroleum Reservoir Dynamics** (Zeidouni, LSU) | CC BY-NC 4.0 | NC only | Darcy flow, transient analysis, well tests. Includes chapter quizzes. | [LSU Repository](https://repository.lsu.edu/etext/4/) | `Petroleum Reservoir Dynamics.pdf` |
+| PVT / Thermodynamics | **Phase Relations in Reservoir Engineering** (Adewumi, Penn State) | CC BY-NC-SA 4.0 | NC only | Phase behavior, EOS, phase diagrams, VLE calculations. | [LibreTexts](https://eng.libretexts.org/Bookshelves/Chemical_Engineering/Phase_Relations_in_Reservoir_Engineering_(Adewumi)) | — |
+| Petrophysics | **Borehole Geophysics Applied to Ground-Water Investigations** (Keys, USGS) | Public Domain | Unrestricted | Tool physics: GR, Neutron, Density, Sonic, Resistivity. Log interpretation. | [USGS TWRI 2-E2](https://pubs.usgs.gov/twri/twri2-e2/) | `TWRI_2-E2.pdf` |
+| Petroleum Geology | **Petroleum Geology** (TU Delft OCW) | CC BY-NC-SA 4.0 | NC only | Petroleum systems, basin analysis, exploration workflow. Course content only — references copyrighted textbooks. | [TU Delft OCW](https://ocw.tudelft.nl/courses/petroleum-geology/) | `Petroleum Geology - TU Delft OCW/` |
+| Sedimentology | **Sedimentary Geology: Rocks, Environments and Stratigraphy** (Rygel & Quinton, SUNY) | CC BY-SA 4.0 | Unrestricted | Visual interpretation, sedimentary structures, facies analysis. Image-rich. | [LibreTexts](https://geo.libretexts.org/Courses/SUNY_Potsdam/Sedimentary_Geology%3A_Rocks_Environments_and_Stratigraphy) | `SEDIMENTARY GEOLOGY - ROCKS, ENVIRONMENTS AND STRATIGRAPHY.pdf` |
 
 ---
 
