@@ -2,6 +2,10 @@
 data/sources/private/*
 !data/sources/private/.gitkeep
 
+# NC-licensed materials (non-commercial only, kept locally)
+data/sources/open/Petroleum Reservoir Dynamics.pdf
+data/sources/open/Petroleum Geology - TU Delft OCW/
+
 # Working/intermediate files (can be regenerated)
 data/working/chunks/*
 !data/working/chunks/.gitkeep
