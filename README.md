@@ -37,7 +37,7 @@ Recommended storage: **JSONL** (one item per line) or **JSON**.
 Each item MUST include:
 
 - `id`, `version`
-- `domain`, `topic`
+- `domains` (array, 1-3 broad domains), `topics` (array, 1-3 specific topics)
 - `difficulty` (`easy|medium|hard|unknown`)
 - `language` (`en|ru|no|mixed`)
 - `question`
@@ -45,9 +45,9 @@ Each item MUST include:
 - `answer_index` (0–3) and `answer_key` (`A–D`)
 - `sources` (at least one entry)
 - `derivation_mode` (`open_licensed|concept_based`)
+- `rationale` (explanation of the answer, written from scratch)
 
 ### Optional fields (future-proof, keep minimal)
-- `rationale` (short explanation, can be written from scratch)
 - `image` (URL or `assets/...` path, **only if redistributable**)
 - `evidence` (short snippet for future grounded workflows)
 - `metadata` (e.g., `time_limit_sec`, `calc_required`, `contamination_risk`)
@@ -58,8 +58,8 @@ Each item MUST include:
 {
   "id": "formationeval_v0_1_petrophysics_porosity_0007",
   "version": "formationeval_v0.1",
-  "domain": "Petrophysics",
-  "topic": "Porosity",
+  "domains": ["Petrophysics"],
+  "topics": ["Porosity", "Neutron-Density Logging"],
   "difficulty": "medium",
   "language": "en",
 "question": "In a clean sandstone with highly saline formation water, what is the most typical neutron–density response in a water-filled interval (assuming logs are plotted on a compatible sandstone porosity scale)?",
