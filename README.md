@@ -53,6 +53,8 @@ Each item MUST include:
 - `metadata` (e.g., `time_limit_sec`, `calc_required`, `contamination_risk`)
 - `authors` (for attribution)
 
+> **Note on `contamination_risk`:** This field indicates the likelihood that similar questions appear in LLM training data. Values: `low`, `medium`, `high`. Questions derived from widely-used textbooks or common exam formats carry higher risk, potentially inflating model scores. Original, concept-based questions from niche sources are lower risk.
+
 ### Example item
 ```json
 {
