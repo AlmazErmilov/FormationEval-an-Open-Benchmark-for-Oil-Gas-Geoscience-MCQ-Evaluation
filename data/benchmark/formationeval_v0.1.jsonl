@@ -1769,5 +1769,343 @@
         "calc_required": false,
         "contamination_risk": "low"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_microresistivity_principles_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Microresistivity",
+        "Well Logging"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does the microlaterolog improve upon the measurement capabilities of the earlier microlog device?",
+      "choices": [
+        "It uses a larger electrode spacing to read deep into the uninvaded zone",
+        "It employs bucking currents to focus the measure current through the mudcake",
+        "It utilizes magnetic induction to measure resistivity in oil-based muds",
+        "It relies on two unfocused curves to qualitatively identify permeability"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The microlog was an unfocused device susceptible to mudcake influence (reading mainly mudcake in conductive/thick cases). The microlaterolog introduced focusing (similar to the laterolog) using bucking currents from a guard electrode to force the measure current into the formation, thereby providing a better determination of the flushed zone resistivity ($R_{xo}$).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 6 Other Electrode and Toroid Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 6.2 on Microelectrode Devices."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_moveable_hydrocarbons_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Saturation",
+        "Movable Hydrocarbons"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the absence of other data, how can the ratio of flushed zone resistivity to true resistivity ($R_{xo}/R_t$) indicate the presence of movable hydrocarbons in a clean reservoir?",
+      "choices": [
+        "The ratio equals 1.0 regardless of fluid content",
+        "The ratio significantly exceeds the ratio of mud filtrate to formation water resistivity ($R_{mf}/R_w$)",
+        "The ratio drops below the theoretical water-bearing baseline of $R_{mf}/R_w$",
+        "The ratio becomes negative due to the high resistivity of oil"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "In a water zone, $R_{xo}/R_t$ should equal $R_{mf}/R_w$. If movable hydrocarbons are present, they are flushed from the invaded zone (increasing $S_{xo}$) but remain in the uninvaded zone (keeping $S_w$ low). This causes $R_{xo}$ to be relatively lower compared to the high $R_t$ of the hydrocarbon zone, decreasing the ratio below the water baseline.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 6 Other Electrode and Toroid Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 6.3 Uses for Rxo."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_mcfl_focusing_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Microresistivity",
+        "Tool Physics"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "How does the Micro Cylindrically Focused Log (MCFL) achieve focusing in the horizontal plane (across the width of the pad) where space is limited?",
+      "choices": [
+        "It uses a passive system where the pad itself acts as the only guard electrode",
+        "It employs an active focusing system with side bucking electrodes to maintain potential",
+        "It relies solely on the curvature of the borehole to focus the current naturally",
+        "It uses high-frequency alternating current to induce a magnetic field"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "While vertical focusing in the MCFL is passive (using the metal pad as a guard similar to LL3), the limited width of the pad requires active focusing horizontally. Bucking electrodes on the sides of the pad emit current regulated to maintain the monitor electrodes at the same potential as the main pad ($A_0$), ensuring cylindrical equipotential lines.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 6 Other Electrode and Toroid Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 6.2 Microelectrode Devices."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_drillingengineering_mwd_resistivity_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Drilling Engineering",
+        "Petrophysics"
+      ],
+      "topics": [
+        "LWD",
+        "Tool Physics"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the primary mechanism used by toroidal transmitters in Measurement While Drilling (MWD) resistivity tools to generate current in the formation?",
+      "choices": [
+        "Direct electrical contact using sharp scratchers to penetrate the mudcake",
+        "Capacitive coupling through the drilling fluid using high-frequency waves",
+        "Induction of a voltage difference along the drill collar, which acts as a transformer secondary",
+        "Injection of current solely through the drill bit without a return path"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The toroidal transmitter acts as the primary winding of a transformer. The drill collar (and the formation return path) acts as the secondary winding. An AC voltage applied to the toroid induces a voltage difference along the collar, driving current down the collar and out into the formation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 6 Other Electrode and Toroid Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 6.5.1 Resistivity at the Bit."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_borehole_imaging_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Borehole Imaging",
+        "Oil-Based Mud"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How do modern microresistivity imaging tools capable of working in oil-based muds (OBM) overcome the nonconductive nature of the fluid?",
+      "choices": [
+        "They use acoustic pulses that are unaffected by the fluid conductivity",
+        "They rely on the small inherent conductivity of the mudcake and formation to pass current",
+        "They use a specialized radioactive source to ionize the mud in front of the pad",
+        "They require the mud to be doped with conductive metallic particles"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The text explains that designs introduced in 2001 rely on the fact that both mudcake and formation have some small conductivity (due to clay content) and the pad is very close to the formation. This allows current to pass from the top/bottom of the pad through the formation to the buttons, despite the resistive environment.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 6 Other Electrode and Toroid Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 6.4 Azimuthal Measurements."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_lwd_rab_tool_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Drilling Engineering"
+      ],
+      "topics": [
+        "LWD",
+        "Invasion"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the Resistivity at the Bit (RAB) tool, what is the key functional difference between the ring electrode and the button electrodes?",
+      "choices": [
+        "The ring measures natural gamma radiation while buttons measure resistivity",
+        "The ring provides a deeply focused azimuthal average, while buttons provide shallower azimuthal images",
+        "The buttons are used for deep reading while the ring measures the mudcake only",
+        "The ring is only used for focusing the buttons and does not provide a measurement itself"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The ring electrode is cylindrically focused and provides a deep measurement of formation resistivity (averaged around the borehole). The buttons are placed closer to the transmitters, making them less focused (shallower), but they are small and discrete, allowing for azimuthal imaging as the tool rotates.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 6 Other Electrode and Toroid Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 6.5.2 Ring and Button Measurements."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_cased_hole_resistivity_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Cased Hole",
+        "Resistivity"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the physical principle underlying the measurement of formation resistivity through steel casing?",
+      "choices": [
+        "Detecting the magnetic permeability changes in the casing caused by formation fluids",
+        "Measuring the transit time of an acoustic pulse through the cement sheath",
+        "Measuring the small leakage current into the formation by detecting minute voltage drops along the casing",
+        "Using high-energy neutrons to activate chlorine in the formation water"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The tool injects current into the casing. While most current stays in the steel, a small fraction leaks into the formation. This leakage causes a progressive reduction in the current flowing down the casing, which is detected by measuring voltage differences between electrodes spaced along the casing.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 6 Other Electrode and Toroid Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 6.6 Cased-Hole Resistivity Measurements."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_cased_hole_limitations_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Cased Hole",
+        "Resistivity"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Under what formation condition does the through-casing resistivity measurement become unreliable due to sensitivity to the cement sheath?",
+      "choices": [
+        "When the formation resistivity is very low (less than 1 ohm-m)",
+        "When the formation resistivity is very high (greater than 1000 ohm-m)",
+        "When the cement has a lower density than the drilling mud",
+        "When the formation contains high-viscosity heavy oil"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The text states that the tool works best in the 1–100 ohm-m range. Below 1 ohm-m, the measurement becomes sensitive to the cement resistivity and thickness, which are often not well known, making the formation resistivity determination unreliable.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 6 Other Electrode and Toroid Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 6.6 Cased-Hole Resistivity Measurements."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
     }
   ]
