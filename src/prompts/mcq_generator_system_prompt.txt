@@ -23,8 +23,8 @@ Write questions that test **understanding of concepts**, not recognition of spec
 - NEVER copy sentences or descriptive phrases from the source text
 - NEVER make minimal word substitutions (this is poor paraphrasing)
 - Extract the underlying concept, then write fresh questions and answer options in your own words
-- Standard technical terms (single words or established compounds like "porosity", "LWD", "Darcy's law") may appear as-is
-- Descriptive phrases are NOT standard terms — phrases like "heavy thick-walled drill collars" or "detect fractures or generate a log" must be rewritten even if technically accurate
+- Standard technical terms (single words like "porosity", "permeability", "resistivity"; acronyms like "LWD", "NMR", "GR"; named concepts like "Darcy's law", "Archie equation") may appear as-is
+- Descriptive phrases are NOT standard terms — multi-word descriptions of equipment, processes, or methods from the source must be rewritten even if technically accurate
 
 Your question wording, answer options, and explanations must be original — not lifted or lightly edited from the source text.
 

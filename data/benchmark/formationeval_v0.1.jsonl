@@ -1,0 +1,344 @@
+[
+    {
+      "id": "formationeval_v0.1_petrophysics_logging_principles_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Petroleum Geology"
+      ],
+      "topics": [
+        "Well Logging History",
+        "Measurement Principles"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "The historical French term for well logging, 'carottage électrique' (electrical coring), implies what fundamental concept about the original application of the technology?",
+      "choices": [
+        "It physically extracted rock samples using electrical current",
+        "It provided a continuous record of formation characteristics comparable to a physical core",
+        "It was primarily used to measure the electrical potential of the drilling mud",
+        "It replaced the need for drilling by using surface electrical sensors"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The term 'electrical coring' was a descriptive metaphor suggesting that the continuous electrical measurements provided a record of rock characteristics similar to extracting a physical core, allowing for correlation and evaluation without continuous mechanical coring.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 1 - 01_an_overview_of_well_logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Introduction (1.1)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_drilling_engineering_lwd_data_acquisition_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Drilling Engineering",
+        "Petrophysics"
+      ],
+      "topics": [
+        "LWD",
+        "Data Acquisition"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Data acquired via Logging While Drilling (LWD) requires a specific processing step not typically needed for wireline logs. What is this step and why is it necessary?",
+      "choices": [
+        "Depth-matching to the casing collar locator because LWD depth is less accurate",
+        "Converting time-referenced raw data to a depth-based log, because drilling speed varies",
+        "Filtering out mud-pulse noise that obscures the formation signal",
+        "Manual correlation with offset wells to establish the true vertical depth"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "LWD sensors record measurements constantly as time passes. Since the rate of penetration (drilling speed) changes, these time-based records must be mapped to depth using a separate depth-time tracker to create a standard log.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 1 - 01_an_overview_of_well_logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 1.2.2 (What is LWD?)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_porosity_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Logging",
+        "Clay Effects",
+        "Porosity"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why does a standard neutron porosity log often overestimate porosity in clay-bearing formations?",
+      "choices": [
+        "Clays have a high density that scatters neutrons more effectively than sand grains",
+        "The tool measures hydrogen index, and cannot distinguish between pore water and hydroxyls in the clay structure",
+        "Clay minerals absorb neutrons, preventing them from returning to the detector",
+        "The borehole diameter is typically washed out in clays, causing the tool to read 100% porosity"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Neutron tools function by interacting with hydrogen. They detect all hydrogen in the formation, whether it is in the pore fluid (water/oil) or chemically bound within the clay mineral structure (hydroxyls). Consequently, the tool interprets the hydrogen in the clay as porosity, leading to an overestimation of the effective pore space.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 1 - 01_an_overview_of_well_logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 1.5 (Measurement Techniques)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_resistivity_principles_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Electrical Logging",
+        "Saturation",
+        "Resistivity"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What is the fundamental physical contrast that allows electrical resistivity logs to distinguish hydrocarbons from formation water?",
+      "choices": [
+        "Hydrocarbons are highly conductive while formation water is resistive",
+        "The rock matrix is conductive only when saturated with oil",
+        "Formation water acts as a conductive electrolyte, whereas the rock matrix and hydrocarbons are generally non-conductive",
+        "Hydrocarbons induce a spontaneous potential that cancels out the conductivity of the water"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The rock matrix is typically non-conducting (insulator). Electrical current flows primarily through the saline formation water (brine) in the pore space. Because hydrocarbons are non-conductive, replacing brine with oil or gas reduces the conductivity (increases resistivity) of the formation, creating a measurable contrast.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 1 - 01_an_overview_of_well_logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 1.5 (Measurement Techniques - Electrical)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_formation_evaluation_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Reservoir Engineering"
+      ],
+      "topics": [
+        "Permeability",
+        "Formation Evaluation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Among the primary questions answered by formation evaluation, which parameter is considered the most difficult to determine directly from standard logging measurements?",
+      "choices": [
+        "The depth of the hydrocarbon-bearing formation",
+        "The porosity of the formation",
+        "The producibility (permeability) of the hydrocarbons",
+        "The distinction between oil and gas"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "While porosity, depth, and fluid type can often be inferred from nuclear and electrical logs, permeability (producibility) is the most difficult to answer. It is a dynamic property governing flow, whereas most logs measure static properties. It is usually derived empirically or requires specialized tools like NMR or acoustic Stoneley wave analysis.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 1 - 01_an_overview_of_well_logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 1.4 (Well Logging: The Narrow View)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_drilling_engineering_lwd_design_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Drilling Engineering"
+      ],
+      "topics": [
+        "LWD",
+        "Tool Design"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "To survive the mechanical realities of the drilling environment, how are LWD sensors packaged compared to standard wireline tools?",
+      "choices": [
+        "They are encased in shock-absorbing rubber sleeves attached to the drill bit",
+        "They are miniaturized and placed inside the hollow center of the drill pipe",
+        "They are integrated directly into the walls of rigid steel tubulars that form part of the bottom-hole assembly",
+        "They use wireless transmission to avoid physical connection with the drill string"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Unlike wireline tools which are often distinct probes, LWD systems must bear the weight and torque of drilling. Therefore, sensors are engineered into the steel walls of the drill collars themselves, allowing mud to flow through the center while maintaining structural integrity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 1 - 01_an_overview_of_well_logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 1.2.2."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_water_saturation_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Water Saturation",
+        "Rock Properties"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "In the context of reservoir rock properties, how is water saturation defined?",
+      "choices": [
+        "The ratio of water volume to the total bulk volume of the rock",
+        "The percentage of the pore space volume that is occupied by brine",
+        "The percentage of the total rock weight attributed to fluid",
+        "The ratio of hydrocarbon volume to water volume"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Water saturation describes the partitioning of fluids within the pore space. It is specifically defined as the percentage (or fraction) of the porosity that is occupied by brine rather than hydrocarbons.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 1 - 01_an_overview_of_well_logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 1.3 (Properties of Reservoir Rocks)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_acoustic_logging_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Geophysics"
+      ],
+      "topics": [
+        "Acoustic Logging",
+        "Fracture Detection"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Low-frequency monopole acoustic transmitters are capable of exciting Stoneley waves. What is the primary petrophysical utility of analyzing this specific wave mode?",
+      "choices": [
+        "It provides the only reliable measurement of formation temperature",
+        "It is uniquely sensitive to fluid movement, aiding in permeability estimation and open fracture identification",
+        "It is used to calibrate the neutron porosity log in gas-bearing zones",
+        "It allows for the direct imaging of the borehole wall geometry"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Stoneley waves are interface waves that propagate along the borehole wall. Their attenuation and velocity are strongly affected by the ability of fluid to move in and out of the formation, making them excellent indicators of permeability and open fractures.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 1 - 01_an_overview_of_well_logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 1.5 (Measurement Techniques - Acoustic)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    }
+  ]
