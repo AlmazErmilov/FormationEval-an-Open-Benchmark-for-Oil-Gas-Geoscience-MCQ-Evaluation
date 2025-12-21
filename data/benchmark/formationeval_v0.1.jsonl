@@ -8529,5 +8529,426 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_clean_formations_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Hingle Plot",
+        "Water Saturation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the construction of a Hingle plot for water saturation estimation, which relationship allows for the identification of the 100% water saturation line (Ro) as a straight line?",
+      "choices": [
+        "Porosity is plotted against the logarithm of resistivity",
+        "Porosity is plotted against the inverse square root of resistivity",
+        "Logarithm of porosity is plotted against the logarithm of resistivity",
+        "Resistivity is plotted linearly against the bulk density"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The Hingle plot relies on the logic that for a fixed water saturation (and assuming m=n=2), porosity varies as the inverse square root of Rt. Therefore, 100% water-saturated points fall on a straight line when plotting porosity against 1/sqrt(Rt).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 23 Saturation and Permeability Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from the section on Clean Formations."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_clean_formations_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Pickett Plot",
+        "Cementation Exponent"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "When utilizing a Pickett plot (log-log plot of porosity versus resistivity) to evaluate a formation, what parameter is represented by the negative slope of the line corresponding to 100% water saturation?",
+      "choices": [
+        "The saturation exponent (n)",
+        "The tortuosity factor (a)",
+        "The formation water resistivity (Rw)",
+        "The cementation exponent (m)"
+      ],
+      "answer_index": 3,
+      "answer_key": "D",
+      "rationale": "On a Pickett plot, the power law expression of the Archie equation is exploited by taking the logarithm of both sides. This results in a linear equation where the slope of the line representing constant water saturation is the negative of the cementation exponent (m).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 23 Saturation and Permeability Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from the section on Clean Formations."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_shaly_sands_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Shaly Sand Analysis",
+        "Clay Conductivity"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In shaly formations, why does the plot of formation conductivity (Co) versus water conductivity (Cw) exhibit non-linear behavior at low water salinities?",
+      "choices": [
+        "The tortuosity of the formation increases significantly as the salt concentration decreases",
+        "The excess conductivity from the clay electrical double layer becomes dominant over the electrolyte conductivity",
+        "The formation factor becomes unstable due to the swelling of structural clays in fresh water",
+        "The presence of hydrocarbons suppresses the electrical continuity of the pore water network"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "At high salinities, clay conductivity appears as a linear offset. However, at low salinities (fresh water), the conductivity of ions in the electrical double layer varies with Cw, and this excess conductivity dominates the total response, creating a non-linear relationship.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 23 Saturation and Permeability Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from the section on Shaly Formations."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_saturation_models_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Dual-Water Model",
+        "Waxman-Smits"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "What is the fundamental conceptual difference between the Dual-Water model and the Waxman-Smits model regarding how they handle pore water?",
+      "choices": [
+        "Dual-Water treats the clay conductivity as an interactive term, while Waxman-Smits treats it as an independent parallel resistor",
+        "Waxman-Smits assumes effective porosity, while Dual-Water ignores porosity in favor of bulk volume water",
+        "Dual-Water divides pore space into clay-bound water and free water volumes with different conductivities, while Waxman-Smits uses a single equivalent water conductivity influenced by Qv",
+        "Waxman-Smits accounts for the difference in tortuosity between surface and bulk conductivity, whereas Dual-Water assumes they are identical"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The Clavier et al. Dual-Water model separates the pore space into two distinct volumes: clay-bound water (conducting via counterions) and free water (containing electrolyte). Waxman-Smits treats the excess cations (Qv) as contributing to the conductivity of the entire pore space without volume segmentation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 23 Saturation and Permeability Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from the section on Double Layer Models."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_laminated_sands_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Laminated Sands",
+        "Resistivity Anisotropy"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In a laminated sand-shale sequence where laminations are below log resolution, why does the standard horizontal resistivity (Rt or Rh) often yield pessimistic water saturation calculations?",
+      "choices": [
+        "The measurement is dominated by the highly conductive shale layers acting in parallel with the resistive sand",
+        "The sand layers act as insulators in the vertical direction, preventing the current from entering the formation",
+        "The tool averages the porosity of the sand and shale arithmetically, leading to an overestimation of pore volume",
+        "The invasion profile in laminated sands is always deep, masking the true formation resistivity"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "In laminated sequences, the sand and shale layers act electrically in parallel for horizontal currents (standard induction/laterolog). Since the current follows the path of least resistance, the measured conductivity is dominated by the conductive shale, often masking the presence of resistive, hydrocarbon-bearing sand streaks.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 23 Saturation and Permeability Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from the section on Laminated Sands."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_carbonates_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Carbonate Evaluation",
+        "Archie Parameters"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does the presence of water-filled fractures in a carbonate formation typically affect the saturation exponent (n) compared to a formation with only intergranular porosity?",
+      "choices": [
+        "The exponent n increases because fractures create a longer path for current flow",
+        "The exponent n decreases because fractures provide a short-circuit path for current",
+        "The exponent n remains unchanged as it is a property of the fluid, not the rock structure",
+        "The exponent n becomes negative due to the capacitive effect of the fracture surfaces"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Water-filled fractures act as a highly conductive path (a 'short circuit') through the rock. This allows current to flow easily even as the matrix desaturates, leading to a lower rate of resistivity increase and consequently a lower saturation exponent (n).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 23 Saturation and Permeability Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from the section on Carbonates and Heterogeneous Rocks."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_permeability_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Reservoir Engineering"
+      ],
+      "topics": [
+        "Permeability Estimation",
+        "Kozeny-Carman"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "According to the Kozeny-Carman relationship, which two factors primarily determine the permeability of a porous medium?",
+      "choices": [
+        "Porosity and the formation water resistivity",
+        "Porosity and the specific surface area (or hydraulic radius) of the pores",
+        "The cementation exponent and the saturation exponent",
+        "The bulk density and the photoelectric factor"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The Kozeny-Carman equation models the pore space as a bundle of tubes. It defines permeability as a function of porosity (representing the volume available for flow) and the specific surface area or hydraulic radius (representing the drag or friction against flow walls).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 23 Saturation and Permeability Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from the section on Petrophysical Models."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_permeability_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Permeability Estimation",
+        "Timur Equation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In permeability models based on water saturation, such as the Timur equation, how does the irreducible water saturation (Swirr) influence the calculated permeability?",
+      "choices": [
+        "Permeability increases as Swirr increases, because more water indicates better connectivity",
+        "Permeability is independent of Swirr and relies only on porosity",
+        "Permeability decreases as Swirr increases, because high Swirr implies high surface area and smaller pores",
+        "Permeability decreases as Swirr decreases, because dry rocks are tighter"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "High irreducible water saturation generally indicates a large pore surface-to-volume ratio (small pores or high clay content), which creates more resistance to flow. Therefore, models like Timur's place Swirr in the denominator, meaning permeability decreases as Swirr increases.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 23 Saturation and Permeability Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from the section on Petrophysical Models."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_shaly_sands_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Indonesia Equation",
+        "Saturation Models"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Which characteristic distinguishes the Indonesia saturation equation from standard parallel-conductivity shaly sand models?",
+      "choices": [
+        "It mathematically ignores the presence of shale to focus on clean sand streaks",
+        "It includes a mathematical cross-term (interaction term) between the shale and water conductivities",
+        "It assumes that the formation factor for shale is exactly equal to the formation factor for sand",
+        "It is derived purely from theoretical physics rather than empirical observations"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The Indonesia equation (Poupon and Leveaux) was developed empirically and includes an interactive cross-term (2 * sqrt(term1 * term2)). This term helps model the non-linear relationship between Co and Cw observed in fresh water environments, unlike simple parallel resistor models.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 23 Saturation and Permeability Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from the section on Saturation Equations."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_heterogeneous_rocks_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Maxwell-Garnett",
+        "Vugs"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "When modeling connected vugs in a carbonate reservoir as spherical inclusions within a host matrix, which theoretical approach is often applied to determine conductivity?",
+      "choices": [
+        "The Wyllie Time-Average equation",
+        "The Maxwell-Garnett effective medium equation",
+        "The Kozeny-Carman flow relationship",
+        "The Hingle plot graphical method"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The Maxwell-Garnett equation is a type of effective medium theory used to calculate the conductivity of a host material containing scattered spherical inclusions (such as vugs). It accounts for the volume fraction and conductivities of both the host and the inclusions.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 23 Saturation and Permeability Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from the section on Carbonates and Heterogeneous Rocks."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
     }
   ]
