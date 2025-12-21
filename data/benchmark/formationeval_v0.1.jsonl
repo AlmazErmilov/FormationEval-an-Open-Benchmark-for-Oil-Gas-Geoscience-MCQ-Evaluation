@@ -3972,5 +3972,342 @@
         "calc_required": false,
         "contamination_risk": "low"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_density_logging_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Density Logging",
+        "Gamma Ray Physics"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "The conversion of gamma ray attenuation measurements to formation bulk density relies on the assumption that the ratio of atomic number to atomic mass (Z/A) is approximately constant (0.5) for most elements. Which common formation constituent possesses a Z/A ratio significantly different from this baseline, necessitating the definition of an electron density index?",
+      "choices": [
+        "Carbon in limestone matrices",
+        "Silicon in quartz sandstone",
+        "Hydrogen in pore fluids",
+        "Calcium in dolomite"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Most elements in earth formations have a Z/A ratio of approximately 0.5. Hydrogen, however, has a Z/A ratio of nearly 1.  This discrepancy causes the electron density index (measured by the tool) to differ from the actual bulk density, particularly in fluids like water or hydrocarbons, requiring a specific calibration (typically to water-filled limestone) to derive correct bulk density logs.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 12 Gamma Ray Scattering and Absorption Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Focuses on the physics of the Z/A ratio deviation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_mudcake_compensation_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Density Logging",
+        "Mudcake Compensation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In a dual-detector density logging tool, how is the presence of mudcake between the tool pad and the formation wall primarily addressed to determine the correct formation density?",
+      "choices": [
+        "By measuring the mudcake thickness with a caliper and subtracting its density value",
+        "By utilizing the difference in density sensitivity and depth of investigation between the short-spacing and long-spacing detectors",
+        "By filtering out the low-energy gamma rays that are most affected by the mudcake layer",
+        "By assuming the mudcake density is equal to the mud filtrate density and applying a constant shift"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The compensation method relies on the fact that the short-spacing detector is more sensitive to the material immediately adjacent to the pad (mudcake) than the long-spacing detector.  By comparing the apparent densities read by both detectors (using a 'spine and ribs' approach), a correction (Delta Rho) is derived to adjust the long-spacing measurement to the true formation density.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 12 Gamma Ray Scattering and Absorption Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Tests understanding of the dual-detector compensation principle."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_photoelectric_effect_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Lithology Logging",
+        "Photoelectric Factor"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "While evaluating a formation, you observe a density log that appears normal, but the Photoelectric Factor (Pe) curve reads an extremely high value (>> 10). What is the most likely environmental cause for this response?",
+      "choices": [
+        "The formation contains significant amounts of gas, lowering the electron density",
+        "The drilling mud contains barite weighting material",
+        "The borehole is severely washed out, causing the tool to read drilling fluid only",
+        "The formation is composed of pure halite (salt)"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The Photoelectric Factor (Pe) is highly sensitive to the atomic number (Z) of materials. Barite (Barium Sulfate) contains Barium (Z=56), which has a very high cross-section for photoelectric absorption.  Even small amounts of barite in the mudcake or invasion fluid will cause the Pe reading to skyrocket, often rendering it useless for lithology identification.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 12 Gamma Ray Scattering and Absorption Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Applied question regarding environmental effects on Pe logs."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_porosity_sensitivity_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Porosity Calculation",
+        "Error Analysis"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "When converting bulk density to porosity, how does the impact of an error in the estimated fluid density parameter (rho_f) vary with formation porosity?",
+      "choices": [
+        "The error impact is constant regardless of the formation porosity",
+        "The error impact is most critical in low porosity formations",
+        "The error impact is most critical in high porosity formations",
+        "The error impact is negligible unless the formation contains gas"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "In the density-porosity relationship, the fluid density term scales with the volume of fluid (porosity). Therefore, an incorrect assumption for fluid density produces the largest error in calculated porosity when the porosity is high. Conversely, errors in matrix density are most critical in low-porosity formations where the matrix volume fraction is highest.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 12 Gamma Ray Scattering and Absorption Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Tests understanding of sensitivity analysis in porosity derivation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_lwd_density_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Drilling Engineering"
+      ],
+      "topics": [
+        "LWD",
+        "Invasion"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why is it potentially erroneous to use the mud filtrate density as the fluid density parameter when calculating porosity from a Logging While Drilling (LWD) density tool located near the bit?",
+      "choices": [
+        "LWD tools use a different gamma ray energy source that interacts differently with mud filtrate",
+        "The measurement often occurs before significant invasion, so the tool investigates virgin formation fluid rather than filtrate",
+        "The rotation of the drill string centrifuges the mud filtrate away from the sensor",
+        "LWD density tools have a depth of investigation that is too shallow to see past the mudcake"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "LWD density sensors located near the bit measure the formation very shortly after it is drilled. In this timeframe, invasion of mud filtrate may not yet have proceeded significantly. Consequently, the fluid occupying the pore space within the tool's depth of investigation is likely the native formation fluid (e.g., oil or gas) rather than the mud filtrate.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 12 Gamma Ray Scattering and Absorption Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Distinguishes LWD interpretation context from wireline."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_pe_mixing_law_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Lithology Logging",
+        "Rock Physics"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "When calculating the average Photoelectric Factor (Pe) for a rock mixture composed of different minerals, why is a simple volume-weighted average of the individual mineral Pe values incorrect?",
+      "choices": [
+        "Pe is a logarithmic measurement and must be averaged geometrically",
+        "Pe is proportional to cross-section per electron, so the mixing law must account for electron density (volumetric cross-section U)",
+        "Pe measurements are only valid for pure elements, not compounds or mixtures",
+        "The atomic number Z dominates the average linearly, ignoring density effects"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The Photoelectric Factor (Pe) relates to the cross-section per electron. Mixing rules must be formulated in terms of electron density. The correct approach uses the volumetric cross-section parameter U (where U = Pe * electron density), which combines volumetrically. The final average Pe is then derived from the total U divided by the average electron density.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 12 Gamma Ray Scattering and Absorption Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Tests the specific physics of mixing laws for Pe."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_density_correction_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Density Logging",
+        "Log Quality Control"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "On a compensated density log, what does a large positive value on the density correction curve (Delta Rho) typically indicate?",
+      "choices": [
+        "The tool is measuring through a mudcake that is significantly denser than the formation (e.g., barite mud)",
+        "The tool is measuring through a mudcake or standoff that is lighter than the formation (e.g., light mud or rugosity)",
+        "The photoelectric factor has been used to correct the bulk density for lithology effects",
+        "The detectors are saturated and the tool requires recalibration"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The correction Delta Rho is added to the long-spacing apparent density. If the mudcake is lighter than the formation (common with standard muds), the detectors read anomalously low densities (higher counts).  A positive correction is required to bring the value back up to the true formation density. Conversely, heavy mudcake (barite) results in a negative correction.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 12 Gamma Ray Scattering and Absorption Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Practical interpretation of the correction curve sign."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_spectrum_physics_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Gamma Ray Physics",
+        "Tool Design"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "Modern density tools analyze scattered gamma rays in different energy windows. What physical interaction dominates the attenuation in the low-energy window compared to the high-energy window?",
+      "choices": [
+        "Compton scattering dominates the low-energy window, while Pair Production dominates the high-energy window",
+        "Photoelectric absorption dominates the low-energy window, while Compton scattering dominates the high-energy window",
+        "Both windows are dominated equally by Photoelectric absorption",
+        "Compton scattering dominates both, but the cross-section changes sign"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Gamma ray attenuation is a sum of Compton scattering and Photoelectric absorption. Photoelectric absorption is strongly dependent on energy (inversely proportional) and atomic number (Z). It dominates at low energies, allowing for lithology (Pe) determination. High-energy attenuation is dominated by Compton scattering, which is proportional to electron density.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 12 Gamma Ray Scattering and Absorption Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Foundational physics of the measurement windows."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
