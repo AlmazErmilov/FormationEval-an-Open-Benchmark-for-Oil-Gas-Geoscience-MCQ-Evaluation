@@ -6116,5 +6116,560 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_acoustic_logging_history_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Geophysics"
+      ],
+      "topics": [
+        "Acoustic Logging History",
+        "Seismic Correlation"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What was the primary driver for the initial development of acoustic logging technologies in the petroleum industry?",
+      "choices": [
+        "The need to directly measure formation porosity for reservoir evaluation",
+        "The requirement to correlate surface seismic time measurements with depth",
+        "The necessity of evaluating cement bond quality behind casing",
+        "The demand for detecting fractures in carbonate reservoirs"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Acoustic logging initially originated as a companion to seismic exploration (velocity surveys) to solve the problem of correlating seismic travel time with actual depth. The application for porosity determination came later with the development of the Wyllie time-average relationship.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from the history of acoustic measurements section."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_tool_design_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Tool Design",
+        "Borehole Compensation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "The Borehole Compensated (BHC) sonic tool design, incorporating pairs of transmitters and receivers, was developed to address which specific logging environment challenge?",
+      "choices": [
+        "Loss of signal amplitude in gas-filled boreholes",
+        "Interference from direct mud arrivals in large holes",
+        "Erroneous travel time readings caused by borehole enlargements or washouts",
+        "Inability to measure shear wave velocities in soft formations"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The BHC design was introduced after correlations were found between bad logs and washed-out boreholes. The multi-transmitter/receiver arrangement compensates for irregularities in the borehole size (caving/washouts) that affect the path length through the mud.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 17.2 on tool evolution."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_rock_mechanics_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Geophysics"
+      ],
+      "topics": [
+        "Elastic Properties",
+        "Poisson's Ratio"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the context of elastic properties of materials, what does Poisson's ratio describe?",
+      "choices": [
+        "The ratio of shear stress to shear strain during deformation",
+        "The relationship between applied pressure and fractional volume change",
+        "The ratio of transverse contraction to longitudinal extension under uniform stress",
+        "The velocity difference between compressional and shear waves"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Poisson's ratio (nu) characterizes the geometric deformation of a material. When a sample is stretched in one direction (longitudinal extension), it contracts in the perpendicular directions (transverse contraction). Poisson's ratio is the constant relating these two strains.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Definition derived from section 17.4 Review of Elastic Properties."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_wave_propagation_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Geophysics",
+        "Petrophysics"
+      ],
+      "topics": [
+        "Wave Propagation",
+        "Elastic Constants"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Based on the wave equation derivation for elastic media, how does the velocity of a compressional wave depend on the density of the material (assuming elastic moduli remain constant)?",
+      "choices": [
+        "Velocity is inversely proportional to the square root of the density",
+        "Velocity increases linearly with increasing density",
+        "Velocity is directly proportional to the square of the density",
+        "Velocity is independent of density"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The velocity of wave propagation (both compressional and shear) is given by the square root of the ratio of elastic constants to density (e.g., v = sqrt(Y/rho)). Therefore, if the modulus is constant, an increase in density results in a decrease in velocity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on equations 17.25 and 17.26."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_wave_velocities_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Geophysics",
+        "Petrophysics"
+      ],
+      "topics": [
+        "Acoustic Velocities",
+        "Rock Physics"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What fundamental constraint governs the relationship between compressional velocity (Vc) and shear velocity (Vs) in any elastic material with a positive bulk modulus?",
+      "choices": [
+        "Vs must always be greater than Vc",
+        "Vc must exceed Vs by at least 15 percent",
+        "Vc and Vs must be equal in isotropic media",
+        "Vs approaches Vc as Poisson's ratio approaches 0.5"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Since the bulk modulus must be positive, the relationship between velocities implies that Vc^2 - (4/3)Vs^2 > 0. This mathematical constraint dictates that the compressional velocity must exceed the shear velocity. Specifically, Vc is expected to exceed Vs by at least roughly 15% (limit where Poisson's ratio is negative) or significantly more for real rocks (approx 40% at Poisson's ratio of 0).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Derived from section 17.5 and Equation 17.28 discussion."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_logging_principles_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Geophysics"
+      ],
+      "topics": [
+        "Wave Propagation",
+        "Refraction"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Which acoustic phenomenon allows a logging tool centered in a fluid-filled borehole to detect energy that has propagated primarily through the surrounding formation?",
+      "choices": [
+        "Direct fluid arrival through the mud column",
+        "Reflection of acoustic waves off the borehole wall",
+        "Generation of head waves at the critical angle of refraction",
+        "Attentuation of shear waves at the transmitter"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The detection of formation velocity relies on Snell's law. When the angle of incidence reaches the critical angle, the wave is critically refracted and travels along the boundary (borehole wall) as a head wave, continuously radiating energy back into the borehole fluid where it is detected by the receiver.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 17.5 on wave propagation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_tool_physics_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Tool Design",
+        "Signal Processing"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In a rudimentary acoustic logging tool, why is there a minimum required spacing between the transmitter and the receiver?",
+      "choices": [
+        "To ensure the acoustic energy traveling through the formation arrives before the direct signal traveling through the mud",
+        "To allow sufficient time for the transmitter crystals to stop ringing before the signal returns",
+        "To prevent the formation signal from being attenuated below the detection threshold of the receiver",
+        "To ensure the shear wave arrives before the compressional wave for easier separation"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The tool relies on the first arrival of the signal to measure transit time. Since sound travels in the mud (approx 5000 ft/s) and typically faster in the formation (10,000+ ft/s), the spacing must be large enough to ensure the longer path through the formation (refraction) is still faster than the shorter, direct path through the mud.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 17.6 Rudimentary Acoustic Logging."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_porosity_evaluation_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Porosity Evaluation",
+        "Wyllie Equation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the fundamental assumption of the Wyllie time-average equation regarding the relationship between interval transit time and porosity?",
+      "choices": [
+        "Transit time decreases exponentially as porosity increases",
+        "Transit time is a linear function of porosity, interpolating between matrix and fluid values",
+        "Transit time is independent of porosity but highly sensitive to pore pressure",
+        "Transit time is related to the square root of the porosity value"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The Wyllie time-average equation (Equation 17.36) assumes a linear mixing law where the total transit time is the sum of the transit time in the rock matrix and the transit time in the fluid, each weighted by their respective volume fractions (1-phi and phi).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 17.7 Rudimentary Acoustic Interpretation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_rock_physics_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Reservoir Engineering"
+      ],
+      "topics": [
+        "Rock Physics",
+        "Pressure Effects"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does increasing the differential pressure (effective stress) typically affect the interval transit time measured in a sedimentary rock?",
+      "choices": [
+        "It has no measurable effect on transit time",
+        "It causes the transit time to increase significantly",
+        "It causes the transit time to decrease (velocity increases)",
+        "It causes the transit time to fluctuate randomly"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "As illustrated in the discussion of laboratory data (Fig 17.14), confining pressure or differential pressure affects acoustic properties. Higher pressure compacts the rock and closes microcracks, leading to higher velocity, which corresponds to a lower interval transit time.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 17.7 and Figure 17.14."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_applications_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Acoustic Imaging",
+        "Fracture Detection"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "Which acoustic logging method typically utilizes high frequencies (around 500 kHz) to generate images of the borehole wall?",
+      "choices": [
+        "The transmission method measuring interval transit time",
+        "The reflection method measuring echo transit time and attenuation",
+        "The long-spaced sonic method for deep investigation",
+        "The dipole shear wave method for anisotropy analysis"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The reflection mode of borehole acoustic measurement uses much higher frequencies (on the order of 500 kHz) compared to standard transmission logging. This mode is used to obtain acoustic images of the borehole wall and evaluate fractures and cement bonding.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 17.3 Applications."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_elastic_constants_011",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Geophysics"
+      ],
+      "topics": [
+        "Elastic Moduli",
+        "Bulk Modulus"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Which elastic constant is defined as the measure of a material's compressibility when subjected to a uniform confining pressure?",
+      "choices": [
+        "Young's Modulus (Y)",
+        "Shear Modulus (mu)",
+        "Bulk Modulus (B)",
+        "Poisson's Ratio (nu)"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The bulk modulus (B or K) relates the applied pressure to the fractional change in volume (dV/V) of a material. It specifically describes the resistance to compression under uniform pressure.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Definition derived from section 17.4 Review of Elastic Properties."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_wave_physics_012",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Geophysics",
+        "Petrophysics"
+      ],
+      "topics": [
+        "Wave Physics",
+        "Shear Waves"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What distinguishes the particle motion of a shear wave from that of a compressional wave?",
+      "choices": [
+        "Shear wave particles move parallel to the direction of wave propagation",
+        "Shear wave particles move at right angles (perpendicular) to the direction of propagation",
+        "Shear wave particles undergo volumetric expansion and contraction only",
+        "Shear wave particles move in a retrograde elliptical orbit"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "In a shear wave, the particle displacement is perpendicular (at right angles) to the direction of the disturbance propagation. In contrast, compressional waves involve particle motion in the same direction as propagation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 17.4 Review of Elastic Properties."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_elastic_limit_013",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Geophysics",
+        "Petrophysics"
+      ],
+      "topics": [
+        "Rock Physics",
+        "Poisson's Ratio"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "What is the theoretical upper limit for Poisson's ratio in a stable isotropic elastic material, derived from the requirement that the bulk modulus must be positive?",
+      "choices": [
+        "0.25",
+        "0.5",
+        "1.0",
+        "0.0"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The relationship between Bulk Modulus (B), Young's Modulus (Y), and Poisson's ratio (nu) is given by B = Y / [3(1 - 2*nu)]. For the Bulk Modulus to remain positive (a physical requirement for stability), the term (1 - 2*nu) must be positive, which implies that Poisson's ratio must be less than 0.5.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 17 Introduction to Acoustic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Derived from Equation 17.9 and 17.29 discussion."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
