@@ -5065,5 +5065,426 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_pulsed_neutron_logging_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Thermal Neutron Die-Away",
+        "Saturation Determination"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "In thermal neutron die-away logging, which element significantly dominates the macroscopic absorption cross-section of saline formation water, enabling the distinction between water and hydrocarbons?",
+      "choices": [
+        "Oxygen",
+        "Hydrogen",
+        "Chlorine",
+        "Carbon"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Chlorine has a very large thermal neutron absorption cross-section. In saline waters, the concentration of NaCl increases the macroscopic cross-section dramatically compared to fresh water or hydrocarbons, which have similar, much lower cross-sections.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 15 Pulsed Neutron Devices and Spectroscopy",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on the physical basis of sigma logging."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_pulsed_neutron_physics_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Thermal Neutron Die-Away",
+        "Physics"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What is the mathematical relationship between the macroscopic thermal capture cross-section (Sigma) and the decay time constant of the thermal neutron population?",
+      "choices": [
+        "They are inversely proportional",
+        "They are directly proportional",
+        "They are related exponentially",
+        "They are independent of each other"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The decay time constant is equal to the inverse of the product of the neutron velocity and the macroscopic absorption cross-section. Therefore, a higher Sigma results in a shorter decay time (faster decay).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 15 Pulsed Neutron Devices and Spectroscopy",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on decay time definitions."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_diffusion_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Thermal Neutron Die-Away",
+        "Diffusion Effect"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does the diffusion of thermal neutrons typically affect the 'apparent' capture cross-section measured by a logging tool compared to the 'intrinsic' formation value?",
+      "choices": [
+        "Diffusion increases the neutron population locally, causing the apparent Sigma to read lower than the intrinsic value.",
+        "Diffusion causes neutrons to move away from the detector, making the population decay faster and the apparent Sigma read higher than the intrinsic value.",
+        "Diffusion only affects epithermal neutrons and has no impact on the thermal Sigma measurement.",
+        "Diffusion stabilizes the neutron cloud, ensuring the apparent Sigma matches the intrinsic value exactly."
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The local apparent time constant is the sum of the intrinsic decay rate and a diffusion term. Diffusion typically reduces the local neutron density (neutrons moving from high density near source to low density far away), which looks like faster absorption. Faster decay corresponds to a higher apparent Sigma.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 15 Pulsed Neutron Devices and Spectroscopy",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on diffusion corrections."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_carbon_oxygen_logging_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Spectroscopy",
+        "Carbon/Oxygen Log"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Under what specific reservoir condition is the Carbon/Oxygen (C/O) ratio logging technique preferred over standard Thermal Neutron Die-Away (Sigma) logging for saturation determination?",
+      "choices": [
+        "When the formation water salinity is low, fresh, or unknown",
+        "When the formation contains high-pressure natural gas",
+        "When the borehole is filled with highly saline drilling fluid",
+        "When the porosity is extremely low (less than 5%)"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Standard Sigma logging relies on the contrast in capture cross-section between saline water (high Sigma due to Cl) and oil (low Sigma). In fresh water, this contrast disappears. C/O logging measures the atomic ratio of Carbon to Oxygen, which distinguishes oil (Carbon-rich) from water (Oxygen-rich) regardless of salinity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 15 Pulsed Neutron Devices and Spectroscopy",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on C/O logging applications."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_spectroscopy_timing_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Spectroscopy",
+        "Inelastic Scattering"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "To measure inelastic gamma rays for Carbon/Oxygen analysis, during which part of the pulsed neutron cycle must the data acquisition occur?",
+      "choices": [
+        "During the neutron burst",
+        "During the thermal decay period (hundreds of microseconds after burst)",
+        "During the background measurement gate",
+        "Continuously throughout the entire cycle"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Inelastic scattering reactions occur only when neutrons have high energy (above the threshold energy for the reaction). High-energy neutrons are present primarily during the burst. Once the burst ends, neutrons rapidly thermalize (within microseconds), stopping inelastic reactions and initiating capture reactions.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 15 Pulsed Neutron Devices and Spectroscopy",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on spectroscopy timing gates."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_water_flow_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Production Engineering"
+      ],
+      "topics": [
+        "Water Flow Monitoring",
+        "Oxygen Activation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Which nuclear reaction mechanism is utilized by pulsed neutron tools to detect and measure water flow behind casing?",
+      "choices": [
+        "Inelastic scattering off Carbon atoms",
+        "Thermal neutron capture by Chlorine",
+        "Oxygen activation producing Nitrogen-16",
+        "Epithermal neutron slowing down"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Water flow is monitored using Oxygen activation. High-energy neutrons interact with Oxygen-16 via an (n,p) reaction to produce unstable Nitrogen-16, which decays with a ~7-second half-life emitting high-energy gamma rays. Detecting these delayed gamma rays downstream indicates water movement.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 15 Pulsed Neutron Devices and Spectroscopy",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on oxygen activation logging."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_saturation_interpretation_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Thermal Neutron Die-Away",
+        "Interpretation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Which statement correctly describes the mixing law used to interpret water saturation from the macroscopic capture cross-section (Sigma) in a clean formation?",
+      "choices": [
+        "It is a linear volumetric sum of the cross-sections of the matrix and fluids.",
+        "It follows a non-linear relationship similar to the Archie equation exponents.",
+        "It depends primarily on the density difference between oil and water.",
+        "It requires a logarithmic transformation of the measured cross-section."
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Since Sigma is a macroscopic cross-section, it combines volumetrically. The total Sigma is the sum of the matrix Sigma weighted by (1-phi) and the fluid Sigma weighted by phi. The fluid Sigma is further split into water and hydrocarbon components based on saturation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 15 Pulsed Neutron Devices and Spectroscopy",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on the mixing law for sigma."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_geochemical_logging_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Spectroscopy",
+        "Geochemical Logging"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In geochemical logging based on capture spectroscopy, what is the 'oxide closure model' used for?",
+      "choices": [
+        "To convert relative elemental yields into absolute weight concentrations by assuming unmeasured elements are oxides.",
+        "To seal the detector housing against high-pressure borehole fluids.",
+        "To correct for the oxygen activation interference in the capture spectrum.",
+        "To determine the porosity by closing the gap between neutron and density logs."
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Capture spectroscopy measures relative yields of elements but not their absolute concentrations. Since Oxygen (the most abundant element) is not directly measured in capture mode, the closure model assumes elements exist as oxides (or carbonates) and sums them to 100% (or uses an approximate normalization factor) to solve for absolute weight fractions.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 15 Pulsed Neutron Devices and Spectroscopy",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on geochemical processing."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_porosity_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Pulsed Neutron Porosity",
+        "Slowing Down Time"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Beyond estimating porosity or hydrogen index, what specific borehole parameter can be derived from the 'slowing-down time' measurement in an epithermal pulsed neutron tool?",
+      "choices": [
+        "Formation temperature",
+        "Tool standoff distance",
+        "Mud resistivity",
+        "Cement bond quality"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The slowing-down time of epithermal neutrons is sensitive to the local hydrogen environment. Analysis of the early time decay allows the determination of tool standoff from the borehole wall, which is a critical environmental correction for neutron porosity tools.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 15 Pulsed Neutron Devices and Spectroscopy",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on slowing down time applications."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_borehole_signal_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Thermal Neutron Die-Away",
+        "Tool Design"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In a pulsed neutron capture log, how is the unwanted gamma ray signal from the borehole fluid typically distinguished from the desired formation signal?",
+      "choices": [
+        "By analyzing the decay curve components, as the borehole signal typically decays much faster than the formation signal.",
+        "By using a chemical neutron source instead of a pulsed generator to eliminate borehole activation.",
+        "By shielding the detectors with cadmium to filter out all borehole gamma rays.",
+        "By measuring only the inelastic gamma rays which are not produced in the borehole fluid."
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The borehole signal (if the fluid is saline) typically has a much larger cross-section (shorter decay time) than the formation. By analyzing the time-decay of the gamma rays, the rapidly decaying borehole component can be separated from the slower decaying formation component, or specific time gates can be positioned after the borehole signal has died away.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 15 Pulsed Neutron Devices and Spectroscopy",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on borehole signal correction."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
