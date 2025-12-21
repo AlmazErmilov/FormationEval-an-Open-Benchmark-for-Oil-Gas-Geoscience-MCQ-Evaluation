@@ -7602,5 +7602,426 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_clay_mineralogy_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Clay Mineralogy",
+        "Cation Exchange Capacity"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Which of the following statements correctly describes the structural and electrical differences between kaolinite and montmorillonite?",
+      "choices": [
+        "Kaolinite has a 2:1 sheet structure with high cation exchange capacity, while montmorillonite has a 1:1 structure with low capacity",
+        "Kaolinite has a 1:1 sheet structure with low cation exchange capacity, while montmorillonite has a 2:1 structure with high capacity",
+        "Both minerals share a 2:1 sheet structure, but kaolinite has significantly higher potassium content",
+        "Both minerals have negligible cation exchange capacities because they are electrically neutral aluminosilicates"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Kaolinite consists of a simple 1:1 stacking of octahedral and tetrahedral sheets with low isomorphic substitution, resulting in a low Cation Exchange Capacity (CEC) (3-5 meq/100g). Montmorillonite has a 2:1 structure with significant substitution and a large interlayer space that allows for swelling and a high CEC (80-150 meq/100g).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 21 Clay Quantification",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 21.2 on clay structure and properties."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_porosity_definitions_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Porosity",
+        "Clay Bound Water"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the context of log analysis, how is 'effective porosity' typically distinguished from 'total porosity' regarding clay content?",
+      "choices": [
+        "Effective porosity excludes all water, whereas total porosity includes free and bound water",
+        "Effective porosity is the total porosity minus the volume of clay bound water",
+        "Effective porosity includes unconnected pores, while total porosity excludes them",
+        "Effective porosity is measured on crushed samples, while total porosity is measured on whole cores"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "For log analysts, effective porosity is defined as the total porosity less the clay bound water ($V_{cbw}$), which corresponds to the water held in the electrical double layer and is assumed not to move during production.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 21 Clay Quantification",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 21.2.2 on porosity definitions."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petroleum_geology_formation_damage_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petroleum Geology",
+        "Production Engineering"
+      ],
+      "topics": [
+        "Formation Damage",
+        "Clay Mineralogy"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why is the presence of iron-rich chlorite in a reservoir a specific concern for production stimulation operations involving acid?",
+      "choices": [
+        "Chlorite swells significantly when in contact with acid, reducing permeability",
+        "Chlorite reacts with acid to precipitate a gelatinous iron compound that blocks pores",
+        "Chlorite forms migratory fines that block pore throats when the pH is lowered",
+        "Chlorite dissolves completely, causing the formation framework to collapse"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Iron-rich chlorite is sensitive to acid, which is often used to dissolve carbonate cements. Exposing chlorite to acid causes the precipitation of a gelatinous iron compound that can permanently halt production.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 21 Clay Quantification",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 21.2.3 on dispersed shale and formation damage."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_log_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Porosity",
+        "Shale Effect"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "What is the primary physical cause for the large separation between density porosity and thermal neutron porosity observed in shales?",
+      "choices": [
+        "The high concentration of hydroxyls ($OH^-$) in the clay mineral structure",
+        "The presence of thermal neutron absorbers like boron and gadolinium",
+        "The extremely high density of the clay matrix compared to quartz",
+        "The presence of micro-porosity filled with irreducible hydrocarbons"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "While thermal absorbers like boron contribute a small amount (6-8 p.u.) to the separation, the largest part of the separation in shales is caused by the hydrogen associated with the hydroxyls ($OH^-$) in the clay mineral lattice, which the neutron tool interprets as porosity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 21 Clay Quantification",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 21.3.2 on neutron response to shale."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_pe_log_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Photoelectric Factor",
+        "Clay Indicators"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "When using the Photoelectric Factor ($P_e$) log as a clay indicator in shaly sands, which element is primarily responsible for the 'excess $P_e$' observed in the shale compared to clean sand?",
+      "choices": [
+        "Aluminum (Al)",
+        "Silicon (Si)",
+        "Potassium (K)",
+        "Iron (Fe)"
+      ],
+      "answer_index": 3,
+      "answer_key": "D",
+      "rationale": "The $P_e$ of aluminosilicates (clays) would be similar to sand if determined only by silicon and aluminum. The increased $P_e$ in shales is primarily due to the presence of iron in the clay minerals. Iron has a higher atomic number (Z=26) compared to Si (14) or Al (13), strongly affecting the photoelectric absorption.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 21 Clay Quantification",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 21.3.1 on interpretation of Pe in shaly sands."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_elemental_analysis_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Geochemical Logging",
+        "Clay Quantification"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Although Aluminum is theoretically the best single element for clay indication, it is difficult to measure directly. What practical alternative using elemental analysis is often employed to estimate clay volume?",
+      "choices": [
+        "A correlation based on the ratio of Iron to Potassium",
+        "An anti-correlation with Silicon, often corrected for carbonates and iron-rich minerals",
+        "A direct measurement of the Calcium content",
+        "A measurement of Gadolinium concentration"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "A practical method relies on the strong anti-correlation between clay content and Silicon. As clay content increases, Silicon decreases (quartz is replaced by aluminosilicates). The estimate is improved by subtracting contributions from carbonates (Ca, Mg) and heavy minerals (Fe).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 21 Clay Quantification",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 21.5 on elemental analysis."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_density_crossplot_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron-Density Crossplot",
+        "Clay Quantification"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In a neutron-density crossplot analysis, what is the key difference between using a 'shale point' versus a 'dry clay point'?",
+      "choices": [
+        "The shale point represents the specific clay mineral without any water, while the dry clay point includes bound water",
+        "The shale point is empirically picked from massive shales including their bound and pore water, while the dry clay point is a theoretical value for the mineral matrix alone",
+        "The shale point leads to a calculation of total porosity, while the dry clay point leads to effective porosity",
+        "There is no difference; the terms are used interchangeably in modern software"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The traditional 'shale point' is picked from log readings in massive shales, which contain wet clay and some silt/pore water. The 'dry clay point' is calculated based on the chemical composition of the clay mineral (e.g., kaolinite) excluding the bound water but including hydroxyls. Using the dry clay point typically yields total porosity, whereas the shale point method yields effective porosity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 21 Clay Quantification",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 21.4 on neutron-density plots."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_cec_surface_area_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Cation Exchange Capacity",
+        "Surface Area"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the relationship between specific surface area and Cation Exchange Capacity (CEC) for standard clay minerals?",
+      "choices": [
+        "They are inversely related; higher surface area means lower CEC",
+        "They show a direct linear correlation; higher surface area corresponds to higher CEC",
+        "There is no correlation; CEC depends only on isomorphous substitution, not size",
+        "They are exponentially related; CEC increases as the square of surface area"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Data from Patchett and others demonstrate a direct linear link between specific surface area and CEC. Since the negative surface charge (which drives CEC) is partly due to broken bonds on the sheet structure and the platy nature of clays, the larger the surface area (as seen in Montmorillonite), the higher the CEC.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 21 Clay Quantification",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 21.2.1 and Fig 21.2."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_clay_typing_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Clay Typing",
+        "Sigma Logging"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Which combination of log responses best distinguishes Illite from Kaolinite?",
+      "choices": [
+        "Illite has a high capture cross-section (Sigma) and low neutron-density separation; Kaolinite has low Sigma and high separation",
+        "Illite has low Sigma and high separation; Kaolinite has high Sigma and low separation",
+        "Both have identical responses and can only be distinguished by Potassium content",
+        "Both appear as clean sands on neutron-density logs but differ in Photoelectric factor"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Illite is an (OH)4 clay (lower hydrogen/hydroxyl content) but typically contains Potassium and Iron (and potentially Boron), leading to a high capture cross-section ($\u03a3$) and relatively lower neutron-density separation. Kaolinite is an (OH)8 clay (high hydroxyl content) with generally lower neutron absorbers, leading to a low $\u03a3$ but a very high neutron-density separation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 21 Clay Quantification",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 21.3.3 and Fig 21.13."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_shale_distribution_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Shale Distribution",
+        "Porosity"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does the addition of 'dispersed' shale affect the total porosity of a clean sand compared to 'structural' shale?",
+      "choices": [
+        "Dispersed shale replaces sand grains, keeping porosity constant; Structural shale fills pores, reducing porosity",
+        "Dispersed shale fills pore space, reducing porosity; Structural shale replaces sand grains, leaving original porosity largely unaltered",
+        "Both reduce porosity at the exact same rate per unit volume",
+        "Dispersed shale increases porosity due to micro-fractures; Structural shale decreases it"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Dispersed shale resides in the pore space between sand grains, directly reducing the original porosity. Structural shale is part of the rock framework (replacing sand grains), so the original intergranular porosity is not initially altered, though the bulk composition changes.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 21 Clay Quantification",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 21.2.3 and Fig 21.4."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
