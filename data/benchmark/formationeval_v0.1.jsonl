@@ -5486,5 +5486,635 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_nmr_physics_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "NMR Physics",
+        "Larmor Frequency"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "In the context of Nuclear Magnetic Resonance (NMR) logging, what primary factors determine the Larmor frequency at which protons precess?",
+      "choices": [
+        "The fluid viscosity and the formation temperature",
+        "The gyromagnetic ratio of the nucleus and the strength of the magnetic field",
+        "The porosity of the formation and the hydrogen index",
+        "The pulse echo spacing and the magnetic field gradient"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The Larmor frequency is the rate at which the angular momentum vector of a nucleus precesses around an external magnetic field. It is mathematically defined as the product of the gyromagnetic ratio (a constant specific to the nuclear species, such as hydrogen) and the strength of the applied magnetic field.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.1.1 on Nuclear Resonance Magnetometers."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_nmr_relaxation_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "NMR Relaxation",
+        "Pulse Sequences"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the primary function of the CPMG (Carr-Purcell-Meiboom-Gill) pulse sequence in modern NMR logging?",
+      "choices": [
+        "To measure the longitudinal relaxation time (T1) by inverting the spin population",
+        "To eliminate the irreversible dephasing caused by molecular interactions",
+        "To mitigate the effect of static magnetic field inhomogeneities on spin dephasing",
+        "To polarize the protons in the formation using the earth's magnetic field"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The CPMG sequence uses a series of 180-degree pulses to reverse the phase of precessing protons. This rephasing process generates spin echoes, effectively cancelling out the dephasing caused by fixed spatial inhomogeneities in the static magnetic field, allowing the measurement of the true transverse relaxation (T2) caused by molecular interactions.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.3.5 on Spin Echoes."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_nmr_diffusion_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Diffusion",
+        "Tool Physics"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In an NMR tool with a magnetic field gradient, how does increasing the inter-echo spacing (Te) affect the observed transverse relaxation rate?",
+      "choices": [
+        "It decreases the relaxation rate linearly because protons have less time to diffuse",
+        "It has no effect on the relaxation rate for bulk fluids, only for surface relaxation",
+        "It significantly increases the relaxation rate due to diffusion, proportional to the square of Te",
+        "It increases the signal-to-noise ratio but does not alter the decay rate"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "When a magnetic gradient exists, molecular diffusion causes protons to move into regions with different magnetic field strengths during the measurement, leading to irreversible dephasing. The decay rate contribution from this diffusion is proportional to the diffusion coefficient, the square of the gradient, and the square of the echo spacing (Te). Therefore, increasing Te drastically increases the diffusion-induced decay.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.3.6 on Relaxation and Diffusion in Magnetic Gradients."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_porous_media_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Porous Media",
+        "Surface Relaxation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In water-wet sandstone pores, what is the dominant mechanism controlling the relaxation time of the water protons?",
+      "choices": [
+        "Bulk fluid relaxation similar to that of water in a beaker",
+        "Surface relaxation caused by interactions with paramagnetic sites on grain walls",
+        "Diffusion relaxation caused by the earth's magnetic field gradient",
+        "Molecular shearing due to high fluid viscosity"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "In porous media like sandstones, the relaxation of water is much faster than in bulk water. This is due to surface relaxation, where fluid molecules diffuse to the pore walls and interact with paramagnetic impurities (like iron). The rate of this relaxation is controlled by the surface relaxivity and the surface-to-volume ratio of the pores.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.5.1 on Surface Interactions."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_pore_size_distribution_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Pore Size Distribution",
+        "Fast Diffusion Limit"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Under the fast diffusion limit assumption, how is the T2 distribution obtained from an NMR log interpreted?",
+      "choices": [
+        "As a direct mapping of the pore size distribution, where short T2 corresponds to small pores",
+        "As a measure of the chemical composition of the rock matrix",
+        "As a representation of the bulk fluid viscosity distribution only",
+        "As an indicator of the temperature gradient within the borehole"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "In the fast diffusion limit, molecules diffuse across the pore space quickly enough to average the relaxation effects. Consequently, the decay rate is proportional to the surface-to-volume ratio. Since the surface-to-volume ratio is inversely related to pore size, the distribution of T2 relaxation times acts as a proxy for the pore size distribution, with shorter times indicating smaller pores.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.5.2 on Pore Size Distribution."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_fluid_properties_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Fluid Properties",
+        "Viscosity"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the general relationship between the viscosity of a crude oil and its NMR relaxation time (T1 or T2)?",
+      "choices": [
+        "Relaxation time increases as the square of viscosity",
+        "Relaxation time is independent of viscosity and depends only on temperature",
+        "Relaxation time is inversely proportional to viscosity",
+        "Relaxation time is directly proportional to viscosity"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "For bulk fluids like crude oil, the relaxation rate (1/T1 or 1/T2) is controlled by the correlation time of molecular interactions, which relates to Brownian motion. Experimental correlations show that the relaxation time is inversely proportional to the viscosity of the oil; highly viscous oils have very short relaxation times, while light oils have longer relaxation times.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.4.2 on Bulk Relaxation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_permeability_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Permeability",
+        "Interpretation Models"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Which NMR-derived parameter is used in the SDR (Schlumberger-Doll Research) model to estimate formation permeability?",
+      "choices": [
+        "The ratio of free fluid index (FFI) to bound fluid volume (BVI)",
+        "The logarithmic mean of the T2 distribution (T2,LM)",
+        "The diffusion coefficient of the gas phase",
+        "The hydrogen index of the pore fluid"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The SDR permeability model relies on the connection between pore size and relaxation time. It estimates permeability using the total porosity and the logarithmic mean of the T2 distribution (T2,LM), essentially treating T2,LM as a proxy for the average pore size.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.8.3 on Permeability Estimation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_cutoff_values_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "T2 Cutoff",
+        "Sandstone"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What is the standard T2 cutoff value typically used to distinguish between capillary-bound water and producible fluids in sandstone formations?",
+      "choices": [
+        "3 ms",
+        "12 ms",
+        "33 ms",
+        "100 ms"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Based on comparisons between NMR data and centrifuge experiments, a T2 cutoff of approximately 33 ms is standard for partitioning the porosity of sandstones into capillary-bound water (below the cutoff) and producible free fluids (above the cutoff).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.8.2 on Porosity and Free-Fluid Porosity."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_gas_detection_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Gas Detection",
+        "Porosity Deficit"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Why does an NMR log typically underestimate porosity in a gas-bearing zone compared to a density/neutron cross-plot?",
+      "choices": [
+        "Gas causes extremely fast surface relaxation that cannot be detected by the tool",
+        "Gas has a low hydrogen index and a long T1 that may lead to incomplete polarization",
+        "Gas is highly viscous, pushing the signal into the clay-bound water region",
+        "Gas creates internal gradients that increase the signal amplitude artificially"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Gas affects the NMR porosity measurement in two ways: it has a low hydrogen density (Hydrogen Index < 1) compared to water/oil, reducing the signal amplitude per unit volume. Additionally, gas often has a very long T1 relaxation time; if the polarization wait time of the tool is too short, the hydrogen in the gas will not be fully polarized, further reducing the measured signal.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.8.4.1 on Gas and Tar Determination."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_heavy_oil_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Heavy Oil",
+        "Bitumen"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "How does bitumen or very heavy oil typically appear on a standard NMR log?",
+      "choices": [
+        "It appears as Free Fluid with a very long T2",
+        "It shows a distinct peak at 33 ms similar to capillary water",
+        "It may be invisible or appear as a porosity deficit because its T2 is extremely short",
+        "It causes a large shift in the neutron porosity but has no effect on NMR"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Bitumen has extremely high viscosity, which results in a very short relaxation time (T2 often less than 1 ms). In many logging tools, this signal decays so fast it occurs during the tool's 'dead time' or is interpreted as part of the solid matrix/clay bound water. Consequently, bitumen is often 'missed', appearing as a deficit between NMR porosity and total porosity from nuclear logs.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.8.4.1 regarding Bitumen/Tar."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_fluid_typing_011",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Fluid Typing",
+        "Diffusion Maps"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "When using a Diffusion-T2 (D-T2) map for fluid typing, how are water and medium-viscosity oil typically distinguished?",
+      "choices": [
+        "Water plots at a higher diffusion coefficient than oil for a given T2",
+        "Oil plots at a higher diffusion coefficient than water due to its hydrocarbon nature",
+        "Water and oil cannot be distinguished on a D-T2 map; gas is required",
+        "Oil plots on the gas trend line while water remains stationary"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "On a D-T2 map, water plots along a line corresponding to the self-diffusion coefficient of bulk water (which is relatively high). Medium-viscosity oil generally has a lower diffusion coefficient than water. Therefore, oil signals cluster at lower D values compared to water signals, allowing for separation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.8.4.2 on Viscosity and D-T2 maps."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_tool_physics_012",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Tool Design",
+        "Gradient Fields"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "In modern NMR logging tools with permanent magnets that create a magnetic field gradient, what determines the depth of investigation (the distance into the formation where resonance occurs)?",
+      "choices": [
+        "The strength of the doping agent in the mud",
+        "The frequency of the operational RF pulse",
+        "The temperature of the formation fluids",
+        "The length of the wait time between pulse sequences"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Tools with gradient fields have a magnetic field strength that varies with distance from the tool. Since the resonance (Larmor) frequency is directly proportional to the magnetic field strength, tuning the tool to a specific RF frequency effectively selects a specific 'shell' or depth of investigation where the field strength matches that frequency.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.7.3 on CMR and Gradient Tools."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_permeability_models_013",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Permeability",
+        "Coates Model"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "The Coates-Timur permeability equation estimates permeability based on porosity and which other ratio?",
+      "choices": [
+        "The ratio of Free Fluid Index (FFI) to Bound Volume Irreducible (BVI)",
+        "The ratio of Hydrogen Index (HI) to Bulk Density",
+        "The ratio of T1 relaxation to T2 relaxation",
+        "The ratio of diffusion coefficient to viscosity"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The Coates-Timur relationship calculates permeability as a function of porosity raised to a power (typically 4) and the square of the ratio of free fluid volume (FFI) to bound fluid volume (BVI). This attempts to capture the relationship between pore throat size and the proportion of movable to immovable fluids.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.8.3 on Permeability Estimation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_internal_gradients_014",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Relaxation Mechanisms",
+        "Internal Gradients"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In clay-rich sandstones, what phenomenon can cause water signals on a D-T2 map to appear at apparent diffusion coefficients higher than bulk water?",
+      "choices": [
+        "Restricted diffusion in small pores",
+        "Internal magnetic gradients caused by magnetic susceptibility contrast between fluid and rock",
+        "The presence of dissolved gas in the water phase",
+        "Temperature effects reducing the viscosity of the water"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Internal magnetic gradients arise from the magnetic susceptibility contrast between the pore fluid and the rock matrix (often due to iron in clays). These internal gradients add to the tool's applied gradient, causing increased dephasing. On a D-T2 map, this excess dephasing is interpreted as a higher diffusion coefficient, pushing the water signal above the standard water line.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.8.4.2 and Fig 16.41."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_carbonate_interpretation_015",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Carbonates",
+        "T2 Cutoff"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why is the application of a standard T2 cutoff for bound water often less reliable in carbonates than in sandstones?",
+      "choices": [
+        "Carbonates never contain paramagnetic impurities to cause surface relaxation",
+        "Carbonates often exhibit weak diffusional coupling between micropores and macropores",
+        "Carbonates have a uniform pore size distribution unlike sandstones",
+        "Carbonate pore structures are often complex with variable surface relaxivity and unconnected vugs"
+      ],
+      "answer_index": 3,
+      "answer_key": "D",
+      "rationale": "Carbonates have complex pore systems ranging from micropores to large vugs, often with variable surface relaxivity. Unlike sandstones where pore size correlates well with T2, carbonates may show unimodal distributions even with wide pore size variations due to diffusional coupling or isolated vugs, making a single T2 cutoff (like the 93 ms often cited) less universally applicable.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 16 Nuclear Magnetic Logging",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 16.8.3 on Pore Size Distribution."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
