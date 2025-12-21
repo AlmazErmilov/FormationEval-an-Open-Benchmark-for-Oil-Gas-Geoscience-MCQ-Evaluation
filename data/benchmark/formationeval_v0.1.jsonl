@@ -2401,5 +2401,391 @@
         "calc_required": false,
         "contamination_risk": "high"
       }
+    }, 
+    {
+      "id": "formationeval_v0.1_petrophysics_induction_logging_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Induction Logging",
+        "Signal Processing",
+        "Phasor Induction"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the Phasor induction processing algorithm, what specific role does the measured X-signal (quadrature signal) play in improving the final log response?",
+      "choices": [
+        "It corrects for the vertical spatial distribution of the skin effect",
+        "It cancels out the borehole signal in conductive muds",
+        "It eliminates polarization horns at dipping bed boundaries",
+        "It provides the primary measurement of formation resistivity in resistive beds"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The X-signal, or skin-effect signal, is used to account for the spatial distribution of skin effect. While simple boosting corrects skin effect in homogeneous media, the Phasor algorithm uses the X-signal to correctly place the skin-effect correction in layered media, as the vertical distribution of the X-signal resembles the vertical distribution of the skin effect error.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 8 Multi-Array and Triaxial Induction Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 8.2 on Phasor Induction."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_induction_logging_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Induction Logging",
+        "Inverse Filtering",
+        "Resolution Enhancement"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Why is it mathematically impossible to design a perfect inverse filter to fully sharpen the vertical resolution of a traditional deep induction (ILd) array?",
+      "choices": [
+        "The array response possesses a blind frequency at 0.2 cycles/ft where it captures no information",
+        "The skin effect introduces a non-linear phase shift that cannot be deconvolved",
+        "The sampling rate of the tool is insufficient to satisfy the Nyquist limit for thin beds",
+        "The borehole signal dominates the high-frequency response spectrum"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The spatial frequency response of the ILd array drops to zero at 0.2 cycles/ft (corresponding to a bed thickness of 2.5 ft). This is a 'blind frequency' where the measurement contains no information. An inverse filter would require infinite weight at this frequency to reconstruct the formation profile, which is impossible.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 8 Multi-Array and Triaxial Induction Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 8.2.1 on Inverse Filtering."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_induction_hardware_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Induction Logging",
+        "Tool Design",
+        "Sonde Error"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Modern multi-array induction tools (like the AIT) utilize a conductive metal mandrel rather than the fiberglass housing used in earlier tools. What is the primary technical advantage of this design?",
+      "choices": [
+        "It stabilizes the sonde error signal against temperature variations",
+        "It amplifies the magnetic field generated by the transmitter coils",
+        "It completely blocks the borehole signal from reaching the receiver coils",
+        "It allows the tool to measure formation density simultaneously"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "A perfectly conducting mandrel forces the electric field on its surface to zero, generating no in-phase signal at the receiver. In practice, the metal mandrel produces a small, predictable sonde error that is thermally stable, unlike fiberglass sondes where thermal expansion could alter coil spacings and cause signal drift.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 8 Multi-Array and Triaxial Induction Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 8.4.1 Multi-Array Devices."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_multi_array_processing_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Induction Logging",
+        "Multi-Array Processing",
+        "Log Generation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How do multi-array induction tools generate a specific output log, such as a curve with a 90-inch depth of investigation and 2-ft vertical resolution?",
+      "choices": [
+        "By combining weighted contributions from multiple coil arrays via a multichannel filter",
+        "By physically adjusting the spacing between the transmitter and receiver coils downhole",
+        "By applying a frequency-domain correction to the single deepest-reading array",
+        "By extrapolating the trend of the shallowest array using an invasion model"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Multi-array tools use a set of simple coil arrays. The raw responses from these arrays are combined in software using a multichannel filter. Specific weights are applied to the data from different arrays to construct a log with the desired vertical resolution and radial depth of investigation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 8 Multi-Array and Triaxial Induction Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 8.4 Multi-Array Inductions (Fig 8.6)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_dipping_beds_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Induction Logging",
+        "Dipping Beds",
+        "Log Artifacts"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "When an induction tool crosses a bed boundary at a high relative dip angle, 'horns' or spikes often appear on the resistivity log. What physical phenomenon causes this artifact?",
+      "choices": [
+        "Electrical charge buildup at the boundary required to maintain continuity of eddy currents",
+        "Excessive skin effect concentrating current density within the conductive layer",
+        "Interference from the borehole acting as a waveguide for the induction signal",
+        "Resonance of the coil array blind frequency with the bed thickness"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "When eddy currents (which circulate coaxially with the tool) cross a bed boundary separating regions of different conductivity, Ohm's law requires a jump in the electric field to maintain current continuity. This jump is caused by a charge buildup or polarization at the boundary, which oscillates and acts as a secondary transmitter, creating the 'horn' artifact.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 8 Multi-Array and Triaxial Induction Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 8.4.5 Dipping Beds."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_dipping_beds_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Induction Logging",
+        "Dipping Beds",
+        "Signal Processing"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "What is the primary operational advantage of using the 'Grimaldi' processing method for multi-array induction data in deviated wells?",
+      "choices": [
+        "It removes shoulder bed effects without requiring knowledge of the dip angle",
+        "It allows for the simultaneous calculation of formation density and resistivity",
+        "It significantly increases the depth of investigation beyond the invasion zone",
+        "It reconstructs the true formation dip angle using only coaxial coils"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The Grimaldi method utilizes the observation that shoulder contributions drop off as 1/z^2. By subtracting signals from two arrays centered at the same point (simulated using bucking coils), shoulder signals cancel out. This provides a log free of shoulder effect that is practically independent of dip angle, meaning the dip angle does not need to be known or input for processing.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 8 Multi-Array and Triaxial Induction Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 8.4.5 Dipping Beds."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_triaxial_induction_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Triaxial Induction",
+        "Anisotropy",
+        "Coil Design"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does the skin effect observed in coplanar coil arrays (xx or yy) differ from that in standard coaxial (zz) arrays?",
+      "choices": [
+        "Coplanar arrays exhibit a much stronger skin effect, causing the R-signal to peak at lower conductivities",
+        "Coplanar arrays are immune to skin effect due to their orientation",
+        "Coplanar arrays show a skin effect that decreases as formation conductivity increases",
+        "Coplanar arrays have a skin effect that is identical to coaxial arrays in isotropic formations"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Coplanar coils have higher-order expansion terms for skin effect than coaxial coils. This results in a stronger skin effect where the R-signal peaks at a much lower conductivity value and decreases (potentially becoming negative) as conductivity increases further.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 8 Multi-Array and Triaxial Induction Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 8.5.1 Response of Coplanar Coils."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_triaxial_induction_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Triaxial Induction",
+        "Borehole Effects"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why are coplanar coil measurements in triaxial tools significantly more sensitive to borehole conditions and tool eccentricity than standard coaxial measurements?",
+      "choices": [
+        "The induced current lines cross the borehole, allowing it to act as a waveguide",
+        "The coplanar coils operate at a frequency that resonates with the mud column",
+        "The depth of investigation of coplanar coils is restricted entirely to the borehole",
+        "The magnetic field of coplanar coils is parallel to the tool axis"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "For coplanar coils (axes perpendicular to the borehole), the induced current lines cross the axis between the coils and thus cross the borehole itself. This causes the borehole to act as a waveguide, accentuating the borehole signal and making the measurement highly sensitive to tool eccentering.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 8 Multi-Array and Triaxial Induction Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 8.5.1 Response of Coplanar Coils."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_anisotropy_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Anisotropy",
+        "Reservoir Evaluation",
+        "Triaxial Induction"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In the evaluation of thinly laminated sand-shale sequences using multicomponent induction data, what physical model is typically used to solve for the resistivity of the hydrocarbon-bearing sand?",
+      "choices": [
+        "Parallel sum for horizontal resistivity and series sum for vertical resistivity",
+        "Series sum for horizontal resistivity and parallel sum for vertical resistivity",
+        "Volumetric average of conductivities for both vertical and horizontal components",
+        "Standard Archie equation with a variable cementation exponent"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Horizontal resistivity ($R_h$) in laminated formations is modeled as the parallel sum of the sand and shale layers (dominated by the conductive shale). Vertical resistivity ($R_v$) is modeled as the series sum of the layers (sensitive to the resistive sand). These two equations are combined to solve for the sand resistivity ($R_{sd}$).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 8 Multi-Array and Triaxial Induction Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from section 8.5.2 Multicomponent Devices (Eq 8.7-8.9)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
