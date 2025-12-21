@@ -4309,5 +4309,425 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_scattering_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Interactions",
+        "Elastic Scattering"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why is hydrogen considered the most effective element for slowing down fast neutrons through elastic scattering?",
+      "choices": [
+        "Hydrogen has an anomalously large capture cross-section that absorbs high-energy neutrons immediately",
+        "The mass of a hydrogen nucleus is nearly equal to that of a neutron, allowing for maximum energy transfer in a single collision",
+        "Hydrogen nuclei have a high threshold for inelastic scattering, which dissipates energy more efficiently than elastic scattering",
+        "The hydrogen nucleus creates a magnetic field that significantly decelerates neutral particles"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "In elastic scattering, energy loss is determined by the kinematics of the collision. Because the mass of a hydrogen nucleus (proton) is essentially the same as that of a neutron, a neutron can lose up to all of its energy in a single head-on collision. Heavier nuclei result in much smaller fractional energy losses per collision.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 13 Basic Neutron Physics for Logging Applications",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 13.2 regarding elastic scattering mechanics."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_absorption_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Absorption",
+        "Thermal Neutrons"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does the presence of elements like chlorine or gadolinium in a formation primarily affect neutron logging measurements?",
+      "choices": [
+        "They act as strong moderators, reducing the slowing-down length of fast neutrons",
+        "They cause a significant increase in the inelastic scattering of high-energy neutrons",
+        "They act as strong thermal absorbers, reducing the thermal neutron flux and diffusion length",
+        "They emit additional neutrons through particle reactions, artificially increasing the count rate"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Chlorine and gadolinium have very large thermal absorption cross-sections. Their presence depresses the thermal neutron population by capturing thermalized neutrons, thereby reducing the distance neutrons diffuse before capture (diffusion length) and lowering the count rates seen by thermal detectors.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 13 Basic Neutron Physics for Logging Applications",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 13.2 on absorption and Table 13.1."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_sources_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Sources",
+        "Logging Tools"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What is a primary operational advantage of using a deuterium-tritium (D-T) accelerator source over a chemical source like AmBe?",
+      "choices": [
+        "The D-T source produces a wider spectrum of neutron energies, mimicking natural radiation",
+        "The D-T source can be switched off for safety and pulsed for timing measurements",
+        "The D-T source requires no high-voltage power supply, making it more reliable downhole",
+        "The D-T source produces neutrons at a much lower energy (thermal), reducing shielding requirements"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Accelerator sources produce neutrons via electrically controlled nuclear reactions. This allows the tool to be turned off, improving safety during transport and handling, and enables pulsed operation for advanced timing measurements (like decay time), which is not possible with continuous chemical sources.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 13 Basic Neutron Physics for Logging Applications",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 13.3 on nuclear reactions and sources."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_detectors_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Detectors",
+        "Instrumentation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "To modify a standard Helium-3 neutron detector to measure primarily epithermal neutrons, what physical alteration is typically applied?",
+      "choices": [
+        "Increasing the pressure of the Helium-3 gas to 100 atmospheres",
+        "Replacing the Helium-3 gas with Boron Trifluoride (BF3)",
+        "Surrounding the detector with a cadmium shield to absorb thermal neutrons",
+        "Using a scintillator crystal instead of a proportional counter gas"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Standard Helium-3 detectors are sensitive to both thermal and epithermal neutrons. To isolate the epithermal response, a shield made of a strong thermal absorber (like cadmium) is wrapped around the detector. This shield absorbs neutrons with energies below the cadmium cutoff (~0.4 eV), allowing only higher-energy (epithermal) neutrons to pass through and be detected.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 13 Basic Neutron Physics for Logging Applications",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 13.5 regarding epithermal detectors."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_inelastic_scattering_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Interactions",
+        "Inelastic Scattering"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Which of the following statements correctly describes inelastic neutron scattering?",
+      "choices": [
+        "It occurs at all neutron energies and results in the conservation of kinetic energy",
+        "It has a threshold energy below which it cannot occur and typically produces gamma rays",
+        "It is the primary mechanism for slowing down neutrons in hydrogen-rich formations",
+        "It results in the neutron being absorbed by the nucleus and forming a compound isotope"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Inelastic scattering involves the neutron imparting energy to the nucleus, leaving it in an excited state. This reaction requires the incident neutron to have kinetic energy above a specific threshold (to bridge the energy gap to the excited state). The nucleus subsequently de-excites by emitting characteristic gamma rays.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 13 Basic Neutron Physics for Logging Applications",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 13.2 on inelastic scattering."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_physics_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Physics",
+        "Slowing Down"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "What is the significance of the average logarithmic energy decrement ($\\zeta$) in neutron physics?",
+      "choices": [
+        "It represents the probability of a neutron being captured rather than scattered",
+        "It quantifies the average loss of the logarithm of neutron energy per collision",
+        "It is the ratio of the final thermal energy to the initial source energy",
+        "It describes the exponential decay of the neutron flux with distance from the source"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The average logarithmic energy decrement ($\\zeta$) is a parameter used to describe the efficiency of a moderator. It is defined as the average change in the natural logarithm of the neutron energy per collision. For hydrogen, $\\zeta$ is 1, indicating very efficient slowing down.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 13 Basic Neutron Physics for Logging Applications",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 13.4.2 on lethargy and energy loss."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_characteristic_lengths_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Characteristic Lengths",
+        "Slowing Down"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Which definitions correctly distinguish the slowing-down length ($L_s$) from the diffusion length ($L_d$)?",
+      "choices": [
+        "$L_s$ characterizes the thermal phase until capture, while $L_d$ characterizes the high-energy scattering phase",
+        "$L_s$ is the total distance traveled, while $L_d$ is the straight-line distance from the source",
+        "$L_s$ relates to the transport from source energy to epithermal energy, while $L_d$ relates to the distance traveled during the thermal phase",
+        "$L_s$ depends only on the source type, while $L_d$ depends only on the detector type"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The slowing-down length ($L_s$) is proportional to the root-mean-square distance a neutron travels while losing energy from the source level down to the epithermal range. The diffusion length ($L_d$) describes the distance a neutron travels after it has become thermalized (at low energy) until it is eventually captured.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 13 Basic Neutron Physics for Logging Applications",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 13.4.4 on characteristic lengths."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_hydrogen_index_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Hydrogen Index",
+        "Porosity"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What is the definition of the Hydrogen Index (HI)?",
+      "choices": [
+        "The ratio of hydrogen atoms to oxygen atoms in a molecule",
+        "The concentration of hydrogen in a material compared to the hydrogen concentration of fresh water at standard conditions",
+        "The percentage of neutron energy lost in a single collision with a hydrogen nucleus",
+        "The mass of hydrogen in a formation divided by the bulk density of the rock matrix"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The Hydrogen Index (HI) is defined as the ratio of the hydrogen content (in grams per cubic centimeter) of a material or mixture to the hydrogen content of fresh water at standard temperature and pressure. Pure water has an HI of 1.0.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 13 Basic Neutron Physics for Logging Applications",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 13.4.1 regarding bulk parameters."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_thermal_capture_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Interactions",
+        "Cross Sections"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "For most common formation elements, how does the radiative capture (thermal absorption) cross-section vary with neutron energy?",
+      "choices": [
+        "It is constant across all energy levels",
+        "It increases linearly with neutron energy",
+        "It varies inversely with the square root of the neutron energy ($1/\\sqrt{E}$)",
+        "It is negligible at low energies and peaks at high energies"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The radiative capture cross-section is generally known as the thermal absorption cross-section. For most elements, this cross-section is largest at low energies and decreases as the neutron energy increases, following a $1/\\sqrt{E}$ relationship.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 13 Basic Neutron Physics for Logging Applications",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 13.2 regarding thermal absorption."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_slowing_down_collisions_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Slowing Down",
+        "Neutron Physics"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Comparing a 0 p.u. limestone to a water-saturated limestone, how does the number of collisions required to slow a neutron down to thermal energy change?",
+      "choices": [
+        "It is significantly higher in the 0 p.u. limestone because heavier elements are less efficient moderators",
+        "It is significantly lower in the 0 p.u. limestone because there is no hydrogen to absorb the neutrons",
+        "It is approximately the same because the rock matrix density compensates for the lack of fluid",
+        "It is higher in the water-saturated limestone because hydrogen increases the probability of collision"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Hydrogen is a very efficient moderator; a neutron can lose half its energy in a single collision with hydrogen. In a 0 p.u. limestone (calcium/carbon/oxygen matrix), the nuclei are much heavier, resulting in small energy losses per collision. Therefore, many more collisions (e.g., ~138 vs ~23) are required to slow the neutron down in the absence of hydrogen.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 13 Basic Neutron Physics for Logging Applications",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 13.4.3 and Figure 13.8."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
