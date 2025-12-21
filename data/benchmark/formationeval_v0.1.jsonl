@@ -733,14 +733,14 @@
       "language": "en",
       "question": "In the volumetric definition of rock properties, how is the total fractional volume of oil in a formation expressed?",
       "choices": [
-        "The product of porosity and water saturation ($\phi \times S_w$)",
-        "The product of porosity and oil saturation ($\phi \times S_o$)",
-        "The value of oil saturation ($S_o$) directly",
-        "The ratio of oil saturation to porosity ($S_o / \phi$)"
+        "The product of porosity and water saturation (φ × Sw)",
+        "The product of porosity and oil saturation (φ × So)",
+        "The value of oil saturation (So) directly",
+        "The ratio of oil saturation to porosity (So / φ)"
       ],
       "answer_index": 1,
       "answer_key": "B",
-      "rationale": "Porosity ($\phi$) is the fraction of total rock volume that is pore space. Oil saturation ($S_o$) is the fraction of that pore space filled with oil. Therefore, the fraction of the total bulk volume occupied by oil is the product of the two: $\phi \times S_o$.",
+      "rationale": "Porosity (φ) is the fraction of total rock volume that is pore space. Oil saturation (So) is the fraction of that pore space filled with oil. Therefore, the fraction of the total bulk volume occupied by oil is the product of the two: φ × So.",
       "sources": [
         {
           "source_id": "ellis_singer_well_logging_2007",
@@ -1769,5 +1769,5 @@
         "calc_required": false,
         "contamination_risk": "low"
       }
-    },
+    }
   ]
