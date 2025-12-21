@@ -3212,5 +3212,299 @@
         "calc_required": false,
         "contamination_risk": "low"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_nuclear_statistics_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Nuclear Statistics",
+        "Logging Speed"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "A logging engineer wishes to reduce the fractional statistical uncertainty of a nuclear measurement by a factor of two (e.g., from 10% to 5%). Assuming the source strength remains constant, how must the measurement time (or count accumulation time) change to achieve this improvement?",
+      "choices": [
+        "The measurement time must be doubled",
+        "The measurement time must be increased by a factor of four",
+        "The measurement time must be squared",
+        "The measurement time must be increased by the square root of two"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Nuclear decay follows Poisson statistics, where the fractional uncertainty (f) is inversely proportional to the square root of the total counts (N). Since N is linearly proportional to time (t), f is proportional to 1/sqrt(t). To reduce f by a factor of 2, the term sqrt(t) must increase by a factor of 2, which requires t to increase by a factor of 4.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 10 Basic Nuclear Physics for Logging Applications: Gamma Rays",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 10.3 on radioactive decay and statistics."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": true,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_gamma_interactions_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Photoelectric Effect",
+        "Lithology Identification"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Which characteristic of the photoelectric absorption process makes it the primary mechanism used for identifying formation lithology (rock matrix type) in gamma ray logging?",
+      "choices": [
+        "The cross-section is highly sensitive to the effective atomic number (Z) of the formation material",
+        "It is the only interaction that occurs at high gamma ray energies (> 1 MeV)",
+        "The interaction probability depends solely on the hydrogen index of the pore fluids",
+        "It produces a linear response to the bulk density of the formation regardless of composition"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The photoelectric absorption cross-section varies strongly with the atomic number (approximately Z^4.6). Since different rock matrices (sandstone, limestone, dolomite) have distinct average atomic numbers, the photoelectric factor (Pe) serves as a direct lithology indicator. Pore fluids generally have low Z and play a minor role.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 10 Basic Nuclear Physics for Logging Applications: Gamma Rays",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 10.5 on fundamental gamma ray interactions."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_gamma_interactions_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Compton Scattering",
+        "Density Logging"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the energy range where Compton scattering is the dominant interaction, why is the attenuation of gamma rays considered a reliable proxy for formation bulk density?",
+      "choices": [
+        "Compton scattering only occurs with hydrogen atoms, which correlate to pore volume",
+        "The ratio of atomic number to atomic mass (Z/A) is approximately constant for most rock-forming elements",
+        "The Compton cross-section increases exponentially with the atomic number (Z) of the matrix",
+        "Compton scattering is independent of the number of electrons in the formation"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Compton scattering depends on the electron density of the material. Bulk density is derived from electron density using the relationship between atomic number (Z) and atomic mass (A). For most sedimentary minerals, the ratio Z/A is very close to 0.5, allowing a direct linear transform from electron density to bulk density.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 10 Basic Nuclear Physics for Logging Applications: Gamma Rays",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 10.6 on attenuation and density derivation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_gamma_detectors_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Gamma Ray Detectors",
+        "Semiconductors"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the primary trade-off when selecting a germanium (Ge) semiconductor detector over a standard scintillation detector (like NaI) for downhole applications?",
+      "choices": [
+        "Ge detectors offer superior energy resolution but require cryogenic cooling to function",
+        "Ge detectors operate at higher temperatures but have very poor energy resolution",
+        "Ge detectors have much higher detection efficiency but cannot resolve different energy levels",
+        "Ge detectors are mechanically more rugged but require a radioactive source to operate"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Germanium detectors have a small band gap (approx. 0.7 eV), allowing them to produce many charge carriers per event, which results in excellent energy resolution. However, this small band gap means electrons can cross it via thermal excitation at room temperature, necessitating cryogenic cooling to reduce noise.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 10 Basic Nuclear Physics for Logging Applications: Gamma Rays",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 10.7.3 on semiconductor detectors."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_gamma_spectroscopy_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Gamma Ray Spectroscopy",
+        "Pair Production"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In a gamma ray energy spectrum, what physical process results in the appearance of 'single escape' and 'double escape' peaks?",
+      "choices": [
+        "The partial loss of energy due to Compton scattering within the formation fluids",
+        "The escape of one or two 511 keV annihilation photons from the detector following a pair production event",
+        "The photoelectric absorption of characteristic x-rays emitted by the tool housing",
+        "The backscattering of gamma rays from the borehole wall into the detector crystal"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "When a high-energy gamma ray (> 1.022 MeV) undergoes pair production in the detector, a positron is created which subsequently annihilates, producing two 511 keV photons. If one of these photons escapes the crystal without detection, a 'single escape' peak appears (E - 0.511 MeV). If both escape, a 'double escape' peak appears (E - 1.022 MeV).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 10 Basic Nuclear Physics for Logging Applications: Gamma Rays",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 10.7.2.1 on spectroscopy artifacts."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_gamma_interactions_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Pair Production",
+        "Nuclear Physics"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What is the minimum threshold energy required for a gamma ray to undergo pair production?",
+      "choices": [
+        "0.511 MeV",
+        "1.022 MeV",
+        "2.22 MeV",
+        "100 keV"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Pair production involves the creation of an electron-positron pair. The energy equivalent of the rest mass of an electron is 0.511 MeV. Since two particles (electron and positron) are created, the incident gamma ray must have an energy of at least 2 * 0.511 MeV, which is 1.022 MeV.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 10 Basic Nuclear Physics for Logging Applications: Gamma Rays",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 10.5 on pair production."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": true,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_gamma_spectroscopy_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Compton Scattering",
+        "Gamma Ray Spectroscopy"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In a gamma ray spectrum derived from a monoenergetic source, what does the \"Compton edge\" represent?",
+      "choices": [
+        "The minimum energy a gamma ray can possess after scattering",
+        "The full energy peak corresponding to photoelectric absorption",
+        "The maximum energy transferred to an electron during a 180-degree backscatter event",
+        "The threshold energy below which pair production cannot occur"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The Compton edge is the upper limit of the energy distribution of recoil electrons. It corresponds to the maximum energy transfer from the incident gamma ray to the electron, which occurs when the gamma ray is backscattered (scattering angle of 180 degrees).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 10 Basic Nuclear Physics for Logging Applications: Gamma Rays",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item derived from section 10.5 and Figure 10.6 regarding electron energy distribution."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
