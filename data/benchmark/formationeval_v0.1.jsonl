@@ -6671,5 +6671,429 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_acoustic_stress_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Petroleum Geology"
+      ],
+      "topics": [
+        "Acoustic Velocity",
+        "Stress Effects"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In laboratory acoustic measurements, how does the compressional velocity of a porous rock typically respond to changes in confining pressure and pore fluid pressure?",
+      "choices": [
+        "Velocity decreases with confining pressure and increases with pore pressure",
+        "Velocity is independent of pressure and depends only on lithology",
+        "Velocity increases with confining pressure and decreases with pore pressure",
+        "Velocity increases with both confining pressure and pore pressure equally"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Acoustic velocity is a function of the effective stress on the rock framework. Increasing the confining (overburden) pressure compacts the rock, stiffening the frame and increasing velocity. Increasing the pore fluid pressure counteracts this compaction, reducing the effective stress and thereby decreasing the velocity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 18 Acoustic Waves in Porous Rocks and Boreholes",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept based on Section 18.2 review of laboratory measurements."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_gas_effect_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Gas Effect",
+        "Fluid Substitution"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "When water in a porous sandstone is replaced by gas, how do the compressional (P-wave) and shear (S-wave) velocities typically change?",
+      "choices": [
+        "Both P-wave and S-wave velocities decrease significantly",
+        "P-wave velocity decreases significantly, while S-wave velocity remains constant or increases slightly",
+        "P-wave velocity increases due to lower density, while S-wave velocity decreases",
+        "Both P-wave and S-wave velocities increase due to the lower density of the gas"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Replacing water with gas drastically reduces the bulk modulus of the rock-fluid system, causing a significant drop in P-wave velocity. However, the shear modulus is unaffected by the fluid change. Since gas density is lower than water density, the S-wave velocity (dependent on shear modulus divided by density) may actually increase slightly or remain relatively stable, creating a distinct separation between the two behaviors.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 18 Acoustic Waves in Porous Rocks and Boreholes",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept based on Section 18.2 regarding fluid effects."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_rock_physics_models_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Geophysics"
+      ],
+      "topics": [
+        "Rock Physics Models",
+        "Gassmann Equation"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "What is the primary difference between the Biot theory of poroelasticity and the Gassmann fluid substitution model?",
+      "choices": [
+        "Gassmann accounts for fluid viscosity while Biot ignores it",
+        "Biot theory assumes the rock skeleton is rigid, whereas Gassmann assumes it is compliant",
+        "Gassmann applies to the low-frequency limit where relative fluid-solid motion is negligible, whereas Biot accounts for frequency dependence and relative motion",
+        "Biot theory is empirical, while Gassmann theory is derived purely from quantum mechanics"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Gassmann's model assumes that the relative motion between the fluid and the rock skeleton is negligible, which is valid at low frequencies (like seismic or standard logging in some contexts). Biot's theory extends this to allow for relative motion between the fluid and the frame (governed by Darcy's law), predicting frequency-dependent velocity and attenuation. In the low-frequency limit, Biot theory reduces to Gassmann.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 18 Acoustic Waves in Porous Rocks and Boreholes",
+          "retrieved_at": "2025-12-21",
+          "notes": "Derived from Section 18.3 discussion on porolelastic models."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_lithology_id_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Petroleum Geology"
+      ],
+      "topics": [
+        "Lithology Identification",
+        "Pickett Plot"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "When utilizing a Pickett plot (compressional vs. shear velocity ratio) for lithology identification, which rock type is characterized by the highest Vp/Vs ratio (typically around 1.9)?",
+      "choices": [
+        "Clean sandstone",
+        "Dolomite",
+        "Gas-bearing sandstone",
+        "Limestone"
+      ],
+      "answer_index": 3,
+      "answer_key": "D",
+      "rationale": "According to Pickett's laboratory and field data, limestones typically exhibit a Vp/Vs ratio of approximately 1.9. Dolomites are lower (around 1.8), and sandstones are lower still (1.6 to 1.75). Gas-bearing sandstones show even lower ratios (around 1.6 or less).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 18 Acoustic Waves in Porous Rocks and Boreholes",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on Section 18.4.1 Lithology and Pickett's findings."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_borehole_acoustics_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Borehole Acoustics",
+        "Waveforms"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "In a 'fast' formation (where formation shear velocity exceeds mud compressional velocity) logged with a monopole source, what is the typical temporal order of wave arrivals at the receiver?",
+      "choices": [
+        "Stoneley, Shear, Compressional",
+        "Shear, Compressional, Stoneley",
+        "Compressional, Shear, Stoneley",
+        "Compressional, Stoneley, Shear"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The compressional wave (P-wave) is the fastest and arrives first. It is followed by the shear wave (S-wave), which is slower. The Stoneley wave (tube wave) is a guided wave in the borehole fluid and arrives last due to its velocity being slower than both formation body waves and typically slightly slower than the fluid velocity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 18 Acoustic Waves in Porous Rocks and Boreholes",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on Section 18.5 Acoustic Waves in Boreholes and Figure 18.17/18.20."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_slow_formation_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Slow Formations",
+        "Head Waves"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why is a shear head wave typically absent in monopole acoustic logs recorded in 'slow' formations?",
+      "choices": [
+        "The formation shear velocity is lower than the borehole fluid velocity, preventing the formation of a critical angle for refraction",
+        "The monopole source frequency is too high to excite shear modes in soft rock",
+        "Slow formations are always too fractured to support shear wave propagation",
+        "The Stoneley wave interferes constructively and cancels out the shear signal"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "For a head wave (refracted wave) to be generated and travel along the borehole wall, the formation velocity must be higher than the fluid velocity (Snell's law condition for critical refraction). In 'slow' formations, the formation shear velocity is less than the mud velocity, so the shear wave is refracted into the formation rather than traveling along the interface, and no head wave 'wake' is radiated back to the receivers.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 18 Acoustic Waves in Porous Rocks and Boreholes",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on Section 18.5 regarding ray tracing and slow formations."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_dipole_logging_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Dipole Sonic",
+        "Flexural Waves"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does a dipole sonic tool determine shear velocity in slow formations where standard monopole tools fail?",
+      "choices": [
+        "It measures the high-frequency compressional wave and divides by a constant factor of 1.6",
+        "It excites a flexural wave in the borehole wall whose low-frequency velocity limit approximates the formation shear velocity",
+        "It uses a radioactive source to induce shear vibrations in the rock matrix",
+        "It generates a Stoneley wave and calculates shear velocity using the mud density alone"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Dipole tools shake the borehole sideways, creating a flexural wave that travels along the borehole wall. This wave is dispersive (velocity changes with frequency), but at low frequencies, its velocity approaches the true formation shear velocity. Processing algorithms are used to extract this shear velocity from the dispersive signal.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 18 Acoustic Waves in Porous Rocks and Boreholes",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on Section 18.5.1 Borehole Flexural Waves."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_stoneley_waves_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Stoneley Waves",
+        "Permeability"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In addition to borehole wall rigidity, what formation property significantly affects the velocity and attenuation of low-frequency Stoneley waves in porous rocks?",
+      "choices": [
+        "Fluid mobility (ratio of permeability to viscosity)",
+        "Radioactive isotope concentration",
+        "Formation temperature gradient",
+        "Magnetic susceptibility of the matrix"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "In permeable formations, the Stoneley wave causes fluid movement between the borehole and the formation. This fluid exchange attenuates the wave and slows it down. Models based on Biot theory link this attenuation and velocity decrease to the fluid mobility, which is the formation permeability divided by the fluid viscosity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 18 Acoustic Waves in Porous Rocks and Boreholes",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on Section 18.5.2 Stoneley Waves and fluid mobility discussion."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_rock_mechanics_failure_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Reservoir Engineering",
+        "Petrophysics"
+      ],
+      "topics": [
+        "Rock Mechanics",
+        "Acoustic Velocity"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "According to triaxial stress tests, how do acoustic velocities typically behave as a rock sample approaches catastrophic failure (fracture)?",
+      "choices": [
+        "Velocities increase exponentially until the moment of failure",
+        "Velocities remain constant until the sample shatters",
+        "Velocities level off and then decrease due to the formation of microfissures",
+        "Shear velocity drops to zero while compressional velocity doubles"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "In the elastic region, velocities generally increase with stress. However, as the rock enters the region of plastic yielding or ductile deformation, microfissures begin to form. These defects cause the velocities (both P and S) to level off and then decrease prior to the ultimate failure of the sample.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 18 Acoustic Waves in Porous Rocks and Boreholes",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on Section 18.2 and Figure 18.10 discussion on rock failure."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_porosity_transform_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Porosity Evaluation",
+        "Wyllie Time Average"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "The Wyllie time-average equation estimates porosity based on the linear interpolation between which two parameters?",
+      "choices": [
+        "Matrix transit time and fluid transit time",
+        "Shear modulus and Bulk modulus",
+        "Formation density and mud density",
+        "Resistivity of the flushed zone and resistivity of the uninvaded zone"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The Wyllie time-average equation is an empirical relationship that treats the total transit time as the sum of the transit time through the matrix fraction and the transit time through the fluid fraction. Porosity is calculated by interpolating the measured transit time between the matrix value (0% porosity) and the fluid value (100% porosity).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 18 Acoustic Waves in Porous Rocks and Boreholes",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on Section 18.3 Porolelastic Models of Rocks."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
     }
   ]
