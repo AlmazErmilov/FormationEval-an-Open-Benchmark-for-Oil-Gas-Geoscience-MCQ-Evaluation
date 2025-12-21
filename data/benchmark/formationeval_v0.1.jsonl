@@ -2787,5 +2787,430 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_dielectric_permittivity_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Dielectric Permittivity",
+        "Fluid Identification"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What fundamental physical property contrast primarily allows dielectric logging tools to distinguish water from oil and rock matrix?",
+      "choices": [
+        "Water has a significantly higher dielectric permittivity than oil or rock matrix",
+        "Water has a much lower magnetic permeability than oil or rock matrix",
+        "Oil exhibits strong interfacial polarization while water does not",
+        "Rock matrix has a higher dielectric constant than both water and oil"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Water has a relative dielectric permittivity around 78 (at standard conditions), whereas oil and rock matrix typically have values between 2 and 9. This large order-of-magnitude difference allows dielectric tools to identify water volume even in low salinity environments where resistivity contrasts are low.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 9 Propagation Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Introduction and Table 9.1."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_dielectric_polarization_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Dielectric Polarization",
+        "Frequency Dispersion"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the frequency range typically used for well logging (up to roughly 1 GHz), which polarization mechanism is primarily responsible for the dielectric permittivity of the rock matrix and pore geometry effects?",
+      "choices": [
+        "Electronic polarization",
+        "Interfacial (Maxwell-Wagner) polarization",
+        "Molecular orientation",
+        "Ionic relaxation"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Interfacial (Maxwell-Wagner) polarization occurs due to charge build-up at interfaces between conductive and insulating components (e.g., pore water and grains). It dominates the rock permittivity response up to about 10^8 Hz. Molecular orientation governs water permittivity at higher frequencies, while electronic polarization operates at optical frequencies.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 9 Propagation Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 9.2.2 regarding interfacial polarization."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_dielectric_salinity_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Dielectric Permittivity",
+        "Salinity Effects"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does an increase in formation water salinity affect the dielectric permittivity of the water phase?",
+      "choices": [
+        "It increases permittivity because salt ions add conductive pathways",
+        "It has no effect on permittivity, only on conductivity",
+        "It decreases permittivity due to the hydration of ions reducing water molecule polarization",
+        "It causes permittivity to fluctuate sinusoidally with frequency"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Adding salt to water reduces its permittivity. This occurs because the concentration of water decreases, hydrated salt ions reduce the polarization of attached water molecules, and salt ions displace water molecules when moved by the electric field.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 9 Propagation Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 9.2.1 discussion on salt effects."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_mixing_laws_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Mixing Laws",
+        "CRIM"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "The Complex Refractive Index Method (CRIM) used for dielectric interpretation assumes which relationship between the formation components?",
+      "choices": [
+        "Linear volumetric mixing of the square root of the complex permittivities",
+        "Linear volumetric mixing of the logarithms of the conductivities",
+        "A parallel resistor network model weighted by component volumes",
+        "A specialized form of the Archie equation with variable exponents"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "CRIM is based on a power law mixing equation with an exponent of 0.5 (square root). It states that the square root of the effective complex permittivity is the sum of the square roots of the component permittivities weighted by their volume fractions. This is equivalent to linear mixing of the refractive indices.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 9 Propagation Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 9.4 on Dielectric Mixing Laws."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_lwd_propagation_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Drilling Engineering"
+      ],
+      "topics": [
+        "LWD",
+        "Propagation Measurements",
+        "Resistivity"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "In 2 MHz LWD propagation tools, how do the depths of investigation for phase-shift resistivity ($R_{ps}$) and attenuation resistivity ($R_{ad}$) typically compare?",
+      "choices": [
+        "$R_{ps}$ reads deeper than $R_{ad}$",
+        "$R_{ad}$ reads deeper than $R_{ps}$",
+        "Both measurements have identical depths of investigation",
+        "Depth of investigation is solely determined by the transmitter-receiver spacing, not the measurement type"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Attenuation resistivity ($R_{ad}$) consistently reads deeper than phase-shift resistivity ($R_{ps}$). The electromagnetic field patterns for amplitude (attenuation) are toroidal and penetrate further into the formation than the spherical constant-phase contours, resulting in a deeper investigation for attenuation measurements.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 9 Propagation Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 9.6.2 and 9.6.3 regarding radial response."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_dielectric_assumption_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Propagation Measurements",
+        "LWD Processing"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Why is a 'dielectric assumption' necessary when converting raw 2 MHz propagation measurements (phase shift and attenuation) into resistivity values?",
+      "choices": [
+        "Because the tool measures magnetic permeability, which must be converted to permittivity first",
+        "Because there are two unknowns (permittivity and conductivity) but the tool treats them as coupled to produce a single resistivity output",
+        "Because the phase shift is insensitive to resistivity at low values",
+        "Because attenuation cannot be measured accurately in conductive muds"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Propagation tools measure phase shift and attenuation, which depend on both permittivity ($\epsilon$) and conductivity ($\sigma$). To convert a single measurement (e.g., phase shift) into a resistivity (inverse of conductivity), one must assume a value for $\epsilon$, or a relationship between $\epsilon$ and $\sigma$. This relationship is the 'dielectric assumption,' which allows the transformation of the raw signal into a resistivity log.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 9 Propagation Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 9.6.1."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_anisotropy_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Anisotropy",
+        "LWD Interpretation",
+        "High Angle Wells"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In a horizontal well penetrating an anisotropic formation, how do the responses of 2 MHz phase-shift and attenuation resistivities typically differ?",
+      "choices": [
+        "Attenuation resistivity is affected significantly more than phase-shift resistivity",
+        "Phase-shift resistivity is affected significantly more than attenuation resistivity, often creating large separation",
+        "Both are affected equally, resulting in no separation between curves",
+        "Anisotropy only affects the 400 kHz measurements, not 2 MHz"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "In horizontal wells (high relative dip), anisotropy has a much stronger effect on the phase shift than on attenuation. This often leads to a separation where the phase-shift resistivity reads significantly higher than the attenuation resistivity, an effect that increases with transmitter-receiver spacing.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 9 Propagation Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 9.6.4 on Dip and Anisotropy."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_polarization_horns_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "LWD Response",
+        "Dipping Beds"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the primary cause of 'polarization horns' (sharp spikes in resistivity) observed on 2 MHz LWD logs?",
+      "choices": [
+        "Crossing bed boundaries with high resistivity contrast at high relative dip angles",
+        "Tool eccentricity in an enlarged borehole",
+        "Dielectric resonance of the drill collar at 2 MHz",
+        "Sudden changes in mud salinity during drilling"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Polarization horns are sharp increases in resistivity readings that occur when the tool crosses a bed boundary with a significant resistivity contrast at a high relative dip angle (typically above 50 degrees). This is an artifact of the charge accumulation at the boundary affecting the electromagnetic propagation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 9 Propagation Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 9.6.4."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_texture_effects_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Sedimentology"
+      ],
+      "topics": [
+        "Dielectric Permittivity",
+        "Rock Texture"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In carbonate rocks, how does grain shape typically influence the dielectric permittivity measured at frequencies below 1 GHz?",
+      "choices": [
+        "Spherical grains cause higher permittivity than platy grains",
+        "Platy or disk-like grains cause higher permittivity due to increased interfacial polarization",
+        "Grain shape has no impact on permittivity; only porosity matters",
+        "Irregular grains eliminate all interfacial polarization effects"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Thin, platy grains increase interfacial (Maxwell-Wagner) polarization because they create larger electrostatic attraction across the grain and make it more difficult for charges to neutralize the polarization. This results in higher permittivity values compared to spherical grains, often correlating with higher cementation exponents (m).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 9 Propagation Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 9.2.2 on Interfacial Polarization and Fig 9.8."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_drillingengineering_lwd_design_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Drilling Engineering",
+        "Petrophysics"
+      ],
+      "topics": [
+        "LWD Tool Design",
+        "Induction vs Propagation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why were 2 MHz propagation devices initially developed as the standard for LWD resistivity instead of traditional induction coils?",
+      "choices": [
+        "Induction coils cannot operate in oil-based muds",
+        "The steel drill collar made it difficult to control sonde error and maintain stability for induction measurements",
+        "2 MHz tools have a significantly deeper depth of investigation than induction tools",
+        "Propagation tools are insensitive to borehole rugosity"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Standard induction measurements require accurate knowledge of the sonde error (signal generated within the tool). The steel drill collar is not a perfect conductor and contributes a significant, unpredictable signal. 2 MHz devices use differential measurements and higher frequencies (smaller skin depth in the collar), making the collar act more like a perfect shield and reducing sonde error issues.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 9 Propagation Measurements",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 9.6 Introduction."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
     }
   ]
