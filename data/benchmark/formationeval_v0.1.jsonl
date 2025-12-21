@@ -7095,5 +7095,512 @@
         "calc_required": false,
         "contamination_risk": "high"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_acoustic_transducers_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Acoustic Logging",
+        "Shear Wave Logging"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why are dipole acoustic sources preferred over monopole sources for measuring shear velocity in \"slow\" formations?",
+      "choices": [
+        "Monopole sources cannot generate enough energy to penetrate the mudcake in slow formations",
+        "Dipole sources generate a borehole flexural wave that allows shear determination even when fluid velocity exceeds formation shear velocity",
+        "Monopole sources create a quadrupole moment that interferes with the compressional arrival in slow rocks",
+        "Dipole sources operate at a much higher frequency, avoiding the dispersion effects common in slow formations"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "In slow formations, where the shear velocity is less than the borehole fluid velocity, refracted shear waves cannot exist (Snell's law). Monopole sources rely on refracted waves. Dipole sources, however, excite a flexural mode in the borehole. At low frequencies, the speed of this flexural wave approaches the true formation shear speed, allowing measurement in slow formations.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on transducer selection for slow formations."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_borehole_compensation_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Borehole Compensation",
+        "Sonic Logging"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does the borehole compensated (BHC) sonic tool design specifically address the issue of varying borehole diameter and tool tilt?",
+      "choices": [
+        "It uses a single transmitter with multiple receivers to calculate an average velocity that ignores the mud path",
+        "It averages the transit times from an up-going and a down-going measurement array to cancel out unequal mud path lengths",
+        "It increases the transmitter power automatically when caliper readings indicate a washout to ensure signal strength",
+        "It relies on a separate caliper measurement to mathematically subtract the mud travel time from the total travel time"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The BHC system uses two transmitter-receiver sets (or equivalent switching) to measure travel times in opposite directions (up-going and down-going). By averaging these intervals, the geometric errors caused by the tool being tilted or the hole size changing (which affects the path length through the mud) effectively cancel each other out.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on BHC principles."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_log_quality_control_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Log Quality Control",
+        "Cycle Skipping"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What is the primary cause of \"cycle skipping\" often observed as sharp spikes on a sonic log transit time curve?",
+      "choices": [
+        "The receiver detects the shear wave before the compressional wave",
+        "The formation velocity is faster than the casing velocity, causing interference",
+        "The signal amplitude is too low, causing the detector to trigger on a subsequent wave cycle rather than the first arrival",
+        "The borehole fluid is highly aerated, causing the acoustic pulse to travel backward"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Cycle skipping occurs when the arrival signal is weak (perhaps due to attenuation or noise). The detection threshold is not met by the first cycle of the wave, so the tool triggers on the second or third cycle. This adds integer multiples of the wave period to the transit time, appearing as sudden, large spikes on the log.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on identifying log artifacts."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_depth_of_investigation_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Depth of Investigation",
+        "Long Spacing Sonic"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the primary advantage of using a long-spacing sonic tool (e.g., 8-10 ft spacing) compared to a conventional short-spacing tool (e.g., 3-5 ft spacing) in formations with significant near-borehole alteration?",
+      "choices": [
+        "It provides a higher vertical resolution for detecting thin beds",
+        "It allows the acoustic wave to penetrate deeper, ensuring the measured velocity represents the undisturbed formation",
+        "It increases the frequency of the signal to better resolve micro-fractures in the altered zone",
+        "It reduces the effect of cycle skipping by generating a stronger shear wave component"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Alteration near the borehole (like shale swelling or stress relief) typically slows down acoustic waves. A short-spacing tool may only measure this slower, altered zone. Increasing the transmitter-receiver spacing forces the refracted wave path deeper into the formation, allowing it to bypass the altered zone and measure the velocity of the virgin formation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on tool physics and alteration."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_anisotropy_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Anisotropy",
+        "Geomechanics"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "When analyzing cross-dipole sonic data, what characteristic feature in the dispersion curves indicates the presence of stress-induced anisotropy around the borehole?",
+      "choices": [
+        "The fast and slow shear dispersion curves run parallel to each other across all frequencies",
+        "The dispersion curves for both polarizations exhibit a distinct crossover at intermediate frequencies",
+        "The Stoneley wave dispersion curve merges with the fast shear curve at high frequencies",
+        "Both shear waves show zero slowness at the low-frequency limit"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Stress-induced anisotropy creates a specific stress distribution near the borehole (concentrations of tension and compression). At low frequencies, shear waves probe deep into the formation (far-field stress). At high frequencies, they sense the near-wellbore altered stress field. This difference in probing depth causes the fast and slow polarization curves to cross over, a signature unique to stress-induced (as opposed to intrinsic) anisotropy.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on advanced anisotropy interpretation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_porosity_evaluation_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Reservoir Engineering"
+      ],
+      "topics": [
+        "Secondary Porosity",
+        "Carbonate Evaluation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In a carbonate reservoir, a significant discrepancy is observed where the neutron and density logs indicate high porosity, but the sonic log indicates low porosity. What is the most likely explanation?",
+      "choices": [
+        "The formation contains gas, which affects the neutron log more than the sonic log",
+        "The reservoir contains secondary porosity (vugs or fractures) which the sonic tool tends to bypass",
+        "The sonic tool is decentralizing, causing it to read the transit time of the steel casing",
+        "The presence of shale is suppressing the sonic response while boosting density porosity"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Acoustic energy tends to travel through the continuous rock matrix, bypassing vugs, fractures, or other secondary porosity features. Neutron and density tools, however, measure bulk volumetric properties and will see the fluid in these vugs. Therefore, a lower sonic porosity compared to total (neutron/density) porosity is a standard indicator of secondary porosity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on secondary porosity identification."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_drilling_engineering_lwd_sonic_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Drilling Engineering",
+        "Petrophysics"
+      ],
+      "topics": [
+        "LWD",
+        "Acoustic Sources"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Why are quadrupole acoustic sources particularly advantageous for Logging While Drilling (LWD) shear wave measurements compared to dipole sources?",
+      "choices": [
+        "Quadrupole sources generate a higher frequency signal that is immune to drilling noise",
+        "Quadrupole sources can couple energy into the formation below a certain cut-off frequency without exciting flexural modes in the drill collar",
+        "Quadrupole sources provide a direct measurement of permeability which corrects the shear velocity for fluid mobility",
+        "Quadrupole sources are mechanically simpler and do not require slotting of the drill collar"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "In LWD, the stiff drill collar is a major noise source. Dipole sources tend to excite flexural waves in the collar that interfere with formation signals. Quadrupole physics dictates that collar modes have a low-frequency cutoff. By operating below this cutoff, quadrupole sources can excite formation waves without exciting the interfering collar modes.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on LWD physics."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_permeability_stoneley_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Permeability",
+        "Stoneley Waves"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does formation permeability affect the propagation of Stoneley waves in a borehole?",
+      "choices": [
+        "Permeability causes the Stoneley wave to accelerate and increase in amplitude due to better coupling",
+        "Permeability has no effect on Stoneley waves; they are only sensitive to shear modulus",
+        "Permeability allows fluid movement between the borehole and formation, causing attenuation and slowing of the Stoneley wave",
+        "Permeability causes the Stoneley wave to reflect back to the source, creating a standing wave pattern"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Stoneley waves are interface waves that move fluid. When the formation is permeable, the pressure pulse forces fluid into the pore space (and back out). This fluid movement dissipates energy (attenuation) and slows the wave propagation compared to a non-permeable formation. This effect is the basis for Stoneley-derived permeability logs.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on acoustic permeability."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petroleum_geology_overpressure_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petroleum Geology",
+        "Drilling Engineering"
+      ],
+      "topics": [
+        "Overpressure Detection",
+        "Sonic Trends"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "In a normally compacted shale sequence, transit time typically decreases with depth. What is the characteristic acoustic signature of an overpressured shale zone?",
+      "choices": [
+        "The transit time decreases more rapidly than the normal trend",
+        "The transit time remains constant regardless of depth",
+        "The transit time deviates from the normal trend, showing higher values (slower velocity)",
+        "The acoustic signal is completely lost due to gas saturation"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Overpressured shales are under-compacted because the trapped pore fluid supports part of the overburden weight, preventing normal porosity reduction. Higher porosity (and fluid support) leads to slower acoustic velocities, which corresponds to higher transit times compared to the expected normal compaction trend line.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on pore pressure prediction."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_production_engineering_cement_evaluation_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Production Engineering"
+      ],
+      "topics": [
+        "Cement Bond Log",
+        "Casing Evaluation"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "On a traditional Cement Bond Log (CBL), what does a very low amplitude of the first casing arrival (E1) indicate?",
+      "choices": [
+        "Free pipe with no cement behind the casing",
+        "Good bonding where cement attenuates the casing vibration",
+        "A micro-annulus exists between the casing and the cement",
+        "The tool is decentralized and reading the mud signal"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The CBL measures the amplitude of the acoustic wave traveling along the casing. If cement is well-bonded to the casing, it mechanically couples with the pipe and dampens (attenuates) this vibration rapidly. Therefore, a low amplitude signal indicates good cement bonding, while high amplitude indicates free, unbonded pipe.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on CBL interpretation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_production_engineering_ultrasonic_imaging_011",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Production Engineering"
+      ],
+      "topics": [
+        "Ultrasonic Imaging",
+        "Casing Inspection"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In ultrasonic pulse-echo casing evaluation, how is the casing thickness determined?",
+      "choices": [
+        "By measuring the time it takes for the echo to return from the formation wall",
+        "By analyzing the resonant frequency of the casing's thickness mode vibration",
+        "By comparing the amplitude of the first reflection to a calibration in water",
+        "By measuring the attenuation of the flexural wave traveling along the casing axis"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The ultrasonic pulse excites a thickness resonance in the casing wall. The frequency of this resonance is determined by the casing thickness and the speed of sound in steel. By analyzing the reverberation frequency in the return signal, the tool can compute the casing thickness.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on ultrasonic physics."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_alteration_shale_012",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Borehole Alteration",
+        "Shale Swelling"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What effect does the hydration and swelling of clays near the borehole wall typically have on the measured acoustic transit time?",
+      "choices": [
+        "It decreases the transit time because hydrated clays are denser",
+        "It has no effect on transit time, only on the caliper log",
+        "It increases the transit time because the altered zone has a lower velocity than the virgin formation",
+        "It causes the shear wave to disappear but leaves the compressional wave unaffected"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "When clays swell (hydrate), they generally become less dense and mechanically weaker, which reduces their acoustic velocity. A lower velocity corresponds to a higher transit time. If the alteration zone is deep enough, the acoustic tool measures this slower zone rather than the faster, undisturbed formation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 19 Acoustic Logging Methods",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on environmental effects on logs."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
