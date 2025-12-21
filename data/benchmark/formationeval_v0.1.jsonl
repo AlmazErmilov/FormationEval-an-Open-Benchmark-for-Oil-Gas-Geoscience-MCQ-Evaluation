@@ -8023,5 +8023,511 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_porosity_lithology_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron-Density Crossplot",
+        "Lithology Identification"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "When using a standard neutron-density crossplot constructed for a limestone matrix to interpret a log where the neutron porosity is recorded in sandstone units, what is the correct procedure for plotting the data points?",
+      "choices": [
+        "Plot the sandstone unit values directly as they appear on the log",
+        "Convert the density log to sandstone units before plotting",
+        "Use the porosity markings along the sandstone lithology line to guide the horizontal positioning",
+        "Subtract the matrix difference (approx. 6 p.u.) from the neutron reading before plotting"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Standard neutron-density crossplots often use a limestone porosity axis. When data is recorded in other units (like sandstone), one must use the porosity markings along the specific lithology line (e.g., the sandstone curve) on the chart to find the correct horizontal position corresponding to that unit value.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on crossplot unit handling."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_gas_effect_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Gas Effect",
+        "Log Interpretation"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "In a gas-bearing zone, how does the separation between neutron and density porosity curves (plotted on a limestone scale) typically appear?",
+      "choices": [
+        "The neutron porosity reads higher than the density porosity",
+        "Both curves read significantly higher than the actual porosity",
+        "The curves track each other closely with no separation",
+        "The density porosity reads higher than the neutron porosity"
+      ],
+      "answer_index": 3,
+      "answer_key": "D",
+      "rationale": "Gas has a low hydrogen index (lowering neutron porosity) and low bulk density (increasing density porosity). This causes the curves to cross over or separate such that density porosity is higher than neutron porosity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on gas crossover."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_mn_plot_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "M-N Plot",
+        "Secondary Porosity"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is a primary diagnostic application of the M-N crossplot in complex lithologies?",
+      "choices": [
+        "Determining the exact clay volume in shaly sands",
+        "Identifying the presence of secondary porosity",
+        "Calculating water saturation without resistivity logs",
+        "Differentiating between oil and water zones"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The M-N plot is designed to eliminate porosity effects to focus on lithology. Secondary porosity increases the parameter 'M' (because density decreases while sonic transit time remains relatively unaffected) without changing 'N' significantly, making it useful for identifying secondary porosity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on M-N plot utility."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_mid_plot_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Matrix Identification",
+        "MID Plot"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the Matrix Identification (MID) plot method, how are the apparent matrix parameters (density and transit time) derived?",
+      "choices": [
+        "They are measured directly by geochemical logging tools",
+        "They are back-calculated using crossplot porosity values derived from neutron-density and neutron-sonic combinations",
+        "They are assumed based on regional geological knowledge",
+        "They are determined solely from the Photoelectric Factor (Pe) log"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The MID method uses a 'crossplot porosity' (often the neutron-density average) to back-calculate the apparent matrix density ($\rho_{maa}$) and apparent matrix travel time ($t_{maa}$) from the bulk density and measured transit time, respectively.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on MID plot mechanics."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_photoelectric_factor_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Photoelectric Factor",
+        "Lithology Identification"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Why is the Photoelectric Factor ($P_e$) versus Density crossplot particularly effective for resolving limestone/dolomite mixtures compared to the standard Neutron-Density crossplot?",
+      "choices": [
+        "The $P_e$ measurement is completely unaffected by porosity",
+        "The ordering of the lithology lines is different: Dolomite lies between Sandstone and Limestone on the $P_e$ plot",
+        "The $P_e$ plot eliminates the need for any fluid corrections",
+        "Neutron-Density plots cannot differentiate between calcite and dolomite"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "On a standard Neutron-Density plot, the lithology lines are ordered Sandstone-Limestone-Dolomite. On a $P_e$-Density plot, the order changes to Sandstone-Dolomite-Limestone. This reordering adds a new dimension that helps resolve ambiguities, such as distinguishing a dolomitic sand from a limestone.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on Pe log benefits."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_electrofacies_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Petroleum Geology"
+      ],
+      "topics": [
+        "Electrofacies",
+        "Log Analysis"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "How is an 'electrofacies' defined in the context of well log analysis?",
+      "choices": [
+        "A geological facies identified solely by core visual inspection",
+        "A set of log responses that characterizes a bed and distinguishes it from others",
+        "A formation layer that conducts electricity due to high water saturation",
+        "The electrical resistivity profile of the invaded zone"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "An electrofacies is defined as a set of log responses that characterizes a specific bed or interval, allowing it to be distinguished from other beds. It serves as a bridge between log data and geological lithofacies.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on electrofacies definition."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_clustering_classification_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Clustering",
+        "Classification",
+        "Data Analysis"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the key difference between 'classification' and 'clustering' methods for lithology identification?",
+      "choices": [
+        "Classification uses prior knowledge of log responses, while clustering relies only on data grouping without prior labels",
+        "Clustering is only used for image logs, while classification is used for standard logs",
+        "Classification requires neural networks, while clustering uses linear equations",
+        "Clustering is a quantitative method, while classification is purely qualitative"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Classification (discriminant analysis) assigns data to predefined classes based on known log responses. Clustering ignores prior knowledge and identifies natural groupings (clusters) within the dataset itself, which must then be identified/labeled by the user.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on statistical methods."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_inverse_modeling_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Quantitative Evaluation",
+        "Inversion"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In quantitative evaluation using simultaneous equations, what mathematical approach is typically used when the system is 'overdetermined' (more logging measurements than unknown mineral volumes)?",
+      "choices": [
+        "Simple matrix inversion",
+        "Least-squares solution",
+        "Nonlinear optimization",
+        "Reducing the number of logs used"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "When the number of measurements exceeds the number of unknowns (overdetermined), a unique exact solution may not exist due to measurement errors. A least-squares solution is used to find the result that minimizes the error between measured and reconstructed logs, often incorporating weighting based on measurement uncertainty.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on inversion mathematics."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_underdetermined_systems_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Complex Lithology",
+        "Modeling"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "How is the problem of 'underdetermination' (more potential minerals than available log measurements) typically handled in quantitative log analysis?",
+      "choices": [
+        "By inventing theoretical logs to fill the gaps",
+        "By grouping minor minerals with major ones or restricting the model to geologically significant minerals",
+        "By using only the density log for all calculations",
+        "By allowing the computer to select random minerals until a fit is found"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "When there are too many unknowns, the system cannot be solved uniquely. The standard solution is to reduce the number of unknowns by grouping chemically/physically similar minerals (e.g., feldspar with quartz) or by limiting the model to only those minerals known to be geologically significant in the area.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on modeling constraints."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_simultaneous_methods_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Simultaneous Inversion",
+        "Log Analysis"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is a primary advantage of using simultaneous inversion methods over sequential logic for formation evaluation?",
+      "choices": [
+        "They are computationally faster and require less processing power",
+        "They provide the most coherent agreement between all results and measurements by treating the problem globally",
+        "They avoid the need for any matrix or fluid parameters",
+        "They are specifically designed for simple lithologies like clean sandstone"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Simultaneous methods solve for all unknowns (porosity, saturation, lithology) at once, ensuring that the results are consistent with all input measurements (balance/coherence). Sequential methods may propagate errors or fail to capture interdependencies.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on inversion benefits."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_false_gas_indication_011",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Log Quality Control",
+        "Gas Detection"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What can cause a 'false' gas indication (crossover) on a neutron-density log in a water-filled tight sandstone formation?",
+      "choices": [
+        "Presentation of the logs on a limestone porosity scale",
+        "Presence of heavy minerals like pyrite",
+        "Use of a density tool with a short spacing",
+        "High salinity of the formation water"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "If a tight sandstone is plotted on a limestone porosity scale, the matrix settings are incorrect for the rock type. This can create an artifact where the curves separate or crossover, mimicking the response of gas, even when the formation is water-filled.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on log presentation artifacts."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_volumetric_pe_012",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Photoelectric Factor",
+        "Volumetric Analysis"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In the context of multi-mineral analysis, why is the volumetric cross section $U$ often preferred over the standard $P_e$ measurement for mixing calculations?",
+      "choices": [
+        "Because $U$ scales linearly with volume, whereas $P_e$ is an average weighted by electron density",
+        "Because $U$ is independent of fluid content, unlike $P_e$",
+        "Because $U$ can be measured directly by the sonic tool",
+        "Because $P_e$ values are not available for common evaporites"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The standard $P_e$ of a mixture is not a simple linear average of the components; it is weighted by electron density. The volumetric cross section $U$ ($P_e \times \rho_e$) scales linearly with the volume fractions of the constituents, making it mathematically simpler for volumetric inversion models.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 22 Lithology and Porosity Estimation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on U factor properties."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
