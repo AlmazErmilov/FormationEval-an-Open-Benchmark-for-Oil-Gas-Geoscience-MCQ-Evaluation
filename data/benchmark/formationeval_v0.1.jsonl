@@ -1054,5 +1054,299 @@
         "calc_required": false,
         "contamination_risk": "low"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_archie_formation_factor_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Formation Factor",
+        "Archie Equation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "According to Archie's empirical observations on clean, water-saturated core samples, how does the formation resistivity factor (F) behave when the salinity of the saturating brine is changed?",
+      "choices": [
+        "It remains constant, as it is a property of the rock structure independent of fluid resistivity",
+        "It varies linearly with the resistivity of the water due to ion exchange",
+        "It increases as the salinity of the water increases due to surface conductance",
+        "It decreases significantly because the rock becomes more conductive"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Archie found that for a given core sample, the formation factor F (defined as the ratio of the resistivity of the fully saturated rock to the resistivity of the saturating water) remains constant regardless of the water resistivity. This implies F is an intrinsic property of the pore geometry.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 4 Empiricism: The Cornerstone of Interpretation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on the definition and stability of Formation Factor."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_cementation_exponent_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Cementation Exponent",
+        "Pore Structure"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the context of the Archie equation, how does the presence of open fractures typically affect the cementation exponent (m) compared to a rock with only intergranular porosity?",
+      "choices": [
+        "The exponent m decreases toward 1 because fractures provide straight, less tortuous current paths",
+        "The exponent m increases significantly because fractures isolate the matrix porosity",
+        "The exponent m remains at 2, as it is solely determined by total porosity volume",
+        "The exponent m approaches infinity because fractures do not contribute to electrical conductivity"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The cementation exponent m is related to the tortuosity of the current path. Fractures offer a direct, straight path for current with minimal tortuosity, which drives the effective m value down toward 1.0, unlike intergranular porosity which typically has an m around 2.0.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 4 Empiricism: The Cornerstone of Interpretation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on variations in 'm' due to fractures."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_saturation_exponent_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Saturation Exponent",
+        "Wettability"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why does an oil-wet reservoir rock typically exhibit a saturation exponent (n) significantly larger than the standard value of 2?",
+      "choices": [
+        "Oil coats the grains and blocks pore throats even at low oil volumes, sharply increasing resistivity",
+        "Oil-wet rocks have higher water saturation for the same resistivity due to surface conductance",
+        "The oil in an oil-wet rock becomes conductive due to interaction with clay minerals",
+        "The water in an oil-wet rock forms continuous conductive films over the grain surfaces"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "In water-wet rocks, water coats grains and maintains conductive paths. In oil-wet rocks, the insulating oil coats the grains and blocks pore throats (constrictions) early in the saturation process. This disruption of the electrical path causes resistivity to rise much more sharply as water saturation decreases, resulting in a high n value.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 4 Empiricism: The Cornerstone of Interpretation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on wettability effects on 'n'."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_clay_conductivity_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Shaly Sand",
+        "Clay Conductivity"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "When plotting the conductivity of a fully water-saturated rock (Co) against the conductivity of the saturating water (Cw), how is the presence of clay minerals typically manifested?",
+      "choices": [
+        "By a positive intercept on the Co axis, representing an additional conductivity term",
+        "By a straight line passing exactly through the origin with a slope of 1",
+        "By a negative intercept indicating that clay absorbs ions and reduces conductivity",
+        "By a vertical line indicating that rock conductivity is independent of water salinity"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "In shaly sands, clay provides a secondary path for conduction (cation exchange) that acts in parallel with the pore water. On a Co vs. Cw plot, this appears as an additional conductivity component (positive intercept) when Cw approaches zero, unlike clean sands which pass through the origin.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 4 Empiricism: The Cornerstone of Interpretation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on the graphical identification of clay conductivity."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_electrical_anisotropy_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Anisotropy",
+        "Laminated Sand Analysis"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In a finely laminated sand-shale sequence where the shale is conductive and the sand is resistive, which statement correctly describes the horizontal conductivity (σh) measured parallel to the bedding?",
+      "choices": [
+        "It is dominated by the high conductivity of the shale layers",
+        "It is dominated by the high resistivity of the sand layers",
+        "It represents the harmonic mean of the individual layer conductivities",
+        "It is equal to the vertical conductivity due to averaging effects"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "When current flows parallel to bedding (horizontal conductivity), the layers act as resistors in parallel. The total conductivity is the volumetric average of the individual conductivities. Therefore, the highly conductive shale layers dominate the measurement, often masking the presence of resistive hydrocarbon-bearing sand.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 4 Empiricism: The Cornerstone of Interpretation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on electrical anisotropy in laminations."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_water_saturation_calc_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Archie Calculation",
+        "Water Saturation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "A formation has a porosity of 20% and the standard Archie parameters m=2 and n=2 are applicable. If the formation water resistivity (Rw) is 0.08 ohm-m and the deep resistivity (Rt) reads 8.0 ohm-m, what is the estimated water saturation?",
+      "choices": [
+        "50%",
+        "25%",
+        "75%",
+        "100%"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "First, calculate Formation Factor F = 1 / (0.20)^2 = 1 / 0.04 = 25. Next, calculate the resistivity of the rock if 100% water saturated (Ro) = F * Rw = 25 * 0.08 = 2.0 ohm-m. Finally, calculate Sw using the Archie relation Sw = sqrt(Ro / Rt) = sqrt(2.0 / 8.0) = sqrt(0.25) = 0.50 or 50%.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 4 Empiricism: The Cornerstone of Interpretation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Application of Archie's laws presented in the chapter."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": true,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_tool_theory_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Resistivity Logging",
+        "Tool Theory"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In the idealized mono-electrode experiment described in the text, where current I is injected and voltage V is measured at a distance r, what determines the 'tool constant' k?",
+      "choices": [
+        "The geometric spacing between the current source and the measurement point (4πr)",
+        "The frequency of the injected current and the formation dielectric constant",
+        "The resistivity of the borehole fluid and the diameter of the electrode",
+        "The temperature of the formation and the salinity of the mud"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Based on the electrostatics derivation in the text, the potential V in a homogeneous medium is given by V = (Rt * I) / (4 * pi * r). Rearranging for Rt gives Rt = (4 * pi * r) * (V / I). The term (4 * pi * r) depends purely on the tool geometry (spacing r) and represents the tool constant k.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 4 Empiricism: The Cornerstone of Interpretation",
+          "retrieved_at": "2025-12-21",
+          "notes": "Derivation of tool constant from basic electrostatics as presented in the text."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
     }
   ]
