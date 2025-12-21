@@ -4729,5 +4729,341 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_physics_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Porosity",
+        "Tool Physics"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "According to neutron transport theory, which physical parameter is most directly responsible for the count rate variations observed in an epithermal neutron porosity logging device?",
+      "choices": [
+        "The thermal diffusion length of the formation",
+        "The bulk density of the rock matrix",
+        "The slowing-down length of the formation",
+        "The thermal neutron capture cross-section"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The text explains that for an epithermal neutron device, the flux falls off exponentially with distance from the source based on a characteristic length called the slowing-down length ($L_s$). This parameter is determined by the ability of the formation (specifically hydrogen) to moderate high-energy neutrons to epithermal energy levels.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 14 Neutron Porosity Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 14.4 regarding the basis of measurement and Eq. 14.8."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_neutron_detectors_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Porosity",
+        "Thermal Neutrons"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "Why is the response of a thermal neutron porosity tool significantly more complex to interpret than that of an epithermal tool?",
+      "choices": [
+        "Thermal neutrons are sensitive to strong absorbers in the formation, such as chlorine and boron",
+        "Thermal tools generally use weaker neutron sources that have shallow depth of investigation",
+        "Thermal neutrons cannot penetrate the steel pressure housing of the logging tool",
+        "Thermal detectors are insensitive to hydrogen concentration in the pore fluid"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Thermal neutron tools detect neutrons that have reached thermal equilibrium. Their population is strongly affected by the thermal absorption cross-section ($\\Sigma_a$) of elements in the formation (like chlorine in brine or boron/gadolinium in shales), unlike epithermal neutrons which are primarily affected by the slowing-down process.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 14 Neutron Porosity Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 14.3 on Types of Neutron Tools."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_lithology_effect_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Porosity",
+        "Lithology Effect"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "A neutron porosity tool is calibrated to a limestone matrix standard. If this tool is used to log a water-saturated, clean sandstone formation, how will the apparent porosity reading typically compare to the true formation porosity?",
+      "choices": [
+        "The tool will read a value significantly higher than the true porosity",
+        "The tool will read a value slightly lower than the true porosity",
+        "The tool will accurately read the true porosity without correction",
+        "The tool will read zero porosity due to the lack of calcium carbonate"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Due to the lithology effect (matrix effect), a tool calibrated for limestone (grain density ~2.71 g/cm$^3$) will underestimate the porosity in sandstone (grain density ~2.65 g/cm$^3$). The text states that the ratio in sandstone lies below the limestone line, resulting in an apparent limestone porosity a few units less than the true porosity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 14 Neutron Porosity Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 14.9.1 on Lithology Effect and Fig. 14.9."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_gas_effect_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Porosity",
+        "Gas Effect"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the primary physical reason that gas-bearing zones exhibit anomalously low apparent porosity on neutron logs?",
+      "choices": [
+        "Gas has a very high thermal absorption cross-section, which depresses the neutron flux",
+        "Gas reduces the bulk density of the formation, causing the tool to lose contact with the borehole wall",
+        "Gas has a significantly lower hydrogen density than water or oil, increasing the slowing-down length",
+        "Gas invades the formation deeper than water, making it invisible to the shallow neutron tool"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The gas effect occurs because gas has a much lower density and hydrogen concentration compared to liquid water or oil. This reduced hydrogen density makes the formation less efficient at slowing down neutrons, leading to a longer slowing-down length ($L_s$). A longer $L_s$ corresponds to a lower apparent porosity reading.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 14 Neutron Porosity Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 14.9.3 on Gas Effect."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_shale_effect_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Porosity",
+        "Shale Effect"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What is the main cause of the characteristically high apparent neutron porosity readings observed in shale formations?",
+      "choices": [
+        "The presence of hydrogen in the hydroxyl groups within the clay mineral structure",
+        "The high concentration of thermal absorbers like boron typically found in shales",
+        "The extremely high effective porosity and permeability of shale laminations",
+        "The presence of micro-fractures filled with high-salinity formation water"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "While thermal absorbers can affect the reading, the primary cause of high neutron porosity in shales is the hydrogen content associated with the shale matrix itself, specifically the hydroxyls (OH-) in the clay mineral structure. The tool cannot distinguish this hydrogen from the hydrogen in pore fluids.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 14 Neutron Porosity Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 14.9.2 on Shale Effect."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_salinity_effect_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Porosity",
+        "Environmental Corrections"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "How do the competing physical effects of high formation water salinity typically influence the response of a thermal neutron porosity tool?",
+      "choices": [
+        "The reduced hydrogen index lowers the apparent porosity, while the increased thermal absorption increases the ratio (raising apparent porosity)",
+        "Both the reduced hydrogen index and the increased thermal absorption act to significantly lower the apparent porosity reading",
+        "The increased density of salt water shortens the slowing-down length, causing the tool to overestimate porosity significantly",
+        "Salinity has no effect on the ratio measurement because the near and far detectors are affected equally"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Salinity introduces two competing effects: 1) Dissolved salt displaces hydrogen, reducing the Hydrogen Index (HI), which would theoretically lower the porosity reading. 2) Chlorine is a strong thermal absorber, which depresses the thermal neutron flux and increases the Near/Far ratio (which correlates to higher porosity). The text notes that the absorption effect tends to counteract the loss of hydrogen.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 14 Neutron Porosity Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 14.8 on Environmental Effects."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_doi_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Porosity",
+        "Depth of Investigation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In a dual-detector neutron tool, how does the depth of investigation of the ratio measurement compare to that of the individual detectors?",
+      "choices": [
+        "The ratio measurement has a greater depth of investigation than either the near or far detector individually",
+        "The ratio measurement has a depth of investigation exactly equal to the far detector",
+        "The ratio measurement corresponds to the shallow depth of the near detector to ensure high vertical resolution",
+        "The ratio measurement averages the depths, falling strictly between the near and far detector values"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Taking the ratio of near and far detector count rates partially eliminates the response common to both detectors, which is the signal from the region closest to the borehole. This processing effectively weights the signal from deeper in the formation more strongly, resulting in a depth of investigation that is deeper than either single detector.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 14 Neutron Porosity Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 14.10 on Depth of Investigation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_temperature_effect_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Neutron Porosity",
+        "Environmental Corrections"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "What is the general effect of elevated downhole temperatures on the porosity reading of a thermal neutron device (assuming no other environmental corrections)?",
+      "choices": [
+        "The apparent porosity reading decreases as temperature increases",
+        "The apparent porosity reading increases as temperature increases",
+        "The reading remains unchanged as temperature effects are self-compensating",
+        "The porosity reads zero once the temperature exceeds the thermal threshold of the source"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The text states that simply stated, the apparent thermal neutron porosity decreases as the formation and borehole temperature increase. This is related to the hardening of the neutron energy spectrum at higher temperatures, which reduces the detection efficiency of the thermal detectors.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 14 Neutron Porosity Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 14.8.1 on Temperature Effect."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
     }
   ]
