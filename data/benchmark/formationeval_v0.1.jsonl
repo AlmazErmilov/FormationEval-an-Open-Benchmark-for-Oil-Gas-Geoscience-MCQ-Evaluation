@@ -340,7 +340,7 @@
         "calc_required": false,
         "contamination_risk": "low"
       }
-    }
+    },
     {
       "id": "formationeval_v0.1_petrophysics_gas_detection_001",
       "version": "formationeval_v0.1",
@@ -753,6 +753,300 @@
           "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
           "retrieved_at": "2025-12-21",
           "notes": "Concept derived from Section 2.2 and Fig 2.1."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_resistivity_physics_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Resistivity",
+        "Formation Water Properties"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "According to the physical models presented in the text, what is the primary underlying mechanism responsible for the decrease in formation water resistivity as temperature increases?",
+      "choices": [
+        "Increased thermal agitation reduces the viscosity of the water, increasing ionic mobility",
+        "Increased temperature causes salt ions to dissociate more completely, increasing concentration",
+        "Thermal expansion of the water reduces the mean free path of the charge carriers",
+        "Higher temperatures strip the hydration water from ions, effectively reducing their charge"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The text explains that electrolytic resistivity is proportional to viscosity. As temperature increases, the viscosity of the liquid decreases (due to overcoming intermolecular forces), which increases the mobility of the ions in solution. Higher mobility leads to higher conductivity and lower resistivity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 3 Basic Resistivity and Spontaneous Potential",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on section 3.3 regarding temperature dependence of electrolytic conduction."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_spontaneous_potential_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Spontaneous Potential",
+        "Liquid Junction Potential"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Which physical property difference between dissolved sodium (Na+) and chloride (Cl-) ions is the fundamental driver of the liquid-junction potential?",
+      "choices": [
+        "The difference in their ionic mobility",
+        "The difference in their atomic mass",
+        "The difference in their valence charge magnitude",
+        "The difference in their thermal stability"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The liquid-junction potential arises from the diffusion of ions across a concentration gradient. Because Cl- ions have higher mobility than Na+ ions, they diffuse faster, creating a charge separation (dipole) that generates the potential.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 3 Basic Resistivity and Spontaneous Potential",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on the origin of liquid-junction potential."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_ion_properties_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Basic Physics",
+        "Formation Water Properties"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Why does the sodium ion (Na+) exhibit lower mobility than the chloride ion (Cl-) in formation waters, despite the sodium cation being physically smaller than the chloride anion?",
+      "choices": [
+        "The Na+ ion attracts a larger sphere of hydration water molecules due to its surface charge density",
+        "The Na+ ion is heavier than the Cl- ion, requiring more force to accelerate",
+        "The Na+ ion tends to form temporary bonds with the silicate rock matrix more often",
+        "The Na+ ion experiences greater repulsion from the water dipoles than the Cl- ion"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Although the Na+ cation is smaller than the Cl- anion, its smaller size creates a higher charge density that binds water molecules more strongly. This results in a much larger 'hydrated' radius for Na+, which increases drag and reduces mobility according to Stokes's law.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 3 Basic Resistivity and Spontaneous Potential",
+          "retrieved_at": "2025-12-21",
+          "notes": "Detail-oriented question on the Nernst-Einstein relation and hydration solvation numbers."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_spontaneous_potential_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Spontaneous Potential",
+        "Shale Properties"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How do shale formations contribute to the generation of the Spontaneous Potential (SP) signal in a borehole?",
+      "choices": [
+        "They act as cation-selective membranes that allow Na+ to pass while excluding Cl-",
+        "They act as high-permeability filters that enhance the streaming potential of the mud filtrate",
+        "They generate a redox potential due to the presence of metallic sulfides and graphite",
+        "They function as anion-selective barriers that trap positive charges within the formation"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "Shales contain clay minerals with negatively charged surfaces. These surfaces repel anions (like Cl-) but allow cations (like Na+) to diffuse through the pore space. This ion selectivity generates the membrane potential component of the SP.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 3 Basic Resistivity and Spontaneous Potential",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on the membrane potential mechanism."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_log_interpretation_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Spontaneous Potential",
+        "Log Interpretation"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "In a permeable sandstone formation where the drilling mud filtrate is saltier (lower resistivity) than the formation water, what is the expected deflection of the SP curve relative to the shale baseline?",
+      "choices": [
+        "It deflects to the right (positive direction)",
+        "It deflects to the left (negative direction)",
+        "It shows no deflection from the baseline",
+        "It fluctuates rapidly due to electrokinetic noise"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The direction of the SP deflection depends on the contrast between mud filtrate resistivity (Rmf) and formation water resistivity (Rw). When the mud filtrate is more saline than the formation water (Rmf < Rw), the electrochemical potential reverses polarity compared to the standard case, causing a positive (rightward) deflection.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 3 Basic Resistivity and Spontaneous Potential",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on Figure 3.11 and accompanying text regarding Rmf < Rw."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_shaly_sand_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Spontaneous Potential",
+        "Shaly Sands"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the Pseudo Static Potential (PSP) in the context of SP log analysis?",
+      "choices": [
+        "The reduced SP amplitude observed in a shaly sand due to clay suppressing the liquid-junction potential",
+        "The theoretical maximum potential developed in a clean, thick, water-bearing sand",
+        "The component of the SP signal generated solely by streaming potentials across the mudcake",
+        "The baseline drift potential caused by changes in formation water salinity with depth"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "In shaly sands, the presence of clay impedes the mobility of anions, which interferes with the development of the full liquid-junction potential. The resulting suppressed potential, which is lower than the Static Spontaneous Potential (SSP) of a clean sand, is termed the Pseudo Static Potential (PSP).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 3 Basic Resistivity and Spontaneous Potential",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept-based item on PSP definition."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_hydrocarbon_effect_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Spontaneous Potential",
+        "Hydrocarbon Detection"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "How does the presence of hydrocarbons typically affect the SP response in a shaly sand compared to a water-bearing shaly sand?",
+      "choices": [
+        "The SP deflection is further reduced because the influence of the clay's surface charge becomes proportionately stronger",
+        "The SP deflection increases to match that of a clean sand because hydrocarbons block the clay membrane",
+        "The SP reverses direction because hydrocarbons act as an insulator preventing ion diffusion",
+        "The SP response becomes erratic and noisy due to the immiscibility of oil and water"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "In a shaly sand, the presence of hydrocarbons reduces the volume of water available for ion transport. This makes the effect of the surface-charged clay particles proportionately higher, leading to a stronger suppression of the electrochemical potential and a smaller SP deflection compared to a wet shaly sand.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 3 Basic Resistivity and Spontaneous Potential",
+          "retrieved_at": "2025-12-21",
+          "notes": "Based on the section 'Log Example of the SP' discussing hydrocarbon effects in shaly sands."
         }
       ],
       "derivation_mode": "concept_based",
