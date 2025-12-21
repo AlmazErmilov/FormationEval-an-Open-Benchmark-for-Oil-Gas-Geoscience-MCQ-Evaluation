@@ -3506,5 +3506,471 @@
         "calc_required": false,
         "contamination_risk": "medium"
       }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_natural_radioactivity_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Petroleum Geology"
+      ],
+      "topics": [
+        "Natural Radioactivity",
+        "Isotopes"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "Which three radioactive isotopes are primarily responsible for the natural gamma radiation measured by logging tools in sedimentary formations?",
+      "choices": [
+        "Potassium-40, Thorium-232, and Uranium-238",
+        "Cesium-137, Cobalt-60, and Radium-226",
+        "Potassium-39, Thorium-230, and Uranium-235",
+        "Carbon-14, Radon-222, and Polonium-210"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The text states that there are only three naturally occurring isotopes with half-lives comparable to the age of the earth that contribute significantly to formation radioactivity: Potassium-40 ($^{40}$K), Thorium-232 ($^{232}$Th), and Uranium-238 ($^{238}$U). Other isotopes mentioned like $^{137}$Cs or $^{60}$Co are contaminants or have too short half-lives to be primary natural sources.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.2 Sources of Natural Radioactivity."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_tool_calibration_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Tool Calibration",
+        "API Units"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How is the standard API unit for gamma ray logging defined?",
+      "choices": [
+        "It is based on the radiation flux of a 1-gram Radium equivalent source at 1 meter distance.",
+        "It is defined by an artificial formation at the University of Houston containing specific concentrations of K, Th, and U, set to read 200 API units.",
+        "It corresponds to the radiation level of an average mid-continent shale, defined as 100 API units.",
+        "It is calibrated such that a clean water-bearing sandstone reads 0 API units and a pure kaolinite clay reads 100 API units."
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The API unit is defined using an artificial radioactive formation constructed at the University of Houston. This formation, containing approximately 4% Potassium, 24 ppm Thorium, and 12 ppm Uranium, is defined to equal 200 API units.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.3 Gamma Ray Devices."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_spectral_gamma_ray_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Spectral Gamma Ray",
+        "Clay Estimation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the primary advantage of using the Computed Gamma Ray (CGR) curve instead of the total Gamma Ray (GR) curve for clay volume estimation?",
+      "choices": [
+        "The CGR includes uranium contribution, which is the most reliable indicator of clay cation exchange capacity.",
+        "The CGR curve corrects for borehole size and mud weight effects which distort the total GR signal.",
+        "The CGR excludes the uranium contribution, avoiding overestimation of shale volume in organic-rich or fractured zones.",
+        "The CGR provides a higher vertical resolution by utilizing only the high-energy thorium peaks."
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "The Computed Gamma Ray (CGR) is the sum of thorium and potassium contributions, excluding uranium. Since uranium is often associated with organic matter or fractures rather than clay minerals, removing it provides a more accurate clay volume indicator (often called the 'uranium-free' gamma ray).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.5 Spectral Gamma Ray Logging."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_isotope_geochemistry_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Petroleum Geology"
+      ],
+      "topics": [
+        "Isotope Geochemistry",
+        "Clay Mineralogy"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Why is uranium generally considered a poor indicator of clay mineral volume compared to thorium and potassium?",
+      "choices": [
+        "Uranium has a short half-life, making its radiation undetectable in older geologic formations.",
+        "Uranium compounds are soluble and mobile, often associating with organic matter rather than the clay lattice.",
+        "Uranium is only found in igneous rocks and does not occur in sedimentary environments.",
+        "Uranium emits alpha particles which cannot be detected by standard scintillation crystals."
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Uranium compounds are soluble, allowing them to be transported and precipitated far from the site of clay formation. Uranium tends to associate with organic matter (e.g., in organic shales) or precipitate in fractures, unlike thorium and potassium which are chemically or structurally integral to clays and feldspars.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.2 Sources of Natural Radioactivity."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_tool_physics_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Tool Physics",
+        "Gamma Ray Attenuation"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Does the gamma ray log respond to the volumetric concentration or the mass concentration of radioactive elements, and why?",
+      "choices": [
+        "Volumetric concentration, because the detector measures counts per unit of formation volume.",
+        "Mass concentration, because the mass absorption coefficient is effectively independent of bulk density.",
+        "Volumetric concentration, because density effects are canceled out by the borehole fluid compensation.",
+        "Mass concentration, but only if the formation density is assumed to be constant at 2.65 g/cm³."
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The text explains that the total gamma ray flux is proportional to $n/\rho_b$ (number of emitters divided by bulk density). Since the mass absorption coefficient ($\mu$) is independent of bulk density, the count rate relates directly to the weight percent (mass concentration) of the radioactive isotope.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.3 Gamma Ray Devices (Eq 11.3)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_log_quality_control_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Drilling Engineering"
+      ],
+      "topics": [
+        "LWD",
+        "Environmental Corrections"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "When comparing LWD and wireline gamma ray logs in the same well, what is the most significant source of observed discrepancies?",
+      "choices": [
+        "Intrinsic differences in detector sensitivity to formation radioactivity.",
+        "The variation in logging speed between drilling and wireline operations.",
+        "Differences in environmental corrections, particularly in barite-weighted muds.",
+        "The Doppler shift effect caused by the rotation of the LWD tool."
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Monte Carlo simulations have shown that intrinsic sensitivity to formation radioactivity is very similar between wireline and LWD tools. The primary cause of discrepancies is the application (or failure to apply) accurate environmental corrections, especially for borehole size and mud constituents like barite.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.6 Developments in Spectral Gamma Ray Logging."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_depth_of_investigation_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Depth of Investigation",
+        "Tool Physics"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "What is the approximate depth of investigation (providing 90% of the signal) for a standard gamma ray tool measuring unscattered gamma rays in a typical formation?",
+      "choices": [
+        "2–5 cm",
+        "15–18 cm",
+        "40–50 cm",
+        "90–100 cm"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Monte Carlo simulations indicate that 90% of the signal for unscattered gamma rays comes from an annulus approximately 15 cm (6 inches) thick. Including multiply scattered rays increases this depth by only a few centimeters.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.7 A Note on Depth of Investigation."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_data_processing_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Spectral Stripping",
+        "Data Processing"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Which mathematical method is used in 'spectral stripping' to calculate the concentrations of Thorium, Uranium, and Potassium from the raw window count rates?",
+      "choices": [
+        "Fourier transform analysis",
+        "Weighted least squares analysis using response standards",
+        "Simple algebraic subtraction of background radiation",
+        "Geometric averaging of peak amplitudes"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The concentrations are determined by solving an overdetermined system of equations (where the number of energy windows exceeds the number of isotopes). This is done using a weighted least squares analysis that fits the measured spectrum to a set of standard response spectra (the response matrix).",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.5.1 Spectral Stripping."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_lithology_identification_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics",
+        "Petroleum Geology"
+      ],
+      "topics": [
+        "Lithology Identification",
+        "Mica"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How does the presence of mica in a sandstone formation typically affect standard gamma ray and resistivity logs?",
+      "choices": [
+        "It causes low gamma ray readings and low resistivity, resembling a clean water sand.",
+        "It causes high gamma ray readings (resembling shale) but maintains high resistivity (resembling clean sand).",
+        "It causes high gamma ray readings and very low resistivity, indistinguishable from conductive shale.",
+        "It has no effect on the gamma ray log but significantly increases the neutron porosity."
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Mica minerals (like muscovite and biotite) contain potassium, leading to high gamma ray readings that mimic shale. However, unlike clay minerals, micas are generally electrical insulators and have low cation exchange capacity, so they do not suppress resistivity like conductive clays do.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.5 Spectral Gamma Ray Logging."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_log_interpretation_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Log Interpretation",
+        "Feldspar"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "Why is the identification of potassium feldspars using spectral gamma ray data important for density log interpretation?",
+      "choices": [
+        "Feldspars are highly radioactive and artificially increase the measured bulk density.",
+        "Feldspars affect the choice of matrix (grain) density used to calculate porosity from the density log.",
+        "Feldspars absorb gamma rays significantly, requiring a special barite correction factor.",
+        "Feldspars indicate the presence of high-density heavy minerals like monazite."
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The text notes that excess potassium often indicates feldspars. Identifying feldspar is critical because it has a different grain density than quartz (e.g., 2.52–2.63 g/cm³ depending on type). Using the wrong matrix density in the density-porosity equation will yield incorrect porosity values.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.5 Spectral Gamma Ray Logging (discussion of Fig 11.8)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_environmental_effects_011",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Environmental Effects",
+        "Mud Additives"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "How does the presence of barite in drilling mud affect the gamma ray log?",
+      "choices": [
+        "It causes an artificially high reading because barite contains trace thorium.",
+        "It acts as a shield, absorbing low-energy formation gamma rays and lowering the measured count rate.",
+        "It has no effect on total gamma ray counts, only on the uranium spectral window.",
+        "It increases the depth of investigation by focusing the gamma rays."
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Barium (in barite) is a heavy element that efficiently absorbs low-energy gamma rays emanating from the formation. This attenuation results in a lower measured count rate, requiring environmental corrections to restore the true formation radioactivity.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter 11 Gamma Ray Devices",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 11.3 Gamma Ray Devices."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
     }
   ]
