@@ -341,4 +341,424 @@
         "contamination_risk": "low"
       }
     }
+    {
+      "id": "formationeval_v0.1_petrophysics_gas_detection_001",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Gas Detection",
+        "Neutron-Density Log"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "When interpreting a combination neutron-density log calibrated to a sandstone matrix, what characteristic pattern indicates the presence of gas in the formation?",
+      "choices": [
+        "The neutron porosity reads significantly higher than the density porosity due to high hydrogen index",
+        "Both porosity curves track closely together with very low values",
+        "The density porosity reads higher than the neutron porosity, creating a crossover",
+        "Both curves read negative porosity values due to matrix density effects"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Gas has a lower density than oil or water, causing the density tool to calculate a falsely high porosity. Conversely, gas has a lower hydrogen concentration (hydrogen index) than liquid-filled pore space, causing the neutron tool to calculate a falsely low porosity. This divergence, where density porosity exceeds neutron porosity, creates the characteristic 'crossover' effect used to identify gas.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 2.5 on curve behavior."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_invasion_profile_002",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Invasion",
+        "Resistivity Logging"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "Under what specific condition does a low-resistivity 'annulus' typically form in the transition zone between the flushed zone and the uninvaded formation?",
+      "choices": [
+        "When the drilling mud filtrate is much more resistive than the formation water",
+        "When hydrocarbons in the formation are more mobile than the formation water",
+        "When the formation is entirely water-bearing and invaded by fresh mud",
+        "When gravity segregation separates gas from oil in a horizontal well"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "An annulus forms when the hydrocarbons (oil or gas) are more mobile than the formation water. As the mud filtrate invades, it pushes the hydrocarbons out deeper, but the formation water is pushed ahead of the filtrate and accumulates in a 'bank' or transition zone between the flushed zone and the uninvaded zone. This concentration of formation water lowers the resistivity in that specific ring.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 2.3 describing the borehole environment."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_quicklook_interpretation_003",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Quicklook Interpretation",
+        "Moveable Hydrocarbons"
+      ],
+      "difficulty": "hard",
+      "language": "en",
+      "question": "In a wellsite interpretation, comparing the ratio of flushed zone resistivity to true resistivity ($R_{xo}/R_t$) against the ratio of mud filtrate to formation water resistivity ($R_{mf}/R_w$) can indicate producibility. What does it suggest if $R_{xo}/R_t$ is less than $R_{mf}/R_w$?",
+      "choices": [
+        "The formation is likely tight and no invasion has occurred",
+        "The zone contains hydrocarbons that have been moved by the drilling fluid",
+        "The formation contains only non-moveable residual oil",
+        "The zone is water-bearing with no hydrocarbon saturation"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "The text states that if the ratio $R_{xo}/R_t$ is the same as $R_{mf}/R_w$, then the flushed and uninvaded zones likely have the same hydrocarbon saturation (or none), implying no movement. However, if $R_{xo}/R_t < R_{mf}/R_w$, it indicates that some hydrocarbons were displaced (moved) by the invading filtrate, suggesting the hydrocarbons are producible.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 2.2 on rudimentary interpretation principles."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_lithology_004",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Lithology Identification",
+        "Clean Zones"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "Which combination of Spontaneous Potential (SP) and Gamma Ray (GR) log responses typically identifies a 'clean' (low shale volume) permeable zone?",
+      "choices": [
+        "SP deflects to the right and GR reads high API values",
+        "SP tracks the shale baseline and GR reads high API values",
+        "SP deflects to the left (negative) and GR reads low API values",
+        "SP remains flat and GR shows maximum deflection to the right"
+      ],
+      "answer_index": 2,
+      "answer_key": "C",
+      "rationale": "Shale indicators generally increase towards the right on standard log presentations. A clean zone (low shale) is characterized by a GR reading that is lower (left) than the shale sections. Similarly, the SP curve typically deflects to the left (becomes more negative) in clean, permeable formations compared to the shale baseline.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 2.2 and Section 2.5."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_matrix_effects_005",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Matrix Effects",
+        "Density Log"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "If a formation consists of anhydrite streaks but the density log is processed assuming a sandstone matrix, what characteristic response will be observed on the porosity log?",
+      "choices": [
+        "The log will read essentially zero porosity",
+        "The log will indicate negative porosity values",
+        "The neutron and density curves will show a large positive separation",
+        "The log will show falsely high porosity due to low matrix density"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Anhydrite has a significantly higher matrix density than sandstone. When the tool is set to calculate porosity based on the lower density of a sandstone matrix, the higher measured bulk density of the anhydrite forces the calculation into negative numbers to satisfy the equation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 2.5 (discussion of Fig 2.16)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_shale_response_006",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Shale Effect",
+        "Neutron-Density Log"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "How do neutron and density porosity logs typically behave in shale sections when plotted on a compatible limestone or sandstone scale?",
+      "choices": [
+        "Neutron porosity reads significantly higher than density porosity",
+        "Both logs read very low porosity due to lack of permeability",
+        "Density porosity reads significantly higher than neutron porosity (crossover)",
+        "Both logs show identical high porosity values"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "In shales, the neutron tool detects hydrogen associated with the clay structure (bound water), leading to a high apparent porosity reading. The density tool reads a lower apparent porosity (relative to the neutron) due to the density of the shale/clay matrix. This results in a large separation where Neutron >> Density, which is the opposite of the gas effect.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 2.5 (discussion of Fig 2.15)."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "high"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_borehole_environment_007",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Borehole Environment",
+        "LWD"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "Why might Logging While Drilling (LWD) measurements show a shallower depth of invasion compared to wireline logs recorded in the same well?",
+      "choices": [
+        "LWD tools have a physically shallower depth of investigation",
+        "LWD measurements are typically made shortly after drilling, before significant invasion occurs",
+        "LWD tools effectively remove mudcake during the logging process",
+        "LWD tools use different physics that are immune to invasion effects"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "LWD logs are usually recorded just a few hours after the formation is drilled. Invasion is a time-dependent process; because wireline logs are run days later, invasion has had much more time to progress deep into the formation compared to when the LWD sensors passed the zone.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 2.3."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_formation_evaluation_008",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Resistivity Logging",
+        "Formation Evaluation"
+      ],
+      "difficulty": "medium",
+      "language": "en",
+      "question": "In a porous formation saturated with water, how does the True Formation Resistivity ($R_t$) generally change as porosity increases, assuming water salinity remains constant?",
+      "choices": [
+        "It decreases",
+        "It increases",
+        "It remains constant",
+        "It fluctuates randomly"
+      ],
+      "answer_index": 0,
+      "answer_key": "A",
+      "rationale": "The text explains that the formation resistivity is affected by porosity. Since the rock matrix is non-conductive and the electric current flows through the conductive electrolyte (brine) in the pore space, increasing the porosity provides more conductive paths, thereby decreasing the resistivity ($R_t$) of the formation.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 2.2 on rudimentary interpretation principles."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_log_presentation_009",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Log Presentation",
+        "Caliper Log"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "What phenomenon often causes the caliper log to read a borehole diameter significantly larger than the bit size in shale sections compared to clean sand sections?",
+      "choices": [
+        "Shale swelling reduces the hole diameter",
+        "Washout of the shale due to structural weakness",
+        "Formation of thick mudcake on the shale wall",
+        "Equipment calibration error in conductive shales"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Clean sand sections generally retain their structural integrity and hold gauge. However, shale sections often lose structural integrity during drilling and wash out, causing the caliper tool to measure a borehole diameter larger than the drill bit size.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 2.5."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "medium"
+      }
+    },
+    {
+      "id": "formationeval_v0.1_petrophysics_fluid_saturation_010",
+      "version": "formationeval_v0.1",
+      "domains": [
+        "Petrophysics"
+      ],
+      "topics": [
+        "Fluid Saturation",
+        "Volumetrics"
+      ],
+      "difficulty": "easy",
+      "language": "en",
+      "question": "In the volumetric definition of rock properties, how is the total fractional volume of oil in a formation expressed?",
+      "choices": [
+        "The product of porosity and water saturation ($\phi \times S_w$)",
+        "The product of porosity and oil saturation ($\phi \times S_o$)",
+        "The value of oil saturation ($S_o$) directly",
+        "The ratio of oil saturation to porosity ($S_o / \phi$)"
+      ],
+      "answer_index": 1,
+      "answer_key": "B",
+      "rationale": "Porosity ($\phi$) is the fraction of total rock volume that is pore space. Oil saturation ($S_o$) is the fraction of that pore space filled with oil. Therefore, the fraction of the total bulk volume occupied by oil is the product of the two: $\phi \times S_o$.",
+      "sources": [
+        {
+          "source_id": "ellis_singer_well_logging_2007",
+          "source_title": "Well Logging for Earth Scientists, 2nd Edition",
+          "source_url": "https://doi.org/10.1007/978-1-4020-4602-5",
+          "source_type": "textbook",
+          "year": 2007,
+          "license": "Proprietary (Springer)",
+          "attribution": "Darwin V. Ellis and Julian M. Singer",
+          "chapter_ref": "Chapter Introduction to Well Log Interpretation: Finding the Hydrocarbon",
+          "retrieved_at": "2025-12-21",
+          "notes": "Concept derived from Section 2.2 and Fig 2.1."
+        }
+      ],
+      "derivation_mode": "concept_based",
+      "metadata": {
+        "calc_required": false,
+        "contamination_risk": "low"
+      }
+    }
   ]
