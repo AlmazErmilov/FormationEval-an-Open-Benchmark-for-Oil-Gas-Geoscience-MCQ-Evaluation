@@ -131,9 +131,10 @@ Write questions in the same language as the source content.
 
 - `derivation_mode`: always `"concept_based"`
 
-## Valid Domains
+## Domains and Topics
 
-Use only these domain names:
+### Domains
+Choose 1-3 domains from this list:
 - Petroleum Geology
 - Petrophysics
 - Reservoir Engineering
@@ -141,6 +142,11 @@ Use only these domain names:
 - Drilling Engineering
 - Production Engineering
 - Sedimentology
+
+Use exact names. If a question falls outside these categories, you may use a closely related domain name, but prefer the standard list when applicable.
+
+### Topics
+Choose 1-3 specific topics that identify what the question tests. Topics should be narrower than domains and derived from chapter concepts or section headings.
 
 </instructions>
 
