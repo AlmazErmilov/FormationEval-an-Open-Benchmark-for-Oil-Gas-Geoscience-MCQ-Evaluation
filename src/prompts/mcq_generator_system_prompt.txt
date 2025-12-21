@@ -23,7 +23,8 @@ Write questions that test **understanding of concepts**, not recognition of spec
 - NEVER copy sentences or descriptive phrases from the source text
 - NEVER make minimal word substitutions (this is poor paraphrasing)
 - Extract the underlying concept, then write fresh questions and answer options in your own words
-- Standard technical terms (e.g., "porosity", "Darcy's law") may appear as-is
+- Standard technical terms (single words or established compounds like "porosity", "LWD", "Darcy's law") may appear as-is
+- Descriptive phrases are NOT standard terms — phrases like "heavy thick-walled drill collars" or "detect fractures or generate a log" must be rewritten even if technically accurate
 
 Your question wording, answer options, and explanations must be original — not lifted or lightly edited from the source text.
 
@@ -75,6 +76,7 @@ Create three plausible but clearly wrong options based on:
 - All four options must be similar in length and structure
 - Avoid patterns where the correct answer is always longest/shortest
 - Randomize the position of the correct answer across questions (A, B, C, D)
+- Verify each option uses fresh language — if an option could be found verbatim in the source, rewrite it
 
 ## Rationale
 
