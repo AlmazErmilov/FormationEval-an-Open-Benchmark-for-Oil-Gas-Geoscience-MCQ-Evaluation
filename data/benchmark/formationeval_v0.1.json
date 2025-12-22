@@ -12581,5 +12581,518 @@
             "calc_required": false,
             "contamination_risk": "medium"
         }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_seismic_waves_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics"
+        ],
+        "topics": [
+            "Seismic Waves",
+            "Rock Physics"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A seismic survey records both compressional (P) and shear (S) arrivals. Which statement best describes how these wave types interact with pore fluids in sedimentary rocks?",
+        "choices": [
+            "Both P-waves and S-waves travel mainly through pore fluids, so they are equally sensitive to water or gas",
+            "P-waves can propagate through the rock frame and pore fluids, while S-waves require a solid framework",
+            "P-waves require a solid framework, while S-waves can travel through both solids and pore fluids",
+            "Neither P-waves nor S-waves can propagate through porous rocks because pores disrupt continuity"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Compressional waves involve volumetric strain and can pass through both solids and fluids, so they are recorded in fluid-saturated rocks. Shear waves require resistance to shear deformation, which fluids cannot provide, so they only propagate through the solid skeleton. This difference is central to how fluids influence seismic responses.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the discussion of P- versus S-wave propagation in porous media."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_seismic_velocity_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petrophysics"
+        ],
+        "topics": [
+            "Seismic Velocity",
+            "Cementation Effects"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Two sandstone intervals have similar porosity at the same burial depth, but one has strong carbonate cement at grain contacts. Compared with the weakly cemented interval, what seismic-velocity effect is most likely and why?",
+        "choices": [
+            "Lower velocity, because cement increases the amount of pore space that the wave must cross",
+            "Lower velocity, because carbonate minerals always slow down elastic waves relative to quartz",
+            "Similar velocity, because porosity alone controls velocity once the rock is water-saturated",
+            "Higher velocity, because cement strengthens grain coupling and increases the rock’s stiffness"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Cement that binds grains into a stiffer framework increases elastic stiffness and therefore raises wave speed, even when porosity remains relatively high. The chapter also emphasizes that rocks with the same porosity can show different velocities because grain contacts and cement distribution matter. Porosity is important, but it is not the only control.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on how cementation and grain-contact stiffness affect seismic velocity beyond porosity alone."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_reflection_coefficient_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics"
+        ],
+        "topics": [
+            "Reflection Coefficient",
+            "Acoustic Impedance"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A normal-incidence seismic wave encounters a boundary where Layer 1 has density 2300 kg/m³ and P-wave velocity 3000 m/s, and Layer 2 has density 2500 kg/m³ and P-wave velocity 5000 m/s. Using the reflection-coefficient relationship based on acoustic impedance, what is the approximate reflection coefficient magnitude?",
+        "choices": [
+            "0.29",
+            "0.06",
+            "0.41",
+            "0.86"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Acoustic impedance is Z = ρv. Here Z1 = 2300×3000 = 6.9×10^6 and Z2 = 2500×5000 = 12.5×10^6, so R = (Z2−Z1)/(Z2+Z1) ≈ 5.6/19.4 ≈ 0.29. The other values are inconsistent with the relative impedance contrast implied by the numbers.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based calculation using the chapter’s reflection-coefficient definition in terms of impedance contrast."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_seismic_resolution_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics"
+        ],
+        "topics": [
+            "Seismic Resolution",
+            "Stratigraphic Imaging"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A reservoir contains thin interbeds of sand and shale, each much thinner than the vertical resolution of the seismic data. What is the most likely outcome on the seismic section?",
+        "choices": [
+            "Each thin bed will appear as a separate reflector because impedance contrast alone controls resolution",
+            "The reflector spacing will directly equal the true bed thickness regardless of the seismic wavelength",
+            "Individual beds will not be distinctly separated; the response will be dominated by the wavelet and an averaged impedance effect",
+            "The seismic record will show no reflections at all because thin beds absorb all seismic energy"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter notes that there is a practical lower limit to resolvable thickness tied to the wavelength (on the order of about half a wavelength). When beds are thinner than this limit, reflections from closely spaced boundaries interfere and do not form clearly separated events. The result is a blended or composite seismic response rather than bed-by-bed imaging.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on vertical resolution limits and the role of seismic wavelength/pulse width."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_flat_spots_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Direct Hydrocarbon Indicators",
+            "Flat Spots"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "On a seismic section, a strong reflection event is nearly horizontal and cuts across dipping stratigraphic reflections. In the context of hydrocarbon interpretation, what is the most consistent explanation given in the chapter?",
+        "choices": [
+            "A lithologic boundary that must parallel bedding because depositional layering always controls reflections",
+            "A fluid contact that can remain level and generate a strong impedance contrast, producing a so-called flat spot",
+            "A fault plane, because steep discontinuities commonly reflect seismic energy back to the source",
+            "A purely processing artifact that cannot be distinguished from geology even after filtering"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter describes a horizontal reflector that does not follow stratigraphy as a potential indicator of a fluid contact (often gas-related) because it can create a strong impedance contrast and stays level. It also warns that near-horizontal multiple reflections can mimic this appearance, but those can be addressed during processing. Fault planes themselves are typically too steep to act as clear reflectors.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on interpreting horizontal crosscutting reflections as potential fluid contacts (flat spots) versus other causes."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_seismic_stratigraphy_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Seismic Stratigraphy",
+            "Stratal Termination Patterns"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A seismic package shows clinoform reflections that build basinward across a surface, with the youngest reflectors stepping progressively farther into the basin. Which stratal termination pattern best fits this geometry?",
+        "choices": [
+            "Baselap, because reflectors gradually accumulate above the basal surface without basinward stepping",
+            "Onlap, because nearly horizontal reflectors terminate against a sloping surface during transgression",
+            "Toplap, because reflectors are truncated at an upper erosional surface",
+            "Downlap, associated with basinward progradation (offlap) where younger beds extend farther seaward"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "The chapter links basinward-stepping progradation across a surface to downlap, and describes the overall basinward building as offlap. Onlap instead describes beds terminating landward against an inclined surface during transgression. Toplap concerns termination against an upper boundary, commonly involving truncation.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on interpreting basinward progradation in terms of downlap/offlap terminology."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_sea_level_change_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Sea Level Change",
+            "Coastal Onlap Interpretation",
+            "Isostasy"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A geoscientist uses the vertical range of coastal onlap on a seismic profile to estimate sea-level rise. According to the chapter, what is the key reason this estimate cannot be treated as purely eustatic without further analysis?",
+        "choices": [
+            "Onlap geometry is controlled only by changes in sediment grain size, not by water depth",
+            "Eustatic sea level cannot create onlap patterns because onlap requires tectonic uplift",
+            "Local subsidence and isostatic adjustment to water and sediment loading can modify the relative sea-level signal",
+            "The onlap height range equals the compaction-corrected thickness of the entire basin fill"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter emphasizes that onlap reflects relative sea level, which combines sea-level change with local tectonic subsidence/uplift and isostatic responses to loading. Increased water depth adds load and can increase subsidence, while sediment deposition adds further load. Therefore, the observed onlap height is not a direct measure of global (eustatic) sea level by itself.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on interpreting onlap as relative sea-level change and the need to consider subsidence/isostasy."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_isostatic_loading_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Isostatic Compensation",
+            "Sea Level Loading"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "The chapter states that a 100 m eustatic sea-level rise increases loading and causes an additional 43.5 m of isostatic subsidence. What is the resulting equilibrium increase in water depth?",
+        "choices": [
+            "143.5 m",
+            "100 m",
+            "43.5 m",
+            "250 m"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The equilibrium change combines the primary sea-level rise (100 m) and the additional subsidence driven by the added water load (43.5 m). Adding these gives 143.5 m total increase in water depth at isostatic equilibrium. The 250 m figure relates to subsequent added accommodation when sediment infills the basin, not the water-only step.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Numerical item derived from the chapter’s example of water loading and isostatic amplification of sea-level rise."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_backstripping_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Backstripping",
+            "Basin Subsidence History",
+            "Thermal Maturity"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "In basin analysis, why is backstripping applied to well/stratigraphic data, and which uncertainty highlighted in the chapter can strongly limit the reliability of the reconstructed burial/temperature history?",
+        "choices": [
+            "It is used to convert seismic time directly into lithology, and the main uncertainty is clay-mineral type",
+            "It is used to recover primary tectonic/eustatic components of subsidence by removing compaction and load effects, and a major uncertainty is how geothermal gradient changed through time",
+            "It is used to identify strike-slip fault offsets, and the main uncertainty is the salinity of formation water",
+            "It is used to compute reflection coefficients from density logs, and the main uncertainty is the seismic wavelet shape"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter describes backstripping as a way to work backward from observed stratigraphy to infer the primary subsidence signal by accounting for compaction and loading influences. It also stresses that estimating how geothermal gradient evolved over geological time is crucial yet difficult, and it strongly impacts modeled temperature histories and maturity. Palaeowater depth estimates are also challenging, but the geothermal-gradient history is explicitly flagged as critical for maturity modeling.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on the purpose of backstripping and key uncertainties (especially geothermal-gradient history) in basin modeling."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_rift_basins_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Rift Basins",
+            "Evaporites",
+            "Salt Tectonics"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A rift basin develops in an arid climate and becomes partly isolated from open marine circulation. Based on the chapter, what outcome is most likely for the sedimentary fill and petroleum system evolution?",
+        "choices": [
+            "Glacioeustatic carbonates dominate, and sealing capacity is usually poor because carbonates always fracture",
+            "Deep-marine pelagic limestones dominate, and structural traps are unlikely because rifts have no faulting",
+            "Smectite-rich shale dominates, and salt-related structures are not expected because evaporites require humid climates",
+            "Evaporites are likely to accumulate and can form effective seals; thick salt may later create domes that generate traps"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "The chapter links arid, restricted basins during rifting to evaporite deposition and notes that thick salt can behave as an excellent seal. It also describes how sufficiently thick salt may rise to form domes that create structural traps and influence sediment distribution. These behaviors are part of why some rift-related evaporite systems become prolific petroleum provinces.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on arid rift settings, evaporite deposition, sealing behavior, and salt-dome trap development."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_seismic_migration_011",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics"
+        ],
+        "topics": [
+            "Fault Imaging",
+            "Seismic Migration",
+            "3D Seismic Interpretation"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "In conventional reflection seismic data, why can faults be difficult to position accurately, and what approach described in the chapter helps correct mispositioning related to edge/diffraction effects?",
+        "choices": [
+            "Fault planes are commonly too steep to return energy as a clear reflector, and migration processing can reposition events to better represent true structure",
+            "Fault planes always reflect strongly, but interpreters mis-pick them because density logs are unavailable; the solution is to run a neutron log",
+            "Faults are invisible because seismic velocity is independent of stress; the solution is to increase shot energy only",
+            "Faults disappear only in carbonates due to high rigidity; the solution is to avoid 3D surveys and use 2D lines only"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter notes that fault surfaces are commonly too steep to reflect energy back to the receivers, and that terminations can generate diffraction/edge effects that distort apparent fault location. Migration is specifically identified as a processing step that can correct many of these positioning errors. The chapter also highlights that dense 3D seismic helps map faults by enabling flexible section orientations and horizontal time-slices.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on why faults may not appear as reflectors and how migration/3D methods improve structural imaging."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_wyllie_equation_012",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petrophysics"
+        ],
+        "topics": [
+            "Wyllie Equation",
+            "Velocity-Porosity Relationship"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A water-saturated sandstone has measured P-wave velocity Vr = 3.0 km/s. Assume matrix velocity Vm = 5.8 km/s and pore-fluid velocity Vf = 1.5 km/s. Using the time-average (Wyllie) relation, what is the approximate porosity?",
+        "choices": [
+            "0.10",
+            "0.20",
+            "0.33",
+            "0.45"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Using 1/Vr = (1−φ)/Vm + φ/Vf gives 0.333 ≈ 0.172 + φ(0.667−0.172), so φ ≈ (0.333−0.172)/0.494 ≈ 0.33. The chapter also cautions that this equation is a simplification because rocks with the same porosity can have different velocities depending on contacts and cement distribution. Even so, it provides an approximate porosity estimate from velocity when matrix and fluid velocities are assumed.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 8 - Sequence Stratigraphy, Seismic Stratigraphy and Basin Analysis",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based calculation applying the chapter’s presentation of Wyllie’s time-average equation and its limitations."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "medium"
+        }
     }
 ]
