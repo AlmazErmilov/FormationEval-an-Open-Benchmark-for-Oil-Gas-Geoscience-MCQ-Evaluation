@@ -15548,5 +15548,473 @@
       "calc_required": false,
       "contamination_risk": "medium"
     }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_source_rock_deposition_001",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Source Rock Formation",
+      "Redox Conditions"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "A basin is producing thick organic-rich shale intervals. Which depositional condition most strongly supports preservation of organic matter so it can later become a petroleum source rock?",
+    "choices": [
+      "Persistent bottom-water ventilation that keeps seafloor sediments well oxidized",
+      "Limited renewal of bottom water that allows oxygen levels near the seafloor to stay low",
+      "Strong benthic activity that mixes organic matter into oxygenated sediment layers",
+      "Repeated exposure and drying of muds that promotes oxidation of organic material"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "Organic matter is usually destroyed by oxidation in the water column or at the sediment surface. Conditions that restrict circulation and keep oxygen supply low increase the fraction that escapes oxidation and is buried. This is why many effective source rocks are black shales deposited under reducing conditions.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from discussion of why only a small fraction of marine organic matter is preserved and how organic-rich shales form."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_kerogen_chemistry_002",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Kerogen Formation",
+      "Elemental Ratios"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "During early burial, organic precursors are altered into kerogen. Which change in elemental ratios is most consistent with this transformation process?",
+    "choices": [
+      "Both H/C and O/C increase because dehydration concentrates hydrogen and oxygen",
+      "H/C decreases while O/C increases because oxygen-bearing groups become more abundant",
+      "H/C increases while O/C decreases because oxygen-rich groups are removed from the material",
+      "Both H/C and O/C decrease because kerogen formation primarily removes carbon"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "Kerogen formation involves loss of oxygen- and nitrogen-bearing functional groups, along with water and CO2, which lowers the oxygen relative to carbon. Compared with the original biomolecules, kerogen ends up relatively enriched in hydrogen and depleted in oxygen, raising H/C and lowering O/C. This trend is consistent with the chapter\u2019s description of progressive chemical simplification during burial.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on how functional-group loss during kerogen formation shifts H/C and O/C ratios."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_kerogen_types_003",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Kerogen Types",
+      "Van Krevelen Interpretation"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A source rock from a lacustrine oil-shale setting contains kerogen with H/C \u2248 1.5 and O/C \u2248 0.05. Which kerogen type and hydrocarbon tendency best matches these properties?",
+    "choices": [
+      "Type I kerogen, expected to yield mainly oil with comparatively less gas",
+      "Type II kerogen, expected to yield mainly methane with minimal liquids",
+      "Type III kerogen, expected to yield mostly CO2 with little hydrocarbon generation",
+      "Type III kerogen, expected to yield mainly oil because it is hydrogen-rich"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "Hydrogen-rich and oxygen-poor kerogen is characteristic of Type I material, commonly associated with lipid-rich organic inputs and many oil-shale occurrences. Such kerogen is described as having high H/C and low O/C and typically generates predominantly oil. Type III is comparatively oxygen-rich and tends toward gas and CO2 production with maturation.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on kerogen classification by H/C and O/C and the typical products of Type I kerogen in freshwater oil-shale systems."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_type_iii_generation_004",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Type III Kerogen",
+      "Hydrocarbon Products"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A delta-plain shale contains abundant land-plant debris and has kerogen composition similar to coal. During maturation, what product mix is most consistent with this type of organic matter?",
+    "choices": [
+      "Predominantly liquid oil, because land plants are typically lipid-rich",
+      "Mostly waxy paraffins and very little gas, because coal-like material cracks poorly",
+      "Mainly condensate with negligible CO2 production, because oxygen is absent in plant matter",
+      "Large amounts of gas (notably methane) along with water and CO2, with limited oil in many cases"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "Kerogen derived from higher plants (Type III/humic) starts relatively oxygen-rich and hydrogen-poor compared with algal material. The chapter describes this type as generating abundant water, CO2, and methane as temperature increases, and notes that coal commonly behaves similarly and tends to be gas-prone. Some coals may generate some oil, but gas is typically dominant.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based question on Type III (humic) kerogen origin and typical maturation products, linked to coal-like organic matter."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_oil_window_temperature_005",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Thermal Maturation",
+      "Oil Window"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Assuming a typical geothermal gradient and sufficient geologic time, which temperature interval best represents the main range where kerogen conversion to oil is most effective?",
+    "choices": [
+      "About 100\u2013150\u00b0C",
+      "About 20\u201360\u00b0C",
+      "About 200\u2013260\u00b0C",
+      "About 350\u2013550\u00b0C"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter indicates that hydrocarbon generation begins slowly near ~80\u201390\u00b0C, but that most of the oil-generating maturation occurs over roughly 100\u2013150\u00b0C. Temperatures far below this are associated with very slow transformation, while substantially higher temperatures favor extensive cracking toward gas. The 350\u2013550\u00b0C range is associated with laboratory pyrolysis conditions, not natural burial temperatures.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s description of temperature ranges for onset of generation and the main oil-generating maturation interval."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_pressure_effects_maturation_006",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Maturation Kinetics",
+      "Pressure Effects",
+      "Overpressure"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "In a closed source-rock system, why is the direct generation of gas generally expected to be more sensitive to high pressure than the formation of oil?",
+    "choices": [
+      "Because oil formation requires a much larger increase in volume than gas formation",
+      "Because pressure strongly increases activation energy for all kerogen reactions",
+      "Because gas generation involves a larger volume expansion, so higher pressure tends to slow the reaction direction that increases volume",
+      "Because pressure forces methane to polymerize back into kerogen under burial temperatures"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter notes that pressure is a secondary control compared with temperature, but it can reduce reaction rates when hydrocarbon generation causes a significant volume increase. Oil generation involves only a modest volume change because residual solid material remains, whereas converting kerogen (or oil) to gas produces a much larger expansion. By Le Chatelier\u2019s principle, higher pressure in a closed system tends to oppose the volume-increasing direction, making gas generation more pressure-sensitive.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Integrates the chapter\u2019s discussion of pressure, volume change, Le Chatelier\u2019s rule, and why gas generation can promote overpressure."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_vitrinite_reflectance_007",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Thermal Maturity Indicators",
+      "Vitrinite Reflectance"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A shale sample has a measured vitrinite reflectance of R0 = 0.95%. What maturity interpretation is most consistent with this value?",
+    "choices": [
+      "Immature for oil generation, with little hydrocarbon production expected",
+      "Near peak oil generation conditions in terms of thermal exposure",
+      "Beyond the upper oil limit where only dry gas should remain",
+      "Indicative of very shallow burial where bacterial methane dominates"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter states that shales with R0 below about 0.5% are immature, while values around 0.9\u20131.0% correspond to maximum oil generation. Values around 1.3% mark the upper limit of oil generation. Therefore, an R0 near 0.95% aligns with peak oil generation maturity rather than immaturity or overmaturity.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Uses the maturity thresholds tied to vitrinite reflectance (R0) described in the chapter."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_rock_eval_s2_008",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Rock-Eval Pyrolysis",
+      "Source Rock Screening"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "In a Rock-Eval analysis, which measurement corresponds to hydrocarbons generated in the laboratory by heating and cracking kerogen (rather than hydrocarbons already present in the rock)?",
+    "choices": [
+      "S1",
+      "S3",
+      "Tmax",
+      "S2"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "S1 represents hydrocarbons that exist in the rock at the start of the program and are released at the lower-temperature step. S2 represents additional hydrocarbons created during programmed heating as kerogen breaks down in the instrument. Tmax is the temperature at which the S2 generation rate peaks, and S3 is tied to CO2 released during heating.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on interpreting Rock-Eval peaks and what S2 physically represents during pyrolysis."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_production_index_009",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Rock-Eval Pyrolysis",
+      "Production Index"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Two shale samples have the same S2 = 5 mg HC/g rock. Sample X has S1 = 1.0 mg HC/g rock, while sample Y has S1 = 0.2 mg HC/g rock. Which interpretation best matches the Production Index concept described for Rock-Eval data?",
+    "choices": [
+      "Sample X has the higher PI because a larger fraction of (S1 + S2) is already present as free hydrocarbons",
+      "Sample Y has the higher PI because lower S1 indicates a more efficient source rock",
+      "Both samples have the same PI because PI depends only on S2 and TOC",
+      "Neither sample can have PI estimated because PI requires S3 and Tmax"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "Production Index is defined as S1 divided by (S1 + S2), so higher S1 at the same S2 increases PI. Conceptually, PI expresses how much petroleum is already present relative to the remaining generative capacity measured by S2. The chapter also cautions that S1 is what remains after some generated oil may have migrated away, but PI still follows the stated ratio.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Applies the Rock-Eval PI definition to compare two samples with identical S2 but different S1."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_productionengineering_api_gravity_010",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Production Engineering",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "API Gravity",
+      "Crude Oil Properties"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "A crude oil has density \u03c1 = 0.85 g/cm\u00b3 at 60\u00b0F (15\u00b0C). Using API gravity = 141.5/\u03c1 \u2212 131.5, what is the API gravity (rounded to the nearest whole number)?",
+    "choices": [
+      "10\u00b0 API",
+      "20\u00b0 API",
+      "35\u00b0 API",
+      "45\u00b0 API"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "Substituting \u03c1 = 0.85 g/cm\u00b3 gives API = 141.5/0.85 \u2212 131.5 \u2248 166.5 \u2212 131.5 \u2248 35. This reflects the inverse relationship: lower density corresponds to higher API. The value is therefore in the mid-30s rather than the heavy-oil range (~15\u201320 or lower).",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical application of the API gravity definition given in the chapter."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_time_temperature_maturity_011",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Basin Modelling",
+      "Time-Temperature Integration",
+      "Maturity"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "Two source rocks experienced different thermal histories after burial. Rock A stayed near 120\u00b0C for 60 million years, while Rock B reached 155\u00b0C for 5 million years. Based on the chapter\u2019s time\u2013temperature view of maturation, which rock is more likely to have the higher maturity?",
+    "choices": [
+      "Rock A, because maturation depends only on total time regardless of temperature",
+      "Rock B, because reaction rates rise sharply with temperature and maturation above ~130\u2013140\u00b0C becomes very rapid",
+      "Rock A, because maturation above ~130\u2013140\u00b0C slows down so time becomes the controlling factor",
+      "Rock B, because pressure at 155\u00b0C always prevents kerogen transformation in closed systems"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter emphasizes that maturation is an exponential function of temperature (Arrhenius-type behavior) and notes that when temperatures exceed roughly 130\u2013140\u00b0C, maturity can increase quickly and the role of time becomes less decisive. A long duration at 120\u00b0C can mature a rock, but a shorter exposure at 155\u00b0C can drive much faster transformation. Therefore Rock B is expected to be more mature in many practical cases.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 14 - Source Rocks and Petroleum Geochemistry",
+        "retrieved_at": "2025-12-22",
+        "notes": "Integrates the chapter\u2019s discussion of Arrhenius kinetics, TTI-style integration, and reduced time sensitivity at high temperatures."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
   }
 ]
