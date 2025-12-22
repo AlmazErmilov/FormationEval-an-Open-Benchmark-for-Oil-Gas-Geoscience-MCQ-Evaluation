@@ -38,8 +38,10 @@ Scripts for generating concept-based multiple-choice questions from source mater
 
 We generate questions by extracting **concepts** from source material, then writing **original questions** that test understanding of those concepts.
 
+> Full guidelines are in the system prompt (example, draft v5): [`prompts/mcq_generator_system_prompt.txt`](prompts/mcq_generator_system_prompt.txt)
+
 <details>
-<summary><strong>Full System Prompt</strong> (click to expand)</summary>
+<summary><strong>Full system prompt (v5)</strong> (click to expand if needed, lots of text)</summary>
 
 ```xml
 <system_prompt>
@@ -219,6 +221,7 @@ NEVER do the following:
 
 Return a JSON array of question objects. Each object must follow this complete schema:
 
+```json
 {
   "id": "formationeval_v0.1_petrophysics_porosity_001",
   "version": "formationeval_v0.1",
@@ -256,6 +259,7 @@ Return a JSON array of question objects. Each object must follow this complete s
     "contamination_risk": "low"
   }
 }
+```
 
 ## Field Reference
 
