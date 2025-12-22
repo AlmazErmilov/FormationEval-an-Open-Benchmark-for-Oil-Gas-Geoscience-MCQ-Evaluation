@@ -17974,5 +17974,430 @@
       "calc_required": false,
       "contamination_risk": "medium"
     }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_time_lapse_seismic_001",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Time-Lapse Seismic",
+      "4D Seismic Fundamentals"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "In reservoir monitoring, what makes a seismic program \u201c4D\u201d rather than \u201c3D\u201d?",
+    "choices": [
+      "It records four independent wave types (P, SV, SH, and tube waves) in a single survey",
+      "It repeats seismic acquisition over the same area at different calendar dates to reveal changes over time",
+      "It uses four different source signatures so that bandwidth is increased relative to a conventional survey",
+      "It requires that all surveys are marine 3D streamer surveys acquired with identical vessel hardware"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The \u201cfourth dimension\u201d refers to time between surveys, so 4D is fundamentally repeated (time-lapse) seismic acquisition and comparison. The method can be applied even if the repeated surveys are 2D lines, as long as the intent is to monitor change through time. Wave-type count, bandwidth strategy, or marine-only requirements are not what defines 4D.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 19 - 4D Seismic",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter introduction distinguishing 4D from repeated seismic surveys."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_4d_applications_002",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "4D Seismic Applications",
+      "CO2 Storage Monitoring"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Which situation is identified in the chapter as a major non-hydrocarbon application area for 4D seismic?",
+    "choices": [
+      "Choosing regional source-rock maturity trends from a single reconnaissance survey",
+      "Estimating porosity directly from seismic amplitudes without any rock-physics information",
+      "Mapping unexplored structural traps using only one survey per prospect",
+      "Tracking subsurface changes associated with CO2 injected into a saline aquifer"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter highlights repeated seismic as a tool not only for producing fields, but also for monitoring injected CO2 during underground storage in saline aquifers. The other options describe exploration or interpretation tasks that do not require repeated surveys through time in the way 4D does.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 19 - 4D Seismic",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the overview of current 4D seismic use cases, including CO2 storage."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_reservoir_parameter_changes_003",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Geophysics"
+    ],
+    "topics": [
+      "Reservoir Changes",
+      "Rock Physics Link"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A team is scoping a 4D seismic feasibility study for a producing field. Which group of reservoir changes is most directly relevant to time-lapse seismic response according to the chapter?",
+    "choices": [
+      "Fluid saturation, pore pressure, temperature, and thickness/compaction changes",
+      "Permeability, clay content, grain size, and cement type changes",
+      "Wellbore skin, tubing head pressure, separator efficiency, and choke settings",
+      "Structural dip, depositional environment, burial depth, and source-rock richness"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter emphasizes that production can alter saturation, pore pressure, temperature, and layer thickness (through compaction or stretching), and these are the key drivers considered in 4D seismic interpretation. The other options list properties that may matter for reservoir behavior or geology, but they are not presented as the primary production-driven variables in the 4D context here.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 19 - 4D Seismic",
+        "retrieved_at": "2025-12-22",
+        "notes": "Targets the reservoir-parameter list in the rock physics section describing what changes during production."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_reflectivity_change_004",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Reflectivity Change",
+      "Acoustic Impedance"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "For a top-reservoir reflector, assume the pre-production acoustic impedance contrast between cap rock and reservoir is about 18% (relative). If production changes the reservoir acoustic impedance by about 8% (relative), what is the approximate relative change in reflectivity (\u0394R/R) using the chapter\u2019s small-change approximation?",
+    "choices": [
+      "About 26%",
+      "About 18%",
+      "About 44%",
+      "About 8%"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter relates relative reflectivity change to the ratio of the production-induced impedance change to the original impedance contrast across the interface. Using the given numbers, \u0394R/R \u2248 8% / 18% \u2248 0.44, i.e., about 44%. The other options confuse the ratio with one of the input percentages or with an unrelated subtraction.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 19 - 4D Seismic",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical item based on the Gullfaks reflectivity-change relationship using acoustic impedance contrasts."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_amplitude_vs_timeshift_005",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "4D Analysis",
+      "Amplitude Monitoring",
+      "Travel-Time Shifts"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "When comparing baseline and monitor seismic datasets, which 4D analysis approach does the chapter describe as generally the more robust option in practical experience?",
+    "choices": [
+      "Computing microseismic event locations from passive recordings",
+      "Interpreting differences in reflection amplitudes between surveys",
+      "Inferring changes using only time-to-depth conversion updates",
+      "Estimating reservoir changes only from gravity anomalies"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter separates 4D interpretation into amplitude-based and travel-time-shift-based approaches, and notes that amplitude differencing has historically been the most robust in practice. The other options are different monitoring or processing activities not presented as the primary robust 4D comparison method here.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 19 - 4D Seismic",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the section contrasting amplitude-change detection with travel-time-change detection."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_timeshift_interpretation_006",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Travel-Time Shifts",
+      "Quantitative 4D Interpretation"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Why can highly accurate 4D travel-time shift measurements be especially valuable for reservoir monitoring compared with using only amplitude differences?",
+    "choices": [
+      "They directly provide detailed density changes without needing any modelling",
+      "They are only sensitive to the cap rock and therefore avoid reservoir uncertainty",
+      "They eliminate the need for repeatable acquisition because timing is unaffected by positioning errors",
+      "They can be related to average changes through an interval and are proportional to pay-thickness change in the chapter\u2019s discussion"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter notes that precise time shifts can be picked to sub-millisecond accuracy and that this observable is proportional to changes in pay thickness, making it a direct quantitative measure. It also contrasts timeshift as an averaged interval effect, whereas amplitude differences are more local to interfaces. Timeshifts do not automatically remove repeatability requirements, nor do they directly give density without additional constraints.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 19 - 4D Seismic",
+        "retrieved_at": "2025-12-22",
+        "notes": "Targets the chapter\u2019s stated advantage of accurate timeshift measurements for quantitative pay-thickness assessment."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_nrms_repeatability_007",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Repeatability (NRMS)",
+      "Time-Lapse Acquisition"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "NRMS is used as a repeatability metric for 4D seismic. Why does the chapter recommend computing NRMS in a time window where production effects are not expected?",
+    "choices": [
+      "To isolate non-repeatable acquisition/processing differences rather than true reservoir change",
+      "To ensure the window contains the strongest reservoir reflections for higher RMS values",
+      "To remove all multiples so that the NRMS formula becomes independent of bandwidth",
+      "To guarantee the result is comparable between fields regardless of geology"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The intent of NRMS is to quantify how well the seismic measurements repeat; using a window with no expected 4D signal reduces contamination from real production-induced changes. The chapter also cautions that geology can affect NRMS, so it is not automatically comparable between fields, and NRMS is frequency-band dependent.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 19 - 4D Seismic",
+        "retrieved_at": "2025-12-22",
+        "notes": "Built from the repeatability discussion defining NRMS and where it should be measured."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_effective_pressure_velocity_008",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Geophysics"
+    ],
+    "topics": [
+      "Effective Pressure",
+      "Velocity-Stress Sensitivity",
+      "Hertz-Mindlin Model"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "Using the chapter\u2019s simple Hertz\u2013Mindlin-based relation for dry rock, the relative P-wave velocity varies as (P/P0)^(1/6). If effective pressure drops from 6 MPa (P0) to 1.5 MPa (P), approximately how much does VP decrease relative to baseline?",
+    "choices": [
+      "About a 6% decrease",
+      "About a 37% decrease",
+      "About a 21% decrease",
+      "About a 13% decrease"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "Here P/P0 = 1.5/6 = 0.25, so VP/VP0 \u2248 0.25^(1/6) \u2248 0.79. That corresponds to a decrease of roughly 21%. The chapter also notes that real rocks often show weaker sensitivity than this idealised curve, but the calculation follows the provided exponent model.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 19 - 4D Seismic",
+        "retrieved_at": "2025-12-22",
+        "notes": "Quantitative question based on the pressure\u2013velocity power-law relationship presented from the Hertz\u2013Mindlin framework."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_pressure_saturation_discrimination_009",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Pressure vs Saturation",
+      "4D AVO",
+      "Oil-Water Contact"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In the chapter\u2019s Gullfaks Cook Formation example, which observation most strongly suggests that the 4D amplitude anomaly is not caused only by saturation change?",
+    "choices": [
+      "The anomaly is strongest exactly at the crest of the structure where oil is thickest",
+      "The anomaly appears only in far offsets and disappears in near offsets",
+      "The anomaly is limited to a single trace and does not form a coherent pattern",
+      "The amplitude change is seen both above and below the original oil\u2013water contact level"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "A saturation-driven effect tied to oil being replaced by water is expected to be closely associated with the oil\u2013water contact region. The chapter notes that when amplitude change extends beyond the oil\u2013water contact into areas not explained by saturation movement alone, a pore-pressure effect is a plausible explanation. This motivates the use of near/far amplitude information (AVO) plus rock physics to separate the two contributions.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 19 - 4D Seismic",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept item derived from the pressure-versus-saturation discrimination discussion around the Cook Formation example."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_time_lapse_em_010",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "CSEM Monitoring",
+      "Multi-Method 4D Integration"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Why does the chapter argue that repeated electromagnetic (CSEM/EM) surveys can complement 4D seismic for reservoir monitoring?",
+    "choices": [
+      "EM data provide higher vertical resolution than seismic at the same cost and frequency range",
+      "EM measurements are much less sensitive to pore pressure than seismic and can help constrain saturation changes",
+      "EM surveys directly measure acoustic impedance and therefore replace the need for time-lapse seismic processing",
+      "EM repeatability is limited by seawater temperature so it is mainly useful only onshore"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter points out that seismic responds to changes in acoustic impedance and can be influenced by both pressure and saturation, whereas EM methods are not very pressure sensitive. That difference in sensitivity makes EM a useful companion for separating and constraining saturation changes that are difficult to quantify from seismic alone. The chapter also notes that EM spatial resolution can be limited at the low frequencies often used.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 19 - 4D Seismic",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the section on alternative monitoring methods discussing why time-lapse EM helps separate saturation from pressure effects."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
   }
 ]
