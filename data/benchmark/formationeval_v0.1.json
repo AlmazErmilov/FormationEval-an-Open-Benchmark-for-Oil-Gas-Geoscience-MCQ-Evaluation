@@ -15021,5 +15021,532 @@
       "calc_required": false,
       "contamination_risk": "low"
     }
+  },
+  {
+    "id": "formationeval_v0.1_sedimentology_burial_compaction_trends_001",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Sedimentology",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Burial Compaction",
+      "Porosity Trends",
+      "Rock Physics"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "For a single lithology tracked through progressive burial in a basin (ignoring short intervals of changing lithology), which trend is most consistent with compaction described in the chapter?",
+    "choices": [
+      "Porosity tends to rise, while density and seismic velocity tend to fall",
+      "Porosity tends to remain constant, while density and seismic velocity tend to rise",
+      "Porosity tends to fall, while density and seismic velocity tend to rise",
+      "Porosity tends to fall, while density and seismic velocity tend to fall"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "Burial increases stress and temperature, driving compaction and diagenesis that typically reduce pore space in a given lithology. As porosity decreases, bulk density increases, and the rock frame stiffens, leading to higher seismic velocity. Apparent reversals can occur across lithologic changes, but not as the dominant trend within one lithology.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter\u2019s general burial trend linking porosity loss to increases in density and velocity."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_sedimentology_mechanical_compaction_002",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Sedimentology",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Mechanical Compaction",
+      "Porosity-Volume Relationship"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "A sediment compacts purely mechanically, with no dissolution or precipitation and an unchanged volume of solid grains. Which statement best describes the relationship between bulk-volume strain and porosity change?",
+    "choices": [
+      "The reduction in bulk volume is equal to the porosity loss, because the solid volume stays constant",
+      "The reduction in bulk volume mainly reflects loss of solid volume, while porosity is nearly unchanged",
+      "Porosity decreases, but bulk volume does not change because grains only rearrange internally",
+      "Bulk volume decreases, but porosity increases because pore fluid is expelled"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "In the mechanical-compaction case described, the solid fraction is treated as constant, so any decrease in bulk volume must come from a reduction of the pore volume. That means volumetric strain corresponds directly to porosity loss. Chemical reactions would break this link by changing the solid volume through dissolution/precipitation.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept item reflecting the chapter\u2019s definition of mechanical compaction with constant solids and porosity-driven volume reduction."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_bulk_modulus_strain_003",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Bulk Modulus",
+      "Stress-Strain",
+      "Rock Shrinkage"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Assume a rock behaves elastically with bulk modulus K = 50 GPa. If chemical compaction produces a volumetric strain of 0.001 (0.1%), what magnitude of effective stress reduction is associated with this strain using K = stress/strain?",
+    "choices": [
+      "0.05 MPa",
+      "5 MPa",
+      "500 MPa",
+      "50 MPa"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "Using K = stress/strain, the stress change is K\u00b7strain = 50 GPa \u00d7 0.001 = 0.05 GPa. Converting 0.05 GPa gives 50 MPa. The chapter uses this example to illustrate how even small strain can substantially relax stress.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical concept check based on the chapter\u2019s stress/strain (bulk modulus) example tied to compaction-driven shrinkage."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_drillingengineering_clay_stabilization_004",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Drilling Engineering",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Clay Mineralogy",
+      "Wellbore Stability",
+      "Porewater Chemistry"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A well is drilled through smectite-rich clay intervals that are sensitive to porewater chemistry. Which explanation best matches the chapter for why adding salts such as KCl to drilling mud can improve stability in these clays?",
+    "choices": [
+      "It raises the formation temperature, accelerating quartz cementation and strengthening the rock",
+      "It modifies the porewater chemistry so the clay mass becomes mechanically stronger and less prone to weakening",
+      "It increases shale permeability so pore pressure dissipates rapidly and compaction stops",
+      "It removes carbonate cement by dissolution, which reduces brittleness and prevents breakouts"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "Smectite has a very high specific surface area and responds strongly to porewater composition. The chapter notes that adding salts (including KCl) is used to stabilize soft clays by increasing their compressive and shear strengths. The other options describe mechanisms not presented as the reason for salt addition in the chapter.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Drawn from the discussion of smectite sensitivity and the operational use of KCl/NaCl to stabilize clays during drilling."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_shale_anisotropy_005",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Seismic Velocity",
+      "Anisotropy",
+      "Shales"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A bedded mudstone becomes more anisotropic during burial because sheet minerals become more aligned. Which seismic-velocity pattern is most consistent with this type of anisotropy?",
+    "choices": [
+      "P-wave velocity measured parallel to bedding is higher than P-wave velocity measured perpendicular to bedding",
+      "P-wave velocity measured perpendicular to bedding is higher than P-wave velocity measured parallel to bedding",
+      "P-wave velocity is the same in all directions because compaction removes layering effects",
+      "P-wave velocity depends only on pore-fluid salinity, not on measurement orientation"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter describes mudstones/shales as anisotropic and notes that with burial they can show higher velocity along bedding than vertically. This follows from increased alignment of platy minerals and fabric development. Orientation-independent velocity is not consistent with the stated behavior of shales.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s explanation that mudstones can become increasingly anisotropic with burial, affecting velocity relative to bedding."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_vp_vs_interpretation_006",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Vp/Vs Ratio",
+      "Gas Effects",
+      "Shales"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "A team uses a Vp/Vs-based workflow to infer fluid content in thin sand beds. The interval is dominated by mudstone, and the mudstone contains a non-negligible amount of gas in its pore space. What is the most likely interpretation risk highlighted by the chapter?",
+    "choices": [
+      "The Vp/Vs ratio becomes insensitive to clay mineralogy, so shale properties can be ignored",
+      "The presence of gas forces Vp/Vs to a universal constant, making fluid discrimination easier",
+      "A Vp/Vs anomaly may be driven by gas-bearing mudstone rather than by fluid changes in the thin sands",
+      "Vp/Vs changes only when carbonates are present, so gas in mudstone cannot affect the result"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter states that Vp/Vs varies with clay mineralogy and that gas in mudstones/shales can also change Vp/Vs. If the seismic response is dominated by mudstone, a gas-related shale effect can be mistaken for a sand-fluid signal. Therefore, shale composition and gas content must be considered when using Vp/Vs for fluid inference.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Integrative item connecting shale gas effects and clay-mineral controls on Vp/Vs to fluid interpretation workflows."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_sedimentology_smectite_illite_reaction_007",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Sedimentology",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Clay Diagenesis",
+      "Quartz Cementation",
+      "Temperature Controls"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In a smectite-rich mudstone heated into the range where smectite becomes unstable and illite forms, what factor most directly governs how rapidly the transformation can proceed according to the chapter?",
+    "choices": [
+      "The magnitude of tectonic stress, because stress alone controls the transformation rate",
+      "The temperature-dependent rate of quartz precipitation that removes released silica from porewater",
+      "The amount of upward porewater flow, because advection is required to cool the system",
+      "The degree of carbonate cementation, because calcite is the principal sink for silica"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter links smectite breakdown and illite formation to the need for silica to be removed from solution by quartz precipitation. Because quartz cementation rate depends on temperature, it becomes the practical rate control on the overall reaction sequence. Stress and large-scale advective flow are not presented as the controlling factor for this reaction in mudstones.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s coupling of smectite\u2192illite reaction progress to the presence of a silica sink via quartz precipitation."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_sedimentology_silica_migration_008",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Sedimentology",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Silica Mass Balance",
+      "Diffusion in Shales",
+      "Authigenic Quartz"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "A hypothesis proposes that silica released during clay-mineral reactions in shale diffuses into adjacent sandstones and forms major quartz cement there. Which statement best aligns with the chapter\u2019s assessment of this idea?",
+    "choices": [
+      "It is likely, because diffusion through shale is efficient and silica is routinely exported over large distances",
+      "It is likely, because compaction-driven flow can transport enough silica to explain extensive quartz cementation",
+      "It is unlikely, because most silica is lost to the basin-scale hydrologic system during burial heating",
+      "It is unlikely, because shale diffusion is inefficient and micro-scale authigenic quartz indicates silica is largely retained locally"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter argues that diffusion through shales is very inefficient and points to observations of small authigenic quartz crystals in heated smectite-rich mudstones as evidence of local silica retention. It also notes that at greater depth, quartz cement is mainly sourced from pressure solution of detrital quartz rather than long-distance export from shale. Therefore, basin-scale diffusive transfer from shale to sandstone is not supported as a dominant mechanism here.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Integrates the chapter\u2019s discussion of local micro-quartz formation, diffusion limitations in shales, and deep quartz cement sourcing."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_sedimentology_pressure_solution_009",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Sedimentology",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Pressure Solution",
+      "Quartz Cementation",
+      "Chemical Compaction"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In quartz-rich sandstones undergoing pressure solution at grain contacts, the chapter describes chemical compaction as relatively insensitive to stress. What explanation best matches this description?",
+    "choices": [
+      "Pressure solution cannot occur in quartz sandstones, so stress is irrelevant",
+      "Stress controls dissolution, but cement precipitation is rapid and never limits compaction",
+      "Cement precipitation is the slow step and depends mainly on temperature, so stress changes have limited influence on overall compaction rate",
+      "Upward-moving porewater cools rapidly, so precipitation occurs only near the seafloor regardless of stress"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter presents pressure dissolution as driven by stress at grain contacts, but emphasizes that the rate-limiting step is typically the precipitation of authigenic quartz, which depends on temperature. If precipitation controls the overall pace, then changing stress has a weaker impact than changing temperature/time. This is why chemical compaction in siliceous rocks is framed as temperature-controlled at greater depth.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s statement that quartz precipitation controls chemical compaction rate in sandstones and reduces stress sensitivity."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_sedimentology_carbonate_cementation_010",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Sedimentology",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Carbonate Compaction",
+      "Early Cementation",
+      "Aragonite to Calcite"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Compared with quartz-dominated mudstones and sandstones, why can carbonate sediments become cemented into hard rock at very shallow burial according to the chapter?",
+    "choices": [
+      "Because carbonate reactions are slow, so they require high temperatures to proceed",
+      "Because carbonate compaction is controlled mainly by long-distance silica diffusion",
+      "Because carbonate sediments start with no porosity, so cementation is unnecessary",
+      "Because carbonate dissolution/precipitation is fast and unstable aragonite provides a strong drive toward calcite cementation"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter emphasizes that carbonate reaction kinetics are much faster than in siliceous sediments, making temperature less of a controlling variable. It also highlights the role of aragonite instability as an important driver for early cement formation. These factors allow cementation to occur close to the surface in carbonate systems.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept check based on carbonate-specific compaction controls: fast kinetics and aragonite-driven early cementation."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_overpressure_compaction_011",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Overpressure",
+      "Effective Stress",
+      "Mechanical vs Chemical Compaction"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "How does overpressure most differently affect compaction in siliceous sediments when comparing shallow mechanical compaction to deeper chemical compaction described in the chapter?",
+    "choices": [
+      "It accelerates both types of compaction because pore pressure increases mineral solubility",
+      "It reduces mechanical compaction by lowering effective stress, but has little influence on chemical compaction that is mainly temperature/time controlled",
+      "It stops chemical compaction by preventing pressure solution at grain contacts under all conditions",
+      "It has no influence on any type of compaction because porosity loss depends only on mineralogy"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter distinguishes mechanical compaction as an effective-stress-driven process, so increased pore pressure can reduce it by lowering effective stress. In contrast, chemical compaction in siliceous rocks is presented as being controlled largely by temperature (and time/kinetics), making it comparatively insensitive to stress changes. Thus, overpressure mainly alters the mechanical part of the compaction history.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter\u2019s contrast between effective-stress-controlled mechanical compaction and temperature-controlled chemical compaction, including the stated minor impact of overpressure on chemical compaction."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_sedimentology_uplift_chemical_compaction_012",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Sedimentology",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Uplift",
+      "Chemical Compaction",
+      "Fracture Healing"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "A quartz-rich sedimentary rock is uplifted and unloaded, but its temperature remains above roughly 70\u201380\u00b0C for a prolonged period. What outcome is most consistent with the chapter\u2019s description of compaction processes during uplift?",
+    "choices": [
+      "Chemical compaction can continue and quartz cement can progressively seal fractures, partly offsetting mechanical opening from unloading",
+      "All compaction stops immediately because decreasing stress always prevents mineral reactions",
+      "Mechanical unloading necessarily increases porosity permanently because cement cannot form during uplift",
+      "Uplift causes widespread carbonate cementation, which dominates fracture sealing in siliceous rocks"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter states that chemical compaction in siliceous sediments can proceed as long as temperatures remain above the approximate threshold, even during uplift. Unloading tends to promote mechanical extension, but ongoing quartz cementation can gradually heal open fractures. Therefore, uplift does not automatically preserve fracture porosity if temperatures remain sufficiently high.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 13 - Compaction of Sedimentary Rocks Including Shales, Sandstones and Carbonates",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s statement that chemical compaction can persist during uplift at sufficiently high temperature and can seal fractures by quartz cement."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
   }
 ]
