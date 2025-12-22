@@ -11042,5 +11042,515 @@
             "calc_required": false,
             "contamination_risk": "low"
         }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_carbonate_geochemistry_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Carbonate Geochemistry",
+            "Carbon Cycle"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "Over geologic time, what factor most directly limits how fast carbonate burial can remove CO2 from the atmosphere–ocean system?",
+        "choices": [
+            "Delivery of Ca2+ and Mg2+ to the ocean from weathering of Ca-bearing silicates",
+            "Weathering rate of limestone on continents supplying carbonate ions to rivers",
+            "Rate of volcanic degassing of CO2 from contact-metamorphosed limestones",
+            "Global abundance of carbonate-secreting organisms, independent of seawater chemistry"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter links long-term carbonate accumulation to the availability of cations (especially Ca2+ and Mg2+) supplied to seawater by rivers. That supply is tied to weathering of Ca-bearing silicates (e.g., plagioclase), which provides the ions needed to precipitate carbonates. Weathering of limestone does not represent a net sink for CO2 in the same way described here.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from the chapter discussion of carbonate burial as a CO2 sink and the role of riverine Ca2+/Mg2+ supply from silicate weathering."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_stromatolites_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Stromatolites",
+            "Depositional Structures"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A carbonate outcrop shows laminated microbial layers that build mounded forms with noticeable relief above the bedding surface. What is the most appropriate descriptive term for this fabric?",
+        "choices": [
+            "Oolite, because concentric layers record agitation-driven growth",
+            "Stromatolite, because lamination forms three-dimensional buildups",
+            "Chalk, because fine carbonate particles accumulate as a mud-supported deposit",
+            "Hardground, because early marine cementation produces a firm seafloor surface"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "In the chapter, flat microbial laminae are described as algal laminated sediments, while laminae that create structures with vertical relief are termed stromatolites. Ooids are coated grains produced by rolling and precipitation, not microbial mats building relief. Hardgrounds are cemented seafloor surfaces recognized by borings/encrustations rather than by laminated microbial buildups.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item from the stromatolite section distinguishing planar microbial lamination from relief-forming stromatolites."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_ooids_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Ooids",
+            "Depositional Environment"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "Which set of conditions best explains why ooids typically develop in only a narrow range of shallow-marine settings?",
+        "choices": [
+            "Cold water temperatures and weak currents that allow mud to settle and coat grains",
+            "Deep-water conditions below storm wave base with little particle motion",
+            "Very warm water, near-carbonate saturation, and frequent agitation that keeps grains rolling",
+            "High siliciclastic influx that provides abundant nuclei and increases alkalinity"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter emphasizes that ooids require warm waters close to carbonate saturation and persistent wave/tidal agitation to rotate grains so coatings grow evenly. These requirements restrict ooids mainly to very shallow, energetic environments. Deep, cold, or muddy settings do not provide the chemistry and grain motion needed for ooid growth.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Built from the ooid section describing temperature/saturation constraints and the need for agitation to maintain concentric coatings."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_dunham_classification_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Carbonate Rock Classification",
+            "Dunham Classification"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A limestone is mud-supported but contains clearly more than 10% grains dispersed in the mud-sized matrix. Under Dunham’s depositional-texture scheme, what is the correct name?",
+        "choices": [
+            "Mudstone",
+            "Packstone",
+            "Grainstone",
+            "Wackestone"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Dunham classification uses support fabric and a grain-percentage threshold: mud-supported with fewer than ~10% grains is mudstone, while mud-supported with more than ~10% grains is wackestone. Packstone and grainstone are grain-supported categories, so they do not fit a mud-supported description.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based question on Dunham mud-supported categories and the >10% grain criterion."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_carbonate_mineralogy_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petrophysics"
+        ],
+        "topics": [
+            "Carbonate Mineralogy",
+            "Diagenesis"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "During burial alteration of skeletal grains originally made of high-Mg calcite, which outcome is most consistent with the process described in the chapter?",
+        "choices": [
+            "Mg2+ is removed from the crystal lattice while the grain’s fine internal architecture can remain recognizable",
+            "The grain typically converts to aragonite because it is the stable burial phase of CaCO3",
+            "The grain must dissolve completely before any low-Mg calcite can precipitate in its place",
+            "Sr2+ is preferentially enriched as Mg2+ is expelled, producing strontianite cement"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The text describes conversion of high-Mg calcite to more stable low-Mg calcite by leaching/removal of Mg2+, with the microarchitecture commonly preserved. Complete dissolution and re-precipitation is presented as an alternative pathway mainly for aragonitic grains (mould formation), not as the defining mechanism for high-Mg calcite stabilization. Strontium enrichment leading to strontianite is not the described outcome for this transformation.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Based on the stabilization of high-Mg calcite during diagenesis and its implications for texture preservation."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_algal_facies_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Carbonate Factories",
+            "Algal Facies"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Along a profile from open basin to a reef margin and then into a protected lagoon, which biological producers are most consistent with the chapter’s described distribution?",
+        "choices": [
+            "Basin: green algae; reef: coccolithophores; lagoon: red algae",
+            "Basin: coccolithophores; reef: red algae; lagoon: green algae",
+            "Basin: cyanobacteria mats; reef: green algae; lagoon: coccolithophores",
+            "Basin: red algae; reef: cyanobacteria; lagoon: planktonic algae"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter describes planktonic algae (notably coccolithophores) as key contributors basinward, red algae as major robust reef-associated builders, and green algae as common in protected lagoonal settings where wave energy is moderate. Cyanobacteria are emphasized mainly for tidal-zone mats and stromatolite-related settings rather than as the dominant basin producer.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Drawn from the cross-basin ecological distribution of algae and associated carbonate production roles."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petrophysics_chalk_reservoirs_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petrophysics",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Chalk Reservoirs",
+            "Porosity-Permeability"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Why can a coccolith-rich chalk interval show very high porosity but still behave as a low-permeability reservoir unless another pore system is present?",
+        "choices": [
+            "Because chalk porosity is dominated by large vugs that tend to be isolated by early cement",
+            "Because chalk pores are mainly fracture-like and therefore contribute little to storage",
+            "Because much of the pore space is microporous with very small pore throats, so flow capacity is limited without fractures",
+            "Because chalk is typically cemented by ankerite at shallow depth, blocking nearly all pore volume"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter notes that chalk porosity can be extremely high as interparticle microporosity, yet permeability is low due to very small pore-throat sizes. Productivity commonly improves when fractures add a connected flow network. The text does not describe shallow, dominant ankerite cementation as the main reason for chalk tightness.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item from the chalk reservoir discussion linking microporosity to low permeability and the role of fractures."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_micritisation_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Micritisation",
+            "Peloids"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A skeletal grain from a shallow photic-zone setting shows a dark micritic rim that obscures original texture, and the rim is interpreted as highly stable during later burial. Which process best explains the formation of this rim?",
+        "choices": [
+            "Pressure solution at grain contacts followed by stylolite development along the rim",
+            "Mechanical abrasion producing a micrite coating by grinding in the surf zone",
+            "Direct precipitation of low-Mg calcite cement from seawater without biological mediation",
+            "Microboring organisms create tiny tunnels that later become filled by fine carbonate crystals, progressively forming a micritic envelope"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "The chapter attributes micritic envelopes to microboring algae/cyanobacteria/fungi that dissolve small tubular holes near the grain surface; after the borers die, the holes become infilled with fine carbonate (micrite), and repetition produces a stable micritic coating. Abrasion can make lime mud but is not described as producing the characteristic microbore-and-infill texture that forms envelopes.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Based on the micritisation mechanism and the development of micritic envelopes/peloids in the photic zone."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_redox_cements_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Carbonate Cement",
+            "Redox Geochemistry"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A calcite cement contains a few thousand ppm iron, implying substitution of Fe into the carbonate structure. Based on the chapter, which porewater setting most plausibly allowed this cement to form?",
+        "choices": [
+            "Reducing porewater below the microbial sulphate-reduction zone, where Fe remains available as Fe2+",
+            "Oxidizing seawater at the sediment surface, where Fe3+ is highly soluble and readily enters calcite",
+            "The active sulphate-reduction zone itself, where dissolved Fe2+ remains abundant and unreacted",
+            "A fully evaporitic brine at the seafloor, where Fe is concentrated by halite precipitation"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter explains that iron enters calcite mainly as Fe2+ under reducing conditions, but within the sulphate-reduction zone Fe2+ is typically captured by sulphide minerals, leaving little for carbonate incorporation. Therefore, ferroan calcite formation is most consistent with reducing porewater below that zone, where Fe2+ can persist and substitute into the calcite lattice.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Item derived from the redox control on Fe availability (Fe2+ vs Fe3+) and the conditions needed for ferroan calcite."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_carbonate_compensation_depth_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Pelagic Carbonate",
+            "Carbonate Compensation Depth"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Two deep-ocean basins have similar surface productivity of planktonic carbonate but different water-mass properties. Which basin would be expected to have the shallower carbonate compensation depth (CCD)?",
+        "choices": [
+            "A low-latitude basin with warm deep water and lower dissolved CO2",
+            "A high-latitude basin with colder deep water that can hold more dissolved CO2",
+            "A basin where deep water has lower pressure due to lower sea level",
+            "A basin with abundant terrigenous clay input that buffers seawater acidity"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter ties CCD depth to dissolution controlled by temperature, pressure, and dissolved CO2, with cold waters being more corrosive to CaCO3. It states that CCD can be as shallow as ~1–2 km at higher latitudes (colder waters) and deeper (~4–5 km) in warm equatorial regions. Therefore, the colder high-latitude deep water setting should have the shallower CCD.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Built from the pelagic carbonate section describing why CCD is shallower in colder, higher-latitude waters."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_dolomitisation_controls_011",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Dolomitisation",
+            "Geochemical Controls"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "Which scenario best satisfies the chapter’s stated requirements for extensive dolomitisation of CaCO3 sediments?",
+        "choices": [
+            "Fresh meteoric groundwater flushing alone, because low sulphate guarantees immediate dolomite precipitation",
+            "Normal seawater circulating slowly through limestone, because seawater is always sufficient to form dolomite regardless of inhibitors",
+            "Reducing, sulphate-depleted seawater circulating through a reef/atoll where Mg supply is large and inhibition is minimized",
+            "Deep-basin compaction water as the dominant Mg source, because Mg increases strongly with burial depth in most basins"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter lists three key conditions: CaCO3 must be unstable relative to dolomite, Mg must be supplied to maintain a high Mg/Ca ratio, and inhibitors (especially sulphate) must be low. It also notes that seawater is the only practical magnesium source for large-scale dolomitisation and that reducing, low-sulphate seawater in reefs/atolls provides favorable chemistry. Meteoric water alone generally lacks enough magnesium, and deep-basin porewaters are described as typically Mg-poor except near evaporites.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept integration across dolomitisation prerequisites (Mg supply, Mg/Ca ratio, sulphate inhibition) and the reef/atoll circulation discussion."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_meteoric_diagenesis_012",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Meteoric Diagenesis",
+            "Freshwater Lens"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "A permeable carbonate sand island has freshwater (density 1.00 g/cm3) overlying saline porewater (density 1.025 g/cm3). Using the chapter’s hydrostatic relationship, approximately how deep below sea level can freshwater penetrate if the freshwater head above sea level is 6 m?",
+        "choices": [
+            "About 60 m",
+            "About 120 m",
+            "About 180 m",
+            "About 240 m"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "The chapter gives the relationship depth ≈ head/(ρsaline−ρfresh), which for densities 1.025 and 1.00 implies a factor of 1/0.025 = 40. With a 6 m head, penetration depth is about 6 × 40 = 240 m. This illustrates why modest hydraulic heads can drive deep freshwater flushing in coastal carbonates.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 5 - Carbonate Sediments",
+                "retrieved_at": "2025-12-22",
+                "notes": "Numerical application of the freshwater-lens depth relationship described for meteoric water flow beneath carbonate islands."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "medium"
+        }
     }
 ]
