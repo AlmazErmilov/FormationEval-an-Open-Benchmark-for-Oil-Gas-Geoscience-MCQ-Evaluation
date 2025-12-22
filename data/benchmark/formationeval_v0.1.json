@@ -18399,5 +18399,520 @@
       "calc_required": false,
       "contamination_risk": "medium"
     }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_well_to_well_tracers_001",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Production Engineering"
+    ],
+    "topics": [
+      "Well-to-Well Tracers",
+      "Reservoir Connectivity"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "A dissolved tracer is injected with water in an injection well and is detected in a nearby producer much sooner than expected. What is the most defensible interpretation of this early arrival?",
+    "choices": [
+      "A high-conductivity flow path connects the wells, such as a fracture, open fault, or very permeable sand layer",
+      "The reservoir rock has very high capillary entry pressure, which pulls the tracer rapidly toward the producer",
+      "The tracer has reacted with reservoir minerals, creating a faster-moving gaseous phase that reaches the producer first",
+      "The producer is likely completed above the gas/oil contact, causing rapid tracer appearance independent of rock flow paths"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "Tracer breakthrough timing reflects how efficiently the injected water phase can move between wells. A very early detection implies an unusually effective connection, commonly an open structural feature (fault/fracture) or a high-permeability layer providing preferential flow. Capillary entry pressure and fluid contacts do not, by themselves, create a fast well-to-well pathway for a water-dissolved tracer.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter discussion of tracer breakthrough and what it implies about high-permeability connections."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_drillingengineering_horizontal_wells_002",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Drilling Engineering",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Horizontal Wells",
+      "Reservoir Compartmentalization"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Why can a long horizontal well path improve production performance compared with a single vertical well in a compartmentalized reservoir?",
+    "choices": [
+      "It increases oil density in the wellbore, which lowers the pressure needed to lift fluids to surface",
+      "It eliminates capillary forces by creating larger pore throats near the well",
+      "It can intersect and drain multiple isolated reservoir compartments along its trajectory",
+      "It guarantees that the oil/water contact is level across the field by balancing buoyancy forces"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "Horizontal wells can traverse long distances within the reservoir interval and contact multiple separated flow units, increasing the drained volume relative to a vertical well that samples only a narrow column. This is especially valuable where internal barriers or small compartments limit pressure communication. The improvement is due to well geometry and reservoir contact, not changes to pore-scale physics.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item from the chapter's discussion of long horizontal drilling paths and drainage of multiple compartments."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_4d_seismic_monitoring_003",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "4D Seismic",
+      "Fluid Contacts"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A field team plans to repeat 3D seismic surveys during production to locate bypassed zones. What reservoir change is the time-lapse (4D) seismic most directly attempting to detect to infer movement of fluid contacts?",
+    "choices": [
+      "A shift in grain size caused by fines migration near the wellbore",
+      "A reduction in capillary entry pressure caused by polymer flooding",
+      "An increase in clay mineral specific surface caused by diagenesis during production",
+      "A change in acoustic properties driven by saturation-dependent density and velocity contrasts"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter describes repeated seismic acquisition as a way to follow shifts in OWC/GOC because elastic properties change with saturation. Density and velocity contrasts between hydrocarbon-filled and water-filled rock alter seismic response, enabling time-lapse interpretation. The other options describe processes not presented as primary drivers of a 4D seismic signature for contact tracking.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter's description of repeating 3D seismic to create 4D monitoring of contact movement using saturation-linked contrasts."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_gas_cap_management_004",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Production Engineering"
+    ],
+    "topics": [
+      "Gas Cap Management",
+      "Reservoir Pressure"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In an oil reservoir with an overlying free-gas zone, why is producing the oil phase before extensive gas production often emphasized for maximizing ultimate oil recovery?",
+    "choices": [
+      "Because early gas production increases oil viscosity, preventing later oil flow",
+      "Because removing gas too early can sharply lower pressure and disturb the gas/oil contact, making remaining oil harder to recover",
+      "Because producing oil first prevents the cap rock from becoming oil-wet and losing seal integrity",
+      "Because early gas production forces the oil/water contact downward by capillary rise, trapping oil below it"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The text highlights that free gas provides pressure support and that premature gas production can cause a strong pressure drop. That pressure reduction and contact distortion complicate recovery of oil left behind. The key is reservoir energy management rather than wettability changes or capillary rise mechanisms.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Drawn from the chapter's discussion of pressure support from free gas and the consequences of producing gas before oil."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_wettability_and_capillary_rise_005",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Wettability",
+      "Capillary Rise"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Consider a capillary tube or pore throat containing oil and water. If conditions shift so that the wetting angle becomes greater than 90\u00b0, what qualitative effect should you expect on the local position of the oil/water interface relative to the bulk oil/water contact?",
+    "choices": [
+      "The interface in the tube tends to sit below the bulk contact because the tube surface preferentially wets with oil",
+      "The interface rises above the bulk contact because water always climbs in small tubes regardless of wettability",
+      "The interface becomes independent of gravity because capillary forces cancel when the wetting angle exceeds 90\u00b0",
+      "The interface remains at the same level as the bulk contact because density contrast controls the contact position uniquely"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter links a wetting angle above 90\u00b0 to an oil-wet condition, where the solid surface is preferentially wetted by oil. In that situation the capillary effect shifts the local interface downward relative to the general OWC. If the system is water-wet (angle below 90\u00b0), the capillary effect instead elevates the water level in small conduits.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based question from the section on capillary forces and how wetting angle alters interface position."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_capillary_transition_zone_006",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Capillary Transition Zone",
+      "Grain Size Effects"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Two reservoir intervals are at similar structural height but differ strongly in pore-throat size: one is fine-grained and the other is coarse-grained. Why can the oil/water contact inferred from resistivity logs appear offset between these intervals by metres?",
+    "choices": [
+      "Because resistivity tools measure only porosity, and porosity changes shift the interpreted contact even at constant saturation",
+      "Because coarse grains generate higher interfacial tension, which increases water resistivity and lowers apparent water saturation",
+      "Because smaller pore throats create a stronger capillary-controlled saturation transition, so the water/oil distribution changes gradually with height",
+      "Because fine-grained rocks cannot contain any connate water, so the logged contact must always be deeper than the true contact"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter explains that capillary forces are stronger in small pore throats, drawing water upward and creating a thicker saturation transition rather than an abrupt contact. Resistivity responds to water saturation, so the log-derived contact can differ from the structural OWC by a few metres. This is a petrophysical effect tied to pore-throat size, not to porosity-only measurement or the absence of connate water.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from discussion of capillary rise/imbibition in fine pores and why log-indicated contacts can differ between lithologies."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_net_to_gross_007",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Net-to-Gross",
+      "Pay Zone"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "In volumetric reserve estimation, what does the net-to-gross ratio (N/G) represent?",
+    "choices": [
+      "The fraction of produced water that is reinjected to maintain pressure",
+      "The ratio of gas compressibility to oil compressibility under reservoir conditions",
+      "The ratio of average permeability to average porosity in the reservoir interval",
+      "The fraction of the mapped reservoir rock volume that has sufficient quality to be considered productive"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter defines net-to-gross as the proportion of the total reservoir volume that qualifies as pay (productive rock) relative to the total mapped reservoir volume. This accounts for tight or low-quality intervals that may be above the OWC but still contribute little to flow. It is not a fluid property ratio or a reinjection metric.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter's explanation of pay vs non-pay and the N/G term used in volumetric calculations."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_volumetric_oil_in_place_008",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Volumetric Reserves",
+      "Oil in Place"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A reservoir has a rock volume above the mapped oil/water contact of Vr = 2.0\u00d710^8 m^3. If N/G = 0.50, average porosity phi_a = 0.18, and average hydrocarbon saturation Sat = 0.70, what oil (hydrocarbon) volume in place Vp does the chapter\u2019s volumetric relation give?",
+    "choices": [
+      "1.8\u00d710^7 m^3",
+      "1.26\u00d710^7 m^3",
+      "6.3\u00d710^7 m^3",
+      "1.26\u00d710^8 m^3"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "Using the given relation Vp = Vr\u00b7(N/G)\u00b7phi_a\u00b7Sat: 2.0\u00d710^8 \u00d7 0.50 = 1.0\u00d710^8 m^3 of net rock volume, then \u00d70.18 gives 1.8\u00d710^7 m^3 of pore volume, and \u00d70.70 gives 1.26\u00d710^7 m^3 of hydrocarbons. The other options result from omitting one of the multipliers or misplacing a decimal factor.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical application of the chapter\u2019s volumetric expression for hydrocarbon volume in place using Vr, N/G, porosity, and saturation."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_relative_permeability_009",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Relative Permeability",
+      "Multiphase Flow"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "What is the most accurate conceptual meaning of relative permeability for a given phase (e.g., water) in a rock that contains two fluid phases?",
+    "choices": [
+      "It is the permeability to that phase during multiphase flow divided by the permeability measured when only that phase occupies the pore space",
+      "It is the permeability of the rock multiplied by the viscosity of that phase to account for frictional losses",
+      "It is the fraction of pore volume occupied by that phase, expressed as a percentage",
+      "It is the permeability of the cap rock divided by the permeability of the reservoir rock"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter defines relative permeability as a ratio comparing flow capacity under two-phase conditions to the single-phase case. This captures how the presence of another phase reduces the effective flow pathways available. Viscosity and saturation influence flow behavior but are not the definition of relative permeability itself.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "From the chapter section explaining why multiphase flow reduces effective permeability and how relative permeability is defined as a ratio."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_pressure_support_mechanisms_010",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Pressure Depletion",
+      "Water Drive",
+      "Reservoir Connectivity"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "Two oil reservoirs have similar fluids and initial conditions and are produced at comparable rates. Reservoir X is an isolated sand body surrounded by low-permeability shales and laterally offset by sealing faults; Reservoir Y is in hydraulic communication with a thick, laterally extensive sandstone aquifer. Which outcome best matches the chapter\u2019s discussion of pressure evolution and geomechanical consequences?",
+    "choices": [
+      "Reservoir X will maintain pressure better because shales are the main source of rapid water influx during production",
+      "Reservoir Y will show a faster pressure decline because aquifer communication increases oil compressibility",
+      "Both reservoirs will have nearly identical pressure decline because compressibility dominates over boundary conditions",
+      "Reservoir X will tend to deplete faster, increasing effective stress and making compaction-related effects more likely than in Reservoir Y"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter emphasizes that pressure support depends strongly on how much permeable rock volume communicates with the reservoir and on external fluid supply. An isolated sand body bounded by shales and sealing faults receives little water drive, so pressure can fall quickly; this raises effective stress and can promote compaction-related changes. A reservoir connected to a large sandstone aquifer generally receives stronger pressure support and depletes more slowly.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Integrates the chapter\u2019s discussion of water drive, reservoir boundary conditions (shales/faults vs connected sands), and compaction under increased effective stress."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_water_injection_sweep_011",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Water Injection",
+      "Sweep Efficiency",
+      "Vertical Permeability Trends"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Two sandstone reservoirs are waterflooded under similar operating conditions. One has a fining-upward vertical trend and the other has a coarsening-upward trend. Which situation is most likely to experience early water breakthrough at a producer, and why?",
+    "choices": [
+      "The coarsening-upward case, because injected water preferentially moves up-dip into the least permeable layers",
+      "The fining-upward case, because injected water tends to follow the more permeable basal interval and can reach the producer before sweeping tighter beds",
+      "The fining-upward case, because capillary resistance is lowest in fine-grained layers and water therefore rises fastest through them",
+      "The coarsening-upward case, because oil always flows only at the base due to higher density than water"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter links vertical permeability structure to displacement patterns during water injection. In a fining-upward sequence, the basal part is typically the most permeable pathway, so injected water can move quickly along it and short-circuit to a producer, bypassing oil in less permeable beds. A coarsening-upward sequence more often favors hydrocarbon flow near the top and can yield a different sweep pattern.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s comparison of waterflood behavior in fining-upward vs coarsening-upward successions and implications for sweep and breakthrough."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_formation_damage_diagnosis_012",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Production Engineering"
+    ],
+    "topics": [
+      "Formation Damage",
+      "Fines Migration",
+      "Pore Geometry"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "A coreflood experiment shows a permeability drop during flow. When the flow direction is reversed, the measured permeability increases temporarily before declining again. Based on the chapter, what damage mechanism is most consistent with this behavior?",
+    "choices": [
+      "Permanent pore-filling cement precipitation from iron hydroxides, which is reversed by changing flow direction",
+      "Capillary trapping of oil droplets, which is eliminated by reversing the pressure gradient",
+      "Mobilization and plugging by a migrating clay/silt fraction that can be partially dislodged when flow is reversed",
+      "Sudden compaction of the rock matrix caused by a reduction in pore pressure during the laboratory test"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter describes a diagnostic sign of mechanical formation damage: if reversing flow briefly restores permeability, it indicates blockage by transported fine particles rather than an irreversible chemical cement. This aligns with the idea that loose clays and small grains can move with produced water and obstruct pore throats. Chemical precipitation and compaction would not typically show a quick, reversible permeability improvement upon flow reversal.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 20 - Production Geology",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter\u2019s discussion of mechanical formation damage, fines transport, and the diagnostic use of flow reversal in lab testing."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
   }
 ]
