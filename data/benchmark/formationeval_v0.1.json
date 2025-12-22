@@ -19424,5 +19424,1027 @@
       "calc_required": true,
       "contamination_risk": "high"
     }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_ncs_provinces_001",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "NCS Provinces",
+      "Regional Setting"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "For regional petroleum geology on the Norwegian Continental Shelf, which three broad provinces are treated as the main framework for comparing basin evolution and petroleum systems?",
+    "choices": [
+      "North Sea, Baltic Sea, Greenland Sea",
+      "North Sea, Mid-Norwegian continental margin, Western Barents Sea",
+      "Skagerrak, M\u00f8re Basin, Oslo Graben",
+      "Central Graben, Viking Graben, Norwegian-Danish Basin"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter organizes the shelf into three principal provinces to discuss similarities and contrasts in tectonic history, stratigraphy, and petroleum systems. Those provinces are the North Sea, the Mid-Norwegian margin, and the Western Barents Sea. The other options mix smaller structural elements or regions not used as the main three-part division.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter's regional subdivision of the Norwegian Continental Shelf into major provinces."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_intracratonic_basins_002",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Geophysics"
+    ],
+    "topics": [
+      "Intracratonic Basins",
+      "Lithospheric Stretching"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "The North Sea is described as an intracratonic basin. What geodynamic change is emphasized as the key prerequisite for creating major accommodation space on continental crust in such basins?",
+    "choices": [
+      "A large, long-lived global sea-level rise that floods a stable craton",
+      "Rapid sediment piling that forces subsidence without tectonic thinning",
+      "Crustal thickening by compression that creates a deep flexural basin",
+      "Stretching and thinning of crust and mantle lithosphere that drives isostatic subsidence"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter links large basin subsidence on continental crust to lithospheric stretching and thinning, which requires the crust-mantle system to sink to preserve isostatic balance. Sediment loading can enhance subsidence but is not presented as the prerequisite mechanism. Compression and simple eustatic flooding do not explain the rift-related subsidence history described.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept item based on the chapter's explanation of intracratonic basin formation and isostatic subsidence driven by lithospheric thinning."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_rift_phases_003",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Rift Phases",
+      "North Sea Tectonics"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "According to the chapter, the North Sea experienced multiple stretching/thinning episodes. Which set of time intervals matches the major rift phases highlighted for the North Sea?",
+    "choices": [
+      "Late Carboniferous, Permian\u2013Early Triassic, Late Jurassic",
+      "Cambrian, Silurian, Late Cretaceous",
+      "Ordovician, Devonian, Miocene",
+      "Triassic, Late Cretaceous, Quaternary"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The North Sea is described as undergoing several rift phases separated by post-rift subsidence stages. The major rift-related stretching episodes identified are late Carboniferous, Permian\u2013Early Triassic, and Late Jurassic. The other options include periods not presented as the main rifting stages for this basin.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter's summary of rift episodes affecting the North Sea and their timing."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_post_rift_subsidence_004",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Geophysics"
+    ],
+    "topics": [
+      "Post Rift Subsidence",
+      "Thermal Cooling"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "After a rifting event in the North Sea, what process is described as producing the broad, regional subsidence phase that follows the active stretching?",
+    "choices": [
+      "Long-term compaction of pre-existing sediments with no thermal component",
+      "Renewed compression that thickens the crust and loads the basin",
+      "Thermal cooling and contraction after stretching, producing widespread subsidence",
+      "Rapid eustatic sea-level rise that deepens the basin everywhere"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter describes a characteristic sequence: rifting (stretching/thinning) followed by a cooling stage. Cooling of the lithosphere after rifting leads to thermal contraction and regional subsidence. This is distinct from local compaction-only effects or compressional loading.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based question on syn-rift vs post-rift basin evolution as described for the North Sea."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_salt_tectonics_005",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Salt Tectonics",
+      "Central Graben"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In the Norwegian Central North Sea, why can some major structural complications predate the main Jurassic rift event even though the Central Graben is largely Jurassic\u2013Cretaceous in overall geometry?",
+    "choices": [
+      "Salt began moving early and could deform strata before and long after Jurassic rifting",
+      "Deep-water carbonate reefs built rigid mounds that forced later faulting",
+      "Cenozoic glacial erosion created the tilted half-graben pattern offshore",
+      "Precambrian basement metamorphism directly created the Jurassic rotated blocks"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter notes that salt movement affected the Central Graben area already in Triassic time and in places persisted into younger periods. Because salt can flow and reactivate structures independent of the timing of main rifting, it can create significant pre-Jurassic structuring and later overprinting. The other options do not match the described mechanism for early deformation in this area.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the discussion of Central Graben halokinesis and its role in structuring through time."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_unconformities_006",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Geophysics"
+    ],
+    "topics": [
+      "Unconformities",
+      "Cretaceous Evolution"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "The Base Cretaceous Unconformity is described as a strong seismic marker across much of the North Sea. Which geological scenario best explains why this boundary is regionally developed but may be less pronounced in the deepest rift basins?",
+    "choices": [
+      "Cretaceous carbonate platforms abruptly drowned everywhere, producing a uniform hardground",
+      "A global fall in sea level removed all Jurassic sediments from the entire basin at once",
+      "Many rift highs remained exposed or starved, while deep rift axes could continue accumulating sediment",
+      "Permian evaporites were deposited directly on Cretaceous mudstones, creating a sharp contrast"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter describes Early Cretaceous conditions where uplifted rift structures stayed as islands for much of the Early Cretaceous, leading to erosion or non-deposition on highs. In contrast, the deepest parts of rifts could preserve more continuous sedimentation across the boundary. This creates a regionally strong unconformity that is locally reduced in deep depocentres.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter's explanation of Early Cretaceous exposure of rift highs and the regional Base Cretaceous unconformity."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_source_rocks_007",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Source Rocks",
+      "Anoxic Basins"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Upper Jurassic shales are described as the dominant source rocks for many North Sea fields. Which set of depositional conditions best supports development of such highly effective source rocks in rift basins?",
+    "choices": [
+      "Well-oxygenated bottom waters and slow sedimentation on a shallow shelf",
+      "High-energy shoreface reworking that concentrates organic matter into sand",
+      "Frequent subaerial exposure that creates thick coal seams across the basin",
+      "Restricted bottom-water renewal in overdeepened sub-basins plus burial that preserves organic matter"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter links the best Upper Jurassic source rocks to rift-related basin topography that produced poorly ventilated bottom waters, allowing much organic matter to avoid oxidation. Relatively high sedimentation also aided preservation by rapid burial. Well-oxygenated shelves and high-energy sandy settings generally reduce preservation of dispersed marine organic matter.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on why Upper Jurassic organic-rich shales became prime source rocks in North Sea rift basins."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_sedimentology_deltaic_facies_008",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Sedimentology",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Deltaic Facies",
+      "Brent Group"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A Brent Group core interval contains coal beds, fluvial channel sands, crevasse-splay deposits, and lagoonal muds. Which Brent Group subdivision best fits this facies association?",
+    "choices": [
+      "Rannoch Formation",
+      "Ness Formation",
+      "Tarbert Formation",
+      "Etive Formation"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter describes the Ness Formation as the delta-top interval dominated by fluvial and lagoonal environments and including coal. Rannoch and Etive are associated with more marine-influenced, progradational delta-front/shoreface settings, while Tarbert reflects transgressive reworking into better-sorted marine sand. The facies listed most closely match a delta-top package.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Facies-recognition item derived from the Brent Group internal subdivision and depositional environments."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_overpressure_effects_009",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Overpressure Effects",
+      "Chalk Reservoirs"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In the chapter\u2019s discussion of the Ekofisk chalk reservoir, porosity around 30\u201335% is noted despite burial depths greater than 3 km. What mechanism is emphasized as a key reason for this unusually high porosity at depth?",
+    "choices": [
+      "Complete replacement of calcite by quartz, which increases pore volume",
+      "Strong meteoric-water flushing during burial that dissolves the matrix everywhere",
+      "Reduced effective stress due to overpressure beneath low-permeability clay seals, limiting compaction",
+      "Late Cenozoic glacial unloading that instantly reopened pores in the chalk"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter attributes the preserved chalk porosity largely to overpressure created by low-permeability clay-rich seals, which lowers effective stress and reduces both mechanical compaction and pressure solution. This allows relatively high porosity to persist even at several kilometres depth. Glacial unloading and wholesale quartz replacement are not presented as the controlling explanation for Ekofisk porosity.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the Ekofisk chalk discussion focusing on overpressure, effective stress, and compaction/porosity preservation."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_trapping_mechanisms_010",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Trapping Mechanisms",
+      "Ekofisk Field"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "A dome-shaped structure has a mapped structural closure smaller than the observed hydrocarbon column thickness, implying hydrocarbons extend below the spill point. Based on the chapter\u2019s Ekofisk example, what explanation best accounts for this situation?",
+    "choices": [
+      "A combined structural trap and a lateral flow barrier created by tight rock/capillary effects (a diagenetic component)",
+      "A constant capillary pressure of zero, so hydrocarbons ignore the spill point everywhere",
+      "A fully open fault network that allows continuous replenishment from deeper levels without trapping",
+      "A sea-level fall that permanently lowered the free-water level across the entire basin"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter explains that Ekofisk requires more than simple structural closure because the oil column exceeds the closure height. A diagenetic/capillary barrier associated with low permeability can inhibit lateral escape even below the mapped spill point. The other options either remove the concept of trapping or invoke basin-wide controls not used to explain this local observation.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on mixed structural\u2013diagenetic trapping illustrated by Ekofisk's oil column relative to closure."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_structural_traps_011",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Structural Traps",
+      "Rotated Fault Blocks"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "In the northern North Sea petroleum province, which trap geometry is described as the most commonly investigated and developed type along the basin margins?",
+    "choices": [
+      "Shallow anticlines created solely by glacial loading",
+      "Rotated fault blocks where fault sealing is often crucial",
+      "Carbonate reef buildups formed during Late Pliocene time",
+      "Stratigraphic traps formed only by Holocene shoreline migration"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter states that rotated fault blocks generated during rifting are the dominant trap type along both margins of the Viking Graben. It also notes that sealing faults are frequently important for these traps. The other trap types listed do not match the province-scale description given for the northern North Sea.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the northern North Sea trap-type overview emphasizing rotated fault blocks and fault seals."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_kitchen_areas_012",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Kitchen Areas",
+      "Hydrocarbon Generation"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In the chapter\u2019s discussion of the northern North Sea, what is the practical meaning of a \u201ckitchen area\u201d in a petroleum system?",
+    "choices": [
+      "A shallow platform where source rock remains immature but reservoirs are thick",
+      "An area where reservoirs are highly cemented and therefore do not produce",
+      "A region dominated by volcanic intrusions that always converts oil to gas",
+      "A deeply buried part of the basin where source rocks generate large hydrocarbon volumes that later migrate"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter uses \u201ckitchen area\u201d for the deeper, more strongly buried parts of the basin where the Upper Jurassic source rock reaches sufficient maturity to generate substantial hydrocarbons. These generated fluids then migrate into shallower traps such as rotated fault blocks. Shallow immature areas and reservoir-cementation problems are distinct concepts and not the definition of a kitchen area.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item based on the chapter's use of 'kitchen areas' for mature, deeply buried source rock zones feeding migration."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_seal_failure_013",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Geophysics"
+    ],
+    "topics": [
+      "Seal Failure",
+      "Secondary Migration"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "The chapter describes cases where hydrocarbons leak from some northern North Sea reservoirs. What outcome is highlighted as a consequence when pressure approaches or exceeds cap-rock fracture strength?",
+    "choices": [
+      "Hydrocarbons are permanently trapped deeper because fractures close instantly",
+      "Hydrocarbons are converted to coal due to sudden cooling during leakage",
+      "Upward escape into younger successions can charge Palaeocene\u2013Eocene turbidite sands, creating new accumulations",
+      "The source rock becomes immature because leakage reduces burial depth"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter links leakage to pressure build-up sufficient to fracture the seal, allowing fluids to migrate upward into younger stratigraphy. It specifically notes that leaked oil and gas can accumulate in Palaeocene\u2013Eocene sand bodies deposited as turbidites. Fracture closure, coal formation, and instantaneous maturity reversal are not presented as the primary outcomes.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the discussion of seal breach/leakage and subsequent charging of Paleocene\u2013Eocene turbidite reservoirs."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_co2_storage_014",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "CO2 Storage",
+      "Utsira Formation"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "The chapter mentions CO2 injection in the Sleipner area. What property of the Utsira Formation is most directly relevant to its suitability for injection operations?",
+    "choices": [
+      "It is a relatively thick sandstone unit with good aquifer properties",
+      "It is a crystalline basement unit with negligible pore space",
+      "It is a tight evaporite interval that prevents any fluid movement",
+      "It is a thin Holocene silt drape that compacts instantly under load"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter describes the Utsira Formation as a thick sandstone that functions as a good aquifer, which implies high injectivity and storage capacity. This type of reservoir quality is central to CO2 injection feasibility. Basement rocks, tight evaporites, or thin Holocene silts do not match the stated injection target characteristics.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item based on the Utsira Formation description and its use for CO2 injection at Sleipner."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_mid_norwegian_margin_015",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Mid Norwegian Margin",
+      "Structural Segments"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Along strike, the mid-Norwegian margin is divided into three main segments. Which grouping matches those segments?",
+    "choices": [
+      "Viking Graben, Central Graben, Oslo Rift",
+      "Hammerfest Basin, Nordkapp Basin, Troms\u00f8 Basin",
+      "Svalbard Platform, Bj\u00f8rn\u00f8ya Basin, Senja Ridge",
+      "M\u00f8re, V\u00f8ring, and Lofoten\u2013Vester\u00e5len"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter identifies three main mid-Norwegian margin segments: the M\u00f8re, V\u00f8ring, and Lofoten\u2013Vester\u00e5len margins. The other options list North Sea structural elements or Barents Sea basins rather than the mid-Norwegian margin segmentation.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the mid-Norwegian margin structural framework and along-strike segmentation."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_transfer_zones_016",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Geophysics"
+    ],
+    "topics": [
+      "Transfer Zones",
+      "Margin Magmatism"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "The chapter treats the Bivrost Lineament/Transfer Zone as a key boundary on the mid-Norwegian margin. Which contrast across this boundary is emphasized?",
+    "choices": [
+      "North of the boundary, basement is entirely Precambrian; south of it, basement is entirely oceanic",
+      "South of the boundary, break-up magmatism is more voluminous; north of it, the margin is less magmatic and more prone to early post-opening subsidence",
+      "South of the boundary, rifting ceased in the Carboniferous; north of it, rifting began only in the Quaternary",
+      "North of the boundary, salt tectonics dominates; south of it, no faults occur"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter describes the Bivrost zone as separating sectors with distinct physiography, stretching, and break-up magmatism. Magmatism related to break-up is stated to be more voluminous to the south, while the less magmatic margin to the north was more susceptible to initial post-opening subsidence. The other options introduce contrasts not described in the chapter.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter's description of the Bivrost Transfer Zone as a boundary in physiography, stretching, and break-up magmatism."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_seismic_reflectors_017",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics",
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Seismic Reflectors",
+      "Volcanic Margins"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "On the outer M\u00f8re and V\u00f8ring margins, the chapter describes characteristic seismic packages commonly used to recognize volcanic passive margins. What do these seaward-dipping reflector sequences most commonly represent in this context?",
+    "choices": [
+      "Stacks of basalt flows erupted around break-up, forming dipping lava wedges",
+      "Thick carbonate platforms that prograded oceanward during the Jurassic",
+      "Glacial tills deposited on a continental shelf and later rotated by compaction",
+      "Salt sheets that flowed seaward due to gravity spreading in the Cenozoic"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter states that drilling has shown the seaward-dipping reflector sequences to be basaltic lavas erupted subaerially and/or in shallow marine settings during the break-up phase. These lava stacks create a diagnostic dipping geometry on seismic data. Carbonate platforms, tills, and salt sheets are not presented as the origin of these particular reflector packages on the mid-Norwegian volcanic margin.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept question based on the interpretation of seaward-dipping reflector sequences as diagnostic volcanic margin features."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_sill_intrusions_018",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Geophysics"
+    ],
+    "topics": [
+      "Sill Intrusions",
+      "Hydrothermal Vents"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "During break-up on the Norwegian margin, the chapter describes widespread sill intrusion into thick Cretaceous successions. What mechanism is proposed to explain the formation of numerous hydrothermal vent complexes during this igneous episode?",
+    "choices": [
+      "Glacial scouring created vent pipes that later filled with basalt",
+      "Normal faulting alone pumped seawater upward to build vent mounds",
+      "Heating of organic-rich sediments by intrusions generated large gas volumes that escaped explosively to the surface",
+      "Quartz cementation in sandstones increased pore pressure until vents formed"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter links intrusion of magma into organic-rich sedimentary rocks to rapid generation of greenhouse gases. These gases were then vented in explosive events, forming many hydrothermal vent complexes along the margin. The other options do not match the described cause-and-effect connection between intrusion, gas generation, and vent formation.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter's discussion of break-up magmatism, sill intrusion, and associated hydrothermal vent complexes."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_pore_pressure_019",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Pore Pressure",
+      "Haltenbanken Traps"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In the Haltenbanken area, the chapter notes that some reservoirs east of a major fault are close to hydrostatic pressure. Which explanation is given for why this pressure regime can reduce the chance of leakage from traps?",
+    "choices": [
+      "Hydrostatic pressure implies no buoyancy force, so hydrocarbons cannot migrate",
+      "Drainage through Jurassic sandstones toward the coast limits overpressure, reducing the likelihood of seal fracturing",
+      "Lower pressure always increases oil viscosity, making it immobile in the pore space",
+      "Hydrostatic pressure guarantees that the source rock remains immature"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter explains that pressure did not build far above hydrostatic on the eastern side because fluids could drain through Jurassic sandstones toward the coast. Lower pore pressure reduces the risk that pressure will reach fracture strength and breach the seal. The other options confuse pressure with buoyancy, viscosity, or maturity in ways not supported by the chapter\u2019s discussion.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the Haltenbanken discussion of drainage, pore pressure, and its implications for leakage risk."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_quartz_cementation_020",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Quartz Cementation",
+      "Deep Reservoir Quality"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "For very deep Jurassic reservoirs on the mid-Norwegian shelf (depths >5 km and temperatures approaching 170\u2013180\u00b0C), which factor is highlighted as critical for preserving producible porosity in some sandstones?",
+    "choices": [
+      "Abundant feldspar dissolution always increases porosity regardless of burial depth",
+      "Early dolomitization creates rigid frameworks that prevent quartz cement",
+      "A thick salt cover blocks any cementation reactions in underlying sands",
+      "Chlorite grain coatings can inhibit quartz cement growth and help retain higher porosity"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter emphasizes that at great burial depth, reservoir quality depends strongly on how much quartz cement forms. It notes that chlorite coatings on grains can hinder quartz precipitation, allowing porosity to remain relatively high (on the order of 20\u201325%) even at depth. Where such coatings are absent and quartz dominates, porosity can be much lower.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter\u2019s deep-burial reservoir quality discussion for Kristin/Lavrans-type settings (quartz cement vs chlorite coatings)."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_timing_of_petroleum_systems_021",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Timing of Petroleum Systems",
+      "V\u00f8ring-M\u00f8re Basins"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In the deep V\u00f8ring and M\u00f8re basin province, the chapter notes that some very large traps formed relatively late compared with hydrocarbon generation. What petroleum-system consequence follows if Upper Jurassic source rocks mature by mid-Cretaceous time but key reservoirs and inversion structures develop later?",
+    "choices": [
+      "Oil is guaranteed to be trapped because early generation always improves charge efficiency",
+      "Hydrocarbon generation cannot occur without inversion structures, so no charge is possible",
+      "Later-formed traps may capture mainly gas (including gas derived from earlier oil) rather than large oil accumulations",
+      "Reservoir sandstones cannot be deposited after source rock maturation, so prospects are impossible"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter describes a timing mismatch: source rocks became mature before important Upper Cretaceous\u2013Lower Tertiary reservoirs were deposited and before the large traps visible today formed. In such cases, much of the earlier-generated oil may not be trapped, and later traps may preferentially retain gas or gas that formed from oil at depth. This is a classic charge\u2013trap timing risk highlighted for the province.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on timing mismatch between source maturation and later development of reservoirs/traps in the V\u00f8ring\u2013M\u00f8re basins."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_exploration_acreage_022",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Exploration Acreage",
+      "Norwegian Shelf Licensing"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "The chapter states the Norwegian continental shelf covers about 2.2 million km\u00b2, about half is considered prospective bedrock, and about half of that prospective area has been opened for exploration. Approximately what area has been opened?",
+    "choices": [
+      "0.55 million km\u00b2",
+      "1.10 million km\u00b2",
+      "0.22 million km\u00b2",
+      "2.20 million km\u00b2"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "Opened area is computed by applying the two successive halves: 2.2 million km\u00b2 \u00d7 0.5 \u00d7 0.5 = 0.55 million km\u00b2. This calculation follows directly from the proportions provided in the chapter. The other options correspond to using only one reduction or none.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Simple quantitative item derived from the chapter's shelf-area and exploration-access proportions."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_barents_sea_rift_phases_023",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Barents Sea Rift Phases",
+      "Tectonic Evolution"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "The chapter summarizes the post-Caledonian history of the western Barents Sea as being dominated by three major rift phases. Which combination matches those phases?",
+    "choices": [
+      "Cambrian, Silurian, Devonian",
+      "Late Triassic, Late Cretaceous, Miocene",
+      "Permian only, with no later rifting",
+      "Late Devonian?\u2013Carboniferous, Middle Jurassic\u2013Early Cretaceous, Early Tertiary"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter identifies three main rift phases for the western Barents Sea spanning Late Devonian?\u2013Carboniferous, Middle Jurassic\u2013Early Cretaceous, and Early Tertiary times, with multiple pulses within each. This framework is used to interpret the basin architecture and later margin development. The other options do not reflect the phase grouping stated.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter's synthesis of major rift phases controlling western Barents Sea basin evolution."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_uplift_and_erosion_effects_024",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Uplift and Erosion Effects",
+      "Barents Sea Prospectivity"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "The chapter highlights late Cenozoic uplift and erosion as a key reason many Barents Sea discoveries are gas-dominated even where oil was present earlier. Which mechanism best explains this shift in fluid type and trap filling?",
+    "choices": [
+      "Uplift increases pressure, compressing gas back into oil and improving oil retention",
+      "Pressure reduction during uplift causes gas to come out of solution and expand, which can expel oil and promote spilling/breaching while cooling also reduces further generation",
+      "Erosion adds overburden, increasing maturity and creating new oil that refills traps immediately",
+      "Glacial sediments always dissolve seals, making trapping impossible anywhere on the shelf"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter explains that removal of large overburden thickness reduces pressure, promoting gas exsolution from oil and expansion of gas that can drive oil out of traps and contribute to seal breaching/spillage. It also notes that cooling of source rocks during uplift can largely stop continued hydrocarbon generation, limiting replenishment. This combination helps account for gas-dominated accumulations and residual oil columns.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 22 - Geology of the Norwegian Continental Shelf",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter\u2019s explanation of how uplift/erosion affects pressure, phase behavior, trap integrity, and ongoing generation in the Barents Sea."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
   }
 ]
