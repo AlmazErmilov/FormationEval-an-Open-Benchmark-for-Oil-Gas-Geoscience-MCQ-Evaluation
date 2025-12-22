@@ -18914,5 +18914,515 @@
       "calc_required": false,
       "contamination_risk": "low"
     }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_tar_sands_001",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Tar Sands",
+      "Biodegradation"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "A sandstone reservoir is charged with oil at shallow depth and later contains bitumen-like, extremely viscous hydrocarbons. Which condition most directly favors this transformation of the oil after emplacement?",
+    "choices": [
+      "Increasing burial pressure that compacts the pore space and concentrates the oil",
+      "Low temperatures at shallow depth that allow microbial alteration of the oil",
+      "High-temperature cracking of oil to methane that removes the liquid fraction",
+      "Strong quartz cementation that seals pores and prevents fluid movement"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "In shallow, relatively cool reservoirs, bacteria can alter the oil, leading to biodegraded, asphaltic, high-viscosity material typical of tar sands. Deep, hot conditions instead tend to thermally alter hydrocarbons in different ways. Cementation and compaction affect reservoir quality but are not the primary driver of biodegradation.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the discussion of why shallow reservoirs are prone to biodegraded tar-sand accumulations."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_thermal_history_002",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Thermal History",
+      "Biodegradation"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A sandstone unit was once buried deeply enough to reach relatively high temperatures, then uplifted and later charged with oil at shallow depth. Compared with a similar sandstone that never experienced the high-temperature phase, what outcome is most likely regarding later oil biodegradation in the uplifted unit?",
+    "choices": [
+      "More biodegradation, because high temperature creates more nutrients for bacteria",
+      "No change, because biodegradation depends only on the oil API gravity",
+      "Less biodegradation, because prior heating can reduce the likelihood of bacterial alteration later",
+      "Less biodegradation, because uplift always increases quartz cementation and seals the rock"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter indicates that sandstones that experienced higher temperatures during deeper burial can become effectively \u201csterilised,\u201d making subsequent biodegradation of later oil charges less likely. A sandstone that remained shallow and cool is more prone to microbial alteration. Quartz cementation trends are discussed separately and do not by themselves explain the \u201csterilisation\u201d effect described.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Conceptual question based on the chapter\u2019s link between maximum temperature exposure and reduced biodegradation potential after uplift."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_productionengineering_sagd_003",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Production Engineering",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Steam-Assisted Gravity Drainage",
+      "Thermal Recovery"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Which description best captures the well layout and production mechanism of steam-assisted gravity drainage (SAGD) in a tar-sand reservoir?",
+    "choices": [
+      "Two horizontal wells are drilled one above the other; steam is injected in the upper well and heated oil drains by gravity into the lower producing well",
+      "A single vertical well alternates between steam injection and oil production without moving fluids laterally in the reservoir",
+      "Steam is injected into a deep well so it rises and lifts oil up the same wellbore by gas-lift",
+      "Several horizontal wells inject cold water to dissolve bitumen, which is then pumped to surface"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "SAGD relies on a paired horizontal-well system with injection above production so that heating lowers viscosity and gravity moves the mobilized oil downward. This geometry is central to the process and differs from single-well cyclic methods. Cold-water dissolution is not the mechanism described for SAGD in the chapter.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s description of SAGD geometry and gravity-driven drainage after steam heating."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_heterogeneity_004",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Reservoir Heterogeneity",
+      "Tar Sands"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "During thermal production from a tar-sand interval, thin shale layers interbedded with sand most directly influence performance by affecting which property?",
+    "choices": [
+      "They increase horizontal permeability, making steam spread laterally faster than oil",
+      "They increase reservoir temperature, because shales have higher thermal conductivity than sands",
+      "They increase oil density, because shale minerals dissolve into the bitumen during heating",
+      "They restrict vertical flow, making it harder for heat and mobilized fluids to move across layers"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter emphasizes that shale interbeds can act as vertical barriers that hinder upward/downward movement, affecting steam and heated oil migration. This reduces vertical communication and can impede gravity drainage efficiency. Thermal conductivity and oil density changes are not presented as the controlling effects of shale stringers.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the discussion of shale layers reducing vertical mobility during heating-based tar-sand recovery."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_productionengineering_steam_energy_balance_005",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Production Engineering"
+    ],
+    "topics": [
+      "Thermal Recovery",
+      "Energy Requirements"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A steam-based in situ tar-sand project follows the chapter\u2019s stated rule-of-thumb that one barrel of produced oil must be burned to generate steam for every three barrels of oil produced. If the operation produces 90,000 bbl/day at the surface, approximately how many bbl/day are burned to make steam?",
+    "choices": [
+      "15,000 bbl/day",
+      "30,000 bbl/day",
+      "45,000 bbl/day",
+      "60,000 bbl/day"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The ratio given is 1 barrel burned per 3 barrels produced, so the burned volume is 90,000/3 = 30,000 bbl/day. This highlights the substantial on-site energy penalty of generating steam for thermal recovery. The other options correspond to incorrect ratios or arithmetic.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Quantitative check on the chapter\u2019s stated oil-to-steam energy requirement for steam-based tar-sand production."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_oil_shales_006",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Oil Shales",
+      "Source Rock Maturity"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A mudstone has high TOC but has not reached sufficient burial temperature to generate and expel most of its petroleum naturally. According to the chapter\u2019s description of oil shales, what is the primary step needed to obtain large amounts of oil from this rock?",
+    "choices": [
+      "Inject CO\u2082 to dissolve kerogen and produce it as a miscible fluid",
+      "Waterflood the rock to displace oil trapped in large pores",
+      "Cool the rock to preserve kerogen and prevent cracking during production",
+      "Mine the rock and heat it to several hundred degrees Celsius to convert kerogen into producible oil"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "Oil shales are described as organic-rich source rocks that are insufficiently mature, so most hydrocarbons have not been generated. The chapter explains that recovery therefore relies on mining and high-temperature heating (pyrolysis) to generate petroleum from kerogen. Reservoir displacement methods like waterflooding are not the central mechanism for these immature rocks.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on why immature organic-rich shales require ex situ heating to yield significant oil."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_source_rock_maturity_007",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Source Rock Maturity",
+      "Oil Shales"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "The chapter contrasts Upper Cambrian alum shales in the Oslo region with similar alum shales in Sweden. Which explanation best accounts for why the Swedish unit can yield more oil by pyrolysis than the Oslo-region unit?",
+    "choices": [
+      "The Oslo-region shale experienced higher maximum temperatures and expelled most hydrocarbons, leaving less remaining material to generate oil during pyrolysis",
+      "The Swedish shale is much younger, so its kerogen has had less time to convert to oil during burial",
+      "The Oslo-region shale contains no organic matter, while the Swedish shale is organic-rich",
+      "The Swedish shale is deeper today, so it is automatically more mature and produces more oil in ovens"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter attributes the difference mainly to contrasting thermal histories: the Oslo-area alum shale was heated to much higher temperatures during deep burial and lost most of its hydrocarbons during tectonic events. In Sweden, the unit was not buried as deeply and retains more material that can be converted to oil during pyrolysis. The explanation is therefore maturity and expulsion history, not simply present-day depth or age.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Integrates maturity, burial depth/temperature, and expulsion concepts using the chapter\u2019s alum-shale comparison."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_cbm_storage_008",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "Coal Bed Methane",
+      "Gas Storage Mechanisms"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Coal seams can contain large volumes of methane even though coal has very low permeability. What mechanism allows coal to hold substantial methane quantities?",
+    "choices": [
+      "Methane is stored mainly as free gas in large vugs and caverns within coal",
+      "Methane is trapped as a separate liquid phase that later boils during production",
+      "Methane is largely held by adsorption on extensive internal surfaces created by coal\u2019s microporosity",
+      "Methane is stored primarily as hydrate crystals throughout the coal matrix"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter explains that coal\u2019s microporous fabric creates a very large surface area, allowing significant methane to be adsorbed. This storage mode differs from conventional reservoirs where free gas in interconnected pores dominates. Hydrate storage is discussed for marine sediments, not coal seams.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s description of adsorption and surface-area control on CBM storage."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_cbm_permeability_009",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Production Engineering"
+    ],
+    "topics": [
+      "Coal Bed Methane",
+      "Fractures and Cleats"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In coal bed methane (CBM) production, coal matrix permeability is typically very low. Which feature described in the chapter most strongly enables methane to flow to wells?",
+    "choices": [
+      "Primary porosity created by depositional sorting of coal grains",
+      "Natural fracture networks (cleats) that provide flow pathways, often associated with uplift",
+      "Solution-enlarged channels formed by groundwater dissolution of coal minerals",
+      "Thick salt layers that transmit gas by plastic deformation around the well"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter notes that gas flow from coal relies on thin fractures (cleats), because the coal matrix itself has very low permeability. These fractures are linked to deformation/uplift and provide connected pathways to the well. Depositional sorting and dissolution channels are not presented as the key permeability mechanism for CBM.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter\u2019s point that cleats control deliverability in low-permeability coal."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_shale_gas_storage_010",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Shale Gas",
+      "Gas Storage Mechanisms"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Before stimulation, methane in organic-rich shale gas systems is described in the chapter as residing in which set of locations?",
+    "choices": [
+      "Mostly as a free gas cap above an oil leg, like a conventional anticlinal trap",
+      "Only dissolved in connate water, with essentially no gas in pores or on surfaces",
+      "In very small pores, with an additional portion attached to organic residue and clay mineral surfaces",
+      "Exclusively trapped in large open fractures that formed during deposition of the shale"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter describes shale gas as being held in tiny pore spaces and also partly adsorbed on remaining organic material (coke) and clays. This differs from conventional traps dominated by free gas in relatively permeable pore networks. Large, depositional open fractures are not presented as the primary storage mechanism.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based question on shale-gas storage modes (micro/nanopores and adsorption) described in the chapter."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_gas_hydrate_stability_011",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Geophysics"
+    ],
+    "topics": [
+      "Gas Hydrates",
+      "Temperature-Pressure Stability"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "Assume seafloor temperature is 2\u00b0C and the geothermal gradient is 30\u00b0C/km. Using the chapter\u2019s approximate stability limit that gas hydrates become unstable above about 20\u00b0C, what is the maximum depth below the seafloor where hydrates would be expected to remain stable under these conditions (ignoring pressure changes)?",
+    "choices": [
+      "About 0.2 km",
+      "About 0.4 km",
+      "About 0.8 km",
+      "About 0.6 km"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "Temperature increases by 30\u00b0C per km, so reaching 20\u00b0C from a 2\u00b0C starting point requires an 18\u00b0C increase. That corresponds to 18/30 = 0.6 km below the seafloor. This aligns with the chapter\u2019s qualitative statement that hydrates are only stable within a few hundred meters beneath the seafloor in typical settings.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical stability check based on the chapter\u2019s hydrate temperature limits and typical geothermal gradient."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_gas_hydrate_yield_012",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Gas Hydrates",
+      "Resource Potential"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "The chapter states that when gas hydrate dissociates, one volume of hydrate can release about 160 volumes of gas. Approximately how much gas volume would be released from 3 m\u00b3 of hydrate (using the same volume ratio)?",
+    "choices": [
+      "480 m\u00b3 of gas",
+      "160 m\u00b3 of gas",
+      "320 m\u00b3 of gas",
+      "640 m\u00b3 of gas"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "Using the stated expansion ratio, gas volume is 3 \u00d7 160 = 480 m\u00b3. The key point is that hydrate holds methane in a condensed form that expands greatly upon dissociation. The other options correspond to using the wrong multiplier or an incorrect ratio.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 21 - Unconventional Hydrocarbons",
+        "retrieved_at": "2025-12-22",
+        "notes": "Simple quantitative application of the chapter\u2019s hydrate-to-gas expansion factor."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "high"
+    }
   }
 ]
