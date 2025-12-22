@@ -6,8 +6,8 @@ Multiple-choice questions for evaluating LLMs on Oil & Gas geoscience knowledge.
 
 | Metric | Value |
 |--------|-------|
-| Questions | 481 |
-| Unique topics | 775 |
+| Questions | 505 |
+| Unique topics | 811 |
 | Format | 4-choice MCQ |
 | Language | English |
 
@@ -15,9 +15,9 @@ Multiple-choice questions for evaluating LLMs on Oil & Gas geoscience knowledge.
 
 | Level | Count | % |
 |-------|------:|--:|
-| Easy | 120 | 25% |
-| Medium | 264 | 55% |
-| Hard | 97 | 20% |
+| Easy | 132 | 26% |
+| Medium | 274 | 54% |
+| Hard | 99 | 20% |
 
 ## Domains
 
@@ -25,19 +25,19 @@ Questions may belong to multiple domains.
 
 | Domain | Count |
 |--------|------:|
-| Petrophysics | 271 |
-| Petroleum Geology | 129 |
-| Sedimentology | 94 |
+| Petrophysics | 272 |
+| Petroleum Geology | 151 |
+| Sedimentology | 98 |
 | Geophysics | 80 |
-| Reservoir Engineering | 40 |
+| Reservoir Engineering | 43 |
 | Drilling Engineering | 24 |
-| Production Engineering | 13 |
+| Production Engineering | 14 |
 
 ## Answer Distribution
 
 | A | B | C | D |
 |:-:|:-:|:-:|:-:|
-| 132 (27%) | 123 (26%) | 116 (24%) | 110 (23%) |
+| 138 (27%) | 130 (26%) | 124 (25%) | 113 (22%) |
 
 ## Sources
 
@@ -45,6 +45,7 @@ Questions may belong to multiple domains.
 |--------|----------:|
 | Ellis & Singer - Well Logging for Earth Scientists (2007) | 219 |
 | Bjørlykke - Petroleum Geoscience (2010) | 262 |
+| TU Delft OCW - Petroleum Geology (2008) | 24 |
 
 ## Schema
 
