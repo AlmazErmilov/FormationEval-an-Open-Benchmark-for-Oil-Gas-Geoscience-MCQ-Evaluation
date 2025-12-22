@@ -76,6 +76,18 @@ for q in questions:
     print(f"Answer: {q['answer_key']}\n")
 ```
 
+## Methodology
+
+All questions are **concept-based**: written from scratch based on concepts from source materials, not copied or paraphrased. This approach:
+
+- Tests understanding of concepts, not recognition of phrases
+- Avoids reproducing copyrighted expression
+- Uses standard technical terms (porosity, Archie equation, etc.) as-is
+
+Each question includes a `rationale` explaining the correct answer and `sources` for provenance.
+
+See [src/README.md](../../src/README.md) for generation details.
+
 ## License
 
-Questions are concept-based derivations from source materials. See `sources` field for attribution.
+Questions are original derivations. See `sources` field for attribution requirements.
