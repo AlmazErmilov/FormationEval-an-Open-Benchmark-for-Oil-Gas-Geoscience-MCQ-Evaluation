@@ -7,6 +7,7 @@ Multiple-choice questions for evaluating LLMs on Oil & Gas geoscience knowledge.
 | Metric | Value |
 |--------|-------|
 | Questions | 481 |
+| Unique topics | 775 |
 | Format | 4-choice MCQ |
 | Language | English |
 
@@ -48,18 +49,34 @@ Questions may belong to multiple domains.
 ## Schema
 
 ```
-id              - Unique identifier
-question        - Question text
-choices         - Array of 4 options (A-D)
-answer_index    - Correct answer index (0-3)
-answer_key      - Correct answer letter (A-D)
-rationale       - Explanation of correct answer
-difficulty      - easy | medium | hard
-domains         - Array of broad categories
-topics          - Array of specific subjects
-sources         - Provenance metadata
-metadata        - calc_required, contamination_risk
+id                            - Unique identifier
+question                      - Question text
+choices                       - Array of 4 options (A-D)
+answer_index                  - Correct answer index (0-3)
+answer_key                    - Correct answer letter (A-D)
+rationale                     - Explanation of correct answer
+difficulty                    - easy | medium | hard
+domains                       - Array of broad categories
+topics                        - Array of specific subjects
+sources                       - Provenance metadata
+derivation_mode               - concept_based
+metadata.calc_required        - Boolean (calculation needed)
+metadata.contamination_risk   - low | medium | high
 ```
+
+### Contamination Risk
+
+Indicates likelihood that similar questions exist in LLM training data:
+
+| Risk | Meaning |
+|------|---------|
+| low | Unique to this source, unlikely in training data |
+| medium | Common concept, similar questions may exist |
+| high | Standard textbook topic, likely seen during training |
+
+## File
+
+`formationeval_v0.1.json` - JSON array of question objects
 
 ## Usage
 
