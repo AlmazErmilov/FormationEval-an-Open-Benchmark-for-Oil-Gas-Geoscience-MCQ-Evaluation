@@ -14045,5 +14045,474 @@
             "calc_required": false,
             "contamination_risk": "medium"
         }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_effective_stress_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Effective Stress",
+            "Pore Pressure"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A sandstone layer is buried deeper so the overburden (total vertical stress) increases, but the pore pressure also increases by the same amount. In this situation, what happens to the effective vertical stress that controls mechanical compaction?",
+        "choices": [
+            "It increases by the same amount as the overburden",
+            "It stays approximately unchanged because total stress and pore pressure rise together",
+            "It drops to zero because the pores carry all the load",
+            "It becomes equal to the pore pressure because fluids transmit stress"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Effective vertical stress is defined as total vertical stress minus pore pressure. If both increase by the same increment, their difference remains roughly constant. Mechanical compaction in weakly cemented sediments is governed primarily by this effective stress rather than total stress alone.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on the effective stress definition and its implication for compaction."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_compaction_processes_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Mechanical vs Chemical Compaction",
+            "Overpressure"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Two mudstone intervals have the same present-day porosity, but one is strongly overpressured while the other is normally pressured. Based on the chapter’s compaction concepts, which interpretation best explains how high overpressure influences compaction mechanisms during burial?",
+        "choices": [
+            "High overpressure speeds up mechanical compaction because pore fluids carry more load",
+            "High overpressure speeds up chemical compaction because it increases effective stress",
+            "High overpressure stops both mechanical and chemical compaction by eliminating grain contact stress",
+            "High overpressure mainly slows mechanical compaction, while temperature-driven chemical compaction can still continue"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Overpressure reduces effective stress, so it tends to delay mechanically driven porosity loss. Chemical compaction (dissolution, precipitation, cementation) is described as strongly controlled by burial temperature and time, so it may proceed even when effective stress is lowered. The two processes therefore respond differently to overpressure.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from the discussion of how overpressure changes effective stress and the relative roles of mechanical vs chemical compaction."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_hydrostatic_pressure_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Hydrostatic Pressure",
+            "Pressure Gradient"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Assume freshwater with a hydrostatic pressure gradient of 10 kPa/m. What hydrostatic pore pressure corresponds to 1500 m below the water table (ignore any overpressure contribution)?",
+        "choices": [
+            "15 MPa",
+            "10 MPa",
+            "150 MPa",
+            "1.5 MPa"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "With a constant hydrostatic gradient, pressure increases linearly with depth: 10 kPa/m × 1500 m = 15,000 kPa. Converting kPa to MPa gives 15 MPa. This corresponds to the chapter’s freshwater hydrostatic gradient value.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Numerical application of the stated freshwater hydrostatic pressure gradient."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_overconsolidation_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Normally Consolidated vs Overconsolidated",
+            "OCR"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A shale experienced deeper burial in the past, followed by erosion that reduced its present burial depth. Which statement best describes the shale’s consolidation state today?",
+        "choices": [
+            "It is normally consolidated because present depth controls consolidation state",
+            "It is normally consolidated unless pore pressure is above hydrostatic",
+            "It is overconsolidated because it has previously experienced higher effective vertical stress than today",
+            "It is underconsolidated because erosion increases present-day pore pressure"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Overconsolidation refers to a sediment that has been subjected to a higher effective vertical stress in the past than it currently experiences. Erosion reduces the present overburden, so the present effective stress can be below the historical maximum. That history makes the unit overconsolidated (preloaded).",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Item based on the definitions of NC/OC sediments and how erosion/unloading affects OCR."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_k0nc_friction_angle_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Horizontal Stress (K0)",
+            "Mohr-Coulomb Friction Angle"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "For a normally consolidated, uncemented sediment, the chapter relates the effective stress ratio K0 to the friction angle (φ′) using a semi-empirical expression. If φ′ increases while other conditions are similar, how does K0 for the normally consolidated state tend to change?",
+        "choices": [
+            "K0 decreases because a larger sin(φ′) is subtracted from 1",
+            "K0 increases because a larger sin(φ′) adds lateral support",
+            "K0 becomes independent of φ′ because pore pressure dominates",
+            "K0 approaches 1 because horizontal and vertical effective stresses equalize"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter gives K0 for normally consolidated sediments as 1 − sin(φ′) (for c = 0). Increasing φ′ increases sin(φ′), which reduces K0. Physically, a higher frictional resistance is associated with a lower ratio of lateral to vertical effective stress in that formulation.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept check on the NC K0 relationship and how friction angle affects horizontal effective stress."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_k0oc_locked_in_stress_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Overconsolidation",
+            "Horizontal Stress (K0)"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "A sediment package becomes overconsolidated due to unloading (erosion). Using the chapter’s description of K0 behavior during unloading, what outcome is most consistent with the expected change in effective horizontal stress relative to effective vertical stress?",
+        "choices": [
+            "The effective horizontal stress must fall in the same proportion as the effective vertical stress",
+            "The effective horizontal stress becomes zero because pore pressure supports the overburden",
+            "The effective horizontal stress becomes equal to the effective vertical stress for any OCR",
+            "The ratio K0 can increase and may exceed 1 because lateral stresses are partly retained during unloading"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "The chapter emphasizes that unloading does not behave as a purely elastic reversal for sediments; lateral stresses can be “locked in.” It then uses a semi-empirical form in which K0 grows with OCR, and values above 1 have been observed. This implies that horizontal effective stress can become larger than vertical effective stress in overconsolidated materials.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Harder item integrating overconsolidation history with semi-empirical K0 increase and the concept of locked-in horizontal stress."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_drillingengineering_leak_off_test_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Drilling Engineering"
+        ],
+        "topics": [
+            "Leak-Off Test",
+            "Fracture Pressure"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "During a leak-off test just below a casing shoe, mud is pumped into a closed well and pressure is tracked against injected volume. Which observation most directly indicates that the formation has started to fracture and leak-off has begun?",
+        "choices": [
+            "Pressure drops abruptly to hydrostatic because fractures short-circuit the wellbore",
+            "The pressure–volume trend changes slope because additional injected mud begins entering newly created fractures",
+            "Pressure remains perfectly linear because fracture creation requires constant pressure",
+            "The test only becomes diagnostic after the well is flowed back to surface"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Before fracturing, the closed system shows a near-linear pressure rise with injected volume because little fluid enters the formation. Once a fracture initiates, some injected mud is accommodated by the fracture, so the incremental pressure increase per added volume decreases, producing a slope break. This is the operational signature used to infer the leak-off (fracture) pressure.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from the LOT description: pressure buildup, onset of fracture, and the diagnostic slope change."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_drillingengineering_hydrofracture_orientation_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Drilling Engineering"
+        ],
+        "topics": [
+            "Hydraulic Fracturing Test",
+            "Stress Orientation"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "In a vertical borehole where the vertical stress is the largest principal stress, a hydraulic fracture opens when wellbore pressure is raised sufficiently. How will the fracture plane orient relative to the minimum horizontal effective stress direction?",
+        "choices": [
+            "The fracture plane will be horizontal and parallel to the minimum horizontal stress",
+            "The fracture plane will be horizontal and perpendicular to the minimum horizontal stress",
+            "The fracture plane will be vertical and perpendicular to the minimum horizontal effective stress",
+            "The fracture plane will be vertical and parallel to the minimum horizontal effective stress"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Hydraulic fractures open perpendicular to the least effective principal stress. In the stated stress regime, the least effective principal stress is horizontal, so the fracture plane is vertical. Its normal points in the minimum horizontal effective stress direction, meaning the plane is perpendicular to that direction.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Conceptual item on fracture orientation in hydrofracturing/leak-off contexts and the role of the least effective stress."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_brittle_ductile_transition_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Brittle-Ductile Transition",
+            "Confining Stress Effects"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A sedimentary rock shows a peak strength followed by a rapid stress drop as strain continues in a triaxial test, but the same rock shows no stress drop when the lateral effective stress is higher. Which interpretation best matches the chapter’s discussion?",
+        "choices": [
+            "Increasing lateral effective stress can shift behavior from brittle (strain-softening) to ductile response",
+            "Increasing lateral effective stress forces pore pressure to rise, which always causes brittle failure",
+            "Higher lateral effective stress lowers shear resistance by reducing grain-to-grain contact stress",
+            "Ductile behavior requires zero lateral effective stress so the sample can expand freely"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter describes brittle behavior as having a peak followed by strain-softening toward a residual strength, and notes that sufficiently high effective horizontal (confining) stress can lead to ductile behavior. The confining stress suppresses the abrupt post-peak strength loss. This is framed as a brittle-to-ductile transition controlled in part by the magnitude of horizontal effective stress.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Based on the triaxial stress–strain descriptions and how confining stress influences brittle vs ductile response."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petrophysics_sand_grain_crushing_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petrophysics",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Sand Compaction",
+            "Grain Crushing",
+            "Sorting Effects"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "Two clean, well-sorted sands have similar mineralogy, but one is coarse-grained and the other is fine-grained. Under the same effective stress increase, which outcome is most consistent with the chapter’s explanation of grain-contact stresses and mechanical compaction?",
+        "choices": [
+            "The fine-grained sand is more likely to fracture grains because smaller grains create higher contact stress",
+            "The coarse-grained sand is more likely to experience grain fracturing and larger porosity loss because it has fewer contacts and higher stress per contact",
+            "Both sands should fracture equally because effective stress is independent of grain size for natural sands",
+            "Neither sand will compact mechanically unless quartz cement exceeds several tens of percent"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter links grain crushing to very high local contact stresses transmitted through the load-bearing framework. Coarser sands tend to have fewer contact points and smaller effective contact areas per grain, concentrating stress and promoting grain breakage at lower effective stresses than in fine sand. This leads to greater mechanical compaction and porosity reduction in coarse, well-sorted sand under comparable loading.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Integrates the discussion of intergranular contact stress concentration with grain-size dependence of sand compaction behavior."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_smectite_vpvs_011",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petrophysics"
+        ],
+        "topics": [
+            "Rock Physics",
+            "Clay Mineralogy",
+            "Vp/Vs"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "You are comparing two brine-saturated mudstone intervals with similar depth and stress. One interval is smectite-rich and the other is kaolinite-rich. Which seismic-velocity pattern is most consistent with the chapter’s described laboratory trends?",
+        "choices": [
+            "Smectite-rich: higher Vp and higher Vs, giving a lower Vp/Vs than kaolinite-rich",
+            "Smectite-rich: similar Vp but much higher Vs, giving a lower Vp/Vs than kaolinite-rich",
+            "Smectite-rich: lower Vp and lower Vs, with a higher Vp/Vs ratio than kaolinite-rich",
+            "Smectite-rich: higher Vp but lower Vs, with a lower Vp/Vs ratio than kaolinite-rich"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter notes that smectitic clays retain higher porosity and are associated with low velocities and low density, and it highlights that smectite shows a higher Vp/Vs ratio compared with kaolinite. Lower shear velocity combined with overall lower velocities is consistent with a higher Vp/Vs ratio. This makes smectite-rich intervals stand out in rock-physics/seismic attributes.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 11 - Introduction to Geomechanics: Stress and Strain in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from the clay-mineral compaction/velocity trends emphasizing smectite’s high Vp/Vs and low velocities."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
     }
 ]
