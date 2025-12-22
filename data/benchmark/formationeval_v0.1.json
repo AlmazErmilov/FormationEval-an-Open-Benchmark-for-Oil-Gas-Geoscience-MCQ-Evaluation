@@ -16444,5 +16444,519 @@
       "calc_required": false,
       "contamination_risk": "low"
     }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_well_logging_basics_001",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Well Logging Basics",
+      "In-situ Measurements"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Compared with relying only on cuttings and a few core intervals, what is a key advantage of wireline well logs for describing the drilled section?",
+    "choices": [
+      "They provide only spot measurements but with higher chemical precision than core tests",
+      "They give a continuous in-well record and capture properties that may change when samples are brought to surface conditions",
+      "They eliminate the need for drilling mud, so measurements are unaffected by borehole fluids",
+      "They directly measure depositional grain-size distributions without needing any interpretation"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "Logs are recorded continuously along the borehole, so they show both gradual and abrupt property changes bed-by-bed. They also measure formation properties in place, which can differ from laboratory measurements on core or cuttings due to handling and non-reservoir conditions at surface. Cuttings and limited cores typically cannot represent the entire drilled interval with the same continuity.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter\u2019s discussion of why logs complement cores and cuttings through continuous, in-situ measurements."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_logging_operations_002",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Drilling Engineering"
+    ],
+    "topics": [
+      "Logging Operations",
+      "Cased-Hole Logging"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "A well section has already been cased with steel pipe. Which type of log from this chapter is still generally feasible to run through the casing?",
+    "choices": [
+      "A standard electrode-based resistivity log that requires electrical contact at the borehole wall",
+      "A micro log intended to assess mudcake thickness at the borehole wall",
+      "A self-potential (SP) log that relies on electrochemical potentials between mud and formation water",
+      "A gamma-ray log that detects natural radiation coming from the formation"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "Radioactivity measurements do not require the same direct electrical contact with the formation as most electrical logs. Gamma radiation can penetrate steel casing sufficiently for logging to be performed after casing is set. In contrast, many electrical measurements depend strongly on borehole wall conditions and direct interaction with the formation.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s operational notes about which logs require borehole-wall contact versus radiation penetration through casing."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_resistivity_principles_003",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Resistivity Logging",
+      "Formation Water Salinity"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Two clean, water-saturated sandstones have similar porosity and pore geometry, but one contains much more saline formation water. How should their measured resistivities typically compare?",
+    "choices": [
+      "The sandstone with more saline water should show lower resistivity",
+      "The sandstone with more saline water should show higher resistivity",
+      "Both should have the same resistivity because minerals control conduction",
+      "Both should have the same resistivity because porosity dominates and salinity is secondary"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "In most sedimentary rocks, electrical conduction occurs mainly through the pore fluid rather than through the mineral grains. Higher dissolved salt content increases the pore fluid\u2019s ability to conduct current, which decreases resistivity. With similar pore structure, the main difference becomes the pore water salinity.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept item from the resistivity section explaining that conductivity is dominated by pore fluid and its salt content."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_caliper_logs_004",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Drilling Engineering"
+    ],
+    "topics": [
+      "Caliper Logs",
+      "Borehole Effects"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Why is a caliper log commonly checked when interpreting other wireline logs from the same interval?",
+    "choices": [
+      "Because it directly provides shale volume from radioactive element concentrations",
+      "Because it measures formation water resistivity needed for Archie calculations",
+      "Because borehole enlargement or narrowing can distort many log measurements, and caliper data helps flag such intervals",
+      "Because it determines the dip of beds by comparing electrical responses around the borehole"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "Many tools are sensitive to borehole geometry and tool contact with the wall, so washouts and irregular holes can create misleading responses. The caliper log indicates where the hole size differs from the bit size and where mudcake or caving may be present. This helps distinguish true formation changes from borehole-related artifacts.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "Built from the caliper-log discussion emphasizing borehole diameter variations and their impact on other logs."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_mud_invasion_005",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Mud Invasion",
+      "Flushed Zone"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In the near-wellbore region affected by overbalanced drilling, which zone best matches the situation where the original pore fluids are almost completely replaced by mud-derived fluid?",
+    "choices": [
+      "The mudcake, where solids are deposited directly against the borehole wall",
+      "The flushed zone, where mud filtrate has displaced most of the native fluids",
+      "The uninvaded zone, where the formation is unaffected by drilling operations",
+      "A cemented zone, where quartz cement blocks flow and prevents any fluid entry"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "Overbalanced mud pressure drives filtrate into the formation, producing a sequence from mudcake at the wall to zones deeper in the rock. The flushed zone is described as the region where the primary pore fluids have been largely replaced by drilling-fluid filtrate. Farther out, replacement is only partial in the invaded zone.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the description of mudcake, flushed zone, and invaded zone and how they form during drilling."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_formation_factor_006",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Formation Factor",
+      "Porosity-Resistivity Relationships"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Two rocks are fully water-saturated with the same formation water resistivity (Rw), but Rock X has a much larger formation factor (F) than Rock Y. What does this most strongly imply about Rock X?",
+    "choices": [
+      "It likely has lower porosity and/or a more tortuous, better-cemented pore network that makes current paths less direct",
+      "It must contain more conductive minerals throughout the rock matrix, regardless of pore fluids",
+      "It must have higher permeability because permeability always increases formation factor",
+      "It must contain more hydrocarbons because formation factor is defined for oil-saturated conditions"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "Formation factor is defined using the rock resistivity at 100% water saturation relative to the water resistivity, so it is meant to reflect rock framework effects rather than the water\u2019s salinity itself. The chapter links F to porosity and to how well the pore system is cemented (via the cementation exponent and tortuosity). A larger F indicates electrical pathways are more restricted, commonly associated with lower porosity and/or more cemented, tortuous pore space.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item from the formation factor definition and its dependency on porosity/cementation (F = a/\u03c6^m)."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_archie_water_saturation_007",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Archie Equation",
+      "Water Saturation"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A clean reservoir interval has formation factor F = 12 (dimensionless), formation water resistivity Rw = 0.15 \u03a9\u00b7m, and true formation resistivity Rt = 2.7 \u03a9\u00b7m. Using the chapter\u2019s Archie form with saturation exponent n = 2, what is the estimated water saturation Sw (fraction)?",
+    "choices": [
+      "Sw \u2248 0.58",
+      "Sw \u2248 0.67",
+      "Sw \u2248 0.74",
+      "Sw \u2248 0.82"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "From the chapter, Sw = (F\u00b7Rw/Rt)^(1/n). Here F\u00b7Rw/Rt = (12\u00d70.15)/2.7 = 0.6667, and with n = 2, Sw = \u221a0.6667 \u2248 0.82. The other options correspond to using an incorrect exponent or an incorrect ratio.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical application derived from the chapter\u2019s Archie water saturation relationship using F, Rw, Rt, and n."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_sp_logging_008",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "SP Logging",
+      "Mud Type Effects"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A logging run shows that the SP curve is essentially absent (no meaningful deflection), while other logs record normally. Which explanation is most consistent with the chapter?",
+    "choices": [
+      "The formation contains no clay minerals, so SP cannot form in any lithology",
+      "The formation water is too saline, so electrochemical potentials cannot exist",
+      "An oil-based mud was used, preventing the SP measurement from being obtained",
+      "The beds are too thick, and SP only responds to very thin layers"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The SP response relies on naturally generated electrical potentials associated with differences in electrolyte concentrations between borehole and formation fluids. The chapter notes that SP readings cannot be obtained when oil-based mud is used. The other explanations do not align with the described measurement principle.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "From the SP section describing the electrochemical basis of SP and the inability to record SP in oil-based mud."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_spectral_gamma_ray_009",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Gamma-Ray Logging",
+      "Spectral Gamma-Ray",
+      "Shale Volume"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In an interval where potassium-based gamma-ray response may be elevated by K-feldspar or mica in sandstones, which spectral gamma-ray component does the chapter suggest can give a more stable estimate of shale content?",
+    "choices": [
+      "Uranium (U), because it is least affected by organic matter",
+      "Thorium (Th), because its concentration in shales is described as less variable than K or U",
+      "Potassium (K), because it uniquely identifies clay minerals and is absent from sandstones",
+      "Total gamma ray, because splitting into components reduces accuracy"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter explains that spectral gamma tools can separate K, U, and Th contributions. It notes that thorium in shales tends to vary less than uranium and potassium, so a Th-based interpretation can improve shale estimates when K is influenced by non-shale minerals. This is particularly relevant where sands contain mica or K-feldspar.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based question from the spectral gamma-ray discussion highlighting why Th can be preferred for shale estimation."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_sedimentology_facies_from_logs_010",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Sedimentology",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Facies Interpretation",
+      "Gamma-Ray Trends",
+      "SP Trends"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A gamma-ray curve across a sandstone body shows a sharp low-gamma base followed by progressively higher gamma readings toward the top, producing a bell-shaped motif. Which depositional interpretation is most consistent with the chapter\u2019s discussion of log motifs?",
+    "choices": [
+      "A fining-upward fluvial channel fill, where the upward increase in gamma is commonly linked to increasing clay-rich material",
+      "A coarsening-upward shallow-marine unit, where gamma typically increases upward as sands become cleaner",
+      "A massive evaporite package, where gamma increases upward due to halite becoming more radioactive",
+      "A coal seam, where gamma typically spikes because organic matter strongly emits potassium radiation"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter associates fining-upward successions with fluvial channels and notes that gamma/SP logs commonly capture such upward trends. A bell-shaped gamma motif corresponds to a cleaner base and increasing shale influence upward. The other choices conflict with the chapter\u2019s described log behavior for coarsening-upward units, evaporites, and coal.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the depositional-environment interpretation section describing fining-upward (channels) and coarsening-upward (shallow marine) motifs on gamma/SP logs."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_drillingengineering_deviated_wells_011",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Drilling Engineering",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Deviated Wells",
+      "Bed Boundary Resolution",
+      "Log Response Geometry"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "A well is drilled at a high deviation so that it intersects bedding at a very low angle. Even if a sand\u2013shale boundary is sharp in the formation, what log-response effect is most likely according to the chapter?",
+    "choices": [
+      "The boundary will appear sharper than in a vertical well because the tool samples only one lithology at a time",
+      "The boundary will disappear because gamma rays cannot detect thin beds in deviated wells",
+      "The boundary will shift to a deeper measured depth because electrical logs always read below the tool",
+      "The boundary will look more gradual because the measurement samples properties from multiple layers away from the borehole"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter explains that when the well path is nearly parallel to layering, the log investigation volume can include contributions from different beds rather than cutting cleanly across them. This causes transitions between lithologies to be recorded as smeared or gradual even if the geological contact is abrupt. The effect is geometric and is distinct from tool-specific physics like gamma penetration.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "From the section on horizontal/deviated wells describing how low-angle intersection with bedding can smear otherwise sharp contacts."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_temperature_logs_012",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Geophysics"
+    ],
+    "topics": [
+      "Temperature Logs",
+      "Geothermal Gradient",
+      "Bottom-Hole Temperature"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "A temperature measured during logging (BHT) is suspected to be biased by recent drilling. What approach described in the chapter is used to estimate the true formation temperature from such data?",
+    "choices": [
+      "Assume the first recorded temperature equals formation temperature because the tool equilibrates instantly",
+      "Replace the temperature log with an SP log because electrochemical potentials are temperature-independent",
+      "Stop mud circulation and use the temperature rise with time to extrapolate toward formation equilibrium",
+      "Increase the mud weight and re-log immediately so the mudcake is thicker and thermally insulating"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter notes that circulating mud is not in thermal equilibrium with the formation, so temperatures recorded during logging may not represent true formation temperature. After circulation stops, the mud temperature trends toward the formation temperature, and plotting the time-dependent change allows an estimate by extrapolation. It also emphasizes that equilibrium can take days to weeks, creating uncertainty if not properly corrected.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 16 - Well Logs: A Brief Introduction",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the temperature-log discussion of BHT bias from mud circulation and extrapolation toward equilibrium formation temperature."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
   }
 ]
