@@ -12062,5 +12062,524 @@
             "calc_required": false,
             "contamination_risk": "high"
         }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_stratigraphy_scope_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Stratigraphy Concepts",
+            "Stratigraphic Correlation"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "Which description best matches how stratigraphy is used in geological work?",
+        "choices": [
+            "A method limited to sedimentary basins that assigns rock names mainly from fossil assemblages",
+            "A technique restricted to sedimentary rocks that relies on radiometric ages to order beds",
+            "An approach that uses layered rocks to establish relative ages and interpret how strata are arranged through time, most often in sedimentary successions",
+            "A classification system for igneous intrusions that focuses on magma composition rather than layering"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Stratigraphy treats layered successions as records that can be ordered and interpreted in time, and it is used primarily in sedimentary studies even though layering can occur in other rock types. Fossils and radiometric ages can support stratigraphy, but stratigraphy is not limited to either of those data types.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on the practical scope and meaning of stratigraphy versus other classification approaches."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_lithostratigraphy_correlation_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Lithostratigraphy",
+            "Correlation"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A subsurface team wants to trace a laterally continuous sandstone package across several wells, even though its age may vary slightly from place to place due to shoreline migration. Which stratigraphic approach is most directly aligned with this goal?",
+        "choices": [
+            "Lithostratigraphy, because it groups strata using rock characteristics that can be mapped even when boundaries are time-transgressive",
+            "Chronostratigraphy, because it requires every mapped boundary to represent an isochronous time surface",
+            "Geochronology, because it subdivides Earth history into time intervals independent of rock bodies",
+            "Magnetostratigraphy, because it relies on polarity intervals rather than the physical properties of the rock unit"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Lithostratigraphy is built around rock properties such as lithology and log-recognizable character, making it suitable for mapping a sandstone body as a unit even if it is not the same age everywhere. Chronostratigraphy focuses on synchronous time-rock units, which conflicts with the stated possibility of age variation across the mapped sandstone.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from discussion of lithostratigraphic correlation and time-transgressive lithologic units."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_lithostratigraphic_units_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Lithostratigraphic Hierarchy",
+            "Formations"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "In a well, a 200 m thick sandstone interval is clearly distinguishable from the shale above and limestone below and can be consistently picked on logs across an area. What is the most appropriate lithostratigraphic rank for this sandstone interval?",
+        "choices": [
+            "Bed",
+            "Member",
+            "Group",
+            "Formation"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "A formation is the basic mappable lithostratigraphic unit and is intended to be readily recognizable in outcrop or in boreholes based on lithology. A member is a subdivision of a formation, while a group combines multiple formations, and a bed is a much smaller depositional unit.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on identifying the formation as the fundamental lithostratigraphic mapping unit."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_bed_vs_lamina_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Lithostratigraphic Units",
+            "Beds and Laminae"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A shale-dominated core contains a single, laterally continuous 5 mm volcanic ash layer between much thicker shale beds. How should this thin layer most reasonably be treated in stratigraphic description?",
+        "choices": [
+            "It must be ignored because layers under 1 cm cannot be distinguished stratigraphically",
+            "It can be logged and potentially named as a distinct layer even though its thickness places it in the lamina size range",
+            "It should automatically be defined as a member because ash differs from shale",
+            "It should be defined as a group because it is a key marker horizon"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "A lamina is defined by thickness (<1 cm), but thin layers can still be individually recognized and even named when they are isolated and compositionally distinctive relative to surrounding strata. A member and a group are much higher hierarchical ranks than a single thin layer.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Item based on the size-based term 'lamina' and when thin layers are treated as distinct stratigraphic units."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_biostratigraphy_cuttings_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Biostratigraphy",
+            "Interval Zones",
+            "Well Cuttings"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "In industrial biostratigraphy using drill cuttings, which fossil event is generally more reliable for defining zone boundaries when downhole caving can contaminate samples?",
+        "choices": [
+            "The first appearance of a taxon, because it is unaffected by mixing during drilling",
+            "The peak abundance of a taxon, because abundance is independent of environment",
+            "The last appearance of a taxon, because older material is less likely to be transported upward into younger samples",
+            "The midpoint of a taxon’s range, because it averages out sampling errors"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Cuttings are vulnerable to contamination by older material falling into the wellbore and being carried upward, which can create false early appearances. Disappearances (last occurrences) are therefore typically more dependable in such datasets, which is why interval zones based on successive last appearances are widely used in industry.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from the discussion of interval-zone types and why last-appearance events are preferred with drilling cuttings."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_pelagic_vs_benthic_biostrat_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Biostratigraphy",
+            "Microfossils",
+            "Facies Dependence"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Which microfossil lifestyle most often provides higher long-distance correlation potential, and what is the main reason?",
+        "choices": [
+            "Pelagic (planktonic/nektonic), because it is typically less restricted to specific facies and can disperse widely",
+            "Benthic (bottom-dwelling), because it is controlled mainly by global ocean circulation rather than local conditions",
+            "Endobenthic (burrowing), because preservation is usually perfect in all sediment types",
+            "Epibenthic (surface-dwelling), because it is independent of water depth and oxygenation"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Pelagic organisms are less tied to local depositional environments than many benthic groups, so their fossils tend to be more useful for broad regional correlation. Benthic assemblages often reflect specific bottom conditions and thus commonly have stronger facies control.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on ethology (pelagic vs benthic) and implications for stratigraphic applicability."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_biozone_vs_chronozone_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Biostratigraphy",
+            "Chronostratigraphy",
+            "Chronozones"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "A marker species is known (from evolutionary first appearance to extinction) to define a specific time interval, but in a marginal-marine facies the species is absent even though deposition continued during that interval. What stratigraphic unit concept is intended to include those marginal-marine rocks as part of the same time slice?",
+        "choices": [
+            "Acme (abundance) zone",
+            "Assemblage zone",
+            "Local biozone based on the marker species",
+            "Taxon chronozone (biochronozone) representing the taxon’s total time range"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "A biozone is defined only where the fossil content is observed at a specific locality, so it cannot be extended through facies where the marker is missing. A taxon chronozone is intended to represent the entire interval between evolutionary appearance and extinction and can be applied as a time-rock concept even where the marker is not present.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Built from the distinction between local biozones and total-range chronozones and the role of facies control."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_geochronology_vs_chronostratigraphy_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Chronostratigraphy",
+            "Geochronology",
+            "Stratigraphic Hierarchy"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "Which pairing correctly links a geochronological time unit to its corresponding chronostratigraphic rock unit?",
+        "choices": [
+            "Epoch ↔ Stage",
+            "Period ↔ System",
+            "Age ↔ Series",
+            "Era ↔ Stage"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Geochronological units describe time intervals (e.g., a period), while chronostratigraphic units describe the rocks formed during those intervals (e.g., a system). The chapter explicitly uses Jurassic period (time) versus Jurassic system (rocks) as the example relationship.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based check on the time-unit vs time-rock-unit correspondence (period/system)."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_radiometric_half_life_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Radiometric Dating",
+            "Half-life",
+            "Radioactive Decay"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A radioactive parent nuclide has a decay constant of λ = 1.0 × 10⁻⁹ yr⁻¹. Using the relationship T1/2 = 0.693/λ, what is its half-life?",
+        "choices": [
+            "6.93 × 10⁸ years",
+            "1.31 × 10⁹ years",
+            "4.89 × 10¹⁰ years",
+            "5.73 × 10³ years"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The half-life is computed directly from T1/2 = 0.693/λ. Substituting λ = 1.0 × 10⁻⁹ yr⁻¹ gives T1/2 = 0.693 × 10⁹ years = 6.93 × 10⁸ years. The other values are half-lives mentioned for specific isotopic systems in the chapter and serve as plausible distractors.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Numerical application of the half-life relationship provided in the radiometric dating section."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_rb_sr_isochron_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Geophysics"
+        ],
+        "topics": [
+            "Radiometric Dating",
+            "Rubidium-Strontium",
+            "Isochrons"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "In the rubidium–strontium dating approach, multiple samples of the same age are plotted on a graph of ⁸⁷Rb/⁸⁶Sr versus ⁸⁷Sr/⁸⁶Sr. What is the main interpretation if the data form a straight line?",
+        "choices": [
+            "The intercept of the line directly gives the half-life of ⁸⁷Rb",
+            "The scatter around the line proves the system stayed open to argon loss",
+            "The slope of the line can be used to infer the age of the rock or mineral system",
+            "The line indicates the rock must be volcanic because only lavas form linear trends"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter describes that same-age samples define an isochron (a straight line) on the ⁸⁷Rb/⁸⁶Sr–⁸⁷Sr/⁸⁶Sr plot, and that the line’s slope reflects the time since formation. This method leverages ratios rather than absolute amounts and is distinct from argon-based systems.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Item derived from the explanation of Rb–Sr isochron construction and the meaning of its slope."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_sequence_stacking_patterns_011",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Sequence Stratigraphy",
+            "Accommodation Space",
+            "Parasequence Stacking"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "In a basin analysis, relative sea level rise is creating accommodation faster than sediment is being supplied to the shoreline system. What stacking style should dominate the resulting parasequence set architecture?",
+        "choices": [
+            "Progradational stacking, with shoreline bodies stepping basinward through time",
+            "Retrogradational stacking, with shoreline bodies stepping landward through time",
+            "Aggradational stacking, with shoreline bodies staying fixed while only thickening vertically",
+            "Chaotic stacking, because sequence stratigraphy cannot be applied when sea level is rising"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "When accommodation creation outpaces sediment supply, the system cannot build seaward effectively and the shoreline tends to backstep, producing retrogradational geometry. Progradation requires sediment supply to exceed available accommodation, while aggradation reflects a rough balance between the two.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based question on accommodation–supply balance and resulting stacking geometries in sequence stratigraphy."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_magnetostratigraphy_polarity_age_012",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Magnetostratigraphy",
+            "Palaeomagnetism",
+            "Polarity Reversals"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A near-surface lava flow records reversed remanent polarity. If the most recent ~700,000 years are described as dominantly normal polarity, what is the most reasonable age implication for this flow (ignoring short exceptions)?",
+        "choices": [
+            "It is very likely younger than 700,000 years because reversals are random at outcrop scale",
+            "It is most likely exactly 700,000 years old because polarity fixes an absolute date",
+            "It must be Quaternary because only Quaternary time contains reversals",
+            "It is highly likely older than 700,000 years because it formed during an interval of reversed polarity"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Magnetostratigraphy uses globally synchronous polarity intervals, so a reversed signature in a context dominated by recent normal polarity implies formation before that normal interval. Polarity alone does not give an exact numerical date, but it provides a strong relative age constraint.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 7 - Stratigraphy",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from the discussion of polarity reversals as correlation tools and the recent normal-polarity interval example."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
     }
 ]
