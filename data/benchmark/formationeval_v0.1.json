@@ -16958,5 +16958,510 @@
       "calc_required": false,
       "contamination_risk": "medium"
     }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_reflection_seismology_001",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Reflection Seismology",
+      "Hydrocarbon Exploration"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "A team needs an imaging method that can map subsurface structure and stratigraphy in 2D or 3D for hydrocarbon prospecting. Which seismic approach is most commonly used for this purpose?",
+    "choices": [
+      "Refraction seismic, because it directly measures layer thickness from critically refracted arrivals",
+      "Reflection seismic, because it builds images from energy returned at impedance contrasts",
+      "Surface-wave surveying, because it tracks Rayleigh and Love waves through the deep subsurface",
+      "Passive earthquake seismology, because it relies on naturally occurring sources to illuminate targets"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "In hydrocarbon exploration, reflection seismic is the standard method because reflections from boundaries in layered rocks can be processed into 2D or 3D subsurface images. Refraction and surface-wave methods have other applications, but they are not the primary tools for detailed imaging of traps and reservoir-scale features described in the chapter.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter\u2019s overview of reflection vs refraction methods and the dominance of reflection seismic in petroleum exploration."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_wave_types_002",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Seismic Waves",
+      "Elastic Properties"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "During a survey that involves a water layer above the seafloor, which wave type cannot propagate within the water column and therefore cannot exist there as a traveling body wave?",
+    "choices": [
+      "P-waves, because water cannot transmit compressional motion",
+      "Rayleigh waves, because they require a solid surface to travel along",
+      "Love waves, because they require layered sediments beneath the water",
+      "S-waves, because water cannot support shear deformation"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "Shear waves require the medium to resist shear strain, but fluids have essentially no shear strength. The chapter states that S-waves do not travel through fluids, which is why S-wave propagation is absent in the fluid part at a fluid\u2013solid interface like the seafloor.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept check on wave propagation constraints at fluid\u2013solid interfaces."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_seismic_sources_003",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Seismic Sources",
+      "Acquisition"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Which pairing correctly matches a common seismic source with the environment where it is typically used?",
+    "choices": [
+      "Air-gun in marine surveys; vibrator or dynamite in land surveys",
+      "Air-gun in land surveys; vibrator in marine surveys",
+      "Vibrator in marine surveys; dynamite in deep-water surveys",
+      "Dynamite in marine surveys; air-gun in desert surveys"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter distinguishes typical source choices by setting: air-guns are standard for marine acquisition, while vibrators and explosives are common land sources. This reflects practical coupling of energy into water versus into the ground.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Item based on the chapter\u2019s discussion of typical seismic sources for land vs marine acquisition."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_acoustic_impedance_004",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Acoustic Impedance",
+      "Reflection Coefficient"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A normally incident P-wave encounters a boundary between two layers. Which situation is most likely to produce a strong reflected event on the seismic record?",
+    "choices": [
+      "A boundary where velocity changes slightly but density stays nearly constant",
+      "A boundary where density changes slightly but velocity stays nearly constant",
+      "A boundary where both density and P-wave velocity change substantially across the contact",
+      "A boundary where both layers have similar density and similar P-wave velocity"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "For normal incidence, the reflection coefficient depends on the contrast in P-impedance, which is the product of density and P-wave velocity. Large changes in both parameters create a large impedance contrast and therefore a larger fraction of energy is reflected back to the surface.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the impedance-contrast control of reflection strength and the normal-incidence reflection coefficient relation."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_sampling_nyquist_005",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Seismic Sampling",
+      "Aliasing"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A seismic line is recorded with a time sampling interval of \u0394t = 2 ms. Using the chapter\u2019s definition, what is the Nyquist frequency?",
+    "choices": [
+      "125 Hz",
+      "250 Hz",
+      "500 Hz",
+      "50 Hz"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The Nyquist frequency is defined as 1/(2\u0394t). With \u0394t = 0.002 s, the Nyquist frequency is 1/(2\u00d70.002) = 250 Hz. Frequencies above this would be folded back into lower frequencies if present in the signal.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical application of the Nyquist frequency definition discussed in the processing section."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_wavelet_estimation_006",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Seismic Trace Model",
+      "Seismic Inversion"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A petrophysicist is performing seismic inversion using the model that a trace equals a wavelet convolved with reflectivity plus noise. If the wavelet shape is estimated incorrectly, what is the most likely impact on the inversion outcome?",
+    "choices": [
+      "Only the random noise level changes; the recovered reflectivity is otherwise unaffected",
+      "The travel times of reflections change, but impedance-related estimates remain reliable",
+      "Multiples are automatically removed, so inversion becomes more stable",
+      "The recovered reflectivity/impedance is biased because the data are being matched with the wrong source signature"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "In the convolutional view, the wavelet controls how reflectivity is mapped into the recorded trace. If the wavelet is wrong, the inversion can fit the seismic but assign incorrect reflectivity (and therefore incorrect impedance contrasts), leading to misleading reservoir-quality interpretations.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Uses the chapter\u2019s convolutional trace model and its emphasis on wavelet estimation for inversion reliability."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_fold_calculation_007",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Marine Acquisition",
+      "Fold"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "For a standard marine acquisition, the nominal fold is given by F = (N\u0394g)/(2\u0394s). If N = 240 channels, \u0394g = 12.5 m, and \u0394s = 25 m, what is the nominal fold?",
+    "choices": [
+      "60",
+      "30",
+      "120",
+      "15"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "Substituting into the formula gives F = (240\u00d712.5)/(2\u00d725) = 3000/50 = 60. Fold represents the number of traces contributing to a stacked trace at a midpoint/cell, and higher fold generally supports better noise suppression during stacking.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Applies the chapter\u2019s marine fold equation to a realistic channel/spacing scenario."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_3d_acquisition_008",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "3D Seismic Acquisition",
+      "Wavefield Sampling"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A 2D marine line crosses an area with complex structures that extend away from the line. According to the chapter, why can a 2D section be misleading in such settings compared with a 3D survey?",
+    "choices": [
+      "2D surveys cannot measure two-way travel time, so depth conversion becomes impossible",
+      "2D surveys record only S-waves, while 3D surveys record both P- and S-waves",
+      "2D surveys may include events generated by structures located off the profile because the wavefront spreads in 3D",
+      "2D surveys always have lower frequencies than 3D surveys, so vertical resolution is inherently worse"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "Because seismic energy propagates as expanding wavefronts, reflections and diffractions can originate from features that are not directly beneath a 2D receiver line. The chapter notes that 3D acquisition samples the wavefield more completely (multiple streamers, azimuths, and offsets), which reduces out-of-plane ambiguity and improves interpretability.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Targets the chapter\u2019s rationale for 3D surveys: full wavefield sampling and reduction of out-of-plane artefacts common in 2D."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_nmo_stretch_009",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "NMO Correction",
+      "Stacking"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "After NMO correction, early arrivals at far offsets show strong stretch. If an interpreter applies front-end (stretch) muting to remove the most stretched samples, what processing drawback should they expect at early times?",
+    "choices": [
+      "Lower effective fold at early times, which reduces the noise suppression normally gained from stacking",
+      "More accurate travel times at far offsets, which increases the bandwidth of early events",
+      "An increase in multiples because muting forces multiple energy to align with primaries",
+      "Improved velocity picking because the muted traces contain stronger low-frequency energy"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "Stretch muting removes the severely stretched early-time samples, which can also remove substantial parts of the far-offset data. The chapter explains that this can leave little fold at early times, weakening the stacking benefit and potentially degrading interpretability despite reducing stretch-related distortion.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s discussion of NMO stretch, stretch muting, and the impact on fold and stacking performance."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_obs_geometry_010",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Ocean Bottom Seismic (OBS)",
+      "Survey Design"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "In 4C ocean bottom seismic (OBS) acquisition, how do patch and swath geometries differ in the chapter\u2019s description?",
+    "choices": [
+      "Patch designs minimize azimuth coverage, while swath designs maximize azimuth coverage",
+      "Patch designs provide a wider azimuth range, while swath designs tend to give more uniform offset sampling with better near-offset coverage",
+      "Patch designs are used only for 2D surveys, while swath designs are used only for 3D surveys",
+      "Patch designs eliminate the need for a hydrophone, while swath designs require a hydrophone plus 3C geophones"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter contrasts the two designs: patch layouts (source lines perpendicular to receiver lines) are described as producing a relatively wide range of azimuths. Swath layouts (parallel source and receiver lines) are described as having narrower azimuth range but providing more uniform offset sampling and better near-offset coverage.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Question derived from the OBS 4C acquisition discussion of patch vs swath geometry trade-offs (azimuth and offset sampling)."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_fresnel_zone_011",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Seismic Resolution",
+      "Fresnel Zone"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Using the chapter\u2019s approximation for Fresnel-zone radius, Rf = sqrt(VZ/(2fc)), estimate Rf for V = 3000 m/s, Z = 2000 m, and fc = 30 Hz.",
+    "choices": [
+      "About 100 m",
+      "About 30 m",
+      "About 316 m",
+      "About 1000 m"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "Compute Rf = sqrt((3000\u00d72000)/(2\u00d730)) = sqrt(6,000,000/60) = sqrt(100,000) \u2248 316 m. The Fresnel zone represents the lateral area that contributes most strongly to a reflection event, so its size sets a practical limit on horizontal detectability.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical application of the Fresnel-zone relation presented in the seismic resolution section."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_4d_seismic_012",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics",
+      "Reservoir Engineering"
+    ],
+    "topics": [
+      "4D Seismic",
+      "Reservoir Monitoring"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A field team plans to use time-lapse (4D) seismic to guide infill drilling during production. According to the chapter, what is a key requirement for interpreting differences between repeated 3D surveys as reservoir changes rather than artefacts?",
+    "choices": [
+      "Ensure that only surface waves are used, because they are most sensitive to saturation changes",
+      "Rely exclusively on raw (unprocessed) data, because processing can remove true time-lapse signals",
+      "Acquire surveys with intentionally different orientations to maximize attribute variability over time",
+      "Minimize and correct differences in acquisition/processing so that observed attribute changes can be linked to fluid and pressure evolution"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter emphasizes that 4D interpretation depends on relating seismic-attribute differences to changes in pore fluid and pore pressure during production. It also notes that differences in acquisition geometry, orientation, processing, and data quality can introduce significant noise, so these must be corrected as much as possible.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 17 - Seismic Exploration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Built from the chapter\u2019s description of 4D seismic as repeated 3D surveys and the need to control non-reservoir sources of time-lapse differences."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
   }
 ]
