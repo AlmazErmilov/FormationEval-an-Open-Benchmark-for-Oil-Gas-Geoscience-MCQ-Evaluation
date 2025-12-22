@@ -9673,5 +9673,514 @@
             "calc_required": false,
             "contamination_risk": "low"
         }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_sedimentary_nomenclature_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Sedimentary Rock Description",
+            "Nomenclature"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A geologist describes a sandstone as “well sorted, fine grained, and quartz rich,” and later labels the same unit as “fluvial.” What best distinguishes these two styles of naming?",
+        "choices": [
+            "Both are descriptive terms; they differ only in whether grain size or minerals are emphasized",
+            "The first is descriptive (based on observable properties), while the second is genetic (based on interpreted origin)",
+            "The first is genetic (based on interpreted origin), while the second is descriptive (based on observable properties)",
+            "Both are genetic terms; they differ only in whether the environment is on land or in the sea"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Descriptive nomenclature summarizes directly observed attributes such as texture and composition. Genetic nomenclature assigns a name based on an interpretation of the processes or environment that produced the deposit, and is generally used when confidence in origin is high.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Focuses on the conceptual difference between descriptive and genetic naming in sedimentology."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_uniformitarianism_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Uniformitarianism",
+            "Paleoenvironment Reconstruction"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A team uses modern river deltas to interpret ancient deltaic strata, but also expects some ancient systems to have no close modern analogue. What reasoning best matches the chapter’s treatment of this approach?",
+        "choices": [
+            "Modern environments are irrelevant because ancient Earth conditions were always fundamentally different",
+            "Ancient environments can be inferred without uncertainty because processes never change through time",
+            "Modern-process studies are useful, but only if fossils provide absolute proof of the exact environment",
+            "Modern observations guide interpretation, but changing climate, oceans, and atmosphere mean the approach has limits"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "The chapter presents uniformitarian reasoning as a powerful way to interpret old rocks using modern process understanding. It also stresses that surface conditions have varied through geologic time, so interpretations may sometimes require explanations beyond direct modern analogues.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from the discussion of uniformitarianism and why it cannot be applied without qualification."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_lamination_bedding_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Sedimentary Structures",
+            "Stratigraphic Description"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "While logging a core, you need to decide whether a 6 mm-thick layer should be recorded as lamination or as a bed. Using the chapter’s thickness criterion, how should it be classified?",
+        "choices": [
+            "Lamination, because it is thinner than 1 cm",
+            "A bed, because any distinct layer is a bed regardless of thickness",
+            "A bed, because lamination is only used for clay-rich sediments",
+            "Lamination, because beds must be thicker than 10 cm"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter defines laminae by a thickness threshold of less than 1 cm, with thicker units described as beds. A 6 mm layer falls below that boundary and should be logged as lamination.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Targets the lamina-versus-bed thickness distinction used in sedimentary logging."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_trace_fossil_position_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Trace Fossils",
+            "Facies Indicators"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A burrow trace is visible on the underside of a sandstone bed, preserved as a relief cast. Which positional category of trace fossils does this correspond to?",
+        "choices": [
+            "Epichnia",
+            "Endichnia",
+            "Hypichnia",
+            "Exichnia"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter classifies traces by where they occur relative to a bed surface. Traces on the lower surface of a bed are categorized as hypichnia, consistent with a structure exposed on the underside of sandstone.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Uses the positional classification scheme for trace fossils relative to bedding surfaces."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_phi_scale_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Grain-Size Distribution",
+            "Phi Scale"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A sand sample has a representative grain diameter of 0.25 mm. Using the definition ϕ = −log2(d) with d in millimetres, what is the corresponding ϕ value?",
+        "choices": [
+            "2",
+            "-2",
+            "0.25",
+            "4"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Because 0.25 mm equals 2−2 mm, log2(0.25) = −2. Applying the minus sign in the definition gives ϕ = −(−2) = 2.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Applies the chapter’s ϕ-scale definition to convert diameter in mm to a logarithmic size value."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_grain_size_methods_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Grain-Size Analysis",
+            "Laboratory Methods"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "You need to quantify the size distribution of a clay-rich sediment where particles are too fine to pass reliably through standard sieves. Which measurement principle is most appropriate according to the chapter?",
+        "choices": [
+            "Measuring settling behavior in a fluid using Stokes’ law assumptions for small grains",
+            "Estimating size from the color changes produced during chemical staining of the sample",
+            "Inferring size from the compressive strength of a dried pellet under uniaxial loading",
+            "Using only hand-lens visual classification because instrumentation is unreliable for fine grains"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "For very fine fractions such as silt and clay, the chapter emphasizes methods based on settling velocity in a liquid, linked to Stokes' law when flow around grains is laminar and concentrations are low. Standard dry sieve methods have a practical lower size limit because fine particles tend to stick together.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Based on the chapter’s comparison of sieving limits and settling-based approaches for fine-grained material."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_sorting_skewness_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Grain-Size Parameters",
+            "Depositional Environments"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A grain-size curve shows a clear lower limit on fine particles but a ‘tail’ extending toward coarser sizes (granules/pebbles). Which depositional setting is most consistent with this skewness pattern as described in the chapter?",
+        "choices": [
+            "Aeolian dunes, because wind transport preferentially adds very coarse particles",
+            "Turbidites, because suspension settling commonly yields a coarse tail with sharp fine cutoff",
+            "Beach sand, because wave action tends to winnow fines while occasional high-energy events add coarse clasts",
+            "Deep pelagic mud, because it commonly contains pebbles transported as bedload by weak currents"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter links beach deposits to negative skewness: fines are readily kept in suspension and moved offshore, creating a lower-size cutoff, while coarser particles can remain as a coarse tail. Aeolian and many suspension-dominated deposits more commonly show tails toward finer sizes.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Interprets skewness in terms of selective transport and deposition at beaches versus other environments."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_reynolds_number_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Flow Regimes",
+            "Reynolds Number"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Consider water flowing in an open channel 0.50 m deep with a mean velocity of 0.20 m/s. Using the chapter’s rule-of-thumb boundary that laminar flow requires (velocity in cm/s) × (depth in cm) ≤ 20, what flow regime is expected?",
+        "choices": [
+            "Laminar, because the velocity is far below 1 m/s",
+            "Laminar, because depth does not affect the transition",
+            "Transitional, because open channels rarely become fully turbulent",
+            "Turbulent, because the velocity–depth product greatly exceeds the laminar threshold"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Converting units gives 0.20 m/s = 20 cm/s and 0.50 m = 50 cm, so the product is 1000, much larger than 20. The chapter uses this criterion to show that natural channels (rivers) are essentially always turbulent under realistic depths and velocities.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Uses the chapter’s Reynolds-number-based velocity–depth rule to classify channel flow regime."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_froude_flow_regimes_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Bedforms",
+            "Froude Number",
+            "Flow Regimes"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "In shallow water, flow reaches conditions where the Froude number exceeds about 0.8. According to the chapter, which bedform style is most associated with these upper-regime conditions?",
+        "choices": [
+            "Antidunes with low-angle laminae that dip upstream",
+            "Current ripples producing cross-lamination that dips downstream",
+            "Large dunes producing thick cross-bedded sets with lee-side foresets",
+            "Flaser bedding formed by alternating mud drapes and ripple migration"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter ties the upper flow regime at high Froude numbers to standing-wave effects that can create antidunes. These bedforms can generate low-angle cross-lamination that dips in the up-current direction, unlike typical ripples and dunes that migrate downstream.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Connects the chapter’s Froude-number discussion to expected bedforms in upper flow regime conditions."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_turbidity_current_initiation_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Turbidity Currents",
+            "Gravity Flows"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A river enters (i) a saltwater marine basin and (ii) a freshwater lake. In which setting is river inflow more likely to generate a bottom-hugging turbidity current directly, and why?",
+        "choices": [
+            "Marine basin, because saltwater increases the density of the river plume immediately",
+            "Freshwater lake, because river water can more easily become denser than the basin water and flow downslope along the bed",
+            "Marine basin, because tides always force the river plume downward along the delta slope",
+            "Freshwater lake, because clay cohesion prevents overflow plumes from forming"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter explains that in marine basins the density contrast between fresh and salt water makes river water commonly less dense than seawater, favoring an overflow plume rather than an underflow. In lakes, colder and/or sediment-laden river water can be denser than the surface lake water, allowing it to follow the bottom and form a turbid underflow.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Assesses understanding of density contrasts controlling whether river inflow forms turbidity currents in lakes versus marine basins."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_liquefaction_susceptibility_011",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Liquefaction",
+            "Pore Pressure",
+            "Slope Stability"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "The chapter notes that silt and fine sand are especially prone to generating high-velocity flows via liquefaction. Which explanation best matches the mechanisms discussed?",
+        "choices": [
+            "They have high cohesion like clay, so they can store elastic strain energy that later releases as flow",
+            "They are so permeable that any excess pore pressure persists for long periods during rapid loading",
+            "They combine low cohesion with permeability low enough that excess pore pressure can build and temporarily reduce effective stress",
+            "They undergo rapid chemical cementation at deposition, creating a brittle fabric that fails suddenly"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Liquefaction occurs when pore pressure rises toward the overburden stress, reducing effective stress and therefore frictional strength. The chapter contrasts coarse sand/gravel, where water escapes quickly so overpressure cannot persist, with clay, where cohesion can inhibit mobilization. Silt and fine sand occupy the vulnerable middle ground: weak cohesion but not enough permeability to instantly dissipate overpressure during rapid loading or shaking.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Integrates effective-stress reduction with permeability/cohesion contrasts to explain liquefaction susceptibility."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_barrier_island_traps_012",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Barrier Islands",
+            "Stratigraphic Traps",
+            "Seal-Reservoir Geometry"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "A barrier-island sand body becomes drowned during a transgression and is overlain by fine-grained sediment. Based on the chapter, what makes this setting particularly favorable for a stratigraphic hydrocarbon trap?",
+        "choices": [
+            "Barrier sands are commonly cemented at deposition, so they act as impermeable seals to deeper reservoirs",
+            "Tidal inlets always erode down to basement, creating structural traps independent of later sedimentation",
+            "Barrier sands typically contain abundant marine sulphate minerals that generate hydrocarbons during burial",
+            "A laterally elongated sand body can be sealed by overlying mud, while lagoonal mudstones can provide close-by source rock and lateral seal through interfingering"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "The chapter emphasizes barrier islands as long, thin sand bodies that can be capped by mud when sea level rises, creating an effective top seal. It also highlights muddy lagoonal deposits adjacent to the barrier that can act as source and seal, with geometries that allow pinch-out style trapping within surrounding fine-grained facies.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 2 - Introduction to Sedimentology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Applies the chapter’s barrier-island facies geometry and transgressive sealing concept to petroleum trapping."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
     }
 ]
