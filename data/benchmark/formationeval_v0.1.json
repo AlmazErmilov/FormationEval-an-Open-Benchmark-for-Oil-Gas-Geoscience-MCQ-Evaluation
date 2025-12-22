@@ -10606,5 +10606,441 @@
             "calc_required": false,
             "contamination_risk": "medium"
         }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_sandstone_grain_size_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Sandstone Classification",
+            "Grain Size"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A clastic rock is dominated by sand-sized grains but also contains a substantial fraction of pebble-sized clasts (>2 mm). What is the most appropriate descriptive name for this rock in a sandstone classification context?",
+        "choices": [
+            "Conglomeratic sandstone",
+            "Quartz arenite",
+            "Greywacke",
+            "Subarkose"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Sand-sized particles define sandstone, but a notable amount of pebble-sized material warrants the modifier “conglomeratic.” Quartz arenite and subarkose describe sand-grain composition, while greywacke is defined by high matrix content rather than pebbles.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 4 - Sandstones and Sandstone Reservoirs",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the sandstone grain-size definitions and naming conventions."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_sandstone_classification_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Sandstone Classification",
+            "Provenance"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A sandstone has abundant feldspar grains (well above a quarter of the sand fraction) and only minor rock fragments. Which classification term best fits this composition?",
+        "choices": [
+            "Lithic sandstone",
+            "Arkose",
+            "Quartz arenite",
+            "Greywacke"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Arkose is defined by high feldspar content when rock fragments are not dominant. Lithic sandstones are characterized by abundant rock fragments, quartz arenites are nearly pure quartz, and greywackes are identified mainly by high matrix content and poor sorting.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 4 - Sandstones and Sandstone Reservoirs",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from compositional classification thresholds (feldspar vs rock fragments)."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_matrix_rich_sandstones_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Matrix Content",
+            "Sandstone Classification"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A sandstone contains about 20% fine-grained matrix (silt + clay) between sand grains. In common sandstone classification, what term is most appropriate for this matrix-rich sandstone?",
+        "choices": [
+            "Subarkose",
+            "Quartz arenite",
+            "Greywacke",
+            "Orthoquartzite"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Matrix-rich sandstones are termed greywackes when the fine-grained matrix exceeds the threshold described in the chapter. Quartz arenite/orthoquartzite imply very clean quartz-rich sand with little matrix, and subarkose refers to moderate feldspar content rather than matrix abundance.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 4 - Sandstones and Sandstone Reservoirs",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the matrix threshold used to identify greywacke-type sandstones."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_provenance_weathering_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Provenance",
+            "Weathering and Climate",
+            "Sandstone Maturity"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Which geological setting most strongly favors deposition of feldspar-rich sandstones, assuming the source area includes granitic/gneissic rocks?",
+        "choices": [
+            "A stable craton where sediment is repeatedly reworked over long time spans",
+            "A coastline where wave action removes nearly all clay and silt during transport",
+            "A deep-marine setting dominated by slow settling of very fine particles",
+            "A tectonically active basin with rapid erosion, short transport, and quick burial"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Feldspar survives best when erosion and delivery outpace chemical breakdown, which is most typical of rapid sediment supply and short transport paths. Long residence times in transport/reworking (common in stable settings) promote mineralogical “maturity” by removing unstable grains like feldspar, leading to quartz-rich sands instead.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 4 - Sandstones and Sandstone Reservoirs",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item linking tectonic setting, transport time, and feldspar preservation (arkosic tendency)."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_redox_boundary_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Geophysics"
+        ],
+        "topics": [
+            "Early Diagenesis",
+            "Redox Boundary",
+            "Diffusion"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Two seafloor sediments receive similar organic-matter input: a clean sand bed and a muddy bed. Based on early diagenetic redox behavior, which statement best describes how the depth to the redox boundary typically differs between them?",
+        "choices": [
+            "The redox boundary is typically deeper in mud because oxygen diffuses faster through fine pores",
+            "The redox boundary is typically deeper in sand because oxygen diffuses more efficiently in coarse sediment",
+            "The redox boundary is controlled only by seawater oxygen level, so both beds are similar in depth",
+            "The redox boundary is typically deeper in sand because bacteria consume oxygen more slowly in coarse grains"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Oxygen supply into sediment is governed by diffusion, which is more effective in coarse-grained sands than in muds. With faster diffusion, oxygen can penetrate farther before being consumed, placing the redox transition deeper in sand for comparable consumption rates.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 4 - Sandstones and Sandstone Reservoirs",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on why coarse-grained sediment tends to have a deeper redox boundary than mud."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petrophysics_gamma_ray_uranium_enrichment_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petrophysics",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Gamma Ray Log Response",
+            "Redox Processes",
+            "Source Rocks"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A shale interval shows strong gamma ray peaks. The shale was deposited with abundant organic matter and limited water circulation. Which mechanism best explains why this setting can yield unusually high gamma ray readings?",
+        "choices": [
+            "Organic matter raises clay content, and clay minerals always contain fixed uranium that cannot move",
+            "Restricted circulation increases quartz precipitation, and quartz is strongly radioactive at burial temperature",
+            "Uranium carried in oxidized seawater is removed from solution and concentrated where reducing conditions and organic matter are present",
+            "Sulphate reduction directly produces radioactive sulphides that dominate the gamma ray signal"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Uranium is mobile in oxidizing seawater but tends to be captured and precipitated when conditions become reducing, especially where organic matter is available. This concentrating process can enrich certain organic-rich shales in uranium, producing gamma ray peaks.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 4 - Sandstones and Sandstone Reservoirs",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from uranium redox behavior and its link to gamma ray log anomalies in organic-rich shales."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_meteoric_flushing_kaolinite_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Meteoric Water Flushing",
+            "Kaolinite Formation",
+            "Mineral Dissolution"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A reservoir model assumes extensive feldspar alteration to kaolinite during shallow burial. Which condition is most critical for that alteration to progress rather than self-arrest?",
+        "choices": [
+            "High salinity water that quickly reaches equilibrium with feldspar",
+            "A closed porewater system where reaction products accumulate locally",
+            "Rapid quartz precipitation near the surface that removes silica from solution",
+            "Sustained through-flow of meteoric water that continually removes dissolved ions and silica"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Feldspar-to-kaolinite alteration requires that dissolved reaction products (notably alkali cations and silica) do not build up to suppress further reaction. Continuous meteoric flushing supplies fresh undersaturated water and exports the products, allowing alteration to continue.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 4 - Sandstones and Sandstone Reservoirs",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the requirement of through-flow for continued feldspar/mica leaching and kaolinite precipitation."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petrophysics_kaolinite_reservoir_quality_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petrophysics",
+            "Reservoir Engineering"
+        ],
+        "topics": [
+            "Reservoir Quality",
+            "Authigenic Clays",
+            "Capillary Effects"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A sandstone experienced meteoric flushing that dissolved feldspar and precipitated pore-filling kaolinite. Which outcome is most consistent with the chapter’s description of the net effect on reservoir performance?",
+        "choices": [
+            "Permeability typically decreases because pore-filling clay creates finer pore throats even if some secondary pore space formed",
+            "Permeability typically increases because feldspar dissolution dominates and clay precipitation is negligible",
+            "Oil saturation typically increases because kaolinite reduces water wetness on grain surfaces",
+            "Oil saturation typically increases because smaller pores lower capillary entry pressure for oil"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Although dissolving feldspar can create secondary pores, kaolinite commonly occupies pore space and especially constricts pore throats, which reduces permeability. Very small pores associated with clay aggregates can also be difficult for oil to enter, tending to raise water saturation rather than lower it.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 4 - Sandstones and Sandstone Reservoirs",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item on how kaolinite precipitation can offset secondary porosity gains and degrade permeability/oil saturation."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petrophysics_quartz_cementation_temperature_scaling_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petrophysics",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Quartz Cementation",
+            "Temperature Sensitivity",
+            "Diagenetic Kinetics"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "The chapter states that quartz cementation rate may increase by a factor of about 1.7 for each 10°C temperature rise. Approximately how many times faster would quartz cementation be at 150°C than at 110°C, if other factors are unchanged?",
+        "choices": [
+            "About 3×",
+            "About 5×",
+            "About 8×",
+            "About 16×"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "A 40°C increase corresponds to four 10°C steps, so the multiplier is about 1.7^4. That equals roughly 8.3, so “about 8×” is the closest option. This captures the strong temperature control emphasized for quartz cementation kinetics.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 4 - Sandstones and Sandstone Reservoirs",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based quantitative item derived from the stated exponential temperature sensitivity of quartz cementation rate."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_illitization_k_supply_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Petrophysics"
+        ],
+        "topics": [
+            "Illitization",
+            "Provenance Controls",
+            "Reservoir Quality Prediction"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "Two sandstones are buried to ~4 km and heated above ~130°C. Sandstone X contains abundant kaolin minerals and significant K-feldspar; Sandstone Y contains kaolin minerals but feldspar is dominated by plagioclase with little K-feldspar. Which outcome is most consistent with the chapter’s discussion of pore-filling illite development?",
+        "choices": [
+            "Sandstone X is more likely to form pore-filling illite (and quartz) because it can supply potassium locally, while Sandstone Y is less likely to illitize kaolin due to limited potassium",
+            "Sandstone Y is more likely to form pore-filling illite because plagioclase supplies potassium more effectively than K-feldspar at high temperature",
+            "Both sandstones will form similar amounts of pore-filling illite because temperature alone controls illitization once 130°C is exceeded",
+            "Neither sandstone will form pore-filling illite because illite can only form by alteration of smectite, not from kaolin minerals"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Illite formation at these conditions requires both a suitable precursor (often kaolinite/dickite) and a potassium source, with K-feldspar highlighted as the key supplier. If potassium is scarce (e.g., feldspar assemblage dominated by plagioclase with low K-feldspar), kaolin minerals can persist and permeability is less harmed by pore-filling illite.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 4 - Sandstones and Sandstone Reservoirs",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from thermodynamic instability of K-feldspar + kaolinite above ~130°C and provenance control on K availability."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
     }
 ]
