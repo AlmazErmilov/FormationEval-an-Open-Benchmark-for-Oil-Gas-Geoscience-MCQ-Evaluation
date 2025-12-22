@@ -9273,7 +9273,7 @@
     "rationale": "Facies and depositional-environment concepts are used to infer where organic-rich muds, porous sands/carbonates, and sealing shales/evaporites are likely to be deposited and how they are geometrically arranged. This predictive framework is essential because petroleum is overwhelmingly hosted in sedimentary successions, and the geometry of reservoirs and seals depends on depositional processes.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9315,7 +9315,7 @@
     "rationale": "Cuttings provide small amounts of material, making large fossils unlikely to be recovered, even when core is available. In contrast, a small mass of cuttings can contain many microfossils or palynomorphs, which commonly improves correlation and stratigraphic precision.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9358,7 +9358,7 @@
     "rationale": "Repeating a 3D survey introduces time as an additional dimension, allowing interpreters to observe how seismic responses shift as fluids move during production. The chapter describes this as a way to monitor changing contacts while the reservoir is being depleted.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9401,7 +9401,7 @@
     "rationale": "Preservation depends strongly on how much organic matter escapes oxidation and biological reworking after production in the photic zone. Restricted circulation and anoxic/toxic bottom waters suppress oxidation and bioturbation, allowing more organic matter to remain in laminated muds that can become source rocks.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9444,7 +9444,7 @@
     "rationale": "If sedimentation is too slow, deposited organic matter spends more time exposed to oxygenated conditions and biological reworking, reducing preservation. If sedimentation is too fast, more organic matter may be buried but becomes heavily diluted by mineral grains. The chapter emphasizes that an intermediate rate (on the order of tens of mm per thousand years) best balances these effects.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9487,7 +9487,7 @@
     "rationale": "The chapter argues that most oil is poorly soluble in water, making dissolved transport inefficient at realistic flow rates, and it is also hard to explain how large volumes would consistently come out of solution in traps. It contrasts this with methane, which can be relatively soluble at high pressure and may exsolve as pressure drops, highlighting why oil and gas can behave differently.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9529,7 +9529,7 @@
     "rationale": "The chapter describes petroleum generation as dependent on temperature integrated over time. With rapid subsidence, the source spends less time at moderate temperatures, so generation may be delayed until higher temperatures are reached compared with slowly subsiding settings.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9571,7 +9571,7 @@
     "rationale": "Using \u03c1s = \u03c6\u03c1f + \u03c1m(1\u2212\u03c6), rearrange to \u03c6 = (\u03c1m\u2212\u03c1s)/(\u03c1m\u2212\u03c1f) = (2.65\u22122.10)/(2.65\u22121.00) = 0.55/1.65 \u2248 0.33. This applies the chapter\u2019s mixing relationship between grain density, fluid density, and bulk density.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9613,7 +9613,7 @@
     "rationale": "The chapter stresses that a structural trap must exist when hydrocarbons migrate; late trap formation can miss the main oil charge. It also notes that in some settings late-formed traps may still capture gas, because gas generation and migration can occur later than oil, but late formation generally reduces trapping effectiveness for earlier oil migration.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9656,7 +9656,7 @@
     "rationale": "Thickness increase on the downthrown side and diminishing displacement upward indicate syn-sedimentary fault motion, which the chapter associates with growth faults in rapidly deposited settings like deltas. The chapter further notes that traps can be created by sealing behavior along the fault and very commonly by rollover anticlines formed on the hangingwall geometry near listric faults.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9698,7 +9698,7 @@
     "rationale": "Descriptive nomenclature summarizes directly observed attributes such as texture and composition. Genetic nomenclature assigns a name based on an interpretation of the processes or environment that produced the deposit, and is generally used when confidence in origin is high.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9741,7 +9741,7 @@
     "rationale": "The chapter presents uniformitarian reasoning as a powerful way to interpret old rocks using modern process understanding. It also stresses that surface conditions have varied through geologic time, so interpretations may sometimes require explanations beyond direct modern analogues.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9783,7 +9783,7 @@
     "rationale": "The chapter defines laminae by a thickness threshold of less than 1 cm, with thicker units described as beds. A 6 mm layer falls below that boundary and should be logged as lamination.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9825,7 +9825,7 @@
     "rationale": "The chapter classifies traces by where they occur relative to a bed surface. Traces on the lower surface of a bed are categorized as hypichnia, consistent with a structure exposed on the underside of sandstone.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9867,7 +9867,7 @@
     "rationale": "Because 0.25 mm equals 2\u22122 mm, log2(0.25) = \u22122. Applying the minus sign in the definition gives \u03d5 = \u2212(\u22122) = 2.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9909,7 +9909,7 @@
     "rationale": "For very fine fractions such as silt and clay, the chapter emphasizes methods based on settling velocity in a liquid, linked to Stokes' law when flow around grains is laminar and concentrations are low. Standard dry sieve methods have a practical lower size limit because fine particles tend to stick together.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9951,7 +9951,7 @@
     "rationale": "The chapter links beach deposits to negative skewness: fines are readily kept in suspension and moved offshore, creating a lower-size cutoff, while coarser particles can remain as a coarse tail. Aeolian and many suspension-dominated deposits more commonly show tails toward finer sizes.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -9993,7 +9993,7 @@
     "rationale": "Converting units gives 0.20 m/s = 20 cm/s and 0.50 m = 50 cm, so the product is 1000, much larger than 20. The chapter uses this criterion to show that natural channels (rivers) are essentially always turbulent under realistic depths and velocities.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10036,7 +10036,7 @@
     "rationale": "The chapter ties the upper flow regime at high Froude numbers to standing-wave effects that can create antidunes. These bedforms can generate low-angle cross-lamination that dips in the up-current direction, unlike typical ripples and dunes that migrate downstream.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10078,7 +10078,7 @@
     "rationale": "The chapter explains that in marine basins the density contrast between fresh and salt water makes river water commonly less dense than seawater, favoring an overflow plume rather than an underflow. In lakes, colder and/or sediment-laden river water can be denser than the surface lake water, allowing it to follow the bottom and form a turbid underflow.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10121,7 +10121,7 @@
     "rationale": "Liquefaction occurs when pore pressure rises toward the overburden stress, reducing effective stress and therefore frictional strength. The chapter contrasts coarse sand/gravel, where water escapes quickly so overpressure cannot persist, with clay, where cohesion can inhibit mobilization. Silt and fine sand occupy the vulnerable middle ground: weak cohesion but not enough permeability to instantly dissipate overpressure during rapid loading or shaking.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10165,7 +10165,7 @@
     "rationale": "The chapter emphasizes barrier islands as long, thin sand bodies that can be capped by mud when sea level rises, creating an effective top seal. It also highlights muddy lagoonal deposits adjacent to the barrier that can act as source and seal, with geometries that allow pinch-out style trapping within surrounding fine-grained facies.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10207,7 +10207,7 @@
     "rationale": "A strong molecular dipole makes water orient its negative side toward cations, producing hydration shells that keep ions dispersed in solution. The same polarity leads to strong cohesion between molecules, which contributes to high surface tension and capillary effects in fine-grained sediments. The other options contradict water\u2019s observed polarity-driven behavior.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10249,7 +10249,7 @@
     "rationale": "The ionic potential is 3/0.30 = 10, which lies in the intermediate range described for ions that hydrolyze and form poorly soluble hydroxide phases. Low-IP ions remain hydrated and stay in solution, while very high-IP ions form soluble anion complexes and release H+. The concept is explicitly framed for low-temperature sedimentary environments, not only metamorphic conditions.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10291,7 +10291,7 @@
     "rationale": "Strong hydration increases the effective (hydrated) size and shields the positive charge, which reduces the ability of the ion to adsorb onto negatively charged clay surfaces. Less hydrated ions retain a more effective surface charge and are removed more readily by adsorption during transport and after entering seawater. This framework explains why some alkali ions have much shorter marine residence times than others.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10333,7 +10333,7 @@
     "rationale": "Mg2+ is small and strongly hydrated, which makes it less available to enter carbonate crystal structures at low temperature even when dissolved Mg is abundant. With increasing temperature, hydration weakens, making Mg more readily incorporated and allowing magnesium carbonates to precipitate more easily during burial/diagenesis. Explanations based solely on ionic potential or acidity do not match the chapter\u2019s hydration-focused mechanism.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10375,7 +10375,7 @@
     "rationale": "Neutrality implies [H+] = [OH\u2212], so each equals \u221a(10\u221212) = 10\u22126. pH is \u2212log10[H+], giving pH = 6. This highlights that \u201cneutral pH\u201d changes with temperature because water\u2019s ionization product changes.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10417,7 +10417,7 @@
     "rationale": "Chemical weathering involves mineral dissolution and precipitation of new minerals that are stable at low temperature and high water availability. Mechanical weathering mainly reduces grain size without fundamentally changing mineral chemistry. Erosion combines breakdown and removal, while metamorphism is associated with much higher temperatures than typical surface environments.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10459,7 +10459,7 @@
     "rationale": "With constant temperature and pressure, the mineral/solution ratio follows Mn/Ca(mineral) = k\u00b7Mn/Ca(solution). Multiplying 17 by 1.0\u00d710\u22125 gives 1.7\u00d710\u22124, meaning calcite is enriched in Mn relative to the water. The other values correspond to ignoring k or applying it incorrectly.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10502,7 +10502,7 @@
     "rationale": "Smectite has a structure that permits interlayer uptake (including water and other molecules), producing measurable expansion under glycol treatment. Illite\u2019s layers are more effectively bound by interlayer cations and stacked packets, limiting expansion. Kaolinite and chlorite are not described as showing this strong glycol-driven swelling behavior in the chapter.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10546,7 +10546,7 @@
     "rationale": "In the chapter\u2019s description, saline porewater helps neutralize negative charges and supports an open, porous \u201ccard-house\u201d fabric. When freshwater gradually leaches salts, repulsion increases and the structure becomes unstable; collapse releases porewater and the material can flow with very low viscosity. Reintroducing salt increases ionic strength, reducing repulsion and increasing shear strength through renewed electrochemical stabilization.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10589,7 +10589,7 @@
     "rationale": "When freshwater caps denser marine water, the salinity-related density contrast inhibits overturning and reduces oxygen delivery to deeper layers. Continuous oxygen consumption by respiration and organic-matter oxidation then drives bottom waters toward anoxic/reducing conditions. The chapter contrasts this with evaporative settings where dense surface brines can sink and enhance circulation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10632,7 +10632,7 @@
     "rationale": "Sand-sized particles define sandstone, but a notable amount of pebble-sized material warrants the modifier \u201cconglomeratic.\u201d Quartz arenite and subarkose describe sand-grain composition, while greywacke is defined by high matrix content rather than pebbles.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10674,7 +10674,7 @@
     "rationale": "Arkose is defined by high feldspar content when rock fragments are not dominant. Lithic sandstones are characterized by abundant rock fragments, quartz arenites are nearly pure quartz, and greywackes are identified mainly by high matrix content and poor sorting.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10717,7 +10717,7 @@
     "rationale": "Matrix-rich sandstones are termed greywackes when the fine-grained matrix exceeds the threshold described in the chapter. Quartz arenite/orthoquartzite imply very clean quartz-rich sand with little matrix, and subarkose refers to moderate feldspar content rather than matrix abundance.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10761,7 +10761,7 @@
     "rationale": "Feldspar survives best when erosion and delivery outpace chemical breakdown, which is most typical of rapid sediment supply and short transport paths. Long residence times in transport/reworking (common in stable settings) promote mineralogical \u201cmaturity\u201d by removing unstable grains like feldspar, leading to quartz-rich sands instead.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10805,7 +10805,7 @@
     "rationale": "Oxygen supply into sediment is governed by diffusion, which is more effective in coarse-grained sands than in muds. With faster diffusion, oxygen can penetrate farther before being consumed, placing the redox transition deeper in sand for comparable consumption rates.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10849,7 +10849,7 @@
     "rationale": "Uranium is mobile in oxidizing seawater but tends to be captured and precipitated when conditions become reducing, especially where organic matter is available. This concentrating process can enrich certain organic-rich shales in uranium, producing gamma ray peaks.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10893,7 +10893,7 @@
     "rationale": "Feldspar-to-kaolinite alteration requires that dissolved reaction products (notably alkali cations and silica) do not build up to suppress further reaction. Continuous meteoric flushing supplies fresh undersaturated water and exports the products, allowing alteration to continue.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10937,7 +10937,7 @@
     "rationale": "Although dissolving feldspar can create secondary pores, kaolinite commonly occupies pore space and especially constricts pore throats, which reduces permeability. Very small pores associated with clay aggregates can also be difficult for oil to enter, tending to raise water saturation rather than lower it.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -10981,7 +10981,7 @@
     "rationale": "A 40\u00b0C increase corresponds to four 10\u00b0C steps, so the multiplier is about 1.7^4. That equals roughly 8.3, so \u201cabout 8\u00d7\u201d is the closest option. This captures the strong temperature control emphasized for quartz cementation kinetics.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11025,7 +11025,7 @@
     "rationale": "Illite formation at these conditions requires both a suitable precursor (often kaolinite/dickite) and a potassium source, with K-feldspar highlighted as the key supplier. If potassium is scarce (e.g., feldspar assemblage dominated by plagioclase with low K-feldspar), kaolin minerals can persist and permeability is less harmed by pore-filling illite.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11068,7 +11068,7 @@
     "rationale": "The chapter links long-term carbonate accumulation to the availability of cations (especially Ca2+ and Mg2+) supplied to seawater by rivers. That supply is tied to weathering of Ca-bearing silicates (e.g., plagioclase), which provides the ions needed to precipitate carbonates. Weathering of limestone does not represent a net sink for CO2 in the same way described here.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11110,7 +11110,7 @@
     "rationale": "In the chapter, flat microbial laminae are described as algal laminated sediments, while laminae that create structures with vertical relief are termed stromatolites. Ooids are coated grains produced by rolling and precipitation, not microbial mats building relief. Hardgrounds are cemented seafloor surfaces recognized by borings/encrustations rather than by laminated microbial buildups.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11152,7 +11152,7 @@
     "rationale": "The chapter emphasizes that ooids require warm waters close to carbonate saturation and persistent wave/tidal agitation to rotate grains so coatings grow evenly. These requirements restrict ooids mainly to very shallow, energetic environments. Deep, cold, or muddy settings do not provide the chemistry and grain motion needed for ooid growth.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11194,7 +11194,7 @@
     "rationale": "Dunham classification uses support fabric and a grain-percentage threshold: mud-supported with fewer than ~10% grains is mudstone, while mud-supported with more than ~10% grains is wackestone. Packstone and grainstone are grain-supported categories, so they do not fit a mud-supported description.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11237,7 +11237,7 @@
     "rationale": "The text describes conversion of high-Mg calcite to more stable low-Mg calcite by leaching/removal of Mg2+, with the microarchitecture commonly preserved. Complete dissolution and re-precipitation is presented as an alternative pathway mainly for aragonitic grains (mould formation), not as the defining mechanism for high-Mg calcite stabilization. Strontium enrichment leading to strontianite is not the described outcome for this transformation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11279,7 +11279,7 @@
     "rationale": "The chapter describes planktonic algae (notably coccolithophores) as key contributors basinward, red algae as major robust reef-associated builders, and green algae as common in protected lagoonal settings where wave energy is moderate. Cyanobacteria are emphasized mainly for tidal-zone mats and stromatolite-related settings rather than as the dominant basin producer.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11322,7 +11322,7 @@
     "rationale": "The chapter notes that chalk porosity can be extremely high as interparticle microporosity, yet permeability is low due to very small pore-throat sizes. Productivity commonly improves when fractures add a connected flow network. The text does not describe shallow, dominant ankerite cementation as the main reason for chalk tightness.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11364,7 +11364,7 @@
     "rationale": "The chapter attributes micritic envelopes to microboring algae/cyanobacteria/fungi that dissolve small tubular holes near the grain surface; after the borers die, the holes become infilled with fine carbonate (micrite), and repetition produces a stable micritic coating. Abrasion can make lime mud but is not described as producing the characteristic microbore-and-infill texture that forms envelopes.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11406,7 +11406,7 @@
     "rationale": "The chapter explains that iron enters calcite mainly as Fe2+ under reducing conditions, but within the sulphate-reduction zone Fe2+ is typically captured by sulphide minerals, leaving little for carbonate incorporation. Therefore, ferroan calcite formation is most consistent with reducing porewater below that zone, where Fe2+ can persist and substitute into the calcite lattice.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11449,7 +11449,7 @@
     "rationale": "The chapter ties CCD depth to dissolution controlled by temperature, pressure, and dissolved CO2, with cold waters being more corrosive to CaCO3. It states that CCD can be as shallow as ~1\u20132 km at higher latitudes (colder waters) and deeper (~4\u20135 km) in warm equatorial regions. Therefore, the colder high-latitude deep water setting should have the shallower CCD.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11492,7 +11492,7 @@
     "rationale": "The chapter lists three key conditions: CaCO3 must be unstable relative to dolomite, Mg must be supplied to maintain a high Mg/Ca ratio, and inhibitors (especially sulphate) must be low. It also notes that seawater is the only practical magnesium source for large-scale dolomitisation and that reducing, low-sulphate seawater in reefs/atolls provides favorable chemistry. Meteoric water alone generally lacks enough magnesium, and deep-basin porewaters are described as typically Mg-poor except near evaporites.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11535,7 +11535,7 @@
     "rationale": "The chapter gives the relationship depth \u2248 head/(\u03c1saline\u2212\u03c1fresh), which for densities 1.025 and 1.00 implies a factor of 1/0.025 = 40. With a 6 m head, penetration depth is about 6 \u00d7 40 = 240 m. This illustrates why modest hydraulic heads can drive deep freshwater flushing in coastal carbonates.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11577,7 +11577,7 @@
     "rationale": "When larger grains are effectively \"floating\" in a finer clay matrix, the clay fraction governs key properties such as cohesion and sensitivity to pore-fluid chemistry. Clay minerals also have large specific surface area and surface charge effects that strongly influence behavior. Coarser grains matter more when they form the load-bearing framework.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11620,7 +11620,7 @@
     "rationale": "Under humid conditions, silicate minerals like feldspar and mica are strongly altered, and Al\u2013Si products can form kaolinite while quartz survives as sand. This naturally yields a mixture dominated by quartz sand and kaolinitic clay. A \u201cclay-only\u201d product is more characteristic of basic source rocks that lack quartz.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11662,7 +11662,7 @@
     "rationale": "Clay platelets carry negative surface charge, which helps keep them dispersed in freshwater. In seawater, cations reduce that electrostatic repulsion and promote denser aggregates that sink faster; K\u207a is highlighted as particularly effective due to its hydration behavior. The other listed species do not play the same charge-neutralization role described for seawater cations.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11704,7 +11704,7 @@
     "rationale": "The chapter links clay sorting to grain size, noting kaolinite as the coarser clay mineral that tends to accumulate nearer to sediment sources. Finer clays like illite and smectite can be transported to more distal settings. Flocculation speeds settling near the mouth but does not eliminate all size-related sorting patterns within marine basins.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11746,7 +11746,7 @@
     "rationale": "The chapter emphasizes that organisms such as diatoms and radiolaria can precipitate silica from seawater at concentrations far below those needed for quartz saturation. This biological uptake helps keep surface waters undersaturated with respect to quartz despite continual continental input. Evaporite precipitation is not presented as the dominant control on open-ocean dissolved silica levels.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11789,7 +11789,7 @@
     "rationale": "The chapter links strong impedance contrasts to the transformation of biogenic silica phases (opal A to opal CT to quartz) during burial. Because these transformations are primarily temperature-driven, they tend to occur at similar thermal conditions and can appear as subhorizontal \u201cfronts.\u201d Such reflectors can be mistaken for fluid contacts if the diagenetic origin is not considered.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11832,7 +11832,7 @@
     "rationale": "The chapter notes that opal A, opal CT, and quartz transitions can generate a marked impedance change and tend to form horizontal zones because they are temperature controlled. This creates reflectors that may resemble hydrocarbon contacts even when fluids do not change. A stratigraphic unconformity or fault explanation is not the most consistent with the described temperature-governed silica diagenesis behavior.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11874,7 +11874,7 @@
     "rationale": "The chapter outlines an evaporation-driven sequence in which carbonates and gypsum precipitate earlier, while halite becomes a dominant precipitate only after much stronger concentration (around a 1/10 remaining volume). Potassium salts and bromides are described as among the last to precipitate because they remain soluble to higher concentrations. This makes halite the best match to the one-tenth criterion.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11917,7 +11917,7 @@
     "rationale": "The chapter states that the gypsum-to-anhydrite transition involves a 38% volume reduction. If area is constant, thickness scales with volume, so the remaining thickness is 10.0 m \u00d7 (1 \u2212 0.38) = 6.2 m. The larger thickness would correspond to hydration (anhydrite to gypsum), not dehydration.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -11959,7 +11959,7 @@
     "rationale": "The chapter describes sabkhas as settings that can precipitate halite during intense evaporation, but subsequent marine flooding or even humidity can redissolve it. This repeated dissolution prevents halite from being reliably preserved as distinct beds. Gypsum/dolomite lamination can persist because it is less prone to rapid surface dissolution under the described conditions.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12002,7 +12002,7 @@
     "rationale": "The chapter contrasts Fe and Mn behavior, emphasizing that Fe\u00b2\u207a readily forms low-solubility sulphides in reducing, sulphide-producing zones, while manganese sulphides are more soluble. As a result, Mn has a greater tendency to be fixed as oxidized phases in the oxygenated zone near/above the redox boundary. This makes manganese the better answer for preferential oxidized-zone deposition.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12045,7 +12045,7 @@
     "rationale": "Marine phosphorite formation is tied in the chapter to slow sedimentation (minimal clastic dilution) combined with nutrient-rich upwelling that drives high organic production. These conditions allow phosphorus to be concentrated and apatite to precipitate and/or replace other minerals. Rapid clastic burial or high clastic flux works against phosphate enrichment by dilution.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12088,7 +12088,7 @@
     "rationale": "Stratigraphy treats layered successions as records that can be ordered and interpreted in time, and it is used primarily in sedimentary studies even though layering can occur in other rock types. Fossils and radiometric ages can support stratigraphy, but stratigraphy is not limited to either of those data types.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12131,7 +12131,7 @@
     "rationale": "Lithostratigraphy is built around rock properties such as lithology and log-recognizable character, making it suitable for mapping a sandstone body as a unit even if it is not the same age everywhere. Chronostratigraphy focuses on synchronous time-rock units, which conflicts with the stated possibility of age variation across the mapped sandstone.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12174,7 +12174,7 @@
     "rationale": "A formation is the basic mappable lithostratigraphic unit and is intended to be readily recognizable in outcrop or in boreholes based on lithology. A member is a subdivision of a formation, while a group combines multiple formations, and a bed is a much smaller depositional unit.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12216,7 +12216,7 @@
     "rationale": "A lamina is defined by thickness (<1 cm), but thin layers can still be individually recognized and even named when they are isolated and compositionally distinctive relative to surrounding strata. A member and a group are much higher hierarchical ranks than a single thin layer.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12259,7 +12259,7 @@
     "rationale": "Cuttings are vulnerable to contamination by older material falling into the wellbore and being carried upward, which can create false early appearances. Disappearances (last occurrences) are therefore typically more dependable in such datasets, which is why interval zones based on successive last appearances are widely used in industry.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12303,7 +12303,7 @@
     "rationale": "Pelagic organisms are less tied to local depositional environments than many benthic groups, so their fossils tend to be more useful for broad regional correlation. Benthic assemblages often reflect specific bottom conditions and thus commonly have stronger facies control.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12346,7 +12346,7 @@
     "rationale": "A biozone is defined only where the fossil content is observed at a specific locality, so it cannot be extended through facies where the marker is missing. A taxon chronozone is intended to represent the entire interval between evolutionary appearance and extinction and can be applied as a time-rock concept even where the marker is not present.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12389,7 +12389,7 @@
     "rationale": "Geochronological units describe time intervals (e.g., a period), while chronostratigraphic units describe the rocks formed during those intervals (e.g., a system). The chapter explicitly uses Jurassic period (time) versus Jurassic system (rocks) as the example relationship.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12432,7 +12432,7 @@
     "rationale": "The half-life is computed directly from T1/2 = 0.693/\u03bb. Substituting \u03bb = 1.0 \u00d7 10\u207b\u2079 yr\u207b\u00b9 gives T1/2 = 0.693 \u00d7 10\u2079 years = 6.93 \u00d7 10\u2078 years. The other values are half-lives mentioned for specific isotopic systems in the chapter and serve as plausible distractors.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12476,7 +12476,7 @@
     "rationale": "The chapter describes that same-age samples define an isochron (a straight line) on the \u2078\u2077Rb/\u2078\u2076Sr\u2013\u2078\u2077Sr/\u2078\u2076Sr plot, and that the line\u2019s slope reflects the time since formation. This method leverages ratios rather than absolute amounts and is distinct from argon-based systems.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12520,7 +12520,7 @@
     "rationale": "When accommodation creation outpaces sediment supply, the system cannot build seaward effectively and the shoreline tends to backstep, producing retrogradational geometry. Progradation requires sediment supply to exceed available accommodation, while aggradation reflects a rough balance between the two.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12564,7 +12564,7 @@
     "rationale": "Magnetostratigraphy uses globally synchronous polarity intervals, so a reversed signature in a context dominated by recent normal polarity implies formation before that normal interval. Polarity alone does not give an exact numerical date, but it provides a strong relative age constraint.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12606,7 +12606,7 @@
     "rationale": "Compressional waves involve volumetric strain and can pass through both solids and fluids, so they are recorded in fluid-saturated rocks. Shear waves require resistance to shear deformation, which fluids cannot provide, so they only propagate through the solid skeleton. This difference is central to how fluids influence seismic responses.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12649,7 +12649,7 @@
     "rationale": "Cement that binds grains into a stiffer framework increases elastic stiffness and therefore raises wave speed, even when porosity remains relatively high. The chapter also emphasizes that rocks with the same porosity can show different velocities because grain contacts and cement distribution matter. Porosity is important, but it is not the only control.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12691,7 +12691,7 @@
     "rationale": "Acoustic impedance is Z = \u03c1v. Here Z1 = 2300\u00d73000 = 6.9\u00d710^6 and Z2 = 2500\u00d75000 = 12.5\u00d710^6, so R = (Z2\u2212Z1)/(Z2+Z1) \u2248 5.6/19.4 \u2248 0.29. The other values are inconsistent with the relative impedance contrast implied by the numbers.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12733,7 +12733,7 @@
     "rationale": "The chapter notes that there is a practical lower limit to resolvable thickness tied to the wavelength (on the order of about half a wavelength). When beds are thinner than this limit, reflections from closely spaced boundaries interfere and do not form clearly separated events. The result is a blended or composite seismic response rather than bed-by-bed imaging.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12776,7 +12776,7 @@
     "rationale": "The chapter describes a horizontal reflector that does not follow stratigraphy as a potential indicator of a fluid contact (often gas-related) because it can create a strong impedance contrast and stays level. It also warns that near-horizontal multiple reflections can mimic this appearance, but those can be addressed during processing. Fault planes themselves are typically too steep to act as clear reflectors.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12819,7 +12819,7 @@
     "rationale": "The chapter links basinward-stepping progradation across a surface to downlap, and describes the overall basinward building as offlap. Onlap instead describes beds terminating landward against an inclined surface during transgression. Toplap concerns termination against an upper boundary, commonly involving truncation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12862,7 +12862,7 @@
     "rationale": "The chapter emphasizes that onlap reflects relative sea level, which combines sea-level change with local tectonic subsidence/uplift and isostatic responses to loading. Increased water depth adds load and can increase subsidence, while sediment deposition adds further load. Therefore, the observed onlap height is not a direct measure of global (eustatic) sea level by itself.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12904,7 +12904,7 @@
     "rationale": "The equilibrium change combines the primary sea-level rise (100 m) and the additional subsidence driven by the added water load (43.5 m). Adding these gives 143.5 m total increase in water depth at isostatic equilibrium. The 250 m figure relates to subsequent added accommodation when sediment infills the basin, not the water-only step.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12947,7 +12947,7 @@
     "rationale": "The chapter describes backstripping as a way to work backward from observed stratigraphy to infer the primary subsidence signal by accounting for compaction and loading influences. It also stresses that estimating how geothermal gradient evolved over geological time is crucial yet difficult, and it strongly impacts modeled temperature histories and maturity. Palaeowater depth estimates are also challenging, but the geothermal-gradient history is explicitly flagged as critical for maturity modeling.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -12991,7 +12991,7 @@
     "rationale": "The chapter links arid, restricted basins during rifting to evaporite deposition and notes that thick salt can behave as an excellent seal. It also describes how sufficiently thick salt may rise to form domes that create structural traps and influence sediment distribution. These behaviors are part of why some rift-related evaporite systems become prolific petroleum provinces.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13034,7 +13034,7 @@
     "rationale": "The chapter notes that fault surfaces are commonly too steep to reflect energy back to the receivers, and that terminations can generate diffraction/edge effects that distort apparent fault location. Migration is specifically identified as a processing step that can correct many of these positioning errors. The chapter also highlights that dense 3D seismic helps map faults by enabling flexible section orientations and horizontal time-slices.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13077,7 +13077,7 @@
     "rationale": "Using 1/Vr = (1\u2212\u03c6)/Vm + \u03c6/Vf gives 0.333 \u2248 0.172 + \u03c6(0.667\u22120.172), so \u03c6 \u2248 (0.333\u22120.172)/0.494 \u2248 0.33. The chapter also cautions that this equation is a simplification because rocks with the same porosity can have different velocities depending on contacts and cement distribution. Even so, it provides an approximate porosity estimate from velocity when matrix and fluid velocities are assumed.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13120,7 +13120,7 @@
     "rationale": "The chapter describes upward heat flow in sedimentary basins as being dominated by conduction (thermal diffusion). It also notes that porewater flow can transport heat, but typical basin flow rates are usually too small to matter except in settings like intrusions or high-flux meteoric systems.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13163,7 +13163,7 @@
     "rationale": "The chapter attributes much of crustal heat to radioactive processes and emphasizes that granitic rocks tend to be enriched in uranium, thorium, and potassium. Mafic rocks like gabbro are described as having much lower contributions from these elements in this context.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13205,7 +13205,7 @@
     "rationale": "From the relationship \u2207T = Q/c, the gradient increases when conductivity decreases for the same heat flux. The chapter explicitly contrasts low-conductivity mudstones/shales (steeper gradients) with highly conductive salt (gentler gradients).",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13247,7 +13247,7 @@
     "rationale": "Convert 60 mW/m\u00b2 to 0.060 W/m\u00b2, then compute dT/dz = Q/c = 0.060/2.0 = 0.030 K/m. Converting 0.030 K/m to per kilometer gives 30 K/km (same increment as \u00b0C for a gradient).",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13290,7 +13290,7 @@
     "rationale": "Apply the weighted sum: Cbulk \u2248 Cr(1-\u03d5) + \u03d5Cf = 5.5(0.75) + 0.25(0.6) = 4.125 + 0.15 = 4.275 W/mK. That rounds to about 4.3 W/mK.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13333,7 +13333,7 @@
     "rationale": "The chapter notes that shale conductivity measured along bedding can be much higher (up to ~70%) than measurements taken across bedding. This reflects anisotropy tied to fabric and layering, not only fluid properties.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13376,7 +13376,7 @@
     "rationale": "With roughly constant heat flux over a vertical interval, lowering conductivity increases the required temperature gradient. The chapter describes this as an insulating (blanketing) behavior: the shallow low-conductivity layer forces higher gradients and can raise temperatures in underlying sediments.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13421,7 +13421,7 @@
     "rationale": "The chapter explains that high-conductivity salt supports a low gradient within the salt, producing relatively higher temperatures at the top and lower temperatures at the base (below the salt). The source explicitly states that temperatures below the salt will be significantly lower than normal at that depth, which means better reservoir quality due to less quartz cement, and preservation of oil/condensate due to less thermal cracking to gas.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13465,7 +13465,7 @@
     "rationale": "The chapter states that heat flux is only constant at equilibrium; during subsidence some of the background heat is consumed by heating the sinking sediments and basement. This leads to reduced geothermal gradients, producing comparatively cold basins during periods of rapid sedimentation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13509,7 +13509,7 @@
     "rationale": "The chapter notes that advective heat transport depends on the component of flow that cuts across temperature contours; the sin\u03b1 term goes to zero when flow is parallel to isotherms. In that case, moving fluid does not transport heat across the temperature field in the model sense, even if the volumetric flux is high.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13552,7 +13552,7 @@
     "rationale": "Injected seawater typically has a distinct ionic composition compared with in-situ formation water. Tracking produced-water composition can therefore indicate breakthrough of injected water at the producer. The other options are not objectives that produced-water chemistry alone can directly deliver in this context.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13595,7 +13595,7 @@
     "rationale": "Effective stress is the portion of total (lithostatic) stress that is not supported by pore pressure; it is total stress minus pore pressure. The other expressions either use the wrong density term or combine pressure and stress in a way that does not represent stress transmitted through the grains.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13638,7 +13638,7 @@
     "rationale": "Relative permeability refers to how easily one phase flows when another immiscible phase is also present, compared to the permeability at 100% saturation of that phase. Absolute (intrinsic) permeability is a rock property defined without reference to multiphase effects.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13681,7 +13681,7 @@
     "rationale": "Overpressure is associated with a potentiometric (piezometric) surface that would stand above the reference datum (e.g., sea level). If the stabilized water level is near sea level, the interval is normally pressured relative to that datum.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13724,7 +13724,7 @@
     "rationale": "Chloride and bromide tend to be comparatively conservative because they react only weakly with common basin minerals, so their distribution more directly reflects fluid movement. Many other ions can be buffered by mineral equilibria or strongly affected by ion exchange and redox reactions.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13768,7 +13768,7 @@
     "rationale": "Negatively charged clay surfaces tend to hinder anions and promote selective ion behavior, so small ions such as H+ can migrate to maintain electroneutrality. This can raise the hydrogen ion activity (lower pH) and also contribute to concentration effects often described as salt sieving.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13811,7 +13811,7 @@
     "rationale": "Burial reactions such as smectite-to-illite (and other clay-related transformations) release crystal-bound water and can sequester cations, which can dilute porewater. The chapter notes that shales may therefore show lower salinity than sandstones at comparable depth, reflecting diagenetic water release and limited mixing.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13854,7 +13854,7 @@
     "rationale": "For flow perpendicular to bedding, the effective permeability corresponds to a harmonic mean, which is strongly controlled by the tightest layers. Even thin low-permeability shales or cemented streaks can severely limit vertical flow and therefore control the upscaled value.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13897,7 +13897,7 @@
     "rationale": "Just below the seabed, sulphate can be reduced by microbial processes and therefore becomes depleted with burial, whereas chloride is generally conservative and not significantly consumed by common diagenetic reactions. This combination produces a typical \u201clow sulphate, similar chlorinity\u201d signature for modified marine porewater.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13940,7 +13940,7 @@
     "rationale": "With the given densities, (\u03c1sw \u2212 \u03c1mw) \u2248 0.025 g/cm\u00b3, so D \u2248 10 \u00d7 1.0 / 0.025 \u2248 400 m. The result reflects that a relatively small freshwater head can balance a much thicker column because the density difference is modest.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -13984,7 +13984,7 @@
     "rationale": "Increasing temperature tends to decrease water density and can drive instability, but increasing salinity raises density and can stabilize the water column. The chapter notes that a sufficiently strong salinity gradient can more than compensate for thermal expansion, and persistent stratification is evidence that convection has not mixed the system on a large scale.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14028,7 +14028,7 @@
     "rationale": "The chapter emphasizes that sustained flow along a fault requires the fracture system to remain open, which is more feasible in strong, brittle, well-cemented or uplifted rocks. In subsiding, weaker sediments, faults and fractures are more likely to close or become sealing (e.g., via clay smear or cementation), making them barriers or only transient conduits.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14070,7 +14070,7 @@
     "rationale": "Effective vertical stress is defined as total vertical stress minus pore pressure. If both increase by the same increment, their difference remains roughly constant. Mechanical compaction in weakly cemented sediments is governed primarily by this effective stress rather than total stress alone.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14113,7 +14113,7 @@
     "rationale": "Overpressure reduces effective stress, so it tends to delay mechanically driven porosity loss. Chemical compaction (dissolution, precipitation, cementation) is described as strongly controlled by burial temperature and time, so it may proceed even when effective stress is lowered. The two processes therefore respond differently to overpressure.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14155,7 +14155,7 @@
     "rationale": "With a constant hydrostatic gradient, pressure increases linearly with depth: 10 kPa/m \u00d7 1500 m = 15,000 kPa. Converting kPa to MPa gives 15 MPa. This corresponds to the chapter\u2019s freshwater hydrostatic gradient value.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14198,7 +14198,7 @@
     "rationale": "Overconsolidation refers to a sediment that has been subjected to a higher effective vertical stress in the past than it currently experiences. Erosion reduces the present overburden, so the present effective stress can be below the historical maximum. That history makes the unit overconsolidated (preloaded).",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14240,7 +14240,7 @@
     "rationale": "The chapter gives K0 for normally consolidated sediments as 1 \u2212 sin(\u03c6\u2032) (for c = 0). Increasing \u03c6\u2032 increases sin(\u03c6\u2032), which reduces K0. Physically, a higher frictional resistance is associated with a lower ratio of lateral to vertical effective stress in that formulation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14282,7 +14282,7 @@
     "rationale": "The chapter emphasizes that unloading does not behave as a purely elastic reversal for sediments; lateral stresses can be \u201clocked in.\u201d It then uses a semi-empirical form in which K0 grows with OCR, and values above 1 have been observed. This implies that horizontal effective stress can become larger than vertical effective stress in overconsolidated materials.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14324,7 +14324,7 @@
     "rationale": "Before fracturing, the closed system shows a near-linear pressure rise with injected volume because little fluid enters the formation. Once a fracture initiates, some injected mud is accommodated by the fracture, so the incremental pressure increase per added volume decreases, producing a slope break. This is the operational signature used to infer the leak-off (fracture) pressure.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14366,7 +14366,7 @@
     "rationale": "Hydraulic fractures open perpendicular to the least effective principal stress. In the stated stress regime, the least effective principal stress is horizontal, so the fracture plane is vertical. Its normal points in the minimum horizontal effective stress direction, meaning the plane is perpendicular to that direction.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14409,7 +14409,7 @@
     "rationale": "The chapter describes brittle behavior as having a peak followed by strain-softening toward a residual strength, and notes that sufficiently high effective horizontal (confining) stress can lead to ductile behavior. The confining stress suppresses the abrupt post-peak strength loss. This is framed as a brittle-to-ductile transition controlled in part by the magnitude of horizontal effective stress.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14453,7 +14453,7 @@
     "rationale": "The chapter links grain crushing to very high local contact stresses transmitted through the load-bearing framework. Coarser sands tend to have fewer contact points and smaller effective contact areas per grain, concentrating stress and promoting grain breakage at lower effective stresses than in fine sand. This leads to greater mechanical compaction and porosity reduction in coarse, well-sorted sand under comparable loading.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14497,7 +14497,7 @@
     "rationale": "The chapter notes that smectitic clays retain higher porosity and are associated with low velocities and low density, and it highlights that smectite shows a higher Vp/Vs ratio compared with kaolinite. Lower shear velocity combined with overall lower velocities is consistent with a higher Vp/Vs ratio. This makes smectite-rich intervals stand out in rock-physics/seismic attributes.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14539,7 +14539,7 @@
     "rationale": "A conservative (transform) plate margin is dominated by lateral motion, so the associated principal stress configuration corresponds to a strike-slip regime. Extensional and contractional regimes instead align with divergent and convergent boundaries, respectively. Thermal subsidence is a basin-stage process, not a plate-margin stress regime.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14581,7 +14581,7 @@
     "rationale": "The chapter distinguishes far-field stresses originating from plate-margin processes from local stresses superimposed due to factors like burial, erosion, topography, basement relief, and structural inhomogeneities. Basement relief and basin inhomogeneities are explicitly local contributors. The other options are examples of plate-boundary or plate-scale forcing.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14623,7 +14623,7 @@
     "rationale": "From \u03c3v = \u03c1gz, \u03c3v = 2500 \u00d7 9.81 \u00d7 3000 Pa \u2248 7.36 \u00d7 10^7 Pa. Converting to MPa gives approximately 73.6 MPa. The other options reflect common arithmetic or unit-conversion errors.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14665,7 +14665,7 @@
     "rationale": "A contractional regime requires horizontal compression to dominate, so the maximum horizontal stress exceeds the minimum horizontal stress, and both exceed the vertical stress. The chapter expresses this as \u03c3H > \u03c3h > \u03c3v. The other orderings correspond to extension, strike-slip, or non-standard permutations.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14708,7 +14708,7 @@
     "rationale": "The chapter notes that the transition is hard to pick purely geometrically because it is often diachronous, so it recommends defining it by the point when net heat flow out exceeds net heat flow in. A basin-scale consequence is a reversal in tilt: syn-rift fault-block rotation away from the axis gives way to post-rift tilting toward the axis driven by contraction during cooling and loading. The other options describe processes that may occur but are not given as the defining criterion and signal.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14750,7 +14750,7 @@
     "rationale": "The chapter presents pure shear as a symmetric thinning style, with brittle faulting in the upper crust accompanying ductile stretching at depth. Simple shear is described as extension localized along inclined fault zone(s) affecting the crust, producing an asymmetric basin architecture. The other options contradict these geometric distinctions.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14793,7 +14793,7 @@
     "rationale": "In the thermal subsidence stage, subsidence is driven largely by cooling contraction and sediment loading, while the main syn-rift fault systems are largely inactive. The chapter therefore emphasizes that stratigraphic traps are expected to be more prevalent than structural traps tied to active faulting. Thrust duplexes relate to contractional settings, not post-rift subsidence.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14835,7 +14835,7 @@
     "rationale": "The chapter explains that for a dextral system, right-stepping overlaps create releasing zones where extension develops between the segments. The opposite stepping sense produces contractional overlap zones (restraining bends) for the same shear sense. A perfectly planar, unsegmented fault does not create step-over overlap zones.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14877,7 +14877,7 @@
     "rationale": "The chapter describes strain partitioning as the tendency for a combined stress state (like dextral transpression) to be expressed through distinct structural domains, where contraction is accommodated in one system and strike-slip in another. This explains how, in an example cited, collision-related shortening and lateral shear can occur in adjacent structures. The other options either describe specific fracture evolution or contradict the chapter\u2019s definition.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14919,7 +14919,7 @@
     "rationale": "The chapter notes that inversion changes the stress configuration and the orientation of the maximum shear plane, making it difficult for the original extensional faults to absorb large amounts of the new shortening. As a result, reverse reactivation may occur, but new, lower-angle contractional faults and related folds are expected. The other options contradict the described mechanical consequence of inversion.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -14961,7 +14961,7 @@
     "rationale": "The chapter characterizes gravity spreading on a margin as producing extension in the upslope domain and shortening in the downslope domain, driven by the regional gradient and mobile salt. This pairing explains why linked extensional structures (e.g., growth faults) can coexist with distal contractional folds and thrusts. The other options reverse or remove one of the paired domains.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15004,7 +15004,7 @@
     "rationale": "The chapter describes fault zones as internally zoned, with a fault core containing lozenge-like lenses/horses and adjacent damage zones. It reports that lens geometry can be approximated with length-to-thickness ratios around an order of magnitude, and that damage-zone fracture frequency is commonly asymmetric, increasing more steeply toward the core in the footwall than in the hangingwall. These properties matter because permeability contrasts between lenses and high-strain zones can govern along-fault and cross-fault flow.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15048,7 +15048,7 @@
     "rationale": "Burial increases stress and temperature, driving compaction and diagenesis that typically reduce pore space in a given lithology. As porosity decreases, bulk density increases, and the rock frame stiffens, leading to higher seismic velocity. Apparent reversals can occur across lithologic changes, but not as the dominant trend within one lithology.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15091,7 +15091,7 @@
     "rationale": "In the mechanical-compaction case described, the solid fraction is treated as constant, so any decrease in bulk volume must come from a reduction of the pore volume. That means volumetric strain corresponds directly to porosity loss. Chemical reactions would break this link by changing the solid volume through dissolution/precipitation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15135,7 +15135,7 @@
     "rationale": "Using K = stress/strain, the stress change is K\u00b7strain = 50 GPa \u00d7 0.001 = 0.05 GPa. Converting 0.05 GPa gives 50 MPa. The chapter uses this example to illustrate how even small strain can substantially relax stress.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15179,7 +15179,7 @@
     "rationale": "Smectite has a very high specific surface area and responds strongly to porewater composition. The chapter notes that adding salts (including KCl) is used to stabilize soft clays by increasing their compressive and shear strengths. The other options describe mechanisms not presented as the reason for salt addition in the chapter.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15223,7 +15223,7 @@
     "rationale": "The chapter describes mudstones/shales as anisotropic and notes that with burial they can show higher velocity along bedding than vertically. This follows from increased alignment of platy minerals and fabric development. Orientation-independent velocity is not consistent with the stated behavior of shales.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15267,7 +15267,7 @@
     "rationale": "The chapter states that Vp/Vs varies with clay mineralogy and that gas in mudstones/shales can also change Vp/Vs. If the seismic response is dominated by mudstone, a gas-related shale effect can be mistaken for a sand-fluid signal. Therefore, shale composition and gas content must be considered when using Vp/Vs for fluid inference.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15311,7 +15311,7 @@
     "rationale": "The chapter links smectite breakdown and illite formation to the need for silica to be removed from solution by quartz precipitation. Because quartz cementation rate depends on temperature, it becomes the practical rate control on the overall reaction sequence. Stress and large-scale advective flow are not presented as the controlling factor for this reaction in mudstones.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15355,7 +15355,7 @@
     "rationale": "The chapter argues that diffusion through shales is very inefficient and points to observations of small authigenic quartz crystals in heated smectite-rich mudstones as evidence of local silica retention. It also notes that at greater depth, quartz cement is mainly sourced from pressure solution of detrital quartz rather than long-distance export from shale. Therefore, basin-scale diffusive transfer from shale to sandstone is not supported as a dominant mechanism here.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15399,7 +15399,7 @@
     "rationale": "The chapter presents pressure dissolution as driven by stress at grain contacts, but emphasizes that the rate-limiting step is typically the precipitation of authigenic quartz, which depends on temperature. If precipitation controls the overall pace, then changing stress has a weaker impact than changing temperature/time. This is why chemical compaction in siliceous rocks is framed as temperature-controlled at greater depth.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15443,7 +15443,7 @@
     "rationale": "The chapter emphasizes that carbonate reaction kinetics are much faster than in siliceous sediments, making temperature less of a controlling variable. It also highlights the role of aragonite instability as an important driver for early cement formation. These factors allow cementation to occur close to the surface in carbonate systems.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15487,7 +15487,7 @@
     "rationale": "The chapter distinguishes mechanical compaction as an effective-stress-driven process, so increased pore pressure can reduce it by lowering effective stress. In contrast, chemical compaction in siliceous rocks is presented as being controlled largely by temperature (and time/kinetics), making it comparatively insensitive to stress changes. Thus, overpressure mainly alters the mechanical part of the compaction history.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15531,7 +15531,7 @@
     "rationale": "The chapter states that chemical compaction in siliceous sediments can proceed as long as temperatures remain above the approximate threshold, even during uplift. Unloading tends to promote mechanical extension, but ongoing quartz cementation can gradually heal open fractures. Therefore, uplift does not automatically preserve fracture porosity if temperatures remain sufficiently high.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15574,7 +15574,7 @@
     "rationale": "Organic matter is usually destroyed by oxidation in the water column or at the sediment surface. Conditions that restrict circulation and keep oxygen supply low increase the fraction that escapes oxidation and is buried. This is why many effective source rocks are black shales deposited under reducing conditions.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15616,7 +15616,7 @@
     "rationale": "Kerogen formation involves loss of oxygen- and nitrogen-bearing functional groups, along with water and CO2, which lowers the oxygen relative to carbon. Compared with the original biomolecules, kerogen ends up relatively enriched in hydrogen and depleted in oxygen, raising H/C and lowering O/C. This trend is consistent with the chapter\u2019s description of progressive chemical simplification during burial.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15658,7 +15658,7 @@
     "rationale": "Hydrogen-rich and oxygen-poor kerogen is characteristic of Type I material, commonly associated with lipid-rich organic inputs and many oil-shale occurrences. Such kerogen is described as having high H/C and low O/C and typically generates predominantly oil. Type III is comparatively oxygen-rich and tends toward gas and CO2 production with maturation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15701,7 +15701,7 @@
     "rationale": "Kerogen derived from higher plants (Type III/humic) starts relatively oxygen-rich and hydrogen-poor compared with algal material. The chapter describes this type as generating abundant water, CO2, and methane as temperature increases, and notes that coal commonly behaves similarly and tends to be gas-prone. Some coals may generate some oil, but gas is typically dominant.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15743,7 +15743,7 @@
     "rationale": "The chapter indicates that hydrocarbon generation begins slowly near ~80\u201390\u00b0C, but that most of the oil-generating maturation occurs over roughly 100\u2013150\u00b0C. Temperatures far below this are associated with very slow transformation, while substantially higher temperatures favor extensive cracking toward gas. The 350\u2013550\u00b0C range is associated with laboratory pyrolysis conditions, not natural burial temperatures.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15787,7 +15787,7 @@
     "rationale": "The chapter notes that pressure is a secondary control compared with temperature, but it can reduce reaction rates when hydrocarbon generation causes a significant volume increase. Oil generation involves only a modest volume change because residual solid material remains, whereas converting kerogen (or oil) to gas produces a much larger expansion. By Le Chatelier\u2019s principle, higher pressure in a closed system tends to oppose the volume-increasing direction, making gas generation more pressure-sensitive.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15829,7 +15829,7 @@
     "rationale": "The chapter states that shales with R0 below about 0.5% are immature, while values around 0.9\u20131.0% correspond to maximum oil generation. Values around 1.3% mark the upper limit of oil generation. Therefore, an R0 near 0.95% aligns with peak oil generation maturity rather than immaturity or overmaturity.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15871,7 +15871,7 @@
     "rationale": "S1 represents hydrocarbons that exist in the rock at the start of the program and are released at the lower-temperature step. S2 represents additional hydrocarbons created during programmed heating as kerogen breaks down in the instrument. Tmax is the temperature at which the S2 generation rate peaks, and S3 is tied to CO2 released during heating.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15913,7 +15913,7 @@
     "rationale": "Production Index is defined as S1 divided by (S1 + S2), so higher S1 at the same S2 increases PI. Conceptually, PI expresses how much petroleum is already present relative to the remaining generative capacity measured by S2. The chapter also cautions that S1 is what remains after some generated oil may have migrated away, but PI still follows the stated ratio.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15956,7 +15956,7 @@
     "rationale": "Substituting \u03c1 = 0.85 g/cm\u00b3 gives API = 141.5/0.85 \u2212 131.5 \u2248 166.5 \u2212 131.5 \u2248 35. This reflects the inverse relationship: lower density corresponds to higher API. The value is therefore in the mid-30s rather than the heavy-oil range (~15\u201320 or lower).",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -15999,7 +15999,7 @@
     "rationale": "The chapter emphasizes that maturation is an exponential function of temperature (Arrhenius-type behavior) and notes that when temperatures exceed roughly 130\u2013140\u00b0C, maturity can increase quickly and the role of time becomes less decisive. A long duration at 120\u00b0C can mature a rock, but a shorter exposure at 155\u00b0C can drive much faster transformation. Therefore Rock B is expected to be more mature in many practical cases.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16041,7 +16041,7 @@
     "rationale": "Primary migration refers to the initial expulsion step: hydrocarbons leaving the source rock after generation and entering nearby rocks. Updip movement through carrier beds is part of secondary migration, and production-driven changes are not how the chapter defines primary migration.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16083,7 +16083,7 @@
     "rationale": "The chapter notes that reduced pressure (from uplift or production drawdown) can cause significant dissolved gas to exsolve and form a separate gas phase. It also emphasizes that oil has generally low solubility in water, so the key effect is gas bubbling out rather than oil dissolving.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16126,7 +16126,7 @@
     "rationale": "The chapter argues that, on a regional scale, hydrocarbons are not usually present as a connected phase because average hydrocarbon saturation is low. As a result, large-scale pressure gradients mainly move water, while disconnected hydrocarbon droplets are held in place by capillary effects.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16168,7 +16168,7 @@
     "rationale": "The void ratio is defined as V\u1d63 = \u03c6/(1-\u03c6). Substituting \u03c6 = 0.20 gives V\u1d63 = 0.20/0.80 = 0.25. The other options correspond to either porosity itself or incorrect manipulations of the ratio.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16212,7 +16212,7 @@
     "rationale": "The chapter explains that in tight shale matrices, oil cannot migrate through intergranular pores because permeability is too low and capillary entry pressure too high. Petroleum generation then contributes to overpressure until fracture pressure is reached, allowing expulsion through fractures.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16254,7 +16254,7 @@
     "rationale": "The chapter treats secondary migration as multi-phase flow where connectivity matters. When oil saturation is low, oil is not a continuous phase and capillary forces keep droplets from moving, so the relative permeability to oil is very small (the text notes very low mobility below roughly 20\u201330% oil saturation).",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16297,7 +16297,7 @@
     "rationale": "The density difference is \u0394\u03c1 = 1.10\u22120.80 = 0.30 g/cm\u00b3. In the chapter\u2019s scaling, a 100 m column gives a pressure difference of \u0394\u03c1 MPa, so 150 m gives 1.5\u00d70.30 = 0.45 MPa. This is the excess pressure available to help overcome capillary resistance along a connected pathway.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16341,7 +16341,7 @@
     "rationale": "The chapter links shale matrix permeability to the size of the largest connected pores, and notes that when connecting throats drop below roughly the scale of asphaltene-sized components, selective exclusion (sieving) should occur. Under such conditions, oil migration is inferred to require fractures rather than intergranular flow through the shale matrix.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16384,7 +16384,7 @@
     "rationale": "The chapter emphasizes that the petroleum phase can have higher pressure than the water phase, but the difference is sustained by capillary forces. Because fracturing onset depends on the stress state and the pressure in the water-saturated pore system of the seal, buoyancy does not automatically raise the critical water pressure to fracture. Once a fracture forms and hydrocarbons become the continuous phase within it, hydrocarbon pressure can then govern whether fractures stay open.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16427,7 +16427,7 @@
     "rationale": "The chapter argues that leakage by fracturing tends to initiate at the top of the highest structure within a pressure compartment, where the intersection with fracture conditions is most easily met. If the structures communicate through a permeable carrier, the higher structure can act as a pressure relief path, making it less likely that the deeper structure reaches conditions needed to fracture and leak.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16469,7 +16469,7 @@
     "rationale": "Logs are recorded continuously along the borehole, so they show both gradual and abrupt property changes bed-by-bed. They also measure formation properties in place, which can differ from laboratory measurements on core or cuttings due to handling and non-reservoir conditions at surface. Cuttings and limited cores typically cannot represent the entire drilled interval with the same continuity.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16512,7 +16512,7 @@
     "rationale": "Radioactivity measurements do not require the same direct electrical contact with the formation as most electrical logs. Gamma radiation can penetrate steel casing sufficiently for logging to be performed after casing is set. In contrast, many electrical measurements depend strongly on borehole wall conditions and direct interaction with the formation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16554,7 +16554,7 @@
     "rationale": "In most sedimentary rocks, electrical conduction occurs mainly through the pore fluid rather than through the mineral grains. Higher dissolved salt content increases the pore fluid\u2019s ability to conduct current, which decreases resistivity. With similar pore structure, the main difference becomes the pore water salinity.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16597,7 +16597,7 @@
     "rationale": "Many tools are sensitive to borehole geometry and tool contact with the wall, so washouts and irregular holes can create misleading responses. The caliper log indicates where the hole size differs from the bit size and where mudcake or caving may be present. This helps distinguish true formation changes from borehole-related artifacts.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16639,7 +16639,7 @@
     "rationale": "Overbalanced mud pressure drives filtrate into the formation, producing a sequence from mudcake at the wall to zones deeper in the rock. The flushed zone is described as the region where the primary pore fluids have been largely replaced by drilling-fluid filtrate. Farther out, replacement is only partial in the invaded zone.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16681,7 +16681,7 @@
     "rationale": "Formation factor is defined using the rock resistivity at 100% water saturation relative to the water resistivity, so it is meant to reflect rock framework effects rather than the water\u2019s salinity itself. The chapter links F to porosity and to how well the pore system is cemented (via the cementation exponent and tortuosity). A larger F indicates electrical pathways are more restricted, commonly associated with lower porosity and/or more cemented, tortuous pore space.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16723,7 +16723,7 @@
     "rationale": "From the chapter, Sw = (F\u00b7Rw/Rt)^(1/n). Here F\u00b7Rw/Rt = (12\u00d70.15)/2.7 = 0.6667, and with n = 2, Sw = \u221a0.6667 \u2248 0.82. The other options correspond to using an incorrect exponent or an incorrect ratio.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16765,7 +16765,7 @@
     "rationale": "The SP response relies on naturally generated electrical potentials associated with differences in electrolyte concentrations between borehole and formation fluids. The chapter notes that SP readings cannot be obtained when oil-based mud is used. The other explanations do not align with the described measurement principle.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16809,7 +16809,7 @@
     "rationale": "The chapter explains that spectral gamma tools can separate K, U, and Th contributions. It notes that thorium in shales tends to vary less than uranium and potassium, so a Th-based interpretation can improve shale estimates when K is influenced by non-shale minerals. This is particularly relevant where sands contain mica or K-feldspar.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16853,7 +16853,7 @@
     "rationale": "The chapter associates fining-upward successions with fluvial channels and notes that gamma/SP logs commonly capture such upward trends. A bell-shaped gamma motif corresponds to a cleaner base and increasing shale influence upward. The other choices conflict with the chapter\u2019s described log behavior for coarsening-upward units, evaporites, and coal.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16897,7 +16897,7 @@
     "rationale": "The chapter explains that when the well path is nearly parallel to layering, the log investigation volume can include contributions from different beds rather than cutting cleanly across them. This causes transitions between lithologies to be recorded as smeared or gradual even if the geological contact is abrupt. The effect is geometric and is distinct from tool-specific physics like gamma penetration.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16941,7 +16941,7 @@
     "rationale": "The chapter notes that circulating mud is not in thermal equilibrium with the formation, so temperatures recorded during logging may not represent true formation temperature. After circulation stops, the mud temperature trends toward the formation temperature, and plotting the time-dependent change allows an estimate by extrapolation. It also emphasizes that equilibrium can take days to weeks, creating uncertainty if not properly corrected.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -16983,7 +16983,7 @@
     "rationale": "In hydrocarbon exploration, reflection seismic is the standard method because reflections from boundaries in layered rocks can be processed into 2D or 3D subsurface images. Refraction and surface-wave methods have other applications, but they are not the primary tools for detailed imaging of traps and reservoir-scale features described in the chapter.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17025,7 +17025,7 @@
     "rationale": "Shear waves require the medium to resist shear strain, but fluids have essentially no shear strength. The chapter states that S-waves do not travel through fluids, which is why S-wave propagation is absent in the fluid part at a fluid\u2013solid interface like the seafloor.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17067,7 +17067,7 @@
     "rationale": "The chapter distinguishes typical source choices by setting: air-guns are standard for marine acquisition, while vibrators and explosives are common land sources. This reflects practical coupling of energy into water versus into the ground.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17109,7 +17109,7 @@
     "rationale": "For normal incidence, the reflection coefficient depends on the contrast in P-impedance, which is the product of density and P-wave velocity. Large changes in both parameters create a large impedance contrast and therefore a larger fraction of energy is reflected back to the surface.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17151,7 +17151,7 @@
     "rationale": "The Nyquist frequency is defined as 1/(2\u0394t). With \u0394t = 0.002 s, the Nyquist frequency is 1/(2\u00d70.002) = 250 Hz. Frequencies above this would be folded back into lower frequencies if present in the signal.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17193,7 +17193,7 @@
     "rationale": "In the convolutional view, the wavelet controls how reflectivity is mapped into the recorded trace. If the wavelet is wrong, the inversion can fit the seismic but assign incorrect reflectivity (and therefore incorrect impedance contrasts), leading to misleading reservoir-quality interpretations.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17235,7 +17235,7 @@
     "rationale": "Substituting into the formula gives F = (240\u00d712.5)/(2\u00d725) = 3000/50 = 60. Fold represents the number of traces contributing to a stacked trace at a midpoint/cell, and higher fold generally supports better noise suppression during stacking.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17277,7 +17277,7 @@
     "rationale": "Because seismic energy propagates as expanding wavefronts, reflections and diffractions can originate from features that are not directly beneath a 2D receiver line. The chapter notes that 3D acquisition samples the wavefield more completely (multiple streamers, azimuths, and offsets), which reduces out-of-plane ambiguity and improves interpretability.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17319,7 +17319,7 @@
     "rationale": "Stretch muting removes the severely stretched early-time samples, which can also remove substantial parts of the far-offset data. The chapter explains that this can leave little fold at early times, weakening the stacking benefit and potentially degrading interpretability despite reducing stretch-related distortion.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17361,7 +17361,7 @@
     "rationale": "The chapter contrasts the two designs: patch layouts (source lines perpendicular to receiver lines) are described as producing a relatively wide range of azimuths. Swath layouts (parallel source and receiver lines) are described as having narrower azimuth range but providing more uniform offset sampling and better near-offset coverage.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17403,7 +17403,7 @@
     "rationale": "Compute Rf = sqrt((3000\u00d72000)/(2\u00d730)) = sqrt(6,000,000/60) = sqrt(100,000) \u2248 316 m. The Fresnel zone represents the lateral area that contributes most strongly to a reflection event, so its size sets a practical limit on horizontal detectability.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17446,7 +17446,7 @@
     "rationale": "The chapter emphasizes that 4D interpretation depends on relating seismic-attribute differences to changes in pore fluid and pore pressure during production. It also notes that differences in acquisition geometry, orientation, processing, and data quality can introduce significant noise, so these must be corrected as much as possible.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17488,7 +17488,7 @@
     "rationale": "Seismic amplitudes arise from contrasts in elastic properties, not directly from facies descriptions. Rock physics provides the bridge from geological parameters (e.g., porosity, clay, cementation) to elastic properties used in seismic interpretation, reducing interpretational ambiguity.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17531,7 +17531,7 @@
     "rationale": "The chapter emphasizes that reflection amplitudes respond to elastic contrasts, which can be strongly influenced by lithology and microstructure (e.g., cement, clay volume, sorting). Assuming the rock frame stays fixed while only the fluid changes can miss real geologic variability between brine and hydrocarbon zones or laterally between depositional settings.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17573,7 +17573,7 @@
     "rationale": "The chapter highlights using a shear-velocity\u2013porosity domain to reduce fluid effects compared with compressional attributes. This makes it easier to diagnose microstructural changes such as cementation and sorting from elastic measurements.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17616,7 +17616,7 @@
     "rationale": "In the chapter\u2019s diagnostic definition, sorting is highest when points lie on the contact-cement model and decreases as points move away toward the zero-porosity end member. That movement is interpreted as increasing pore-filling (non-cementing) material that reduces porosity, not as a direct temperature-controlled depth trend.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17659,7 +17659,7 @@
     "rationale": "When clay is pore-filling within a grain-supported sand framework, it tends to reduce porosity and increase the stiffness of the pore-filling material, increasing velocity. The chapter describes a turning point (critical clay content) beyond which the framework changes and the trend reverses.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17701,7 +17701,7 @@
     "rationale": "The chapter describes an overturned V-shape behavior for acoustic impedance across sand-to-shale transitions, which can cause sand/shale overlap. By contrast, Vp/Vs shows a more consistently increasing trend with increasing clay content, reducing that particular ambiguity.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17744,7 +17744,7 @@
     "rationale": "The chapter links the onset of a key shale mineral reaction (smectite to illite) to porosity reduction and stiffer shale behavior, and also notes concurrent quartz generation that can contribute to sandstone cementation if connected pathways exist. These processes can cause seismic signature changes that are unrelated to pore-fluid changes.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17788,7 +17788,7 @@
     "rationale": "The chapter explains that early cementation is a microstructural stiffening that can shift brine sands into regions often associated with hydrocarbon-bearing sands in AI\u2013Vp/Vs space. It also describes net-to-gross/interbedding effects as moving the response toward shale clusters and acting in the opposite direction to cement effects, creating interpretation overlap.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17830,7 +17830,7 @@
     "rationale": "Applying the provided formula gives R(0) = (10 \u2212 8)/(10 + 8) = 2/18 \u2248 0.11. A positive value indicates the acoustic impedance increases from the upper to the lower layer.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17872,7 +17872,7 @@
     "rationale": "The chapter states that Gassmann\u2019s relations predict a fluid-dependent change in bulk modulus (compressibility) but not in shear modulus for isotropic rocks under the stated assumptions. Velocities can still change because both density and bulk modulus can change with fluid.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17915,7 +17915,7 @@
     "rationale": "The chapter explains that the commonly used uniform-mixing effective fluid (Reuss/isostress) assumes pressure equilibration during a seismic period. When phases are patchy at scales larger than the equilibration length, pressure gradients cannot relax and the effective rock response is stiffer, leading to higher velocities and impedances than in the uniform case.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17957,7 +17957,7 @@
     "rationale": "The chapter links R(0) to acoustic impedance contrast and emphasizes that G is strongly affected by contrasts related to Vp/Vs across the interface. Using both attributes provides two independent constraints, helping reduce fluid/lithology ambiguities that can persist if only near-stack amplitude (a proxy for R(0)) is used.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -17999,7 +17999,7 @@
     "rationale": "The \u201cfourth dimension\u201d refers to time between surveys, so 4D is fundamentally repeated (time-lapse) seismic acquisition and comparison. The method can be applied even if the repeated surveys are 2D lines, as long as the intent is to monitor change through time. Wave-type count, bandwidth strategy, or marine-only requirements are not what defines 4D.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18041,7 +18041,7 @@
     "rationale": "The chapter highlights repeated seismic as a tool not only for producing fields, but also for monitoring injected CO2 during underground storage in saline aquifers. The other options describe exploration or interpretation tasks that do not require repeated surveys through time in the way 4D does.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18084,7 +18084,7 @@
     "rationale": "The chapter emphasizes that production can alter saturation, pore pressure, temperature, and layer thickness (through compaction or stretching), and these are the key drivers considered in 4D seismic interpretation. The other options list properties that may matter for reservoir behavior or geology, but they are not presented as the primary production-driven variables in the 4D context here.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18126,7 +18126,7 @@
     "rationale": "The chapter relates relative reflectivity change to the ratio of the production-induced impedance change to the original impedance contrast across the interface. Using the given numbers, \u0394R/R \u2248 8% / 18% \u2248 0.44, i.e., about 44%. The other options confuse the ratio with one of the input percentages or with an unrelated subtraction.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18169,7 +18169,7 @@
     "rationale": "The chapter separates 4D interpretation into amplitude-based and travel-time-shift-based approaches, and notes that amplitude differencing has historically been the most robust in practice. The other options are different monitoring or processing activities not presented as the primary robust 4D comparison method here.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18211,7 +18211,7 @@
     "rationale": "The chapter notes that precise time shifts can be picked to sub-millisecond accuracy and that this observable is proportional to changes in pay thickness, making it a direct quantitative measure. It also contrasts timeshift as an averaged interval effect, whereas amplitude differences are more local to interfaces. Timeshifts do not automatically remove repeatability requirements, nor do they directly give density without additional constraints.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18253,7 +18253,7 @@
     "rationale": "The intent of NRMS is to quantify how well the seismic measurements repeat; using a window with no expected 4D signal reduces contamination from real production-induced changes. The chapter also cautions that geology can affect NRMS, so it is not automatically comparable between fields, and NRMS is frequency-band dependent.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18297,7 +18297,7 @@
     "rationale": "Here P/P0 = 1.5/6 = 0.25, so VP/VP0 \u2248 0.25^(1/6) \u2248 0.79. That corresponds to a decrease of roughly 21%. The chapter also notes that real rocks often show weaker sensitivity than this idealised curve, but the calculation follows the provided exponent model.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18340,7 +18340,7 @@
     "rationale": "A saturation-driven effect tied to oil being replaced by water is expected to be closely associated with the oil\u2013water contact region. The chapter notes that when amplitude change extends beyond the oil\u2013water contact into areas not explained by saturation movement alone, a pore-pressure effect is a plausible explanation. This motivates the use of near/far amplitude information (AVO) plus rock physics to separate the two contributions.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18382,7 +18382,7 @@
     "rationale": "The chapter points out that seismic responds to changes in acoustic impedance and can be influenced by both pressure and saturation, whereas EM methods are not very pressure sensitive. That difference in sensitivity makes EM a useful companion for separating and constraining saturation changes that are difficult to quantify from seismic alone. The chapter also notes that EM spatial resolution can be limited at the low frequencies often used.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18425,7 +18425,7 @@
     "rationale": "Tracer breakthrough timing reflects how efficiently the injected water phase can move between wells. A very early detection implies an unusually effective connection, commonly an open structural feature (fault/fracture) or a high-permeability layer providing preferential flow. Capillary entry pressure and fluid contacts do not, by themselves, create a fast well-to-well pathway for a water-dissolved tracer.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18468,7 +18468,7 @@
     "rationale": "Horizontal wells can traverse long distances within the reservoir interval and contact multiple separated flow units, increasing the drained volume relative to a vertical well that samples only a narrow column. This is especially valuable where internal barriers or small compartments limit pressure communication. The improvement is due to well geometry and reservoir contact, not changes to pore-scale physics.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18511,7 +18511,7 @@
     "rationale": "The chapter describes repeated seismic acquisition as a way to follow shifts in OWC/GOC because elastic properties change with saturation. Density and velocity contrasts between hydrocarbon-filled and water-filled rock alter seismic response, enabling time-lapse interpretation. The other options describe processes not presented as primary drivers of a 4D seismic signature for contact tracking.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18554,7 +18554,7 @@
     "rationale": "The text highlights that free gas provides pressure support and that premature gas production can cause a strong pressure drop. That pressure reduction and contact distortion complicate recovery of oil left behind. The key is reservoir energy management rather than wettability changes or capillary rise mechanisms.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18596,7 +18596,7 @@
     "rationale": "The chapter links a wetting angle above 90\u00b0 to an oil-wet condition, where the solid surface is preferentially wetted by oil. In that situation the capillary effect shifts the local interface downward relative to the general OWC. If the system is water-wet (angle below 90\u00b0), the capillary effect instead elevates the water level in small conduits.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18639,7 +18639,7 @@
     "rationale": "The chapter explains that capillary forces are stronger in small pore throats, drawing water upward and creating a thicker saturation transition rather than an abrupt contact. Resistivity responds to water saturation, so the log-derived contact can differ from the structural OWC by a few metres. This is a petrophysical effect tied to pore-throat size, not to porosity-only measurement or the absence of connate water.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18681,7 +18681,7 @@
     "rationale": "The chapter defines net-to-gross as the proportion of the total reservoir volume that qualifies as pay (productive rock) relative to the total mapped reservoir volume. This accounts for tight or low-quality intervals that may be above the OWC but still contribute little to flow. It is not a fluid property ratio or a reinjection metric.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18723,7 +18723,7 @@
     "rationale": "Using the given relation Vp = Vr\u00b7(N/G)\u00b7phi_a\u00b7Sat: 2.0\u00d710^8 \u00d7 0.50 = 1.0\u00d710^8 m^3 of net rock volume, then \u00d70.18 gives 1.8\u00d710^7 m^3 of pore volume, and \u00d70.70 gives 1.26\u00d710^7 m^3 of hydrocarbons. The other options result from omitting one of the multipliers or misplacing a decimal factor.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18766,7 +18766,7 @@
     "rationale": "The chapter defines relative permeability as a ratio comparing flow capacity under two-phase conditions to the single-phase case. This captures how the presence of another phase reduces the effective flow pathways available. Viscosity and saturation influence flow behavior but are not the definition of relative permeability itself.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18809,7 +18809,7 @@
     "rationale": "The chapter emphasizes that pressure support depends strongly on how much permeable rock volume communicates with the reservoir and on external fluid supply. An isolated sand body bounded by shales and sealing faults receives little water drive, so pressure can fall quickly; this raises effective stress and can promote compaction-related changes. A reservoir connected to a large sandstone aquifer generally receives stronger pressure support and depletes more slowly.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18853,7 +18853,7 @@
     "rationale": "The chapter links vertical permeability structure to displacement patterns during water injection. In a fining-upward sequence, the basal part is typically the most permeable pathway, so injected water can move quickly along it and short-circuit to a producer, bypassing oil in less permeable beds. A coarsening-upward sequence more often favors hydrocarbon flow near the top and can yield a different sweep pattern.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18897,7 +18897,7 @@
     "rationale": "The chapter describes a diagnostic sign of mechanical formation damage: if reversing flow briefly restores permeability, it indicates blockage by transported fine particles rather than an irreversible chemical cement. This aligns with the idea that loose clays and small grains can move with produced water and obstruct pore throats. Chemical precipitation and compaction would not typically show a quick, reversible permeability improvement upon flow reversal.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18940,7 +18940,7 @@
     "rationale": "In shallow, relatively cool reservoirs, bacteria can alter the oil, leading to biodegraded, asphaltic, high-viscosity material typical of tar sands. Deep, hot conditions instead tend to thermally alter hydrocarbons in different ways. Cementation and compaction affect reservoir quality but are not the primary driver of biodegradation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -18982,7 +18982,7 @@
     "rationale": "The chapter indicates that sandstones that experienced higher temperatures during deeper burial can become effectively \u201csterilised,\u201d making subsequent biodegradation of later oil charges less likely. A sandstone that remained shallow and cool is more prone to microbial alteration. Quartz cementation trends are discussed separately and do not by themselves explain the \u201csterilisation\u201d effect described.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19025,7 +19025,7 @@
     "rationale": "SAGD relies on a paired horizontal-well system with injection above production so that heating lowers viscosity and gravity moves the mobilized oil downward. This geometry is central to the process and differs from single-well cyclic methods. Cold-water dissolution is not the mechanism described for SAGD in the chapter.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19068,7 +19068,7 @@
     "rationale": "The chapter emphasizes that shale interbeds can act as vertical barriers that hinder upward/downward movement, affecting steam and heated oil migration. This reduces vertical communication and can impede gravity drainage efficiency. Thermal conductivity and oil density changes are not presented as the controlling effects of shale stringers.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19110,7 +19110,7 @@
     "rationale": "The ratio given is 1 barrel burned per 3 barrels produced, so the burned volume is 90,000/3 = 30,000 bbl/day. This highlights the substantial on-site energy penalty of generating steam for thermal recovery. The other options correspond to incorrect ratios or arithmetic.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19152,7 +19152,7 @@
     "rationale": "Oil shales are described as organic-rich source rocks that are insufficiently mature, so most hydrocarbons have not been generated. The chapter explains that recovery therefore relies on mining and high-temperature heating (pyrolysis) to generate petroleum from kerogen. Reservoir displacement methods like waterflooding are not the central mechanism for these immature rocks.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19194,7 +19194,7 @@
     "rationale": "The chapter attributes the difference mainly to contrasting thermal histories: the Oslo-area alum shale was heated to much higher temperatures during deep burial and lost most of its hydrocarbons during tectonic events. In Sweden, the unit was not buried as deeply and retains more material that can be converted to oil during pyrolysis. The explanation is therefore maturity and expulsion history, not simply present-day depth or age.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19236,7 +19236,7 @@
     "rationale": "The chapter explains that coal\u2019s microporous fabric creates a very large surface area, allowing significant methane to be adsorbed. This storage mode differs from conventional reservoirs where free gas in interconnected pores dominates. Hydrate storage is discussed for marine sediments, not coal seams.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19279,7 +19279,7 @@
     "rationale": "The chapter notes that gas flow from coal relies on thin fractures (cleats), because the coal matrix itself has very low permeability. These fractures are linked to deformation/uplift and provide connected pathways to the well. Depositional sorting and dissolution channels are not presented as the key permeability mechanism for CBM.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19322,7 +19322,7 @@
     "rationale": "The chapter describes shale gas as being held in tiny pore spaces and also partly adsorbed on remaining organic material (coke) and clays. This differs from conventional traps dominated by free gas in relatively permeable pore networks. Large, depositional open fractures are not presented as the primary storage mechanism.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19365,7 +19365,7 @@
     "rationale": "Temperature increases by 30\u00b0C per km, so reaching 20\u00b0C from a 2\u00b0C starting point requires an 18\u00b0C increase. That corresponds to 18/30 = 0.6 km below the seafloor. This aligns with the chapter\u2019s qualitative statement that hydrates are only stable within a few hundred meters beneath the seafloor in typical settings.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19407,7 +19407,7 @@
     "rationale": "Using the stated expansion ratio, gas volume is 3 \u00d7 160 = 480 m\u00b3. The key point is that hydrate holds methane in a condensed form that expands greatly upon dissociation. The other options correspond to using the wrong multiplier or an incorrect ratio.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19449,7 +19449,7 @@
     "rationale": "The chapter organizes the shelf into three principal provinces to discuss similarities and contrasts in tectonic history, stratigraphy, and petroleum systems. Those provinces are the North Sea, the Mid-Norwegian margin, and the Western Barents Sea. The other options mix smaller structural elements or regions not used as the main three-part division.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19492,7 +19492,7 @@
     "rationale": "The chapter links large basin subsidence on continental crust to lithospheric stretching and thinning, which requires the crust-mantle system to sink to preserve isostatic balance. Sediment loading can enhance subsidence but is not presented as the prerequisite mechanism. Compression and simple eustatic flooding do not explain the rift-related subsidence history described.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19534,7 +19534,7 @@
     "rationale": "The North Sea is described as undergoing several rift phases separated by post-rift subsidence stages. The major rift-related stretching episodes identified are late Carboniferous, Permian\u2013Early Triassic, and Late Jurassic. The other options include periods not presented as the main rifting stages for this basin.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19577,7 +19577,7 @@
     "rationale": "The chapter describes a characteristic sequence: rifting (stretching/thinning) followed by a cooling stage. Cooling of the lithosphere after rifting leads to thermal contraction and regional subsidence. This is distinct from local compaction-only effects or compressional loading.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19619,7 +19619,7 @@
     "rationale": "The chapter notes that salt movement affected the Central Graben area already in Triassic time and in places persisted into younger periods. Because salt can flow and reactivate structures independent of the timing of main rifting, it can create significant pre-Jurassic structuring and later overprinting. The other options do not match the described mechanism for early deformation in this area.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19662,7 +19662,7 @@
     "rationale": "The chapter describes Early Cretaceous conditions where uplifted rift structures stayed as islands for much of the Early Cretaceous, leading to erosion or non-deposition on highs. In contrast, the deepest parts of rifts could preserve more continuous sedimentation across the boundary. This creates a regionally strong unconformity that is locally reduced in deep depocentres.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19705,7 +19705,7 @@
     "rationale": "The chapter links the best Upper Jurassic source rocks to rift-related basin topography that produced poorly ventilated bottom waters, allowing much organic matter to avoid oxidation. Relatively high sedimentation also aided preservation by rapid burial. Well-oxygenated shelves and high-energy sandy settings generally reduce preservation of dispersed marine organic matter.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19748,7 +19748,7 @@
     "rationale": "The chapter describes the Ness Formation as the delta-top interval dominated by fluvial and lagoonal environments and including coal. Rannoch and Etive are associated with more marine-influenced, progradational delta-front/shoreface settings, while Tarbert reflects transgressive reworking into better-sorted marine sand. The facies listed most closely match a delta-top package.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19791,7 +19791,7 @@
     "rationale": "The chapter attributes the preserved chalk porosity largely to overpressure created by low-permeability clay-rich seals, which lowers effective stress and reduces both mechanical compaction and pressure solution. This allows relatively high porosity to persist even at several kilometres depth. Glacial unloading and wholesale quartz replacement are not presented as the controlling explanation for Ekofisk porosity.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19834,7 +19834,7 @@
     "rationale": "The chapter explains that Ekofisk requires more than simple structural closure because the oil column exceeds the closure height. A diagenetic/capillary barrier associated with low permeability can inhibit lateral escape even below the mapped spill point. The other options either remove the concept of trapping or invoke basin-wide controls not used to explain this local observation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19876,7 +19876,7 @@
     "rationale": "The chapter states that rotated fault blocks generated during rifting are the dominant trap type along both margins of the Viking Graben. It also notes that sealing faults are frequently important for these traps. The other trap types listed do not match the province-scale description given for the northern North Sea.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19918,7 +19918,7 @@
     "rationale": "The chapter uses \u201ckitchen area\u201d for the deeper, more strongly buried parts of the basin where the Upper Jurassic source rock reaches sufficient maturity to generate substantial hydrocarbons. These generated fluids then migrate into shallower traps such as rotated fault blocks. Shallow immature areas and reservoir-cementation problems are distinct concepts and not the definition of a kitchen area.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -19961,7 +19961,7 @@
     "rationale": "The chapter links leakage to pressure build-up sufficient to fracture the seal, allowing fluids to migrate upward into younger stratigraphy. It specifically notes that leaked oil and gas can accumulate in Palaeocene\u2013Eocene sand bodies deposited as turbidites. Fracture closure, coal formation, and instantaneous maturity reversal are not presented as the primary outcomes.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20004,7 +20004,7 @@
     "rationale": "The chapter describes the Utsira Formation as a thick sandstone that functions as a good aquifer, which implies high injectivity and storage capacity. This type of reservoir quality is central to CO2 injection feasibility. Basement rocks, tight evaporites, or thin Holocene silts do not match the stated injection target characteristics.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20046,7 +20046,7 @@
     "rationale": "The chapter identifies three main mid-Norwegian margin segments: the M\u00f8re, V\u00f8ring, and Lofoten\u2013Vester\u00e5len margins. The other options list North Sea structural elements or Barents Sea basins rather than the mid-Norwegian margin segmentation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20089,7 +20089,7 @@
     "rationale": "The chapter describes the Bivrost zone as separating sectors with distinct physiography, stretching, and break-up magmatism. Magmatism related to break-up is stated to be more voluminous to the south, while the less magmatic margin to the north was more susceptible to initial post-opening subsidence. The other options introduce contrasts not described in the chapter.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20132,7 +20132,7 @@
     "rationale": "The chapter states that drilling has shown the seaward-dipping reflector sequences to be basaltic lavas erupted subaerially and/or in shallow marine settings during the break-up phase. These lava stacks create a diagnostic dipping geometry on seismic data. Carbonate platforms, tills, and salt sheets are not presented as the origin of these particular reflector packages on the mid-Norwegian volcanic margin.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20175,7 +20175,7 @@
     "rationale": "The chapter links intrusion of magma into organic-rich sedimentary rocks to rapid generation of greenhouse gases. These gases were then vented in explosive events, forming many hydrothermal vent complexes along the margin. The other options do not match the described cause-and-effect connection between intrusion, gas generation, and vent formation.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20218,7 +20218,7 @@
     "rationale": "The chapter explains that pressure did not build far above hydrostatic on the eastern side because fluids could drain through Jurassic sandstones toward the coast. Lower pore pressure reduces the risk that pressure will reach fracture strength and breach the seal. The other options confuse pressure with buoyancy, viscosity, or maturity in ways not supported by the chapter\u2019s discussion.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20260,7 +20260,7 @@
     "rationale": "The chapter emphasizes that at great burial depth, reservoir quality depends strongly on how much quartz cement forms. It notes that chlorite coatings on grains can hinder quartz precipitation, allowing porosity to remain relatively high (on the order of 20\u201325%) even at depth. Where such coatings are absent and quartz dominates, porosity can be much lower.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20302,7 +20302,7 @@
     "rationale": "The chapter describes a timing mismatch: source rocks became mature before important Upper Cretaceous\u2013Lower Tertiary reservoirs were deposited and before the large traps visible today formed. In such cases, much of the earlier-generated oil may not be trapped, and later traps may preferentially retain gas or gas that formed from oil at depth. This is a classic charge\u2013trap timing risk highlighted for the province.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20344,7 +20344,7 @@
     "rationale": "Opened area is computed by applying the two successive halves: 2.2 million km\u00b2 \u00d7 0.5 \u00d7 0.5 = 0.55 million km\u00b2. This calculation follows directly from the proportions provided in the chapter. The other options correspond to using only one reduction or none.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20386,7 +20386,7 @@
     "rationale": "The chapter identifies three main rift phases for the western Barents Sea spanning Late Devonian?\u2013Carboniferous, Middle Jurassic\u2013Early Cretaceous, and Early Tertiary times, with multiple pulses within each. This framework is used to interpret the basin architecture and later margin development. The other options do not reflect the phase grouping stated.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
@@ -20429,7 +20429,7 @@
     "rationale": "The chapter explains that removal of large overburden thickness reduces pressure, promoting gas exsolution from oil and expansion of gas that can drive oil out of traps and contribute to seal breaching/spillage. It also notes that cooling of source rocks during uplift can largely stop continued hydrocarbon generation, limiting replenishment. This combination helps account for gas-dominated accumulations and residual oil columns.",
     "sources": [
       {
-        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_id": "bjorlykke_petroleum_geoscience_2010",
         "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
         "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
         "source_type": "textbook",
