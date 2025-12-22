@@ -27,20 +27,20 @@ def load_system_prompt() -> str:
 
 def generate_mcqs(
     chapter_text: str,
-    num_questions: int = 10,
+    num_questions: str | int = "5-12",
     source_info: str = "",
     model: str = "gpt-5.2",
     reasoning_effort: str = "high"
 ) -> list[dict]:
     """
-    Generate MCQs from chapter text.
+    Generate MCQs from chapter text using OpenAI Responses API.
 
     Args:
         chapter_text: The chapter content to generate questions from
-        num_questions: Number of questions to generate
+        num_questions: Number of questions - can be int (e.g., 10) or range string (e.g., "5-12")
         source_info: Optional source metadata (book title, chapter, etc.)
-        model: OpenAI model to use
-        reasoning_effort: Reasoning effort level (low, medium, high)
+        model: OpenAI model to use (gpt-5.2, gpt-5.2-mini, etc.)
+        reasoning_effort: Reasoning effort level (none, low, medium, high)
 
     Returns:
         List of MCQ dictionaries
@@ -49,7 +49,13 @@ def generate_mcqs(
 
     system_prompt = load_system_prompt()
 
-    user_message = f"""Generate {num_questions} multiple-choice questions from the following chapter.
+    # Format question count instruction
+    if isinstance(num_questions, str) and "-" in num_questions:
+        question_instruction = f"between {num_questions.replace('-', ' and ')} questions"
+    else:
+        question_instruction = f"exactly {num_questions} questions"
+
+    user_message = f"""Generate {question_instruction} from the following chapter.
 
 {f"Source: {source_info}" if source_info else ""}
 
@@ -66,7 +72,7 @@ CHAPTER TEXT:
 
 ---
 
-Generate {num_questions} questions as a JSON array."""
+Generate {question_instruction} as a JSON array. Choose the exact number based on how much quality content the chapter provides - prefer more questions for content-rich chapters."""
 
     response = client.responses.create(
         model=model,
@@ -129,11 +135,20 @@ def add_metadata(
     return questions
 
 
-def save_questions(questions: list[dict], output_path: str):
-    """Save questions to JSONL file."""
+def save_questions(questions: list[dict], output_path: str, format: str = "json"):
+    """Save questions to file.
+
+    Args:
+        questions: List of MCQ dictionaries
+        output_path: Output file path
+        format: Output format - "json" (array, pretty-printed) or "jsonl" (one per line)
+    """
     with open(output_path, "w") as f:
-        for q in questions:
-            f.write(json.dumps(q) + "\n")
+        if format == "jsonl":
+            for q in questions:
+                f.write(json.dumps(q) + "\n")
+        else:  # json array format (default, matches existing benchmark)
+            json.dump(questions, f, indent=4)
     print(f"Saved {len(questions)} questions to {output_path}")
 
 
