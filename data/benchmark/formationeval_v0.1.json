@@ -17463,5 +17463,516 @@
       "calc_required": false,
       "contamination_risk": "medium"
     }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_rock_physics_link_001",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Rock Physics",
+      "Quantitative Seismic Interpretation"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "In quantitative seismic interpretation, what is the main purpose of using rock physics models alongside seismic amplitudes?",
+    "choices": [
+      "To replace seismic interpretation with a purely geological facies model built from cores",
+      "To connect geological characteristics of the rock to elastic properties that control reflection amplitudes",
+      "To remove all dependence on well data by using universal velocity\u2013porosity equations",
+      "To ensure amplitude anomalies are interpreted only as fluid changes rather than rock changes"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "Seismic amplitudes arise from contrasts in elastic properties, not directly from facies descriptions. Rock physics provides the bridge from geological parameters (e.g., porosity, clay, cementation) to elastic properties used in seismic interpretation, reducing interpretational ambiguity.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter\u2019s framing of rock physics as the connection between geological parameters and seismic observables."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_lithology_substitution_002",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Lithology Substitution",
+      "Seismic Interpretation Uncertainty"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "When predicting seismic response away from existing wells, why can lithology substitution be as important as fluid substitution?",
+    "choices": [
+      "Because pore fluid properties are nearly constant across a basin, while lithology always changes abruptly",
+      "Because seismic amplitudes are controlled only by density contrasts, which are unaffected by pore fluids",
+      "Because fluid substitution is only valid for carbonates, while lithology substitution is valid for clastics",
+      "Because changes in rock texture and mineral/clay/cement content can alter elastic properties as much as changing the pore fluid"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter emphasizes that reflection amplitudes respond to elastic contrasts, which can be strongly influenced by lithology and microstructure (e.g., cement, clay volume, sorting). Assuming the rock frame stays fixed while only the fluid changes can miss real geologic variability between brine and hydrocarbon zones or laterally between depositional settings.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on why varying depositional/diagenetic rock properties can compete with fluid effects in seismic prediction."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_microstructure_diagnostics_003",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Rock Physics Diagnostics",
+      "Microstructure Interpretation"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A rock physics workflow aims to estimate sandstone texture parameters (e.g., cement amount and sorting) from logs. Which crossplot choice is most appropriate if you want to minimize direct pore-fluid influence on the elastic attribute?",
+    "choices": [
+      "Shear-wave velocity versus porosity",
+      "P-wave velocity versus porosity",
+      "Bulk density versus porosity",
+      "Acoustic impedance versus water saturation"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter highlights using a shear-velocity\u2013porosity domain to reduce fluid effects compared with compressional attributes. This makes it easier to diagnose microstructural changes such as cementation and sorting from elastic measurements.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the chapter\u2019s discussion of estimating cement volume and sorting using Vs\u2013porosity diagnostics to avoid strong fluid effects."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_sorting_diagnostics_004",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Sedimentology"
+    ],
+    "topics": [
+      "Sorting Estimation",
+      "Cement Diagnostics"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "In a diagnostic workflow where sorting is defined along constant-cement trends, what does it imply when a data point falls far from the contact-cement end member and trends toward the low-porosity end member (for the same cement volume trend)?",
+    "choices": [
+      "Sorting is interpreted as higher, because pore-filling material increases elastic stiffness",
+      "Sorting is unchanged, because cement volume alone controls the position on the trend",
+      "Sorting is interpreted as lower, because increasing non-cementing pore-fill is associated with reduced porosity",
+      "Sorting is interpreted as lower, because higher temperature directly forces sorting to decrease with depth"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "In the chapter\u2019s diagnostic definition, sorting is highest when points lie on the contact-cement model and decreases as points move away toward the zero-porosity end member. That movement is interpreted as increasing pore-filling (non-cementing) material that reduces porosity, not as a direct temperature-controlled depth trend.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Targets the chapter\u2019s specific diagnostic interpretation of sorting (0\u20131 scale) along constant-cement trends."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_sedimentology_clay_content_trends_005",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Sedimentology",
+      "Geophysics"
+    ],
+    "topics": [
+      "Sand/Shale Mixtures",
+      "Depositional Trends"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In a model where clay initially occupies the pore space of a load-bearing sand framework (before the system becomes clay-supported), what combined trend is expected as clay content increases toward the transition point?",
+    "choices": [
+      "Porosity decreases while P-wave velocity increases",
+      "Porosity increases while P-wave velocity increases",
+      "Porosity increases while P-wave velocity decreases",
+      "Porosity decreases while P-wave velocity decreases"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "When clay is pore-filling within a grain-supported sand framework, it tends to reduce porosity and increase the stiffness of the pore-filling material, increasing velocity. The chapter describes a turning point (critical clay content) beyond which the framework changes and the trend reverses.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Based on the described behavior of sand/shale mixtures as clay increases up to the critical clay content."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_vpvs_discrimination_006",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "Seismic Lithofacies",
+      "Vp/Vs Interpretation"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "When trying to separate clean sands from shales using crossplots that include gamma ray (as a clay indicator), why can a Vp/Vs versus gamma ray plot be less ambiguous than an acoustic impedance versus gamma ray plot?",
+    "choices": [
+      "Because Vp/Vs is independent of mineralogy, while acoustic impedance depends only on mineralogy",
+      "Because gamma ray directly measures pore pressure, which makes Vp/Vs unnecessary",
+      "Because Vp/Vs tends to increase with clay-rich facies, giving a more monotonic trend than acoustic impedance",
+      "Because acoustic impedance is unaffected by porosity changes, while Vp/Vs is controlled only by porosity"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter describes an overturned V-shape behavior for acoustic impedance across sand-to-shale transitions, which can cause sand/shale overlap. By contrast, Vp/Vs shows a more consistently increasing trend with increasing clay content, reducing that particular ambiguity.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Drawn from the chapter\u2019s discussion of facies separation using AI\u2013GR versus Vp/Vs\u2013GR crossplots."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_compaction_diagenesis_007",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Geophysics"
+    ],
+    "topics": [
+      "Compactional Trends",
+      "Shale Diagenesis"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A siliciclastic sequence is buried to conditions near 70\u201380\u00b0C. Which change is most relevant to expect for seismic properties based on the chapter\u2019s described compaction/diagenesis trends?",
+    "choices": [
+      "Shales become more permeable due to smectite formation, reducing overpressure risk",
+      "Sands lose all cement because smectite converts to illite and dissolves quartz",
+      "Both sands and shales show decreasing velocity because chemical compaction weakens the framework",
+      "Shales may stiffen and lose porosity due to smectite-to-illite transformation, while quartz cementation may begin in nearby sands"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter links the onset of a key shale mineral reaction (smectite to illite) to porosity reduction and stiffer shale behavior, and also notes concurrent quartz generation that can contribute to sandstone cementation if connected pathways exist. These processes can cause seismic signature changes that are unrelated to pore-fluid changes.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based question on the chapter\u2019s mechanical-to-chemical compaction transition and its seismic implications in sands and shales."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_rpt_cement_ntg_008",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics",
+      "Petrophysics"
+    ],
+    "topics": [
+      "Rock Physics Templates",
+      "Cementation Effects",
+      "Net-to-Gross Effects"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "In an AI versus Vp/Vs rock-physics template for siliciclastic reservoirs, which statement best captures how initial cementation and reduced net-to-gross can complicate fluid identification?",
+    "choices": [
+      "Both initial cement and reduced net-to-gross push data toward lower Vp/Vs and lower AI, mimicking strong gas effects",
+      "Initial cement can move brine sands toward the low Vp/Vs region expected for hydrocarbons, while reduced net-to-gross tends to shift responses toward shale-like behavior, opposing the cement trend",
+      "Initial cement mainly changes density but not stiffness, while net-to-gross mainly changes stiffness but not density, so fluid effects remain unambiguous",
+      "Both effects mainly alter gamma ray response, so they do not affect AI\u2013Vp/Vs interpretation once GR is known"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter explains that early cementation is a microstructural stiffening that can shift brine sands into regions often associated with hydrocarbon-bearing sands in AI\u2013Vp/Vs space. It also describes net-to-gross/interbedding effects as moving the response toward shale clusters and acting in the opposite direction to cement effects, creating interpretation overlap.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Integrates the chapter\u2019s discussion of RPT interpretation pitfalls: cementation versus net-to-gross trends in AI\u2013Vp/Vs space."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_avo_intercept_009",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "AVO Analysis",
+      "Zero-Offset Reflectivity"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "At a shale\u2013sand interface, acoustic impedance in the shale is 8.0 MRayl and in the sand is 10.0 MRayl. Using the zero-offset reflectivity expression R(0) = (AI2 \u2212 AI1)/(AI1 + AI2), what is R(0) for this interface?",
+    "choices": [
+      "0.11",
+      "0.20",
+      "-0.11",
+      "-0.20"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "Applying the provided formula gives R(0) = (10 \u2212 8)/(10 + 8) = 2/18 \u2248 0.11. A positive value indicates the acoustic impedance increases from the upper to the lower layer.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical application of the chapter\u2019s definition of AVO intercept (zero-offset reflectivity) from acoustic impedance contrast."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_gassmann_moduli_010",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Gassmann Theory",
+      "Fluid Substitution"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "According to Gassmann fluid substitution for isotropic rocks at seismic frequencies, what elastic-modulus behavior is expected when the pore fluid changes but the rock frame stays the same?",
+    "choices": [
+      "Both bulk modulus and shear modulus change because fluids affect all elastic constants",
+      "Shear modulus changes, but bulk modulus stays constant because fluids do not affect compressibility",
+      "Neither bulk nor shear modulus changes because only density changes during fluid substitution",
+      "Bulk modulus changes, while shear modulus remains the same"
+    ],
+    "answer_index": 3,
+    "answer_key": "D",
+    "rationale": "The chapter states that Gassmann\u2019s relations predict a fluid-dependent change in bulk modulus (compressibility) but not in shear modulus for isotropic rocks under the stated assumptions. Velocities can still change because both density and bulk modulus can change with fluid.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept check on the chapter\u2019s statement of Gassmann outcomes for bulk versus shear modulus during fluid changes."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_saturation_distribution_011",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Geophysics"
+    ],
+    "topics": [
+      "Uniform vs Patchy Saturation",
+      "Effective Fluid Modulus"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Two rocks have the same porosity and the same overall gas\u2013brine saturation, but one has fine-scale uniform mixing while the other has large-scale patchiness. Based on the chapter\u2019s discussion, which outcome is most consistent?",
+    "choices": [
+      "Uniform mixing typically produces higher velocities than patchy saturation because fluids cannot equilibrate",
+      "Patchy saturation typically produces higher velocities/impedances than uniform mixing because the effective response is stiffer",
+      "Both cases give identical velocities if the average saturation is the same, so only density changes matter",
+      "Patchy saturation always produces lower velocities because gas is always the least stiff phase"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter explains that the commonly used uniform-mixing effective fluid (Reuss/isostress) assumes pressure equilibration during a seismic period. When phases are patchy at scales larger than the equilibration length, pressure gradients cannot relax and the effective rock response is stiffer, leading to higher velocities and impedances than in the uniform case.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Derived from the chapter\u2019s contrast between uniform saturation (Reuss average) and patchy saturation (stiffer effective response)."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_geophysics_avo_background_trend_012",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Geophysics"
+    ],
+    "topics": [
+      "AVO Crossplots",
+      "Background Trend Interpretation"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In qualitative AVO work, interpreters often identify a brine-sand/shale \u201cbackground trend\u201d and then search for outliers. What is the most defensible reason (from the chapter) for using both intercept R(0) and gradient G rather than relying on near-stack amplitude alone?",
+    "choices": [
+      "Near-stack amplitude contains all necessary information because it uniquely determines Vp/Vs contrasts",
+      "R(0) and G are used mainly to eliminate random noise, not to add new rock-physics sensitivity",
+      "R(0) is mainly controlled by acoustic impedance contrast while G is strongly influenced by Vp/Vs contrast, so combining them helps separate fluid effects from lithology effects",
+      "Intercept and gradient are used only because Zoeppritz equations cannot be applied to pre-stack data"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter links R(0) to acoustic impedance contrast and emphasizes that G is strongly affected by contrasts related to Vp/Vs across the interface. Using both attributes provides two independent constraints, helping reduce fluid/lithology ambiguities that can persist if only near-stack amplitude (a proxy for R(0)) is used.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 18 - Explorational Rock Physics",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on why AVO crossplots use both intercept and gradient: different sensitivity to impedance versus Vp/Vs contrasts."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
   }
 ]
