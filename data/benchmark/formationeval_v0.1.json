@@ -13094,5 +13094,437 @@
             "calc_required": true,
             "contamination_risk": "medium"
         }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_heat_transport_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Heat Transport",
+            "Conduction vs Advection"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "In most sedimentary basins (away from special settings), which process is expected to carry the majority of heat upward through the stratigraphic section?",
+        "choices": [
+            "Thermal conduction through rocks and pore fluids",
+            "Heat advection by rapid basin-wide porewater flow",
+            "Radiative heat transfer through pore space",
+            "Latent heat transfer dominated by hydrocarbon phase changes"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter describes upward heat flow in sedimentary basins as being dominated by conduction (thermal diffusion). It also notes that porewater flow can transport heat, but typical basin flow rates are usually too small to matter except in settings like intrusions or high-flux meteoric systems.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 9 - Heat Transport in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Focuses on the dominant heat-transport mechanism in typical basin conditions."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_heat_production_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Radiogenic Heat",
+            "Basement Composition"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A basin overlies two different basement types: granite in one area and gabbro in another. Based on radiogenic heat production, which area is more likely to have higher background heat input from the basement?",
+        "choices": [
+            "The gabbro-dominated basement because mafic rocks conduct heat better",
+            "The granite-dominated basement because it is commonly enriched in radioactive elements",
+            "Both areas because heat production depends mainly on present-day temperature",
+            "Neither area because radioactive heat production is negligible in continental crust"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter attributes much of crustal heat to radioactive processes and emphasizes that granitic rocks tend to be enriched in uranium, thorium, and potassium. Mafic rocks like gabbro are described as having much lower contributions from these elements in this context.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 9 - Heat Transport in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Uses basement-rock composition to test understanding of radiogenic heat sources."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_geothermal_gradient_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics"
+        ],
+        "topics": [
+            "Geothermal Gradient",
+            "Heat Flow Equation"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "If the vertical heat flow is similar in two adjacent stratigraphic intervals, which interval should show the larger geothermal gradient?",
+        "choices": [
+            "The interval with higher thermal conductivity (e.g., salt)",
+            "The interval with higher porosity regardless of mineralogy",
+            "The interval with lower thermal conductivity (e.g., shale-rich rock)",
+            "Both intervals should have identical geothermal gradients if heat flow matches"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "From the relationship ∇T = Q/c, the gradient increases when conductivity decreases for the same heat flux. The chapter explicitly contrasts low-conductivity mudstones/shales (steeper gradients) with highly conductive salt (gentler gradients).",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 9 - Heat Transport in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Targets the inverse link between conductivity and gradient when heat flow is steady."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_heat_flow_calculation_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics"
+        ],
+        "topics": [
+            "Heat Flow Equation",
+            "Geothermal Gradient"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Assume 1-D conductive heat transport where heat flow Q = c(dT/dz). If heat flow is 60 mW/m² and thermal conductivity is 2.0 W/mK, what geothermal gradient is implied?",
+        "choices": [
+            "12 °C/km",
+            "20 °C/km",
+            "24 °C/km",
+            "30 °C/km"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Convert 60 mW/m² to 0.060 W/m², then compute dT/dz = Q/c = 0.060/2.0 = 0.030 K/m. Converting 0.030 K/m to per kilometer gives 30 K/km (same increment as °C for a gradient).",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 9 - Heat Transport in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Numerical application of Q = c(dT/dz) using typical basin-scale units."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_effective_conductivity_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petrophysics"
+        ],
+        "topics": [
+            "Thermal Conductivity",
+            "Porosity Effects"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Using the chapter's porosity-weighted approximation for a water-saturated rock, estimate the bulk thermal conductivity if porosity is 0.25, matrix conductivity is 5.5 W/mK, and porewater conductivity is 0.6 W/mK.",
+        "choices": [
+            "About 1.8 W/mK",
+            "About 3.0 W/mK",
+            "About 4.3 W/mK",
+            "About 5.1 W/mK"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Apply the weighted sum: Cbulk ≈ Cr(1-ϕ) + ϕCf = 5.5(0.75) + 0.25(0.6) = 4.125 + 0.15 = 4.275 W/mK. That rounds to about 4.3 W/mK.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 9 - Heat Transport in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Computes an approximate bulk conductivity from porosity and phase conductivities."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_thermal_anisotropy_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Thermal Anisotropy",
+            "Shale Conductivity"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A shale interval shows direction-dependent heat conduction. According to the chapter, which statement best describes shale thermal conductivity relative to bedding?",
+        "choices": [
+            "Conductivity is higher perpendicular to bedding because compaction closes pores along laminae",
+            "Conductivity can be substantially higher parallel to bedding than perpendicular to bedding",
+            "Conductivity is direction-independent because heat diffusion is isotropic in sedimentary rocks",
+            "Conductivity is controlled only by salinity, so bedding orientation is irrelevant"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter notes that shale conductivity measured along bedding can be much higher (up to ~70%) than measurements taken across bedding. This reflects anisotropy tied to fabric and layering, not only fluid properties.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 9 - Heat Transport in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Assesses understanding of conductivity anisotropy in shales."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_blanketing_effect_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Blanketing Effect",
+            "Geothermal Gradient"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A low-conductivity mudstone package overlies older rocks while the regional basement heat flux remains similar. What is the most likely thermal consequence described in the chapter?",
+        "choices": [
+            "Lower temperatures at depth because low-conductivity rocks dissipate heat more efficiently",
+            "No effect on subsurface temperatures because only heat production controls the gradient",
+            "A steeper near-surface gradient that makes deeper units warmer than they otherwise would be",
+            "A reversal of the geothermal gradient because heat is trapped and forced downward"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "With roughly constant heat flux over a vertical interval, lowering conductivity increases the required temperature gradient. The chapter describes this as an insulating (blanketing) behavior: the shallow low-conductivity layer forces higher gradients and can raise temperatures in underlying sediments.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 9 - Heat Transport in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Conceptual consequence of placing low-conductivity strata near the surface."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_salt_thermal_effect_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petroleum Geology",
+            "Reservoir Engineering"
+        ],
+        "topics": [
+            "Salt Conductivity Effects",
+            "Thermal Maturity",
+            "Reservoir Quality"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A thick salt layer overlies a potential reservoir and source-rock system. Based on the chapter's discussion of salt conductivity, which temperature pattern and petroleum-system implication is most consistent?",
+        "choices": [
+            "Temperatures increase below the salt because salt amplifies the geothermal gradient at depth, accelerating cracking to gas",
+            "Temperatures are uniform across the salt because salt blocks heat flow entirely, halting maturation above and below",
+            "Temperatures are lower below the salt than typical for that depth, which can help preserve oil/condensate and limit quartz cementation",
+            "Temperatures are lower above the salt because high conductivity cools the overburden, improving maturity beneath the salt"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter explains that high-conductivity salt supports a low gradient within the salt, producing relatively higher temperatures at the top and lower temperatures at the base (below the salt). The source explicitly states that temperatures below the salt will be significantly lower than normal at that depth, which means better reservoir quality due to less quartz cement, and preservation of oil/condensate due to less thermal cracking to gas.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 9 - Heat Transport in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Links conductive effects of salt to maturation and sandstone reservoir quality outcomes."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_sedimentation_cooling_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Subsidence",
+            "Transient Heat Flow",
+            "Cold Basins"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "Two basins have similar basement heat input and similar lithologies, but Basin A has very rapid sedimentation and subsidence. According to the chapter's transient heat-flow argument, what is the best expectation for Basin A during active subsidence?",
+        "choices": [
+            "Lower effective heat flow and reduced geothermal gradients because energy is diverted into warming newly buried rocks",
+            "Higher effective heat flow and increased geothermal gradients because compaction releases heat to the surface",
+            "Unchanged geothermal gradients because heat flow is always constant regardless of burial history",
+            "Higher gradients because rapid burial increases radiogenic heat production in sediments immediately"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter states that heat flux is only constant at equilibrium; during subsidence some of the background heat is consumed by heating the sinking sediments and basement. This leads to reduced geothermal gradients, producing comparatively cold basins during periods of rapid sedimentation.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 9 - Heat Transport in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Integrates burial history with non-equilibrium heat flow and geothermal-gradient behavior."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_advective_heat_transport_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Reservoir Engineering"
+        ],
+        "topics": [
+            "Advection",
+            "Isotherms",
+            "Fluid Flow Direction"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "Consider the chapter's expression for advective heat transport by water flow, which includes a factor of sinα where α is the angle between the flow direction and isotherms. What situation minimizes advective heat transport even if the Darcy velocity is large?",
+        "choices": [
+            "Flow is perpendicular to isotherms so water crosses many temperature contours",
+            "Flow is parallel to isotherms so water tends to stay at the same temperature",
+            "Flow occurs in highly saline water so the conductivity of the fluid dominates",
+            "Flow occurs in low-porosity rock so the water phase stores most of the heat"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter notes that advective heat transport depends on the component of flow that cuts across temperature contours; the sinα term goes to zero when flow is parallel to isotherms. In that case, moving fluid does not transport heat across the temperature field in the model sense, even if the volumetric flux is high.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 9 - Heat Transport in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Tests interpretation of the flow-direction term (sinα) in advective heat transport."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
     }
 ]
