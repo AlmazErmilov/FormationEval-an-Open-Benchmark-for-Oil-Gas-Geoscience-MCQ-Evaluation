@@ -1,28 +1,29 @@
 # FormationEval Benchmark v0.1
 
-MMLU-style multiple-choice questions for Oil & Gas geoscience evaluation.
+Multiple-choice questions for evaluating LLMs on Oil & Gas geoscience knowledge.
 
-## Statistics
+## Overview
 
 | Metric | Value |
 |--------|-------|
-| Total questions | 481 |
-| Unique topics | 175+ |
-| Language | English |
+| Questions | 481 |
 | Format | 4-choice MCQ |
+| Language | English |
 
-### Difficulty Distribution
+## Difficulty
 
 | Level | Count | % |
-|-------|-------|---|
+|-------|------:|--:|
 | Easy | 120 | 25% |
 | Medium | 264 | 55% |
 | Hard | 97 | 20% |
 
-### Domain Coverage
+## Domains
+
+Questions may belong to multiple domains.
 
 | Domain | Count |
-|--------|-------|
+|--------|------:|
 | Petrophysics | 271 |
 | Petroleum Geology | 129 |
 | Sedimentology | 94 |
@@ -31,59 +32,50 @@ MMLU-style multiple-choice questions for Oil & Gas geoscience evaluation.
 | Drilling Engineering | 24 |
 | Production Engineering | 13 |
 
-### Answer Key Distribution
+## Answer Distribution
 
-| Key | Count | % |
-|-----|-------|---|
-| A | 132 | 27% |
-| B | 123 | 26% |
-| C | 116 | 24% |
-| D | 110 | 23% |
+| A | B | C | D |
+|:-:|:-:|:-:|:-:|
+| 132 (27%) | 123 (26%) | 116 (24%) | 110 (23%) |
 
 ## Sources
 
-| Source ID | Title | Questions |
-|-----------|-------|-----------|
-| `ellis_singer_well_logging_2007` | Well Logging for Earth Scientists, 2nd Edition | 219 |
-| `bjorlykke_petroleum_geoscience_2010` | Petroleum Geoscience: From Sedimentary Environments to Rock Physics | 262 |
+| Source | Questions |
+|--------|----------:|
+| Ellis & Singer - Well Logging for Earth Scientists (2007) | 219 |
+| Bjørlykke - Petroleum Geoscience (2010) | 262 |
 
 ## Schema
 
-Each question contains:
-
-- `id` - Unique identifier
-- `question` - Question text
-- `choices` - Array of 4 options
-- `answer_index` - Correct answer (0-3)
-- `answer_key` - Correct answer (A-D)
-- `rationale` - Explanation
-- `difficulty` - easy/medium/hard
-- `domains` - Broad categories
-- `topics` - Specific subjects
-- `sources` - Provenance metadata
-- `derivation_mode` - `concept_based`
-- `metadata.calc_required` - Boolean
-- `metadata.contamination_risk` - low/medium/high
-
-## File Format
-
-- `formationeval_v0.1.json` - JSON array of question objects
+```
+id              - Unique identifier
+question        - Question text
+choices         - Array of 4 options (A-D)
+answer_index    - Correct answer index (0-3)
+answer_key      - Correct answer letter (A-D)
+rationale       - Explanation of correct answer
+difficulty      - easy | medium | hard
+domains         - Array of broad categories
+topics          - Array of specific subjects
+sources         - Provenance metadata
+metadata        - calc_required, contamination_risk
+```
 
 ## Usage
 
 ```python
 import json
 
-with open('formationeval_v0.1.json', 'r') as f:
+with open('formationeval_v0.1.json') as f:
     questions = json.load(f)
 
 for q in questions:
     print(q['question'])
-    for i, choice in enumerate(q['choices']):
-        print(f"  {chr(65+i)}) {choice}")
-    print(f"Answer: {q['answer_key']}")
+    for i, c in enumerate(q['choices']):
+        print(f"  {chr(65+i)}) {c}")
+    print(f"Answer: {q['answer_key']}\n")
 ```
 
 ## License
 
-Questions are concept-based derivations. See individual `sources` entries for attribution requirements.
+Questions are concept-based derivations from source materials. See `sources` field for attribution.
