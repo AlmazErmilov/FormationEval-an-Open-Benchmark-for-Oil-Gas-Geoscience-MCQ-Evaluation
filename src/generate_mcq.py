@@ -143,12 +143,12 @@ def save_questions(questions: list[dict], output_path: str, format: str = "json"
         output_path: Output file path
         format: Output format - "json" (array, pretty-printed) or "jsonl" (one per line)
     """
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         if format == "jsonl":
             for q in questions:
-                f.write(json.dumps(q) + "\n")
+                f.write(json.dumps(q, ensure_ascii=False) + "\n")
         else:  # json array format (default, matches existing benchmark)
-            json.dump(questions, f, indent=4)
+            json.dump(questions, f, indent=4, ensure_ascii=False)
     print(f"Saved {len(questions)} questions to {output_path}")
 
 
