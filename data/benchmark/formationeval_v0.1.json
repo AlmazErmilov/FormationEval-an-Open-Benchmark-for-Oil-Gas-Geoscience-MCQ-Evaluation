@@ -16016,5 +16016,433 @@
       "calc_required": false,
       "contamination_risk": "low"
     }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_primary_migration_001",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Primary Migration",
+      "Source Rock Expulsion"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "In the context of petroleum systems, what best describes primary migration?",
+    "choices": [
+      "Movement of newly generated hydrocarbons out of the source rock into adjacent rocks",
+      "Updip flow of oil and gas through carrier beds toward structural highs",
+      "Redistribution of hydrocarbons within a reservoir caused by production-related pressure drawdown",
+      "Diffusion of dissolved hydrocarbons through regional groundwater circulation over basin scale"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "Primary migration refers to the initial expulsion step: hydrocarbons leaving the source rock after generation and entering nearby rocks. Updip movement through carrier beds is part of secondary migration, and production-driven changes are not how the chapter defines primary migration.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 15 - Petroleum Migration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item distinguishing the expulsion step from later carrier-bed flow."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_gas_solubility_002",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Gas Solubility",
+      "Pressure Reduction"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "A basin undergoes uplift, reducing pressure in fluids that previously contained dissolved gas. Which outcome is most consistent with the chapter\u2019s description?",
+    "choices": [
+      "Oil becomes substantially more soluble in water, delaying hydrocarbon phase separation",
+      "Gas comes out of solution and can form free gas volumes in oil or water",
+      "Kerogen transforms back into solid coke, decreasing the fluid volume in the source rock",
+      "Capillary entry pressure drops to near zero, allowing universal vertical leakage through shales"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter notes that reduced pressure (from uplift or production drawdown) can cause significant dissolved gas to exsolve and form a separate gas phase. It also emphasizes that oil has generally low solubility in water, so the key effect is gas bubbling out rather than oil dissolving.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 15 - Petroleum Migration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on how depressurization affects dissolved gas and phase behavior."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_basin_hydrodynamics_003",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Basin Hydrodynamics",
+      "Two-Phase Flow"
+    ],
+    "difficulty": "easy",
+    "language": "en",
+    "question": "At the scale of an entire sedimentary basin, oil saturation is typically low and not laterally continuous. Under a regional fluid-pressure gradient, which phase is most likely to be transported effectively?",
+    "choices": [
+      "Oil, because its lower density makes it the dominant moving phase under any pressure gradient",
+      "Gas, because it always forms a connected phase even at very low saturation",
+      "Water, because it is the only phase expected to be continuous at basin scale",
+      "Oil and gas, because relative permeability does not depend on saturation at large scale"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The chapter argues that, on a regional scale, hydrocarbons are not usually present as a connected phase because average hydrocarbon saturation is low. As a result, large-scale pressure gradients mainly move water, while disconnected hydrocarbon droplets are held in place by capillary effects.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 15 - Petroleum Migration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on continuity of phases and what actually flows under basin-scale gradients."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_void_ratio_004",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Void Ratio",
+      "Porosity"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A source rock interval has porosity \u03c6 = 0.20. Using the chapter\u2019s definition of void ratio, what is the void ratio V\u1d63?",
+    "choices": [
+      "0.20",
+      "0.25",
+      "0.80",
+      "1.20"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The void ratio is defined as V\u1d63 = \u03c6/(1-\u03c6). Substituting \u03c6 = 0.20 gives V\u1d63 = 0.20/0.80 = 0.25. The other options correspond to either porosity itself or incorrect manipulations of the ratio.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 15 - Petroleum Migration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical application of the void-ratio relationship used to discuss fluidization during maturation."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_hydrofracturing_005",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology",
+      "Drilling Engineering"
+    ],
+    "topics": [
+      "Hydrofracturing",
+      "Stress State",
+      "Overpressure"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In a fine-grained, clay-rich source rock with very low matrix permeability, what condition most directly allows petroleum to be expelled if capillary resistance prevents matrix flow?",
+    "choices": [
+      "The pore pressure rises until fracturing occurs, creating thin pathways for expulsion",
+      "The oil dissolves into the formation water and is transported as a single aqueous phase",
+      "Vertical compaction reduces the overburden stress until the rock becomes permeable",
+      "Regional groundwater flow shears the shale fabric and makes the matrix oil-wet"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter explains that in tight shale matrices, oil cannot migrate through intergranular pores because permeability is too low and capillary entry pressure too high. Petroleum generation then contributes to overpressure until fracture pressure is reached, allowing expulsion through fractures.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 15 - Petroleum Migration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on why overpressure-driven fracturing enables expulsion from low-permeability source rocks."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_relative_permeability_006",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics"
+    ],
+    "topics": [
+      "Relative Permeability",
+      "Two-Phase Flow"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "In a water-wet carrier rock containing both oil and water, what is the main reason that very low oil saturation leads to negligible oil migration?",
+    "choices": [
+      "Oil density increases at low saturation, eliminating buoyancy relative to water",
+      "Oil forms disconnected droplets and its relative permeability becomes very small",
+      "Water viscosity becomes extremely high in the presence of oil, preventing any flow",
+      "Cap rock fracture pressure decreases as oil saturation decreases in the carrier bed"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter treats secondary migration as multi-phase flow where connectivity matters. When oil saturation is low, oil is not a continuous phase and capillary forces keep droplets from moving, so the relative permeability to oil is very small (the text notes very low mobility below roughly 20\u201330% oil saturation).",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 15 - Petroleum Migration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on saturation/connectivity control of relative permeability during secondary migration."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "high"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_reservoirengineering_buoyancy_pressure_007",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Reservoir Engineering",
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Buoyancy Pressure",
+      "Migration Driving Force"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Using the chapter\u2019s buoyancy relation, estimate the oil\u2013water pressure difference generated by a 150 m continuous oil column where \u03c1w = 1.10 g/cm\u00b3 and \u03c1o = 0.80 g/cm\u00b3 (use the chapter\u2019s scaling where 100 m of a 1.0 g/cm\u00b3 water column corresponds to ~1 MPa).",
+    "choices": [
+      "0.15 MPa",
+      "0.30 MPa",
+      "0.45 MPa",
+      "0.90 MPa"
+    ],
+    "answer_index": 2,
+    "answer_key": "C",
+    "rationale": "The density difference is \u0394\u03c1 = 1.10\u22120.80 = 0.30 g/cm\u00b3. In the chapter\u2019s scaling, a 100 m column gives a pressure difference of \u0394\u03c1 MPa, so 150 m gives 1.5\u00d70.30 = 0.45 MPa. This is the excess pressure available to help overcome capillary resistance along a connected pathway.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 15 - Petroleum Migration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Numerical application of the buoyancy pressure difference used to explain overcoming capillary entry pressure."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": true,
+      "contamination_risk": "medium"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petrophysics_shale_sealing_008",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petrophysics",
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Shale Sealing",
+      "Pore Throat Size",
+      "Oil Migration"
+    ],
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Why does the chapter argue that oil is unlikely to migrate through the shale matrix when the largest connected pore-throat sizes become very small (tens of angstroms)?",
+    "choices": [
+      "Because oil becomes denser than water in nanopores, reversing buoyancy-driven flow",
+      "Because pore throats can approach the size of large oil molecules, creating a molecular sieving effect",
+      "Because shale permeability increases sharply at depth, causing oil to bypass fractures entirely",
+      "Because oil\u2013water interfacial tension approaches zero in shales, preventing capillary entry into fractures"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter links shale matrix permeability to the size of the largest connected pores, and notes that when connecting throats drop below roughly the scale of asphaltene-sized components, selective exclusion (sieving) should occur. Under such conditions, oil migration is inferred to require fractures rather than intergranular flow through the shale matrix.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 15 - Petroleum Migration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Concept-based item on pore-throat scale limits to matrix-controlled oil migration in shales."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_cap_rock_integrity_009",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Cap Rock Integrity",
+      "Capillary Pressure",
+      "Hydrofracturing"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "A geoscientist suggests that adding a taller oil column beneath a shale seal should directly raise the seal\u2019s water pressure and therefore trigger hydrofracturing earlier. Based on the chapter, what is the most defensible correction to this reasoning under water-wet conditions?",
+    "choices": [
+      "The extra oil-column pressure is countered by capillary forces, so the water pressure controlling fracture onset is not increased by buoyancy alone",
+      "The oil-column pressure is rapidly transferred into all shale pores, so fracture onset is guaranteed at the same depth as the oil\u2013water contact",
+      "Hydrofracturing is controlled primarily by overburden stress, so horizontal stress is irrelevant for seal failure",
+      "Water-wet seals cannot fracture because imbibition always removes oil before pressures can build"
+    ],
+    "answer_index": 0,
+    "answer_key": "A",
+    "rationale": "The chapter emphasizes that the petroleum phase can have higher pressure than the water phase, but the difference is sustained by capillary forces. Because fracturing onset depends on the stress state and the pressure in the water-saturated pore system of the seal, buoyancy does not automatically raise the critical water pressure to fracture. Once a fracture forms and hydrocarbons become the continuous phase within it, hydrocarbon pressure can then govern whether fractures stay open.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 15 - Petroleum Migration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Nuanced item on why buoyancy-related petroleum overpressure does not automatically set the hydrofracture onset pressure in the seal."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
+  },
+  {
+    "id": "formationeval_v0.1_petroleumgeology_pressure_compartments_010",
+    "version": "formationeval_v0.1",
+    "domains": [
+      "Petroleum Geology"
+    ],
+    "topics": [
+      "Pressure Compartments",
+      "Trap Leakage",
+      "Regional Migration"
+    ],
+    "difficulty": "hard",
+    "language": "en",
+    "question": "Two structural closures sit within the same pressure compartment and are connected by a continuous permeable sandstone. One closure is shallower and structurally higher than the other. According to the chapter, what is the most likely implication for fracture-driven leakage risk?",
+    "choices": [
+      "The deeper closure is more likely to leak first because its overburden stress is higher",
+      "The higher closure is more likely to reach fracture pressure and leak, reducing the chance that the lower closure fractures",
+      "Both closures must leak at the same time because pressure is identical everywhere within a compartment",
+      "Neither closure can leak because sandstones prevent pressure buildup by keeping the system hydrostatic"
+    ],
+    "answer_index": 1,
+    "answer_key": "B",
+    "rationale": "The chapter argues that leakage by fracturing tends to initiate at the top of the highest structure within a pressure compartment, where the intersection with fracture conditions is most easily met. If the structures communicate through a permeable carrier, the higher structure can act as a pressure relief path, making it less likely that the deeper structure reaches conditions needed to fracture and leak.",
+    "sources": [
+      {
+        "source_id": "bjorylkke_petroleum_geoscience_2010",
+        "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+        "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+        "source_type": "textbook",
+        "year": 2010,
+        "license": "Proprietary (Springer)",
+        "attribution": "Knut Bj\u00f8rlykke (ed.)",
+        "chapter_ref": "Chapter 15 - Petroleum Migration",
+        "retrieved_at": "2025-12-22",
+        "notes": "Integration item using pressure communication, structural height, and fracture-controlled leakage within a compartment."
+      }
+    ],
+    "derivation_mode": "concept_based",
+    "metadata": {
+      "calc_required": false,
+      "contamination_risk": "low"
+    }
   }
 ]
