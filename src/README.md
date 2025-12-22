@@ -8,29 +8,10 @@ Scripts for generating concept-based multiple-choice questions from source mater
 
 | File | Purpose |
 |------|---------|
-| `generate_mcq.py` | Main script to generate MCQs from chapter text |
-| `prompts/mcq_generator_system_prompt.txt` | System prompt example (actually draft v1 for now) for the LLM |
-
----
-
-## Quick start
-
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. Set up API key:
-   ```bash
-   cp .env.example .env
-   # Edit .env and add your OpenAI API key
-   ```
-
-3. Run generation:
-   ```bash
-   python src/generate_mcq.py chapter.txt 15
-   ```
-   This generates 15 MCQs from `chapter.txt` and saves to `chapter_mcqs.jsonl`.
+| `generate_mcq.py` | Core MCQ generation library using OpenAI API |
+| `pdf_to_markdown.py` | PDF to Markdown converter using Mistral OCR API |
+| `generate_tudelft_mcqs.py` | TU Delft lecture-specific MCQ generator wrapper |
+| `prompts/mcq_generator_system_prompt.txt` | System prompt for the LLM |
 
 ---
 
@@ -515,6 +496,76 @@ All generated items are tagged `derivation_mode: concept_based` to document this
 > **The "-ish":** this safety depends on the LLM following instructions properly. Modern models (GPT-4+, Claude 3+) are quite reliable at instruction following, but **human spot checking remains important** to catch edge cases.
 
 ---
+### generate_mcq.py
+
+Core library for generating concept-based MCQs from text. Uses OpenAI's GPT models with reasoning capabilities.
+
+```bash
+python src/generate_mcq.py chapter.md 10
+```
+
+Functions:
+- `generate_mcqs(chapter_text, num_questions, ...)` - Main generation function
+- `save_questions(questions, output_path)` - Save to JSON
+- `add_metadata(questions, ...)` - Add source metadata to questions
+
+### pdf_to_markdown.py
+
+Converts PDF files to Markdown using Mistral's OCR API. Supports single files and batch processing.
+
+```bash
+# Single file
+python src/pdf_to_markdown.py document.pdf
+
+# Batch convert directory
+python src/pdf_to_markdown.py --batch ./pdfs/
+```
+
+Options: `--table-format`, `--include-images`, `--output-dir`
+
+### generate_tudelft_mcqs.py
+
+Source-specific wrapper for TU Delft OCW lectures. Handles lecture metadata, file mapping, and CLI.
+
+```bash
+# Single lecture
+python src/generate_tudelft_mcqs.py PGeo_L1_Petroleum_Geology_-_Lecture_1_08.md
+
+# All lectures
+python src/generate_tudelft_mcqs.py all
+
+# List available lectures
+python src/generate_tudelft_mcqs.py --list
+```
+
+---
+
+## Environment setup
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Set up API keys in `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+
+   Required keys (see `.env.example`):
+   | Key | Used by | Purpose |
+   |-----|---------|---------|
+   | `OPENAI_API_KEY` | `generate_mcq.py` | MCQ generation with GPT models |
+   | `MISTRAL_API_KEY` | `pdf_to_markdown.py` | PDF to Markdown OCR conversion |
+
+3. Run generation:
+   ```bash
+   # Convert PDF to Markdown first
+   python src/pdf_to_markdown.py source.pdf
+
+   # Generate MCQs from text
+   python src/generate_mcq.py source.md 10
+   ```
 
 ## Output format
 
