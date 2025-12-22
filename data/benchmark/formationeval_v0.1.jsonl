@@ -14,13 +14,13 @@
         "language": "en",
         "question": "The historical French term for well logging, 'carottage électrique' (electrical coring), implies what fundamental concept about the original application of the technology?",
         "choices": [
-            "It physically extracted rock samples using electrical current",
-            "It provided a continuous record of formation characteristics comparable to a physical core",
             "It was primarily used to measure the electrical potential of the drilling mud",
-            "It replaced the need for drilling by using surface electrical sensors"
+            "It replaced the need for drilling by using surface electrical sensors",
+            "It physically extracted rock samples using electrical current",
+            "It provided a continuous record of formation characteristics comparable to a physical core"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The term 'electrical coring' was a descriptive metaphor suggesting that the continuous electrical measurements provided a record of rock characteristics similar to extracting a physical core, allowing for correlation and evaluation without continuous mechanical coring.",
         "sources": [
             {
@@ -57,13 +57,13 @@
         "language": "en",
         "question": "Data acquired via Logging While Drilling (LWD) requires a specific processing step not typically needed for wireline logs. What is this step and why is it necessary?",
         "choices": [
-            "Depth-matching to the casing collar locator because LWD depth is less accurate",
-            "Converting time-referenced raw data to a depth-based log, because drilling speed varies",
             "Filtering out mud-pulse noise that obscures the formation signal",
-            "Manual correlation with offset wells to establish the true vertical depth"
+            "Manual correlation with offset wells to establish the true vertical depth",
+            "Depth-matching to the casing collar locator because LWD depth is less accurate",
+            "Converting time-referenced raw data to a depth-based log, because drilling speed varies"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "LWD sensors record measurements constantly as time passes. Since the rate of penetration (drilling speed) changes, these time-based records must be mapped to depth using a separate depth-time tracker to create a standard log.",
         "sources": [
             {
@@ -100,13 +100,13 @@
         "language": "en",
         "question": "Why does a standard neutron porosity log often overestimate porosity in clay-bearing formations?",
         "choices": [
-            "Clays have a high density that scatters neutrons more effectively than sand grains",
-            "The tool measures hydrogen index, and cannot distinguish between pore water and hydroxyls in the clay structure",
             "Clay minerals absorb neutrons, preventing them from returning to the detector",
-            "The borehole diameter is typically washed out in clays, causing the tool to read 100% porosity"
+            "The borehole diameter is typically washed out in clays, causing the tool to read 100% porosity",
+            "Clays have a high density that scatters neutrons more effectively than sand grains",
+            "The tool measures hydrogen index, and cannot distinguish between pore water and hydroxyls in the clay structure"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Neutron tools function by interacting with hydrogen. They detect all hydrogen in the formation, whether it is in the pore fluid (water/oil) or chemically bound within the clay mineral structure (hydroxyls). Consequently, the tool interprets the hydrogen in the clay as porosity, leading to an overestimation of the effective pore space.",
         "sources": [
             {
@@ -1363,13 +1363,13 @@
         "language": "en",
         "question": "What is the primary limitation of the 'short normal' resistivity device when operating in a borehole filled with highly conductive mud?",
         "choices": [
-            "The tool becomes completely insensitive to formation porosity",
-            "Electrical current preferentially flows through the mud column rather than the formation, leading to inaccurate resistivity readings",
             "The depth of investigation increases excessively, measuring only the uninvaded zone",
-            "The tool generates excessive heat due to the high conductivity of the fluid"
+            "The tool generates excessive heat due to the high conductivity of the fluid",
+            "The tool becomes completely insensitive to formation porosity",
+            "Electrical current preferentially flows through the mud column rather than the formation, leading to inaccurate resistivity readings"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "In the presence of very conductive mud, the current from a short normal device tends to short-circuit through the mud column (the path of least resistance) rather than penetrating the formation. This results in an apparent resistivity measurement that is heavily influenced by the mud resistivity rather than the formation resistivity.",
         "sources": [
             {
@@ -1405,13 +1405,13 @@
         "language": "en",
         "question": "What is the fundamental operating principle of a 'guard' or 'laterolog' electrode system?",
         "choices": [
-            "It uses high-frequency electromagnetic waves to induce currents in the formation",
-            "It employs bucking currents to prevent the measure current from flowing up or down the borehole, forcing it laterally into the formation",
             "It utilizes a single electrode to measure the spontaneous potential generated by formation fluids",
-            "It measures the phase shift of the current to determine the dielectric constant of the rock"
+            "It measures the phase shift of the current to determine the dielectric constant of the rock",
+            "It uses high-frequency electromagnetic waves to induce currents in the formation",
+            "It employs bucking currents to prevent the measure current from flowing up or down the borehole, forcing it laterally into the formation"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Laterolog devices use focusing (or bucking) currents emitted from guard electrodes. These currents are adjusted to maintain the same potential as the central measure electrode, effectively blocking the vertical flow of the measure current through the borehole and forcing it to penetrate deep into the formation.",
         "sources": [
             {
@@ -1447,13 +1447,13 @@
         "language": "en",
         "question": "In a Dual Laterolog system, how does the 'deep' measurement (LLd) typically compare to the 'shallow' measurement (LLs) regarding sensitivity to the invaded zone?",
         "choices": [
-            "The LLd is highly sensitive to the invaded zone, with 90% of its signal coming from the first few inches",
-            "The LLd has a lower pseudogeometric factor for the invaded zone than the LLs, meaning it is less influenced by invasion",
             "Both measurements have identical sensitivity to invasion but operate at different frequencies",
-            "The LLs is designed to read the virgin zone resistivity while the LLd reads the invaded zone"
+            "The LLs is designed to read the virgin zone resistivity while the LLd reads the invaded zone",
+            "The LLd is highly sensitive to the invaded zone, with 90% of its signal coming from the first few inches",
+            "The LLd has a lower pseudogeometric factor for the invaded zone than the LLs, meaning it is less influenced by invasion"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The pseudogeometric factor ($J$) describes the relative contribution of the invaded zone to the total signal. The LLd has a slowly rising $J$ curve, indicating that only a small fraction of its signal comes from the invaded zone (e.g., ~15% from a 20-inch diameter), whereas the LLs has a steeply rising curve, indicating high sensitivity to the region close to the borehole.",
         "sources": [
             {
@@ -1489,13 +1489,13 @@
         "language": "en",
         "question": "The 'Groningen effect' creates a false increase in measured resistivity under specific conditions. Which of the following scenarios is most likely to produce this effect?",
         "choices": [
-            "A tool operating in a highly deviated well with oil-based mud",
-            "A dual laterolog tool located in a conductive bed, positioned below a thick, highly resistive bed containing casing",
             "A short normal device traversing a washed-out borehole section with saline mud",
-            "An induction tool measuring a formation with very low resistivity and high magnetic permeability"
+            "An induction tool measuring a formation with very low resistivity and high magnetic permeability",
+            "A tool operating in a highly deviated well with oil-based mud",
+            "A dual laterolog tool located in a conductive bed, positioned below a thick, highly resistive bed containing casing"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The Groningen effect occurs when the current return path to the surface electrode is impeded by the skin effect in the formation and casing. AC currents flowing back to the surface are forced into a restricted cylinder around the borehole (and casing) when passing through a thick resistive bed. This creates a negative potential on the reference electrode (N), causing the apparent resistivity measured in the conductive zone below to be falsely high.",
         "sources": [
             {
@@ -1784,13 +1784,13 @@
         "language": "en",
         "question": "How does the microlaterolog improve upon the measurement capabilities of the earlier microlog device?",
         "choices": [
-            "It uses a larger electrode spacing to read deep into the uninvaded zone",
-            "It employs bucking currents to focus the measure current through the mudcake",
             "It utilizes magnetic induction to measure resistivity in oil-based muds",
-            "It relies on two unfocused curves to qualitatively identify permeability"
+            "It relies on two unfocused curves to qualitatively identify permeability",
+            "It uses a larger electrode spacing to read deep into the uninvaded zone",
+            "It employs bucking currents to focus the measure current through the mudcake"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The microlog was an unfocused device susceptible to mudcake influence (reading mainly mudcake in conductive/thick cases). The microlaterolog introduced focusing (similar to the laterolog) using bucking currents from a guard electrode to force the measure current into the formation, thereby providing a better determination of the flushed zone resistivity ($R_{xo}$).",
         "sources": [
             {
@@ -1868,13 +1868,13 @@
         "language": "en",
         "question": "How does the Micro Cylindrically Focused Log (MCFL) achieve focusing in the horizontal plane (across the width of the pad) where space is limited?",
         "choices": [
-            "It uses a passive system where the pad itself acts as the only guard electrode",
-            "It employs an active focusing system with side bucking electrodes to maintain potential",
             "It relies solely on the curvature of the borehole to focus the current naturally",
-            "It uses high-frequency alternating current to induce a magnetic field"
+            "It uses high-frequency alternating current to induce a magnetic field",
+            "It uses a passive system where the pad itself acts as the only guard electrode",
+            "It employs an active focusing system with side bucking electrodes to maintain potential"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "While vertical focusing in the MCFL is passive (using the metal pad as a guard similar to LL3), the limited width of the pad requires active focusing horizontally. Bucking electrodes on the sides of the pad emit current regulated to maintain the monitor electrodes at the same potential as the main pad ($A_0$), ensuring cylindrical equipotential lines.",
         "sources": [
             {
@@ -2164,13 +2164,13 @@
         "language": "en",
         "question": "In the low-conductivity limit where skin effect is negligible, how does the voltage induced in the receiver coil of a two-coil induction sonde relate to the formation conductivity (σ) and the transmitter frequency (ω)?",
         "choices": [
-            "It is proportional to the square root of conductivity and the square root of frequency",
-            "It is linearly proportional to conductivity and proportional to the square of the frequency",
             "It is inversely proportional to conductivity and linearly proportional to frequency",
-            "It is proportional to conductivity squared and linearly proportional to frequency"
+            "It is proportional to conductivity squared and linearly proportional to frequency",
+            "It is proportional to the square root of conductivity and the square root of frequency",
+            "It is linearly proportional to conductivity and proportional to the square of the frequency"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "According to Faraday's law derived for the two-coil device, the receiver voltage is proportional to the rate of change of the secondary magnetic field. Since the induced current density is proportional to frequency (ω) and the receiver voltage is a derivative of the field generated by that current (another factor of ω), the total response is proportional to ω². It is directly proportional to formation conductivity σ.",
         "sources": [
             {
@@ -2248,13 +2248,13 @@
         "language": "en",
         "question": "What is the primary function of the \"bucking\" coils (additional receiver coils with reverse polarity) in multi-coil induction arrays?",
         "choices": [
-            "To measure the spontaneous potential (SP) simultaneously with resistivity",
-            "To cancel the direct mutual coupling signal and focus the tool response",
             "To amplify the signal from the formation in high-resistivity zones",
-            "To induce a secondary magnetic field that penetrates deeper into the formation"
+            "To induce a secondary magnetic field that penetrates deeper into the formation",
+            "To measure the spontaneous potential (SP) simultaneously with resistivity",
+            "To cancel the direct mutual coupling signal and focus the tool response"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Bucking coils are wound with reverse polarity to cancel the direct signal (mutual coupling) traveling directly from the transmitter to the receiver, which contains no formation information. By carefully selecting their position and turns, they also focus the tool response, minimizing sensitivity to the borehole and shoulder beds.",
         "sources": [
             {
@@ -2844,13 +2844,13 @@
         "language": "en",
         "question": "In the frequency range typically used for well logging (up to roughly 1 GHz), which polarization mechanism is primarily responsible for the dielectric permittivity of the rock matrix and pore geometry effects?",
         "choices": [
-            "Electronic polarization",
-            "Interfacial (Maxwell-Wagner) polarization",
             "Molecular orientation",
-            "Ionic relaxation"
+            "Ionic relaxation",
+            "Electronic polarization",
+            "Interfacial (Maxwell-Wagner) polarization"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Interfacial (Maxwell-Wagner) polarization occurs due to charge build-up at interfaces between conductive and insulating components (e.g., pore water and grains). It dominates the rock permittivity response up to about 10^8 Hz. Molecular orientation governs water permittivity at higher frequencies, while electronic polarization operates at optical frequencies.",
         "sources": [
             {
@@ -2972,13 +2972,13 @@
         "language": "en",
         "question": "In 2 MHz LWD propagation tools, how do the depths of investigation for phase-shift resistivity ($R_{ps}$) and attenuation resistivity ($R_{ad}$) typically compare?",
         "choices": [
-            "$R_{ps}$ reads deeper than $R_{ad}$",
-            "$R_{ad}$ reads deeper than $R_{ps}$",
             "Both measurements have identical depths of investigation",
-            "Depth of investigation is solely determined by the transmitter-receiver spacing, not the measurement type"
+            "Depth of investigation is solely determined by the transmitter-receiver spacing, not the measurement type",
+            "$R_{ps}$ reads deeper than $R_{ad}$",
+            "$R_{ad}$ reads deeper than $R_{ps}$"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Attenuation resistivity ($R_{ad}$) consistently reads deeper than phase-shift resistivity ($R_{ps}$). The electromagnetic field patterns for amplitude (attenuation) are toroidal and penetrate further into the formation than the spherical constant-phase contours, resulting in a deeper investigation for attenuation measurements.",
         "sources": [
             {
@@ -3014,13 +3014,13 @@
         "language": "en",
         "question": "Why is a 'dielectric assumption' necessary when converting raw 2 MHz propagation measurements (phase shift and attenuation) into resistivity values?",
         "choices": [
-            "Because the tool measures magnetic permeability, which must be converted to permittivity first",
-            "Because there are two unknowns (permittivity and conductivity) but the tool treats them as coupled to produce a single resistivity output",
             "Because the phase shift is insensitive to resistivity at low values",
-            "Because attenuation cannot be measured accurately in conductive muds"
+            "Because attenuation cannot be measured accurately in conductive muds",
+            "Because the tool measures magnetic permeability, which must be converted to permittivity first",
+            "Because there are two unknowns (permittivity and conductivity) but the tool treats them as coupled to produce a single resistivity output"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Propagation tools measure phase shift and attenuation, which depend on both permittivity (ε) and conductivity (σ). To convert a single measurement (e.g., phase shift) into a resistivity (inverse of conductivity), one must assume a value for ε, or a relationship between ε and σ. This relationship is the 'dielectric assumption,' which allows the transformation of the raw signal into a resistivity log.",
         "sources": [
             {
@@ -3227,13 +3227,13 @@
         "language": "en",
         "question": "A logging engineer wishes to reduce the fractional statistical uncertainty of a nuclear measurement by a factor of two (e.g., from 10% to 5%). Assuming the source strength remains constant, how must the measurement time (or count accumulation time) change to achieve this improvement?",
         "choices": [
-            "The measurement time must be doubled",
-            "The measurement time must be increased by a factor of four",
             "The measurement time must be squared",
-            "The measurement time must be increased by the square root of two"
+            "The measurement time must be increased by the square root of two",
+            "The measurement time must be doubled",
+            "The measurement time must be increased by a factor of four"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Nuclear decay follows Poisson statistics, where the fractional uncertainty (f) is inversely proportional to the square root of the total counts (N). Since N is linearly proportional to time (t), f is proportional to 1/sqrt(t). To reduce f by a factor of 2, the term sqrt(t) must increase by a factor of 2, which requires t to increase by a factor of 4.",
         "sources": [
             {
@@ -3311,13 +3311,13 @@
         "language": "en",
         "question": "In the energy range where Compton scattering is the dominant interaction, why is the attenuation of gamma rays considered a reliable proxy for formation bulk density?",
         "choices": [
-            "Compton scattering only occurs with hydrogen atoms, which correlate to pore volume",
-            "The ratio of atomic number to atomic mass (Z/A) is approximately constant for most rock-forming elements",
             "The Compton cross-section increases exponentially with the atomic number (Z) of the matrix",
-            "Compton scattering is independent of the number of electrons in the formation"
+            "Compton scattering is independent of the number of electrons in the formation",
+            "Compton scattering only occurs with hydrogen atoms, which correlate to pore volume",
+            "The ratio of atomic number to atomic mass (Z/A) is approximately constant for most rock-forming elements"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Compton scattering depends on the electron density of the material. Bulk density is derived from electron density using the relationship between atomic number (Z) and atomic mass (A). For most sedimentary minerals, the ratio Z/A is very close to 0.5, allowing a direct linear transform from electron density to bulk density.",
         "sources": [
             {
@@ -3564,13 +3564,13 @@
         "language": "en",
         "question": "How is the standard API unit for gamma ray logging defined?",
         "choices": [
-            "It is based on the radiation flux of a 1-gram Radium equivalent source at 1 meter distance.",
-            "It is defined by an artificial formation at the University of Houston containing specific concentrations of K, Th, and U, set to read 200 API units.",
             "It corresponds to the radiation level of an average mid-continent shale, defined as 100 API units.",
-            "It is calibrated such that a clean water-bearing sandstone reads 0 API units and a pure kaolinite clay reads 100 API units."
+            "It is calibrated such that a clean water-bearing sandstone reads 0 API units and a pure kaolinite clay reads 100 API units.",
+            "It is based on the radiation flux of a 1-gram Radium equivalent source at 1 meter distance.",
+            "It is defined by an artificial formation at the University of Houston containing specific concentrations of K, Th, and U, set to read 200 API units."
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The API unit is defined using an artificial radioactive formation constructed at the University of Houston. This formation, containing approximately 4% Potassium, 24 ppm Thorium, and 12 ppm Uranium, is defined to equal 200 API units.",
         "sources": [
             {
@@ -3649,13 +3649,13 @@
         "language": "en",
         "question": "Why is uranium generally considered a poor indicator of clay mineral volume compared to thorium and potassium?",
         "choices": [
-            "Uranium has a short half-life, making its radiation undetectable in older geologic formations.",
-            "Uranium compounds are soluble and mobile, often associating with organic matter rather than the clay lattice.",
             "Uranium is only found in igneous rocks and does not occur in sedimentary environments.",
-            "Uranium emits alpha particles which cannot be detected by standard scintillation crystals."
+            "Uranium emits alpha particles which cannot be detected by standard scintillation crystals.",
+            "Uranium has a short half-life, making its radiation undetectable in older geologic formations.",
+            "Uranium compounds are soluble and mobile, often associating with organic matter rather than the clay lattice."
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Uranium compounds are soluble, allowing them to be transported and precipitated far from the site of clay formation. Uranium tends to associate with organic matter (e.g., in organic shales) or precipitate in fractures, unlike thorium and potassium which are chemically or structurally integral to clays and feldspars.",
         "sources": [
             {
@@ -3691,13 +3691,13 @@
         "language": "en",
         "question": "Does the gamma ray log respond to the volumetric concentration or the mass concentration of radioactive elements, and why?",
         "choices": [
-            "Volumetric concentration, because the detector measures counts per unit of formation volume.",
-            "Mass concentration, because the mass absorption coefficient is effectively independent of bulk density.",
             "Volumetric concentration, because density effects are canceled out by the borehole fluid compensation.",
-            "Mass concentration, but only if the formation density is assumed to be constant at 2.65 g/cm³."
+            "Mass concentration, but only if the formation density is assumed to be constant at 2.65 g/cm³.",
+            "Volumetric concentration, because the detector measures counts per unit of formation volume.",
+            "Mass concentration, because the mass absorption coefficient is effectively independent of bulk density."
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The text explains that the total gamma ray flux is proportional to n/ρ_b (number of emitters divided by bulk density). Since the mass absorption coefficient (μ) is independent of bulk density, the count rate relates directly to the weight percent (mass concentration) of the radioactive isotope.",
         "sources": [
             {
@@ -3776,13 +3776,13 @@
         "language": "en",
         "question": "What is the approximate depth of investigation (providing 90% of the signal) for a standard gamma ray tool measuring unscattered gamma rays in a typical formation?",
         "choices": [
-            "2–5 cm",
-            "15–18 cm",
             "40–50 cm",
-            "90–100 cm"
+            "90–100 cm",
+            "2–5 cm",
+            "15–18 cm"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Monte Carlo simulations indicate that 90% of the signal for unscattered gamma rays comes from an annulus approximately 15 cm (6 inches) thick. Including multiply scattered rays increases this depth by only a few centimeters.",
         "sources": [
             {
@@ -4029,13 +4029,13 @@
         "language": "en",
         "question": "In a dual-detector density logging tool, how is the presence of mudcake between the tool pad and the formation wall primarily addressed to determine the correct formation density?",
         "choices": [
-            "By measuring the mudcake thickness with a caliper and subtracting its density value",
-            "By utilizing the difference in density sensitivity and depth of investigation between the short-spacing and long-spacing detectors",
             "By filtering out the low-energy gamma rays that are most affected by the mudcake layer",
-            "By assuming the mudcake density is equal to the mud filtrate density and applying a constant shift"
+            "By assuming the mudcake density is equal to the mud filtrate density and applying a constant shift",
+            "By measuring the mudcake thickness with a caliper and subtracting its density value",
+            "By utilizing the difference in density sensitivity and depth of investigation between the short-spacing and long-spacing detectors"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The compensation method relies on the fact that the short-spacing detector is more sensitive to the material immediately adjacent to the pad (mudcake) than the long-spacing detector.  By comparing the apparent densities read by both detectors (using a 'spine and ribs' approach), a correction (Delta Rho) is derived to adjust the long-spacing measurement to the true formation density.",
         "sources": [
             {
@@ -4071,13 +4071,13 @@
         "language": "en",
         "question": "While evaluating a formation, you observe a density log that appears normal, but the Photoelectric Factor (Pe) curve reads an extremely high value (>> 10). What is the most likely environmental cause for this response?",
         "choices": [
-            "The formation contains significant amounts of gas, lowering the electron density",
-            "The drilling mud contains barite weighting material",
             "The borehole is severely washed out, causing the tool to read drilling fluid only",
-            "The formation is composed of pure halite (salt)"
+            "The formation is composed of pure halite (salt)",
+            "The formation contains significant amounts of gas, lowering the electron density",
+            "The drilling mud contains barite weighting material"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The Photoelectric Factor (Pe) is highly sensitive to the atomic number (Z) of materials. Barite (Barium Sulfate) contains Barium (Z=56), which has a very high cross-section for photoelectric absorption.  Even small amounts of barite in the mudcake or invasion fluid will cause the Pe reading to skyrocket, often rendering it useless for lithology identification.",
         "sources": [
             {
@@ -4156,13 +4156,13 @@
         "language": "en",
         "question": "Why is it potentially erroneous to use the mud filtrate density as the fluid density parameter when calculating porosity from a Logging While Drilling (LWD) density tool located near the bit?",
         "choices": [
-            "LWD tools use a different gamma ray energy source that interacts differently with mud filtrate",
-            "The measurement often occurs before significant invasion, so the tool investigates virgin formation fluid rather than filtrate",
             "The rotation of the drill string centrifuges the mud filtrate away from the sensor",
-            "LWD density tools have a depth of investigation that is too shallow to see past the mudcake"
+            "LWD density tools have a depth of investigation that is too shallow to see past the mudcake",
+            "LWD tools use a different gamma ray energy source that interacts differently with mud filtrate",
+            "The measurement often occurs before significant invasion, so the tool investigates virgin formation fluid rather than filtrate"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "LWD density sensors located near the bit measure the formation very shortly after it is drilled. In this timeframe, invasion of mud filtrate may not yet have proceeded significantly. Consequently, the fluid occupying the pore space within the tool's depth of investigation is likely the native formation fluid (e.g., oil or gas) rather than the mud filtrate.",
         "sources": [
             {
@@ -4324,13 +4324,13 @@
         "language": "en",
         "question": "Why is hydrogen considered the most effective element for slowing down fast neutrons through elastic scattering?",
         "choices": [
-            "Hydrogen has an anomalously large capture cross-section that absorbs high-energy neutrons immediately",
-            "The mass of a hydrogen nucleus is nearly equal to that of a neutron, allowing for maximum energy transfer in a single collision",
             "Hydrogen nuclei have a high threshold for inelastic scattering, which dissipates energy more efficiently than elastic scattering",
-            "The hydrogen nucleus creates a magnetic field that significantly decelerates neutral particles"
+            "The hydrogen nucleus creates a magnetic field that significantly decelerates neutral particles",
+            "Hydrogen has an anomalously large capture cross-section that absorbs high-energy neutrons immediately",
+            "The mass of a hydrogen nucleus is nearly equal to that of a neutron, allowing for maximum energy transfer in a single collision"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "In elastic scattering, energy loss is determined by the kinematics of the collision. Because the mass of a hydrogen nucleus (proton) is essentially the same as that of a neutron, a neutron can lose up to all of its energy in a single head-on collision. Heavier nuclei result in much smaller fractional energy losses per collision.",
         "sources": [
             {
@@ -4408,13 +4408,13 @@
         "language": "en",
         "question": "What is a primary operational advantage of using a deuterium-tritium (D-T) accelerator source over a chemical source like AmBe?",
         "choices": [
-            "The D-T source produces a wider spectrum of neutron energies, mimicking natural radiation",
-            "The D-T source can be switched off for safety and pulsed for timing measurements",
             "The D-T source requires no high-voltage power supply, making it more reliable downhole",
-            "The D-T source produces neutrons at a much lower energy (thermal), reducing shielding requirements"
+            "The D-T source produces neutrons at a much lower energy (thermal), reducing shielding requirements",
+            "The D-T source produces a wider spectrum of neutron energies, mimicking natural radiation",
+            "The D-T source can be switched off for safety and pulsed for timing measurements"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Accelerator sources produce neutrons via electrically controlled nuclear reactions. This allows the tool to be turned off, improving safety during transport and handling, and enables pulsed operation for advanced timing measurements (like decay time), which is not possible with continuous chemical sources.",
         "sources": [
             {
@@ -4492,13 +4492,13 @@
         "language": "en",
         "question": "Which of the following statements correctly describes inelastic neutron scattering?",
         "choices": [
-            "It occurs at all neutron energies and results in the conservation of kinetic energy",
-            "It has a threshold energy below which it cannot occur and typically produces gamma rays",
             "It is the primary mechanism for slowing down neutrons in hydrogen-rich formations",
-            "It results in the neutron being absorbed by the nucleus and forming a compound isotope"
+            "It results in the neutron being absorbed by the nucleus and forming a compound isotope",
+            "It occurs at all neutron energies and results in the conservation of kinetic energy",
+            "It has a threshold energy below which it cannot occur and typically produces gamma rays"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Inelastic scattering involves the neutron imparting energy to the nucleus, leaving it in an excited state. This reaction requires the incident neutron to have kinetic energy above a specific threshold (to bridge the energy gap to the excited state). The nucleus subsequently de-excites by emitting characteristic gamma rays.",
         "sources": [
             {
@@ -5164,13 +5164,13 @@
         "language": "en",
         "question": "How does the diffusion of thermal neutrons typically affect the 'apparent' capture cross-section measured by a logging tool compared to the 'intrinsic' formation value?",
         "choices": [
-            "Diffusion increases the neutron population locally, causing the apparent Sigma to read lower than the intrinsic value.",
-            "Diffusion causes neutrons to move away from the detector, making the population decay faster and the apparent Sigma read higher than the intrinsic value.",
             "Diffusion only affects epithermal neutrons and has no impact on the thermal Sigma measurement.",
-            "Diffusion stabilizes the neutron cloud, ensuring the apparent Sigma matches the intrinsic value exactly."
+            "Diffusion stabilizes the neutron cloud, ensuring the apparent Sigma matches the intrinsic value exactly.",
+            "Diffusion increases the neutron population locally, causing the apparent Sigma to read lower than the intrinsic value.",
+            "Diffusion causes neutrons to move away from the detector, making the population decay faster and the apparent Sigma read higher than the intrinsic value."
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The local apparent time constant is the sum of the intrinsic decay rate and a diffusion term. Diffusion typically reduces the local neutron density (neutrons moving from high density near source to low density far away), which looks like faster absorption. Faster decay corresponds to a higher apparent Sigma.",
         "sources": [
             {
@@ -5501,13 +5501,13 @@
         "language": "en",
         "question": "In the context of Nuclear Magnetic Resonance (NMR) logging, what primary factors determine the Larmor frequency at which protons precess?",
         "choices": [
-            "The fluid viscosity and the formation temperature",
-            "The gyromagnetic ratio of the nucleus and the strength of the magnetic field",
             "The porosity of the formation and the hydrogen index",
-            "The pulse echo spacing and the magnetic field gradient"
+            "The pulse echo spacing and the magnetic field gradient",
+            "The fluid viscosity and the formation temperature",
+            "The gyromagnetic ratio of the nucleus and the strength of the magnetic field"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The Larmor frequency is the rate at which the angular momentum vector of a nucleus precesses around an external magnetic field. It is mathematically defined as the product of the gyromagnetic ratio (a constant specific to the nuclear species, such as hydrogen) and the strength of the applied magnetic field.",
         "sources": [
             {
@@ -5627,13 +5627,13 @@
         "language": "en",
         "question": "In water-wet sandstone pores, what is the dominant mechanism controlling the relaxation time of the water protons?",
         "choices": [
-            "Bulk fluid relaxation similar to that of water in a beaker",
-            "Surface relaxation caused by interactions with paramagnetic sites on grain walls",
             "Diffusion relaxation caused by the earth's magnetic field gradient",
-            "Molecular shearing due to high fluid viscosity"
+            "Molecular shearing due to high fluid viscosity",
+            "Bulk fluid relaxation similar to that of water in a beaker",
+            "Surface relaxation caused by interactions with paramagnetic sites on grain walls"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "In porous media like sandstones, the relaxation of water is much faster than in bulk water. This is due to surface relaxation, where fluid molecules diffuse to the pore walls and interact with paramagnetic impurities (like iron). The rate of this relaxation is controlled by the surface relaxivity and the surface-to-volume ratio of the pores.",
         "sources": [
             {
@@ -5753,13 +5753,13 @@
         "language": "en",
         "question": "Which NMR-derived parameter is used in the SDR (Schlumberger-Doll Research) model to estimate formation permeability?",
         "choices": [
-            "The ratio of free fluid index (FFI) to bound fluid volume (BVI)",
-            "The logarithmic mean of the T2 distribution (T2,LM)",
             "The diffusion coefficient of the gas phase",
-            "The hydrogen index of the pore fluid"
+            "The hydrogen index of the pore fluid",
+            "The ratio of free fluid index (FFI) to bound fluid volume (BVI)",
+            "The logarithmic mean of the T2 distribution (T2,LM)"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The SDR permeability model relies on the connection between pore size and relaxation time. It estimates permeability using the total porosity and the logarithmic mean of the T2 distribution (T2,LM), essentially treating T2,LM as a proxy for the average pore size.",
         "sources": [
             {
@@ -6132,13 +6132,13 @@
         "language": "en",
         "question": "What was the primary driver for the initial development of acoustic logging technologies in the petroleum industry?",
         "choices": [
-            "The need to directly measure formation porosity for reservoir evaluation",
-            "The requirement to correlate surface seismic time measurements with depth",
             "The necessity of evaluating cement bond quality behind casing",
-            "The demand for detecting fractures in carbonate reservoirs"
+            "The demand for detecting fractures in carbonate reservoirs",
+            "The need to directly measure formation porosity for reservoir evaluation",
+            "The requirement to correlate surface seismic time measurements with depth"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Acoustic logging initially originated as a companion to seismic exploration (velocity surveys) to solve the problem of correlating seismic travel time with actual depth. The application for porosity determination came later with the development of the Wyllie time-average relationship.",
         "sources": [
             {
@@ -6303,13 +6303,13 @@
         "language": "en",
         "question": "What fundamental constraint governs the relationship between compressional velocity (Vc) and shear velocity (Vs) in any elastic material with a positive bulk modulus?",
         "choices": [
-            "Vs must always be greater than Vc",
-            "Vc must exceed Vs by at least 15 percent",
             "Vc and Vs must be equal in isotropic media",
-            "Vs approaches Vc as Poisson's ratio approaches 0.5"
+            "Vs approaches Vc as Poisson's ratio approaches 0.5",
+            "Vs must always be greater than Vc",
+            "Vc must exceed Vs by at least 15 percent"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Since the bulk modulus must be positive, the relationship between velocities implies that Vc^2 - (4/3)Vs^2 > 0. This mathematical constraint dictates that the compressional velocity must exceed the shear velocity. Specifically, Vc is expected to exceed Vs by at least roughly 15% (limit where Poisson's ratio is negative) or significantly more for real rocks (approx 40% at Poisson's ratio of 0).",
         "sources": [
             {
@@ -6430,13 +6430,13 @@
         "language": "en",
         "question": "What is the fundamental assumption of the Wyllie time-average equation regarding the relationship between interval transit time and porosity?",
         "choices": [
-            "Transit time decreases exponentially as porosity increases",
-            "Transit time is a linear function of porosity, interpolating between matrix and fluid values",
             "Transit time is independent of porosity but highly sensitive to pore pressure",
-            "Transit time is related to the square root of the porosity value"
+            "Transit time is related to the square root of the porosity value",
+            "Transit time decreases exponentially as porosity increases",
+            "Transit time is a linear function of porosity, interpolating between matrix and fluid values"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The Wyllie time-average equation (Equation 17.36) assumes a linear mixing law where the total transit time is the sum of the transit time in the rock matrix and the transit time in the fluid, each weighted by their respective volume fractions (1-phi and phi).",
         "sources": [
             {
@@ -6729,13 +6729,13 @@
         "language": "en",
         "question": "When water in a porous sandstone is replaced by gas, how do the compressional (P-wave) and shear (S-wave) velocities typically change?",
         "choices": [
-            "Both P-wave and S-wave velocities decrease significantly",
-            "P-wave velocity decreases significantly, while S-wave velocity remains constant or increases slightly",
             "P-wave velocity increases due to lower density, while S-wave velocity decreases",
-            "Both P-wave and S-wave velocities increase due to the lower density of the gas"
+            "Both P-wave and S-wave velocities increase due to the lower density of the gas",
+            "Both P-wave and S-wave velocities decrease significantly",
+            "P-wave velocity decreases significantly, while S-wave velocity remains constant or increases slightly"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Replacing water with gas drastically reduces the bulk modulus of the rock-fluid system, causing a significant drop in P-wave velocity. However, the shear modulus is unaffected by the fluid change. Since gas density is lower than water density, the S-wave velocity (dependent on shear modulus divided by density) may actually increase slightly or remain relatively stable, creating a distinct separation between the two behaviors.",
         "sources": [
             {
@@ -7110,13 +7110,13 @@
         "language": "en",
         "question": "Why are dipole acoustic sources preferred over monopole sources for measuring shear velocity in \"slow\" formations?",
         "choices": [
-            "Monopole sources cannot generate enough energy to penetrate the mudcake in slow formations",
-            "Dipole sources generate a borehole flexural wave that allows shear determination even when fluid velocity exceeds formation shear velocity",
             "Monopole sources create a quadrupole moment that interferes with the compressional arrival in slow rocks",
-            "Dipole sources operate at a much higher frequency, avoiding the dispersion effects common in slow formations"
+            "Dipole sources operate at a much higher frequency, avoiding the dispersion effects common in slow formations",
+            "Monopole sources cannot generate enough energy to penetrate the mudcake in slow formations",
+            "Dipole sources generate a borehole flexural wave that allows shear determination even when fluid velocity exceeds formation shear velocity"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "In slow formations, where the shear velocity is less than the borehole fluid velocity, refracted shear waves cannot exist (Snell's law). Monopole sources rely on refracted waves. Dipole sources, however, excite a flexural mode in the borehole. At low frequencies, the speed of this flexural wave approaches the true formation shear speed, allowing measurement in slow formations.",
         "sources": [
             {
@@ -7152,13 +7152,13 @@
         "language": "en",
         "question": "How does the borehole compensated (BHC) sonic tool design specifically address the issue of varying borehole diameter and tool tilt?",
         "choices": [
-            "It uses a single transmitter with multiple receivers to calculate an average velocity that ignores the mud path",
-            "It averages the transit times from an up-going and a down-going measurement array to cancel out unequal mud path lengths",
             "It increases the transmitter power automatically when caliper readings indicate a washout to ensure signal strength",
-            "It relies on a separate caliper measurement to mathematically subtract the mud travel time from the total travel time"
+            "It relies on a separate caliper measurement to mathematically subtract the mud travel time from the total travel time",
+            "It uses a single transmitter with multiple receivers to calculate an average velocity that ignores the mud path",
+            "It averages the transit times from an up-going and a down-going measurement array to cancel out unequal mud path lengths"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The BHC system uses two transmitter-receiver sets (or equivalent switching) to measure travel times in opposite directions (up-going and down-going). By averaging these intervals, the geometric errors caused by the tool being tilted or the hole size changing (which affects the path length through the mud) effectively cancel each other out.",
         "sources": [
             {
@@ -7236,13 +7236,13 @@
         "language": "en",
         "question": "What is the primary advantage of using a long-spacing sonic tool (e.g., 8-10 ft spacing) compared to a conventional short-spacing tool (e.g., 3-5 ft spacing) in formations with significant near-borehole alteration?",
         "choices": [
-            "It provides a higher vertical resolution for detecting thin beds",
-            "It allows the acoustic wave to penetrate deeper, ensuring the measured velocity represents the undisturbed formation",
             "It increases the frequency of the signal to better resolve micro-fractures in the altered zone",
-            "It reduces the effect of cycle skipping by generating a stronger shear wave component"
+            "It reduces the effect of cycle skipping by generating a stronger shear wave component",
+            "It provides a higher vertical resolution for detecting thin beds",
+            "It allows the acoustic wave to penetrate deeper, ensuring the measured velocity represents the undisturbed formation"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Alteration near the borehole (like shale swelling or stress relief) typically slows down acoustic waves. A short-spacing tool may only measure this slower, altered zone. Increasing the transmitter-receiver spacing forces the refracted wave path deeper into the formation, allowing it to bypass the altered zone and measure the velocity of the virgin formation.",
         "sources": [
             {
@@ -7278,13 +7278,13 @@
         "language": "en",
         "question": "When analyzing cross-dipole sonic data, what characteristic feature in the dispersion curves indicates the presence of stress-induced anisotropy around the borehole?",
         "choices": [
-            "The fast and slow shear dispersion curves run parallel to each other across all frequencies",
-            "The dispersion curves for both polarizations exhibit a distinct crossover at intermediate frequencies",
             "The Stoneley wave dispersion curve merges with the fast shear curve at high frequencies",
-            "Both shear waves show zero slowness at the low-frequency limit"
+            "Both shear waves show zero slowness at the low-frequency limit",
+            "The fast and slow shear dispersion curves run parallel to each other across all frequencies",
+            "The dispersion curves for both polarizations exhibit a distinct crossover at intermediate frequencies"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Stress-induced anisotropy creates a specific stress distribution near the borehole (concentrations of tension and compression). At low frequencies, shear waves probe deep into the formation (far-field stress). At high frequencies, they sense the near-wellbore altered stress field. This difference in probing depth causes the fast and slow polarization curves to cross over, a signature unique to stress-induced (as opposed to intrinsic) anisotropy.",
         "sources": [
             {
@@ -7660,13 +7660,13 @@
         "language": "en",
         "question": "How does the current path of a standard induction or propagation tool differ in a horizontal well compared to a vertical well, assuming horizontal bedding?",
         "choices": [
-            "In a horizontal well, the current loop is circular and only encounters horizontal resistivity",
-            "In a horizontal well, the current flows horizontally at the top/bottom of the loop but vertically on the sides",
             "In a vertical well, the current loop is elongated and measures vertical resistivity exclusively",
-            "The current path is identical in both orientations due to azimuthal focusing"
+            "The current path is identical in both orientations due to azimuthal focusing",
+            "In a horizontal well, the current loop is circular and only encounters horizontal resistivity",
+            "In a horizontal well, the current flows horizontally at the top/bottom of the loop but vertically on the sides"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "In a vertical well, the induced current loop is horizontal and remains within the bedding plane, measuring horizontal resistivity ($R_h$).  In a horizontal well, the loop is perpendicular to the bedding; the current travels horizontally at the top and bottom of the loop but must cross bedding planes (flowing vertically) on the sides, making the measurement sensitive to both $R_h$ and $R_v$.",
         "sources": [
             {
@@ -7787,13 +7787,13 @@
         "language": "en",
         "question": "What is the primary limitation of using non-azimuthal measurements (like standard Gamma Ray) for geosteering when a horizontal well exits a reservoir sand into a shale?",
         "choices": [
-            "They cannot determine the mineralogical composition of the shale",
-            "They provide no information on whether the well exited through the top or the bottom of the reservoir",
             "They are too slow to transmit data to the surface in real-time",
-            "They are unaffected by the dip of the formation boundaries"
+            "They are unaffected by the dip of the formation boundaries",
+            "They cannot determine the mineralogical composition of the shale",
+            "They provide no information on whether the well exited through the top or the bottom of the reservoir"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Non-azimuthal tools provide a scalar value representing the formation properties around the borehole. When the log indicates a transition from sand to shale, the response looks identical whether the well has drilled up into the overlying shale or down into the underlying shale.  Azimuthal measurements or images are required to resolve this ambiguity.",
         "sources": [
             {
@@ -7914,13 +7914,13 @@
         "language": "en",
         "question": "Which of the following statements correctly describes the structural and electrical differences between kaolinite and montmorillonite?",
         "choices": [
-            "Kaolinite has a 2:1 sheet structure with high cation exchange capacity, while montmorillonite has a 1:1 structure with low capacity",
-            "Kaolinite has a 1:1 sheet structure with low cation exchange capacity, while montmorillonite has a 2:1 structure with high capacity",
             "Both minerals share a 2:1 sheet structure, but kaolinite has significantly higher potassium content",
-            "Both minerals have negligible cation exchange capacities because they are electrically neutral aluminosilicates"
+            "Both minerals have negligible cation exchange capacities because they are electrically neutral aluminosilicates",
+            "Kaolinite has a 2:1 sheet structure with high cation exchange capacity, while montmorillonite has a 1:1 structure with low capacity",
+            "Kaolinite has a 1:1 sheet structure with low cation exchange capacity, while montmorillonite has a 2:1 structure with high capacity"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Kaolinite consists of a simple 1:1 stacking of octahedral and tetrahedral sheets with low isomorphic substitution, resulting in a low Cation Exchange Capacity (CEC) (3-5 meq/100g). Montmorillonite has a 2:1 structure with significant substitution and a large interlayer space that allows for swelling and a high CEC (80-150 meq/100g).",
         "sources": [
             {
@@ -7956,13 +7956,13 @@
         "language": "en",
         "question": "In the context of log analysis, how is 'effective porosity' typically distinguished from 'total porosity' regarding clay content?",
         "choices": [
-            "Effective porosity excludes all water, whereas total porosity includes free and bound water",
-            "Effective porosity is the total porosity minus the volume of clay bound water",
             "Effective porosity includes unconnected pores, while total porosity excludes them",
-            "Effective porosity is measured on crushed samples, while total porosity is measured on whole cores"
+            "Effective porosity is measured on crushed samples, while total porosity is measured on whole cores",
+            "Effective porosity excludes all water, whereas total porosity includes free and bound water",
+            "Effective porosity is the total porosity minus the volume of clay bound water"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "For log analysts, effective porosity is defined as the total porosity less the clay bound water ($V_{cbw}$), which corresponds to the water held in the electrical double layer and is assumed not to move during production.",
         "sources": [
             {
@@ -7999,13 +7999,13 @@
         "language": "en",
         "question": "Why is the presence of iron-rich chlorite in a reservoir a specific concern for production stimulation operations involving acid?",
         "choices": [
-            "Chlorite swells significantly when in contact with acid, reducing permeability",
-            "Chlorite reacts with acid to precipitate a gelatinous iron compound that blocks pores",
             "Chlorite forms migratory fines that block pore throats when the pH is lowered",
-            "Chlorite dissolves completely, causing the formation framework to collapse"
+            "Chlorite dissolves completely, causing the formation framework to collapse",
+            "Chlorite swells significantly when in contact with acid, reducing permeability",
+            "Chlorite reacts with acid to precipitate a gelatinous iron compound that blocks pores"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "Iron-rich chlorite is sensitive to acid, which is often used to dissolve carbonate cements. Exposing chlorite to acid causes the precipitation of a gelatinous iron compound that can permanently halt production.",
         "sources": [
             {
@@ -8125,13 +8125,13 @@
         "language": "en",
         "question": "Although Aluminum is theoretically the best single element for clay indication, it is difficult to measure directly. What practical alternative using elemental analysis is often employed to estimate clay volume?",
         "choices": [
-            "A correlation based on the ratio of Iron to Potassium",
-            "An anti-correlation with Silicon, often corrected for carbonates and iron-rich minerals",
             "A direct measurement of the Calcium content",
-            "A measurement of Gadolinium concentration"
+            "A measurement of Gadolinium concentration",
+            "A correlation based on the ratio of Iron to Potassium",
+            "An anti-correlation with Silicon, often corrected for carbonates and iron-rich minerals"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "A practical method relies on the strong anti-correlation between clay content and Silicon. As clay content increases, Silicon decreases (quartz is replaced by aluminosilicates). The estimate is improved by subtracting contributions from carbonates (Ca, Mg) and heavy minerals (Fe).",
         "sources": [
             {
@@ -8419,13 +8419,13 @@
         "language": "en",
         "question": "What is a primary diagnostic application of the M-N crossplot in complex lithologies?",
         "choices": [
-            "Determining the exact clay volume in shaly sands",
-            "Identifying the presence of secondary porosity",
             "Calculating water saturation without resistivity logs",
-            "Differentiating between oil and water zones"
+            "Differentiating between oil and water zones",
+            "Determining the exact clay volume in shaly sands",
+            "Identifying the presence of secondary porosity"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The M-N plot is designed to eliminate porosity effects to focus on lithology. Secondary porosity increases the parameter 'M' (because density decreases while sonic transit time remains relatively unaffected) without changing 'N' significantly, making it useful for identifying secondary porosity.",
         "sources": [
             {
@@ -8461,13 +8461,13 @@
         "language": "en",
         "question": "In the Matrix Identification (MID) plot method, how are the apparent matrix parameters (density and transit time) derived?",
         "choices": [
-            "They are measured directly by geochemical logging tools",
-            "They are back-calculated using crossplot porosity values derived from neutron-density and neutron-sonic combinations",
             "They are assumed based on regional geological knowledge",
-            "They are determined solely from the Photoelectric Factor (Pe) log"
+            "They are determined solely from the Photoelectric Factor (Pe) log",
+            "They are measured directly by geochemical logging tools",
+            "They are back-calculated using crossplot porosity values derived from neutron-density and neutron-sonic combinations"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "The MID method uses a 'crossplot porosity' (often the neutron-density average) to back-calculate the apparent matrix density (ρ_maa) and apparent matrix travel time (t_maa) from the bulk density and measured transit time, respectively.",
         "sources": [
             {
@@ -8503,13 +8503,13 @@
         "language": "en",
         "question": "Why is the Photoelectric Factor ($P_e$) versus Density crossplot particularly effective for resolving limestone/dolomite mixtures compared to the standard Neutron-Density crossplot?",
         "choices": [
-            "The $P_e$ measurement is completely unaffected by porosity",
-            "The ordering of the lithology lines is different: Dolomite lies between Sandstone and Limestone on the $P_e$ plot",
             "The $P_e$ plot eliminates the need for any fluid corrections",
-            "Neutron-Density plots cannot differentiate between calcite and dolomite"
+            "Neutron-Density plots cannot differentiate between calcite and dolomite",
+            "The $P_e$ measurement is completely unaffected by porosity",
+            "The ordering of the lithology lines is different: Dolomite lies between Sandstone and Limestone on the $P_e$ plot"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "On a standard Neutron-Density plot, the lithology lines are ordered Sandstone-Limestone-Dolomite. On a $P_e$-Density plot, the order changes to Sandstone-Dolomite-Limestone. This reordering adds a new dimension that helps resolve ambiguities, such as distinguishing a dolomitic sand from a limestone.",
         "sources": [
             {
@@ -8546,13 +8546,13 @@
         "language": "en",
         "question": "How is an 'electrofacies' defined in the context of well log analysis?",
         "choices": [
-            "A geological facies identified solely by core visual inspection",
-            "A set of log responses that characterizes a bed and distinguishes it from others",
             "A formation layer that conducts electricity due to high water saturation",
-            "The electrical resistivity profile of the invaded zone"
+            "The electrical resistivity profile of the invaded zone",
+            "A geological facies identified solely by core visual inspection",
+            "A set of log responses that characterizes a bed and distinguishes it from others"
         ],
-        "answer_index": 1,
-        "answer_key": "B",
+        "answer_index": 3,
+        "answer_key": "D",
         "rationale": "An electrofacies is defined as a set of log responses that characterizes a specific bed or interval, allowing it to be distinguished from other beds. It serves as a bridge between log data and geological lithofacies.",
         "sources": [
             {
