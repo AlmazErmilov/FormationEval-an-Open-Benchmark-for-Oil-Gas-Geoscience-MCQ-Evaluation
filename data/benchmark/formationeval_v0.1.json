@@ -9247,5 +9247,431 @@
             "calc_required": false,
             "contamination_risk": "low"
         }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_sedimentary_facies_models_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Sedimentary Facies",
+            "Play Fairway Analysis"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A basin screening team wants a geology-driven way to predict where petroleum system elements are likely to occur before drilling. What is the main value of sedimentary facies models for this purpose?",
+        "choices": [
+            "They replace the need for geophysical interpretation by directly imaging reservoir bodies at depth",
+            "They help anticipate the spatial patterns of source, reservoir, and seal rocks based on depositional setting",
+            "They provide the chemical composition of generated hydrocarbons from each stratigraphic unit",
+            "They determine the exact production rate by prescribing permeability from first principles"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Facies and depositional-environment concepts are used to infer where organic-rich muds, porous sands/carbonates, and sealing shales/evaporites are likely to be deposited and how they are geometrically arranged. This predictive framework is essential because petroleum is overwhelmingly hosted in sedimentary successions, and the geometry of reservoirs and seals depends on depositional processes.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 1 - Introduction to Petroleum Geology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from the chapter’s discussion of sedimentology, facies prediction, and the distribution of source/reservoir/cap rocks."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_biostratigraphy_in_wells_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Biostratigraphy",
+            "Micropalaeontology"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "During drilling, only small rock fragments are routinely recovered as cuttings. Why is micropalaeontology (including palynology) generally more practical than macrofossils for correlating strata between wells?",
+        "choices": [
+            "Microfossils are typically abundant in tiny samples and can yield finer stratigraphic resolution than large fossils",
+            "Microfossils are resistant to all drilling-fluid contamination, unlike macrofossils",
+            "Macrofossils occur only in igneous and metamorphic rocks, so they are rarely present in wells",
+            "Macrofossils are only useful offshore, whereas microfossils are only useful on land"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Cuttings provide small amounts of material, making large fossils unlikely to be recovered, even when core is available. In contrast, a small mass of cuttings can contain many microfossils or palynomorphs, which commonly improves correlation and stratigraphic precision.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 1 - Introduction to Petroleum Geology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Based on the chapter’s explanation of well-based stratigraphic correlation using microfossils from cuttings."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_4d_seismic_monitoring_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Production Engineering"
+        ],
+        "topics": [
+            "4D Seismic",
+            "Reservoir Monitoring"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A producing offshore field repeats the same 3D seismic survey at several times during depletion. What is the primary goal of this time-lapse (4D) seismic approach?",
+        "choices": [
+            "To measure the chemical maturity of kerogen without requiring core or cuttings",
+            "To determine grain-size distributions of reservoir sands from seismic amplitudes alone",
+            "To track changes in fluid distribution, such as movement of gas/oil and oil/water contacts, through time",
+            "To directly measure absolute permeability in Darcy units across the reservoir"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Repeating a 3D survey introduces time as an additional dimension, allowing interpreters to observe how seismic responses shift as fluids move during production. The chapter describes this as a way to monitor changing contacts while the reservoir is being depleted.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 1 - Introduction to Petroleum Geology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept drawn from the section describing 3D seismic imaging and time-lapse (4D) seismic during reservoir depletion."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_anoxic_basin_source_rocks_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Source Rock Formation",
+            "Redox Conditions"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Two marine basins have similarly high surface-water biological productivity. In which basin would you most expect the sediment to end up with higher preserved organic content and thus better source-rock potential?",
+        "choices": [
+            "A basin with strong bottom-water ventilation that continuously replenishes oxygen at the seabed",
+            "A basin where bottom waters are stagnant due to density stratification, limiting oxygen supply to the seafloor",
+            "A basin with persistent traction currents that keep particles suspended and well-oxygenated",
+            "A basin where sediments are coarse sand, allowing deep oxygen penetration into porewater"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Preservation depends strongly on how much organic matter escapes oxidation and biological reworking after production in the photic zone. Restricted circulation and anoxic/toxic bottom waters suppress oxidation and bioturbation, allowing more organic matter to remain in laminated muds that can become source rocks.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 1 - Introduction to Petroleum Geology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Based on discussion of restricted basins, oxygen depletion, H2S formation, reduced bioturbation, and enhanced organic preservation."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_sedimentation_rate_source_rock_quality_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Source Rock Formation",
+            "Sedimentation Rate"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A shelf margin receives organic debris and mineral grains at the same time. Which sedimentation-rate scenario is expected to most favor formation of a high-quality source rock, assuming organic productivity is significant?",
+        "choices": [
+            "Very slow sedimentation, because longer residence time near the seabed increases organic preservation",
+            "Very rapid sedimentation, because it always produces the highest organic concentration regardless of dilution",
+            "Intermediate sedimentation rates, because preservation improves without excessive dilution by mineral matter",
+            "Any sedimentation rate, because source-rock quality depends only on surface-water productivity"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "If sedimentation is too slow, deposited organic matter spends more time exposed to oxygenated conditions and biological reworking, reducing preservation. If sedimentation is too fast, more organic matter may be buried but becomes heavily diluted by mineral grains. The chapter emphasizes that an intermediate rate (on the order of tens of mm per thousand years) best balances these effects.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 1 - Introduction to Petroleum Geology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Item derived from the chapter’s trade-off between oxidation/bioturbation at low rates and mineral dilution at high rates."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_hydrocarbon_transport_phase_behavior_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Petrophysics"
+        ],
+        "topics": [
+            "Hydrocarbon Migration",
+            "Solubility and Phase Transport"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "A modeler proposes that crude oil generated in a shale is mainly transported to traps as dissolved components in formation water. Based on the chapter’s discussion of migration mechanisms, what is the strongest conceptual objection to this idea for most oils?",
+        "choices": [
+            "Typical oil components have low aqueous solubility and water flow rates are too small to move enough oil, and it would also be difficult to explain systematic release into traps",
+            "Oil would dissolve readily, but dissolved oil would chemically transform into kerogen before reaching a reservoir",
+            "Formation water is always less dense than oil, so dissolved transport would force oil to migrate downward",
+            "Dissolved transport would be faster than buoyant flow, so it would prevent any accumulation in structural closures"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter argues that most oil is poorly soluble in water, making dissolved transport inefficient at realistic flow rates, and it is also hard to explain how large volumes would consistently come out of solution in traps. It contrasts this with methane, which can be relatively soluble at high pressure and may exsolve as pressure drops, highlighting why oil and gas can behave differently.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 1 - Introduction to Petroleum Geology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Built from the migration section contrasting separate-phase oil transport with limited aqueous solubility, and noting higher methane solubility at pressure."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_kerogen_oil_window_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Kerogen",
+            "Thermal Maturity"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Two source-rock packages reach similar maximum burial temperatures, but one basin subsides much faster than the other. According to the chapter, how does rapid subsidence tend to affect the temperature at which oil generation begins?",
+        "choices": [
+            "Oil generation tends to start at a higher temperature because there is less time for cracking reactions at any given temperature",
+            "Oil generation tends to start at a lower temperature because rapid burial always increases reaction time",
+            "Oil generation temperature is unchanged because it depends only on present-day depth, not on time",
+            "Oil generation begins only after kerogen becomes fully soluble as bitumen at shallow depth"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter describes petroleum generation as dependent on temperature integrated over time. With rapid subsidence, the source spends less time at moderate temperatures, so generation may be delayed until higher temperatures are reached compared with slowly subsiding settings.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 1 - Introduction to Petroleum Geology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based question from the kerogen cracking discussion relating reaction progress to temperature-time exposure and subsidence rate."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petrophysics_porosity_from_density_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petrophysics"
+        ],
+        "topics": [
+            "Porosity",
+            "Bulk Density Mixing Law"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A clean water-saturated sandstone has mineral grain density 2.65 g/cm³, pore-fluid density 1.00 g/cm³, and measured bulk (wet) density 2.10 g/cm³. Using the chapter’s density-porosity relationship, what is the porosity (as a fraction)?",
+        "choices": [
+            "0.33",
+            "0.21",
+            "0.45",
+            "0.12"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Using ρs = φρf + ρm(1−φ), rearrange to φ = (ρm−ρs)/(ρm−ρf) = (2.65−2.10)/(2.65−1.00) = 0.55/1.65 ≈ 0.33. This applies the chapter’s mixing relationship between grain density, fluid density, and bulk density.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 1 - Introduction to Petroleum Geology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Numerical application of the porosity–density mixing equation introduced in the porosity and permeability section."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_trap_timing_vs_migration_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Hydrocarbon Traps",
+            "Timing of Trap Formation"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A prospect is a fault-bounded anticline that formed after the main phase of oil generation and expulsion in the basin. Based on the chapter, what outcome is most consistent with this timing relationship?",
+        "choices": [
+            "The structure is likely to be ineffective for capturing most oil because the key migration pulse occurred before closure existed",
+            "The structure will necessarily be fully oil-filled because buoyancy always finds the newest closure",
+            "The structure will only trap petroleum if it is a stratigraphic pinchout rather than a fold",
+            "The structure cannot trap gas under any circumstance because gas migrates earlier than oil"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter stresses that a structural trap must exist when hydrocarbons migrate; late trap formation can miss the main oil charge. It also notes that in some settings late-formed traps may still capture gas, because gas generation and migration can occur later than oil, but late formation generally reduces trapping effectiveness for earlier oil migration.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 1 - Introduction to Petroleum Geology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Drawn from the discussion of structural trap formation timing relative to maturation-driven migration, and the contrasting timing sensitivity of stratigraphic traps."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_growth_fault_rollover_traps_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Fault Traps",
+            "Growth Faults",
+            "Deltaic Systems"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "In a deltaic succession, a curved normal fault shows decreasing throw upward, and stratigraphic units are thicker on the downthrown side than on the upthrown side. What interpretation and trapping style best matches the chapter’s description?",
+        "choices": [
+            "A reverse fault system; traps mainly form by compressional duplexing below the fault",
+            "A strike-slip fault; traps mainly form where lateral offsets create pull-apart basins",
+            "A growth fault active during deposition; traps often occur in rollover anticlines adjacent to the fault and/or where the fault seals against shale",
+            "A post-depositional joint set; traps mainly form because joints increase seal capacity"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Thickness increase on the downthrown side and diminishing displacement upward indicate syn-sedimentary fault motion, which the chapter associates with growth faults in rapidly deposited settings like deltas. The chapter further notes that traps can be created by sealing behavior along the fault and very commonly by rollover anticlines formed on the hangingwall geometry near listric faults.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 1 - Introduction to Petroleum Geology",
+                "retrieved_at": "2025-12-22",
+                "notes": "Based on the growth fault description: syn-depositional thickening on the downthrown side, listric geometry, sealing behavior, and rollover anticline trapping."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
     }
 ]
