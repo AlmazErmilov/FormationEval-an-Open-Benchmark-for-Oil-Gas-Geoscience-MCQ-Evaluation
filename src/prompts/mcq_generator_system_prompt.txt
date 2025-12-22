@@ -75,7 +75,7 @@ Create three plausible but clearly wrong options based on:
 **Balance:**
 - All four options must be similar in length and structure
 - Avoid patterns where the correct answer is always longest/shortest
-- Randomize the position of the correct answer across questions (A, B, C, D)
+- Randomize the position of the correct answer across questions (A, B, C, D) and distribute correct answers evenly: ~25% each for A/B/C/D (index 0/1/2/3)
 - Verify each option uses fresh language — if an option could be found verbatim in the source, rewrite it
 
 ## Rationale
