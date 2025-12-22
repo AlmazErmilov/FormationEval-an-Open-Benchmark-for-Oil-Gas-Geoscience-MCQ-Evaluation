@@ -10182,5 +10182,429 @@
             "calc_required": false,
             "contamination_risk": "low"
         }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_water_chemistry_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Water Chemistry",
+            "Surface Tension"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "Several sedimentary-geochemical processes depend on water’s ability to surround ions and to generate capillary rise in fine pores. Which molecular property of water best explains both behaviors?",
+        "choices": [
+            "Water is strongly polar, so its dipole aligns toward ions and also creates high surface tension",
+            "Water has a low boiling point, so it readily evaporates and concentrates ions in soils",
+            "Water has weak intermolecular forces, so it cannot hold a stable meniscus in pores",
+            "Water is nonpolar, so it does not interact with charged mineral surfaces"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "A strong molecular dipole makes water orient its negative side toward cations, producing hydration shells that keep ions dispersed in solution. The same polarity leads to strong cohesion between molecules, which contributes to high surface tension and capillary effects in fine-grained sediments. The other options contradict water’s observed polarity-driven behavior.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 3 - Sedimentary Geochemistry",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from discussion of water dipole effects on hydration, surface tension, and capillary forces."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_ionic_potential_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Ionic Potential",
+            "Mineral Solubility"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "An ion has valence Z = +3 and ionic radius R = 0.30 Å. Using ionic potential IP = Z/R, which outcome is most consistent with its expected behavior in low-temperature water–mineral systems?",
+        "choices": [
+            "It mainly stays in solution as a hydrated cation because its ionic potential is very low",
+            "It tends to form very low-solubility hydroxide-type precipitates because its ionic potential is intermediate",
+            "It mainly forms soluble anion complexes because its ionic potential is very high",
+            "It remains chemically inert because ionic potential only matters at metamorphic temperatures"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The ionic potential is 3/0.30 = 10, which lies in the intermediate range described for ions that hydrolyze and form poorly soluble hydroxide phases. Low-IP ions remain hydrated and stay in solution, while very high-IP ions form soluble anion complexes and release H+. The concept is explicitly framed for low-temperature sedimentary environments, not only metamorphic conditions.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 3 - Sedimentary Geochemistry",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the definition of ionic potential and the low/intermediate/high-IP behavior categories."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_ion_hydration_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Ion Hydration",
+            "Clay Adsorption"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Two alkali ions are released during weathering and delivered to the ocean in similar amounts. Over time, one ion remains relatively abundant in seawater while the other is efficiently removed by adsorption onto clays. Which mechanism best explains this contrast?",
+        "choices": [
+            "The more abundant ion is less soluble, so it precipitates as a hydroxide before reaching the ocean",
+            "The more strongly hydrated ion is more easily captured by negatively charged clay surfaces",
+            "The more strongly hydrated ion is better shielded by water molecules, reducing its adsorption onto clay minerals",
+            "The ion with larger ionic radius forms stronger hydration shells, keeping it longer in rivers"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Strong hydration increases the effective (hydrated) size and shields the positive charge, which reduces the ability of the ion to adsorb onto negatively charged clay surfaces. Less hydrated ions retain a more effective surface charge and are removed more readily by adsorption during transport and after entering seawater. This framework explains why some alkali ions have much shorter marine residence times than others.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 3 - Sedimentary Geochemistry",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the discussion of hydration strength, effective surface charge, and clay adsorption controlling seawater composition."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_carbonate_precipitation_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Carbonate Precipitation",
+            "Temperature Effects"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Seawater can have a Mg/Ca ratio greater than 1, yet calcium carbonate commonly forms before magnesium carbonates under typical surface conditions. What is the best explanation given for this behavior?",
+        "choices": [
+            "Magnesium carbonates require strongly acidic water, which is uncommon in the ocean",
+            "Calcium has a higher ionic potential than magnesium, so it always bonds more strongly to carbonate",
+            "Magnesium carbonates precipitate only in the presence of abundant evaporites, regardless of temperature",
+            "Strong hydration of Mg2+ hinders its incorporation at low temperature, but reduced hydration at higher temperature promotes Mg-bearing carbonates during diagenesis"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Mg2+ is small and strongly hydrated, which makes it less available to enter carbonate crystal structures at low temperature even when dissolved Mg is abundant. With increasing temperature, hydration weakens, making Mg more readily incorporated and allowing magnesium carbonates to precipitate more easily during burial/diagenesis. Explanations based solely on ionic potential or acidity do not match the chapter’s hydration-focused mechanism.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 3 - Sedimentary Geochemistry",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the link between hydration strength, temperature, and carbonate mineral stability/precipitation."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_ph_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "pH",
+            "Water Ionization"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "At 125°C, the ionization product of water is given as [H+]·[OH−] = 10−12. What pH corresponds to neutral water at this temperature?",
+        "choices": [
+            "pH = 6",
+            "pH = 7",
+            "pH = 8",
+            "pH = 5"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Neutrality implies [H+] = [OH−], so each equals √(10−12) = 10−6. pH is −log10[H+], giving pH = 6. This highlights that “neutral pH” changes with temperature because water’s ionization product changes.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 3 - Sedimentary Geochemistry",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the temperature dependence of water ionization and the definition of pH."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_weathering_processes_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Weathering",
+            "Sediment Production"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A field area shows extensive dissolution of primary minerals and formation of new low-temperature phases that are stable in the presence of water. Which sediment-producing process does this describe?",
+        "choices": [
+            "Mechanical weathering, because it breaks rock by fracturing without changing mineralogy",
+            "Chemical weathering, because it transforms minerals and exports part of the rock mass in dissolved form",
+            "Erosion, because it only refers to transport and deposition after weathering stops",
+            "Metamorphism, because it is the dominant process in near-surface environments"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Chemical weathering involves mineral dissolution and precipitation of new minerals that are stable at low temperature and high water availability. Mechanical weathering mainly reduces grain size without fundamentally changing mineral chemistry. Erosion combines breakdown and removal, while metamorphism is associated with much higher temperatures than typical surface environments.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 3 - Sedimentary Geochemistry",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the definitions of mechanical weathering, chemical weathering, and erosion."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_distribution_coefficients_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Distribution Coefficients",
+            "Trace Elements in Carbonates"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "During calcite precipitation, manganese can be strongly concentrated relative to seawater. If Mn2+/Ca2+ in the solution is 1.0×10−5 and the distribution coefficient for Mn in calcite is k = 17, what Mn2+/Ca2+ ratio is expected in the calcite?",
+        "choices": [
+            "5.9×10−7",
+            "1.0×10−5",
+            "1.7×10−4",
+            "1.7×10−6"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "With constant temperature and pressure, the mineral/solution ratio follows Mn/Ca(mineral) = k·Mn/Ca(solution). Multiplying 17 by 1.0×10−5 gives 1.7×10−4, meaning calcite is enriched in Mn relative to the water. The other values correspond to ignoring k or applying it incorrectly.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 3 - Sedimentary Geochemistry",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the definition of distribution coefficients and the Mn-in-calcite example."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_clay_minerals_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Clay Minerals",
+            "Smectite Swelling",
+            "XRD Identification"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A clay separates into layers that expand noticeably when exposed to glycol vapor, while a related clay type shows little to no expansion under the same treatment. Which interpretation best matches this observation?",
+        "choices": [
+            "Kaolinite expands strongly because it has exchangeable interlayers that open in glycol vapor",
+            "Chlorite expands strongly because its octahedral sheets detach when glycol is present",
+            "Illite expands strongly because K+ weakens bonding between stacked layers during glycol treatment",
+            "Smectite expands because its interlayer region can take up water/other species, whereas illite is held more tightly by interlayer cations"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Smectite has a structure that permits interlayer uptake (including water and other molecules), producing measurable expansion under glycol treatment. Illite’s layers are more effectively bound by interlayer cations and stacked packets, limiting expansion. Kaolinite and chlorite are not described as showing this strong glycol-driven swelling behavior in the chapter.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 3 - Sedimentary Geochemistry",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from clay-mineral structure and glycol expansion behavior used for identification."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_quick_clay_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Clay Electrochemistry",
+            "Quick Clay",
+            "Effective Stress"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "Marine clays deposited in saltwater can later become “quick” after uplift and prolonged infiltration of freshwater. Which mechanism best explains both the loss of shear strength and why adding NaCl or KCl can re-stabilize the ground?",
+        "choices": [
+            "Freshwater removes ions that previously reduced electrostatic repulsion between negatively charged clay particles, allowing the open fabric to collapse; added salt restores ionic screening and particle bonding",
+            "Freshwater increases the clay’s permeability, accelerating drainage and raising the effective stress until failure occurs; added salt blocks pore throats and prevents drainage",
+            "Freshwater causes immediate cementation by iron hydroxides, creating brittle failure; added salt dissolves the cement and makes the clay ductile",
+            "Freshwater raises temperature and drives clay dehydration, producing shrinkage cracks; added salt provides heat of dissolution that closes the cracks"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "In the chapter’s description, saline porewater helps neutralize negative charges and supports an open, porous “card-house” fabric. When freshwater gradually leaches salts, repulsion increases and the structure becomes unstable; collapse releases porewater and the material can flow with very low viscosity. Reintroducing salt increases ionic strength, reducing repulsion and increasing shear strength through renewed electrochemical stabilization.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 3 - Sedimentary Geochemistry",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from the quick-clay example linking salinity, double-layer effects, overpressure/low effective stress, and stabilization by salt addition."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_basin_stratification_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Ocean Stratification",
+            "Redox Conditions",
+            "Water Circulation"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "A semi-enclosed basin receives large freshwater input and has limited exchange with the open ocean. Over time, what water-column structure and bottom-water chemistry is most expected, based on density-driven circulation principles?",
+        "choices": [
+            "Dense, salty surface water sinks, creating strong vertical mixing and oxygenated bottom waters",
+            "A low-salinity surface layer overlies denser saline water, weakening vertical circulation and promoting reducing conditions at depth",
+            "Uniform salinity develops quickly, so temperature alone controls density and bottom waters remain fully oxygenated",
+            "Evaporation-driven salinity increases at depth, causing deep water to rise and ventilate the seabed continuously"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "When freshwater caps denser marine water, the salinity-related density contrast inhibits overturning and reduces oxygen delivery to deeper layers. Continuous oxygen consumption by respiration and organic-matter oxidation then drives bottom waters toward anoxic/reducing conditions. The chapter contrasts this with evaporative settings where dense surface brines can sink and enhance circulation.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 3 - Sedimentary Geochemistry",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item derived from basin circulation models (freshwater surplus vs evaporation surplus) and implications for redox state of bottom waters."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
     }
 ]
