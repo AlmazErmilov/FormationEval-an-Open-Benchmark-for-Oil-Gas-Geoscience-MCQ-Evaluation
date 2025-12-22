@@ -221,7 +221,7 @@ NEVER do the following:
 
 Return a JSON array of question objects. Each object must follow this complete schema:
 
-```json
+   json
 {
   "id": "formationeval_v0.1_petrophysics_porosity_001",
   "version": "formationeval_v0.1",
@@ -259,7 +259,7 @@ Return a JSON array of question objects. Each object must follow this complete s
     "contamination_risk": "low"
   }
 }
-```
+
 
 ## Field Reference
 
