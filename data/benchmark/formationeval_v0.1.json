@@ -13526,5 +13526,524 @@
             "calc_required": false,
             "contamination_risk": "low"
         }
+    },
+    {
+        "id": "formationeval_v0.1_reservoirengineering_formation_water_chemistry_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Reservoir Engineering",
+            "Production Engineering"
+        ],
+        "topics": [
+            "Formation Water",
+            "Water Injection Monitoring"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "During offshore waterflooding, seawater is injected into a reservoir whose original formation water has a different chemistry. What is a practical reason to analyze the produced water chemistry during production?",
+        "choices": [
+            "To detect whether injected seawater has reached the producing well",
+            "To determine the burial temperature history of the source rock directly",
+            "To calculate the vertical stress (overburden) at the perforation depth",
+            "To estimate grain density for converting porosity to void ratio"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Injected seawater typically has a distinct ionic composition compared with in-situ formation water. Tracking produced-water composition can therefore indicate breakthrough of injected water at the producer. The other options are not objectives that produced-water chemistry alone can directly deliver in this context.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from discussion of using produced-water composition to identify injected-water breakthrough."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_effective_stress_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Drilling Engineering"
+        ],
+        "topics": [
+            "Effective Stress",
+            "Pore Pressure"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "In a sedimentary basin, which expression best represents the effective stress carried by the solid framework of a fluid-saturated rock?",
+        "choices": [
+            "P − ρfgh, where ρf is the pore-fluid density",
+            "ρrgh − P, where ρrgh is the lithostatic (total) stress",
+            "P + ρrgh, where P is pore pressure and ρrgh is total stress",
+            "ρfgh − P, where ρfgh is the hydrostatic pressure"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Effective stress is the portion of total (lithostatic) stress that is not supported by pore pressure; it is total stress minus pore pressure. The other expressions either use the wrong density term or combine pressure and stress in a way that does not represent stress transmitted through the grains.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item from the section defining lithostatic stress, pore pressure, and effective stress."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petrophysics_relative_permeability_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petrophysics",
+            "Reservoir Engineering"
+        ],
+        "topics": [
+            "Permeability",
+            "Multiphase Flow"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "When two immiscible fluids occupy the pore space (e.g., water and oil), what does “relative permeability” describe?",
+        "choices": [
+            "The rock’s resistance to flow expressed only in square meters, independent of fluids",
+            "The ratio of pore pressure to lithostatic stress in the flowing interval",
+            "The ability of the rock to transmit one fluid phase compared with the single-phase case",
+            "The density contrast between two fluids that determines buoyancy forces"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Relative permeability refers to how easily one phase flows when another immiscible phase is also present, compared to the permeability at 100% saturation of that phase. Absolute (intrinsic) permeability is a rock property defined without reference to multiphase effects.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Based on the chapter’s distinction between intrinsic (absolute) permeability and relative permeability."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_overpressure_definition_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Drilling Engineering"
+        ],
+        "topics": [
+            "Overpressure",
+            "Potentiometric Surface"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A permeable interval is tested with an open pipe connected to a reference datum at sea level. Which observation most directly indicates the interval is overpressured?",
+        "choices": [
+            "The water level in the pipe stabilizes exactly at sea level",
+            "The water level in the pipe stabilizes below sea level",
+            "The water level in the pipe fluctuates because of tidal loading",
+            "The water level in the pipe rises and stabilizes above sea level"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Overpressure is associated with a potentiometric (piezometric) surface that would stand above the reference datum (e.g., sea level). If the stabilized water level is near sea level, the interval is normally pressured relative to that datum.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "From the discussion linking potentiometric surfaces to normal pressure versus overpressure."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petrophysics_conservative_ions_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petrophysics",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Formation Water Chemistry",
+            "Fluid Flow Tracers"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A geoscientist wants ions that best reflect transport and mixing rather than water–rock reactions. Which pair is most suitable as a tracer in many sedimentary basins?",
+        "choices": [
+            "Cl− and Br−",
+            "Ca2+ and Mg2+",
+            "HCO3− and CO32−",
+            "K+ and Fe2+"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Chloride and bromide tend to be comparatively conservative because they react only weakly with common basin minerals, so their distribution more directly reflects fluid movement. Many other ions can be buffered by mineral equilibria or strongly affected by ion exchange and redox reactions.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based question derived from the chapter’s discussion of conservative ions for tracing flow."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petrophysics_salt_sieving_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petrophysics",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Clay Membranes",
+            "Salt Sieving",
+            "pH Effects"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A compacted clay-rich layer behaves as a semi-permeable membrane during burial. Which ion movement is most associated with charge balancing in a way that can lower pH on one side of the membrane?",
+        "choices": [
+            "Upward migration of Cl−, increasing alkalinity",
+            "Counter-migration of H+, increasing acidity",
+            "Preferential retention of Na+, increasing pH",
+            "Downward migration of SO42−, buffering acidity"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "Negatively charged clay surfaces tend to hinder anions and promote selective ion behavior, so small ions such as H+ can migrate to maintain electroneutrality. This can raise the hydrogen ion activity (lower pH) and also contribute to concentration effects often described as salt sieving.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Based on the membrane behavior of compacted clays, selective ion transport, and pH change described in the chapter."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_clay_dehydration_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Clay Mineral Diagenesis",
+            "Salinity Evolution"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "During burial heating, certain clay transformations release water and bind cations. What is a likely consequence for porewater salinity in shale relative to adjacent sandstone at the same depth?",
+        "choices": [
+            "Shale porewater becomes consistently more saline because clays dissolve halite",
+            "Shale porewater becomes identical to sandstone porewater due to rapid mixing",
+            "Shale porewater can be less saline because relatively fresh water is released during clay reactions",
+            "Shale porewater becomes more saline because HCO3− is removed by oxidation"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Burial reactions such as smectite-to-illite (and other clay-related transformations) release crystal-bound water and can sequester cations, which can dilute porewater. The chapter notes that shales may therefore show lower salinity than sandstones at comparable depth, reflecting diagenetic water release and limited mixing.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from the discussion of clay mineral instability ranges, water release, and shale–sand salinity contrasts."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petrophysics_permeability_averaging_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petrophysics",
+            "Reservoir Engineering"
+        ],
+        "topics": [
+            "Permeability Upscaling",
+            "Layered Media"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A stratified interval contains several sandstone beds separated by thin, very tight shale layers. To estimate vertical leakage across bedding, which permeability average is most appropriate, and what typically dominates the result?",
+        "choices": [
+            "Arithmetic mean, dominated by the most permeable sandstone",
+            "Geometric mean, dominated by the median permeability bed",
+            "Thickness-weighted mean, dominated equally by all layers",
+            "Harmonic mean, dominated by the lowest-permeability layers"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "For flow perpendicular to bedding, the effective permeability corresponds to a harmonic mean, which is strongly controlled by the tightest layers. Even thin low-permeability shales or cemented streaks can severely limit vertical flow and therefore control the upscaled value.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Conceptual question based on the chapter’s treatment of harmonic versus arithmetic means for permeability in layered sequences."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_connate_water_sulphate_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Redox Boundary",
+            "Marine Porewater Evolution"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Marine porewater shortly after burial can differ from seawater in key ions. What best explains why deep marine-derived porewater can have very low sulphate while chlorinity stays close to the original seawater value?",
+        "choices": [
+            "Bacteria consume sulphate during reduction, while chloride is largely unaffected by diagenetic reactions",
+            "Sulphate is added by oxidation of hydrocarbons, while chloride is removed by carbonate precipitation",
+            "Sulphate and chloride are both strongly absorbed by clay surfaces, reducing both equally",
+            "Sulphate is diluted by evaporation, while chloride is consumed during pyrite formation"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Just below the seabed, sulphate can be reduced by microbial processes and therefore becomes depleted with burial, whereas chloride is generally conservative and not significantly consumed by common diagenetic reactions. This combination produces a typical “low sulphate, similar chlorinity” signature for modified marine porewater.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from the description of oxygen loss, sulphate reduction, and conservative behavior of chloride below the seafloor."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_reservoirengineering_meteoric_water_penetration_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Reservoir Engineering",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Meteoric Water Flow",
+            "Freshwater Wedge"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A coastal aquifer has a groundwater table 10 m above sea level. Using ρsw = 1.025 g/cm³ for saline water and ρmw = 1.000 g/cm³ for meteoric water, what is the approximate depth (below sea level) to the base of the freshwater wedge predicted by D = H·ρmw/(ρsw − ρmw)?",
+        "choices": [
+            "About 40 m",
+            "About 400 m",
+            "About 4,000 m",
+            "About 40,000 m"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "With the given densities, (ρsw − ρmw) ≈ 0.025 g/cm³, so D ≈ 10 × 1.0 / 0.025 ≈ 400 m. The result reflects that a relatively small freshwater head can balance a much thicker column because the density difference is modest.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Calculation item based on the density-balance estimate for meteoric-water penetration beneath coasts/islands."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_thermal_convection_stability_011",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Geophysics"
+        ],
+        "topics": [
+            "Thermal Convection",
+            "Salinity Stratification",
+            "Density Effects"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "In a basin with a normal geothermal gradient, formation-water data show salinity increasing downward at roughly 30 ppm/m and remaining stratified over large depth intervals. What is the most consistent implication for large-scale convective overturning of porewater?",
+        "choices": [
+            "Convection should be vigorous because higher salinity lowers density at depth",
+            "Convection should be vigorous because the salinity gradient guarantees density inversion",
+            "Convection is strongly suppressed because the salinity-related density increase can outweigh thermal expansion",
+            "Convection is unaffected because salinity has negligible influence on porewater density"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "Increasing temperature tends to decrease water density and can drive instability, but increasing salinity raises density and can stabilize the water column. The chapter notes that a sufficiently strong salinity gradient can more than compensate for thermal expansion, and persistent stratification is evidence that convection has not mixed the system on a large scale.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Hard integration item combining density effects of temperature and salinity with the inference of limited vertical mixing."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_petroleumgeology_faults_conduit_barrier_012",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Petroleum Geology",
+            "Reservoir Engineering"
+        ],
+        "topics": [
+            "Fault Hydraulics",
+            "Fracture Permeability",
+            "Overpressure"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "Which situation most favors a fault acting as a long-lived conduit for basin fluids rather than a barrier?",
+        "choices": [
+            "A fault in ductile, actively subsiding mud-rich sediments where fractures readily stay open",
+            "A fault where clay smearing is absent because shale cannot be incorporated into the fault zone",
+            "A fault in a porous, weakly cemented sandstone where matrix flow is negligible compared to fracture flow",
+            "A fault in well-cemented or uplifted brittle rocks where open/brecciated fractures can persist, at least until cementation reduces permeability"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "The chapter emphasizes that sustained flow along a fault requires the fracture system to remain open, which is more feasible in strong, brittle, well-cemented or uplifted rocks. In subsiding, weaker sediments, faults and fractures are more likely to close or become sealing (e.g., via clay smear or cementation), making them barriers or only transient conduits.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 10 - Subsurface Water and Fluid Flow in Sedimentary Basins",
+                "retrieved_at": "2025-12-22",
+                "notes": "Concept-based item from the chapter’s discussion of when faults behave as conduits versus barriers and the role of rock strength and cementation."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
     }
 ]
