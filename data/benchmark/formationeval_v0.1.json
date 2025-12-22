@@ -11552,5 +11552,515 @@
             "calc_required": true,
             "contamination_risk": "medium"
         }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_mudrock_properties_001",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Mudrocks",
+            "Clay Matrix Effects"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "A fine-grained sediment contains a noticeable silt fraction, but the silt grains are dispersed within a continuous clay-rich matrix. Which component most strongly controls the rock's bulk behavior (e.g., cohesion and fluid sensitivity)?",
+        "choices": [
+            "The silt-sized grains, because they contribute most of the grain-to-grain contacts",
+            "The clay-sized fraction, because the matrix dominates how the material behaves",
+            "The sand-sized grains, because even a small amount determines mechanical strength",
+            "The pore fluid alone, because mineralogy has little influence at small grain sizes"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "When larger grains are effectively \"floating\" in a finer clay matrix, the clay fraction governs key properties such as cohesion and sensitivity to pore-fluid chemistry. Clay minerals also have large specific surface area and surface charge effects that strongly influence behavior. Coarser grains matter more when they form the load-bearing framework.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Focuses on how a clay-dominated matrix controls mudrock properties even when coarser grains are present."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_weathering_clay_assemblages_002",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Clay Mineral Origin",
+            "Weathering and Climate"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "In a humid climate, intense chemical weathering affects a granitic or gneissic source area. What sediment output is most consistent with the expected mineral breakdown and residue?",
+        "choices": [
+            "Mostly smectite clay plus abundant volcanic glass shards",
+            "Mostly chlorite clay with little change to feldspar and mica",
+            "Only clay minerals with essentially no sand-sized quartz present",
+            "Quartz-rich sand plus kaolinite-rich clay, producing a strongly bimodal mix"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "Under humid conditions, silicate minerals like feldspar and mica are strongly altered, and Al–Si products can form kaolinite while quartz survives as sand. This naturally yields a mixture dominated by quartz sand and kaolinitic clay. A “clay-only” product is more characteristic of basic source rocks that lack quartz.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Derived from discussion of climate-controlled weathering products and resulting grain-size/mineral distributions."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_clay_flocculation_003",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Clay Transport",
+            "Flocculation in Seawater"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "River-borne clay commonly settles rapidly near a delta front after mixing with seawater. Which dissolved species is identified as especially effective at promoting the aggregation that speeds up settling?",
+        "choices": [
+            "K⁺, because it is less strongly hydrated and neutralizes clay surface charge efficiently",
+            "CO₃²⁻, because it creates buoyant carbonate coatings on clay particles",
+            "SO₄²⁻, because it increases electrostatic repulsion between clay platelets",
+            "H₄SiO₄, because dissolved silica acts as a glue between mineral surfaces"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Clay platelets carry negative surface charge, which helps keep them dispersed in freshwater. In seawater, cations reduce that electrostatic repulsion and promote denser aggregates that sink faster; K⁺ is highlighted as particularly effective due to its hydration behavior. The other listed species do not play the same charge-neutralization role described for seawater cations.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Targets the mechanism linking seawater ions to clay aggregation and limited offshore transport from deltas."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_clay_sorting_marine_004",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Clay Mineral Sorting",
+            "Delta to Basin Transects"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "Along a marine shelf profile from nearshore delta/shoreface to more offshore settings, which clay-mineral pattern best matches grain-size sorting described for common clay types?",
+        "choices": [
+            "Illite is deposited closest to shore, while kaolinite dominates the deepest basin",
+            "Smectite settles nearest the river mouth because it is the coarsest clay mineral",
+            "Kaolinite tends to be more proximal, while illite and smectite are carried farther offshore",
+            "All clay minerals deposit at the same distance because flocculation removes sorting effects"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter links clay sorting to grain size, noting kaolinite as the coarser clay mineral that tends to accumulate nearer to sediment sources. Finer clays like illite and smectite can be transported to more distal settings. Flocculation speeds settling near the mouth but does not eliminate all size-related sorting patterns within marine basins.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Uses the clay-mineral sorting concept along proximal–distal depositional environments."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_biogenic_silica_ocean_005",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Silica Cycle",
+            "Biogenic Silica"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Large amounts of dissolved silica are supplied to the oceans by rivers, yet surface seawater can still be undersaturated with respect to quartz. What process best explains this undersaturation in the upper ocean?",
+        "choices": [
+            "Quartz dissolves so rapidly in seawater that it overwhelms any precipitation pathway",
+            "Silica is efficiently removed by organisms that build amorphous silica skeletons, even at very low SiO₂ levels",
+            "Silica is mainly consumed by halite precipitation during evaporation on continental shelves",
+            "Silica is permanently locked into mid-ocean ridge sulphide deposits before reaching surface waters"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter emphasizes that organisms such as diatoms and radiolaria can precipitate silica from seawater at concentrations far below those needed for quartz saturation. This biological uptake helps keep surface waters undersaturated with respect to quartz despite continual continental input. Evaporite precipitation is not presented as the dominant control on open-ocean dissolved silica levels.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Conceptual item on why biological silica precipitation can keep surface waters undersaturated with quartz."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_silica_diagenesis_reflectors_006",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Silica Diagenesis",
+            "Seismic Reflectivity"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A seismic interpreter observes a laterally extensive, nearly horizontal reflector within a silica-rich sedimentary interval. Which explanation is most consistent with the diagenetic behavior of biogenic silica during burial?",
+        "choices": [
+            "A laterally uniform gas cap, because hydrocarbons always create horizontal reflections in shale",
+            "A sudden increase in clay content, because clay-to-sand transitions are always horizontal",
+            "A carbonate cementation front, because calcite nucleates at a fixed depth in all basins",
+            "A temperature-controlled silica phase change that alters acoustic impedance at a predictable burial window"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "The chapter links strong impedance contrasts to the transformation of biogenic silica phases (opal A to opal CT to quartz) during burial. Because these transformations are primarily temperature-driven, they tend to occur at similar thermal conditions and can appear as subhorizontal “fronts.” Such reflectors can be mistaken for fluid contacts if the diagenetic origin is not considered.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Connects burial-controlled silica phase transformations to acoustic impedance contrasts and seismic interpretation pitfalls."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_geophysics_silica_reflector_vs_fluid_contact_007",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Geophysics",
+            "Sedimentology"
+        ],
+        "topics": [
+            "Silica Diagenesis",
+            "Fluid Contacts vs Diagenetic Fronts"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "In a basin with diatom-rich sediments, a strong reflector cuts across stratigraphy and remains nearly horizontal over a wide area. Well data show no systematic change in pore-fluid type at that level. What is the most defensible interpretation from the chapter?",
+        "choices": [
+            "A diagenetic boundary related to silica transformations, which can mimic a fluid contact in seismic data",
+            "A regional unconformity produced by subaerial exposure, which must be planar and horizontal",
+            "A uniform gas-water contact, because gas contacts do not require a log response change",
+            "A fault-related reflector, because faults typically produce broad horizontal reflections"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "The chapter notes that opal A, opal CT, and quartz transitions can generate a marked impedance change and tend to form horizontal zones because they are temperature controlled. This creates reflectors that may resemble hydrocarbon contacts even when fluids do not change. A stratigraphic unconformity or fault explanation is not the most consistent with the described temperature-governed silica diagenesis behavior.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Hard interpretation item contrasting fluid contacts with temperature-driven silica diagenetic fronts that generate seismic reflections."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "low"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_marine_evaporite_sequence_008",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Evaporites",
+            "Marine Evaporation Sequence"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "In a restricted marine basin undergoing progressive evaporation, which mineral is expected to precipitate only after seawater volume has been reduced to roughly one-tenth of its original amount?",
+        "choices": [
+            "Calcite/aragonite (CaCO₃), because carbonates require extreme concentration to form",
+            "Gypsum (CaSO₄·2H₂O), because sulphate minerals are the most soluble major salts",
+            "Halite (NaCl), because chlorides become saturated late compared with carbonates and gypsum",
+            "Sylvite (KCl), because potassium salts saturate early due to high seawater K content"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter outlines an evaporation-driven sequence in which carbonates and gypsum precipitate earlier, while halite becomes a dominant precipitate only after much stronger concentration (around a 1/10 remaining volume). Potassium salts and bromides are described as among the last to precipitate because they remain soluble to higher concentrations. This makes halite the best match to the one-tenth criterion.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Targets the conceptual precipitation order of major evaporite minerals during seawater concentration."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_gypsum_anhydrite_compaction_009",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Drilling Engineering"
+        ],
+        "topics": [
+            "Evaporite Diagenesis",
+            "Gypsum–Anhydrite Transformation"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "A 10.0 m thick gypsum bed is converted to anhydrite during burial. Using the chapter's stated volume reduction for this transformation, what thickness is expected if lateral area is unchanged?",
+        "choices": [
+            "3.8 m",
+            "6.2 m",
+            "10.0 m",
+            "16.0 m"
+        ],
+        "answer_index": 1,
+        "answer_key": "B",
+        "rationale": "The chapter states that the gypsum-to-anhydrite transition involves a 38% volume reduction. If area is constant, thickness scales with volume, so the remaining thickness is 10.0 m × (1 − 0.38) = 6.2 m. The larger thickness would correspond to hydration (anhydrite to gypsum), not dehydration.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Simple quantitative application of the reported compaction associated with gypsum dehydration to anhydrite."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": true,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_sabkha_halite_preservation_010",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology"
+        ],
+        "topics": [
+            "Sabkha Model",
+            "Evaporite Preservation"
+        ],
+        "difficulty": "easy",
+        "language": "en",
+        "question": "In sabkha-type coastal flats, halite may form but is often missing from the preserved stratigraphic record. What mechanism best explains the poor preservation of halite in these settings?",
+        "choices": [
+            "Halite cannot crystallize from marine-derived brines in shallow coastal environments",
+            "Halite is converted into gypsum during early diagenesis as pore waters cool",
+            "Halite is mechanically removed by strong bioturbation that disrupts all lamination",
+            "Halite readily dissolves during later flooding events or from atmospheric moisture, removing it after deposition"
+        ],
+        "answer_index": 3,
+        "answer_key": "D",
+        "rationale": "The chapter describes sabkhas as settings that can precipitate halite during intense evaporation, but subsequent marine flooding or even humidity can redissolve it. This repeated dissolution prevents halite from being reliably preserved as distinct beds. Gypsum/dolomite lamination can persist because it is less prone to rapid surface dissolution under the described conditions.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Sabkha-focused item on why highly soluble chlorides are commonly removed after deposition."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_redox_boundary_mn_fe_011",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Redox Boundary",
+            "Iron and Manganese Geochemistry"
+        ],
+        "difficulty": "hard",
+        "language": "en",
+        "question": "In marine sediments, porewater becomes sulphate-reducing below the shallow oxidized layer. Based on the chapter's geochemical discussion, which element is more likely to escape trapping as a sulphide and instead be preferentially deposited in the oxidized zone above the redox boundary?",
+        "choices": [
+            "Iron, because Fe²⁺ does not form stable sulphides in sediments",
+            "Sulphur, because sulphur oxidizes and precipitates as metal oxides at the boundary",
+            "Manganese, because Mn²⁺ forms comparatively less stable sulphides than Fe²⁺",
+            "Aluminium, because Al³⁺ becomes highly soluble under oxidizing marine conditions"
+        ],
+        "answer_index": 2,
+        "answer_key": "C",
+        "rationale": "The chapter contrasts Fe and Mn behavior, emphasizing that Fe²⁺ readily forms low-solubility sulphides in reducing, sulphide-producing zones, while manganese sulphides are more soluble. As a result, Mn has a greater tendency to be fixed as oxidized phases in the oxygenated zone near/above the redox boundary. This makes manganese the better answer for preferential oxidized-zone deposition.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Integrates redox zoning with differential sulphide stability to predict Fe vs Mn trapping locations."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "medium"
+        }
+    },
+    {
+        "id": "formationeval_v0.1_sedimentology_phosphorite_upwelling_conditions_012",
+        "version": "formationeval_v0.1",
+        "domains": [
+            "Sedimentology",
+            "Petroleum Geology"
+        ],
+        "topics": [
+            "Phosphorites",
+            "Upwelling Systems"
+        ],
+        "difficulty": "medium",
+        "language": "en",
+        "question": "Which depositional scenario is most favorable for forming marine phosphorite beds according to the chapter?",
+        "choices": [
+            "Strong upwelling with high biological productivity and very low clastic sediment input, often during slow or interrupted sedimentation",
+            "High-energy shoreface sand deposition with rapid burial that prevents any chemical replacement",
+            "Deep-basin turbidite systems where repeated sand pulses dilute biogenic material",
+            "Humid continental floodplains where heavy rainfall concentrates phosphate by leaching"
+        ],
+        "answer_index": 0,
+        "answer_key": "A",
+        "rationale": "Marine phosphorite formation is tied in the chapter to slow sedimentation (minimal clastic dilution) combined with nutrient-rich upwelling that drives high organic production. These conditions allow phosphorus to be concentrated and apatite to precipitate and/or replace other minerals. Rapid clastic burial or high clastic flux works against phosphate enrichment by dilution.",
+        "sources": [
+            {
+                "source_id": "bjorylkke_petroleum_geoscience_2010",
+                "source_title": "Petroleum Geoscience: From Sedimentary Environments to Rock Physics",
+                "source_url": "https://doi.org/10.1007/978-3-642-02332-3",
+                "source_type": "textbook",
+                "year": 2010,
+                "license": "Proprietary (Springer)",
+                "attribution": "Knut Bjørlykke (ed.)",
+                "chapter_ref": "Chapter 6 - Shales, Silica Deposits and Evaporites",
+                "retrieved_at": "2025-12-22",
+                "notes": "Assesses understanding of environmental prerequisites for phosphorite enrichment in marine settings."
+            }
+        ],
+        "derivation_mode": "concept_based",
+        "metadata": {
+            "calc_required": false,
+            "contamination_risk": "high"
+        }
     }
 ]
