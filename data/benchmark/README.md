@@ -95,7 +95,7 @@ for q in questions:
 
 ## Methodology
 
-All questions are **concept-based**: written from scratch based on concepts from source materials, not copied or paraphrased. This approach:
+All questions are **concept-based**: written from scratch based on concepts from source materials. This approach:
 
 - Tests understanding of concepts, not recognition of phrases
 - Avoids reproducing copyrighted expression
