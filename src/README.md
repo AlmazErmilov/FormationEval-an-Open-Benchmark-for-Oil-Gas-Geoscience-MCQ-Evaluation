@@ -4,17 +4,6 @@ Scripts for generating concept-based multiple-choice questions from source mater
 
 ---
 
-## Files
-
-| File | Purpose |
-|------|---------|
-| `generate_mcq.py` | Core MCQ generation library using OpenAI API |
-| `pdf_to_markdown.py` | PDF to Markdown converter using Mistral OCR API |
-| `generate_tudelft_mcqs.py` | TU Delft lecture-specific MCQ generator wrapper |
-| `prompts/mcq_generator_system_prompt.txt` | System prompt for the LLM |
-
----
-
 ## Concept-based approach
 
 We generate questions by extracting **concepts** from source material, then writing **original questions** that test understanding of those concepts.
@@ -496,6 +485,16 @@ All generated items are tagged `derivation_mode: concept_based` to document this
 > **The "-ish":** this safety depends on the LLM following instructions properly. Modern models (GPT-4+, Claude 3+) are quite reliable at instruction following, but **human spot checking remains important** to catch edge cases.
 
 ---
+
+## Scripts
+
+| File | Purpose |
+|------|---------|
+| `generate_mcq.py` | Core MCQ generation library (OpenAI API) |
+| `pdf_to_markdown.py` | PDF to Markdown converter (Mistral OCR API) |
+| `generate_tudelft_mcqs.py` | Example source-specific wrapper |
+| `prompts/mcq_generator_system_prompt.txt` | System prompt for the LLM |
+
 ### generate_mcq.py
 
 Core library for generating concept-based MCQs from text. Uses OpenAI's GPT models with reasoning capabilities.
@@ -525,17 +524,14 @@ Options: `--table-format`, `--include-images`, `--output-dir`
 
 ### generate_tudelft_mcqs.py
 
-Source-specific wrapper for TU Delft OCW lectures. Handles lecture metadata, file mapping, and CLI.
+**Example wrapper** for adding a new source. This script shows the pattern for source-specific MCQ generation: define source metadata, map files to chapters, wrap the core `generate_mcq.py` library.
+
+Use this as a template when adding new openly-licensed sources to the benchmark.
 
 ```bash
-# Single lecture
-python src/generate_tudelft_mcqs.py PGeo_L1_Petroleum_Geology_-_Lecture_1_08.md
-
-# All lectures
-python src/generate_tudelft_mcqs.py all
-
-# List available lectures
-python src/generate_tudelft_mcqs.py --list
+python src/generate_tudelft_mcqs.py --list           # List available lectures
+python src/generate_tudelft_mcqs.py <lecture.md>     # Single lecture
+python src/generate_tudelft_mcqs.py all              # All lectures
 ```
 
 ---
