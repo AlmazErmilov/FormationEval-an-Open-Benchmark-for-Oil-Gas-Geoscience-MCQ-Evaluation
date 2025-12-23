@@ -1,20 +1,9 @@
-# FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation
-attempts on creating something like MMLU, but for subsurface and petroleum sciences
+# 🪨 FormationEval, an Open Benchmark for Oil & Gas Geoscience MCQ Evaluation
+(attempts on creating something like MMLU, but for subsurface and petroleum sciences)
 
 **FormationEval** is an open, research-oriented benchmark to evaluate language models on **Oil & Gas geoscience** and adjacent subsurface disciplines (petrophysics, petroleum geology, geophysics, reservoir engineering) inspired by **MMLU-style multiple-choice questions (MCQ)**.
 
 The project focuses on **reproducibility, provenance, and licensing safety**: public releases contain **only benchmark items + source references**, not copyrighted textbooks or exam PDFs.
-
----
-
-## Scope
-
-FormationEval currently targets a single, stable task format:
-
-- **MCQ (4 options, single correct answer)**  
-  Designed for straightforward scoring (accuracy) and leaderboard comparability.
-
-Planned but optional “future-proof” fields exist (e.g., `image`, `rationale`, `evidence`, `tooling`) while keeping the dataset MCQ first.
 
 ---
 
@@ -26,6 +15,17 @@ Subsurface/O&G benchmarks for LLMs are rare or limited (or probably hidden with 
 - **transparent origin** for every item,
 - a **clear public-release licensing policy**,
 - an evaluation workflow that integrates with standard tooling.
+
+---
+
+## Scope
+
+FormationEval currently targets a single, stable task format:
+
+- **MCQ (4 options, single correct answer)**  
+  Designed for straightforward scoring (accuracy) and leaderboard comparability.
+
+Planned but optional “future-proof” fields exist (e.g., `image`, `rationale`, `evidence`, `tooling`) while keeping the dataset MCQ first.
 
 ---
 
