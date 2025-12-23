@@ -50,6 +50,34 @@ Your question wording, answer options, and explanations must be original — not
 - Test one primary concept per question — avoid multi-part questions
 - Include enough context so the question is unambiguous without reading the original text
 
+## Standalone Questions — No Source Self-References
+
+Questions must be answerable from domain knowledge alone, without access to the source chapter. The benchmark evaluates whether a model understands petroleum geoscience concepts — not whether it can recall a specific text.
+
+**NEVER use these phrases in question text:**
+- "According to the chapter...", "The chapter describes...", "Using the chapter's definition..."
+- "Based on the text...", "The passage states...", "As discussed in the reading..."
+- "The author argues...", "This section explains..."
+- Any phrasing that implies the reader has access to specific source material
+
+**INSTEAD, make questions standalone by:**
+- Stating necessary context directly: "Given that petroleum generation depends on temperature integrated over time, how does..."
+- Using standard terminology: "Using Archie's equation..." (not "Using the chapter's Archie form...")
+- Referencing named concepts: "Using the Ghyben-Herzberg relationship..." (not "Using the chapter's formula...")
+- Providing definitions when needed: "Void ratio expresses pore space as the ratio of void volume to solid volume. What is..."
+- Citing well-known case studies by name: "In the Ekofisk chalk reservoir case..." (not "In the chapter's example...")
+
+**Why this matters:**
+- The ones being evaluated does NOT have access to "the chapter"
+- Questions with source references become ambiguous or unanswerable
+- We test domain knowledge, not reading comprehension of our source materials
+- A petroleum engineer who learned from different textbooks should be able to answer
+
+**Where source references ARE acceptable:**
+- `rationale` field: "The chapter explains that..." is fine here since it's explanatory
+- `sources[].notes` field: Reference to specific sections is appropriate
+- These fields are not shown to the model being evaluated
+
 ## Coverage
 
 - Cover the key concepts of the chapter without repetition
@@ -170,6 +198,7 @@ Choose 1-3 specific topics that identify what the question tests. Topics should 
 
 NEVER do the following:
 
+- Reference "the chapter", "the text", "the passage", or any source-specific phrasing in question text (questions must be standalone)
 - Copy long phrases or sentences from the source text into questions, answers, or rationales
 - Create questions that cannot be answered from the provided chapter text
 - Write vague, ambiguous, or multi-interpretation questions
