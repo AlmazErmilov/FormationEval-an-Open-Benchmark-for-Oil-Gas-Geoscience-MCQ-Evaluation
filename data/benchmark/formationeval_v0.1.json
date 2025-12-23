@@ -437,7 +437,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "In a wellsite interpretation, comparing the ratio of flushed zone resistivity to true resistivity ($R_{xo}/R_t$) against the ratio of mud filtrate to formation water resistivity ($R_{mf}/R_w$) can indicate producibility. What does it suggest if $R_{xo}/R_t$ is less than $R_{mf}/R_w$?",
+        "question": "In a wellsite interpretation, comparing the ratio of flushed zone resistivity to true resistivity (R_xo/Rₜ) against the ratio of mud filtrate to formation water resistivity (R_mf/R_w) can indicate producibility. What does it suggest if R_xo/Rₜ is less than R_mf/R_w?",
         "choices": [
             "The formation is likely tight and no invasion has occurred",
             "The zone contains hydrocarbons that have been moved by the drilling fluid",
@@ -446,7 +446,7 @@
         ],
         "answer_index": 1,
         "answer_key": "B",
-        "rationale": "The text states that if the ratio $R_{xo}/R_t$ is the same as $R_{mf}/R_w$, then the flushed and uninvaded zones likely have the same hydrocarbon saturation (or none), implying no movement. However, if $R_{xo}/R_t < R_{mf}/R_w$, it indicates that some hydrocarbons were displaced (moved) by the invading filtrate, suggesting the hydrocarbons are producible.",
+        "rationale": "The text states that if the ratio R_xo/Rₜ is the same as R_mf/R_w, then the flushed and uninvaded zones likely have the same hydrocarbon saturation (or none), implying no movement. However, if R_xo/Rₜ < R_mf/R_w, it indicates that some hydrocarbons were displaced (moved) by the invading filtrate, suggesting the hydrocarbons are producible.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -647,7 +647,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In a porous formation saturated with water, how does the True Formation Resistivity ($R_t$) generally change as porosity increases, assuming water salinity remains constant?",
+        "question": "In a porous formation saturated with water, how does the True Formation Resistivity (Rₜ) generally change as porosity increases, assuming water salinity remains constant?",
         "choices": [
             "It decreases",
             "It increases",
@@ -656,7 +656,7 @@
         ],
         "answer_index": 0,
         "answer_key": "A",
-        "rationale": "The text explains that the formation resistivity is affected by porosity. Since the rock matrix is non-conductive and the electric current flows through the conductive electrolyte (brine) in the pore space, increasing the porosity provides more conductive paths, thereby decreasing the resistivity ($R_t$) of the formation.",
+        "rationale": "The text explains that the formation resistivity is affected by porosity. Since the rock matrix is non-conductive and the electric current flows through the conductive electrolyte (brine) in the pore space, increasing the porosity provides more conductive paths, thereby decreasing the resistivity (Rₜ) of the formation.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -1454,7 +1454,7 @@
         ],
         "answer_index": 3,
         "answer_key": "D",
-        "rationale": "The pseudogeometric factor ($J$) describes the relative contribution of the invaded zone to the total signal. The LLd has a slowly rising $J$ curve, indicating that only a small fraction of its signal comes from the invaded zone (e.g., ~15% from a 20-inch diameter), whereas the LLs has a steeply rising curve, indicating high sensitivity to the region close to the borehole.",
+        "rationale": "The pseudogeometric factor (J) describes the relative contribution of the invaded zone to the total signal. The LLd has a slowly rising J curve, indicating that only a small fraction of its signal comes from the invaded zone (e.g., ~15% from a 20-inch diameter), whereas the LLs has a steeply rising curve, indicating high sensitivity to the region close to the borehole.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -1791,7 +1791,7 @@
         ],
         "answer_index": 3,
         "answer_key": "D",
-        "rationale": "The microlog was an unfocused device susceptible to mudcake influence (reading mainly mudcake in conductive/thick cases). The microlaterolog introduced focusing (similar to the laterolog) using bucking currents from a guard electrode to force the measure current into the formation, thereby providing a better determination of the flushed zone resistivity ($R_{xo}$).",
+        "rationale": "The microlog was an unfocused device susceptible to mudcake influence (reading mainly mudcake in conductive/thick cases). The microlaterolog introduced focusing (similar to the laterolog) using bucking currents from a guard electrode to force the measure current into the formation, thereby providing a better determination of the flushed zone resistivity (R_xo).",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -1824,16 +1824,16 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In the absence of other data, how can the ratio of flushed zone resistivity to true resistivity ($R_{xo}/R_t$) indicate the presence of movable hydrocarbons in a clean reservoir?",
+        "question": "In the absence of other data, how can the ratio of flushed zone resistivity to true resistivity (R_xo/Rₜ) indicate the presence of movable hydrocarbons in a clean reservoir?",
         "choices": [
             "The ratio equals 1.0 regardless of fluid content",
-            "The ratio significantly exceeds the ratio of mud filtrate to formation water resistivity ($R_{mf}/R_w$)",
-            "The ratio drops below the theoretical water-bearing baseline of $R_{mf}/R_w$",
+            "The ratio significantly exceeds the ratio of mud filtrate to formation water resistivity (R_mf/R_w)",
+            "The ratio drops below the theoretical water-bearing baseline of R_mf/R_w",
             "The ratio becomes negative due to the high resistivity of oil"
         ],
         "answer_index": 2,
         "answer_key": "C",
-        "rationale": "In a water zone, $R_{xo}/R_t$ should equal $R_{mf}/R_w$. If movable hydrocarbons are present, they are flushed from the invaded zone (increasing $S_{xo}$) but remain in the uninvaded zone (keeping $S_w$ low). This causes $R_{xo}$ to be relatively lower compared to the high $R_t$ of the hydrocarbon zone, decreasing the ratio below the water baseline.",
+        "rationale": "In a water zone, R_xo/Rₜ should equal R_mf/R_w. If movable hydrocarbons are present, they are flushed from the invaded zone (increasing S_xo) but remain in the uninvaded zone (keeping S_w low). This causes R_xo to be relatively lower compared to the high Rₜ of the hydrocarbon zone, decreasing the ratio below the water baseline.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -1875,7 +1875,7 @@
         ],
         "answer_index": 3,
         "answer_key": "D",
-        "rationale": "While vertical focusing in the MCFL is passive (using the metal pad as a guard similar to LL3), the limited width of the pad requires active focusing horizontally. Bucking electrodes on the sides of the pad emit current regulated to maintain the monitor electrodes at the same potential as the main pad ($A_0$), ensuring cylindrical equipotential lines.",
+        "rationale": "While vertical focusing in the MCFL is passive (using the metal pad as a guard similar to LL3), the limited width of the pad requires active focusing horizontally. Bucking electrodes on the sides of the pad emit current regulated to maintain the monitor electrodes at the same potential as the main pad (A₀), ensuring cylindrical equipotential lines.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -2767,7 +2767,7 @@
         ],
         "answer_index": 0,
         "answer_key": "A",
-        "rationale": "Horizontal resistivity ($R_h$) in laminated formations is modeled as the parallel sum of the sand and shale layers (dominated by the conductive shale). Vertical resistivity ($R_v$) is modeled as the series sum of the layers (sensitive to the resistive sand). These two equations are combined to solve for the sand resistivity ($R_{sd}$).",
+        "rationale": "Horizontal resistivity (Rₕ) in laminated formations is modeled as the parallel sum of the sand and shale layers (dominated by the conductive shale). Vertical resistivity (Rᵥ) is modeled as the series sum of the layers (sensitive to the resistive sand). These two equations are combined to solve for the sand resistivity (R_sd).",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -2970,16 +2970,16 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "In 2 MHz LWD propagation tools, how do the depths of investigation for phase-shift resistivity ($R_{ps}$) and attenuation resistivity ($R_{ad}$) typically compare?",
+        "question": "In 2 MHz LWD propagation tools, how do the depths of investigation for phase-shift resistivity (R_ps) and attenuation resistivity (R_ad) typically compare?",
         "choices": [
             "Both measurements have identical depths of investigation",
             "Depth of investigation is solely determined by the transmitter-receiver spacing, not the measurement type",
-            "$R_{ps}$ reads deeper than $R_{ad}$",
-            "$R_{ad}$ reads deeper than $R_{ps}$"
+            "R_ps reads deeper than R_ad",
+            "R_ad reads deeper than R_ps"
         ],
         "answer_index": 3,
         "answer_key": "D",
-        "rationale": "Attenuation resistivity ($R_{ad}$) consistently reads deeper than phase-shift resistivity ($R_{ps}$). The electromagnetic field patterns for amplitude (attenuation) are toroidal and penetrate further into the formation than the spherical constant-phase contours, resulting in a deeper investigation for attenuation measurements.",
+        "rationale": "Attenuation resistivity (R_ad) consistently reads deeper than phase-shift resistivity (R_ps). The electromagnetic field patterns for amplitude (attenuation) are toroidal and penetrate further into the formation than the spherical constant-phase contours, resulting in a deeper investigation for attenuation measurements.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -3529,7 +3529,7 @@
         ],
         "answer_index": 0,
         "answer_key": "A",
-        "rationale": "The text states that there are only three naturally occurring isotopes with half-lives comparable to the age of the earth that contribute significantly to formation radioactivity: Potassium-40 ($^{40}$K), Thorium-232 ($^{232}$Th), and Uranium-238 ($^{238}$U). Other isotopes mentioned like $^{137}$Cs or $^{60}$Co are contaminants or have too short half-lives to be primary natural sources.",
+        "rationale": "The text states that there are only three naturally occurring isotopes with half-lives comparable to the age of the earth that contribute significantly to formation radioactivity: Potassium-40 (⁴⁰K), Thorium-232 (²³²Th), and Uranium-238 (²³⁸U). Other isotopes mentioned like ¹³⁷Cs or ⁶⁰Co are contaminants or have too short half-lives to be primary natural sources.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -4574,16 +4574,16 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Which definitions correctly distinguish the slowing-down length ($L_s$) from the diffusion length ($L_d$)?",
+        "question": "Which definitions correctly distinguish the slowing-down length (Lₛ) from the diffusion length (L_d)?",
         "choices": [
-            "$L_s$ characterizes the thermal phase until capture, while $L_d$ characterizes the high-energy scattering phase",
-            "$L_s$ is the total distance traveled, while $L_d$ is the straight-line distance from the source",
-            "$L_s$ relates to the transport from source energy to epithermal energy, while $L_d$ relates to the distance traveled during the thermal phase",
-            "$L_s$ depends only on the source type, while $L_d$ depends only on the detector type"
+            "Lₛ characterizes the thermal phase until capture, while L_d characterizes the high-energy scattering phase",
+            "Lₛ is the total distance traveled, while L_d is the straight-line distance from the source",
+            "Lₛ relates to the transport from source energy to epithermal energy, while L_d relates to the distance traveled during the thermal phase",
+            "Lₛ depends only on the source type, while L_d depends only on the detector type"
         ],
         "answer_index": 2,
         "answer_key": "C",
-        "rationale": "The slowing-down length ($L_s$) is proportional to the root-mean-square distance a neutron travels while losing energy from the source level down to the epithermal range. The diffusion length ($L_d$) describes the distance a neutron travels after it has become thermalized (at low energy) until it is eventually captured.",
+        "rationale": "The slowing-down length (Lₛ) is proportional to the root-mean-square distance a neutron travels while losing energy from the source level down to the epithermal range. The diffusion length (L_d) describes the distance a neutron travels after it has become thermalized (at low energy) until it is eventually captured.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -4751,7 +4751,7 @@
         ],
         "answer_index": 2,
         "answer_key": "C",
-        "rationale": "The text explains that for an epithermal neutron device, the flux falls off exponentially with distance from the source based on a characteristic length called the slowing-down length ($L_s$). This parameter is determined by the ability of the formation (specifically hydrogen) to moderate high-energy neutrons to epithermal energy levels.",
+        "rationale": "The text explains that for an epithermal neutron device, the flux falls off exponentially with distance from the source based on a characteristic length called the slowing-down length (Lₛ). This parameter is determined by the ability of the formation (specifically hydrogen) to moderate high-energy neutrons to epithermal energy levels.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -4835,7 +4835,7 @@
         ],
         "answer_index": 1,
         "answer_key": "B",
-        "rationale": "Due to the lithology effect (matrix effect), a tool calibrated for limestone (grain density ~2.71 g/cm$^3$) will underestimate the porosity in sandstone (grain density ~2.65 g/cm$^3$). The text states that the ratio in sandstone lies below the limestone line, resulting in an apparent limestone porosity a few units less than the true porosity.",
+        "rationale": "Due to the lithology effect (matrix effect), a tool calibrated for limestone (grain density ~2.71 g/cm³) will underestimate the porosity in sandstone (grain density ~2.65 g/cm³). The text states that the ratio in sandstone lies below the limestone line, resulting in an apparent limestone porosity a few units less than the true porosity.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -4877,7 +4877,7 @@
         ],
         "answer_index": 2,
         "answer_key": "C",
-        "rationale": "The gas effect occurs because gas has a much lower density and hydrogen concentration compared to liquid water or oil. This reduced hydrogen density makes the formation less efficient at slowing down neutrons, leading to a longer slowing-down length ($L_s$). A longer $L_s$ corresponds to a lower apparent porosity reading.",
+        "rationale": "The gas effect occurs because gas has a much lower density and hydrogen concentration compared to liquid water or oil. This reduced hydrogen density makes the formation less efficient at slowing down neutrons, leading to a longer slowing-down length (Lₛ). A longer Lₛ corresponds to a lower apparent porosity reading.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -7667,7 +7667,7 @@
         ],
         "answer_index": 3,
         "answer_key": "D",
-        "rationale": "In a vertical well, the induced current loop is horizontal and remains within the bedding plane, measuring horizontal resistivity ($R_h$).  In a horizontal well, the loop is perpendicular to the bedding; the current travels horizontally at the top and bottom of the loop but must cross bedding planes (flowing vertically) on the sides, making the measurement sensitive to both $R_h$ and $R_v$.",
+        "rationale": "In a vertical well, the induced current loop is horizontal and remains within the bedding plane, measuring horizontal resistivity (Rₕ).  In a horizontal well, the loop is perpendicular to the bedding; the current travels horizontally at the top and bottom of the loop but must cross bedding planes (flowing vertically) on the sides, making the measurement sensitive to both Rₕ and Rᵥ.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -7837,7 +7837,7 @@
         ],
         "answer_index": 1,
         "answer_key": "B",
-        "rationale": "To distinguish the direction of a boundary, the tool must have azimuthal sensitivity. This is achieved by using tilted receivers (e.g., at 45 degrees). This configuration creates cross-dipole couplings ($V_{zx}$ and $V_{xz}$). The difference between these cross-dipole signals allows the tool to determine the distance and direction to the boundary using a mirror-image principle, which effectively cancels out the effects of anisotropy and dip.",
+        "rationale": "To distinguish the direction of a boundary, the tool must have azimuthal sensitivity. This is achieved by using tilted receivers (e.g., at 45 degrees). This configuration creates cross-dipole couplings (V_zx and V_xz). The difference between these cross-dipole signals allows the tool to determine the distance and direction to the boundary using a mirror-image principle, which effectively cancels out the effects of anisotropy and dip.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -7963,7 +7963,7 @@
         ],
         "answer_index": 3,
         "answer_key": "D",
-        "rationale": "For log analysts, effective porosity is defined as the total porosity less the clay bound water ($V_{cbw}$), which corresponds to the water held in the electrical double layer and is assumed not to move during production.",
+        "rationale": "For log analysts, effective porosity is defined as the total porosity less the clay bound water (V_cbw), which corresponds to the water held in the electrical double layer and is assumed not to move during production.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -8041,14 +8041,14 @@
         "language": "en",
         "question": "What is the primary physical cause for the large separation between density porosity and thermal neutron porosity observed in shales?",
         "choices": [
-            "The high concentration of hydroxyls ($OH^-$) in the clay mineral structure",
+            "The high concentration of hydroxyls (OH⁻) in the clay mineral structure",
             "The presence of thermal neutron absorbers like boron and gadolinium",
             "The extremely high density of the clay matrix compared to quartz",
             "The presence of micro-porosity filled with irreducible hydrocarbons"
         ],
         "answer_index": 0,
         "answer_key": "A",
-        "rationale": "While thermal absorbers like boron contribute a small amount (6-8 p.u.) to the separation, the largest part of the separation in shales is caused by the hydrogen associated with the hydroxyls ($OH^-$) in the clay mineral lattice, which the neutron tool interprets as porosity.",
+        "rationale": "While thermal absorbers like boron contribute a small amount (6-8 p.u.) to the separation, the largest part of the separation in shales is caused by the hydrogen associated with the hydroxyls (OH⁻) in the clay mineral lattice, which the neutron tool interprets as porosity.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -8081,7 +8081,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "When using the Photoelectric Factor ($P_e$) log as a clay indicator in shaly sands, which element is primarily responsible for the 'excess $P_e$' observed in the shale compared to clean sand?",
+        "question": "When using the Photoelectric Factor (Pₑ) log as a clay indicator in shaly sands, which element is primarily responsible for the 'excess Pₑ' observed in the shale compared to clean sand?",
         "choices": [
             "Aluminum (Al)",
             "Silicon (Si)",
@@ -8090,7 +8090,7 @@
         ],
         "answer_index": 3,
         "answer_key": "D",
-        "rationale": "The $P_e$ of aluminosilicates (clays) would be similar to sand if determined only by silicon and aluminum. The increased $P_e$ in shales is primarily due to the presence of iron in the clay minerals. Iron has a higher atomic number (Z=26) compared to Si (14) or Al (13), strongly affecting the photoelectric absorption.",
+        "rationale": "The Pₑ of aluminosilicates (clays) would be similar to sand if determined only by silicon and aluminum. The increased Pₑ in shales is primarily due to the presence of iron in the clay minerals. Iron has a higher atomic number (Z=26) compared to Si (14) or Al (13), strongly affecting the photoelectric absorption.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -8258,7 +8258,7 @@
         ],
         "answer_index": 0,
         "answer_key": "A",
-        "rationale": "Illite is an (OH)4 clay (lower hydrogen/hydroxyl content) but typically contains Potassium and Iron (and potentially Boron), leading to a high capture cross-section ($Σ$) and relatively lower neutron-density separation. Kaolinite is an (OH)8 clay (high hydroxyl content) with generally lower neutron absorbers, leading to a low $Σ$ but a very high neutron-density separation.",
+        "rationale": "Illite is an (OH)4 clay (lower hydrogen/hydroxyl content) but typically contains Potassium and Iron (and potentially Boron), leading to a high capture cross-section (Σ) and relatively lower neutron-density separation. Kaolinite is an (OH)8 clay (high hydroxyl content) with generally lower neutron absorbers, leading to a low Σ but a very high neutron-density separation.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -8501,16 +8501,16 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Why is the Photoelectric Factor ($P_e$) versus Density crossplot particularly effective for resolving limestone/dolomite mixtures compared to the standard Neutron-Density crossplot?",
+        "question": "Why is the Photoelectric Factor (Pₑ) versus Density crossplot particularly effective for resolving limestone/dolomite mixtures compared to the standard Neutron-Density crossplot?",
         "choices": [
-            "The $P_e$ plot eliminates the need for any fluid corrections",
+            "The Pₑ plot eliminates the need for any fluid corrections",
             "Neutron-Density plots cannot differentiate between calcite and dolomite",
-            "The $P_e$ measurement is completely unaffected by porosity",
-            "The ordering of the lithology lines is different: Dolomite lies between Sandstone and Limestone on the $P_e$ plot"
+            "The Pₑ measurement is completely unaffected by porosity",
+            "The ordering of the lithology lines is different: Dolomite lies between Sandstone and Limestone on the Pₑ plot"
         ],
         "answer_index": 3,
         "answer_key": "D",
-        "rationale": "On a standard Neutron-Density plot, the lithology lines are ordered Sandstone-Limestone-Dolomite. On a $P_e$-Density plot, the order changes to Sandstone-Dolomite-Limestone. This reordering adds a new dimension that helps resolve ambiguities, such as distinguishing a dolomitic sand from a limestone.",
+        "rationale": "On a standard Neutron-Density plot, the lithology lines are ordered Sandstone-Limestone-Dolomite. On a Pₑ-Density plot, the order changes to Sandstone-Dolomite-Limestone. This reordering adds a new dimension that helps resolve ambiguities, such as distinguishing a dolomitic sand from a limestone.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
@@ -8797,16 +8797,16 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "In the context of multi-mineral analysis, why is the volumetric cross section $U$ often preferred over the standard $P_e$ measurement for mixing calculations?",
+        "question": "In the context of multi-mineral analysis, why is the volumetric cross section U often preferred over the standard Pₑ measurement for mixing calculations?",
         "choices": [
-            "Because $U$ scales linearly with volume, whereas $P_e$ is an average weighted by electron density",
-            "Because $U$ is independent of fluid content, unlike $P_e$",
-            "Because $U$ can be measured directly by the sonic tool",
-            "Because $P_e$ values are not available for common evaporites"
+            "Because U scales linearly with volume, whereas Pₑ is an average weighted by electron density",
+            "Because U is independent of fluid content, unlike Pₑ",
+            "Because U can be measured directly by the sonic tool",
+            "Because Pₑ values are not available for common evaporites"
         ],
         "answer_index": 0,
         "answer_key": "A",
-        "rationale": "The standard $P_e$ of a mixture is not a simple linear average of the components; it is weighted by electron density. The volumetric cross section $U$ ($P_e × ρ_e$) scales linearly with the volume fractions of the constituents, making it mathematically simpler for volumetric inversion models.",
+        "rationale": "The standard Pₑ of a mixture is not a simple linear average of the components; it is weighted by electron density. The volumetric cross section U (Pₑ × ρₑ) scales linearly with the volume fractions of the constituents, making it mathematically simpler for volumetric inversion models.",
         "sources": [
             {
                 "source_id": "ellis_singer_well_logging_2007",
