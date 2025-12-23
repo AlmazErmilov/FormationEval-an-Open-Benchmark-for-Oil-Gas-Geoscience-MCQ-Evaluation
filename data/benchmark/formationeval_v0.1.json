@@ -1198,7 +1198,7 @@
       "By a positive intercept on the Co axis, representing an additional conductivity term",
       "By a straight line passing exactly through the origin with a slope of 1",
       "By a negative intercept indicating that clay absorbs ions and reduces conductivity",
-      "By a vertical line indicating that rock conductivity is independent of water salinity"
+      "By a vertical line indicating that rock conductivity may be independent of water salinity"
     ],
     "answer_index": 0,
     "answer_key": "A",
@@ -2887,7 +2887,7 @@
     "question": "How does an increase in formation water salinity affect the dielectric permittivity of the water phase?",
     "choices": [
       "It increases permittivity because salt ions add conductive pathways",
-      "It has no effect on permittivity, only on conductivity, because dielectric polarization is independent of ionic concentration",
+      "It may have no effect on permittivity, only on conductivity, because dielectric polarization is independent of ionic concentration",
       "It decreases permittivity due to the hydration of ions reducing water molecule polarization",
       "It causes permittivity to fluctuate sinusoidally with frequency"
     ],
@@ -3312,7 +3312,7 @@
     "question": "In the energy range where Compton scattering is the dominant interaction, why is the attenuation of gamma rays considered a reliable proxy for formation bulk density?",
     "choices": [
       "The Compton cross-section increases exponentially with the atomic number (Z) of the matrix",
-      "Compton scattering is independent of the number of electrons in the formation",
+      "Compton scattering may be independent of the number of electrons in the formation",
       "Compton scattering only occurs with hydrogen atoms, which correlate to pore volume, as electrons from other elements do not participate",
       "The ratio of atomic number to atomic mass (Z/A) is approximately constant for most rock-forming elements"
     ],
@@ -4957,7 +4957,7 @@
       "The reduced hydrogen index lowers the apparent porosity, while the increased thermal absorption increases the ratio (raising apparent porosity)",
       "Both the reduced hydrogen index and the increased thermal absorption act to significantly lower the apparent porosity reading",
       "The increased density of salt water shortens the slowing-down length, causing the tool to overestimate porosity significantly",
-      "Salinity has no effect on the ratio measurement because the near and far detectors are affected equally"
+      "Salinity may have no effect on the ratio measurement because the near and far detectors are affected equally"
     ],
     "answer_index": 0,
     "answer_key": "A",
@@ -5125,7 +5125,7 @@
       "They are inversely proportional",
       "They are directly proportional",
       "They are related exponentially",
-      "They are independent of each other"
+      "They may be independent of each other"
     ],
     "answer_index": 0,
     "answer_key": "A",
@@ -5586,7 +5586,7 @@
     "question": "In an NMR tool with a magnetic field gradient, how does increasing the inter-echo spacing (Te) affect the observed transverse relaxation rate?",
     "choices": [
       "It decreases the relaxation rate linearly because protons have less time to diffuse",
-      "It has no effect on the relaxation rate for bulk fluids, only for surface relaxation, since viscosity changes are negligible",
+      "It may have no effect on the relaxation rate for bulk fluids, only for surface relaxation, since viscosity changes are negligible",
       "It significantly increases the relaxation rate due to diffusion, proportional to the square of Te",
       "It increases the signal-to-noise ratio but does not alter the decay rate"
     ],
@@ -5712,7 +5712,7 @@
     "question": "What is the general relationship between the viscosity of a crude oil and its NMR relaxation time (T1 or T2)?",
     "choices": [
       "Relaxation time increases as the square of viscosity",
-      "Relaxation time is independent of viscosity and depends only on temperature",
+      "Relaxation time may be independent of viscosity and depends only on temperature",
       "Relaxation time is inversely proportional to viscosity",
       "Relaxation time is directly proportional to viscosity"
     ],
@@ -6263,7 +6263,7 @@
       "Velocity is inversely proportional to the square root of the density",
       "Velocity increases linearly with increasing density",
       "Velocity is directly proportional to the square of the density",
-      "Velocity is independent of density"
+      "Velocity may be independent of density"
     ],
     "answer_index": 0,
     "answer_key": "A",
@@ -6430,7 +6430,7 @@
     "language": "en",
     "question": "What is the fundamental assumption of the Wyllie time-average equation regarding the relationship between interval transit time and porosity?",
     "choices": [
-      "Transit time is independent of porosity but highly sensitive to pore pressure",
+      "Transit time may be independent of porosity but highly sensitive to pore pressure",
       "Transit time is related to the square root of the porosity value",
       "Transit time decreases exponentially as porosity increases",
       "Transit time is a linear function of porosity, interpolating between matrix and fluid values"
@@ -7407,7 +7407,7 @@
     "question": "How does formation permeability affect the propagation of Stoneley waves in a borehole?",
     "choices": [
       "Permeability causes the Stoneley wave to accelerate and increase in amplitude due to better coupling",
-      "Permeability has no effect on Stoneley waves; they are only sensitive to shear modulus and formation density, not fluid mobility",
+      "Permeability may have no effect on Stoneley waves; they are only sensitive to shear modulus and formation density, not fluid mobility",
       "Permeability allows fluid movement between the borehole and formation, causing attenuation and slowing of the Stoneley wave",
       "Permeability causes the Stoneley wave to reflect back to the source, creating a standing wave pattern"
     ],
@@ -8800,7 +8800,7 @@
     "question": "In the context of multi-mineral analysis, why is the volumetric cross section U often preferred over the standard Pₑ measurement for mixing calculations?",
     "choices": [
       "Because U scales linearly with volume, whereas Pₑ is an average weighted by electron density",
-      "Because U is independent of fluid content, unlike Pₑ",
+      "Because U may be independent of fluid content, unlike Pₑ",
       "Because U can be measured directly by the sonic tool",
       "Because Pₑ values are not available for common evaporites"
     ],
@@ -15480,7 +15480,7 @@
       "It accelerates both types of compaction because pore pressure increases mineral solubility",
       "It reduces mechanical compaction by lowering effective stress, but has little influence on chemical compaction that is mainly temperature/time controlled",
       "It stops chemical compaction by preventing pressure solution at grain contacts under all conditions",
-      "It has no influence on any type of compaction because porosity loss depends only on mineralogy and grain-size distribution, not on fluid pressure or effective stress"
+      "It may have no influence on any type of compaction because porosity loss depends only on mineralogy and grain-size distribution, not on fluid pressure or effective stress"
     ],
     "answer_index": 1,
     "answer_key": "B",
@@ -17481,7 +17481,7 @@
       "To replace seismic interpretation with a purely geological facies model built from cores",
       "To connect geological characteristics of the rock to elastic properties that control reflection amplitudes",
       "To remove all dependence on well data by using universal velocity–porosity equations",
-      "To ensure amplitude anomalies are interpreted only as fluid changes rather than rock changes, which cannot affect seismic response"
+      "To ensure amplitude anomalies are interpreted only as fluid changes rather than rock changes, which may not affect seismic response"
     ],
     "answer_index": 1,
     "answer_key": "B",
