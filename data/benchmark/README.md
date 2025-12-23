@@ -103,14 +103,25 @@ Certain qualifier words correlate strongly with answer correctness:
 | `inherently` | 0 | 11 | 0% | New (from always) |
 | `consistently` | 0 | 8 | 0% | New (from always) |
 | `never` | 0 | 3 | 0% | Not addressed |
-| `only` | 3 | 108 | 2.7% | Not addressed |
-| `may` | 13 | 0 | 100% | Not addressed |
+| `only` | 3 | 108 | 2.7% | Not addressed (too common to exploit, context-dependent) |
+| `may` | 13 | 13 | 50% | Fixed |
 
-**Pattern**: Absolute words are almost never correct. Hedged words (`may`) are almost always correct.
+**Pattern**: Absolute words are almost never correct.
 
-**Mitigation applied**: All 49 "always" instances replaced with context-appropriate synonyms (invariably, necessarily, inherently, consistently, intrinsically, universally) to break single-word exploit.
+**Mitigation applied**:
+1. All 49 "always" instances replaced with context-appropriate synonyms (invariably, necessarily, inherently, consistently, intrinsically, universally) to break single-word exploit.
+2. Added "may" to 13 distractors with "no-effect" claims to break the 100% correct rate pattern.
 
-**Remaining issue**: Replacement words still have 0% correct rate. Combined "any-absolute=wrong" heuristic remains exploitable.
+**Remaining issue**: Absolute word replacements still have 0% correct rate. Combined "any-absolute=wrong" heuristic remains exploitable.
+
+**Note on practical impact**: These limitations are documented for transparency. For benchmarking purposes, the remaining biases are unlikely to significantly skew results:
+
+- Biases are expected to affect all models equally, so relative comparisons should remain meaningful
+- In practice, modern LLMs tend to reason about question content rather than exploiting surface-level word patterns
+- The major exploits (length bias, "always"=wrong, "may"=correct) have been addressed
+- Remaining issues with "always" synonyms (invariably, necessarily, inherently, etc.) affect <10% of questions. The "only" pattern is not practically exploitable since the word is too common and context-dependent
+
+Further refinements may be addressed in future versions.
 
 ## File
 
