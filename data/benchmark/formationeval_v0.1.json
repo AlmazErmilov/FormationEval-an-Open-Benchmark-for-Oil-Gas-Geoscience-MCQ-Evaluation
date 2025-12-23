@@ -15901,7 +15901,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Two shale samples have the same S2 = 5 mg HC/g rock. Sample X has S1 = 1.0 mg HC/g rock, while sample Y has S1 = 0.2 mg HC/g rock. Which interpretation best matches the Production Index concept described for Rock-Eval data?",
+        "question": "Two shale samples have the same S2 = 5 mg HC/g rock. Sample X has S1 = 1.0 mg HC/g rock, while sample Y has S1 = 0.2 mg HC/g rock. Using the Rock-Eval Production Index (PI = S1/(S1+S2)), which sample has the higher PI and why?",
         "choices": [
             "Sample X has the higher PI because a larger fraction of (S1 + S2) is already present as free hydrocarbons",
             "Sample Y has the higher PI because lower S1 indicates a more efficient source rock",
@@ -15910,7 +15910,7 @@
         ],
         "answer_index": 0,
         "answer_key": "A",
-        "rationale": "Production Index is defined as S1 divided by (S1 + S2), so higher S1 at the same S2 increases PI. Conceptually, PI expresses how much petroleum is already present relative to the remaining generative capacity measured by S2. The chapter also cautions that S1 is what remains after some generated oil may have migrated away, but PI still follows the stated ratio.",
+        "rationale": "With S2 = 5 for both samples, Sample X has PI = 1.0/(1.0+5) = 0.167, while Sample Y has PI = 0.2/(0.2+5) = 0.038. Higher S1 at the same S2 increases PI. Conceptually, PI expresses how much petroleum is already present as free hydrocarbons (S1) relative to the total generative capacity (S1+S2). Note that S1 represents remaining petroleum after any migration losses.",
         "sources": [
             {
                 "source_id": "bjorlykke_petroleum_geoscience_2010",
@@ -19565,7 +19565,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "After a rifting event in the North Sea, what process is described as producing the broad, regional subsidence phase that follows the active stretching?",
+        "question": "In the North Sea, active Late Jurassic rifting stretched and thinned the crust and mantle lithosphere. What process then produced the broad, regional post-rift subsidence phase?",
         "choices": [
             "Long-term compaction of pre-existing sediments with no thermal component",
             "Renewed compression that thickens the crust and loads the basin",
@@ -19574,7 +19574,7 @@
         ],
         "answer_index": 2,
         "answer_key": "C",
-        "rationale": "The chapter describes a characteristic sequence: rifting (stretching/thinning) followed by a cooling stage. Cooling of the lithosphere after rifting leads to thermal contraction and regional subsidence. This is distinct from local compaction-only effects or compressional loading.",
+        "rationale": "Extensional basins follow a characteristic sequence: active rifting (stretching/thinning) followed by a thermal cooling stage. As the lithosphere cools after rifting, it contracts and subsides regionally. This thermal subsidence is distinct from local compaction-only effects or compressional loading.",
         "sources": [
             {
                 "source_id": "bjorlykke_petroleum_geoscience_2010",
@@ -19864,7 +19864,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "In the northern North Sea petroleum province, which trap geometry is described as the most commonly investigated and developed type along the basin margins?",
+        "question": "The northern North Sea experienced significant Late Jurassic extension along the Viking Graben. Which trap geometry, formed during this rifting episode, is the most commonly developed type along the basin margins?",
         "choices": [
             "Shallow anticlines created solely by glacial loading",
             "Rotated fault blocks where fault sealing is often crucial",
@@ -19873,7 +19873,7 @@
         ],
         "answer_index": 1,
         "answer_key": "B",
-        "rationale": "The chapter states that rotated fault blocks generated during rifting are the dominant trap type along both margins of the Viking Graben. It also notes that sealing faults are frequently important for these traps. The other trap types listed do not match the province-scale description given for the northern North Sea.",
+        "rationale": "Rotated fault blocks generated during Late Jurassic rifting are the dominant trap type along both margins of the Viking Graben. Sealing faults are frequently important for these traps. The other trap types listed (glacial anticlines, Pliocene reefs, Holocene stratigraphic traps) do not match the structural style of this province.",
         "sources": [
             {
                 "source_id": "bjorlykke_petroleum_geoscience_2010",
@@ -20883,7 +20883,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In many sedimentary basins, formation waters become much more saline with increasing depth. Which explanation best matches the mechanism described for this trend?",
+        "question": "In many sedimentary basins, formation water salinity increases from about 35,000 ppm (seawater concentration) near surface to over 350,000 ppm at several kilometers depth. Which process best explains this trend?",
         "choices": [
             "Salt is created in situ by thermal cracking of kerogen, enriching deep waters in ions",
             "Deep formation water is diluted by continuous influx of fresh meteoric water during burial",
@@ -20892,7 +20892,7 @@
         ],
         "answer_index": 2,
         "answer_key": "C",
-        "rationale": "The lecture attributes the depth increase in salinity to a reverse-osmosis type process in which water can pass through shales more readily than ions. This preferential movement removes water while leaving ions behind, concentrating the remaining water into brines at greater depth. The other options either contradict the stated process (dilution) or invoke chemistry not emphasized in the slides (e.g., sulfate accumulation).",
+        "rationale": "The salinity increase with depth is attributed to a reverse-osmosis type process (membrane filtration) in which water molecules can pass through shales more readily than dissolved ions. This preferential upward movement of water leaves ions behind, concentrating the remaining formation water into brines at greater depth. The other options either contradict this process (dilution) or invoke chemistry that doesn't explain the systematic depth trend.",
         "sources": [
             {
                 "source_id": "tudelft_petroleum_geology_ocw",
