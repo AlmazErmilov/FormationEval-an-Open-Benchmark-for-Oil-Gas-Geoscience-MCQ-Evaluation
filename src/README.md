@@ -594,7 +594,7 @@ python src/generate_tudelft_mcqs.py all              # All lectures
 
 ## Output format
 
-Questions are saved as JSONL with this structure:
+Questions are saved as a JSON array by default (one list of question objects). JSONL is also supported for line-delimited workflows. The item structure is the same in both formats:
 
 ```json
 {
@@ -609,4 +609,5 @@ Questions are saved as JSONL with this structure:
 }
 ```
 
-See main README.md for full schema.
+Default output is JSON array. Use `save_questions(..., format="jsonl")` to write JSONL.
+See main README.md for the full schema.
