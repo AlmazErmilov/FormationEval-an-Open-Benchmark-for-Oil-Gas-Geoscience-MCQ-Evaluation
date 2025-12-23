@@ -79,37 +79,38 @@ Indicates likelihood that similar questions exist in LLM training data:
 
 ### Answer length bias
 
-Correct answers tend to be longer than distractors:
+Correct answers tend to be longer than distractors (partially addressed in v0.1):
 
-| Metric | Value |
-|--------|-------|
-| Correct answer is longest choice | 70.9% |
-| Correct answer is shortest choice | 13.5% |
-| Correct answer avg length | 86.6 chars |
-| Distractor avg length | 69.9 chars |
+| Metric | Original | After fixes |
+|--------|----------|-------------|
+| Correct answer is longest choice | 64.6% | 51.5% |
+| Correct answer avg length | 86.6 chars | 86.6 chars |
+| Distractor avg length | 69.8 chars | 74.0 chars |
 
 **Impact**: Test-takers (human or LLM) may exploit this pattern by selecting the longest answer, artificially inflating scores.
 
-**Planned fix**: Expand distractors to match correct answer length where feasible.
+**Status**: Distractor expansions applied to 136 questions containing "always" or "only" qualifiers. Length bias reduced by 13 percentage points but still above the expected 25%.
 
 ### Qualifier word bias
 
 Certain qualifier words correlate strongly with answer correctness:
 
-| Word | In correct | In distractor | Correct rate |
-|------|-----------|---------------|--------------|
-| `always` | 0 | 49 | 0% |
-| `never` | 0 | 3 | 0% |
-| `only` | 3 | 108 | 2.7% |
-| `all` | 3 | 33 | 8.3% |
-| `can` | 50 | 16 | 75.8% |
-| `may` | 13 | 0 | 100% |
+| Word | In correct | In distractor | Correct rate | Status |
+|------|-----------|---------------|--------------|--------|
+| `always` | 0 | 0 | N/A | Replaced with synonyms |
+| `invariably` | 0 | 12 | 0% | New (from always) |
+| `necessarily` | 0 | 12 | 0% | New (from always) |
+| `inherently` | 0 | 11 | 0% | New (from always) |
+| `consistently` | 0 | 8 | 0% | New (from always) |
+| `never` | 0 | 3 | 0% | Not addressed |
+| `only` | 3 | 108 | 2.7% | Not addressed |
+| `may` | 13 | 0 | 100% | Not addressed |
 
-**Pattern**: Absolute words (`always`, `never`, `only`) are almost never correct. Hedged words (`can`, `may`) are almost always correct.
+**Pattern**: Absolute words are almost never correct. Hedged words (`may`) are almost always correct.
 
-**Impact**: LLMs may learn to avoid absolute statements as a shortcut.
+**Mitigation applied**: All 49 "always" instances replaced with context-appropriate synonyms (invariably, necessarily, inherently, consistently, intrinsically, universally) to break single-word exploit.
 
-**Planned fix**: Add nuance to absolute distractors (e.g., "almost always", "rarely") and introduce some correct answers with absolute language where factually appropriate.
+**Remaining issue**: Replacement words still have 0% correct rate. Combined "any-absolute=wrong" heuristic remains exploitable.
 
 ## File
 
