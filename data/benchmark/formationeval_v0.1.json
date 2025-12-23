@@ -1701,8 +1701,8 @@
     "question": "Traditional chartbook corrections for environmental effects on resistivity logs generally rely on which assumption?",
     "choices": [
       "That borehole, shoulder bed, and invasion effects are independent and can be corrected sequentially",
-      "That invasion is always deeper than the tool's depth of investigation in every formation, regardless of mud filtrate properties or formation permeability",
-      "That the formation is always anisotropic with a dip of zero degrees, which simplifies the correction charts by assuming horizontal layering",
+      "That invasion is invariably deeper than the tool's depth of investigation in every formation, regardless of mud filtrate properties or formation permeability",
+      "That the formation is necessarily anisotropic with a dip of zero degrees, which simplifies the correction charts by assuming horizontal layering",
       "That 2D inversion is performed prior to entering the charts"
     ],
     "answer_index": 0,
@@ -6305,7 +6305,7 @@
     "choices": [
       "Vc and Vs must be equal in isotropic media",
       "Vs approaches Vc as Poisson's ratio approaches 0.5",
-      "Vs must always be greater than Vc in any consolidated sedimentary formation",
+      "Vs must necessarily be greater than Vc in any consolidated sedimentary formation",
       "Vc must exceed Vs by at least 15 percent"
     ],
     "answer_index": 3,
@@ -6901,7 +6901,7 @@
     "choices": [
       "The formation shear velocity is lower than the borehole fluid velocity, preventing the formation of a critical angle for refraction",
       "The monopole source frequency is too high to excite shear modes in soft rock",
-      "Slow formations are always too fractured to support shear wave propagation, as the extensive fracture networks dissipate elastic wave energy",
+      "Slow formations are inherently too fractured to support shear wave propagation, as the extensive fracture networks dissipate elastic wave energy",
       "The Stoneley wave interferes constructively and cancels out the shear signal"
     ],
     "answer_index": 0,
@@ -9012,7 +9012,7 @@
       "The measurement is dominated by the highly conductive shale layers acting in parallel with the resistive sand",
       "The sand layers act as insulators in the vertical direction, preventing the current from entering the formation",
       "The tool averages the porosity of the sand and shale arithmetically, leading to an overestimation of pore volume",
-      "The invasion profile in laminated sands is always deep due to enhanced lateral permeability, thereby masking the true formation resistivity"
+      "The invasion profile in laminated sands is invariably deep due to enhanced lateral permeability, thereby masking the true formation resistivity"
     ],
     "answer_index": 0,
     "answer_key": "A",
@@ -9435,7 +9435,7 @@
     "question": "A shelf margin receives organic debris and mineral grains at the same time. Which sedimentation-rate scenario is expected to most favor formation of a high-quality source rock, assuming organic productivity is significant?",
     "choices": [
       "Very slow sedimentation, because longer residence time near the seabed increases organic preservation",
-      "Very rapid sedimentation, because it always produces the highest organic concentration regardless of dilution",
+      "Very rapid sedimentation, because it intrinsically produces the highest organic concentration regardless of dilution",
       "Intermediate sedimentation rates, because preservation improves without excessive dilution by mineral matter",
       "Any sedimentation rate, because source-rock quality depends only on surface-water productivity and not on accumulation rate"
     ],
@@ -9479,7 +9479,7 @@
     "choices": [
       "Typical oil components have low aqueous solubility and water flow rates are too small to move enough oil, and it would also be difficult to explain systematic release into traps",
       "Oil would dissolve readily, but dissolved oil would chemically transform into kerogen before reaching a reservoir",
-      "Formation water is always less dense than oil due to its lower molecular weight and lack of heavy compounds, so dissolved transport would force oil components to migrate downward",
+      "Formation water is consistently less dense than oil due to its lower molecular weight and lack of heavy compounds, so dissolved transport would force oil components to migrate downward",
       "Dissolved transport would be faster than buoyant flow, so it would prevent any accumulation in structural closures"
     ],
     "answer_index": 0,
@@ -9520,7 +9520,7 @@
     "question": "Two source-rock packages reach similar maximum burial temperatures, but one basin subsides much faster than the other. Given that petroleum generation depends on temperature integrated over time, how does rapid subsidence tend to affect the temperature at which oil generation begins?",
     "choices": [
       "Oil generation tends to start at a higher temperature because there is less time for cracking reactions at any given temperature",
-      "Oil generation tends to start at a lower temperature because rapid burial always increases reaction time by maintaining the source rock in the oil window zone longer",
+      "Oil generation tends to start at a lower temperature because rapid burial consistently increases reaction time by maintaining the source rock in the oil window zone longer",
       "Oil generation temperature is unchanged because it depends only on present-day depth and geothermal gradient, not on time or burial history",
       "Oil generation begins only after kerogen becomes fully soluble as bitumen at shallow depth, prior to any significant thermal stress"
     ],
@@ -9604,7 +9604,7 @@
     "question": "A prospect is a fault-bounded anticline that formed after the main phase of oil generation and expulsion in the basin. Considering the critical relationship between trap formation timing and hydrocarbon migration, what outcome is most consistent with this scenario?",
     "choices": [
       "The structure is likely to be ineffective for capturing most oil because the key migration pulse occurred before closure existed",
-      "The structure will necessarily be fully oil-filled because buoyancy always finds the newest closure regardless of the timing relationship between trap formation and hydrocarbon migration",
+      "The structure will necessarily be fully oil-filled because buoyancy invariably finds the newest closure regardless of the timing relationship between trap formation and hydrocarbon migration",
       "The structure will only trap petroleum if it is a stratigraphic pinchout rather than a fold, because structural closures cannot retain hydrocarbons",
       "The structure cannot trap gas under any circumstance because gas migrates earlier than oil"
     ],
@@ -9731,7 +9731,7 @@
     "language": "en",
     "question": "A team uses modern river deltas to interpret ancient deltaic strata, but also expects some ancient systems to have no close modern analogue. What reasoning best reflects the principle of uniformitarianism as applied with appropriate caveats?",
     "choices": [
-      "Modern environments are irrelevant because ancient Earth conditions were always fundamentally different from those observed today",
+      "Modern environments are irrelevant because ancient Earth conditions were invariably fundamentally different from those observed today",
       "Ancient environments can be inferred without uncertainty because processes never change through time",
       "Modern-process studies are useful, but only if fossils provide absolute proof of the exact environment and depositional conditions",
       "Modern observations guide interpretation, but changing climate, oceans, and atmosphere mean the approach has limits"
@@ -10070,7 +10070,7 @@
     "choices": [
       "Marine basin, because saltwater increases the density of the river plume immediately",
       "Freshwater lake, because river water can more easily become denser than the basin water and flow downslope along the bed",
-      "Marine basin, because tides always force the river plume downward along the delta slope due to tidal mixing and density inversion",
+      "Marine basin, because tides inherently force the river plume downward along the delta slope due to tidal mixing and density inversion",
       "Freshwater lake, because clay cohesion prevents overflow plumes from forming"
     ],
     "answer_index": 1,
@@ -10156,7 +10156,7 @@
     "question": "A barrier-island sand body becomes drowned during a transgression and is overlain by fine-grained sediment. In terms of stratigraphic trap geometry and the distribution of reservoir, seal, and source facies, what makes this setting particularly favorable for hydrocarbon accumulation?",
     "choices": [
       "Barrier sands are commonly cemented at deposition, so they act as impermeable seals to deeper reservoirs",
-      "Tidal inlets always erode down to basement through the underlying sedimentary section, creating structural traps independent of later sedimentation or burial history",
+      "Tidal inlets necessarily erode down to basement through the underlying sedimentary section, creating structural traps independent of later sedimentation or burial history",
       "Barrier sands typically contain abundant marine sulphate minerals that generate hydrocarbons during burial",
       "A laterally elongated sand body can be sealed by overlying mud, while lagoonal mudstones can provide close-by source rock and lateral seal through interfingering"
     ],
@@ -10324,7 +10324,7 @@
     "question": "Seawater can have a Mg/Ca ratio greater than 1, yet calcium carbonate commonly forms before magnesium carbonates under typical surface conditions. What is the best explanation given for this behavior?",
     "choices": [
       "Magnesium carbonates require strongly acidic water, which is uncommon in the ocean",
-      "Calcium has a higher ionic potential than magnesium due to its larger atomic mass, so it always bonds more strongly to carbonate ions and precipitates preferentially",
+      "Calcium has a higher ionic potential than magnesium due to its larger atomic mass, so it inherently bonds more strongly to carbonate ions and precipitates preferentially",
       "Magnesium carbonates precipitate only in the presence of abundant evaporites and hypersaline conditions, regardless of temperature, burial depth, or groundwater chemistry",
       "Strong hydration of Mg2+ hinders its incorporation at low temperature, but reduced hydration at higher temperature promotes Mg-bearing carbonates during diagenesis"
     ],
@@ -10839,7 +10839,7 @@
     "language": "en",
     "question": "A shale interval shows strong gamma ray peaks. The shale was deposited with abundant organic matter and limited water circulation. Which mechanism best explains why this setting can yield unusually high gamma ray readings?",
     "choices": [
-      "Organic matter raises clay content, and clay minerals always contain fixed uranium that cannot move or be mobilized regardless of redox conditions",
+      "Organic matter raises clay content, and clay minerals necessarily contain fixed uranium that cannot move or be mobilized regardless of redox conditions",
       "Restricted circulation increases quartz precipitation, and quartz is strongly radioactive at burial temperature",
       "Uranium carried in oxidized seawater is removed from solution and concentrated where reducing conditions and organic matter are present",
       "Sulphate reduction directly produces radioactive sulphides that dominate the gamma ray signal"
@@ -11483,7 +11483,7 @@
     "question": "Extensive dolomitisation of CaCO₃ sediments requires both an elevated Mg²⁺/Ca²⁺ ratio and a sustained supply of Mg²⁺. Which scenario best satisfies these geochemical requirements?",
     "choices": [
       "Fresh meteoric groundwater flushing alone, because low sulphate guarantees immediate dolomite precipitation",
-      "Normal seawater circulating slowly through limestone, because seawater is always sufficient to form dolomite regardless of inhibitors",
+      "Normal seawater circulating slowly through limestone, because seawater is inherently sufficient to form dolomite regardless of inhibitors",
       "Reducing, sulphate-depleted seawater circulating through a reef/atoll where Mg supply is large and inhibition is minimized",
       "Deep-basin compaction water as the dominant Mg source, because Mg increases strongly with burial depth in most basins"
     ],
@@ -11779,8 +11779,8 @@
     "language": "en",
     "question": "A seismic interpreter observes a laterally extensive, nearly horizontal reflector within a silica-rich sedimentary interval. Which explanation is most consistent with the diagenetic behavior of biogenic silica during burial?",
     "choices": [
-      "A laterally uniform gas cap, because hydrocarbons always create horizontal reflections in shale sequences regardless of structure",
-      "A sudden increase in clay content, because clay-to-sand transitions are always horizontal and parallel to bedding surfaces",
+      "A laterally uniform gas cap, because hydrocarbons invariably create horizontal reflections in shale sequences regardless of structure",
+      "A sudden increase in clay content, because clay-to-sand transitions are invariably horizontal and parallel to bedding surfaces",
       "A carbonate cementation front, because calcite nucleates at a fixed depth in all basins",
       "A temperature-controlled silica phase change that alters acoustic impedance at a predictable burial window"
     ],
@@ -12640,7 +12640,7 @@
     "question": "Two sandstone intervals have similar porosity at the same burial depth, but one has strong carbonate cement at grain contacts. Compared with the weakly cemented interval, what seismic-velocity effect is most likely and why?",
     "choices": [
       "Lower velocity, because cement increases the amount of pore space that the wave must cross",
-      "Lower velocity, because carbonate minerals always slow down elastic waves relative to quartz grains",
+      "Lower velocity, because carbonate minerals necessarily slow down elastic waves relative to quartz grains",
       "Similar velocity, because porosity alone controls velocity once the rock is water-saturated",
       "Higher velocity, because cement strengthens grain coupling and increases the rock’s stiffness"
     ],
@@ -12766,7 +12766,7 @@
     "language": "en",
     "question": "On a seismic section, a strong reflection event is nearly horizontal and cuts across dipping stratigraphic reflections. In the context of hydrocarbon interpretation, what is the most likely explanation for this 'flat spot'?",
     "choices": [
-      "A lithologic boundary that must parallel bedding because depositional layering always controls seismic reflections",
+      "A lithologic boundary that must parallel bedding because depositional layering inherently controls seismic reflections",
       "A fluid contact that can remain level and generate a strong impedance contrast, producing a so-called flat spot",
       "A fault plane, because steep discontinuities commonly reflect seismic energy back to the source",
       "A purely processing artifact that cannot be distinguished from geology even after filtering"
@@ -12981,7 +12981,7 @@
     "language": "en",
     "question": "A rift basin develops in an arid climate and becomes partly isolated from open marine circulation. Considering the depositional and structural characteristics of such restricted rift settings, what outcome is most likely for the sedimentary fill and petroleum system evolution?",
     "choices": [
-      "Glacioeustatic carbonates dominate, and sealing capacity is usually poor because carbonates always fracture under burial stress",
+      "Glacioeustatic carbonates dominate, and sealing capacity is usually poor because carbonates necessarily fracture under burial stress",
       "Deep-marine pelagic limestones dominate, and structural traps are unlikely because rifts have no faulting",
       "Smectite-rich shale dominates, and salt-related structures are not expected because evaporites require humid climates",
       "Evaporites are likely to accumulate and can form effective seals; thick salt may later create domes that generate traps"
@@ -13025,7 +13025,7 @@
     "question": "In conventional reflection seismic data, why can faults be difficult to position accurately, and what processing approach helps correct mispositioning related to edge/diffraction effects?",
     "choices": [
       "Fault planes are commonly too steep to return energy as a clear reflector, and migration processing can reposition events to better represent true structure",
-      "Fault planes always reflect strongly due to their planar geometry, but interpreters mis-pick them because density logs are unavailable; the solution is to run a neutron log",
+      "Fault planes inherently reflect strongly due to their planar geometry, but interpreters mis-pick them because density logs are unavailable; the solution is to run a neutron log",
       "Faults are invisible because seismic velocity is independent of stress; the solution is to increase shot energy only",
       "Faults disappear only in carbonates due to high rigidity and low acoustic impedance contrast; the preferred solution is to avoid 3D surveys and use 2D lines only"
     ],
@@ -13457,7 +13457,7 @@
     "choices": [
       "Lower effective heat flow and reduced geothermal gradients because energy is diverted into warming newly buried rocks",
       "Higher effective heat flow and increased geothermal gradients because compaction releases heat to the surface",
-      "Unchanged geothermal gradients because heat flow is always constant regardless of burial history or sedimentation rate effects on thermal equilibration",
+      "Unchanged geothermal gradients because heat flow is invariably constant regardless of burial history or sedimentation rate effects on thermal equilibration",
       "Higher gradients because rapid burial increases radiogenic heat production in sediments immediately"
     ],
     "answer_index": 0,
@@ -14400,7 +14400,7 @@
     "question": "A sedimentary rock shows a peak strength followed by a rapid stress drop as strain continues in a triaxial test, but the same rock shows no stress drop when the lateral effective stress is higher. Which interpretation best explains this behavior in terms of brittle-ductile transition?",
     "choices": [
       "Increasing lateral effective stress can shift behavior from brittle (strain-softening) to ductile response",
-      "Increasing lateral effective stress forces pore pressure to rise, which always causes brittle failure at depth",
+      "Increasing lateral effective stress forces pore pressure to rise, which intrinsically causes brittle failure at depth",
       "Higher lateral effective stress lowers shear resistance by reducing grain-to-grain contact stress",
       "Ductile behavior requires zero lateral effective stress so the sample can expand freely"
     ],
@@ -14909,7 +14909,7 @@
     "language": "en",
     "question": "When an extensional fault system later experiences contraction (structural inversion), what outcome is most likely regarding how shortening is accommodated?",
     "choices": [
-      "The original steep normal faults always take up nearly all later shortening because they already exist as weaknesses with established low-friction slip planes",
+      "The original steep normal faults necessarily take up nearly all later shortening because they already exist as weaknesses with established low-friction slip planes",
       "New low-angle faults are commonly initiated, while pre-existing extensional faults may reactivate but usually cannot accommodate all the strain",
       "Shortening is mainly accommodated by new vertical strike-slip faults because σ2 becomes horizontal",
       "The basin responds only by thermal contraction and isostatic rebound, with negligible faulting or folding during the inversion phase of structural evolution"
@@ -15522,7 +15522,7 @@
     "question": "A quartz-rich sedimentary rock is uplifted and unloaded, but its temperature remains above roughly 70–80°C for a prolonged period. What outcome is most consistent with the known behavior of quartz-rich rocks during such conditions?",
     "choices": [
       "Chemical compaction can continue and quartz cement can progressively seal fractures, partly offsetting mechanical opening from unloading",
-      "All compaction stops immediately because decreasing stress always prevents mineral reactions, regardless of the temperature or fluid chemistry conditions",
+      "All compaction stops immediately because decreasing stress intrinsically prevents mineral reactions, regardless of the temperature or fluid chemistry conditions",
       "Mechanical unloading necessarily increases porosity permanently because cement cannot form during uplift",
       "Uplift causes widespread carbonate cementation, which dominates fracture sealing in siliceous rocks"
     ],
@@ -15992,7 +15992,7 @@
       "Rock A, because maturation depends only on total time regardless of temperature, as thermal cracking kinetics are independent of heat",
       "Rock B, because reaction rates rise sharply with temperature and maturation above ~130–140°C becomes very rapid",
       "Rock A, because maturation above ~130–140°C slows down so time becomes the controlling factor",
-      "Rock B, because pressure at 155°C always prevents kerogen transformation in closed systems by inhibiting the release of volatile products"
+      "Rock B, because pressure at 155°C intrinsically prevents kerogen transformation in closed systems by inhibiting the release of volatile products"
     ],
     "answer_index": 1,
     "answer_key": "B",
@@ -16117,7 +16117,7 @@
     "question": "At the scale of an entire sedimentary basin, oil saturation is typically low and not laterally continuous. Under a regional fluid-pressure gradient, which phase is most likely to be transported effectively?",
     "choices": [
       "Oil, because its lower density makes it the dominant moving phase under any pressure gradient",
-      "Gas, because it always forms a connected phase even at very low saturation levels",
+      "Gas, because it invariably forms a connected phase even at very low saturation levels",
       "Water, because it is the only phase expected to be continuous at basin scale",
       "Oil and gas, because relative permeability does not depend on saturation at large scale"
     ],
@@ -16377,7 +16377,7 @@
       "The extra oil-column pressure is countered by capillary forces, so the water pressure controlling fracture onset is not increased by buoyancy alone",
       "The oil-column pressure is rapidly transferred into all shale pores, so fracture onset is guaranteed at the same depth as the oil–water contact",
       "Hydrofracturing is controlled primarily by overburden stress, so horizontal stress is irrelevant for seal failure",
-      "Water-wet seals cannot fracture because imbibition always removes oil before pressures can build, as the capillary suction force dominates over buoyancy at all depths"
+      "Water-wet seals cannot fracture because imbibition inherently removes oil before pressures can build, as the capillary suction force dominates over buoyancy at all depths"
     ],
     "answer_index": 0,
     "answer_key": "A",
@@ -16673,7 +16673,7 @@
     "choices": [
       "It likely has lower porosity and/or a more tortuous, better-cemented pore network that makes current paths less direct",
       "It must contain more conductive minerals throughout the rock matrix, regardless of pore fluids",
-      "It must have higher permeability because permeability always increases formation factor as larger pore throats enhance ionic conductivity",
+      "It must have higher permeability because permeability consistently increases formation factor as larger pore throats enhance ionic conductivity",
       "It must contain more hydrocarbons because formation factor is defined for oil-saturated conditions"
     ],
     "answer_index": 0,
@@ -16889,7 +16889,7 @@
     "choices": [
       "The boundary will appear sharper than in a vertical well because the tool samples only one lithology at a time due to reduced path length",
       "The boundary will disappear because gamma rays cannot detect thin beds in deviated wells",
-      "The boundary will shift to a deeper measured depth because electrical logs always read below the tool's current position in highly deviated wells",
+      "The boundary will shift to a deeper measured depth because electrical logs necessarily read below the tool's current position in highly deviated wells",
       "The boundary will look more gradual because the measurement samples properties from multiple layers away from the borehole"
     ],
     "answer_index": 3,
@@ -17270,7 +17270,7 @@
       "2D surveys cannot measure two-way travel time, so depth conversion becomes impossible",
       "2D surveys record only S-waves due to receiver coupling limitations, while 3D surveys record both P- and S-waves simultaneously",
       "2D surveys may include events generated by structures located off the profile because the wavefront spreads in 3D",
-      "2D surveys always have lower frequencies than 3D surveys, so vertical resolution is inherently worse in 2D acquisitions"
+      "2D surveys universally have lower frequencies than 3D surveys, so vertical resolution is inherently worse in 2D acquisitions"
     ],
     "answer_index": 2,
     "answer_key": "C",
@@ -17521,7 +17521,7 @@
     "language": "en",
     "question": "When predicting seismic response away from existing wells, why can lithology substitution be as important as fluid substitution?",
     "choices": [
-      "Because pore fluid properties are nearly constant across a basin at comparable depths, while lithology always changes abruptly and controls the seismic response",
+      "Because pore fluid properties are nearly constant across a basin at comparable depths, while lithology consistently changes abruptly and controls the seismic response",
       "Because seismic amplitudes are controlled only by density contrasts, which are unaffected by pore fluids or changes in velocity structure",
       "Because fluid substitution is only valid for carbonates, while lithology substitution is valid for clastics, due to pore geometry differences",
       "Because changes in rock texture and mineral/clay/cement content can alter elastic properties as much as changing the pore fluid"
@@ -17908,7 +17908,7 @@
       "Uniform mixing typically produces higher velocities than patchy saturation because fluids cannot equilibrate",
       "Patchy saturation typically produces higher velocities/impedances than uniform mixing because the effective response is stiffer",
       "Both cases give identical velocities if the average saturation is the same, so only density changes matter for seismic response",
-      "Patchy saturation always produces lower velocities because gas is always the least stiff phase and dominates the bulk elastic response"
+      "Patchy saturation intrinsically produces lower velocities because gas is intrinsically the least stiff phase and dominates the bulk elastic response"
     ],
     "answer_index": 1,
     "answer_key": "B",
@@ -18587,7 +18587,7 @@
     "question": "Consider a capillary tube or pore throat containing oil and water. If conditions shift so that the wetting angle becomes greater than 90°, what qualitative effect should you expect on the local position of the oil/water interface relative to the bulk oil/water contact?",
     "choices": [
       "The interface in the tube tends to sit below the bulk contact because the tube surface preferentially wets with oil",
-      "The interface rises above the bulk contact because water always climbs in small tubes regardless of surface wettability",
+      "The interface rises above the bulk contact because water inherently climbs in small tubes regardless of surface wettability",
       "The interface becomes independent of gravity because capillary forces cancel when the wetting angle exceeds 90°",
       "The interface remains at the same level as the bulk contact because density contrast controls the contact position uniquely"
     ],
@@ -18632,7 +18632,7 @@
       "Because resistivity tools measure only porosity, and porosity changes shift the interpreted contact even at constant saturation due to geometric effects",
       "Because coarse grains generate higher interfacial tension, which increases water resistivity and lowers apparent water saturation",
       "Because smaller pore throats create a stronger capillary-controlled saturation transition, so the water/oil distribution changes gradually with height",
-      "Because fine-grained rocks cannot contain any connate water due to their extremely small pore throats, so the logged contact must always be deeper than the true contact"
+      "Because fine-grained rocks cannot contain any connate water due to their extremely small pore throats, so the logged contact must necessarily be deeper than the true contact"
     ],
     "answer_index": 2,
     "answer_key": "C",
@@ -18846,7 +18846,7 @@
       "The coarsening-upward case, because injected water preferentially moves up-dip into the least permeable layers",
       "The fining-upward case, because injected water tends to follow the more permeable basal interval and can reach the producer before sweeping tighter beds",
       "The fining-upward case, because capillary resistance is lowest in fine-grained layers and water therefore rises fastest through them",
-      "The coarsening-upward case, because oil always flows only at the base due to higher density than water, causing early breakthrough when injected water reaches that zone"
+      "The coarsening-upward case, because oil invariably flows only at the base due to higher density than water, causing early breakthrough when injected water reaches that zone"
     ],
     "answer_index": 1,
     "answer_key": "B",
@@ -18975,7 +18975,7 @@
       "More biodegradation, because high temperature creates more nutrients for bacteria",
       "No change, because biodegradation depends only on the oil API gravity and not on the reservoir's thermal exposure history",
       "Less biodegradation, because prior heating can reduce the likelihood of bacterial alteration later",
-      "Less biodegradation, because uplift always increases quartz cementation and seals the rock pores completely"
+      "Less biodegradation, because uplift consistently increases quartz cementation and seals the rock pores completely"
     ],
     "answer_index": 2,
     "answer_key": "C",
@@ -19910,7 +19910,7 @@
     "choices": [
       "A shallow platform where source rock remains immature but reservoirs are thick",
       "An area where reservoirs are highly cemented and therefore do not produce",
-      "A region dominated by volcanic intrusions that always converts oil to gas through high-temperature thermal cracking processes",
+      "A region dominated by volcanic intrusions that inherently converts oil to gas through high-temperature thermal cracking processes",
       "A deeply buried part of the basin where source rocks generate large hydrocarbon volumes that later migrate"
     ],
     "answer_index": 3,
@@ -20210,7 +20210,7 @@
     "choices": [
       "Hydrostatic pressure implies no buoyancy force, so hydrocarbons cannot migrate",
       "Drainage through Jurassic sandstones toward the coast limits overpressure, reducing the likelihood of seal fracturing",
-      "Lower pressure always increases oil viscosity substantially, making it immobile in the pore space and preventing any migration",
+      "Lower pressure consistently increases oil viscosity substantially, making it immobile in the pore space and preventing any migration",
       "Hydrostatic pressure guarantees that the source rock remains immature"
     ],
     "answer_index": 1,
@@ -20250,7 +20250,7 @@
     "language": "en",
     "question": "For very deep Jurassic reservoirs on the mid-Norwegian shelf (depths >5 km and temperatures approaching 170–180°C), which factor is highlighted as critical for preserving producible porosity in some sandstones?",
     "choices": [
-      "Abundant feldspar dissolution always increases porosity regardless of burial depth or temperature",
+      "Abundant feldspar dissolution consistently increases porosity regardless of burial depth or temperature",
       "Early dolomitization creates rigid frameworks that prevent quartz cement",
       "A thick salt cover blocks any cementation reactions in underlying sands",
       "Chlorite grain coatings can inhibit quartz cement growth and help retain higher porosity"
@@ -20292,7 +20292,7 @@
     "language": "en",
     "question": "In the deep Vøring and Møre basin province, some very large traps formed relatively late compared with hydrocarbon generation. What petroleum-system consequence follows if Upper Jurassic source rocks mature by mid-Cretaceous time but key reservoirs and inversion structures develop later?",
     "choices": [
-      "Oil is guaranteed to be trapped because early generation always improves charge efficiency by ensuring hydrocarbons reach the structure before any seal degradation",
+      "Oil is guaranteed to be trapped because early generation consistently improves charge efficiency by ensuring hydrocarbons reach the structure before any seal degradation",
       "Hydrocarbon generation cannot occur without inversion structures, so no charge is possible",
       "Later-formed traps may capture mainly gas (including gas derived from earlier oil) rather than large oil accumulations",
       "Reservoir sandstones cannot be deposited after source rock maturation, so prospects are impossible"
@@ -20422,7 +20422,7 @@
       "Uplift increases pressure, compressing gas back into oil and improving oil retention",
       "Pressure reduction during uplift causes gas to come out of solution and expand, which can expel oil and promote spilling/breaching while cooling also reduces further generation",
       "Erosion adds overburden, increasing maturity and creating new oil that refills traps immediately",
-      "Glacial sediments always dissolve seals through their high content of corrosive meltwater and organic acids, making effective trapping impossible anywhere on the continental shelf"
+      "Glacial sediments invariably dissolve seals through their high content of corrosive meltwater and organic acids, making effective trapping impossible anywhere on the continental shelf"
     ],
     "answer_index": 1,
     "answer_key": "B",
@@ -20678,7 +20678,7 @@
       "Fine-grained rocks have higher permeability, which increases oxygen supply and slows organic decay",
       "Coarse-grained rocks generate more organic matter because they contain more plankton skeletons",
       "Fine-grained sediments restrict oxygen transport to the organic matter, reducing oxidation during early burial",
-      "Coarse-grained sediments are always deposited in anoxic bottom waters, which ensures better organic matter preservation"
+      "Coarse-grained sediments are necessarily deposited in anoxic bottom waters, which ensures better organic matter preservation"
     ],
     "answer_index": 2,
     "answer_key": "C",
@@ -21054,7 +21054,7 @@
     "language": "en",
     "question": "Two rocks have the same bulk volume. Rock X contains many void spaces but those voids are poorly connected; Rock Y has fewer void spaces but they form continuous pathways. Which statement best describes the likely reservoir behavior of Rock X compared with Rock Y?",
     "choices": [
-      "Rock X will transmit fluids more easily because more pore space always means higher permeability",
+      "Rock X will transmit fluids more easily because more pore space inherently means higher permeability",
       "Rock X can store more fluid, but may transmit it less efficiently than Rock Y",
       "Rock X must have both higher porosity and higher permeability than Rock Y",
       "Rock X will have lower porosity because poor connectivity eliminates pore volume"
@@ -21224,7 +21224,7 @@
     "question": "A geologist compares two basins: Basin X shows facies belts that systematically align with the shape of the basin floor, while Basin Y shows no consistent link between facies patterns and the present basin-floor geometry. Which interpretation best matches these observations?",
     "choices": [
       "Basin X is post-depositional; Basin Y is syn-depositional",
-      "Both basins are syn-depositional because facies always follow topography",
+      "Both basins are syn-depositional because facies invariably follow topography",
       "Basin X is syn-depositional; Basin Y is post-depositional",
       "Both basins are post-depositional because facies are controlled only by sediment supply"
     ],
@@ -21267,7 +21267,7 @@
     "question": "In regional basin analysis, why are basement boundaries often associated with thicker sediment packages and more active depositional systems?",
     "choices": [
       "They typically coincide with steep relief that promotes downslope sediment transfer and accommodation changes",
-      "They always generate carbonate platforms that outpace clastic input, even in tectonically active or high-sediment-supply settings",
+      "They necessarily generate carbonate platforms that outpace clastic input, even in tectonically active or high-sediment-supply settings",
       "They prevent sediment transport by creating closed drainage systems",
       "They eliminate topographic gradients, leading to uniformly thin deposits"
     ],
@@ -21308,10 +21308,10 @@
     "language": "en",
     "question": "A basin cross-section shows that producing intervals become both deeper and younger toward the basinward (southern) direction. What interpretation best explains why this trend is meaningful for hydrocarbon generation?",
     "choices": [
-      "Hydrocarbon generation depends mainly on present-day salinity, so deeper burial is always better for maturation",
+      "Hydrocarbon generation depends mainly on present-day salinity, so deeper burial is inherently better for maturation",
       "Generation is controlled only by depositional facies, so age and depth trends are irrelevant to the timing or extent of hydrocarbon maturation",
       "Time and temperature jointly influence maturation, so younger units may need greater burial to reach maturity",
-      "Younger units mature faster because they always contain more reactive organic matter and kerogen than older units"
+      "Younger units mature faster because they invariably contain more reactive organic matter and kerogen than older units"
     ],
     "answer_index": 2,
     "answer_key": "C",
@@ -21352,7 +21352,7 @@
     "question": "In a basin where the main depositional center shifts position through time, why can adding mapped thicknesses of successive stratigraphic packages give an incorrect estimate of the total sequence thickness?",
     "choices": [
       "Because thickness maps cannot be made in basins with any tectonic activity",
-      "Because facies changes always force thickness to remain constant through time, as the grain size and depositional energy compensate for any subsidence variations",
+      "Because facies changes necessarily force thickness to remain constant through time, as the grain size and depositional energy compensate for any subsidence variations",
       "Because later compaction removes thickness from older units, making summation impossible in principle",
       "Because individual packages may thicken in different places as the depocenter moves, so the local maximum thicknesses do not stack in one location"
     ],
