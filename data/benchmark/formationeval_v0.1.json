@@ -14907,7 +14907,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "When an extensional fault system later experiences contraction (structural inversion), what outcome is as most likely regarding how shortening is accommodated?",
+        "question": "When an extensional fault system later experiences contraction (structural inversion), what outcome is most likely regarding how shortening is accommodated?",
         "choices": [
             "The original steep normal faults always take up nearly all later shortening because they already exist as weaknesses",
             "New low-angle faults are commonly initiated, while pre-existing extensional faults may reactivate but usually cannot accommodate all the strain",
@@ -14949,7 +14949,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "In gravity-driven deformation on a salt-bearing continental margin, what large-scale kinematic pairing is as typical along the slope direction?",
+        "question": "In gravity-driven deformation on a salt-bearing continental margin, what large-scale kinematic pairing is typical along the slope direction?",
         "choices": [
             "Upslope contraction paired with downslope extension",
             "Uniform extension from shelf to deep basin with no contractional domain",
@@ -18157,7 +18157,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "When comparing baseline and monitor seismic datasets, which 4D analysis approach as generally the more robust option in practical experience?",
+        "question": "When comparing baseline and monitor seismic datasets, which 4D analysis approach is generally the more robust option in practical experience?",
         "choices": [
             "Computing microseismic event locations from passive recordings",
             "Interpreting differences in reflection amplitudes between surveys",
@@ -18241,7 +18241,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "NRMS is used as a repeatability metric for 4D seismic. why is it recommended to computing NRMS in a time window where production effects are not expected?",
+        "question": "NRMS is used as a repeatability metric for 4D seismic. Why is it recommended to compute NRMS in a time window where production effects are not expected?",
         "choices": [
             "To isolate non-repeatable acquisition/processing differences rather than true reservoir change",
             "To ensure the window contains the strongest reservoir reflections for higher RMS values",
@@ -18370,7 +18370,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "Why can repeated electromagnetic (CSEM/EM) surveys can complement 4D seismic for reservoir monitoring?",
+        "question": "Why can repeated electromagnetic (CSEM/EM) surveys complement 4D seismic for reservoir monitoring?",
         "choices": [
             "EM data provide higher vertical resolution than seismic at the same cost and frequency range",
             "EM measurements are much less sensitive to pore pressure than seismic and can help constrain saturation changes",
@@ -19310,7 +19310,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Before stimulation, methane in organic-rich shale gas systems is as primarily residing in which set of locations?",
+        "question": "Before stimulation, methane in organic-rich shale gas systems primarily resides in which set of locations?",
         "choices": [
             "Mostly as a free gas cap above an oil leg, like a conventional anticlinal trap",
             "Only dissolved in connate water, with essentially no gas in pores or on surfaces",
@@ -19949,7 +19949,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Cases where hydrocarbons leak from some northern North Sea reservoirs. What outcome is highlighted as a consequence when pressure approaches or exceeds cap-rock fracture strength?",
+        "question": "In cases where hydrocarbons leak from some northern North Sea reservoirs, what outcome is expected as a consequence when pressure approaches or exceeds cap-rock fracture strength?",
         "choices": [
             "Hydrocarbons are permanently trapped deeper because fractures close instantly",
             "Hydrocarbons are converted to coal due to sudden cooling during leakage",
@@ -20077,7 +20077,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "The the Bivrost Lineament/Transfer Zone as a key boundary on the mid-Norwegian margin. Which contrast across this boundary is emphasized?",
+        "question": "The Bivrost Lineament/Transfer Zone serves as a key boundary on the mid-Norwegian margin. Which contrast across this boundary is emphasized?",
         "choices": [
             "North of the boundary, basement is entirely Precambrian; south of it, basement is entirely oceanic",
             "South of the boundary, break-up magmatism is more voluminous; north of it, the margin is less magmatic and more prone to early post-opening subsidence",
@@ -20120,7 +20120,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "On the outer Møre and Vøring margins, characteristic seismic packages commonly used to recognize volcanic passive margins. What do these seaward-dipping reflector sequences most commonly represent in this context?",
+        "question": "On the outer Møre and Vøring margins, characteristic seismic packages are commonly used to recognize volcanic passive margins. What do these seaward-dipping reflector sequences most commonly represent in this context?",
         "choices": [
             "Stacks of basalt flows erupted around break-up, forming dipping lava wedges",
             "Thick carbonate platforms that prograded oceanward during the Jurassic",
@@ -20163,7 +20163,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "During break-up on the Norwegian margin, widespread sill intrusion into thick Cretaceous successions. What mechanism is proposed to explain the formation of numerous hydrothermal vent complexes during this igneous episode?",
+        "question": "During break-up on the Norwegian margin, widespread sill intrusion occurred into thick Cretaceous successions. What mechanism is proposed to explain the formation of numerous hydrothermal vent complexes during this igneous episode?",
         "choices": [
             "Glacial scouring created vent pipes that later filled with basalt",
             "Normal faulting alone pumped seawater upward to build vent mounds",
@@ -20374,7 +20374,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "The post-Caledonian history of the western Barents Sea as being dominated by three major rift phases. Which combination matches those phases?",
+        "question": "The post-Caledonian history of the western Barents Sea is dominated by three major rift phases. Which combination matches those phases?",
         "choices": [
             "Cambrian, Silurian, Devonian",
             "Late Triassic, Late Cretaceous, Miocene",
@@ -20417,7 +20417,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Late Cenozoic uplift and erosion as a key reason many Barents Sea discoveries are gas-dominated even where oil was present earlier. Which mechanism best explains this shift in fluid type and trap filling?",
+        "question": "Late Cenozoic uplift and erosion is a key reason why many Barents Sea discoveries are gas-dominated even where oil was present earlier. Which mechanism best explains this shift in fluid type and trap filling?",
         "choices": [
             "Uplift increases pressure, compressing gas back into oil and improving oil retention",
             "Pressure reduction during uplift causes gas to come out of solution and expand, which can expel oil and promote spilling/breaching while cooling also reduces further generation",
