@@ -773,7 +773,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "According to the physical models presented in the text, what is the primary underlying mechanism responsible for the decrease in formation water resistivity as temperature increases?",
+        "question": "According to standard physical models, what is the primary underlying mechanism responsible for the decrease in formation water resistivity as temperature increases?",
         "choices": [
             "Increased thermal agitation reduces the viscosity of the water, increasing ionic mobility",
             "Increased temperature causes salt ions to dissociate more completely, increasing concentration",
@@ -1319,7 +1319,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In the idealized mono-electrode experiment described in the text, where current I is injected and voltage V is measured at a distance r, what determines the 'tool constant' k?",
+        "question": "In the idealized mono-electrode experiment, where current I is injected and voltage V is measured at a distance r, what determines the 'tool constant' k?",
         "choices": [
             "The geometric spacing between the current source and the measurement point (4πr)",
             "The frequency of the injected current and the formation dielectric constant",
@@ -9475,7 +9475,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A modeler proposes that crude oil generated in a shale is mainly transported to traps as dissolved components in formation water. Based on the chapter’s discussion of migration mechanisms, what is the strongest conceptual objection to this idea for most oils?",
+        "question": "A modeler proposes that crude oil generated in a shale is mainly transported to traps as dissolved components in formation water, rather than migrating as a separate hydrocarbon phase. What is the strongest conceptual objection to this dissolved transport hypothesis for most crude oils?",
         "choices": [
             "Typical oil components have low aqueous solubility and water flow rates are too small to move enough oil, and it would also be difficult to explain systematic release into traps",
             "Oil would dissolve readily, but dissolved oil would chemically transform into kerogen before reaching a reservoir",
@@ -9517,7 +9517,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Two source-rock packages reach similar maximum burial temperatures, but one basin subsides much faster than the other. According to the chapter, how does rapid subsidence tend to affect the temperature at which oil generation begins?",
+        "question": "Two source-rock packages reach similar maximum burial temperatures, but one basin subsides much faster than the other. Given that petroleum generation depends on temperature integrated over time, how does rapid subsidence tend to affect the temperature at which oil generation begins?",
         "choices": [
             "Oil generation tends to start at a higher temperature because there is less time for cracking reactions at any given temperature",
             "Oil generation tends to start at a lower temperature because rapid burial always increases reaction time",
@@ -9559,7 +9559,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A clean water-saturated sandstone has mineral grain density 2.65 g/cm³, pore-fluid density 1.00 g/cm³, and measured bulk (wet) density 2.10 g/cm³. Using the chapter’s density-porosity relationship, what is the porosity (as a fraction)?",
+        "question": "A clean water-saturated sandstone has mineral grain density 2.65 g/cm³, pore-fluid density 1.00 g/cm³, and measured bulk (wet) density 2.10 g/cm³. Using the volume-weighted density mixing relationship (ρ_bulk = φρ_fluid + (1−φ)ρ_grain), what is the porosity (as a fraction)?",
         "choices": [
             "0.33",
             "0.21",
@@ -9601,7 +9601,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A prospect is a fault-bounded anticline that formed after the main phase of oil generation and expulsion in the basin. Based on the chapter, what outcome is most consistent with this timing relationship?",
+        "question": "A prospect is a fault-bounded anticline that formed after the main phase of oil generation and expulsion in the basin. Considering the critical relationship between trap formation timing and hydrocarbon migration, what outcome is most consistent with this scenario?",
         "choices": [
             "The structure is likely to be ineffective for capturing most oil because the key migration pulse occurred before closure existed",
             "The structure will necessarily be fully oil-filled because buoyancy always finds the newest closure",
@@ -9644,7 +9644,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "In a deltaic succession, a curved normal fault shows decreasing throw upward, and stratigraphic units are thicker on the downthrown side than on the upthrown side. What interpretation and trapping style best matches the chapter’s description?",
+        "question": "In a deltaic succession, a curved normal fault shows decreasing throw upward, and stratigraphic units are thicker on the downthrown side than on the upthrown side. What interpretation and trapping style best fits these syn-sedimentary fault characteristics?",
         "choices": [
             "A reverse fault system; traps mainly form by compressional duplexing below the fault",
             "A strike-slip fault; traps mainly form where lateral offsets create pull-apart basins",
@@ -9729,7 +9729,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "A team uses modern river deltas to interpret ancient deltaic strata, but also expects some ancient systems to have no close modern analogue. What reasoning best matches the chapter’s treatment of this approach?",
+        "question": "A team uses modern river deltas to interpret ancient deltaic strata, but also expects some ancient systems to have no close modern analogue. What reasoning best reflects the principle of uniformitarianism as applied with appropriate caveats?",
         "choices": [
             "Modern environments are irrelevant because ancient Earth conditions were always fundamentally different",
             "Ancient environments can be inferred without uncertainty because processes never change through time",
@@ -9771,7 +9771,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "While logging a core, you need to decide whether a 6 mm-thick layer should be recorded as lamination or as a bed. Using the chapter’s thickness criterion, how should it be classified?",
+        "question": "While logging a core, you need to decide whether a 6 mm-thick layer should be recorded as lamination or as a bed. Using the standard sedimentological thickness criterion (1 cm boundary), how should it be classified?",
         "choices": [
             "Lamination, because it is thinner than 1 cm",
             "A bed, because any distinct layer is a bed regardless of thickness",
@@ -9897,7 +9897,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "You need to quantify the size distribution of a clay-rich sediment where particles are too fine to pass reliably through standard sieves. Which measurement principle is most appropriate according to the chapter?",
+        "question": "You need to quantify the size distribution of a clay-rich sediment where particles are too fine to pass reliably through standard sieves. Which measurement principle is most appropriate for such fine-grained material?",
         "choices": [
             "Measuring settling behavior in a fluid using Stokes’ law assumptions for small grains",
             "Estimating size from the color changes produced during chemical staining of the sample",
@@ -9939,7 +9939,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A grain-size curve shows a clear lower limit on fine particles but a ‘tail’ extending toward coarser sizes (granules/pebbles). Which depositional setting is most consistent with this skewness pattern as described in the chapter?",
+        "question": "A grain-size curve shows a clear lower limit on fine particles but a 'tail' extending toward coarser sizes (granules/pebbles). Which depositional setting is most consistent with this negative skewness pattern?",
         "choices": [
             "Aeolian dunes, because wind transport preferentially adds very coarse particles",
             "Turbidites, because suspension settling commonly yields a coarse tail with sharp fine cutoff",
@@ -9981,7 +9981,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Consider water flowing in an open channel 0.50 m deep with a mean velocity of 0.20 m/s. Using the chapter’s rule-of-thumb boundary that laminar flow requires (velocity in cm/s) × (depth in cm) ≤ 20, what flow regime is expected?",
+        "question": "Consider water flowing in an open channel 0.50 m deep with a mean velocity of 0.20 m/s. Using the Reynolds number rule-of-thumb that laminar flow requires (velocity in cm/s) × (depth in cm) ≤ 20, what flow regime is expected?",
         "choices": [
             "Laminar, because the velocity is far below 1 m/s",
             "Laminar, because depth does not affect the transition",
@@ -10024,7 +10024,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In shallow water, flow reaches conditions where the Froude number exceeds about 0.8. According to the chapter, which bedform style is most associated with these upper-regime conditions?",
+        "question": "In shallow water, flow reaches conditions where the Froude number exceeds about 0.8, marking the transition to upper flow regime. Which bedform style is most associated with these upper-regime conditions?",
         "choices": [
             "Antidunes with low-angle laminae that dip upstream",
             "Current ripples producing cross-lamination that dips downstream",
@@ -10109,7 +10109,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "The chapter notes that silt and fine sand are especially prone to generating high-velocity flows via liquefaction. Which explanation best matches the mechanisms discussed?",
+        "question": "Silt and fine sand are especially prone to generating high-velocity sediment gravity flows via liquefaction. Which explanation best accounts for this susceptibility?",
         "choices": [
             "They have high cohesion like clay, so they can store elastic strain energy that later releases as flow",
             "They are so permeable that any excess pore pressure persists for long periods during rapid loading",
@@ -10153,7 +10153,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A barrier-island sand body becomes drowned during a transgression and is overlain by fine-grained sediment. Based on the chapter, what makes this setting particularly favorable for a stratigraphic hydrocarbon trap?",
+        "question": "A barrier-island sand body becomes drowned during a transgression and is overlain by fine-grained sediment. In terms of stratigraphic trap geometry and the distribution of reservoir, seal, and source facies, what makes this setting particularly favorable for hydrocarbon accumulation?",
         "choices": [
             "Barrier sands are commonly cemented at deposition, so they act as impermeable seals to deeper reservoirs",
             "Tidal inlets always erode down to basement, creating structural traps independent of later sedimentation",
@@ -10925,7 +10925,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A sandstone experienced meteoric flushing that dissolved feldspar and precipitated pore-filling kaolinite. Which outcome is most consistent with the chapter’s description of the net effect on reservoir performance?",
+        "question": "A sandstone experienced meteoric flushing that dissolved feldspar and precipitated pore-filling kaolinite. Which outcome best describes the net effect on reservoir performance?",
         "choices": [
             "Permeability typically decreases because pore-filling clay creates finer pore throats even if some secondary pore space formed",
             "Permeability typically increases because feldspar dissolution dominates and clay precipitation is negligible",
@@ -10969,7 +10969,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "The chapter states that quartz cementation rate may increase by a factor of about 1.7 for each 10°C temperature rise. Approximately how many times faster would quartz cementation be at 150°C than at 110°C, if other factors are unchanged?",
+        "question": "Quartz cementation rate increases exponentially with temperature, with an empirical factor of about 1.7× per 10°C rise (Walderhaug 1996). Approximately how many times faster would quartz cementation be at 150°C than at 110°C, if other factors are unchanged?",
         "choices": [
             "About 3×",
             "About 5×",
@@ -11013,7 +11013,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Two sandstones are buried to ~4 km and heated above ~130°C. Sandstone X contains abundant kaolin minerals and significant K-feldspar; Sandstone Y contains kaolin minerals but feldspar is dominated by plagioclase with little K-feldspar. Which outcome is most consistent with the chapter’s discussion of pore-filling illite development?",
+        "question": "Two sandstones are buried to ~4 km and heated above ~130°C. Sandstone X contains abundant kaolin minerals and significant K-feldspar; Sandstone Y contains kaolin minerals but feldspar is dominated by plagioclase with little K-feldspar. Given that illitization of kaolinite requires a local potassium source, which outcome is most likely for pore-filling illite development?",
         "choices": [
             "Sandstone X is more likely to form pore-filling illite (and quartz) because it can supply potassium locally, while Sandstone Y is less likely to illitize kaolin due to limited potassium",
             "Sandstone Y is more likely to form pore-filling illite because plagioclase supplies potassium more effectively than K-feldspar at high temperature",
@@ -11225,7 +11225,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "During burial alteration of skeletal grains originally made of high-Mg calcite, which outcome is most consistent with the process described in the chapter?",
+        "question": "During burial diagenesis of skeletal grains originally made of high-Mg calcite, which outcome best describes the typical alteration process?",
         "choices": [
             "Mg2+ is removed from the crystal lattice while the grain’s fine internal architecture can remain recognizable",
             "The grain typically converts to aragonite because it is the stable burial phase of CaCO3",
@@ -11267,7 +11267,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Along a profile from open basin to a reef margin and then into a protected lagoon, which biological producers are most consistent with the chapter’s described distribution?",
+        "question": "Along a profile from open basin to a reef margin and then into a protected lagoon, which biological carbonate producers are most likely to dominate each environment based on their ecological tolerances?",
         "choices": [
             "Basin: green algae; reef: coccolithophores; lagoon: red algae",
             "Basin: coccolithophores; reef: red algae; lagoon: green algae",
@@ -11394,7 +11394,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A calcite cement contains a few thousand ppm iron, implying substitution of Fe into the carbonate structure. Based on the chapter, which porewater setting most plausibly allowed this cement to form?",
+        "question": "A calcite cement contains a few thousand ppm iron, implying substitution of Fe²⁺ into the carbonate structure. Considering the competition between sulphide precipitation and carbonate incorporation of dissolved iron in diagenetic porewaters, which setting most plausibly allowed this ferroan cement to form?",
         "choices": [
             "Reducing porewater below the microbial sulphate-reduction zone, where Fe remains available as Fe2+",
             "Oxidizing seawater at the sediment surface, where Fe3+ is highly soluble and readily enters calcite",
@@ -11480,7 +11480,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Which scenario best satisfies the chapter’s stated requirements for extensive dolomitisation of CaCO3 sediments?",
+        "question": "Extensive dolomitisation of CaCO₃ sediments requires both an elevated Mg²⁺/Ca²⁺ ratio and a sustained supply of Mg²⁺. Which scenario best satisfies these geochemical requirements?",
         "choices": [
             "Fresh meteoric groundwater flushing alone, because low sulphate guarantees immediate dolomite precipitation",
             "Normal seawater circulating slowly through limestone, because seawater is always sufficient to form dolomite regardless of inhibitors",
@@ -11523,7 +11523,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A permeable carbonate sand island has freshwater (density 1.00 g/cm3) overlying saline porewater (density 1.025 g/cm3). Using the chapter’s hydrostatic relationship, approximately how deep below sea level can freshwater penetrate if the freshwater head above sea level is 6 m?",
+        "question": "A permeable carbonate sand island has freshwater (density 1.00 g/cm³) overlying saline porewater (density 1.025 g/cm³). Using the Ghyben-Herzberg hydrostatic relationship (depth ratio = 1/(ρ_saline − ρ_fresh)), approximately how deep below sea level can freshwater penetrate if the freshwater head above sea level is 6 m?",
         "choices": [
             "About 60 m",
             "About 120 m",
@@ -11820,7 +11820,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "In a basin with diatom-rich sediments, a strong reflector cuts across stratigraphy and remains nearly horizontal over a wide area. Well data show no systematic change in pore-fluid type at that level. What is the most defensible interpretation from the chapter?",
+        "question": "In a basin with diatom-rich sediments, a strong reflector cuts across stratigraphy and remains nearly horizontal over a wide area. Well data show no systematic change in pore-fluid type at that level. What is the most defensible interpretation given that silica phase transformations are temperature-controlled?",
         "choices": [
             "A diagenetic boundary related to silica transformations, which can mimic a fluid contact in seismic data",
             "A regional unconformity produced by subaerial exposure, which must be planar and horizontal",
@@ -11905,7 +11905,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A 10.0 m thick gypsum bed is converted to anhydrite during burial. Using the chapter's stated volume reduction for this transformation, what thickness is expected if lateral area is unchanged?",
+        "question": "A 10.0 m thick gypsum bed is converted to anhydrite during burial. Given that the dehydration of gypsum to anhydrite results in a 38% volume reduction, what thickness is expected if lateral area is unchanged?",
         "choices": [
             "3.8 m",
             "6.2 m",
@@ -11990,7 +11990,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "In marine sediments, porewater becomes sulphate-reducing below the shallow oxidized layer. Based on the chapter's geochemical discussion, which element is more likely to escape trapping as a sulphide and instead be preferentially deposited in the oxidized zone above the redox boundary?",
+        "question": "In marine sediments, porewater becomes sulphate-reducing below the shallow oxidized layer. Considering the contrasting stability of Fe and Mn sulphides in reducing porewaters, which element is more likely to escape trapping as a sulphide and instead be preferentially deposited in the oxidized zone above the redox boundary?",
         "choices": [
             "Iron, because Fe²⁺ does not form stable sulphides in sediments",
             "Sulphur, because sulphur oxidizes and precipitates as metal oxides at the boundary",
@@ -12033,7 +12033,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Which depositional scenario is most favorable for forming marine phosphorite beds according to the chapter?",
+        "question": "Which depositional scenario is most favorable for forming marine phosphorite beds?",
         "choices": [
             "Strong upwelling with high biological productivity and very low clastic sediment input, often during slow or interrupted sedimentation",
             "High-energy shoreface sand deposition with rapid burial that prevents any chemical replacement",
@@ -12764,7 +12764,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "On a seismic section, a strong reflection event is nearly horizontal and cuts across dipping stratigraphic reflections. In the context of hydrocarbon interpretation, what is the most consistent explanation given in the chapter?",
+        "question": "On a seismic section, a strong reflection event is nearly horizontal and cuts across dipping stratigraphic reflections. In the context of hydrocarbon interpretation, what is the most likely explanation for this 'flat spot'?",
         "choices": [
             "A lithologic boundary that must parallel bedding because depositional layering always controls reflections",
             "A fluid contact that can remain level and generate a strong impedance contrast, producing a so-called flat spot",
@@ -12850,7 +12850,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A geoscientist uses the vertical range of coastal onlap on a seismic profile to estimate sea-level rise. According to the chapter, what is the key reason this estimate cannot be treated as purely eustatic without further analysis?",
+        "question": "A geoscientist uses the vertical range of coastal onlap on a seismic profile to estimate sea-level rise. What is the key reason this estimate cannot be treated as purely eustatic without further analysis?",
         "choices": [
             "Onlap geometry is controlled only by changes in sediment grain size, not by water depth",
             "Eustatic sea level cannot create onlap patterns because onlap requires tectonic uplift",
@@ -12892,7 +12892,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "The chapter states that a 100 m eustatic sea-level rise increases loading and causes an additional 43.5 m of isostatic subsidence. What is the resulting equilibrium increase in water depth?",
+        "question": "A 100 m eustatic sea-level rise increases water loading on the crust and causes an additional 43.5 m of isostatic subsidence. What is the resulting equilibrium increase in water depth?",
         "choices": [
             "143.5 m",
             "100 m",
@@ -12935,7 +12935,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "In basin analysis, why is backstripping applied to well/stratigraphic data, and which uncertainty highlighted in the chapter can strongly limit the reliability of the reconstructed burial/temperature history?",
+        "question": "In basin analysis, why is backstripping applied to well/stratigraphic data, and which uncertainty can strongly limit the reliability of the reconstructed burial/temperature history?",
         "choices": [
             "It is used to convert seismic time directly into lithology, and the main uncertainty is clay-mineral type",
             "It is used to recover primary tectonic/eustatic components of subsidence by removing compaction and load effects, and a major uncertainty is how geothermal gradient changed through time",
@@ -12979,7 +12979,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A rift basin develops in an arid climate and becomes partly isolated from open marine circulation. Based on the chapter, what outcome is most likely for the sedimentary fill and petroleum system evolution?",
+        "question": "A rift basin develops in an arid climate and becomes partly isolated from open marine circulation. Considering the depositional and structural characteristics of such restricted rift settings, what outcome is most likely for the sedimentary fill and petroleum system evolution?",
         "choices": [
             "Glacioeustatic carbonates dominate, and sealing capacity is usually poor because carbonates always fracture",
             "Deep-marine pelagic limestones dominate, and structural traps are unlikely because rifts have no faulting",
@@ -13022,7 +13022,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In conventional reflection seismic data, why can faults be difficult to position accurately, and what approach described in the chapter helps correct mispositioning related to edge/diffraction effects?",
+        "question": "In conventional reflection seismic data, why can faults be difficult to position accurately, and what processing approach helps correct mispositioning related to edge/diffraction effects?",
         "choices": [
             "Fault planes are commonly too steep to return energy as a clear reflector, and migration processing can reposition events to better represent true structure",
             "Fault planes always reflect strongly, but interpreters mis-pick them because density logs are unavailable; the solution is to run a neutron log",
@@ -13278,7 +13278,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Using the chapter's porosity-weighted approximation for a water-saturated rock, estimate the bulk thermal conductivity if porosity is 0.25, matrix conductivity is 5.5 W/mK, and porewater conductivity is 0.6 W/mK.",
+        "question": "Using the porosity-weighted approximation (k_bulk = φ·k_fluid + (1−φ)·k_matrix) for a water-saturated rock, estimate the bulk thermal conductivity if porosity is 0.25, matrix conductivity is 5.5 W/mK, and porewater conductivity is 0.6 W/mK.",
         "choices": [
             "About 1.8 W/mK",
             "About 3.0 W/mK",
@@ -13321,7 +13321,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A shale interval shows direction-dependent heat conduction. According to the chapter, which statement best describes shale thermal conductivity relative to bedding?",
+        "question": "A shale interval shows direction-dependent heat conduction. Which statement best describes shale thermal conductivity relative to bedding?",
         "choices": [
             "Conductivity is higher perpendicular to bedding because compaction closes pores along laminae",
             "Conductivity can be substantially higher parallel to bedding than perpendicular to bedding",
@@ -13364,7 +13364,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A low-conductivity mudstone package overlies older rocks while the regional basement heat flux remains similar. What is the most likely thermal consequence described in the chapter?",
+        "question": "A low-conductivity mudstone package overlies older rocks while the regional basement heat flux remains similar. What is the most likely thermal consequence?",
         "choices": [
             "Lower temperatures at depth because low-conductivity rocks dissipate heat more efficiently",
             "No effect on subsurface temperatures because only heat production controls the gradient",
@@ -13409,7 +13409,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A thick salt layer overlies a potential reservoir and source-rock system. Based on the chapter's discussion of salt conductivity, which temperature pattern and petroleum-system implication is most consistent?",
+        "question": "A thick salt layer overlies a potential reservoir and source-rock system. Given that salt has much higher thermal conductivity than typical sediments, which temperature pattern and petroleum-system implication is most consistent?",
         "choices": [
             "Temperatures increase below the salt because salt amplifies the geothermal gradient at depth, accelerating cracking to gas",
             "Temperatures are uniform across the salt because salt blocks heat flow entirely, halting maturation above and below",
@@ -13453,7 +13453,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Two basins have similar basement heat input and similar lithologies, but Basin A has very rapid sedimentation and subsidence. According to the chapter's transient heat-flow argument, what is the best expectation for Basin A during active subsidence?",
+        "question": "Two basins have similar basement heat input and similar lithologies, but Basin A has very rapid sedimentation and subsidence. Based on transient heat-flow principles, what is the best expectation for Basin A during active subsidence?",
         "choices": [
             "Lower effective heat flow and reduced geothermal gradients because energy is diverted into warming newly buried rocks",
             "Higher effective heat flow and increased geothermal gradients because compaction releases heat to the surface",
@@ -13497,7 +13497,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Consider the chapter's expression for advective heat transport by water flow, which includes a factor of sinα where α is the angle between the flow direction and isotherms. What situation minimizes advective heat transport even if the Darcy velocity is large?",
+        "question": "Advective heat transport by water flow includes a factor of sinα where α is the angle between the flow direction and isotherms. What situation minimizes advective heat transport even if the Darcy velocity is large?",
         "choices": [
             "Flow is perpendicular to isotherms so water crosses many temperature contours",
             "Flow is parallel to isotherms so water tends to stay at the same temperature",
@@ -14101,7 +14101,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Two mudstone intervals have the same present-day porosity, but one is strongly overpressured while the other is normally pressured. Based on the chapter’s compaction concepts, which interpretation best explains how high overpressure influences compaction mechanisms during burial?",
+        "question": "Two mudstone intervals have the same present-day porosity, but one is strongly overpressured while the other is normally pressured. Considering that mechanical compaction is controlled by effective stress while chemical compaction is primarily temperature-driven, which interpretation best explains how high overpressure influences these compaction mechanisms during burial?",
         "choices": [
             "High overpressure speeds up mechanical compaction because pore fluids carry more load",
             "High overpressure speeds up chemical compaction because it increases effective stress",
@@ -14228,7 +14228,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "For a normally consolidated, uncemented sediment, the chapter relates the effective stress ratio K0 to the friction angle (φ′) using a semi-empirical expression. If φ′ increases while other conditions are similar, how does K0 for the normally consolidated state tend to change?",
+        "question": "For a normally consolidated, uncemented sediment, a semi-empirical relationship relates the effective stress ratio K0 to the friction angle (φ′) using a semi-empirical expression. If φ′ increases while other conditions are similar, how does K0 for the normally consolidated state tend to change?",
         "choices": [
             "K0 decreases because a larger sin(φ′) is subtracted from 1",
             "K0 increases because a larger sin(φ′) adds lateral support",
@@ -14270,7 +14270,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A sediment package becomes overconsolidated due to unloading (erosion). Using the chapter’s description of K0 behavior during unloading, what outcome is most consistent with the expected change in effective horizontal stress relative to effective vertical stress?",
+        "question": "A sediment package becomes overconsolidated due to unloading (erosion). Considering the behavior of the lateral stress ratio K0 during such unloading, what outcome is most consistent with the expected change in effective horizontal stress relative to effective vertical stress?",
         "choices": [
             "The effective horizontal stress must fall in the same proportion as the effective vertical stress",
             "The effective horizontal stress becomes zero because pore pressure supports the overburden",
@@ -14397,7 +14397,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A sedimentary rock shows a peak strength followed by a rapid stress drop as strain continues in a triaxial test, but the same rock shows no stress drop when the lateral effective stress is higher. Which interpretation best matches the chapter’s discussion?",
+        "question": "A sedimentary rock shows a peak strength followed by a rapid stress drop as strain continues in a triaxial test, but the same rock shows no stress drop when the lateral effective stress is higher. Which interpretation best explains this behavior in terms of brittle-ductile transition?",
         "choices": [
             "Increasing lateral effective stress can shift behavior from brittle (strain-softening) to ductile response",
             "Increasing lateral effective stress forces pore pressure to rise, which always causes brittle failure",
@@ -14441,7 +14441,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Two clean, well-sorted sands have similar mineralogy, but one is coarse-grained and the other is fine-grained. Under the same effective stress increase, which outcome is most consistent with the chapter’s explanation of grain-contact stresses and mechanical compaction?",
+        "question": "Two clean, well-sorted sands have similar mineralogy, but one is coarse-grained and the other is fine-grained. Under the same effective stress increase, which outcome is most consistent with the theory of grain-contact stresses and mechanical compaction?",
         "choices": [
             "The fine-grained sand is more likely to fracture grains because smaller grains create higher contact stress",
             "The coarse-grained sand is more likely to experience grain fracturing and larger porosity loss because it has fewer contacts and higher stress per contact",
@@ -14485,7 +14485,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "You are comparing two brine-saturated mudstone intervals with similar depth and stress. One interval is smectite-rich and the other is kaolinite-rich. Which seismic-velocity pattern is most consistent with the chapter’s described laboratory trends?",
+        "question": "You are comparing two brine-saturated mudstone intervals with similar depth and stress. One interval is smectite-rich and the other is kaolinite-rich. Which seismic-velocity pattern is most consistent with laboratory trends for clay minerals?",
         "choices": [
             "Smectite-rich: higher Vp and higher Vs, giving a lower Vp/Vs than kaolinite-rich",
             "Smectite-rich: similar Vp but much higher Vs, giving a lower Vp/Vs than kaolinite-rich",
@@ -14653,7 +14653,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In Anderson’s framework as presented in the chapter, which principal stress ordering corresponds to a contractional (shortening) regime?",
+        "question": "In Anderson’s framework, which principal stress ordering corresponds to a contractional (shortening) regime?",
         "choices": [
             "σv > σH > σh",
             "σh > σv > σH",
@@ -14696,7 +14696,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A basin analyst wants an operational criterion for identifying the syn-rift to post-rift transition when timing varies across the basin. According to the chapter, what criterion and geometric signal best define that transition?",
+        "question": "A basin analyst wants an operational criterion for identifying the syn-rift to post-rift transition when timing varies across the basin. What criterion and geometric signal best define that transition?",
         "choices": [
             "Cooling dominates heating (net heat loss exceeds net heat gain), and regional tilting switches from rotating away from the basin axis to tilting toward the axis",
             "Sediment supply exceeds subsidence everywhere, and fault blocks uniformly rotate away from the basin axis",
@@ -14738,7 +14738,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Two end-member models are used in the chapter to describe lithospheric thinning during rifting. Which statement correctly contrasts the pure-shear and simple-shear end members?",
+        "question": "Two end-member models commonly describe lithospheric thinning during rifting. Which statement correctly contrasts the pure-shear and simple-shear end members?",
         "choices": [
             "Pure shear produces a strongly asymmetric basin controlled by a single throughgoing inclined detachment, whereas simple shear produces a symmetric basin",
             "Pure shear tends toward a symmetric basin geometry, whereas simple shear concentrates extension along one or more inclined fault zones that yield an asymmetric basin",
@@ -14781,7 +14781,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "During the thermal subsidence stage of an extensional basin, major rift-border faulting becomes relatively quiet. Based on the chapter, what trap style is expected to become more common than strongly fault-bounded structural traps?",
+        "question": "During the thermal subsidence stage of an extensional basin, major rift-border faulting becomes relatively quiet. Given the reduced structural activity and continued sedimentation during this post-rift phase, what trap style is expected to become more common than strongly fault-bounded structural traps?",
         "choices": [
             "Traps dominated by active growth-fault displacement and rollover formation",
             "Traps dominated by new steep planar normal faults cutting the basin fill",
@@ -14865,7 +14865,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "In a shear zone where strike-slip motion is accompanied by a compressional component (transpression), what does the chapter mean by strain partitioning?",
+        "question": "In a shear zone where strike-slip motion is accompanied by a compressional component (transpression), what is meant by strain partitioning?",
         "choices": [
             "Different components of deformation are taken up in separate structural systems, effectively separating contractional and strike-slip strain",
             "The total strain is accommodated only by rotating Riedel shears until they become parallel to the main fault",
@@ -14907,7 +14907,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "When an extensional fault system later experiences contraction (structural inversion), what outcome does the chapter identify as most likely regarding how shortening is accommodated?",
+        "question": "When an extensional fault system later experiences contraction (structural inversion), what outcome is as most likely regarding how shortening is accommodated?",
         "choices": [
             "The original steep normal faults always take up nearly all later shortening because they already exist as weaknesses",
             "New low-angle faults are commonly initiated, while pre-existing extensional faults may reactivate but usually cannot accommodate all the strain",
@@ -14949,7 +14949,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "In gravity-driven deformation on a salt-bearing continental margin, what large-scale kinematic pairing does the chapter describe as typical along the slope direction?",
+        "question": "In gravity-driven deformation on a salt-bearing continental margin, what large-scale kinematic pairing is as typical along the slope direction?",
         "choices": [
             "Upslope contraction paired with downslope extension",
             "Uniform extension from shelf to deep basin with no contractional domain",
@@ -14992,7 +14992,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A subsurface model represents an extensional fault zone as a core with lenses (horses) separated by high-strain zones plus damage zones on either side. Which statement best matches the chapter’s field-based characterization of these elements?",
+        "question": "A subsurface model represents an extensional fault zone as a core with lenses (horses) separated by high-strain zones plus damage zones on either side. Which statement best characterizes these structural elements based on field observations?",
         "choices": [
             "Damage zones are typically symmetric around the core, and footwall and hangingwall fracture patterns are usually indistinguishable",
             "Fault core lenses are typically chaotic in shape, so their size ratios cannot be generalized for modelling purposes",
@@ -15036,7 +15036,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "For a single lithology tracked through progressive burial in a basin (ignoring short intervals of changing lithology), which trend is most consistent with compaction described in the chapter?",
+        "question": "For a single lithology tracked through progressive burial in a basin (ignoring short intervals of changing lithology), which trend is most consistent with compaction?",
         "choices": [
             "Porosity tends to rise, while density and seismic velocity tend to fall",
             "Porosity tends to remain constant, while density and seismic velocity tend to rise",
@@ -15167,7 +15167,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A well is drilled through smectite-rich clay intervals that are sensitive to porewater chemistry. Which explanation best matches the chapter for why adding salts such as KCl to drilling mud can improve stability in these clays?",
+        "question": "A well is drilled through smectite-rich clay intervals that are sensitive to porewater chemistry. Which explanation best accounts for why adding salts such as KCl to drilling mud can improve stability in these clays?",
         "choices": [
             "It raises the formation temperature, accelerating quartz cementation and strengthening the rock",
             "It modifies the porewater chemistry so the clay mass becomes mechanically stronger and less prone to weakening",
@@ -15255,7 +15255,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A team uses a Vp/Vs-based workflow to infer fluid content in thin sand beds. The interval is dominated by mudstone, and the mudstone contains a non-negligible amount of gas in its pore space. What is the most likely interpretation risk highlighted by the chapter?",
+        "question": "A team uses a Vp/Vs-based workflow to infer fluid content in thin sand beds. The interval is dominated by mudstone, and the mudstone contains a non-negligible amount of gas in its pore space. What is the most likely interpretation risk in this scenario?",
         "choices": [
             "The Vp/Vs ratio becomes insensitive to clay mineralogy, so shale properties can be ignored",
             "The presence of gas forces Vp/Vs to a universal constant, making fluid discrimination easier",
@@ -15299,7 +15299,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In a smectite-rich mudstone heated into the range where smectite becomes unstable and illite forms, what factor most directly governs how rapidly the transformation can proceed according to the chapter?",
+        "question": "In a smectite-rich mudstone heated into the range where smectite becomes unstable and illite forms, what factor most directly governs how rapidly the transformation can proceed?",
         "choices": [
             "The magnitude of tectonic stress, because stress alone controls the transformation rate",
             "The temperature-dependent rate of quartz precipitation that removes released silica from porewater",
@@ -15343,7 +15343,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A hypothesis proposes that silica released during clay-mineral reactions in shale diffuses into adjacent sandstones and forms major quartz cement there. Which statement best aligns with the chapter’s assessment of this idea?",
+        "question": "A hypothesis proposes that silica released during clay-mineral reactions in shale diffuses into adjacent sandstones and forms major quartz cement there. Which statement best aligns with current understanding of silica transport in sedimentary systems?",
         "choices": [
             "It is likely, because diffusion through shale is efficient and silica is routinely exported over large distances",
             "It is likely, because compaction-driven flow can transport enough silica to explain extensive quartz cementation",
@@ -15387,7 +15387,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In quartz-rich sandstones undergoing pressure solution at grain contacts, the chapter describes chemical compaction as relatively insensitive to stress. What explanation best matches this description?",
+        "question": "In quartz-rich sandstones undergoing pressure solution at grain contacts, chemical compaction as relatively insensitive to stress. What explanation best matches this description?",
         "choices": [
             "Pressure solution cannot occur in quartz sandstones, so stress is irrelevant",
             "Stress controls dissolution, but cement precipitation is rapid and never limits compaction",
@@ -15431,7 +15431,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "Compared with quartz-dominated mudstones and sandstones, why can carbonate sediments become cemented into hard rock at very shallow burial according to the chapter?",
+        "question": "Compared with quartz-dominated mudstones and sandstones, why can carbonate sediments become cemented into hard rock at very shallow burial depths?",
         "choices": [
             "Because carbonate reactions are slow, so they require high temperatures to proceed",
             "Because carbonate compaction is controlled mainly by long-distance silica diffusion",
@@ -15475,7 +15475,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "How does overpressure most differently affect compaction in siliceous sediments when comparing shallow mechanical compaction to deeper chemical compaction described in the chapter?",
+        "question": "How does overpressure most differently affect compaction in siliceous sediments when comparing shallow mechanical compaction to deeper chemical compaction?",
         "choices": [
             "It accelerates both types of compaction because pore pressure increases mineral solubility",
             "It reduces mechanical compaction by lowering effective stress, but has little influence on chemical compaction that is mainly temperature/time controlled",
@@ -15519,7 +15519,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "A quartz-rich sedimentary rock is uplifted and unloaded, but its temperature remains above roughly 70–80°C for a prolonged period. What outcome is most consistent with the chapter’s description of compaction processes during uplift?",
+        "question": "A quartz-rich sedimentary rock is uplifted and unloaded, but its temperature remains above roughly 70–80°C for a prolonged period. What outcome is most consistent with the known behavior of quartz-rich rocks during such conditions?",
         "choices": [
             "Chemical compaction can continue and quartz cement can progressively seal fractures, partly offsetting mechanical opening from unloading",
             "All compaction stops immediately because decreasing stress always prevents mineral reactions",
@@ -15987,7 +15987,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Two source rocks experienced different thermal histories after burial. Rock A stayed near 120°C for 60 million years, while Rock B reached 155°C for 5 million years. Based on the chapter’s time–temperature view of maturation, which rock is more likely to have the higher maturity?",
+        "question": "Two source rocks experienced different thermal histories after burial. Rock A stayed near 120°C for 60 million years, while Rock B reached 155°C for 5 million years. Given that kerogen transformation follows Arrhenius-type kinetics where reaction rates increase exponentially with temperature, which rock is more likely to have the higher maturity?",
         "choices": [
             "Rock A, because maturation depends only on total time regardless of temperature",
             "Rock B, because reaction rates rise sharply with temperature and maturation above ~130–140°C becomes very rapid",
@@ -16071,7 +16071,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "A basin undergoes uplift, reducing pressure in fluids that previously contained dissolved gas. Which outcome is most consistent with the chapter’s description?",
+        "question": "A basin undergoes uplift, reducing pressure in fluids that previously contained dissolved gas. Which outcome is most likely for dissolved gases in this situation?",
         "choices": [
             "Oil becomes substantially more soluble in water, delaying hydrocarbon phase separation",
             "Gas comes out of solution and can form free gas volumes in oil or water",
@@ -16156,7 +16156,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A source rock interval has porosity φ = 0.20. Using the chapter’s definition of void ratio, what is the void ratio Vᵣ?",
+        "question": "A source rock interval has porosity φ = 0.20. Void ratio expresses pore space as the ratio of void volume to solid volume. What is the void ratio Vᵣ?",
         "choices": [
             "0.20",
             "0.25",
@@ -16285,7 +16285,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Using the chapter’s buoyancy relation, estimate the oil–water pressure difference generated by a 150 m continuous oil column where ρw = 1.10 g/cm³ and ρo = 0.80 g/cm³ (use the chapter’s scaling where 100 m of a 1.0 g/cm³ water column corresponds to ~1 MPa).",
+        "question": "Using the buoyancy pressure relation, estimate the oil–water pressure difference generated by a 150 m continuous oil column where ρw = 1.10 g/cm³ and ρo = 0.80 g/cm³ (using the approximation where 100 m of a 1.0 g/cm³ water column corresponds to ~1 MPa).",
         "choices": [
             "0.15 MPa",
             "0.30 MPa",
@@ -16329,7 +16329,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Why does the chapter argue that oil is unlikely to migrate through the shale matrix when the largest connected pore-throat sizes become very small (tens of angstroms)?",
+        "question": "Why is oil unlikely to migrate through the shale matrix when the largest connected pore-throat sizes become very small (tens of angstroms)?",
         "choices": [
             "Because oil becomes denser than water in nanopores, reversing buoyancy-driven flow",
             "Because pore throats can approach the size of large oil molecules, creating a molecular sieving effect",
@@ -16372,7 +16372,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A geoscientist suggests that adding a taller oil column beneath a shale seal should directly raise the seal’s water pressure and therefore trigger hydrofracturing earlier. Based on the chapter, what is the most defensible correction to this reasoning under water-wet conditions?",
+        "question": "A geoscientist suggests that adding a taller oil column beneath a shale seal should directly raise the seal's water pressure and therefore trigger hydrofracturing earlier. Considering how capillary entry pressure governs oil-water pressure relationships at water-wet seal interfaces, what is the most defensible correction to this reasoning?",
         "choices": [
             "The extra oil-column pressure is countered by capillary forces, so the water pressure controlling fracture onset is not increased by buoyancy alone",
             "The oil-column pressure is rapidly transferred into all shale pores, so fracture onset is guaranteed at the same depth as the oil–water contact",
@@ -16415,7 +16415,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Two structural closures sit within the same pressure compartment and are connected by a continuous permeable sandstone. One closure is shallower and structurally higher than the other. According to the chapter, what is the most likely implication for fracture-driven leakage risk?",
+        "question": "Two structural closures sit within the same pressure compartment and are connected by a continuous permeable sandstone. One closure is shallower and structurally higher than the other. What is the most likely implication for fracture-driven leakage risk?",
         "choices": [
             "The deeper closure is more likely to leak first because its overburden stress is higher",
             "The higher closure is more likely to reach fracture pressure and leak, reducing the chance that the lower closure fractures",
@@ -16500,7 +16500,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "A well section has already been cased with steel pipe. Which type of log from this chapter is still generally feasible to run through the casing?",
+        "question": "A well section has already been cased with steel pipe. Which type of log is still generally feasible to run through the casing?",
         "choices": [
             "A standard electrode-based resistivity log that requires electrical contact at the borehole wall",
             "A micro log intended to assess mudcake thickness at the borehole wall",
@@ -16711,7 +16711,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A clean reservoir interval has formation factor F = 12 (dimensionless), formation water resistivity Rw = 0.15 Ω·m, and true formation resistivity Rt = 2.7 Ω·m. Using the chapter’s Archie form with saturation exponent n = 2, what is the estimated water saturation Sw (fraction)?",
+        "question": "A clean reservoir interval has formation factor F = 12 (dimensionless), formation water resistivity Rw = 0.15 Ω·m, and true formation resistivity Rt = 2.7 Ω·m. Using Archie's equation with saturation exponent n = 2, what is the estimated water saturation Sw (fraction)?",
         "choices": [
             "Sw ≈ 0.58",
             "Sw ≈ 0.67",
@@ -16753,7 +16753,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A logging run shows that the SP curve is essentially absent (no meaningful deflection), while other logs record normally. Which explanation is most consistent with the chapter?",
+        "question": "A logging run shows that the SP curve is essentially absent (no meaningful deflection), while other logs record normally. Which explanation is most consistent with SP log theory?",
         "choices": [
             "The formation contains no clay minerals, so SP cannot form in any lithology",
             "The formation water is too saline, so electrochemical potentials cannot exist",
@@ -16797,7 +16797,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In an interval where potassium-based gamma-ray response may be elevated by K-feldspar or mica in sandstones, which spectral gamma-ray component does the chapter suggest can give a more stable estimate of shale content?",
+        "question": "In an interval where potassium-based gamma-ray response may be elevated by K-feldspar or mica in sandstones, which spectral gamma-ray component can give a more stable estimate of shale content?",
         "choices": [
             "Uranium (U), because it is least affected by organic matter",
             "Thorium (Th), because its concentration in shales is described as less variable than K or U",
@@ -16841,7 +16841,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A gamma-ray curve across a sandstone body shows a sharp low-gamma base followed by progressively higher gamma readings toward the top, producing a bell-shaped motif. Which depositional interpretation is most consistent with the chapter’s discussion of log motifs?",
+        "question": "A gamma-ray curve across a sandstone body shows a sharp low-gamma base followed by progressively higher gamma readings toward the top, producing a bell-shaped motif. Which depositional interpretation is most consistent with standard log-motif analysis?",
         "choices": [
             "A fining-upward fluvial channel fill, where the upward increase in gamma is commonly linked to increasing clay-rich material",
             "A coarsening-upward shallow-marine unit, where gamma typically increases upward as sands become cleaner",
@@ -16885,7 +16885,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A well is drilled at a high deviation so that it intersects bedding at a very low angle. Even if a sand–shale boundary is sharp in the formation, what log-response effect is most likely according to the chapter?",
+        "question": "A well is drilled at a high deviation so that it intersects bedding at a very low angle. Even if a sand–shale boundary is sharp in the formation, what log-response effect is most likely due to borehole geometry?",
         "choices": [
             "The boundary will appear sharper than in a vertical well because the tool samples only one lithology at a time",
             "The boundary will disappear because gamma rays cannot detect thin beds in deviated wells",
@@ -16929,7 +16929,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A temperature measured during logging (BHT) is suspected to be biased by recent drilling. What approach described in the chapter is used to estimate the true formation temperature from such data?",
+        "question": "A temperature measured during logging (BHT) is suspected to be biased by recent drilling. What approach is used to estimate the true formation temperature from such data?",
         "choices": [
             "Assume the first recorded temperature equals formation temperature because the tool equilibrates instantly",
             "Replace the temperature log with an SP log because electrochemical potentials are temperature-independent",
@@ -17139,7 +17139,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A seismic line is recorded with a time sampling interval of Δt = 2 ms. Using the chapter’s definition, what is the Nyquist frequency?",
+        "question": "A seismic line is recorded with a time sampling interval of Δt = 2 ms. Using the standard definition, what is the Nyquist frequency?",
         "choices": [
             "125 Hz",
             "250 Hz",
@@ -17265,7 +17265,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A 2D marine line crosses an area with complex structures that extend away from the line. According to the chapter, why can a 2D section be misleading in such settings compared with a 3D survey?",
+        "question": "A 2D marine line crosses an area with complex structures that extend away from the line. Why can a 2D section be misleading in such settings compared with a 3D survey?",
         "choices": [
             "2D surveys cannot measure two-way travel time, so depth conversion becomes impossible",
             "2D surveys record only S-waves, while 3D surveys record both P- and S-waves",
@@ -17349,7 +17349,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "In 4C ocean bottom seismic (OBS) acquisition, how do patch and swath geometries differ in the chapter’s description?",
+        "question": "In 4C ocean bottom seismic (OBS) acquisition, how do patch and swath geometries typically differ?",
         "choices": [
             "Patch designs minimize azimuth coverage, while swath designs maximize azimuth coverage",
             "Patch designs provide a wider azimuth range, while swath designs tend to give more uniform offset sampling with better near-offset coverage",
@@ -17391,7 +17391,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Using the chapter’s approximation for Fresnel-zone radius, Rf = sqrt(VZ/(2fc)), estimate Rf for V = 3000 m/s, Z = 2000 m, and fc = 30 Hz.",
+        "question": "Using the standard approximation for Fresnel-zone radius, Rf = sqrt(VZ/(2fc)), estimate Rf for V = 3000 m/s, Z = 2000 m, and fc = 30 Hz.",
         "choices": [
             "About 100 m",
             "About 30 m",
@@ -17434,7 +17434,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A field team plans to use time-lapse (4D) seismic to guide infill drilling during production. According to the chapter, what is a key requirement for interpreting differences between repeated 3D surveys as reservoir changes rather than artefacts?",
+        "question": "A field team plans to use time-lapse (4D) seismic to guide infill drilling during production. What is a key requirement for interpreting differences between repeated 3D surveys (4D seismic) as reservoir changes rather than artefacts?",
         "choices": [
             "Ensure that only surface waves are used, because they are most sensitive to saturation changes",
             "Rely exclusively on raw (unprocessed) data, because processing can remove true time-lapse signals",
@@ -17732,7 +17732,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A siliciclastic sequence is buried to conditions near 70–80°C. Which change is most relevant to expect for seismic properties based on the chapter’s described compaction/diagenesis trends?",
+        "question": "A siliciclastic sequence is buried to conditions near 70–80°C, which marks the transition from mechanical to chemical compaction dominance. Which change is most relevant to expect for seismic properties at this burial stage?",
         "choices": [
             "Shales become more permeable due to smectite formation, reducing overpressure risk",
             "Sands lose all cement because smectite converts to illite and dissolves quartz",
@@ -17903,7 +17903,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Two rocks have the same porosity and the same overall gas–brine saturation, but one has fine-scale uniform mixing while the other has large-scale patchiness. Based on the chapter’s discussion, which outcome is most consistent?",
+        "question": "Two rocks have the same porosity and the same overall gas–brine saturation, but one has fine-scale uniform mixing while the other has large-scale patchiness. Considering how fluid distribution scale affects the effective bulk modulus sensed by seismic waves, which outcome is most consistent?",
         "choices": [
             "Uniform mixing typically produces higher velocities than patchy saturation because fluids cannot equilibrate",
             "Patchy saturation typically produces higher velocities/impedances than uniform mixing because the effective response is stiffer",
@@ -17945,7 +17945,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In qualitative AVO work, interpreters often identify a brine-sand/shale “background trend” and then search for outliers. What is the most defensible reason (from the chapter) for using both intercept R(0) and gradient G rather than relying on near-stack amplitude alone?",
+        "question": "In qualitative AVO work, interpreters often identify a brine-sand/shale “background trend” and then search for outliers. What is the most defensible reason for using both intercept R(0) and gradient G rather than relying on near-stack amplitude alone?",
         "choices": [
             "Near-stack amplitude contains all necessary information because it uniquely determines Vp/Vs contrasts",
             "R(0) and G are used mainly to eliminate random noise, not to add new rock-physics sensitivity",
@@ -18029,7 +18029,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "Which situation is identified in the chapter as a major non-hydrocarbon application area for 4D seismic?",
+        "question": "Which situation is a major non-hydrocarbon application area for 4D seismic?",
         "choices": [
             "Choosing regional source-rock maturity trends from a single reconnaissance survey",
             "Estimating porosity directly from seismic amplitudes without any rock-physics information",
@@ -18072,7 +18072,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A team is scoping a 4D seismic feasibility study for a producing field. Which group of reservoir changes is most directly relevant to time-lapse seismic response according to the chapter?",
+        "question": "A team is scoping a 4D seismic feasibility study for a producing field. Which group of reservoir changes is most directly relevant to time-lapse seismic response?",
         "choices": [
             "Fluid saturation, pore pressure, temperature, and thickness/compaction changes",
             "Permeability, clay content, grain size, and cement type changes",
@@ -18114,7 +18114,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "For a top-reservoir reflector, assume the pre-production acoustic impedance contrast between cap rock and reservoir is about 18% (relative). If production changes the reservoir acoustic impedance by about 8% (relative), what is the approximate relative change in reflectivity (ΔR/R) using the chapter’s small-change approximation?",
+        "question": "For a top-reservoir reflector, assume the pre-production acoustic impedance contrast between cap rock and reservoir is about 18% (relative). If production changes the reservoir acoustic impedance by about 8% (relative), what is the approximate relative change in reflectivity (ΔR/R) using the approximation that ΔR/R equals the production-induced impedance change divided by the original contrast?",
         "choices": [
             "About 26%",
             "About 18%",
@@ -18157,7 +18157,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "When comparing baseline and monitor seismic datasets, which 4D analysis approach does the chapter describe as generally the more robust option in practical experience?",
+        "question": "When comparing baseline and monitor seismic datasets, which 4D analysis approach as generally the more robust option in practical experience?",
         "choices": [
             "Computing microseismic event locations from passive recordings",
             "Interpreting differences in reflection amplitudes between surveys",
@@ -18241,7 +18241,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "NRMS is used as a repeatability metric for 4D seismic. Why does the chapter recommend computing NRMS in a time window where production effects are not expected?",
+        "question": "NRMS is used as a repeatability metric for 4D seismic. why is it recommended to computing NRMS in a time window where production effects are not expected?",
         "choices": [
             "To isolate non-repeatable acquisition/processing differences rather than true reservoir change",
             "To ensure the window contains the strongest reservoir reflections for higher RMS values",
@@ -18285,7 +18285,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Using the chapter’s simple Hertz–Mindlin-based relation for dry rock, the relative P-wave velocity varies as (P/P0)^(1/6). If effective pressure drops from 6 MPa (P0) to 1.5 MPa (P), approximately how much does VP decrease relative to baseline?",
+        "question": "Using the Hertz–Mindlin-based relation for dry rock where the relative P-wave velocity varies as (P/P0)^(1/6). If effective pressure drops from 6 MPa (P0) to 1.5 MPa (P), approximately how much does VP decrease relative to baseline?",
         "choices": [
             "About a 6% decrease",
             "About a 37% decrease",
@@ -18328,7 +18328,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In the chapter’s Gullfaks Cook Formation example, which observation most strongly suggests that the 4D amplitude anomaly is not caused only by saturation change?",
+        "question": "In the Gullfaks Cook Formation 4D seismic case study, which observation most strongly suggests that the 4D amplitude anomaly is not caused only by saturation change?",
         "choices": [
             "The anomaly is strongest exactly at the crest of the structure where oil is thickest",
             "The anomaly appears only in far offsets and disappears in near offsets",
@@ -18370,7 +18370,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "Why does the chapter argue that repeated electromagnetic (CSEM/EM) surveys can complement 4D seismic for reservoir monitoring?",
+        "question": "Why can repeated electromagnetic (CSEM/EM) surveys can complement 4D seismic for reservoir monitoring?",
         "choices": [
             "EM data provide higher vertical resolution than seismic at the same cost and frequency range",
             "EM measurements are much less sensitive to pore pressure than seismic and can help constrain saturation changes",
@@ -18711,7 +18711,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A reservoir has a rock volume above the mapped oil/water contact of Vr = 2.0×10^8 m^3. If N/G = 0.50, average porosity phi_a = 0.18, and average hydrocarbon saturation Sat = 0.70, what oil (hydrocarbon) volume in place Vp does the chapter’s volumetric relation give?",
+        "question": "A reservoir has a rock volume above the mapped oil/water contact of Vr = 2.0×10^8 m^3. If N/G = 0.50, average porosity phi_a = 0.18, and average hydrocarbon saturation Sat = 0.70, what oil (hydrocarbon) volume in place Vp does the standard volumetric relation give?",
         "choices": [
             "1.8×10^7 m^3",
             "1.26×10^7 m^3",
@@ -18797,7 +18797,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Two oil reservoirs have similar fluids and initial conditions and are produced at comparable rates. Reservoir X is an isolated sand body surrounded by low-permeability shales and laterally offset by sealing faults; Reservoir Y is in hydraulic communication with a thick, laterally extensive sandstone aquifer. Which outcome best matches the chapter’s discussion of pressure evolution and geomechanical consequences?",
+        "question": "Two oil reservoirs have similar fluids and initial conditions and are produced at comparable rates. Reservoir X is an isolated sand body surrounded by low-permeability shales and laterally offset by sealing faults; Reservoir Y is in hydraulic communication with a thick, laterally extensive sandstone aquifer. Which outcome best matches the expected pressure evolution and geomechanical consequences?",
         "choices": [
             "Reservoir X will maintain pressure better because shales are the main source of rapid water influx during production",
             "Reservoir Y will show a faster pressure decline because aquifer communication increases oil compressibility",
@@ -18885,7 +18885,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A coreflood experiment shows a permeability drop during flow. When the flow direction is reversed, the measured permeability increases temporarily before declining again. Based on the chapter, what damage mechanism is most consistent with this behavior?",
+        "question": "A coreflood experiment shows a permeability drop during flow. When the flow direction is reversed, the measured permeability increases temporarily before declining again. Considering the reversibility characteristics of different formation damage mechanisms, what damage type is most consistent with this behavior?",
         "choices": [
             "Permanent pore-filling cement precipitation from iron hydroxides, which is reversed by changing flow direction",
             "Capillary trapping of oil droplets, which is eliminated by reversing the pressure gradient",
@@ -19098,7 +19098,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A steam-based in situ tar-sand project follows the chapter’s stated rule-of-thumb that one barrel of produced oil must be burned to generate steam for every three barrels of oil produced. If the operation produces 90,000 bbl/day at the surface, approximately how many bbl/day are burned to make steam?",
+        "question": "A steam-based in situ tar-sand project follows a typical industry rule-of-thumb that one barrel of produced oil must be burned to generate steam for every three barrels of oil produced. If the operation produces 90,000 bbl/day at the surface, approximately how many bbl/day are burned to make steam?",
         "choices": [
             "15,000 bbl/day",
             "30,000 bbl/day",
@@ -19140,7 +19140,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "A mudstone has high TOC but has not reached sufficient burial temperature to generate and expel most of its petroleum naturally. According to the chapter’s description of oil shales, what is the primary step needed to obtain large amounts of oil from this rock?",
+        "question": "A mudstone has high TOC but has not reached sufficient burial temperature to generate and expel most of its petroleum naturally. According to the definition of oil shales, what is the primary step needed to obtain large amounts of oil from this rock?",
         "choices": [
             "Inject CO₂ to dissolve kerogen and produce it as a miscible fluid",
             "Waterflood the rock to displace oil trapped in large pores",
@@ -19182,7 +19182,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "The chapter contrasts Upper Cambrian alum shales in the Oslo region with similar alum shales in Sweden. Which explanation best accounts for why the Swedish unit can yield more oil by pyrolysis than the Oslo-region unit?",
+        "question": "Consider the contrast between Upper Cambrian alum shales in the Oslo region with similar alum shales in Sweden. Which explanation best accounts for why the Swedish unit can yield more oil by pyrolysis than the Oslo-region unit?",
         "choices": [
             "The Oslo-region shale experienced higher maximum temperatures and expelled most hydrocarbons, leaving less remaining material to generate oil during pyrolysis",
             "The Swedish shale is much younger, so its kerogen has had less time to convert to oil during burial",
@@ -19267,7 +19267,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In coal bed methane (CBM) production, coal matrix permeability is typically very low. Which feature described in the chapter most strongly enables methane to flow to wells?",
+        "question": "In coal bed methane (CBM) production, coal matrix permeability is typically very low. Which feature most strongly enables methane to flow to wells?",
         "choices": [
             "Primary porosity created by depositional sorting of coal grains",
             "Natural fracture networks (cleats) that provide flow pathways, often associated with uplift",
@@ -19310,7 +19310,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "Before stimulation, methane in organic-rich shale gas systems is described in the chapter as residing in which set of locations?",
+        "question": "Before stimulation, methane in organic-rich shale gas systems is as primarily residing in which set of locations?",
         "choices": [
             "Mostly as a free gas cap above an oil leg, like a conventional anticlinal trap",
             "Only dissolved in connate water, with essentially no gas in pores or on surfaces",
@@ -19353,7 +19353,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "Assume seafloor temperature is 2°C and the geothermal gradient is 30°C/km. Using the chapter’s approximate stability limit that gas hydrates become unstable above about 20°C, what is the maximum depth below the seafloor where hydrates would be expected to remain stable under these conditions (ignoring pressure changes)?",
+        "question": "Assume seafloor temperature is 2°C and the geothermal gradient is 30°C/km. Using the approximate stability limit that gas hydrates become unstable above about 20°C, what is the maximum depth below the seafloor where hydrates would be expected to remain stable under these conditions (ignoring pressure changes)?",
         "choices": [
             "About 0.2 km",
             "About 0.4 km",
@@ -19395,7 +19395,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "The chapter states that when gas hydrate dissociates, one volume of hydrate can release about 160 volumes of gas. Approximately how much gas volume would be released from 3 m³ of hydrate (using the same volume ratio)?",
+        "question": "When gas hydrate dissociates, one volume of hydrate can release about 160 volumes of gas. Approximately how much gas volume would be released from 3 m³ of hydrate (using the same volume ratio)?",
         "choices": [
             "480 m³ of gas",
             "160 m³ of gas",
@@ -19522,7 +19522,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "According to the chapter, the North Sea experienced multiple stretching/thinning episodes. Which set of time intervals matches the major rift phases highlighted for the North Sea?",
+        "question": "The North Sea experienced multiple stretching/thinning episodes. Which set of time intervals matches the major rift phases highlighted for the North Sea?",
         "choices": [
             "Late Carboniferous, Permian–Early Triassic, Late Jurassic",
             "Cambrian, Silurian, Late Cretaceous",
@@ -19779,7 +19779,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In the chapter’s discussion of the Ekofisk chalk reservoir, porosity around 30–35% is noted despite burial depths greater than 3 km. What mechanism is emphasized as a key reason for this unusually high porosity at depth?",
+        "question": "In the well-documented Ekofisk chalk reservoir case, porosity around 30–35% is noted despite burial depths greater than 3 km. What mechanism is emphasized as a key reason for this unusually high porosity at depth?",
         "choices": [
             "Complete replacement of calcite by quartz, which increases pore volume",
             "Strong meteoric-water flushing during burial that dissolves the matrix everywhere",
@@ -19822,7 +19822,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "A dome-shaped structure has a mapped structural closure smaller than the observed hydrocarbon column thickness, implying hydrocarbons extend below the spill point. Based on the chapter’s Ekofisk example, what explanation best accounts for this situation?",
+        "question": "A dome-shaped structure has a mapped structural closure smaller than the observed hydrocarbon column thickness, implying hydrocarbons extend below the spill point. Considering how diagenetic changes in chalk reservoirs can create additional trapping capacity beyond pure structural closure, what explanation best accounts for this situation?",
         "choices": [
             "A combined structural trap and a lateral flow barrier created by tight rock/capillary effects (a diagenetic component)",
             "A constant capillary pressure of zero, so hydrocarbons ignore the spill point everywhere",
@@ -19906,7 +19906,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In the chapter’s discussion of the northern North Sea, what is the practical meaning of a “kitchen area” in a petroleum system?",
+        "question": "In petroleum system analysis of the northern North Sea, what is the practical meaning of a “kitchen area” in a petroleum system?",
         "choices": [
             "A shallow platform where source rock remains immature but reservoirs are thick",
             "An area where reservoirs are highly cemented and therefore do not produce",
@@ -19949,7 +19949,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "The chapter describes cases where hydrocarbons leak from some northern North Sea reservoirs. What outcome is highlighted as a consequence when pressure approaches or exceeds cap-rock fracture strength?",
+        "question": "Cases where hydrocarbons leak from some northern North Sea reservoirs. What outcome is highlighted as a consequence when pressure approaches or exceeds cap-rock fracture strength?",
         "choices": [
             "Hydrocarbons are permanently trapped deeper because fractures close instantly",
             "Hydrocarbons are converted to coal due to sudden cooling during leakage",
@@ -19992,7 +19992,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "The chapter mentions CO2 injection in the Sleipner area. What property of the Utsira Formation is most directly relevant to its suitability for injection operations?",
+        "question": "CO2 injection in the Sleipner area. What property of the Utsira Formation is most directly relevant to its suitability for injection operations?",
         "choices": [
             "It is a relatively thick sandstone unit with good aquifer properties",
             "It is a crystalline basement unit with negligible pore space",
@@ -20077,7 +20077,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "The chapter treats the Bivrost Lineament/Transfer Zone as a key boundary on the mid-Norwegian margin. Which contrast across this boundary is emphasized?",
+        "question": "The the Bivrost Lineament/Transfer Zone as a key boundary on the mid-Norwegian margin. Which contrast across this boundary is emphasized?",
         "choices": [
             "North of the boundary, basement is entirely Precambrian; south of it, basement is entirely oceanic",
             "South of the boundary, break-up magmatism is more voluminous; north of it, the margin is less magmatic and more prone to early post-opening subsidence",
@@ -20120,7 +20120,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "On the outer Møre and Vøring margins, the chapter describes characteristic seismic packages commonly used to recognize volcanic passive margins. What do these seaward-dipping reflector sequences most commonly represent in this context?",
+        "question": "On the outer Møre and Vøring margins, characteristic seismic packages commonly used to recognize volcanic passive margins. What do these seaward-dipping reflector sequences most commonly represent in this context?",
         "choices": [
             "Stacks of basalt flows erupted around break-up, forming dipping lava wedges",
             "Thick carbonate platforms that prograded oceanward during the Jurassic",
@@ -20163,7 +20163,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "During break-up on the Norwegian margin, the chapter describes widespread sill intrusion into thick Cretaceous successions. What mechanism is proposed to explain the formation of numerous hydrothermal vent complexes during this igneous episode?",
+        "question": "During break-up on the Norwegian margin, widespread sill intrusion into thick Cretaceous successions. What mechanism is proposed to explain the formation of numerous hydrothermal vent complexes during this igneous episode?",
         "choices": [
             "Glacial scouring created vent pipes that later filled with basalt",
             "Normal faulting alone pumped seawater upward to build vent mounds",
@@ -20206,7 +20206,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In the Haltenbanken area, the chapter notes that some reservoirs east of a major fault are close to hydrostatic pressure. Which explanation is given for why this pressure regime can reduce the chance of leakage from traps?",
+        "question": "In the Haltenbanken area, some reservoirs east of a major fault are close to hydrostatic pressure. Which explanation is given for why this pressure regime can reduce the chance of leakage from traps?",
         "choices": [
             "Hydrostatic pressure implies no buoyancy force, so hydrocarbons cannot migrate",
             "Drainage through Jurassic sandstones toward the coast limits overpressure, reducing the likelihood of seal fracturing",
@@ -20290,7 +20290,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "In the deep Vøring and Møre basin province, the chapter notes that some very large traps formed relatively late compared with hydrocarbon generation. What petroleum-system consequence follows if Upper Jurassic source rocks mature by mid-Cretaceous time but key reservoirs and inversion structures develop later?",
+        "question": "In the deep Vøring and Møre basin province, some very large traps formed relatively late compared with hydrocarbon generation. What petroleum-system consequence follows if Upper Jurassic source rocks mature by mid-Cretaceous time but key reservoirs and inversion structures develop later?",
         "choices": [
             "Oil is guaranteed to be trapped because early generation always improves charge efficiency",
             "Hydrocarbon generation cannot occur without inversion structures, so no charge is possible",
@@ -20332,7 +20332,7 @@
         ],
         "difficulty": "easy",
         "language": "en",
-        "question": "The chapter states the Norwegian continental shelf covers about 2.2 million km², about half is considered prospective bedrock, and about half of that prospective area has been opened for exploration. Approximately what area has been opened?",
+        "question": "The Norwegian continental shelf covers about 2.2 million km², about half is considered prospective bedrock, and about half of that prospective area has been opened for exploration. Approximately what area has been opened?",
         "choices": [
             "0.55 million km²",
             "1.10 million km²",
@@ -20374,7 +20374,7 @@
         ],
         "difficulty": "medium",
         "language": "en",
-        "question": "The chapter summarizes the post-Caledonian history of the western Barents Sea as being dominated by three major rift phases. Which combination matches those phases?",
+        "question": "The post-Caledonian history of the western Barents Sea as being dominated by three major rift phases. Which combination matches those phases?",
         "choices": [
             "Cambrian, Silurian, Devonian",
             "Late Triassic, Late Cretaceous, Miocene",
@@ -20417,7 +20417,7 @@
         ],
         "difficulty": "hard",
         "language": "en",
-        "question": "The chapter highlights late Cenozoic uplift and erosion as a key reason many Barents Sea discoveries are gas-dominated even where oil was present earlier. Which mechanism best explains this shift in fluid type and trap filling?",
+        "question": "Late Cenozoic uplift and erosion as a key reason many Barents Sea discoveries are gas-dominated even where oil was present earlier. Which mechanism best explains this shift in fluid type and trap filling?",
         "choices": [
             "Uplift increases pressure, compressing gas back into oil and improving oil retention",
             "Pressure reduction during uplift causes gas to come out of solution and expand, which can expel oil and promote spilling/breaching while cooling also reduces further generation",
