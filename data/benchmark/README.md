@@ -75,6 +75,42 @@ Indicates likelihood that similar questions exist in LLM training data:
 | medium | Common concept, similar questions may exist |
 | high | Standard textbook topic, likely seen during training |
 
+## Known limitations
+
+### Answer length bias
+
+Correct answers tend to be longer than distractors:
+
+| Metric | Value |
+|--------|-------|
+| Correct answer is longest choice | 70.9% |
+| Correct answer is shortest choice | 13.5% |
+| Correct answer avg length | 86.6 chars |
+| Distractor avg length | 69.9 chars |
+
+**Impact**: Test-takers (human or LLM) may exploit this pattern by selecting the longest answer, artificially inflating scores.
+
+**Planned fix**: Expand distractors to match correct answer length where feasible.
+
+### Qualifier word bias
+
+Certain qualifier words correlate strongly with answer correctness:
+
+| Word | In correct | In distractor | Correct rate |
+|------|-----------|---------------|--------------|
+| `always` | 0 | 49 | 0% |
+| `never` | 0 | 3 | 0% |
+| `only` | 3 | 108 | 2.7% |
+| `all` | 3 | 33 | 8.3% |
+| `can` | 50 | 16 | 75.8% |
+| `may` | 13 | 0 | 100% |
+
+**Pattern**: Absolute words (`always`, `never`, `only`) are almost never correct. Hedged words (`can`, `may`) are almost always correct.
+
+**Impact**: LLMs may learn to avoid absolute statements as a shortcut.
+
+**Planned fix**: Add nuance to absolute distractors (e.g., "almost always", "rarely") and introduce some correct answers with absolute language where factually appropriate.
+
 ## File
 
 `formationeval_v0.1.json` - JSON array of question objects
