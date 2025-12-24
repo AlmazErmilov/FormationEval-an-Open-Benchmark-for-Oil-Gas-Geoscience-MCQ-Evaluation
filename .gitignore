@@ -31,3 +31,7 @@ venv/
 .DS_Store
 Thumbs.db
 docs/notes_and_audit_on_505_MCQs.md
+docs/lessons_learned_extracted_from_commit_history.md
+docs/bias_fix_tracking.md
+docs/lessons_learned.md
+docs/lessons_learned.pdf
