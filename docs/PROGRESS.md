@@ -1,5 +1,46 @@
 # Progress log
 
+## 2025-12-24: System prompt updates to prevent bias at generation time
+
+### Problem
+
+Analysis of the few-shot examples in `src/prompts/mcq_generator_system_prompt.txt` revealed they contradicted the text guidance:
+- 2 of 3 examples had correct answer as the longest option
+- No examples demonstrated qualifier word balance
+- Text said "avoid patterns where correct answer is always longest" but examples showed the opposite
+
+LLMs learn more from examples than from text instructions, so the examples were teaching the wrong behavior.
+
+### Changes made
+
+**1. Added qualifier word guidance section** (after Balance section)
+
+New guidance about using absolute words ("always", "never") and hedged words ("may", "can") in both correct answers and distractors to prevent exploitable patterns.
+
+**2. Updated note before examples**
+
+Added reminder that examples demonstrate length balance.
+
+**3. Added 2 items to `<what_not_to_do>` section**
+
+Explicit prohibitions against:
+- Making correct answer consistently longest/shortest
+- Creating exploitable word patterns (absolute words only in distractors, hedged words only in correct answers)
+
+**4. Fixed all three few-shot examples for length balance**
+
+| Example | Correct | Before (chars) | After (chars) | Result |
+|---------|---------|----------------|---------------|--------|
+| 1 | B | A:66, B:48, C:66, D:48 | A:66, B:61, C:66, D:63 | B no longer shortest |
+| 2 | D | A:62, B:56, C:42, D:72 | A:71, B:68, C:66, D:72 | D no longer clearly longest |
+| 3 | C | A:57, B:55, C:66, D:58 | A:69, B:64, C:66, D:67 | C no longer longest (A is) |
+
+### Rationale
+
+Fixing bias at generation time is more efficient than post-generation cleanup. The dataset required 136 edits to fix length and qualifier biases. Updated examples should reduce this burden for future question generation.
+
+---
+
 ## 2025-12-23: Bias analysis and fix planning
 
 ### Completed

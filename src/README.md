@@ -122,6 +122,12 @@ Create three plausible but clearly wrong options based on:
 - Randomize the position of the correct answer across questions (A, B, C, D) and distribute correct answers evenly: ~25% each for A/B/C/D (index 0/1/2/3)
 - Verify each option uses fresh language — if an option could be found verbatim in the source, rewrite it
 
+**Qualifier words:**
+- Absolute words ("always", "never", "only", "must") and hedged words ("may", "can", "often", "typically") should appear in both correct answers and distractors when scientifically appropriate
+- Avoid patterns where absolute words cluster only in distractors while hedged words cluster only in correct answers
+- Use absolute language in correct answers when factually justified (e.g., "Water saturation must always be between 0 and 1" is a valid correct answer)
+- A test-taker should not be able to exploit word-choice patterns to guess answers without domain knowledge
+
 ## Rationale
 
 For each question, provide a brief rationale (2-4 sentences):
@@ -207,6 +213,8 @@ NEVER do the following:
 - Design trick questions relying on confusing wording rather than conceptual understanding
 - Omit units or provide numerically imprecise values in numerical questions
 - Create options where more than one choice can reasonably be argued as correct
+- Make the correct answer consistently the longest or shortest option (balance lengths across all choices)
+- Create exploitable word patterns (e.g., absolute words like "always" only in distractors, hedged words like "may" only in correct answers)
 - Invent or alter source metadata (year, license, URL, authors)
 - Use domains outside the valid list
 - Change required field names or the JSON structure
@@ -360,7 +368,7 @@ Generate 3 MCQs from the following chapter text.
 [chapter content here...]
 </example_input>
 
-Note: Correct answers are distributed across positions A, B, C, D — not always in the same position.
+Note: Correct answers are distributed across positions A, B, C, D — not always in the same position. Also observe that all four answer options have similar length (the correct answer is not consistently the longest or shortest).
 
 <example_output>
 [
@@ -374,9 +382,9 @@ Note: Correct answers are distributed across positions A, B, C, D — not always
     "question": "In a clean sandstone with highly saline formation water, what is the most typical neutron-density log response in a water-filled interval (assuming logs are plotted on a compatible sandstone porosity scale)?",
     "choices": [
       "Neutron porosity reads significantly higher than density porosity",
-      "The curves track closely with minimal separation",
+      "The two curves track closely together with minimal separation",
       "Density porosity reads significantly higher than neutron porosity",
-      "Both curves show erroneously low porosity values"
+      "Both porosity curves show unexpectedly low values in this zone"
     ],
     "answer_index": 1,
     "answer_key": "B",
@@ -410,9 +418,9 @@ Note: Correct answers are distributed across positions A, B, C, D — not always
     "language": "en",
     "question": "When a gas-bearing interval is encountered in a sandstone formation, what characteristic response is typically observed on the neutron-density log combination (assuming logs are plotted on a compatible porosity scale)?",
     "choices": [
-      "Both logs show identical readings regardless of fluid content",
-      "Neutron porosity significantly exceeds density porosity",
-      "Both logs read zero porosity in gas zones",
+      "Both logs show identical porosity readings regardless of fluid content",
+      "Neutron porosity significantly exceeds the density porosity reading",
+      "Both logs read unusually low or zero porosity values in gas zones",
       "Density porosity exceeds neutron porosity, creating a crossover pattern"
     ],
     "answer_index": 3,
@@ -447,10 +455,10 @@ Note: Correct answers are distributed across positions A, B, C, D — not always
     "language": "en",
     "question": "A petrophysicist is evaluating a carbonate reservoir where the standard Archie cementation exponent (m=2) yields water saturation values that seem too high compared to core data. What is the most likely explanation for this discrepancy?",
     "choices": [
-      "The formation water resistivity measurement is incorrect",
-      "The porosity log is reading too high due to gas effect",
+      "The formation water resistivity measurement is incorrect or outdated",
+      "The porosity log is reading too high due to residual gas effect",
       "The actual cementation exponent is lower due to fracture porosity",
-      "The saturation exponent should be increased to compensate"
+      "The saturation exponent should be increased to compensate for this"
     ],
     "answer_index": 2,
     "answer_key": "C",
