@@ -8,10 +8,10 @@ Scripts for generating concept-based multiple-choice questions from source mater
 
 We generate questions by extracting **concepts** from source material, then writing **original questions** that test understanding of those concepts.
 
-> Full guidelines are in the system prompt (example, draft v5): [`prompts/mcq_generator_system_prompt.txt`](prompts/mcq_generator_system_prompt.txt)
+> Full guidelines are in the system prompt (example, draft v8): [`prompts/mcq_generator_system_prompt.txt`](prompts/mcq_generator_system_prompt.txt)
 
 <details>
-<summary><strong>Full system prompt (v5)</strong> (click to expand if needed, lots of text)</summary>
+<summary><strong>Full system prompt (v8)</strong> (click to expand if needed, lots of text)</summary>
 
 ```xml
 <system_prompt>
