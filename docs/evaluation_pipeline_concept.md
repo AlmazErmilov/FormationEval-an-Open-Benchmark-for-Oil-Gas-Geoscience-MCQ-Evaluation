@@ -95,7 +95,7 @@ eval/
 ```
 You are taking a multiple-choice exam on Oil & Gas geoscience.
 For each question, select the single best answer from the options provided.
-Respond with the letter of your answer (A, B, C, or D).
+State your final answer as a single letter: A, B, C, or D.
 ```
 
 ### User prompt
@@ -139,97 +139,97 @@ def clean_response(response: str) -> str:
 ### Extraction logic
 
 ```python
-def extract_answer(response: str) -> str | None:
+def extract_answer(response: str) -> tuple[str | None, str]:
     """
-    Extract A/B/C/D from model response.
-    Returns None if extraction fails (counted as wrong).
+    Extract A/B/C/D from model response with pattern tracking.
+    Returns (answer, pattern_name) where answer is None if extraction fails.
 
     Examples:
         >>> extract_answer("B")
-        'B'
+        ('B', 'first_char')
         >>> extract_answer("The answer is C")
-        'C'
+        ('C', 'answer_is')
         >>> extract_answer("I would choose D because...")
-        'D'
+        ('D', 'choose')
         >>> extract_answer("B. The porosity increases...")
-        'B'
+        ('B', 'letter_period')
         >>> extract_answer("(A)")
-        'A'
+        ('A', 'parentheses')
         >>> extract_answer("**B**")  # markdown
-        'B'
+        ('B', 'first_char')
         >>> extract_answer("I think it's probably B")
-        'B'
+        ('B', 'end_of_string')
         >>> extract_answer("See explanation above")  # no letter
-        None
+        (None, 'failed')
     """
     text = clean_response(response)
 
     if not text:
-        return None
+        return None, "failed"
 
     # 1. Direct letter at start (most common for well-prompted models)
     if text[0] in 'ABCD':
-        return text[0]
+        return text[0], "first_char"
 
     # 2. Pattern matching (order: most specific → most general)
     patterns = [
         # Explicit answer statements
-        r'CORRECT\s+ANSWER[:\s]+([ABCD])',    # "The correct answer is B"
-        r'ANSWER\s+IS[:\s]+([ABCD])',          # "The answer is B"
-        r'ANSWER[:\s]+([ABCD])',               # "Answer: B" or "Answer B"
+        (r'CORRECT\s+ANSWER[:\s]+([ABCD])', "correct_answer"),
+        (r'ANSWER\s+IS[:\s]+([ABCD])', "answer_is"),
+        (r'ANSWER[:\s]+([ABCD])', "answer_colon"),
 
         # Choice/option statements
-        r'CHOOSE\s+([ABCD])',                  # "I would choose B"
-        r'CHOICE\s+IS[:\s]+([ABCD])',          # "The choice is B"
-        r'OPTION\s+([ABCD])',                  # "Option B"
-        r'SELECT\s+([ABCD])',                  # "I select B"
-        r'GO\s+WITH\s+([ABCD])',               # "I'll go with B"
+        (r'CHOOSE\s+([ABCD])', "choose"),
+        (r'CHOICE\s+IS[:\s]+([ABCD])', "choice_is"),
+        (r'OPTION\s+([ABCD])', "option"),
+        (r'SELECT\s+([ABCD])', "select"),
+        (r'GO\s+WITH\s+([ABCD])', "go_with"),
 
         # Letter with punctuation
-        r'\(([ABCD])\)',                       # "(B)"
-        r'\b([ABCD])\)',                       # "B)"
-        r'\b([ABCD])\.',                       # "B."
-        r'\b([ABCD]),',                        # "B,"
+        (r'\(([ABCD])\)', "parentheses"),
+        (r'\b([ABCD])\)', "letter_paren"),
+        (r'\b([ABCD])\.', "letter_period"),
+        (r'\b([ABCD]),', "letter_comma"),
 
         # Letter at boundaries
-        r'^([ABCD])\b',                        # "B" at start
-        r'\b([ABCD])\s*$',                     # "B" at end
+        (r'^([ABCD])\b', "start_of_string"),
+        (r'\b([ABCD])\s*$', "end_of_string"),
 
         # "is X" pattern (catches "...is B")
-        r'\bIS\s+([ABCD])\b',                  # "...is B"
+        (r'\bIS\s+([ABCD])\b', "is_x"),
 
         # Last resort: any standalone letter (risky but catches edge cases)
-        r'\b([ABCD])\b(?!.*\b[ABCD]\b)',       # Single A/B/C/D (only if one exists)
+        (r'\b([ABCD])\b(?!.*\b[ABCD]\b)', "standalone"),
     ]
 
-    for pattern in patterns:
-        match = re.search(pattern, text)
+    for regex, pattern_name in patterns:
+        match = re.search(regex, text)
         if match:
-            return match.group(1)
+            return match.group(1), pattern_name
 
-    return None  # Failed to extract → counted as wrong
+    return None, "failed"
 ```
 
 ### Examples: What the regex handles
 
-| Model response | Extracted | Pattern used |
+| Model response | Extracted | Pattern name |
 |----------------|-----------|--------------|
-| `B` | B ✅ | First char check |
-| `B)` | B ✅ | First char check |
-| `The answer is B` | B ✅ | `ANSWER\s+IS` |
-| `Answer: C` | C ✅ | `ANSWER[:\s]+` |
-| `The correct answer is D` | D ✅ | `CORRECT\s+ANSWER` |
-| `(A)` | A ✅ | `\(([ABCD])\)` |
-| `Option B` | B ✅ | `OPTION\s+` |
-| `I would choose C` | C ✅ | `CHOOSE\s+` |
-| `I'll go with D` | D ✅ | `GO\s+WITH\s+` |
-| `B. Because the porosity...` | B ✅ | `\b([ABCD])\.` |
-| `B, since the formation...` | B ✅ | `\b([ABCD]),` |
-| `I think it's B` | B ✅ | `\b([ABCD])\s*$` (end) |
-| `...therefore the answer is C` | C ✅ | `ANSWER\s+IS` |
-| `The choice is D` | D ✅ | `CHOICE\s+IS` |
-| `**B**` | B ✅ | Markdown stripped → first char |
-| `I believe B is correct` | B ✅ | Standalone letter |
+| `B` | B ✅ | `first_char` |
+| `B)` | B ✅ | `first_char` |
+| `The answer is B` | B ✅ | `answer_is` |
+| `Answer: C` | C ✅ | `answer_colon` |
+| `The correct answer is D` | D ✅ | `correct_answer` |
+| `(A)` | A ✅ | `parentheses` |
+| `Option B` | B ✅ | `option` |
+| `I would choose C` | C ✅ | `choose` |
+| `I'll go with D` | D ✅ | `go_with` |
+| `B. Because the porosity...` | B ✅ | `letter_period` |
+| `B, since the formation...` | B ✅ | `letter_comma` |
+| `I think it's B` | B ✅ | `end_of_string` |
+| `...therefore the answer is C` | C ✅ | `answer_is` |
+| `The choice is D` | D ✅ | `choice_is` |
+| `**B**` | B ✅ | `first_char` (after markdown strip) |
+| `I believe B is correct` | B ✅ | `standalone` |
 
 ### Edge cases that still fail
 
@@ -359,12 +359,14 @@ Single file that accumulates all evaluation runs. Each run adds a new entry to t
         "formationeval_v0.1_petrophysics_001": {
           "predicted": "D",
           "correct": true,
-          "raw_response": "D"
+          "raw_response": "D",
+          "extraction_pattern": "first_char"
         },
         "formationeval_v0.1_petrophysics_002": {
           "predicted": "C",
           "correct": false,
-          "raw_response": "I think C because..."
+          "raw_response": "I think C because...",
+          "extraction_pattern": "standalone"
         }
       }
     },
@@ -485,6 +487,22 @@ Models with high length bias may be exploiting this pattern.
 |-------------|---------|-------------------|-------|
 | ...petrophysics_042 | C | A | 6/10 |
 | ... | ... | ... | ... |
+
+## Extraction pattern distribution
+
+How models format their answers:
+
+| Model | first_char | answer_is | end_of_string | standalone | failed |
+|-------|-----------|-----------|---------------|------------|--------|
+| GPT-4o | 89% | 8% | 2% | 1% | 0% |
+| GPT-4o-mini | 72% | 18% | 6% | 3% | 1% |
+| Llama 3.1 70B | 45% | 32% | 12% | 8% | 3% |
+| DeepSeek-R1 | 12% | 65% | 18% | 4% | 1% |
+
+**Observations:**
+- GPT-4o follows instructions well (89% direct letter)
+- Llama tends to elaborate more (only 45% direct)
+- DeepSeek-R1 prefers "The answer is X" format after reasoning
 ```
 
 ### questions.csv
@@ -501,6 +519,7 @@ Columns per model:
 - `{model}_answer` — Extracted answer (A/B/C/D or empty if failed)
 - `{model}_correct` — Boolean
 - `{model}_raw` — Raw model response (truncated to 500 chars)
+- `{model}_pattern` — Extraction pattern used (first_char, answer_is, etc.)
 
 ---
 
@@ -527,7 +546,7 @@ inference:
   retry_delay_seconds: 2
   timeout_seconds: 30
   temperature: 0
-  max_tokens: 10
+  max_tokens: null             # No limit - reasoning models (DeepSeek-R1) need room for <think> tags
   concurrency: 20              # Parallel requests (Azure default: 1000 RPM)
   delay_between_batches: 1.0   # Seconds between batches
 
@@ -662,8 +681,8 @@ AZURE_AI_FOUNDRY_API_KEY=your-key
 | Category | Decision | Choice |
 |----------|----------|--------|
 | **Prompt** | Format | Zero-shot with instruction |
-| **Prompt** | System message | "You are taking a multiple-choice exam..." |
-| **Parsing** | Method | Flexible regex (scan for A/B/C/D) |
+| **Prompt** | System message | "...State your final answer as a single letter: A, B, C, or D." |
+| **Parsing** | Method | Flexible regex with pattern tracking |
 | **Parsing** | Reasoning models | Strip `<thinking>` tags first |
 | **Parsing** | Failed extraction | Count as wrong answer |
 | **Output** | Formats | JSON + Markdown + CSV |
@@ -743,3 +762,4 @@ Accuracy near 50% → wider CI (more uncertainty).
 | 2024-12-26 | Updated: batched parallel requests, terms cheat sheet |
 | 2024-12-26 | Updated: improved regex with examples, Wilson CI examples |
 | 2024-12-26 | Updated: concurrency 10→20 based on Azure rate limits (1000 RPM) |
+| 2024-12-27 | Updated: max_tokens→null (support reasoning models), strengthened prompt, added extraction pattern tracking |

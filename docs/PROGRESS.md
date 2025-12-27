@@ -1,5 +1,75 @@
 # Progress log
 
+## 2025-12-27: Evaluation pipeline refinements
+
+### Changes to `docs/evaluation_pipeline_concept.md`
+
+**1. System prompt strengthened**
+
+| Before | After |
+|--------|-------|
+| "Respond with the letter of your answer (A, B, C, or D)." | "State your final answer as a single letter: A, B, C, or D." |
+
+Rationale: "State your final answer" implies definitiveness (no hedging), "single letter" is unambiguous. No "only" needed — "single" already conveys the constraint.
+
+**2. max_tokens: 10 → null**
+
+Reasoning models like DeepSeek-R1 output `<think>...</think>` tags in the visible response. With max_tokens: 10, the response gets truncated before the answer appears, causing extraction failures.
+
+- OpenAI o1/o3: reasoning tokens are internal (hidden), so low limits work
+- DeepSeek-R1: reasoning is visible, needs thousands of tokens
+- Setting null lets models decide completion length
+
+**3. Extraction pattern tracking added**
+
+The `extract_answer()` function now returns `tuple[str | None, str]` instead of `str | None`:
+
+```python
+# Before
+def extract_answer(response: str) -> str | None:
+    ...
+    return text[0]
+
+# After
+def extract_answer(response: str) -> tuple[str | None, str]:
+    ...
+    return text[0], "first_char"
+```
+
+Pattern names: `first_char`, `answer_is`, `answer_colon`, `choose`, `parentheses`, `letter_period`, `end_of_string`, `standalone`, `failed`
+
+**4. Results schema updated**
+
+```json
+{
+  "predicted": "B",
+  "correct": true,
+  "raw_response": "The answer is B",
+  "extraction_pattern": "answer_is"
+}
+```
+
+**5. Analysis output enhanced**
+
+Added extraction pattern distribution table to `analysis.md`:
+
+| Model | first_char | answer_is | end_of_string | failed |
+|-------|-----------|-----------|---------------|--------|
+| GPT-4o | 89% | 8% | 2% | 0% |
+| DeepSeek-R1 | 12% | 65% | 18% | 1% |
+
+This helps debug instruction-following differences across models.
+
+**6. CSV columns extended**
+
+Added `{model}_pattern` column for per-question extraction method.
+
+### Files modified
+
+- `docs/evaluation_pipeline_concept.md` — all changes above
+
+---
+
 ## 2025-12-26: Evaluation pipeline concept finalized
 
 ### Context
