@@ -1,0 +1,127 @@
+# FormationEval evaluation pipeline configuration
+# Environment variables are expanded from .env file
+
+benchmark:
+  path: data/benchmark/formationeval_v0.1.json
+  version: "0.1"
+
+inference:
+  max_retries: 3
+  timeout_seconds: 30
+  concurrency: 20
+  temperature: 0
+
+output:
+  directory: eval/results
+
+cache:
+  enabled: true
+  directory: eval/cache
+
+# Azure OpenAI configuration
+azure_openai:
+  endpoint: ${AZURE_OPENAI_ENDPOINT}
+  api_key: ${AZURE_OPENAI_API_KEY}
+  api_version: "2024-12-01-preview"
+
+# Model definitions
+# All models use azure_openai provider (same endpoint/key)
+# Models with reasoning_effort: gpt-5.2-chat, gpt-5.1-chat, gpt-5-mini, gpt-5-nano, o3-mini, o4-mini
+models:
+  # GPT-5.2 (frontier reasoning) with effort variations
+  - name: gpt-5.2-chat-low
+    deployment: gpt-5.2-chat
+    reasoning_effort: low
+
+  - name: gpt-5.2-chat-medium
+    deployment: gpt-5.2-chat
+    reasoning_effort: medium
+
+  - name: gpt-5.2-chat-high
+    deployment: gpt-5.2-chat
+    reasoning_effort: high
+
+  # GPT-5.1 (reasoning) with effort variations
+  - name: gpt-5.1-chat-low
+    deployment: gpt-5.1-chat
+    reasoning_effort: low
+
+  - name: gpt-5.1-chat-medium
+    deployment: gpt-5.1-chat
+    reasoning_effort: medium
+
+  - name: gpt-5.1-chat-high
+    deployment: gpt-5.1-chat
+    reasoning_effort: high
+
+  # GPT-5 chat (no reasoning_effort support)
+  - name: gpt-5-chat
+    deployment: gpt-5-chat
+
+  # GPT-5 mini with reasoning effort variations
+  - name: gpt-5-mini-low
+    deployment: gpt-5-mini
+    reasoning_effort: low
+
+  - name: gpt-5-mini-medium
+    deployment: gpt-5-mini
+    reasoning_effort: medium
+
+  - name: gpt-5-mini-high
+    deployment: gpt-5-mini
+    reasoning_effort: high
+
+  # GPT-5 nano with reasoning effort variations
+  - name: gpt-5-nano-low
+    deployment: gpt-5-nano
+    reasoning_effort: low
+
+  - name: gpt-5-nano-medium
+    deployment: gpt-5-nano
+    reasoning_effort: medium
+
+  - name: gpt-5-nano-high
+    deployment: gpt-5-nano
+    reasoning_effort: high
+
+  # O-series (reasoning models) with reasoning effort variations
+  - name: o3-mini-low
+    deployment: o3-mini
+    reasoning_effort: low
+
+  - name: o3-mini-medium
+    deployment: o3-mini
+    reasoning_effort: medium
+
+  - name: o3-mini-high
+    deployment: o3-mini
+    reasoning_effort: high
+
+  - name: o4-mini-low
+    deployment: o4-mini
+    reasoning_effort: low
+
+  - name: o4-mini-medium
+    deployment: o4-mini
+    reasoning_effort: medium
+
+  - name: o4-mini-high
+    deployment: o4-mini
+    reasoning_effort: high
+
+  # GPT-4.1 series
+  - name: gpt-4.1
+    deployment: gpt-4.1
+
+  - name: gpt-4.1-mini
+    deployment: gpt-4.1-mini
+
+  - name: gpt-4.1-nano
+    deployment: gpt-4.1-nano
+
+  # GPT-4o series
+  - name: gpt-4o
+    deployment: gpt-4o
+
+  - name: gpt-4o-mini
+    deployment: gpt-4o-mini
