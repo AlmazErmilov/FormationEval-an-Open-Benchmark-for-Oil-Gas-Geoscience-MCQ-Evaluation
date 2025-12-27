@@ -12,7 +12,9 @@ data/working/chunks/*
 data/working/candidates/*
 !data/working/candidates/.gitkeep
 
-# Local evaluation results
+# Local evaluation cache and results
+eval/cache/*
+!eval/cache/.gitkeep
 eval/results/*
 !eval/results/.gitkeep
 
@@ -35,3 +37,4 @@ docs/lessons_learned_extracted_from_commit_history.md
 docs/bias_fix_tracking.md
 docs/lessons_learned.md
 docs/lessons_learned.pdf
+docs/azure_setup.md
