@@ -1,5 +1,52 @@
 # Progress log
 
+## 2025-12-26: Evaluation pipeline concept finalized
+
+### Context
+
+Researched LLM evaluation frameworks (lm-evaluation-harness, LightEval, Inspect AI) and decided on a custom Python script approach for the FormationEval benchmark. Primary reasons:
+- Azure AI Foundry (Llama, Mistral, DeepSeek) not natively supported by existing harnesses
+- MCQ evaluation is straightforward (no log-prob scoring needed)
+- Full control over Azure SDK integrations
+- Faster time to results
+
+### Design decisions
+
+| Decision | Choice |
+|----------|--------|
+| Prompt format | Zero-shot with instruction |
+| Answer parsing | Flexible regex (scan for A/B/C/D) |
+| Output formats | JSON + Markdown + CSV (full content) |
+| Caching | Yes, cache API responses |
+| Error handling | Retry 3x, then abort |
+| Providers | Azure-only (OpenAI + AI Foundry) |
+| Failed extraction | Count as wrong |
+| Reasoning models | Strip thinking tags first |
+| Versioning | Full (model version, API version, timestamp) |
+| Statistics | 95% Wilson CI only |
+| Rate limiting | Batched parallel (20 concurrent, ~30-45s/model) |
+| Bias analysis | Yes (length, position, qualifier words) |
+
+### Outputs planned
+
+- `leaderboard.md` — Model rankings with accuracy by difficulty/domain
+- `analysis.md` — Hardest questions, error patterns, model agreement
+- `questions.csv` — Per-question breakdown for spreadsheet analysis
+- `results.json` — Full structured data
+
+### Files created
+
+- `docs/evaluation_pipeline_concept.md` — Full concept and implementation plan
+
+### Next steps
+
+1. Implement core evaluation script
+2. Set up Azure endpoints
+3. Run initial evaluation on 2-3 models
+4. Generate first leaderboard
+
+---
+
 ## 2025-12-24: System prompt updates to prevent bias at generation time
 
 ### Problem
