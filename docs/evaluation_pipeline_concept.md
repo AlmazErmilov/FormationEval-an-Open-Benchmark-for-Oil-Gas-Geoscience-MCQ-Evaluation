@@ -12,7 +12,7 @@ Custom evaluation script for running the FormationEval benchmark on LLMs via Azu
 | Answer parsing | Flexible (scan for letter) | Handles verbose model responses |
 | Output formats | JSON + Markdown + CSV | Machine-readable + human-readable + spreadsheet |
 | Caching | Yes, cache responses | Resume interrupted runs, re-analyze without API calls |
-| Error handling | Retry 3x, then abort | Fail fast on persistent issues |
+| Error handling | Retry 3x, then skip model | Continue with other models if one fails persistently |
 | Cost tracking | No | Check Azure portal directly |
 | Question analysis | Full | Per-question results, error patterns, model agreement |
 | Providers | Azure only (initially) | Focused scope, add others later if needed |
@@ -28,7 +28,7 @@ Custom evaluation script for running the FormationEval benchmark on LLMs via Azu
 | Reasoning models | Strip thinking first | Remove `<thinking>` tags before extraction for o1/o3 |
 | Versioning | Full versioning | Record model version, API version, timestamps |
 | Statistics | Confidence intervals only | 95% Wilson CI, no significance tests |
-| Rate limiting | Sequential with delays | Safest approach, configurable delay |
+| Rate limiting | Batched parallel (20 concurrent) | Fast execution, stays under Azure rate limits |
 | CSV content | Full (everything) | Question text + metadata + raw responses |
 | Sample questions | Yes, include examples | Show 3-5 examples for hardest/easiest questions |
 | Run naming | Timestamp only | Auto-generated, sortable, unique |
@@ -272,7 +272,7 @@ Check if models exploit known benchmark biases:
 
 | Bias type | How we detect it | Expected if no bias |
 |-----------|------------------|---------------------|
-| **Length bias** | Correlation between model's answers and longest choice | ~25% pick longest |
+| **Length bias** | How often model picks longest choice | Compare to 25% random and 51.5% benchmark rate |
 | **Position bias** | Deviation from uniform A/B/C/D selection | ~25% each |
 | **Qualifier word bias** | Does model avoid answers with "always", "never"? | No pattern |
 
@@ -352,7 +352,9 @@ Single file that accumulates all evaluation runs. Each run adds a new entry to t
       "answer_distribution": {"A": 0.26, "B": 0.25, "C": 0.26, "D": 0.23},
       "bias_analysis": {
         "position_bias": "low",
-        "length_bias": 0.28,
+        "length_bias_raw": 0.28,
+        "length_bias_vs_random": 0.03,
+        "length_bias_vs_benchmark": -0.235,
         "length_bias_level": "low"
       },
       "answers": {
@@ -471,13 +473,17 @@ Expected from benchmark: A=27%, B=26%, C=25%, D=22%
 
 ### Length bias (picking longest answer)
 
-| Model | % picked longest | Expected | Bias level |
-|-------|------------------|----------|------------|
-| GPT-4o | 28% | 25% | Low |
-| Llama 3.1 70B | 38% | 25% | High |
+| Model | % picked longest | vs random (25%) | vs benchmark (51.5%) |
+|-------|------------------|-----------------|----------------------|
+| GPT-4o | 28% | +3% | -23.5% |
+| Llama 3.1 70B | 38% | +13% | -13.5% |
 
-Note: Benchmark has length bias (correct answer is longest in 51.5% of questions).
-Models with high length bias may be exploiting this pattern.
+**Interpretation:**
+- **vs random (25%)**: Positive = model prefers longer answers
+- **vs benchmark (51.5%)**: Negative = picking longest less than correct-is-longest rate (not exploiting)
+
+Note: In this benchmark, the correct answer is longest in 51.5% of questions.
+A model picking longest >51.5% may be exploiting this pattern rather than understanding content.
 
 ## Error patterns
 
@@ -692,7 +698,7 @@ AZURE_AI_FOUNDRY_API_KEY=your-key
 | **Output** | Sample questions | Include 3-5 examples with full text |
 | **Output** | Raw responses | Yes, saved for debugging/analysis |
 | **Caching** | Enabled | Yes, cache all API responses |
-| **Errors** | Retry policy | 3 retries, then abort entire run |
+| **Errors** | Retry policy | 3 retries per question, skip model if persistent failures |
 | **Rate limits** | Execution | Batched parallel (20 concurrent, ~30-45 sec/model) |
 | **Versioning** | Level | Full (model version, API version, timestamps) |
 | **Statistics** | Method | 95% Wilson confidence intervals |
@@ -763,3 +769,4 @@ Accuracy near 50% → wider CI (more uncertainty).
 | 2024-12-26 | Updated: improved regex with examples, Wilson CI examples |
 | 2024-12-26 | Updated: concurrency 10→20 based on Azure rate limits (1000 RPM) |
 | 2024-12-27 | Updated: max_tokens→null (support reasoning models), strengthened prompt, added extraction pattern tracking |
+| 2024-12-27 | Updated: fixed rate limiting terminology (sequential→batched parallel), error handling (abort run→skip model), length bias reporting (added benchmark baseline comparison) |
