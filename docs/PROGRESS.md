@@ -1,5 +1,136 @@
 # Progress log
 
+## 2025-12-27: Evaluation pipeline implemented and tested
+
+### Implementation
+
+Created a modular evaluation pipeline in `eval/` with the following structure:
+
+```
+eval/
+├── run_evaluation.py      # Main CLI entry point
+├── config.yaml            # Model configuration (12 Azure OpenAI models)
+├── extraction.py          # Answer extraction with regex patterns
+├── metrics.py             # Accuracy, Wilson CI, bias analysis
+├── reports.py             # JSON/Markdown/CSV output generation
+├── providers/
+│   ├── __init__.py
+│   └── azure_openai.py    # AsyncAzureOpenAI client with caching
+├── cache/                 # Per-question response cache (gitignored)
+└── results/               # Output reports
+```
+
+### First benchmark run: gpt-4o-mini
+
+| Metric | Value |
+|--------|-------|
+| **Overall accuracy** | 84.8% (428/505) |
+| **95% CI** | [81.4%, 87.6%] |
+| **Failed extractions** | 0 (100% success) |
+| **Time** | ~8 minutes (20 concurrent) |
+
+**By difficulty:**
+- Easy: 90.9% (120/132)
+- Medium: 80.7% (221/274)
+- Hard: 87.9% (87/99)
+
+**By domain:**
+- Geophysics: 92.5%
+- Drilling Engineering: 91.7%
+- Petroleum Geology: 90.7%
+- Sedimentology: 89.8%
+- Reservoir Engineering: 88.4%
+- Petrophysics: 80.5%
+- Production Engineering: 71.4%
+
+**Extraction pattern:** 100% first_char (model responds with single letter due to strict prompt)
+
+### Files modified
+
+- `requirements.txt` — added pyyaml, tqdm, scipy
+- `.gitignore` — added eval/cache/*
+- `.env.example` — added Azure OpenAI variables
+- `.env` — added Azure OpenAI credentials
+
+### Usage
+
+```bash
+python eval/run_evaluation.py --models gpt-4o-mini   # Single model
+python eval/run_evaluation.py                        # All 12 models
+python eval/run_evaluation.py --analyze-only         # Rebuild reports from cache
+```
+
+---
+
+## 2025-12-27: Azure infrastructure setup for benchmark evaluation
+
+### Context
+
+Set up Azure infrastructure to run the FormationEval benchmark evaluation pipeline. The goal is to evaluate multiple LLMs (OpenAI, DeepSeek, Grok, Llama, etc.) on the 505 MCQ benchmark.
+
+### Resources created
+
+All resources in **East US 2** region (best model coverage):
+
+| Resource | Name | Purpose |
+|----------|------|---------|
+| Resource Group | `formationeval-rg` | Container |
+| AI Foundry Hub | `formationeval-hub` | Parent for projects |
+| AI Foundry Project | `formationeval-project` | Serverless model deployments |
+| Azure OpenAI | `formationeval-openai` | OpenAI model deployments |
+
+### Azure OpenAI models deployed (12 models, ready)
+
+| Model | Version | Purpose |
+|-------|---------|---------|
+| gpt-5.2-chat | 2025-12-11 | Latest frontier |
+| gpt-5.1-chat | 2025-11-13 | Frontier |
+| gpt-5-chat | 2025-10-03 | Frontier |
+| gpt-5-mini | 2025-08-07 | Frontier with reasoning_effort |
+| gpt-5-nano | 2025-08-07 | Fast baseline |
+| o3-mini | 2025-01-31 | Reasoning |
+| o4-mini | 2025-04-16 | Balanced reasoning |
+| gpt-4.1 | 2025-04-14 | 1M context |
+| gpt-4.1-mini | 2025-04-14 | Cost-effective |
+| gpt-4.1-nano | 2025-04-14 | Fastest |
+| gpt-4o | 2024-11-20 | Multimodal |
+| gpt-4o-mini | 2024-07-18 | Fast, cheap |
+
+### Models available via AI Foundry portal (serverless)
+
+No registration required:
+- DeepSeek-R1, DeepSeek-V3.2
+- Kimi-K2-Thinking
+- Grok-3, Grok-3-mini
+- Llama-4-Maverick, Llama-3.3-70B
+- Mistral-Large-3
+
+### Models requiring registration or quota
+
+Apply at https://aka.ms/oai/access for registration:
+- gpt-5, gpt-5.1, gpt-5.2 (non-chat variants with reasoning_effort)
+- o3, o3-pro (full reasoning)
+- gpt-oss-120b (OpenAI open-weight)
+- Grok-4
+
+Request quota at https://aka.ms/oai/stuquotarequest:
+- o1 (quota = 0)
+- codex-mini (quota = 0)
+- gpt-5.1-codex-mini (quota = 0)
+
+### Files created
+
+- `docs/azure_setup.md` — Full setup documentation with credentials, CLI commands, cost estimates (gitignored)
+
+### Next steps
+
+1. Deploy third-party models via AI Foundry portal
+2. Apply for registration for gated models
+3. Update `.env` with credentials
+4. Implement evaluation script
+
+---
+
 ## 2025-12-27: Evaluation pipeline refinements
 
 ### Changes to `docs/evaluation_pipeline_concept.md`
