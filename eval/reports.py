@@ -12,6 +12,143 @@ from pathlib import Path
 from metrics import find_hardest_questions
 
 
+# =============================================================================
+# Model metadata: open-weight status and pricing
+# Pricing is per million tokens (input/output) in USD
+# Sources: OpenRouter, Azure OpenAI, OpenAI API (December 2025)
+# =============================================================================
+
+MODEL_METADATA = {
+    # === OpenAI (Azure) - Proprietary ===
+    "gpt-4o": {"open_weight": False, "price_input": 2.50, "price_output": 10.00},
+    "gpt-4o-mini": {"open_weight": False, "price_input": 0.15, "price_output": 0.60},
+    "gpt-4.1": {"open_weight": False, "price_input": 2.00, "price_output": 8.00},
+    "gpt-4.1-mini": {"open_weight": False, "price_input": 0.40, "price_output": 1.60},
+    "gpt-4.1-nano": {"open_weight": False, "price_input": 0.10, "price_output": 0.40},
+    "gpt-5-chat": {"open_weight": False, "price_input": 1.25, "price_output": 10.00},
+    "gpt-5-mini-low": {"open_weight": False, "price_input": 0.25, "price_output": 2.00},
+    "gpt-5-mini-medium": {"open_weight": False, "price_input": 0.25, "price_output": 2.00},
+    "gpt-5-mini-high": {"open_weight": False, "price_input": 0.25, "price_output": 2.00},
+    "gpt-5-nano-low": {"open_weight": False, "price_input": 0.10, "price_output": 0.80},
+    "gpt-5-nano-medium": {"open_weight": False, "price_input": 0.10, "price_output": 0.80},
+    "gpt-5-nano-high": {"open_weight": False, "price_input": 0.10, "price_output": 0.80},
+    "gpt-5.1-chat-low": {"open_weight": False, "price_input": 1.25, "price_output": 10.00},
+    "gpt-5.1-chat-medium": {"open_weight": False, "price_input": 1.25, "price_output": 10.00},
+    "gpt-5.1-chat-high": {"open_weight": False, "price_input": 1.25, "price_output": 10.00},
+    "gpt-5.2-chat-low": {"open_weight": False, "price_input": 1.75, "price_output": 14.00},
+    "gpt-5.2-chat-medium": {"open_weight": False, "price_input": 1.75, "price_output": 14.00},
+    "gpt-5.2-chat-high": {"open_weight": False, "price_input": 1.75, "price_output": 14.00},
+    "o3-mini-low": {"open_weight": False, "price_input": 1.10, "price_output": 4.40},
+    "o3-mini-medium": {"open_weight": False, "price_input": 1.10, "price_output": 4.40},
+    "o3-mini-high": {"open_weight": False, "price_input": 1.10, "price_output": 4.40},
+    "o4-mini-low": {"open_weight": False, "price_input": 1.10, "price_output": 4.40},
+    "o4-mini-medium": {"open_weight": False, "price_input": 1.10, "price_output": 4.40},
+    "o4-mini-high": {"open_weight": False, "price_input": 1.10, "price_output": 4.40},
+    # OpenAI open-source models (via OpenRouter)
+    "gpt-oss-120b": {"open_weight": True, "price_input": 1.00, "price_output": 4.00},
+    "gpt-oss-20b-free": {"open_weight": True, "price_input": 0.00, "price_output": 0.00},
+
+    # === Anthropic Claude - Proprietary ===
+    "claude-opus-4.5": {"open_weight": False, "price_input": 15.00, "price_output": 75.00},
+    "claude-sonnet-4.5": {"open_weight": False, "price_input": 3.00, "price_output": 15.00},
+    "claude-3.7-sonnet": {"open_weight": False, "price_input": 3.00, "price_output": 15.00},
+    "claude-haiku-4.5": {"open_weight": False, "price_input": 1.00, "price_output": 5.00},
+    "claude-3.5-haiku": {"open_weight": False, "price_input": 0.80, "price_output": 4.00},
+
+    # === Google Gemini - Proprietary ===
+    "gemini-2.5-pro": {"open_weight": False, "price_input": 1.25, "price_output": 10.00},
+    "gemini-2.5-flash": {"open_weight": False, "price_input": 0.075, "price_output": 0.30},
+    "gemini-2.5-flash-lite": {"open_weight": False, "price_input": 0.02, "price_output": 0.10},
+    "gemini-3-pro-preview": {"open_weight": False, "price_input": 1.25, "price_output": 10.00},
+    "gemini-3-flash-preview": {"open_weight": False, "price_input": 0.15, "price_output": 0.60},
+    "gemini-2.0-flash-001": {"open_weight": False, "price_input": 0.10, "price_output": 0.40},
+    "google_gemini-2.0-flash-exp_free": {"open_weight": False, "price_input": 0.00, "price_output": 0.00},
+
+    # === Google Gemma - Open weight ===
+    "gemma-2-9b-it": {"open_weight": True, "price_input": 0.02, "price_output": 0.02},
+    "gemma-3-27b-it-free": {"open_weight": True, "price_input": 0.00, "price_output": 0.00},
+    "gemma-3-12b-it-free": {"open_weight": True, "price_input": 0.00, "price_output": 0.00},
+    "gemma-3-4b-it-free": {"open_weight": True, "price_input": 0.00, "price_output": 0.00},
+    "gemma-3n-e4b-it-free": {"open_weight": True, "price_input": 0.00, "price_output": 0.00},
+    "gemma-3n-e2b-it-free": {"open_weight": True, "price_input": 0.00, "price_output": 0.00},
+
+    # === xAI Grok - Proprietary ===
+    "grok-4.1-fast": {"open_weight": False, "price_input": 0.20, "price_output": 0.50},
+    "grok-4-fast": {"open_weight": False, "price_input": 3.00, "price_output": 15.00},
+    "grok-3-mini": {"open_weight": False, "price_input": 0.30, "price_output": 0.50},
+
+    # === DeepSeek - Open weight ===
+    "deepseek-r1": {"open_weight": True, "price_input": 0.55, "price_output": 2.19},
+    "deepseek-v3.2": {"open_weight": True, "price_input": 0.27, "price_output": 1.10},
+    "deepseek-r1-0528-qwen3-8b": {"open_weight": True, "price_input": 0.14, "price_output": 0.14},
+
+    # === Qwen (Alibaba) - Open weight ===
+    "qwen3-235b-a22b-2507": {"open_weight": True, "price_input": 0.30, "price_output": 0.60},
+    "qwen3-32b": {"open_weight": True, "price_input": 0.10, "price_output": 0.20},
+    "qwen3-14b": {"open_weight": True, "price_input": 0.07, "price_output": 0.14},
+    "qwen3-8b": {"open_weight": True, "price_input": 0.04, "price_output": 0.08},
+    "qwen3-vl-8b-instruct": {"open_weight": True, "price_input": 0.06, "price_output": 0.40},
+    "qwen3-vl-8b-thinking": {"open_weight": True, "price_input": 0.06, "price_output": 0.40},
+    "qwen3-30b-a3b-thinking-2507": {"open_weight": True, "price_input": 0.20, "price_output": 0.80},
+
+    # === Meta Llama - Open weight ===
+    "llama-4-scout": {"open_weight": True, "price_input": 0.15, "price_output": 0.60},
+    "llama-3.1-8b-instruct": {"open_weight": True, "price_input": 0.05, "price_output": 0.08},
+    "llama-3.2-3b-instruct": {"open_weight": True, "price_input": 0.02, "price_output": 0.04},
+
+    # === Mistral - Open weight ===
+    "mistral-medium-3.1": {"open_weight": True, "price_input": 0.40, "price_output": 2.00},
+    "mistral-small-3.2-24b-instruct": {"open_weight": True, "price_input": 0.10, "price_output": 0.30},
+    "mistral-small-24b-instruct-2501": {"open_weight": True, "price_input": 0.10, "price_output": 0.30},
+    "mistral-nemo": {"open_weight": True, "price_input": 0.07, "price_output": 0.07},
+    "ministral-3b-2512": {"open_weight": True, "price_input": 0.02, "price_output": 0.04},
+    "ministral-8b-2512": {"open_weight": True, "price_input": 0.04, "price_output": 0.08},
+    "ministral-14b-2512": {"open_weight": True, "price_input": 0.07, "price_output": 0.14},
+
+    # === Microsoft Phi - Open weight ===
+    "phi-4-reasoning-plus": {"open_weight": True, "price_input": 0.07, "price_output": 0.14},
+
+    # === Nvidia Nemotron - Open weight ===
+    "nemotron-3-nano-30b-a3b-free": {"open_weight": True, "price_input": 0.00, "price_output": 0.00},
+    "nemotron-nano-9b-v2-free": {"open_weight": True, "price_input": 0.00, "price_output": 0.00},
+    "nemotron-nano-12b-v2-vl-free": {"open_weight": True, "price_input": 0.00, "price_output": 0.00},
+
+    # === Moonshot Kimi - Proprietary ===
+    "kimi-k2-thinking": {"open_weight": False, "price_input": 0.40, "price_output": 1.75},
+
+    # === MiniMax - Proprietary ===
+    "minimax-m2": {"open_weight": False, "price_input": 0.20, "price_output": 1.00},
+
+    # === Zhipu GLM - Open weight ===
+    "glm-4.7": {"open_weight": True, "price_input": 0.40, "price_output": 1.50},
+    "glm-4-32b": {"open_weight": True, "price_input": 0.20, "price_output": 0.60},
+}
+
+
+def get_model_metadata(model_name: str) -> dict:
+    """Get metadata for a model, with fallback for unknown models."""
+    if model_name in MODEL_METADATA:
+        return MODEL_METADATA[model_name]
+
+    # Try partial matching for models with suffixes
+    for key in MODEL_METADATA:
+        if model_name.startswith(key) or key.startswith(model_name):
+            return MODEL_METADATA[key]
+
+    # Unknown model - return defaults
+    return {"open_weight": None, "price_input": None, "price_output": None}
+
+
+def format_price(price_input: float | None, price_output: float | None) -> str:
+    """Format pricing as a compact string."""
+    if price_input is None or price_output is None:
+        return "N/A"
+    if price_input == 0 and price_output == 0:
+        return "Free"
+    # Show as $in/$out per 1M tokens
+    return f"${price_input:.2f}/${price_output:.2f}"
+
+
 def save_all_results_json(
     all_runs: list[dict],
     output_path: Path,
@@ -65,10 +202,18 @@ def generate_leaderboard_md(
         "",
         f"Last updated: {latest_ts}",
         "",
+        "**Legend:**",
+        "- **Open**: Whether model weights are publicly available",
+        "- **Price ($/M)**: Cost per million tokens (input/output) in USD",
+        "- **Correct/Total**: Number of correct answers out of questions processed",
+        "- **Failed**: Extraction failures (model response could not be parsed)",
+        "",
+        "*Pricing sources: OpenRouter, Azure OpenAI, OpenAI API (December 2025)*",
+        "",
         "## Overall rankings",
         "",
-        "| Rank | Model | Accuracy | 95% CI | Easy | Medium | Hard |",
-        "|------|-------|----------|--------|------|--------|------|",
+        "| Rank | Model | Open | Price ($/M) | Accuracy | Correct/Total | Failed | 95% CI | Easy | Medium | Hard |",
+        "|------|-------|------|-------------|----------|---------------|--------|--------|------|--------|------|",
     ]
 
     for i, run in enumerate(sorted_runs, 1):
@@ -78,13 +223,29 @@ def generate_leaderboard_md(
         ci_upper = run.get("ci_upper", 0) * 100
         ci_margin = (ci_upper - ci_lower) / 2
 
+        # Get counts
+        correct = run.get("correct", 0)
+        total = run.get("total", 0)
+        failed = run.get("failed_extractions", 0)
+
         by_diff = run.get("by_difficulty", {})
         easy = by_diff.get("easy", {}).get("accuracy", 0) * 100
         medium = by_diff.get("medium", {}).get("accuracy", 0) * 100
         hard = by_diff.get("hard", {}).get("accuracy", 0) * 100
 
+        # Get model metadata
+        meta = get_model_metadata(model)
+        open_weight = meta.get("open_weight")
+        if open_weight is True:
+            open_str = "Yes"
+        elif open_weight is False:
+            open_str = "No"
+        else:
+            open_str = "?"
+        price_str = format_price(meta.get("price_input"), meta.get("price_output"))
+
         lines.append(
-            f"| {i} | {model} | {acc:.1f}% | ±{ci_margin:.1f}% | {easy:.1f}% | {medium:.1f}% | {hard:.1f}% |"
+            f"| {i} | {model} | {open_str} | {price_str} | {acc:.1f}% | {correct}/{total} | {failed} | ±{ci_margin:.1f}% | {easy:.1f}% | {medium:.1f}% | {hard:.1f}% |"
         )
 
     # Add domain breakdown table

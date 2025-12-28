@@ -1,5 +1,83 @@
 # Progress log
 
+## 2025-12-28: Leaderboard enhancements and OpenRouter integration
+
+### OpenRouter provider added
+
+Created `eval/providers/openrouter.py` and `eval/config_openrouter.yaml` to evaluate models via OpenRouter API. This enables testing open-source models (Llama, Qwen, Mistral, DeepSeek, Gemma) alongside proprietary ones.
+
+**Key features:**
+- Per-model concurrency override for rate-limited free tier models
+- Combined cache analysis (both Azure and OpenRouter results)
+- 50 OpenRouter models configured (41 paid, 9 free tier)
+
+### Combined benchmark results
+
+| Provider | Models | Complete runs |
+|----------|--------|---------------|
+| Azure OpenAI | 24 | 24 |
+| OpenRouter | 50 | ~46 (some rate-limited) |
+| **Total** | **70** | **~70** |
+
+### Leaderboard columns added
+
+Added model metadata to `eval/reports.py`:
+
+| Column | Description |
+|--------|-------------|
+| Open | Whether model weights are publicly available (Yes/No) |
+| Price ($/M) | Cost per million tokens (input/output) in USD |
+| Correct/Total | Number of correct answers out of questions processed |
+| Failed | Extraction failures (response could not be parsed) |
+
+**Pricing sources:** OpenRouter, Azure OpenAI, OpenAI API (December 2025)
+
+### Top performers (70 models)
+
+| Rank | Model | Open | Price | Accuracy |
+|------|-------|------|-------|----------|
+| 1 | gemini-3-pro-preview | No | $1.25/$10.00 | 99.8% |
+| 2 | glm-4.7 | Yes | $0.40/$1.50 | 98.6% |
+| 3 | gemini-3-flash-preview | No | $0.15/$0.60 | 98.2% |
+| 4 | gemini-2.5-pro | No | $1.25/$10.00 | 97.8% |
+| 5 | grok-4.1-fast | No | $0.20/$0.50 | 97.6% |
+
+*Note: gpt-oss-20b-free excluded (only 1/505 questions processed)*
+
+### Best value models (>90% accuracy, low cost)
+
+| Model | Accuracy | Price ($/M) |
+|-------|----------|-------------|
+| gemini-2.5-flash-lite | 91.3% | $0.02/$0.10 |
+| qwen3-14b | 92.9% | $0.07/$0.14 |
+| gemini-2.5-flash | 95.0% | $0.07/$0.30 |
+| gemini-2.0-flash-001 | 93.3% | $0.10/$0.40 |
+| grok-4.1-fast | 97.6% | $0.20/$0.50 |
+
+### Best open-weight models
+
+| Model | Accuracy | Price ($/M) |
+|-------|----------|-------------|
+| glm-4.7 | 98.6% | $0.40/$1.50 |
+| deepseek-r1 | 96.2% | $0.55/$2.19 |
+| deepseek-v3.2 | 94.9% | $0.27/$1.10 |
+| llama-4-scout | 93.1% | $0.15/$0.60 |
+| qwen3-235b-a22b-2507 | 93.1% | $0.30/$0.60 |
+
+### Files modified
+
+- `eval/reports.py` — added MODEL_METADATA dict, leaderboard columns
+- `eval/run_openrouter.py` — per-model concurrency support
+- `eval/config_openrouter.yaml` — 50 models, free tier at end with concurrency: 3
+
+### Known issues
+
+- Free tier models rate-limited (20 RPM, 1000/day)
+- Some models return empty responses (gemma-2-9b-it: 320 empty)
+- Running Azure and OpenRouter scripts separately overwrites reports; use `--analyze-only` to regenerate combined reports
+
+---
+
 ## 2025-12-27: Evaluation pipeline implemented and tested
 
 ### Implementation

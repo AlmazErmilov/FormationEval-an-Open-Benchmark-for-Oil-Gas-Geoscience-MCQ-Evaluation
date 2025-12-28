@@ -1,0 +1,251 @@
+# FormationEval evaluation pipeline - OpenRouter configuration
+# Uses OpenRouter API (OpenAI-compatible) for open-source and commercial models
+
+benchmark:
+  path: data/benchmark/formationeval_v0.1.json
+  version: "0.1"
+
+inference:
+  max_retries: 3
+  timeout_seconds: 60
+  concurrency: 100  # Paid account - matches httpx max_connections limit
+  # temperature not set - let each model use its recommended default
+
+output:
+  directory: eval/results
+
+cache:
+  enabled: true
+  directory: eval/cache
+
+# OpenRouter configuration
+openrouter:
+  api_key: ${OPENROUTER_API_KEY}
+
+# Models to evaluate
+# Organized by provider/family, with free tier models at the end (slower, daily limits)
+
+models:
+  # === Anthropic Claude ===
+  - name: claude-opus-4.5
+    model: anthropic/claude-opus-4.5
+
+  - name: claude-sonnet-4.5
+    model: anthropic/claude-sonnet-4.5
+
+  - name: claude-3.7-sonnet
+    model: anthropic/claude-3.7-sonnet
+
+  - name: claude-haiku-4.5
+    model: anthropic/claude-haiku-4.5
+
+  - name: claude-3.5-haiku
+    model: anthropic/claude-3.5-haiku
+
+  # === Google Gemini ===
+  - name: gemini-2.5-pro
+    model: google/gemini-2.5-pro
+
+  - name: gemini-2.5-flash
+    model: google/gemini-2.5-flash
+
+  - name: gemini-2.5-flash-lite
+    model: google/gemini-2.5-flash-lite
+
+  - name: gemini-3-pro-preview
+    model: google/gemini-3-pro-preview
+
+  - name: gemini-3-flash-preview
+    model: google/gemini-3-flash-preview
+
+  - name: gemini-2.0-flash-001
+    model: google/gemini-2.0-flash-001
+
+  # DISABLED: Free tier too rate-limited, already have gemini-2.0-flash-001
+  # - name: gemini-2.0-flash-exp-free
+  #   model: google/gemini-2.0-flash-exp:free
+
+  # === xAI Grok ===
+  - name: grok-4.1-fast
+    model: x-ai/grok-4.1-fast
+
+  - name: grok-4-fast
+    model: x-ai/grok-4-fast
+
+  - name: grok-3-mini
+    model: x-ai/grok-3-mini
+
+  # === DeepSeek ===
+  - name: deepseek-v3.2
+    model: deepseek/deepseek-v3.2
+
+  - name: deepseek-r1
+    model: deepseek/deepseek-r1
+
+  - name: deepseek-r1-0528-qwen3-8b
+    model: deepseek/deepseek-r1-0528-qwen3-8b
+
+  # DISABLED: 404 - no endpoints on OpenRouter (only 70b version exists)
+  # - name: deepseek-r1-distill-llama-8b
+  #   model: deepseek/deepseek-r1-distill-llama-8b
+
+  # DISABLED: 404 - no endpoints on OpenRouter (only 32b version exists)
+  # - name: deepseek-r1-distill-qwen-1.5b
+  #   model: deepseek/deepseek-r1-distill-qwen-1.5b
+
+  # DISABLED: 404 - no endpoints on OpenRouter
+  # - name: deepseek-chat-v2.5
+  #   model: deepseek/deepseek-chat-v2.5
+
+  # === Qwen ===
+  - name: qwen3-235b-a22b-2507
+    model: qwen/qwen3-235b-a22b-2507
+
+  - name: qwen3-32b
+    model: qwen/qwen3-32b
+
+  - name: qwen3-14b
+    model: qwen/qwen3-14b
+
+  - name: qwen3-8b
+    model: qwen/qwen3-8b
+
+  # DISABLED: 400 error - provider (Venice) returns "Invalid request parameters"
+  # - name: qwen3-4b-free
+  #   model: qwen/qwen3-4b:free
+
+  # DISABLED: 404 - no endpoints found on OpenRouter
+  # - name: qwen3-1.7b
+  #   model: qwen/qwen3-1.7b
+
+  # DISABLED: 404 - no endpoints found on OpenRouter
+  # - name: qwen3-0.6b-04-28
+  #   model: qwen/qwen3-0.6b-04-28
+
+  - name: qwen3-vl-8b-instruct
+    model: qwen/qwen3-vl-8b-instruct
+
+  - name: qwen3-vl-8b-thinking
+    model: qwen/qwen3-vl-8b-thinking
+
+  - name: qwen3-30b-a3b-thinking-2507
+    model: qwen/qwen3-30b-a3b-thinking-2507
+
+  # DISABLED: 404 - no endpoints found on OpenRouter
+  # - name: qwen-32b-chat
+  #   model: qwen/qwen-32b-chat
+
+  # === Meta Llama ===
+  - name: llama-4-scout
+    model: meta-llama/llama-4-scout
+
+  - name: llama-3.1-8b-instruct
+    model: meta-llama/llama-3.1-8b-instruct
+
+  - name: llama-3.2-3b-instruct
+    model: meta-llama/llama-3.2-3b-instruct
+
+  # === Google Gemma (paid) ===
+  - name: gemma-2-9b-it
+    model: google/gemma-2-9b-it
+
+  # DISABLED: 404 - no endpoints found (model registered but no provider hosting)
+  # - name: gemma-3-1b-it
+  #   model: google/gemma-3-1b-it
+
+  # DISABLED: 404 - Gemma 1 deprecated, no provider hosting these older models
+  # - name: gemma-2b-it
+  #   model: google/gemma-2b-it
+
+  # DISABLED: 404 - Gemma 1 deprecated, no provider hosting these older models
+  # - name: gemma-7b-it
+  #   model: google/gemma-7b-it
+
+  # === Mistral ===
+  - name: mistral-medium-3.1
+    model: mistralai/mistral-medium-3.1
+
+  - name: mistral-small-3.2-24b-instruct
+    model: mistralai/mistral-small-3.2-24b-instruct
+
+  - name: mistral-small-24b-instruct-2501
+    model: mistralai/mistral-small-24b-instruct-2501
+
+  - name: mistral-nemo
+    model: mistralai/mistral-nemo
+
+  - name: ministral-3b-2512
+    model: mistralai/ministral-3b-2512
+
+  - name: ministral-8b-2512
+    model: mistralai/ministral-8b-2512
+
+  - name: ministral-14b-2512
+    model: mistralai/ministral-14b-2512
+
+  # === OpenAI Open Source (paid) ===
+  - name: gpt-oss-120b
+    model: openai/gpt-oss-120b
+
+  # === Other ===
+  - name: minimax-m2
+    model: minimax/minimax-m2
+
+  - name: glm-4.7
+    model: z-ai/glm-4.7
+
+  - name: glm-4-32b
+    model: z-ai/glm-4-32b
+
+  - name: phi-4-reasoning-plus
+    model: microsoft/phi-4-reasoning-plus
+
+  - name: kimi-k2-thinking
+    model: moonshotai/kimi-k2-thinking
+
+  # =============================================================================
+  # FREE TIER MODELS (run last - 20 RPM limit, 1000/day with $10+ credits)
+  # =============================================================================
+
+  # === Google Gemma (free) ===
+  - name: gemma-3-27b-it-free
+    model: google/gemma-3-27b-it:free
+    concurrency: 3  # Free tier: 20 RPM limit
+
+  - name: gemma-3-12b-it-free
+    model: google/gemma-3-12b-it:free
+    concurrency: 3  # Free tier: 20 RPM limit
+
+  - name: gemma-3-4b-it-free
+    model: google/gemma-3-4b-it:free
+    concurrency: 3  # Free tier: 20 RPM limit
+
+  - name: gemma-3n-e4b-it-free
+    model: google/gemma-3n-e4b-it:free
+    concurrency: 3  # Free tier: 20 RPM limit
+
+  - name: gemma-3n-e2b-it-free
+    model: google/gemma-3n-e2b-it:free
+    concurrency: 3  # Free tier: 20 RPM limit
+
+  # === Nvidia Nemotron (free) ===
+  - name: nemotron-3-nano-30b-a3b-free
+    model: nvidia/nemotron-3-nano-30b-a3b:free
+    concurrency: 3  # Free tier: 20 RPM limit
+
+  - name: nemotron-nano-9b-v2-free
+    model: nvidia/nemotron-nano-9b-v2:free
+    concurrency: 3  # Free tier: 20 RPM limit
+
+  - name: nemotron-nano-12b-v2-vl-free
+    model: nvidia/nemotron-nano-12b-v2-vl:free
+    concurrency: 3  # Free tier: 20 RPM limit
+
+  # DISABLED: 404 - no endpoints found (model registered but no provider currently serving)
+  # - name: llama-3.1-nemotron-nano-8b-v1
+  #   model: nvidia/llama-3.1-nemotron-nano-8b-v1
+
+  # === OpenAI Open Source (free) ===
+  - name: gpt-oss-20b-free
+    model: openai/gpt-oss-20b:free
+    concurrency: 3  # Free tier: 20 RPM limit
