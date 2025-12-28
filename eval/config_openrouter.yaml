@@ -146,8 +146,9 @@ models:
     model: meta-llama/llama-3.2-3b-instruct
 
   # === Google Gemma (paid) ===
-  - name: gemma-2-9b-it
-    model: google/gemma-2-9b-it
+  # DISABLED: 63% empty responses from provider - unreliable results
+  # - name: gemma-2-9b-it
+  #   model: google/gemma-2-9b-it
 
   # DISABLED: 404 - no endpoints found (model registered but no provider hosting)
   # - name: gemma-3-1b-it
@@ -204,48 +205,39 @@ models:
     model: moonshotai/kimi-k2-thinking
 
   # =============================================================================
-  # FREE TIER MODELS (run last - 20 RPM limit, 1000/day with $10+ credits)
+  # Google Gemma 3 series (paid)
   # =============================================================================
 
-  # === Google Gemma (free) ===
-  - name: gemma-3-27b-it-free
-    model: google/gemma-3-27b-it:free
-    concurrency: 3  # Free tier: 20 RPM limit
+  - name: gemma-3-27b-it
+    model: google/gemma-3-27b-it
 
-  - name: gemma-3-12b-it-free
-    model: google/gemma-3-12b-it:free
-    concurrency: 3  # Free tier: 20 RPM limit
+  - name: gemma-3-12b-it
+    model: google/gemma-3-12b-it
 
-  - name: gemma-3-4b-it-free
-    model: google/gemma-3-4b-it:free
-    concurrency: 3  # Free tier: 20 RPM limit
+  - name: gemma-3-4b-it
+    model: google/gemma-3-4b-it
 
-  - name: gemma-3n-e4b-it-free
-    model: google/gemma-3n-e4b-it:free
-    concurrency: 3  # Free tier: 20 RPM limit
+  - name: gemma-3n-e4b-it
+    model: google/gemma-3n-e4b-it
 
-  - name: gemma-3n-e2b-it-free
-    model: google/gemma-3n-e2b-it:free
-    concurrency: 3  # Free tier: 20 RPM limit
+  # SKIPPED: gemma-3n-e2b-it - only available as free tier, too slow
 
-  # === Nvidia Nemotron (free) ===
-  - name: nemotron-3-nano-30b-a3b-free
-    model: nvidia/nemotron-3-nano-30b-a3b:free
-    concurrency: 3  # Free tier: 20 RPM limit
+  # =============================================================================
+  # Nvidia Nemotron (paid)
+  # =============================================================================
 
-  - name: nemotron-nano-9b-v2-free
-    model: nvidia/nemotron-nano-9b-v2:free
-    concurrency: 3  # Free tier: 20 RPM limit
+  - name: nemotron-3-nano-30b-a3b
+    model: nvidia/nemotron-3-nano-30b-a3b
 
-  - name: nemotron-nano-12b-v2-vl-free
-    model: nvidia/nemotron-nano-12b-v2-vl:free
-    concurrency: 3  # Free tier: 20 RPM limit
+  - name: nemotron-nano-9b-v2
+    model: nvidia/nemotron-nano-9b-v2
 
-  # DISABLED: 404 - no endpoints found (model registered but no provider currently serving)
-  # - name: llama-3.1-nemotron-nano-8b-v1
-  #   model: nvidia/llama-3.1-nemotron-nano-8b-v1
+  - name: nemotron-nano-12b-v2-vl
+    model: nvidia/nemotron-nano-12b-v2-vl
 
-  # === OpenAI Open Source (free) ===
-  - name: gpt-oss-20b-free
-    model: openai/gpt-oss-20b:free
-    concurrency: 3  # Free tier: 20 RPM limit
+  # =============================================================================
+  # OpenAI Open Source (paid)
+  # =============================================================================
+
+  - name: gpt-oss-20b
+    model: openai/gpt-oss-20b

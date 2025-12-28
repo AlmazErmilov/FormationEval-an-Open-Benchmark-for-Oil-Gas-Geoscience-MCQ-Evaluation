@@ -1,5 +1,136 @@
 # Progress log
 
+## 2025-12-28: Leaderboard improvements and cleanup
+
+### Leaderboard format changes
+
+Reorganized leaderboard.md for better readability:
+
+1. **Overall rankings** - Simple table with: Rank, Model, Open, Price, Accuracy, Correct/Total
+2. **By difficulty** - Detailed table with: Rank, Model, Company, Accuracy, Parse err, Easy, Medium, Hard
+3. **By domain** - Domain breakdown (unchanged)
+4. **Bias analysis** - Position and length bias (unchanged)
+
+New columns added:
+- **Company**: Organization that developed the model (OpenAI, Anthropic, Google, etc.)
+- Renamed "Failed" to "Parse err" for clarity
+
+### Model fixes
+
+**qwen3-8b rerun:**
+- Previous: 100% empty responses (provider issue)
+- After rerun: 88.7% accuracy with 10 parse errors
+- Status: Fixed and included in leaderboard
+
+**gemma-2-9b-it removed:**
+- Issue: 63% empty responses from provider (320/505)
+- Investigation: Model returns empty strings, not extraction bug
+- Action: Removed from config and cache deleted
+- Note: Added to config as "DISABLED: 63% empty responses from provider"
+
+### Final model count
+
+72 models evaluated on 505 questions.
+
+---
+
+## 2025-12-28: Model reruns and leaderboard analysis
+
+### Completed reruns
+
+Converted free tier models to paid versions for reliable evaluation:
+
+| Model | Status | Accuracy |
+|-------|--------|----------|
+| gpt-4o | Completed (was 489/505) | 92.9% |
+| gemma-3-27b-it | Completed (paid) | 85.3% |
+| gemma-3-12b-it | Completed (paid) | 82.2% |
+| gemma-3-4b-it | Completed (paid) | 71.3% |
+| gemma-3n-e4b-it | Completed (paid) | 75.2% |
+| nemotron-3-nano-30b-a3b | Completed (paid) | 77.4% |
+| nemotron-nano-9b-v2 | Completed (paid) | 79.6% |
+| nemotron-nano-12b-v2-vl | Completed (paid) | 77.4% |
+| gpt-oss-20b | Completed (paid) | 89.3% |
+
+Skipped: gemma-3n-e2b-it (only available as free tier, too slow)
+
+### Removed from leaderboard
+
+- gemini-2.0-flash-exp_free: Incomplete run (75/505), deleted cache
+- gemma-2-9b-it: 63% empty responses from provider (unreliable)
+- Old free tier caches: Deleted to avoid confusion
+
+### Analysis findings
+
+**claude-sonnet-4.5 anomaly investigated:**
+- Accuracy: 89.1% (lower than claude-3.7-sonnet at 94.7% and claude-haiku-4.5 at 91.5%)
+- Extraction verified: 0 failures, 505/505 answers extracted correctly
+- Pattern distribution: 374 first_char, 35 letter_paren, 35 answer_colon, etc.
+- Conclusion: This is the model's actual performance, not an extraction issue
+
+**Benchmark observations:**
+- All 72 models show "High" length bias (correct answers systematically longer)
+- Petrophysics is consistently the hardest domain across all models
+- Production Engineering has high variance (small sample size, ~14 questions)
+
+---
+
+## 2025-12-28: Pricing audit and corrections
+
+### Sources verified
+
+- OpenRouter API (model pages fetched December 2025)
+- Azure OpenAI pricing (us-east-2 region)
+
+### Corrections applied to `eval/reports.py`
+
+Updated 23 model prices to match current OpenRouter rates:
+
+| Model | Old ($/M in/out) | New ($/M in/out) |
+|-------|------------------|------------------|
+| gpt-oss-120b | 1.00/4.00 | 0.04/0.19 |
+| claude-opus-4.5 | 15.00/75.00 | 5.00/25.00 |
+| gemini-2.5-flash | 0.075/0.30 | 0.30/2.50 |
+| gemini-2.5-flash-lite | 0.02/0.10 | 0.10/0.40 |
+| gemini-3-pro-preview | 1.25/10.00 | 2.00/12.00 |
+| gemini-3-flash-preview | 0.15/0.60 | 0.50/3.00 |
+| gemma-2-9b-it | 0.02/0.02 | 0.03/0.09 |
+| grok-4-fast | 3.00/15.00 | 0.20/0.50 |
+| deepseek-r1 | 0.55/2.19 | 0.30/1.20 |
+| deepseek-v3.2 | 0.27/1.10 | 0.22/0.32 |
+| deepseek-r1-0528-qwen3-8b | 0.14/0.14 | 0.02/0.10 |
+| qwen3-235b-a22b-2507 | 0.30/0.60 | 0.07/0.46 |
+| qwen3-32b | 0.10/0.20 | 0.08/0.24 |
+| qwen3-14b | 0.07/0.14 | 0.05/0.22 |
+| qwen3-8b | 0.04/0.08 | 0.03/0.11 |
+| qwen3-vl-8b-thinking | 0.06/0.40 | 0.18/2.10 |
+| qwen3-30b-a3b-thinking-2507 | 0.20/0.80 | 0.05/0.34 |
+| llama-4-scout | 0.15/0.60 | 0.08/0.30 |
+| llama-3.1-8b-instruct | 0.05/0.08 | 0.02/0.03 |
+| llama-3.2-3b-instruct | 0.02/0.04 | 0.02/0.02 |
+| mistral-small-3.2-24b-instruct | 0.10/0.30 | 0.06/0.18 |
+| mistral-small-24b-instruct-2501 | 0.10/0.30 | 0.03/0.11 |
+| mistral-nemo | 0.07/0.07 | 0.02/0.04 |
+| phi-4-reasoning-plus | 0.07/0.14 | 0.07/0.35 |
+
+### Additional corrections (second pass)
+
+| Model | Old ($/M in/out) | New ($/M in/out) | Source |
+|-------|------------------|------------------|--------|
+| gpt-5-nano-{low,medium,high} | 0.10/0.80 | 0.05/0.40 | Azure |
+| ministral-3b-2512 | 0.02/0.04 | 0.10/0.10 | OpenRouter |
+| ministral-8b-2512 | 0.04/0.08 | 0.15/0.15 | OpenRouter |
+| ministral-14b-2512 | 0.07/0.14 | 0.20/0.20 | OpenRouter |
+| glm-4-32b | 0.20/0.60 | 0.10/0.10 | OpenRouter |
+
+### Notes
+
+- OpenRouter prices vary by provider; listed are typical/lowest rates
+- gemma-3n-e2b-it: only free version exists on OpenRouter (marked as Free)
+- Run `python eval/run_openrouter.py --analyze-only` to regenerate leaderboard with updated prices
+
+---
+
 ## 2025-12-28: Leaderboard enhancements and OpenRouter integration
 
 ### OpenRouter provider added
