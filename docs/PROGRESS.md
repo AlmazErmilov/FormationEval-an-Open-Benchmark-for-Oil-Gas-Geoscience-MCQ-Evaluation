@@ -1,5 +1,20 @@
 # Progress log
 
+## 2025-12-29: Paper draft corrections
+
+### What changed
+
+- Fixed open-weight model count: 29 → 32 (verified against leaderboard.md)
+- Fixed Appendix B reference: now accurately describes it as a summary with full prompt in repository
+- Fixed length bias range: 43-47% → 38-47% (verified against analysis.md)
+- Replaced all TODO URLs with actual repository URL
+- Updated refs.bib with actual GitHub URLs
+
+### Notes
+
+- Repository is private but will be opened before publication
+- All factual claims now verified against source data files
+
 ## 2025-12-29: Paper draft figure notes
 
 ### What changed
