@@ -18,6 +18,7 @@ eval/cache/*
 eval/results/*
 !eval/results/.gitkeep
 !eval/results/leaderboard.md
+!eval/results/leaderboard.pdf
 !eval/results/analysis.md
 !eval/results/questions.csv
 
