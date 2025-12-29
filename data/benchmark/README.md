@@ -123,9 +123,12 @@ Certain qualifier words correlate strongly with answer correctness:
 
 Further refinements may be addressed in future versions.
 
-## File
+## Files
 
-`formationeval_v0.1.json` - JSON array of question objects
+| File | Description |
+|------|-------------|
+| `formationeval_v0.1.json` | JSON array of question objects |
+| `formationeval_v0.1.pdf` | Readable PDF version of the benchmark |
 
 ## Usage
 
