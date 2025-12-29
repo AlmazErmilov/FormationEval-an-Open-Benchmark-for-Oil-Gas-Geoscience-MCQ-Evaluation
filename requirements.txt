@@ -6,3 +6,6 @@ mistralai
 pyyaml
 tqdm
 scipy
+
+# PDF export
+reportlab
