@@ -1,5 +1,40 @@
 # Progress log
 
+## 2025-12-29: PDF export font update
+
+### What changed
+
+- Switched the PDF export to Noto Sans with Noto Sans Math fallback so symbols render correctly
+- Removed ASCII normalization for PDF text output
+- Added Noto Sans font files and license under `assets/fonts/`
+
+## 2025-12-29: PDF export adjustments
+
+### What changed
+
+- Switched the PDF export to built-in fonts and added text normalization for symbols
+- Added PDF bookmarks for question navigation and a `--group-by` option for domain/topic sections
+- Moved the answer highlight to the "Correct answer:" label only
+- Removed font assets from the repo
+
+### Notes
+
+- Use `python src/export_benchmark_pdf.py --group-by domain` for a grouped version
+- Standard fonts replace symbols like <= and rho with ASCII forms
+
+## 2025-12-29: Benchmark PDF export script
+
+### What changed
+
+- Added `src/export_benchmark_pdf.py` to generate a readable PDF from `data/benchmark/formationeval_v0.1.json`
+- Added DejaVu Sans fonts under `assets/fonts/` to support Unicode characters
+- Added `reportlab` to `requirements.txt`
+
+### Notes
+
+- Default output is `data/benchmark/formationeval_v0.1.pdf`; override with `--output` if needed
+- The PDF layout includes metadata, choices with the correct answer highlight, rationale, and source details
+
 ## 2025-12-28: Leaderboard improvements and cleanup
 
 ### Leaderboard format changes
