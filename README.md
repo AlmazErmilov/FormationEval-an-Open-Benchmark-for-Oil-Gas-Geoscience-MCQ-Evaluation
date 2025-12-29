@@ -25,7 +25,7 @@ FormationEval currently targets a single, stable task format:
 - **MCQ (4 options, single correct answer)**  
   Designed for straightforward scoring (accuracy) and leaderboard comparability.
 
-Planned but optional “future-proof” fields exist (e.g., `image`, `rationale`, `evidence`, `tooling`) while keeping the dataset MCQ first.
+Planned but optional "future-proof" fields exist (e.g., `image`, `evidence`, `tooling`) while keeping the dataset MCQ first.
 
 ---
 
@@ -58,7 +58,7 @@ Each item MUST include:
 ### Example item
 ```json
 {
-  "id": "formationeval_v0_1_petrophysics_porosity_0007",
+  "id": "formationeval_v0.1_petrophysics_porosity_0007",
   "version": "formationeval_v0.1",
   "domains": ["Petrophysics"],
   "topics": ["Porosity", "Neutron-Density Logging"],
@@ -124,13 +124,16 @@ Users may generate private question sets from textbooks/exams they are legally e
 ├── data/
 │   ├── benchmark/          # Final verified MCQ datasets (the deliverable)
 │   ├── sources/
-│   │   ├── open/           # Open-licensed materials (commited)
+│   │   ├── open/           # Open-licensed materials (committed)
 │   │   └── private/        # BYO/copyrighted materials owned legally (gitignored)
 │   └── working/            # Intermediate outputs: chunks, candidates (gitignored)
 ├── src/                    # Pipeline scripts
 ├── eval/                   # Evaluation harness
-│   └── results/            # Local evaluation runs (gitignored)
+│   └── results/            # Leaderboard and analysis (reports tracked, raw data gitignored)
+├── assets/                 # Fonts and static resources
 └── docs/                   # Documentation & source registry
 ```
 
 See [`data/sources/open/README.md`](data/sources/open/README.md) for the registry of open-licensed materials.
+
+A PDF version of the benchmark is available at `data/benchmark/formationeval_v0.1.pdf` (generated via `src/export_benchmark_pdf.py`).
