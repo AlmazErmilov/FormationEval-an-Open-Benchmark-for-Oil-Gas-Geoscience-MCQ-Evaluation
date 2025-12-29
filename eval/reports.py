@@ -385,9 +385,8 @@ def generate_analysis_md(
         ])
 
         for i, q in enumerate(hardest, 1):
-            qid_short = q["question_id"].split("_")[-1] if "_" in q["question_id"] else q["question_id"]
             lines.append(
-                f"| {i} | ...{qid_short} | {q['difficulty']} | {q['models_failed']}/{q['total_models']} | {q['correct_answer']} |"
+                f"| {i} | {q['question_id']} | {q['difficulty']} | {q['models_failed']}/{q['total_models']} | {q['correct_answer']} |"
             )
 
         # Show top 3 with full text

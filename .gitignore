@@ -17,6 +17,9 @@ eval/cache/*
 !eval/cache/.gitkeep
 eval/results/*
 !eval/results/.gitkeep
+!eval/results/leaderboard.md
+!eval/results/analysis.md
+!eval/results/questions.csv
 
 # Python
 __pycache__/
