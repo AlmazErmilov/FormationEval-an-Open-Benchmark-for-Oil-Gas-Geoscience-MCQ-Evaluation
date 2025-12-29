@@ -530,6 +530,7 @@ All generated items are tagged `derivation_mode: concept_based` to document this
 | `generate_mcq.py` | Core MCQ generation library (OpenAI API) |
 | `pdf_to_markdown.py` | PDF to Markdown converter (Mistral OCR API) |
 | `generate_tudelft_mcqs.py` | Example source-specific wrapper |
+| `export_benchmark_pdf.py` | Export benchmark JSON to PDF |
 | `prompts/mcq_generator_system_prompt.txt` | System prompt for the LLM |
 
 ### generate_mcq.py
@@ -570,6 +571,16 @@ python src/generate_tudelft_mcqs.py --list           # List available lectures
 python src/generate_tudelft_mcqs.py <lecture.md>     # Single lecture
 python src/generate_tudelft_mcqs.py all              # All lectures
 ```
+
+### export_benchmark_pdf.py
+
+Exports the benchmark JSON to a readable PDF with cover page, question cards, and bookmarks.
+
+```bash
+python src/export_benchmark_pdf.py
+```
+
+Requires Noto Sans fonts in `assets/fonts/` (included in repo). Uses ReportLab for PDF generation.
 
 ---
 
