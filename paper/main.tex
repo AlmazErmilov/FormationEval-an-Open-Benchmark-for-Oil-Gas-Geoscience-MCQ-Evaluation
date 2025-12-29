@@ -1,0 +1,194 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{url}
+
+\title{FormationEval: an open benchmark for oil and gas geoscience MCQ evaluation}
+\author{
+Almaz Ermilov\\
+UiT The Arctic University of Norway\\
+\texttt{almaz.ermilov@gmail.com}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+TODO: 150--200 word abstract summarizing the dataset, method, evaluation and key results.
+\end{abstract}
+
+\section{Introduction}
+TODO: Motivate the need for oil and gas geoscience evaluation benchmarks and summarize contributions.
+
+% Source pointers: README.md, data/benchmark/README.md
+
+% Notes for figures and tables (draft):
+% F1: MCQ creation pipeline diagram (OCR -> chunking -> generation -> QA -> dataset).
+% F2: Evaluation pipeline diagram (config -> inference -> cache -> analysis -> reports).
+% F3: Results summary chart (top-10 accuracy bar or/and top10 worst accuracy or/and accuracy vs price scatter).
+% T1: Dataset summary (table below).
+% T2: Domain and difficulty distribution table.
+% T3: Bias mitigation before and after table.
+
+\section{Related work}
+TODO: Summarize relevant benchmarks and domain evaluation work.
+% Suggested citations: MMLU \cite{mmlu}, ARC \cite{arc}
+
+\section{Benchmark design and construction}
+
+\subsection{Task definition and scope}
+TODO: Define the MCQ task format and domains.
+% Source pointers: README.md, data/benchmark/README.md
+
+\subsection{Source selection and licensing policy}
+TODO: Describe open licensed sources and concept-based derivation rules.
+% Source pointers: data/sources/open/README.md, README.md
+
+\subsection{Schema and metadata}
+TODO: Summarize required fields and the contamination risk label.
+% Source pointers: README.md, data/benchmark/README.md
+
+\subsection{Generation pipeline}
+TODO: Outline OCR, chunking and prompt-based generation steps.
+% Source pointers: src/README.md
+% Figure idea: MCQ creation pipeline (use Mermaid or draw.io and export to PDF or SVG).
+
+\subsection{Quality assurance and audit}
+TODO: Describe verification stages and spot checks.
+% Source pointers: docs/lessons_learned.md, docs/notes_and_audit_on_505_MCQs.md
+
+\subsection{Bias analysis and mitigation}
+TODO: Summarize length bias and qualifier bias, fixes and residual risks.
+% Source pointers: docs/bias_fix_tracking.md, data/benchmark/README.md
+% Table idea: bias mitigation before and after metrics.
+
+\subsection{Human-readable export}
+TODO: Describe the PDF export and motivation for review usability.
+% Source pointers: src/README.md, docs/lessons_learned.md
+
+\section{Dataset summary}
+TODO: Provide dataset statistics and coverage.
+% Source pointers: data/benchmark/README.md
+
+\begin{table}[h]
+  \centering
+  \caption{Dataset summary (v0.1).}
+  \begin{tabular}{ll}
+    \toprule
+    Metric & Value \\
+    \midrule
+    Questions & TODO \\
+    Sources & TODO \\
+    Domains & TODO \\
+    Topics & TODO \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{Domain and difficulty distribution.}
+  \begin{tabular}{lll}
+    \toprule
+    Category & Count & Share \\
+    \midrule
+    TODO & TODO & TODO \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Evaluation setup}
+
+\subsection{Models and providers}
+TODO: Summarize Azure OpenAI and OpenRouter coverage and model count.
+% Source pointers: eval/README.md, eval/results/leaderboard.md
+
+\subsection{Prompting and answer extraction}
+TODO: Provide the zero-shot prompt and extraction rules.
+% Source pointers: docs/evaluation_pipeline_concept.md
+% Figure idea: evaluation pipeline diagram.
+
+\subsection{Metrics and confidence intervals}
+TODO: Define accuracy and Wilson confidence intervals.
+% Source pointers: eval/README.md
+
+\subsection{Caching and reproducibility}
+TODO: Describe cache layout and analyze-only reports.
+% Source pointers: eval/README.md
+
+\section{Results}
+
+\subsection{Overall results}
+TODO: Summarize leaderboard and top models.
+% Source pointers: eval/results/leaderboard.md
+% Figure idea: top-10 accuracy bar chart or accuracy vs price scatter.
+
+\subsection{By difficulty}
+TODO: Report accuracy by difficulty.
+% Source pointers: eval/results/leaderboard.md
+
+\subsection{By domain}
+TODO: Report accuracy by domain and domain difficulty.
+% Source pointers: eval/results/leaderboard.md, eval/results/analysis.md
+
+\subsection{Hardest questions}
+TODO: Summarize hardest questions and common errors.
+% Source pointers: eval/results/analysis.md
+
+\section{Discussion}
+
+\subsection{Interpretation of scores}
+TODO: Discuss score meaning and residual biases.
+
+\subsection{Limitations and threats to validity}
+TODO: Cover bias, contamination risk, and QA limits.
+
+\subsection{Provider and pricing variability}
+TODO: Note model pricing drift and provider reliability.
+% Source pointers: docs/PROGRESS.md, docs/lessons_learned.md
+
+\section{Release and reproducibility}
+TODO: Describe tracked outputs, gitignored caches and PDF export.
+% Source pointers: README.md, eval/README.md, data/benchmark/README.md
+
+\section{Data and code availability}
+The benchmark, evaluation reports and code are available in the project repository.
+Use commit-tagged links to avoid drift.
+
+\begin{itemize}
+  \item Repository: \url{TODO}
+  \item Dataset JSON: \url{TODO} (data/benchmark/formationeval\_v0.1.json)
+  \item Dataset PDF: \url{TODO} (data/benchmark/formationeval\_v0.1.pdf)
+  \item Leaderboard: \url{TODO} (eval/results/leaderboard.md)
+  \item Analysis: \url{TODO} (eval/results/analysis.md)
+  \item Per-question results: \url{TODO} (eval/results/questions.csv)
+  \item Generation scripts: \url{TODO} (src/)
+  \item Evaluation scripts: \url{TODO} (eval/)
+\end{itemize}
+
+\section{Conclusion and future work}
+TODO: Summarize findings and planned updates.
+
+\appendix
+
+\section{Schema reference}
+TODO: Full schema table or excerpt.
+
+\section{Prompt templates}
+TODO: Include the evaluation prompt and a generation prompt summary.
+
+\section{Bias mitigation summary}
+TODO: Table of before and after bias metrics.
+
+\section{Audit summary}
+TODO: Summarize audit coverage and remaining issues.
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}

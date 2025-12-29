@@ -1,5 +1,27 @@
 # Progress log
 
+## 2025-12-29: Paper draft figure notes
+
+### What changed
+
+- Added figure and table planning notes to the LaTeX skeleton
+- Added a placeholder table for domain and difficulty distribution
+
+## 2025-12-29: Paper draft skeleton
+
+### What changed
+
+- Added a LaTeX skeleton under `paper/` with `main.tex`, `refs.bib`, and `README.md`
+- Outlined sections for dataset design, evaluation, results, and discussion
+- Added placeholder references for related work and sources
+
+## 2025-12-29: Data availability section
+
+### What changed
+
+- Added a data and code availability section to the paper draft with placeholders for commit-tagged links
+- Added repository and dataset placeholder references in `paper/refs.bib`
+
 ## 2025-12-29: PDF export font update
 
 ### What changed
