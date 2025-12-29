@@ -1,5 +1,16 @@
 # Progress log
 
+## 2025-12-29: Paper additional fixes
+
+### What changed
+
+- Fixed ISBNs in refs.bib to match chapter README files:
+  - Ellis & Singer: 978-1-4020-3738-2 → 978-1-4020-4602-5
+  - Bjørlykke: 978-3-642-02331-6 → 978-3-642-02332-3
+- Added \label to all 4 tables (tab:summary, tab:distribution, tab:sources, tab:leaderboard)
+- Updated all table references to use \ref{} instead of hard-coded numbers
+- Added note to Table 2 caption: "Domain counts are non-exclusive: questions may belong to multiple domains"
+
 ## 2025-12-29: Paper draft corrections
 
 ### What changed

@@ -112,7 +112,7 @@ The generation pipeline consists of four stages:
 \begin{enumerate}
 \item \textbf{Text extraction}: Source PDFs are converted to Markdown using OCR, preserving structure and mathematical notation.
 \item \textbf{Chunking}: Documents are split by chapter or section, with each chunk sized for model context (typically one chapter, approximately 10,000--15,000 tokens).
-\item \textbf{Candidate generation}: A language model (GPT-4 class or higher) receives the chapter text along with a detailed system prompt specifying schema requirements, concept-based derivation rules, difficulty targets and output format. The model generates 5--12 questions per chapter.
+\item \textbf{Candidate generation}: GPT-5.2 with high reasoning effort receives the chapter text along with a detailed system prompt specifying schema requirements, concept-based derivation rules, difficulty targets and output format. The model generates 5--12 questions per chapter.
 \item \textbf{Verification}: Generated questions undergo consistency validation (schema compliance, no duplicate choices, answer index in range) and evidence-based verification (confirming support in source text, flagging ambiguous items).
 \end{enumerate}
 
@@ -175,7 +175,7 @@ To facilitate human review, the dataset is exported to PDF with a cover page, qu
 
 \section{Dataset summary}
 
-Version 0.1 of FormationEval contains 505 questions in English covering 811 unique topics. Table~1 summarizes key metrics and Table~2 shows the distribution by domain and difficulty. Table~3 provides the breakdown by source.
+Version 0.1 of FormationEval contains 505 questions in English covering 811 unique topics. Table~\ref{tab:summary} summarizes key metrics and Table~\ref{tab:distribution} shows the distribution by domain and difficulty. Table~\ref{tab:sources} provides the breakdown by source.
 
 Petrophysics represents the largest domain (54\% of questions) reflecting the depth of coverage in the well logging textbook. The difficulty distribution targets 30\% easy, 50\% medium and 20\% hard; the actual distribution (26\%/54\%/20\%) is close to these targets. Answer positions are balanced: A=27\%, B=26\%, C=25\%, D=22\%.
 
@@ -184,6 +184,7 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
 \begin{table}[h]
   \centering
   \caption{Dataset summary (v0.1).}
+  \label{tab:summary}
   \begin{tabular}{ll}
     \toprule
     Metric & Value \\
@@ -199,7 +200,8 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
 
 \begin{table}[h]
   \centering
-  \caption{Domain and difficulty distribution.}
+  \caption{Domain and difficulty distribution. Domain counts are non-exclusive: questions may belong to multiple domains.}
+  \label{tab:distribution}
   \begin{tabular}{lrr}
     \toprule
     Category & Count & Share \\
@@ -224,6 +226,7 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
 \begin{table}[h]
   \centering
   \caption{Source breakdown.}
+  \label{tab:sources}
   \begin{tabular}{lr}
     \toprule
     Source & Questions \\
@@ -298,7 +301,7 @@ Evaluation can be re-run in analyze-only mode to regenerate reports from cached 
 
 \subsection{Overall results}
 
-Table~4 presents the top 25 models by accuracy. The highest-performing model is Gemini 3 Pro Preview at 99.8\% (504/505 correct), followed by GLM-4.7 at 98.6\% and Gemini 3 Flash Preview at 98.2\%. Among open-weight models, GLM-4.7 leads, followed by DeepSeek-R1 (96.2\%) and DeepSeek-V3.2 (94.9\%).
+Table~\ref{tab:leaderboard} presents the top 25 models by accuracy. The highest-performing model is Gemini 3 Pro Preview at 99.8\% (504/505 correct), followed by GLM-4.7 at 98.6\% and Gemini 3 Flash Preview at 98.2\%. Among open-weight models, GLM-4.7 leads, followed by DeepSeek-R1 (96.2\%) and DeepSeek-V3.2 (94.9\%).
 
 Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama-3.2-3b-instruct). Models from Google, OpenAI and Zhipu dominate the top positions. Pricing varies considerably, with some cost-effective models like Grok-4.1-fast (\$0.20/M input) achieving 97.6\% accuracy.
 
@@ -325,6 +328,7 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
 \begin{table}[h]
   \centering
   \caption{Top 25 models by accuracy.}
+  \label{tab:leaderboard}
   \small
   \begin{tabular}{rlllrr}
     \toprule
