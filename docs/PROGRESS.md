@@ -24,7 +24,7 @@
 
 ### References summary (41 total in refs.bib)
 
-**Original (9):** mmlu, arc, ellis_singer_2007, bjorlykke_2010, tudelft_ocw_2008, formationeval_repo, formationeval_dataset, wilson_ci
+**Original (8):** mmlu, arc, ellis_singer_2007, bjorlykke_2010, tudelft_ocw_2008, formationeval_repo, formationeval_dataset, wilson_ci
 
 **API Providers (2):** azure_openai, openrouter
 
@@ -36,7 +36,7 @@
 
 **Meta (4):** llama3, llama31, llama32, llama4
 
-**Other (12):** qwen3, deepseek_v3, deepseek_v3_2, deepseek_r1, mistral, glm4, glm47, phi4, grok3, grok, kimi_k2, minimax_m2, nemotron
+**Other (13):** qwen3, deepseek_v3, deepseek_v3_2, deepseek_r1, mistral, glm4, glm47, phi4, grok3, grok, kimi_k2, minimax_m2, nemotron
 
 ## 2025-12-30: Paper expanded results and full leaderboard
 

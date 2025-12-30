@@ -244,7 +244,7 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
 
 The evaluation covers 72 language models across two providers: Azure OpenAI \cite{azure_openai} and OpenRouter \cite{openrouter}. This includes models from OpenAI \cite{gpt4,gpt4o,gpt41,gpt5,o3_o4mini} (GPT-4o, GPT-4.1, GPT-5 series, o3-mini, o4-mini), Anthropic \cite{claude3,claude35,claude37,claude_opus45} (Claude 3.5 Haiku, Claude 3.7 Sonnet, Claude Opus 4.5), Google \cite{gemini,gemini2,gemini25,gemini3,gemma3} (Gemini 2.0, 2.5, 3 series, Gemma 3), Meta \cite{llama3,llama31,llama32,llama4} (Llama 3.1, 3.2, 4), DeepSeek \cite{deepseek_v3,deepseek_v3_2,deepseek_r1} (R1, V3.2), Mistral \cite{mistral} (Small, Medium, Nemo, Ministral), Alibaba \cite{qwen3} (Qwen3 series), Zhipu \cite{glm4,glm47} (GLM-4, GLM-4.7), xAI \cite{grok3,grok} (Grok 3, 4), Moonshot \cite{kimi_k2} (Kimi K2), MiniMax \cite{minimax_m2} (M2), Microsoft \cite{phi4} (Phi-4) and Nvidia \cite{nemotron} (Nemotron).
 
-Models range from compact 3B parameter variants to frontier reasoning models. Open-weight models (32 of 72) include GLM-4.7, DeepSeek-R1, Llama-4-Scout, Qwen3 variants, Mistral models and Gemma-3. Pricing spans from \$0.02/M tokens (Llama-3.2-3b) to \$25/M tokens (Claude Opus 4.5 output).
+Models range from compact 3B parameter variants to frontier reasoning models. Open-weight models (32 of 72) include GLM-4.7, DeepSeek-R1, Llama-4-Scout, Qwen3 variants, Mistral models and Gemma 3. Pricing spans from \$0.02/M tokens (Llama-3.2-3b) to \$25/M tokens (Claude Opus 4.5 output).
 
 % Source pointers: eval/README.md, eval/results/leaderboard.md, eval/reports.py
 
@@ -475,11 +475,11 @@ Evaluation scripts support an analyze-only mode that regenerates reports from ca
 % Source pointers: README.md, eval/README.md, data/benchmark/README.md
 
 \section{Data and code availability}
-The benchmark, evaluation reports and code are available in the project repository.
+The benchmark, evaluation reports and code are available in the project repository \cite{formationeval_repo}.
 
 \begin{itemize}
   \item Repository: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation}{\texttt{github.com/AlmazErmilov/FormationEval-an-Open-Benchmark...}}
-  \item Dataset JSON: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/data/benchmark/formationeval_v0.1.json}{\texttt{data/benchmark/formationeval\_v0.1.json}}
+  \item Dataset JSON \cite{formationeval_dataset}: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/data/benchmark/formationeval_v0.1.json}{\texttt{data/benchmark/formationeval\_v0.1.json}}
   \item Dataset PDF: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/data/benchmark/formationeval_v0.1.pdf}{\texttt{data/benchmark/formationeval\_v0.1.pdf}}
   \item Leaderboard: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/leaderboard.md}{\texttt{eval/results/leaderboard.md}}
   \item Analysis: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/analysis.md}{\texttt{eval/results/analysis.md}}
