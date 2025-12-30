@@ -1,5 +1,43 @@
 # Progress log
 
+## 2025-12-30: Added model and provider references (complete)
+
+### What changed
+
+- Added 33 references to refs.bib covering all model versions mentioned in the paper
+- Fixed all citation-text alignment gaps: every model version mentioned now has a matching citation
+- Made access dates consistent across all web references ("Accessed December 2025")
+- Added "Gemma 3" to Google model list in text (was cited but not mentioned)
+- Added "GLM-4.7" to Zhipu model list in text (was mentioned in line 247 but not in line 245)
+
+### Citations updated in main.tex line 245
+
+| Organization | Citations | Text models |
+|--------------|-----------|-------------|
+| OpenAI | gpt4, gpt4o, gpt41, gpt5, o3_o4mini | GPT-4o, GPT-4.1, GPT-5 series, o3-mini, o4-mini |
+| Anthropic | claude3, claude35, claude37, claude_opus45 | Claude 3.5 Haiku, Claude 3.7 Sonnet, Claude Opus 4.5 |
+| Google | gemini, gemini2, gemini25, gemini3, gemma3 | Gemini 2.0, 2.5, 3 series, Gemma 3 |
+| Meta | llama3, llama31, llama32, llama4 | Llama 3.1, 3.2, 4 |
+| DeepSeek | deepseek_v3, deepseek_v3_2, deepseek_r1 | R1, V3.2 |
+| Zhipu | glm4, glm47 | GLM-4, GLM-4.7 |
+| xAI | grok3, grok | Grok 3, 4 |
+
+### References summary (41 total in refs.bib)
+
+**Original (9):** mmlu, arc, ellis_singer_2007, bjorlykke_2010, tudelft_ocw_2008, formationeval_repo, formationeval_dataset, wilson_ci
+
+**API Providers (2):** azure_openai, openrouter
+
+**OpenAI (5):** gpt4, gpt4o, gpt41, gpt5, o3_o4mini
+
+**Anthropic (4):** claude3, claude35, claude37, claude_opus45
+
+**Google (5):** gemini, gemini2, gemini25, gemini3, gemma3
+
+**Meta (4):** llama3, llama31, llama32, llama4
+
+**Other (12):** qwen3, deepseek_v3, deepseek_v3_2, deepseek_r1, mistral, glm4, glm47, phi4, grok3, grok, kimi_k2, minimax_m2, nemotron
+
 ## 2025-12-30: Paper expanded results and full leaderboard
 
 ### What changed
