@@ -1,5 +1,12 @@
 # Progress log
 
+## 2025-12-30: Added citations for evaluation artifacts
+
+### What changed
+
+- Added refs for `eval/results/leaderboard.md` and `eval/results/analysis.md`
+- Cited the leaderboard in Overall results and the analysis in Hardest questions
+
 ## 2025-12-30: Expanded open-weight analysis text
 
 ### What changed

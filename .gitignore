@@ -43,3 +43,5 @@ docs/lessons_learned.md
 docs/lessons_learned.pdf
 docs/azure_setup.md
 eval/models_to_add.md
+eval/export_hardest_questions.py
+paper/main.pdf
