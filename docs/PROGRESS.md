@@ -1,5 +1,22 @@
 # Progress log
 
+## 2025-12-30: Paper expanded results and full leaderboard
+
+### What changed
+
+- Added two new subsections in Results:
+  - "Open-weight models" — analysis of 32 open-weight models, top 10 table, cost comparison
+  - "Bottom performers" — analysis of lowest-scoring models (3B-12B parameters)
+- Added Appendix E: Full model leaderboard with all 72 models
+- Updated Table 4 caption to reference Appendix E
+- Added Table 5 (tab:open_weight) with top 10 open-weight models
+
+### Notes
+
+- Full leaderboard uses longtable for multi-page support
+- Open-weight analysis highlights GLM-4.7 (98.6%) as top open-weight model
+- Bottom performer analysis shows smaller models struggle especially with Petrophysics
+
 ## 2025-12-29: Paper additional fixes
 
 ### What changed

@@ -24,7 +24,7 @@ This paper presents FormationEval, an open multiple-choice question benchmark fo
 
 \section{Introduction}
 
-Large language models are increasingly applied to domain-specific tasks in science and engineering, yet their capabilities in specialized fields remain difficult to assess. General benchmarks like MMLU \cite{mmlu} cover broad knowledge but lack depth in technical disciplines. For petroleum geoscience and subsurface engineering---fields requiring understanding of well logging physics, reservoir characterization and geological interpretation---no public evaluation benchmark exists.
+Large language models are increasingly applied to domain-specific tasks in science and engineering, yet their capabilities in specialized fields remain difficult to assess. General benchmarks like MMLU \cite{mmlu} cover broad knowledge but lack depth in technical disciplines. For petroleum geoscience and subsurface engineering---fields requiring understanding of well logging physics, reservoir characterization and geological interpretation---no widely adopted public benchmark exists.
 
 This work addresses the gap with FormationEval, a 505-question multiple-choice benchmark covering seven domains: petrophysics, petroleum geology, geophysics, reservoir engineering, sedimentology, drilling engineering and production engineering. Questions are derived from authoritative textbooks and open courseware using a concept-based methodology that tests understanding rather than phrase recognition, while respecting copyright constraints.
 
@@ -116,7 +116,7 @@ The generation pipeline consists of four stages:
 \item \textbf{Verification}: Generated questions undergo consistency validation (schema compliance, no duplicate choices, answer index in range) and evidence-based verification (confirming support in source text, flagging ambiguous items).
 \end{enumerate}
 
-The system prompt emphasizes that questions must be standalone---answerable from domain knowledge without access to the source chapter. Phrases like ``according to the chapter'' or ``the text describes'' are explicitly prohibited. A summary of the generation prompt is provided in Appendix B; the full 475-line system prompt is available in the repository.
+The system prompt emphasizes that questions must be standalone---answerable from domain knowledge without access to the source chapter. Phrases like ``according to the chapter'' or ``the text describes'' are explicitly prohibited. A summary of the generation prompt is provided in Appendix B; the full 475-line system prompt is available in the repository at \texttt{src/prompts/mcq\_generator\_system\_prompt.txt}.
 
 % Source pointers: src/README.md
 %
@@ -293,7 +293,7 @@ Secondary metrics include accuracy by difficulty level (easy, medium, hard) and 
 
 API responses are cached per model and question in a structured directory (\texttt{cache/\{model\}/\{question\_id\}.json}). This enables resuming interrupted evaluation runs, re-analyzing results without additional API costs and debugging extraction failures.
 
-Evaluation can be re-run in analyze-only mode to regenerate reports from cached responses. Output files include machine-readable JSON, human-readable Markdown tables and CSV exports with per-question breakdowns including raw model responses.
+Evaluation can be re-run in analyze-only mode to regenerate reports from cached responses. Output files include machine-readable JSON, human-readable Markdown tables and CSV exports with per-question breakdowns including raw model responses (truncated to 500 characters).
 
 % Source pointers: eval/README.md
 
@@ -327,7 +327,7 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
 
 \begin{table}[h]
   \centering
-  \caption{Top 25 models by accuracy.}
+  \caption{Top 25 models by accuracy. See Appendix~\ref{app:full_leaderboard} for the complete 72-model leaderboard.}
   \label{tab:leaderboard}
   \small
   \begin{tabular}{rlllrr}
@@ -391,6 +391,47 @@ Model agreement analysis shows: 21.6\% of questions were answered correctly by a
 
 % Source pointers: eval/results/analysis.md
 
+\subsection{Open-weight models}
+
+Of the 72 models evaluated, 32 have publicly available weights. Open-weight models span the full performance spectrum, from GLM-4.7 at 98.6\% (rank 2 overall) to Llama-3.2-3b-instruct at 57.6\% (rank 72). Table~\ref{tab:open_weight} summarizes the top 10 open-weight performers.
+
+The leading open-weight models---GLM-4.7 (Zhipu), DeepSeek-R1 and DeepSeek-V3.2 (DeepSeek), and Llama-4-Scout (Meta)---achieve accuracy above 93\%, competitive with proprietary alternatives and often at lower cost. DeepSeek-R1 at \$0.30/M input offers similar accuracy to GPT-5.1 variants at \$1.25/M input. For cost-sensitive deployments, Qwen3-14b achieves 92.9\% at just \$0.05/M input.
+
+Open-weight models show similar domain patterns to proprietary models: Petrophysics is often among the lower-scoring domains, though Drilling Engineering and Production Engineering also appear as weak points for several models.
+
+\begin{table}[h]
+  \centering
+  \caption{Top 10 open-weight models by accuracy.}
+  \label{tab:open_weight}
+  \small
+  \begin{tabular}{rllrr}
+    \toprule
+    Rank & Model & Price (\$/M) & Accuracy & Correct \\
+    \midrule
+    1 & glm-4.7 & 0.40/1.50 & 98.6\% & 498/505 \\
+    2 & deepseek-r1 & 0.30/1.20 & 96.2\% & 486/505 \\
+    3 & deepseek-v3.2 & 0.22/0.32 & 94.9\% & 479/505 \\
+    4 & llama-4-scout & 0.08/0.30 & 93.1\% & 470/505 \\
+    5 & mistral-medium-3.1 & 0.40/2.00 & 93.1\% & 470/505 \\
+    6 & qwen3-235b-a22b-2507 & 0.07/0.46 & 93.1\% & 470/505 \\
+    7 & qwen3-30b-a3b-thinking-2507 & 0.05/0.34 & 93.1\% & 470/505 \\
+    8 & qwen3-14b & 0.05/0.22 & 92.9\% & 469/505 \\
+    9 & qwen3-32b & 0.08/0.24 & 92.1\% & 465/505 \\
+    10 & gpt-oss-120b & 0.04/0.19 & 90.7\% & 458/505 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Bottom performers}
+
+The ten lowest-scoring models are all compact variants (3B--12B parameters) or older architectures. Llama-3.2-3b-instruct achieves 57.6\%, only marginally above random guessing (25\%). The bottom tier includes Gemma-3-4b-it (71.3\%), Llama-3.1-8b-instruct (72.5\%), Gemma-3n-e4b-it (75.2\%) and Nemotron variants (77--80\%).
+
+These models show consistent patterns: accuracy on easy questions (63--87\%) exceeds medium (55--78\%) and hard (59--82\%), but the gap between easy and medium is larger than for top models. Llama-3.2-3b-instruct shows the widest spread: 62.9\% easy versus 54.7\% medium.
+
+Petrophysics accuracy for bottom-tier models falls to 51--74\%, while other domains remain at 62--98\%. This suggests that smaller models particularly struggle with the technical specificity of well logging concepts. The full 72-model leaderboard is provided in Appendix~\ref{app:full_leaderboard}.
+
+% Source pointers: eval/results/leaderboard.md
+
 \section{Discussion}
 
 \subsection{Interpretation of scores}
@@ -423,7 +464,7 @@ Provider reliability varies: rate limits, latency and availability differ across
 
 The benchmark artifacts are organized for reproducibility:
 
-\textbf{Tracked outputs} (version-controlled): Dataset JSON and PDF, leaderboard and analysis reports in Markdown, per-question CSV with raw model responses.
+\textbf{Tracked outputs} (version-controlled): Dataset JSON and PDF, leaderboard and analysis reports in Markdown, per-question CSV with raw model responses (truncated to 500 characters).
 
 \textbf{Cached responses} (gitignored): Raw API responses per model/question, enabling re-analysis without API calls.
 
@@ -435,17 +476,16 @@ Evaluation scripts support an analyze-only mode that regenerates reports from ca
 
 \section{Data and code availability}
 The benchmark, evaluation reports and code are available in the project repository.
-Use commit-tagged links to avoid drift.
 
 \begin{itemize}
-  \item Repository: \url{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation}
-  \item Dataset JSON: \texttt{data/benchmark/formationeval\_v0.1.json}
-  \item Dataset PDF: \texttt{data/benchmark/formationeval\_v0.1.pdf}
-  \item Leaderboard: \texttt{eval/results/leaderboard.md}
-  \item Analysis: \texttt{eval/results/analysis.md}
-  \item Per-question results: \texttt{eval/results/questions.csv}
-  \item Generation scripts: \texttt{src/}
-  \item Evaluation scripts: \texttt{eval/}
+  \item Repository: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation}{\texttt{github.com/AlmazErmilov/FormationEval-an-Open-Benchmark...}}
+  \item Dataset JSON: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/data/benchmark/formationeval_v0.1.json}{\texttt{data/benchmark/formationeval\_v0.1.json}}
+  \item Dataset PDF: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/data/benchmark/formationeval_v0.1.pdf}{\texttt{data/benchmark/formationeval\_v0.1.pdf}}
+  \item Leaderboard: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/leaderboard.md}{\texttt{eval/results/leaderboard.md}}
+  \item Analysis: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/analysis.md}{\texttt{eval/results/analysis.md}}
+  \item Per-question results: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/questions.csv}{\texttt{eval/results/questions.csv}}
+  \item Generation scripts: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/tree/main/src}{\texttt{src/}}
+  \item Evaluation scripts: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/tree/main/eval}{\texttt{eval/}}
 \end{itemize}
 
 \section{Conclusion and future work}
@@ -574,6 +614,100 @@ Human verification covered 5--10 questions per source chapter (spot-check approa
 \end{itemize}
 
 One question was corrected during the final review pass. The required rationale field accelerated verification by making logical inconsistencies immediately visible.
+
+\section{Full model leaderboard}
+\label{app:full_leaderboard}
+
+Table~\ref{tab:full_leaderboard} presents all 72 evaluated models ranked by accuracy.
+
+\begin{longtable}{rlllrr}
+  \caption{Complete leaderboard: all 72 models by accuracy.} \label{tab:full_leaderboard} \\
+  \toprule
+  Rank & Model & Open & Price (\$/M) & Accuracy & Correct \\
+  \midrule
+  \endfirsthead
+  \multicolumn{6}{c}{\tablename\ \thetable{} -- continued from previous page} \\
+  \toprule
+  Rank & Model & Open & Price (\$/M) & Accuracy & Correct \\
+  \midrule
+  \endhead
+  \midrule \multicolumn{6}{r}{Continued on next page} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  1 & gemini-3-pro-preview & No & 2.00/12.00 & 99.8\% & 504/505 \\
+  2 & glm-4.7 & Yes & 0.40/1.50 & 98.6\% & 498/505 \\
+  3 & gemini-3-flash-preview & No & 0.50/3.00 & 98.2\% & 496/505 \\
+  4 & gemini-2.5-pro & No & 1.25/10.00 & 97.8\% & 494/505 \\
+  5 & grok-4.1-fast & No & 0.20/0.50 & 97.6\% & 493/505 \\
+  6 & gpt-5.2-chat-medium & No & 1.75/14.00 & 97.4\% & 492/505 \\
+  7 & kimi-k2-thinking & No & 0.40/1.75 & 97.2\% & 491/505 \\
+  8 & claude-opus-4.5 & No & 5.00/25.00 & 97.0\% & 490/505 \\
+  9 & gpt-5.2-chat-high & No & 1.75/14.00 & 96.8\% & 489/505 \\
+  10 & gpt-5.2-chat-low & No & 1.75/14.00 & 96.8\% & 489/505 \\
+  11 & gpt-5-mini-medium & No & 0.25/2.00 & 96.4\% & 487/505 \\
+  12 & gpt-5.1-chat-medium & No & 1.25/10.00 & 96.4\% & 487/505 \\
+  13 & deepseek-r1 & Yes & 0.30/1.20 & 96.2\% & 486/505 \\
+  14 & grok-4-fast & No & 0.20/0.50 & 96.0\% & 485/505 \\
+  15 & gpt-5-mini-high & No & 0.25/2.00 & 95.6\% & 483/505 \\
+  16 & gpt-5-mini-low & No & 0.25/2.00 & 95.2\% & 481/505 \\
+  17 & o4-mini-high & No & 1.10/4.40 & 95.2\% & 481/505 \\
+  18 & gemini-2.5-flash & No & 0.30/2.50 & 95.0\% & 480/505 \\
+  19 & o4-mini-medium & No & 1.10/4.40 & 95.0\% & 480/505 \\
+  20 & grok-3-mini & No & 0.30/0.50 & 95.0\% & 480/505 \\
+  21 & deepseek-v3.2 & Yes & 0.22/0.32 & 94.9\% & 479/505 \\
+  22 & gpt-5.1-chat-low & No & 1.25/10.00 & 94.9\% & 479/505 \\
+  23 & o3-mini-low & No & 1.10/4.40 & 94.9\% & 479/505 \\
+  24 & o3-mini-medium & No & 1.10/4.40 & 94.9\% & 479/505 \\
+  25 & claude-3.7-sonnet & No & 3.00/15.00 & 94.7\% & 478/505 \\
+  26 & o3-mini-high & No & 1.10/4.40 & 94.7\% & 478/505 \\
+  27 & gpt-5-chat & No & 1.25/10.00 & 94.5\% & 477/505 \\
+  28 & o4-mini-low & No & 1.10/4.40 & 94.3\% & 476/505 \\
+  29 & gpt-5.1-chat-high & No & 1.25/10.00 & 93.9\% & 474/505 \\
+  30 & gpt-4.1 & No & 2.00/8.00 & 93.7\% & 473/505 \\
+  31 & gemini-2.0-flash-001 & No & 0.10/0.40 & 93.3\% & 471/505 \\
+  32 & gpt-5-nano-low & No & 0.05/0.40 & 93.3\% & 471/505 \\
+  33 & llama-4-scout & Yes & 0.08/0.30 & 93.1\% & 470/505 \\
+  34 & mistral-medium-3.1 & Yes & 0.40/2.00 & 93.1\% & 470/505 \\
+  35 & qwen3-235b-a22b-2507 & Yes & 0.07/0.46 & 93.1\% & 470/505 \\
+  36 & qwen3-30b-a3b-thinking-2507 & Yes & 0.05/0.34 & 93.1\% & 470/505 \\
+  37 & gpt-4o & No & 2.50/10.00 & 92.9\% & 469/505 \\
+  38 & gpt-5-nano-high & No & 0.05/0.40 & 92.9\% & 469/505 \\
+  39 & gpt-5-nano-medium & No & 0.05/0.40 & 92.9\% & 469/505 \\
+  40 & minimax-m2 & No & 0.20/1.00 & 92.9\% & 469/505 \\
+  41 & qwen3-14b & Yes & 0.05/0.22 & 92.9\% & 469/505 \\
+  42 & qwen3-32b & Yes & 0.08/0.24 & 92.1\% & 465/505 \\
+  43 & gpt-4.1-mini & No & 0.40/1.60 & 91.7\% & 463/505 \\
+  44 & claude-haiku-4.5 & No & 1.00/5.00 & 91.5\% & 462/505 \\
+  45 & gemini-2.5-flash-lite & No & 0.10/0.40 & 91.3\% & 461/505 \\
+  46 & gpt-oss-120b & Yes & 0.04/0.19 & 90.7\% & 458/505 \\
+  47 & qwen3-vl-8b-thinking & Yes & 0.18/2.10 & 90.3\% & 456/505 \\
+  48 & mistral-small-3.2-24b-instruct & Yes & 0.06/0.18 & 89.3\% & 451/505 \\
+  49 & gpt-oss-20b & Yes & 0.03/0.14 & 89.3\% & 451/505 \\
+  50 & claude-sonnet-4.5 & No & 3.00/15.00 & 89.1\% & 450/505 \\
+  51 & mistral-small-24b-instruct-2501 & Yes & 0.03/0.11 & 88.7\% & 448/505 \\
+  52 & qwen3-8b & Yes & 0.03/0.11 & 88.7\% & 448/505 \\
+  53 & phi-4-reasoning-plus & Yes & 0.07/0.35 & 87.7\% & 443/505 \\
+  54 & ministral-14b-2512 & Yes & 0.20/0.20 & 87.7\% & 443/505 \\
+  55 & qwen3-vl-8b-instruct & Yes & 0.06/0.40 & 87.5\% & 442/505 \\
+  56 & glm-4-32b & Yes & 0.10/0.10 & 87.3\% & 441/505 \\
+  57 & ministral-8b-2512 & Yes & 0.15/0.15 & 86.9\% & 439/505 \\
+  58 & gpt-4.1-nano & No & 0.10/0.40 & 86.1\% & 435/505 \\
+  59 & gemma-3-27b-it & Yes & 0.04/0.15 & 85.3\% & 431/505 \\
+  60 & deepseek-r1-0528-qwen3-8b & Yes & 0.02/0.10 & 85.1\% & 430/505 \\
+  61 & gpt-4o-mini & No & 0.15/0.60 & 84.8\% & 428/505 \\
+  62 & claude-3.5-haiku & No & 0.80/4.00 & 84.0\% & 424/505 \\
+  63 & gemma-3-12b-it & Yes & 0.03/0.10 & 82.2\% & 415/505 \\
+  64 & nemotron-nano-9b-v2 & Yes & 0.04/0.16 & 79.6\% & 402/505 \\
+  65 & ministral-3b-2512 & Yes & 0.10/0.10 & 79.2\% & 400/505 \\
+  66 & mistral-nemo & Yes & 0.02/0.04 & 78.8\% & 398/505 \\
+  67 & nemotron-3-nano-30b-a3b & Yes & 0.06/0.24 & 77.4\% & 391/505 \\
+  68 & nemotron-nano-12b-v2-vl & Yes & 0.20/0.60 & 77.4\% & 391/505 \\
+  69 & gemma-3n-e4b-it & Yes & 0.02/0.04 & 75.2\% & 380/505 \\
+  70 & llama-3.1-8b-instruct & Yes & 0.02/0.03 & 72.5\% & 366/505 \\
+  71 & gemma-3-4b-it & Yes & 0.02/0.07 & 71.3\% & 360/505 \\
+  72 & llama-3.2-3b-instruct & Yes & 0.02/0.02 & 57.6\% & 291/505 \\
+\end{longtable}
 
 \bibliographystyle{plain}
 \bibliography{refs}
