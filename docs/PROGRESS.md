@@ -1,5 +1,21 @@
 # Progress log
 
+## 2025-12-30: Expanded open-weight analysis text
+
+### What changed
+
+- Added open-weight accuracy distribution stats (range, mean, median, thresholds) to the Open-weight models subsection
+- Added domain-level averages for open-weight models and highlighted the highest and lowest domains
+- Added top and bottom open-weight model references in the open-weight narrative
+
+## 2025-12-30: Expanded open-weight table
+
+### What changed
+
+- Replaced the top-10 open-weight table with a full 32-model longtable in `paper/main.tex`
+- Updated the open-weight analysis to cover ranges for all open-weight families and variants
+- Adjusted the table caption and references to reflect the full list
+
 ## 2025-12-30: Added model and provider references (complete)
 
 ### What changed

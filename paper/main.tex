@@ -393,34 +393,60 @@ Model agreement analysis shows: 21.6\% of questions were answered correctly by a
 
 \subsection{Open-weight models}
 
-Of the 72 models evaluated, 32 have publicly available weights. Open-weight models span the full performance spectrum, from GLM-4.7 at 98.6\% (rank 2 overall) to Llama-3.2-3b-instruct at 57.6\% (rank 72). Table~\ref{tab:open_weight} summarizes the top 10 open-weight performers.
+Of the 72 models evaluated, 32 have publicly available weights. Open-weight accuracy ranges from 57.6\% (Llama-3.2-3b-instruct) to 98.6\% (GLM-4.7), with mean 85.7\% and median 87.7\%. Eleven open-weight models reach at least 90\%, and 22 reach at least 85\%. Table~\ref{tab:open_weight} lists all open-weight models by accuracy.
 
-The leading open-weight models---GLM-4.7 (Zhipu), DeepSeek-R1 and DeepSeek-V3.2 (DeepSeek), and Llama-4-Scout (Meta)---achieve accuracy above 93\%, competitive with proprietary alternatives and often at lower cost. DeepSeek-R1 at \$0.30/M input offers similar accuracy to GPT-5.1 variants at \$1.25/M input. For cost-sensitive deployments, Qwen3-14b achieves 92.9\% at just \$0.05/M input.
+The highest-accuracy open-weight models are GLM-4.7, DeepSeek-R1, DeepSeek-V3.2, Llama-4-Scout, and Mistral Medium 3.1, followed by large Qwen3 variants at 93.1\%. Qwen3 base variants span 88.7--93.1\%, Qwen3-VL variants 87.5--90.3\%, and GPT-OSS 89.3--90.7\%. Mistral and Ministral models span 78.8--93.1\%; GLM-4-32B reaches 87.3\%; Phi-4 reasoning-plus reaches 87.7\%; DeepSeek-R1-0528-Qwen3-8B reaches 85.1\%. DeepSeek-R1 at \$0.30/M input offers similar accuracy to GPT-5.1 variants at \$1.25/M input; Qwen3-14b reaches 92.9\% at \$0.05/M input.
 
-Open-weight models show similar domain patterns to proprietary models: Petrophysics is often among the lower-scoring domains, though Drilling Engineering and Production Engineering also appear as weak points for several models.
+Across domains, open-weight averages are highest in Reservoir Engineering (93.3\%) and lowest in Petrophysics (82.0\%), with other domains between 86.4\% and 90.2\% (Drilling 87.3\%, Geophysics 89.8\%, Petroleum Geology 90.2\%, Production 86.4\%, Sedimentology 89.6\%). GLM-4.7 is tied for the top open-weight score in every domain and is the sole top model in Geophysics, Petroleum Geology, Petrophysics, and Sedimentology. The lowest scores across all domains come from Llama-3.2-3b-instruct, including 45.8\% in Drilling and 51.1\% in Petrophysics.
 
-\begin{table}[h]
-  \centering
-  \caption{Top 10 open-weight models by accuracy.}
-  \label{tab:open_weight}
-  \small
-  \begin{tabular}{rllrr}
-    \toprule
-    Rank & Model & Price (\$/M) & Accuracy & Correct \\
-    \midrule
-    1 & glm-4.7 & 0.40/1.50 & 98.6\% & 498/505 \\
-    2 & deepseek-r1 & 0.30/1.20 & 96.2\% & 486/505 \\
-    3 & deepseek-v3.2 & 0.22/0.32 & 94.9\% & 479/505 \\
-    4 & llama-4-scout & 0.08/0.30 & 93.1\% & 470/505 \\
-    5 & mistral-medium-3.1 & 0.40/2.00 & 93.1\% & 470/505 \\
-    6 & qwen3-235b-a22b-2507 & 0.07/0.46 & 93.1\% & 470/505 \\
-    7 & qwen3-30b-a3b-thinking-2507 & 0.05/0.34 & 93.1\% & 470/505 \\
-    8 & qwen3-14b & 0.05/0.22 & 92.9\% & 469/505 \\
-    9 & qwen3-32b & 0.08/0.24 & 92.1\% & 465/505 \\
-    10 & gpt-oss-120b & 0.04/0.19 & 90.7\% & 458/505 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+\begin{longtable}{rllrr}
+  \caption{Open-weight models by accuracy.} \label{tab:open_weight} \\
+  \toprule
+  Overall rank & Model & Price (\$/M) & Accuracy & Correct \\
+  \midrule
+  \endfirsthead
+  \multicolumn{5}{c}{\tablename\ \thetable{} -- continued from previous page} \\
+  \toprule
+  Overall rank & Model & Price (\$/M) & Accuracy & Correct \\
+  \midrule
+  \endhead
+  \midrule \multicolumn{5}{r}{Continued on next page} \\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  2 & glm-4.7 & 0.40/1.50 & 98.6\% & 498/505 \\
+  13 & deepseek-r1 & 0.30/1.20 & 96.2\% & 486/505 \\
+  21 & deepseek-v3.2 & 0.22/0.32 & 94.9\% & 479/505 \\
+  33 & llama-4-scout & 0.08/0.30 & 93.1\% & 470/505 \\
+  34 & mistral-medium-3.1 & 0.40/2.00 & 93.1\% & 470/505 \\
+  35 & qwen3-235b-a22b-2507 & 0.07/0.46 & 93.1\% & 470/505 \\
+  36 & qwen3-30b-a3b-thinking-2507 & 0.05/0.34 & 93.1\% & 470/505 \\
+  41 & qwen3-14b & 0.05/0.22 & 92.9\% & 469/505 \\
+  42 & qwen3-32b & 0.08/0.24 & 92.1\% & 465/505 \\
+  46 & gpt-oss-120b & 0.04/0.19 & 90.7\% & 458/505 \\
+  47 & qwen3-vl-8b-thinking & 0.18/2.10 & 90.3\% & 456/505 \\
+  48 & mistral-small-3.2-24b-instruct & 0.06/0.18 & 89.3\% & 451/505 \\
+  49 & gpt-oss-20b & 0.03/0.14 & 89.3\% & 451/505 \\
+  51 & mistral-small-24b-instruct-2501 & 0.03/0.11 & 88.7\% & 448/505 \\
+  52 & qwen3-8b & 0.03/0.11 & 88.7\% & 448/505 \\
+  53 & phi-4-reasoning-plus & 0.07/0.35 & 87.7\% & 443/505 \\
+  54 & ministral-14b-2512 & 0.20/0.20 & 87.7\% & 443/505 \\
+  55 & qwen3-vl-8b-instruct & 0.06/0.40 & 87.5\% & 442/505 \\
+  56 & glm-4-32b & 0.10/0.10 & 87.3\% & 441/505 \\
+  57 & ministral-8b-2512 & 0.15/0.15 & 86.9\% & 439/505 \\
+  59 & gemma-3-27b-it & 0.04/0.15 & 85.3\% & 431/505 \\
+  60 & deepseek-r1-0528-qwen3-8b & 0.02/0.10 & 85.1\% & 430/505 \\
+  63 & gemma-3-12b-it & 0.03/0.10 & 82.2\% & 415/505 \\
+  64 & nemotron-nano-9b-v2 & 0.04/0.16 & 79.6\% & 402/505 \\
+  65 & ministral-3b-2512 & 0.10/0.10 & 79.2\% & 400/505 \\
+  66 & mistral-nemo & 0.02/0.04 & 78.8\% & 398/505 \\
+  67 & nemotron-3-nano-30b-a3b & 0.06/0.24 & 77.4\% & 391/505 \\
+  68 & nemotron-nano-12b-v2-vl & 0.20/0.60 & 77.4\% & 391/505 \\
+  69 & gemma-3n-e4b-it & 0.02/0.04 & 75.2\% & 380/505 \\
+  70 & llama-3.1-8b-instruct & 0.02/0.03 & 72.5\% & 366/505 \\
+  71 & gemma-3-4b-it & 0.02/0.07 & 71.3\% & 360/505 \\
+  72 & llama-3.2-3b-instruct & 0.02/0.02 & 57.6\% & 291/505 \\
+\end{longtable}
 
 \subsection{Bottom performers}
 
