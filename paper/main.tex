@@ -6,6 +6,10 @@
 \usepackage{hyperref}
 \usepackage{longtable}
 \usepackage{url}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric, calc, fit, backgrounds}
+
+\graphicspath{{figures/}}
 
 \title{FormationEval: an open benchmark for oil and gas geoscience MCQ evaluation}
 \author{
@@ -116,30 +120,20 @@ The generation pipeline consists of four stages:
 \item \textbf{Verification}: Generated questions undergo consistency validation (schema compliance, no duplicate choices, answer index in range) and evidence-based verification (confirming support in source text, flagging ambiguous items).
 \end{enumerate}
 
+Figure~\ref{fig:mcq_pipeline} illustrates this pipeline from source ingestion to final dataset.
+
 The system prompt emphasizes that questions must be standalone---answerable from domain knowledge without access to the source chapter. Phrases like ``according to the chapter'' or ``the text describes'' are explicitly prohibited. A summary of the generation prompt is provided in Appendix B; the full 475-line system prompt is available in the repository at \texttt{src/prompts/mcq\_generator\_system\_prompt.txt}.
 
 % Source pointers: src/README.md
-%
-% ============================================================================
-% FIGURE PLACEHOLDER: MCQ Generation Pipeline
-% ============================================================================
-% Create diagram showing the 4-stage pipeline:
-%   Source PDF → OCR (Mistral) → Chapter Split → LLM Generation → Verification → Dataset
-%
-% Suggested format: Draw.io or Mermaid, export to PDF
-% Include: Text extraction, Chunking (1-3 pages), Candidate generation (GPT-4+),
-%          Verification (schema + evidence check)
-%
-% To add the figure, uncomment and update:
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=\textwidth]{figures/mcq_pipeline.pdf}
-%   \caption{MCQ generation pipeline: source PDFs are converted to Markdown via OCR,
-%            split into chapter chunks, processed by an LLM to generate candidate questions,
-%            and verified for schema compliance and source evidence.}
-%   \label{fig:mcq_pipeline}
-% \end{figure}
-% ============================================================================
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{mcq_pipeline.pdf}
+  \caption{MCQ generation pipeline: source PDFs are converted to Markdown via OCR,
+           split into chapter chunks, processed by GPT-5.2 to generate candidate questions,
+           and verified for schema compliance and source evidence.}
+  \label{fig:mcq_pipeline}
+\end{figure}
 
 \subsection{Quality assurance and audit}
 
@@ -170,14 +164,22 @@ A model using only surface heuristics could achieve approximately 70\% accuracy 
 \subsection{Human-readable export}
 
 To facilitate human review, the dataset is exported to PDF with a cover page, question cards showing all metadata and bookmarks for navigation. This format is more accessible than raw JSON for domain experts performing quality checks and enables browsing questions by domain or topic without programming tools.
+An accompanying PDF rendering, generated from the JSON release, provides a readable format for browsing and spot checks \cite{formationeval_dataset,formationeval_pdf}.
 
 % Source pointers: src/README.md, docs/lessons_learned.md
 
 \section{Dataset summary}
 
-Version 0.1 of FormationEval contains 505 questions in English covering 811 unique topics. Table~\ref{tab:summary} summarizes key metrics and Table~\ref{tab:distribution} shows the distribution by domain and difficulty. Table~\ref{tab:sources} provides the breakdown by source.
+Version 0.1 of FormationEval contains 505 questions in English covering 811 unique topics. Table~\ref{tab:summary} summarizes key metrics and Table~\ref{tab:distribution} shows the distribution by domain and difficulty. Table~\ref{tab:sources} provides the breakdown by source. Figure~\ref{fig:dataset_composition} visualizes these distributions.
 
 Petrophysics represents the largest domain (54\% of questions) reflecting the depth of coverage in the well logging textbook. The difficulty distribution targets 30\% easy, 50\% medium and 20\% hard; the actual distribution (26\%/54\%/20\%) is close to these targets. Answer positions are balanced: A=27\%, B=26\%, C=25\%, D=22\%.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{dataset_composition.pdf}
+  \caption{Dataset composition: (a) questions by domain, with Petrophysics dominating due to source coverage; (b) difficulty distribution close to 30/50/20 targets; (c) answer position distribution near the expected 25\% baseline.}
+  \label{fig:dataset_composition}
+\end{figure}
 
 % Source pointers: data/benchmark/README.md
 
@@ -256,30 +258,18 @@ The evaluation uses a zero-shot prompt format to assess model knowledge without 
 
 \textbf{User prompt:} The question text followed by four labeled choices (A--D) and ``Answer:'' as the final line.
 
-Answer extraction uses flexible regex patterns to handle varied response formats. Preprocessing removes reasoning tags (\texttt{<thinking>}, \texttt{<think>}) from models that expose chain-of-thought traces (o1, o3, DeepSeek-R1). The extraction logic prioritizes explicit patterns (``The answer is B'', ``Answer: C'') over positional heuristics. Failed extractions---where no A/B/C/D letter can be identified---are counted as incorrect answers.
+Answer extraction uses flexible regex patterns to handle varied response formats. Preprocessing removes reasoning tags (\texttt{<thinking>}, \texttt{<think>}) from models that expose chain-of-thought traces (o1, o3, DeepSeek-R1). The extraction logic prioritizes explicit patterns (``The answer is B'', ``Answer: C'') over positional heuristics. Failed extractions---where no A/B/C/D letter can be identified---are counted as incorrect answers. Figure~\ref{fig:eval_pipeline} shows the evaluation flow from configuration to report generation.
 
 % Source pointers: docs/evaluation_pipeline_concept.md, eval/extraction.py
-%
-% ============================================================================
-% FIGURE PLACEHOLDER: Evaluation Pipeline
-% ============================================================================
-% Create diagram showing the evaluation flow:
-%   Config (models.yaml) → API Inference → Cache → Analysis → Reports (JSON/MD/CSV)
-%
-% Suggested format: Draw.io or Mermaid, export to PDF
-% Include: Model config, Azure/OpenRouter APIs, response caching, scoring,
-%          report generation (leaderboard.md, analysis.md, questions.csv)
-%
-% To add the figure, uncomment and update:
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=\textwidth]{figures/eval_pipeline.pdf}
-%   \caption{Evaluation pipeline: models are configured via YAML, questions sent to
-%            Azure OpenAI or OpenRouter APIs, responses cached per model/question,
-%            and analyzed to generate leaderboard and analysis reports.}
-%   \label{fig:eval_pipeline}
-% \end{figure}
-% ============================================================================
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{eval_pipeline.pdf}
+  \caption{Evaluation pipeline: models are configured via YAML, questions sent to
+           Azure OpenAI or OpenRouter APIs, responses cached per model/question,
+           and analyzed to generate leaderboard and analysis reports.}
+  \label{fig:eval_pipeline}
+\end{figure}
 
 \subsection{Metrics and confidence intervals}
 
@@ -303,27 +293,26 @@ Evaluation can be re-run in analyze-only mode to regenerate reports from cached 
 
 Table~\ref{tab:leaderboard} presents the top 25 models by accuracy \cite{formationeval_leaderboard}. The highest-performing model is Gemini 3 Pro Preview at 99.8\% (504/505 correct), followed by GLM-4.7 at 98.6\% and Gemini 3 Flash Preview at 98.2\%. Among open-weight models, GLM-4.7 leads, followed by DeepSeek-R1 (96.2\%) and DeepSeek-V3.2 (94.9\%).
 
-Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama-3.2-3b-instruct). Models from Google, OpenAI and Zhipu dominate the top positions. Pricing varies considerably, with some cost-effective models like Grok-4.1-fast (\$0.20/M input) achieving 97.6\% accuracy.
+Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama-3.2-3b-instruct). Models from Google, OpenAI and Zhipu dominate the top positions (Figure~\ref{fig:top20_accuracy}). Pricing varies considerably, with some cost-effective models like Grok-4.1-fast (\$0.20/M input) achieving 97.6\% accuracy. Figure~\ref{fig:accuracy_vs_price} shows the cost-effectiveness trade-off across all models.
 
 % Source pointers: eval/results/leaderboard.md
-%
-% ============================================================================
-% FIGURE PLACEHOLDER: Results Visualization (Optional)
-% ============================================================================
-% Option A: Top-20 accuracy bar chart (horizontal bars, sorted by accuracy)
-% Option B: Accuracy vs price scatter plot (x=price, y=accuracy, color=open-weight)
-% Option C: Domain accuracy heatmap (models × domains)
-%
-% Data source: eval/results/leaderboard.md
-%
-% To add the figure, uncomment and update:
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=\textwidth]{figures/results_chart.pdf}
-%   \caption{Model accuracy on FormationEval benchmark. [Update based on chart type]}
-%   \label{fig:results}
-% \end{figure}
-% ============================================================================
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{top20_accuracy.pdf}
+  \caption{Top 20 models on FormationEval v0.1 by accuracy. Blue bars indicate open-weight models.
+           GLM-4.7 (98.6\%) leads among open-weight models, ranking second overall.}
+  \label{fig:top20_accuracy}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{accuracy_vs_price.pdf}
+  \caption{Cost-effectiveness analysis: accuracy versus average token price.
+           Several high-accuracy models (Grok-4.1-fast, DeepSeek-R1) offer strong performance at lower cost.
+           Open-weight models (blue) provide cost-effective alternatives to closed models (orange).}
+  \label{fig:accuracy_vs_price}
+\end{figure}
 
 \begin{table}[h]
   \centering
@@ -367,7 +356,14 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
 
 Performance decreases with difficulty level, as expected. For top models, easy questions are nearly saturated (100\% for several models), while hard questions remain discriminative. Gemini 3 Pro Preview achieves 100\% on both easy and hard questions, with a single error on a medium question. GLM-4.7 shows 100\% easy, 98.5\% medium and 97.0\% hard.
 
-Smaller models show wider variance by difficulty. Llama-3.2-3b-instruct achieves 62.9\% on easy questions but only 54.7\% on medium, indicating difficulty labels correlate with model performance patterns.
+Smaller models show wider variance by difficulty. Llama-3.2-3b-instruct achieves 62.9\% on easy questions but only 54.7\% on medium, indicating difficulty labels correlate with model performance patterns. Figure~\ref{fig:difficulty_breakdown} compares accuracy by difficulty across model tiers.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{difficulty_breakdown.pdf}
+  \caption{Accuracy by difficulty level across model tiers. Top-tier models show consistent performance across difficulty levels, while bottom-tier models exhibit larger gaps between easy and harder questions.}
+  \label{fig:difficulty_breakdown}
+\end{figure}
 
 % Source pointers: eval/results/leaderboard.md
 
@@ -377,7 +373,14 @@ Petrophysics emerges as the most challenging domain across all models, with typi
 
 The top model (Gemini 3 Pro Preview) achieves near-perfect scores across all domains: 99.6\% Petrophysics, 100\% for all other domains. Open-weight leader GLM-4.7 shows 98.2\% Petrophysics versus 99--100\% for other domains.
 
-Production Engineering and Drilling Engineering show the highest average accuracy, though this may reflect smaller question counts (14 and 24 questions respectively) rather than domain difficulty.
+Production Engineering and Drilling Engineering show the highest average accuracy, though this may reflect smaller question counts (14 and 24 questions respectively) rather than domain difficulty. Figure~\ref{fig:domain_heatmap} shows accuracy patterns across domains for the top 15 models.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{domain_heatmap.pdf}
+  \caption{Model accuracy by domain for top 15 models. Petrophysics shows consistently lower accuracy than other domains across all models, reflecting the technical depth of well logging concepts.}
+  \label{fig:domain_heatmap}
+\end{figure}
 
 % Source pointers: eval/results/leaderboard.md, eval/results/analysis.md
 
@@ -393,7 +396,14 @@ Model agreement analysis shows: 21.6\% of questions were answered correctly by a
 
 \subsection{Open-weight models}
 
-Of the 72 models evaluated, 32 have publicly available weights. Open-weight accuracy ranges from 57.6\% (Llama-3.2-3b-instruct) to 98.6\% (GLM-4.7), with mean 85.7\% and median 87.7\%. Eleven open-weight models reach at least 90\%, and 22 reach at least 85\%. Table~\ref{tab:open_weight} lists all open-weight models by accuracy.
+Of the 72 models evaluated, 32 have publicly available weights. Open-weight accuracy ranges from 57.6\% (Llama-3.2-3b-instruct) to 98.6\% (GLM-4.7), with mean 85.7\% and median 87.7\%. Eleven open-weight models reach at least 90\%, and 22 reach at least 85\%. Figure~\ref{fig:open_weight_models} visualizes all open-weight models by accuracy; Table~\ref{tab:open_weight} provides the detailed breakdown.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{open_weight_models.pdf}
+  \caption{All 32 open-weight models ranked by accuracy. GLM-4.7 leads at 98.6\%, followed by DeepSeek-R1 (96.2\%) and DeepSeek-V3.2 (94.9\%). Color intensity indicates accuracy level.}
+  \label{fig:open_weight_models}
+\end{figure}
 
 The highest-accuracy open-weight models are GLM-4.7, DeepSeek-R1, DeepSeek-V3.2, Llama-4-Scout, and Mistral Medium 3.1, followed by large Qwen3 variants at 93.1\%. Qwen3 base variants span 88.7--93.1\%, Qwen3-VL variants 87.5--90.3\%, and GPT-OSS 89.3--90.7\%. Mistral and Ministral models span 78.8--93.1\%; GLM-4-32B reaches 87.3\%; Phi-4 reasoning-plus reaches 87.7\%; DeepSeek-R1-0528-Qwen3-8B reaches 85.1\%. DeepSeek-R1 at \$0.30/M input offers similar accuracy to GPT-5.1 variants at \$1.25/M input; Qwen3-14b reaches 92.9\% at \$0.05/M input.
 
@@ -506,7 +516,7 @@ The benchmark, evaluation reports and code are available in the project reposito
 \begin{itemize}
   \item Repository: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation}{\texttt{github.com/AlmazErmilov/FormationEval-an-Open-Benchmark...}}
   \item Dataset JSON \cite{formationeval_dataset}: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/data/benchmark/formationeval_v0.1.json}{\texttt{data/benchmark/formationeval\_v0.1.json}}
-  \item Dataset PDF: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/data/benchmark/formationeval_v0.1.pdf}{\texttt{data/benchmark/formationeval\_v0.1.pdf}}
+  \item Dataset PDF \cite{formationeval_pdf}: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/data/benchmark/formationeval_v0.1.pdf}{\texttt{data/benchmark/formationeval\_v0.1.pdf}}
   \item Leaderboard: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/leaderboard.md}{\texttt{eval/results/leaderboard.md}}
   \item Analysis: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/analysis.md}{\texttt{eval/results/analysis.md}}
   \item Per-question results: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/questions.csv}{\texttt{eval/results/questions.csv}}
@@ -592,9 +602,12 @@ The full system prompt (475 lines) is available in the repository at \texttt{src
 
 \section{Bias mitigation summary}
 
+Tables~\ref{tab:length_bias} and \ref{tab:qualifier_bias} summarize the bias mitigation efforts.
+
 \begin{table}[h]
   \centering
   \caption{Length bias before and after mitigation.}
+  \label{tab:length_bias}
   \begin{tabular}{lrr}
     \toprule
     Metric & Original & After fixes \\
@@ -609,6 +622,7 @@ The full system prompt (475 lines) is available in the repository at \texttt{src
 \begin{table}[h]
   \centering
   \caption{Qualifier word patterns before and after mitigation.}
+  \label{tab:qualifier_bias}
   \begin{tabular}{lrrrl}
     \toprule
     Word & In correct & In distractor & Correct rate & Status \\
@@ -639,7 +653,7 @@ Human verification covered 5--10 questions per source chapter (spot-check approa
 \item Rationale consistency: Confirmed rationales support marked answers
 \end{itemize}
 
-One question was corrected during the final review pass. The required rationale field accelerated verification by making logical inconsistencies immediately visible.
+Several questions were corrected during the final review pass. The required rationale field accelerated verification by making logical inconsistencies immediately visible.
 
 \section{Full model leaderboard}
 \label{app:full_leaderboard}
