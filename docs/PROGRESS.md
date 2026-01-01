@@ -1,5 +1,42 @@
 # Progress log
 
+## 2025-12-30: Added benchmark PDF citation
+
+### What changed
+
+- Added a benchmark PDF reference in `paper/refs.bib`
+- Cited the PDF in the easily readable pdf export paragraph and the data availability list in `paper/main.tex`
+
+## 2025-12-30: Created publication figures for paper
+
+### What changed
+
+Created 8 figures for the FormationEval paper in `paper/figures/`:
+
+**Python-generated charts (6 PDFs):**
+- `top20_accuracy.pdf` — Top 20 models bar chart (open vs closed colors)
+- `open_weight_models.pdf` — All 32 open-weight models bar chart
+- `accuracy_vs_price.pdf` — Cost-effectiveness scatter plot (log scale)
+- `domain_heatmap.pdf` — Top 15 models × 7 domains accuracy heatmap
+- `difficulty_breakdown.pdf` — Easy/Medium/Hard grouped bars by tier
+- `dataset_composition.pdf` — 3-panel: domains, difficulty, answer distribution
+
+**TikZ pipeline diagrams (2 .tex files):**
+- `mcq_pipeline.tex` — MCQ generation pipeline: PDF → OCR → Chapters → LLM → Verify → Dataset
+- `eval_pipeline.tex` — Evaluation pipeline: Config → Azure/OpenRouter → Cache → Metrics → Reports
+
+**Updated main.tex:**
+- Added TikZ packages and graphicspath
+- Added 8 figure environments with captions and labels
+- Figures placed at relevant sections (Benchmark design, Dataset summary, Evaluation setup, Results)
+
+### Notes
+
+- Charts use colorblind-friendly palette (blues, grays, orange accent)
+- TikZ diagrams require pdflatex compilation (not available on this system)
+- All figures are vector PDFs for crisp rendering at any scale
+- Domain heatmap shows Petrophysics consistently hardest across models
+
 ## 2025-12-30: Added citations for evaluation artifacts
 
 ### What changed
