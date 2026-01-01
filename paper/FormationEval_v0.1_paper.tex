@@ -6,6 +6,7 @@
 \usepackage{hyperref}
 \usepackage{longtable}
 \usepackage{url}
+\usepackage{placeins}
 \usepackage{tikz}
 \usetikzlibrary{positioning, arrows.meta, shapes.geometric, calc, fit, backgrounds}
 
@@ -293,7 +294,7 @@ Evaluation can be re-run in analyze-only mode to regenerate reports from cached 
 
 Table~\ref{tab:leaderboard} presents the top 25 models by accuracy \cite{formationeval_leaderboard}. The highest-performing model is Gemini 3 Pro Preview at 99.8\% (504/505 correct), followed by GLM-4.7 at 98.6\% and Gemini 3 Flash Preview at 98.2\%. Among open-weight models, GLM-4.7 leads, followed by DeepSeek-R1 (96.2\%) and DeepSeek-V3.2 (94.9\%).
 
-Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama-3.2-3b-instruct). Models from Google, OpenAI and Zhipu dominate the top positions (Figure~\ref{fig:top20_accuracy}). Pricing varies considerably, with some cost-effective models like Grok-4.1-fast (\$0.20/M input) achieving 97.6\% accuracy. Figure~\ref{fig:accuracy_vs_price} shows the cost-effectiveness trade-off across all models.
+Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama-3.2-3b-instruct). Models from Google, OpenAI and Zhipu dominate the top positions (Figure~\ref{fig:top20_accuracy}). Pricing varies considerably, with some lower-cost models like Grok-4.1-fast (\$0.20/M input) achieving 97.6\% accuracy. Figure~\ref{fig:accuracy_vs_price} shows the cost-effectiveness trade-off across all models.
 
 % Source pointers: eval/results/leaderboard.md
 
@@ -313,6 +314,8 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
            Open-weight models (blue) provide lower-cost alternatives to closed models (orange).}
   \label{fig:accuracy_vs_price}
 \end{figure}
+
+\FloatBarrier
 
 \begin{table}[h]
   \centering
@@ -352,6 +355,7 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
   \end{tabular}
 \end{table}
 
+\FloatBarrier
 \subsection{By difficulty}
 
 Performance decreases with difficulty level, as expected. For top models, easy questions are nearly saturated (100\% for several models), while hard questions remain discriminative. Gemini 3 Pro Preview achieves 100\% on both easy and hard questions, with a single error on a medium question. GLM-4.7 shows 100\% easy, 98.5\% medium and 97.0\% hard.
@@ -367,6 +371,7 @@ Smaller models show wider variance by difficulty. Llama-3.2-3b-instruct achieves
 
 % Source pointers: eval/results/leaderboard.md
 
+\FloatBarrier
 \subsection{By domain}
 
 Petrophysics emerges as the most challenging domain across all models, with typical accuracy 3--5 percentage points lower than other domains. This reflects the technical specificity of well logging physics and formation evaluation concepts.
@@ -384,16 +389,18 @@ Production Engineering and Drilling Engineering show the highest average accurac
 
 % Source pointers: eval/results/leaderboard.md, eval/results/analysis.md
 
+\FloatBarrier
 \subsection{Hardest questions}
 
 The ten hardest questions (by model failure rate) reveal systematic knowledge gaps \cite{formationeval_analysis}. The hardest question---on strike-slip fault stepovers and pull-apart basin formation---was answered incorrectly by 61 of 72 models (85\%). Most models selected option A (left-stepping arrangement) instead of the correct answer D (right-stepping arrangement for dextral motion). The top three hardest questions are documented in the analysis report \cite{formationeval_analysis}.
 
 Eight of the ten hardest questions are from the Petrophysics domain, covering specialized topics like neutron-density crossplot interpretation, invasion profiles and tool calibration. One geology question (strike-slip stepovers) and one easy-labeled question (LWD propagation) also appear in the top 10.
 
-Model agreement analysis shows: 21.6\% of questions were answered correctly by all 72 models, 0\% were missed by all models and 78.4\% showed mixed results. Most questions (78.4\%) produce varied results, helping distinguish model performance levels.
+Model agreement analysis shows: 21.6\% of questions were answered correctly by all 72 models, 0\% were missed by all models and 78.4\% showed mixed results---indicating most questions help distinguish model performance levels.
 
 % Source pointers: eval/results/analysis.md
 
+\FloatBarrier
 \subsection{Open-weight models}
 
 A key question for this evaluation was whether open-weight models---especially smaller and cheaper ones---have enough domain knowledge for petroleum geoscience. While larger closed models were expected to perform well, the capabilities of open-weight alternatives in this specialized field were less clear.
@@ -462,6 +469,7 @@ These results suggest that petroleum geoscience knowledge is reasonably well-rep
   72 & llama-3.2-3b-instruct & 0.02/0.02 & 57.6\% & 291/505 \\
 \end{longtable}
 
+\FloatBarrier
 \subsection{Bottom performers}
 
 The ten lowest-scoring models are all compact variants (3B--12B parameters) or older architectures. Llama-3.2-3b-instruct achieves 57.6\%, only marginally above random guessing (25\%). The bottom tier includes Gemma-3-4b-it (71.3\%), Llama-3.1-8b-instruct (72.5\%), Gemma-3n-e4b-it (75.2\%) and Nemotron variants (77--80\%).

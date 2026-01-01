@@ -1,5 +1,24 @@
 # Progress log
 
+## 2026-01-01: Paper polish and figure placement fix
+
+### What changed
+
+- Added `placeins` package and `\FloatBarrier` commands to prevent figures from floating into wrong sections
+- Renamed `main.tex` → `FormationEval_v0.1_paper.tex` so output PDF has correct name
+- Changed "cost-effective" → "lower-cost" throughout for neutral tone
+- Combined redundant 78.4% sentence into single flowing statement
+- Added GPT-5-nano observation to open-weight section (smaller closed models also perform well)
+- Added LICENSE (CC BY 4.0) and CONTRIBUTING.md
+- Updated README with current release stats, citation section, and contributing link
+- Updated build commands in `paper/README.md` to use `FormationEval_v0.1_paper.tex`
+
+### Notes
+
+- Paper now 24 pages (was 22) due to proper figure placement
+- All figures stay within their respective subsections
+- v0.1 tag updated to include these changes
+
 ## 2025-12-30: Added benchmark PDF citation
 
 ### What changed

@@ -4,9 +4,9 @@ LaTeX skeleton for the FormationEval paper.
 
 Build (basic):
 ```bash
-tectonic main.tex
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
+tectonic FormationEval_v0.1_paper.tex
+pdflatex FormationEval_v0.1_paper.tex
+bibtex FormationEval_v0.1_paper
+pdflatex FormationEval_v0.1_paper.tex
+pdflatex FormationEval_v0.1_paper.tex
 ```
