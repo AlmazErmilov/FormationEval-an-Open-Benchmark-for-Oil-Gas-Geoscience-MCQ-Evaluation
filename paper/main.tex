@@ -23,7 +23,7 @@ UiT The Arctic University of Norway\\
 \maketitle
 
 \begin{abstract}
-This paper presents FormationEval, an open multiple-choice question benchmark for evaluating language models on petroleum geoscience and subsurface disciplines. The dataset contains 505 questions across seven domains including petrophysics, petroleum geology and reservoir engineering, derived from three authoritative sources using a concept-based approach that avoids verbatim copying of copyrighted text. Each question includes provenance metadata and a contamination risk label to support reproducible evaluation. The evaluation covers 72 models from major providers including OpenAI, Anthropic, Google, Meta and open-weight alternatives. The top performers achieve over 97\% accuracy, with Gemini 3 Pro Preview reaching 99.8\%. Among open-weight models, GLM-4.7 leads at 98.6\%. Petrophysics emerges as the most challenging domain across all models, while smaller models show wider performance variance. Residual length bias in the dataset (correct answers tend to be longer) is documented along with bias mitigation strategies applied during construction. The benchmark, evaluation code and results are publicly available.
+This paper presents FormationEval, an open multiple-choice question benchmark for evaluating language models on petroleum geoscience and subsurface disciplines. The dataset contains 505 questions across seven domains including petrophysics, petroleum geology and reservoir engineering, derived from three authoritative sources using a concept-based approach that avoids verbatim copying of copyrighted text. Each question includes provenance metadata and a contamination risk label to support reproducible evaluation. The evaluation covers 72 models from major providers including OpenAI, Anthropic, Google, Meta and open-weight alternatives. The top performers achieve over 97\% accuracy, with Gemini 3 Pro Preview reaching 99.8\%. Among open-weight models, GLM-4.7 leads at 98.6\%. The performance gap between open-weight and closed models is narrower than expected, with several cost-effective open-weight models exceeding 90\% accuracy. Petrophysics emerges as the most challenging domain across all models, while smaller models show wider performance variance. Residual length bias in the dataset (correct answers tend to be longer) is documented along with bias mitigation strategies applied during construction. The benchmark, evaluation code and results are publicly available.
 \end{abstract}
 
 \section{Introduction}
@@ -103,7 +103,7 @@ All generated items are tagged with \texttt{derivation\_mode: concept\_based} an
 
 Each question includes required fields: unique identifier, question text, four choices, answer index (0--3), answer key (A--D), difficulty level, domains, topics and a rationale explaining the correct answer. The rationale serves dual purposes: it aids human verification during development and provides educational value to benchmark users.
 
-Each item also includes a \texttt{contamination\_risk} label indicating likelihood that similar questions exist in LLM training data: \textit{low} for novel questions specific to the source, \textit{medium} for common concepts where similar questions may exist and \textit{high} for standard introductory topics almost certainly present in training data. This enables analysis of model performance stratified by contamination likelihood.
+Each item also includes a \texttt{contamination\_risk} label indicating likelihood that similar questions exist in LLM training data: \textit{low} for novel questions specific to the source, \textit{medium} for common concepts where similar questions may exist and \textit{high} for standard introductory topics almost certainly present in training data. Assessing contamination risk is hard without access to training data; this label is an estimate based on topic commonality and cannot be directly checked. Still, approximate labels help when comparing results by risk level.
 
 Provenance metadata includes source identifier, title, chapter reference, license and retrieval date. See Appendix A for the complete schema reference.
 
@@ -122,7 +122,7 @@ The generation pipeline consists of four stages:
 
 Figure~\ref{fig:mcq_pipeline} illustrates this pipeline from source ingestion to final dataset.
 
-The system prompt emphasizes that questions must be standalone---answerable from domain knowledge without access to the source chapter. Phrases like ``according to the chapter'' or ``the text describes'' are explicitly prohibited. A summary of the generation prompt is provided in Appendix B; the full 475-line system prompt is available in the repository at \texttt{src/prompts/mcq\_generator\_system\_prompt.txt}.
+The system prompt emphasizes that questions must be standalone---answerable from domain knowledge without access to the source chapter. Phrases like ``according to the chapter'' or ``the text describes'' are explicitly prohibited. A summary of the generation prompt is provided in Appendix B; the full 475-line system prompt is available in the repository at \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{\texttt{src/prompts/mcq\_generator\_system\_prompt.txt}}.
 
 % Source pointers: src/README.md
 
@@ -244,7 +244,7 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
 
 \subsection{Models and providers}
 
-The evaluation covers 72 language models across two providers: Azure OpenAI \cite{azure_openai} and OpenRouter \cite{openrouter}. This includes models from OpenAI \cite{gpt4,gpt4o,gpt41,gpt5,o3_o4mini} (GPT-4o, GPT-4.1, GPT-5 series, o3-mini, o4-mini), Anthropic \cite{claude3,claude35,claude37,claude_opus45} (Claude 3.5 Haiku, Claude 3.7 Sonnet, Claude Opus 4.5), Google \cite{gemini,gemini2,gemini25,gemini3,gemma3} (Gemini 2.0, 2.5, 3 series, Gemma 3), Meta \cite{llama3,llama31,llama32,llama4} (Llama 3.1, 3.2, 4), DeepSeek \cite{deepseek_v3,deepseek_v3_2,deepseek_r1} (R1, V3.2), Mistral \cite{mistral} (Small, Medium, Nemo, Ministral), Alibaba \cite{qwen3} (Qwen3 series), Zhipu \cite{glm4,glm47} (GLM-4, GLM-4.7), xAI \cite{grok3,grok} (Grok 3, 4), Moonshot \cite{kimi_k2} (Kimi K2), MiniMax \cite{minimax_m2} (M2), Microsoft \cite{phi4} (Phi-4) and Nvidia \cite{nemotron} (Nemotron).
+The evaluation covers 72 language models across two providers: Azure OpenAI \cite{azure_openai} and OpenRouter \cite{openrouter}. This includes models from OpenAI \cite{gpt4,gpt4o,gpt41,gpt5,o3_o4mini} (GPT-4o, GPT-4.1, GPT-5 series, o3-mini, o4-mini), Anthropic \cite{claude3,claude35,claude37,claude_opus45} (Claude 3.5 Haiku, Claude 3.7 Sonnet, Claude Opus 4.5, Claude Sonnet 4.5, Claude Haiku 4.5), Google \cite{gemini,gemini2,gemini25,gemini3,gemma3} (Gemini 2.0, 2.5, 3 series, Gemma 3), Meta \cite{llama3,llama31,llama32,llama4} (Llama 3.1, 3.2, 4), DeepSeek \cite{deepseek_v3,deepseek_v3_2,deepseek_r1} (R1, V3.2), Mistral \cite{mistral} (Small, Medium, Nemo, Ministral), Alibaba \cite{qwen3} (Qwen3 series), Zhipu \cite{glm4,glm47} (GLM-4, GLM-4.7), xAI \cite{grok3,grok} (Grok 3, 4), Moonshot \cite{kimi_k2} (Kimi K2), MiniMax \cite{minimax_m2} (M2), Microsoft \cite{phi4} (Phi-4) and Nvidia \cite{nemotron} (Nemotron).
 
 Models range from compact 3B parameter variants to frontier reasoning models. Open-weight models (32 of 72) include GLM-4.7, DeepSeek-R1, Llama-4-Scout, Qwen3 variants, Mistral models and Gemma 3. Pricing spans from \$0.02/M tokens (Llama-3.2-3b) to \$25/M tokens (Claude Opus 4.5 output).
 
@@ -396,6 +396,8 @@ Model agreement analysis shows: 21.6\% of questions were answered correctly by a
 
 \subsection{Open-weight models}
 
+A key question for this evaluation was whether open-weight models---especially smaller and cheaper ones---have enough domain knowledge for petroleum geoscience. While larger closed models were expected to perform well, the capabilities of open-weight alternatives in this specialized field were less clear.
+
 Of the 72 models evaluated, 32 have publicly available weights. Open-weight accuracy ranges from 57.6\% (Llama-3.2-3b-instruct) to 98.6\% (GLM-4.7), with mean 85.7\% and median 87.7\%. Eleven open-weight models reach at least 90\%, and 22 reach at least 85\%. Figure~\ref{fig:open_weight_models} visualizes all open-weight models by accuracy; Table~\ref{tab:open_weight} provides the detailed breakdown.
 
 \begin{figure}[h]
@@ -408,6 +410,8 @@ Of the 72 models evaluated, 32 have publicly available weights. Open-weight accu
 The highest-accuracy open-weight models are GLM-4.7, DeepSeek-R1, DeepSeek-V3.2, Llama-4-Scout, and Mistral Medium 3.1, followed by large Qwen3 variants at 93.1\%. Qwen3 base variants span 88.7--93.1\%, Qwen3-VL variants 87.5--90.3\%, and GPT-OSS 89.3--90.7\%. Mistral and Ministral models span 78.8--93.1\%; GLM-4-32B reaches 87.3\%; Phi-4 reasoning-plus reaches 87.7\%; DeepSeek-R1-0528-Qwen3-8B reaches 85.1\%. DeepSeek-R1 at \$0.30/M input offers similar accuracy to GPT-5.1 variants at \$1.25/M input; Qwen3-14b reaches 92.9\% at \$0.05/M input.
 
 Across domains, open-weight averages are highest in Reservoir Engineering (93.3\%) and lowest in Petrophysics (82.0\%), with other domains between 86.4\% and 90.2\% (Drilling 87.3\%, Geophysics 89.8\%, Petroleum Geology 90.2\%, Production 86.4\%, Sedimentology 89.6\%). GLM-4.7 is tied for the top open-weight score in every domain and is the sole top model in Geophysics, Petroleum Geology, Petrophysics, and Sedimentology. The lowest scores across all domains come from Llama-3.2-3b-instruct, including 45.8\% in Drilling and 51.1\% in Petrophysics.
+
+These results suggest that petroleum geoscience knowledge is reasonably well-represented in open-weight models. Even models with fewer parameters and lower costs show useful domain understanding, making them practical options for applications where open weights or cost efficiency matter.
 
 \begin{longtable}{rllrr}
   \caption{Open-weight models by accuracy.} \label{tab:open_weight} \\
@@ -515,13 +519,13 @@ The benchmark, evaluation reports and code are available in the project reposito
 
 \begin{itemize}
   \item Repository: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation}{\texttt{github.com/AlmazErmilov/FormationEval-an-Open-Benchmark...}}
-  \item Dataset JSON \cite{formationeval_dataset}: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/data/benchmark/formationeval_v0.1.json}{\texttt{data/benchmark/formationeval\_v0.1.json}}
-  \item Dataset PDF \cite{formationeval_pdf}: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/data/benchmark/formationeval_v0.1.pdf}{\texttt{data/benchmark/formationeval\_v0.1.pdf}}
-  \item Leaderboard: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/leaderboard.md}{\texttt{eval/results/leaderboard.md}}
-  \item Analysis: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/analysis.md}{\texttt{eval/results/analysis.md}}
-  \item Per-question results: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/main/eval/results/questions.csv}{\texttt{eval/results/questions.csv}}
-  \item Generation scripts: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/tree/main/src}{\texttt{src/}}
-  \item Evaluation scripts: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/tree/main/eval}{\texttt{eval/}}
+  \item Dataset JSON \cite{formationeval_dataset}: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/data/benchmark/formationeval_v0.1.json}{\texttt{data/benchmark/formationeval\_v0.1.json}}
+  \item Dataset PDF \cite{formationeval_pdf}: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/data/benchmark/formationeval_v0.1.pdf}{\texttt{data/benchmark/formationeval\_v0.1.pdf}}
+  \item Leaderboard: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/eval/results/leaderboard.md}{\texttt{eval/results/leaderboard.md}}
+  \item Analysis: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/eval/results/analysis.md}{\texttt{eval/results/analysis.md}}
+  \item Per-question results: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/eval/results/questions.csv}{\texttt{eval/results/questions.csv}}
+  \item Generation scripts: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/tree/v0.1/src}{\texttt{src/}}
+  \item Evaluation scripts: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/tree/v0.1/eval}{\texttt{eval/}}
 \end{itemize}
 
 \section{Conclusion and future work}
@@ -598,7 +602,7 @@ The MCQ generation system prompt instructs the model to:
 \item Include provenance metadata and contamination risk assessment
 \end{enumerate}
 
-The full system prompt (475 lines) is available in the repository at \texttt{src/prompts/mcq\_generator\_system\_prompt.txt}.
+The full system prompt (475 lines) is available in the repository at \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{\texttt{src/prompts/mcq\_generator\_system\_prompt.txt}}.
 
 \section{Bias mitigation summary}
 
