@@ -29,6 +29,20 @@ Planned but optional "future-proof" fields exist (e.g., `image`, `evidence`, `to
 
 ---
 
+## Current release (v0.1)
+
+- **505 questions** across 7 domains (petrophysics, petroleum geology, geophysics, reservoir engineering, sedimentology, drilling, production)
+- **3 sources**: Ellis & Singer (2007), Bjørlykke (2010), TU Delft OCW
+- **72 models evaluated** via Azure OpenAI and OpenRouter
+
+**Top performers:** Gemini 3 Pro Preview (99.8%), GLM-4.7 (98.6%), Gemini 3 Flash Preview (98.2%)
+
+**Open-weight leaders:** GLM-4.7 (98.6%), DeepSeek-R1 (96.2%), DeepSeek-V3.2 (94.9%)
+
+See the [leaderboard](eval/results/leaderboard.md) and [analysis](eval/results/analysis.md) for full results.
+
+---
+
 ## Dataset format
 
 Recommended storage: **JSONL** (one item per line) or **JSON**.
@@ -137,3 +151,31 @@ Users may generate private question sets from textbooks/exams they are legally e
 See [`data/sources/open/README.md`](data/sources/open/README.md) for the registry of open-licensed materials.
 
 A PDF version of the benchmark is available at `data/benchmark/formationeval_v0.1.pdf` (generated via `src/export_benchmark_pdf.py`).
+
+The technical paper is available at [`paper/FormationEval_v0.1_paper.pdf`](paper/FormationEval_v0.1_paper.pdf).
+
+---
+
+## Contributing
+
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
+- Verifying existing questions
+- Adding new questions from allowed sources
+- Schema compliance
+
+---
+
+## License
+
+This project is licensed under [CC BY 4.0](LICENSE). You are free to share and adapt the material with appropriate attribution.
+
+---
+
+## Citation
+
+If you use FormationEval in your research, please cite:
+
+```
+Ermilov, A. (2025). FormationEval: An open benchmark for oil and gas geoscience MCQ evaluation.
+GitHub repository. https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation
+```
