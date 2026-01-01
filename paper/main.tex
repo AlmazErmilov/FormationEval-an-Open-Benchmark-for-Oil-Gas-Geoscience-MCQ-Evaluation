@@ -139,7 +139,7 @@ The system prompt emphasizes that questions must be standalone---answerable from
 
 Human spot-checking is essential despite high LLM instruction-following reliability. For each source chapter, 5--10 questions were manually verified against the source material to confirm: (1) the marked answer is correct and unambiguous; (2) distractors are plausible but clearly wrong; (3) no copied phrases appear in questions or answers; (4) the rationale supports the marked answer.
 
-The full dataset (505 questions across 45+ chapters) was reviewed in batches grouped by source and chapter. The audit log records batch status and any issues requiring correction. One question required fixing during the final review pass.
+The full dataset (505 questions across 45+ chapters) was reviewed in batches grouped by source and chapter. The audit log records batch status and any issues requiring correction. Several questions required fixing during the final review pass.
 
 The required rationale field accelerated verification: when a rationale contradicts the answer it claims to support, the error is immediately visible without re-reading source material.
 
@@ -488,7 +488,7 @@ Position bias is generally low across models, with most showing near-uniform A/B
 
 \textbf{Contamination risk}: While questions are generated from concepts rather than copied, the underlying topics appear in textbooks that may be in model training data. Contamination risk labels are provided but actual training data overlap cannot be verified.
 
-\textbf{Quality assurance limits}: Human verification covered spot checks rather than exhaustive review. One question was corrected during the final pass; additional errors may remain.
+\textbf{Quality assurance limits}: Human verification covered spot checks rather than exhaustive review. Several questions were corrected during the final pass; additional errors may remain.
 
 \textbf{Domain coverage}: Petrophysics dominates (54\% of questions) due to source availability, which may not reflect the breadth of petroleum geoscience equally.
 
