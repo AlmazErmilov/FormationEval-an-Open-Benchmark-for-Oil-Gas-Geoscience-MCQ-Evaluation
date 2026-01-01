@@ -23,7 +23,7 @@ UiT The Arctic University of Norway\\
 \maketitle
 
 \begin{abstract}
-This paper presents FormationEval, an open multiple-choice question benchmark for evaluating language models on petroleum geoscience and subsurface disciplines. The dataset contains 505 questions across seven domains including petrophysics, petroleum geology and reservoir engineering, derived from three authoritative sources using a concept-based approach that avoids verbatim copying of copyrighted text. Each question includes provenance metadata and a contamination risk label to support reproducible evaluation. The evaluation covers 72 models from major providers including OpenAI, Anthropic, Google, Meta and open-weight alternatives. The top performers achieve over 97\% accuracy, with Gemini 3 Pro Preview reaching 99.8\%. Among open-weight models, GLM-4.7 leads at 98.6\%. The performance gap between open-weight and closed models is narrower than expected, with several cost-effective open-weight models exceeding 90\% accuracy. Petrophysics emerges as the most challenging domain across all models, while smaller models show wider performance variance. Residual length bias in the dataset (correct answers tend to be longer) is documented along with bias mitigation strategies applied during construction. The benchmark, evaluation code and results are publicly available.
+This paper presents FormationEval, an open multiple-choice question benchmark for evaluating language models on petroleum geoscience and subsurface disciplines. The dataset contains 505 questions across seven domains including petrophysics, petroleum geology and reservoir engineering, derived from three authoritative sources using a concept-based approach that avoids verbatim copying of copyrighted text. Each question includes provenance metadata and a contamination risk label to support reproducible evaluation. The evaluation covers 72 models from major providers including OpenAI, Anthropic, Google, Meta and open-weight alternatives. The top performers achieve over 97\% accuracy, with Gemini 3 Pro Preview reaching 99.8\%. Among open-weight models, GLM-4.7 leads at 98.6\%. The performance gap between open-weight and closed models is narrower than expected, with several lower-cost open-weight models exceeding 90\% accuracy. Petrophysics emerges as the most challenging domain across all models, while smaller models show wider performance variance. Residual length bias in the dataset (correct answers tend to be longer) is documented along with bias mitigation strategies applied during construction. The benchmark, evaluation code and results are publicly available.
 \end{abstract}
 
 \section{Introduction}
@@ -310,7 +310,7 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
   \includegraphics[width=\textwidth]{accuracy_vs_price.pdf}
   \caption{Cost-effectiveness analysis: accuracy versus average token price.
            Several high-accuracy models (Grok-4.1-fast, DeepSeek-R1) offer strong performance at lower cost.
-           Open-weight models (blue) provide cost-effective alternatives to closed models (orange).}
+           Open-weight models (blue) provide lower-cost alternatives to closed models (orange).}
   \label{fig:accuracy_vs_price}
 \end{figure}
 
@@ -390,7 +390,7 @@ The ten hardest questions (by model failure rate) reveal systematic knowledge ga
 
 Eight of the ten hardest questions are from the Petrophysics domain, covering specialized topics like neutron-density crossplot interpretation, invasion profiles and tool calibration. One geology question (strike-slip stepovers) and one easy-labeled question (LWD propagation) also appear in the top 10.
 
-Model agreement analysis shows: 21.6\% of questions were answered correctly by all 72 models, 0\% were missed by all models and 78.4\% showed mixed results. This distribution suggests the benchmark effectively discriminates between model capabilities.
+Model agreement analysis shows: 21.6\% of questions were answered correctly by all 72 models, 0\% were missed by all models and 78.4\% showed mixed results. Most questions (78.4\%) produce varied results, helping distinguish model performance levels.
 
 % Source pointers: eval/results/analysis.md
 
@@ -411,7 +411,7 @@ The highest-accuracy open-weight models are GLM-4.7, DeepSeek-R1, DeepSeek-V3.2,
 
 Across domains, open-weight averages are highest in Reservoir Engineering (93.3\%) and lowest in Petrophysics (82.0\%), with other domains between 86.4\% and 90.2\% (Drilling 87.3\%, Geophysics 89.8\%, Petroleum Geology 90.2\%, Production 86.4\%, Sedimentology 89.6\%). GLM-4.7 is tied for the top open-weight score in every domain and is the sole top model in Geophysics, Petroleum Geology, Petrophysics, and Sedimentology. The lowest scores across all domains come from Llama-3.2-3b-instruct, including 45.8\% in Drilling and 51.1\% in Petrophysics.
 
-These results suggest that petroleum geoscience knowledge is reasonably well-represented in open-weight models. Even models with fewer parameters and lower costs show useful domain understanding, making them practical options for applications where open weights or cost efficiency matter.
+These results suggest that petroleum geoscience knowledge is reasonably well-represented in open-weight models. Even models with fewer parameters and lower costs show useful domain understanding, making them practical options for applications where open weights or cost efficiency matter. Smaller closed models also perform well---GPT-5-nano variants achieve 92.9--93.3\%---suggesting that compact models of either type can handle this domain.
 
 \begin{longtable}{rllrr}
   \caption{Open-weight models by accuracy.} \label{tab:open_weight} \\
