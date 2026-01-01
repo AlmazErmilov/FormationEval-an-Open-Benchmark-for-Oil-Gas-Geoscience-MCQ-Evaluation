@@ -45,3 +45,17 @@ docs/azure_setup.md
 eval/models_to_add.md
 eval/export_hardest_questions.py
 paper/main.pdf
+paper/figures/generate_charts.py
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
