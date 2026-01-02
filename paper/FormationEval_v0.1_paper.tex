@@ -12,28 +12,28 @@
 
 \graphicspath{{figures/}}
 
-\title{FormationEval: an open benchmark for oil and gas geoscience MCQ evaluation}
+\title{FormationEval, an open multiple-choice benchmark for petroleum geoscience}
 \author{
 Almaz Ermilov\\
 UiT The Arctic University of Norway\\
 \texttt{almaz.ermilov@gmail.com}
 }
-\date{}
+\date{Preprint}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-This paper presents FormationEval, an open multiple-choice question benchmark for evaluating language models on petroleum geoscience and subsurface disciplines. The dataset contains 505 questions across seven domains including petrophysics, petroleum geology and reservoir engineering, derived from three authoritative sources using a concept-based approach that avoids verbatim copying of copyrighted text. Each question includes provenance metadata and a contamination risk label to support reproducible evaluation. The evaluation covers 72 models from major providers including OpenAI, Anthropic, Google, Meta and open-weight alternatives. The top performers achieve over 97\% accuracy, with Gemini 3 Pro Preview reaching 99.8\%. Among open-weight models, GLM-4.7 leads at 98.6\%. The performance gap between open-weight and closed models is narrower than expected, with several lower-cost open-weight models exceeding 90\% accuracy. Petrophysics emerges as the most challenging domain across all models, while smaller models show wider performance variance. Residual length bias in the dataset (correct answers tend to be longer) is documented along with bias mitigation strategies applied during construction. The benchmark, evaluation code and results are publicly available.
+This paper presents FormationEval, an open multiple-choice question benchmark for evaluating language models on petroleum geoscience and subsurface disciplines. The dataset contains 505 questions across seven domains including petrophysics, petroleum geology and reservoir engineering, derived from three authoritative sources using a concept-based approach that avoids verbatim copying of copyrighted text. Each question includes source metadata to support reproducible evaluation. The evaluation covers 72 models from major providers including OpenAI, Anthropic, Google, Meta and open-weight alternatives. The top performers achieve over 97\% accuracy, with Gemini 3 Pro Preview reaching 99.8\%. Among open-weight models, GLM-4.7 leads at 98.6\%. The performance gap between open-weight and closed models is narrower than expected, with several lower-cost open-weight models exceeding 90\% accuracy. Petrophysics emerges as the most challenging domain across all models, while smaller models show wider performance variance. Residual length bias in the dataset (correct answers tend to be longer) is documented along with bias mitigation strategies applied during construction. The benchmark, evaluation code and results are publicly available.
 \end{abstract}
 
 \section{Introduction}
 
-Large language models are increasingly applied to domain-specific tasks in science and engineering, yet their capabilities in specialized fields remain difficult to assess. General benchmarks like MMLU \cite{mmlu} cover broad knowledge but lack depth in technical disciplines. For petroleum geoscience and subsurface engineering---fields requiring understanding of well logging physics, reservoir characterization and geological interpretation---no widely adopted public benchmark exists.
+Large language models are increasingly applied to domain-specific tasks in science and engineering, yet their capabilities in specialized fields remain difficult to assess. General benchmarks like MMLU \cite{mmlu} cover broad knowledge but offer limited focus on specialized fields. For petroleum geoscience and subsurface engineering---fields requiring understanding of well logging physics, reservoir characterization and geological interpretation---no widely adopted public benchmark exists.
 
 This work addresses the gap with FormationEval, a 505-question multiple-choice benchmark covering seven domains: petrophysics, petroleum geology, geophysics, reservoir engineering, sedimentology, drilling engineering and production engineering. Questions are derived from authoritative textbooks and open courseware using a concept-based methodology that tests understanding rather than phrase recognition, while respecting copyright constraints.
 
-The contributions are: (1) a methodology for generating MCQs from technical sources without verbatim copying; (2) a curated dataset with provenance metadata and contamination risk labels; and (3) an evaluation of 72 language models across multiple providers, revealing performance patterns by domain and difficulty level.
+The contributions are: (1) a methodology for generating MCQs from technical sources without verbatim copying; (2) a curated dataset with source metadata and contamination risk labels; and (3) an evaluation of 72 language models across multiple providers, revealing performance patterns by domain and difficulty level.
 
 % Source pointers: README.md, data/benchmark/README.md
 
@@ -72,11 +72,11 @@ The contributions are: (1) a methodology for generating MCQs from technical sour
 
 \section{Related work}
 
-General-purpose benchmarks like MMLU \cite{mmlu} and ARC \cite{arc} evaluate broad knowledge and reasoning capabilities but provide limited coverage of specialized domains. MMLU includes professional exam questions across 57 subjects but only a few relate to earth sciences or engineering. Domain-specific benchmarks exist for medicine, law and computer science, but petroleum geoscience lacks an equivalent evaluation resource.
+General-purpose benchmarks like MMLU \cite{mmlu} evaluate broad knowledge and reasoning capabilities but provide limited coverage of specialized domains. MMLU includes professional exam questions across 57 subjects but only a few relate to earth sciences or engineering. Domain-specific benchmarks exist for medicine, law and computer science, but petroleum geoscience lacks an equivalent evaluation resource.
 
-MCQ generation from text has been explored using both rule-based and neural approaches. The concept-based methodology presented here differs by emphasizing original question formulation rather than transformation of source sentences, prioritizing both copyright compliance and assessment of understanding over recognition.
+Existing MCQ generation methods typically transform source sentences into questions. The concept-based methodology presented here differs by emphasizing original question formulation, prioritizing copyright compliance and testing conceptual understanding.
 
-% Suggested citations: MMLU \cite{mmlu}, ARC \cite{arc}
+% Suggested citations: MMLU \cite{mmlu}
 
 \section{Benchmark design and construction}
 
@@ -84,9 +84,9 @@ MCQ generation from text has been explored using both rule-based and neural appr
 
 FormationEval uses a four-choice multiple-choice question format with exactly one correct answer per question. This format is compatible with standard evaluation frameworks and enables straightforward accuracy computation.
 
-Questions cover seven domains: Petrophysics (well logging, formation evaluation), Petroleum Geology (source rocks, migration, trapping), Sedimentology (depositional environments, diagenesis), Geophysics (seismic interpretation, rock physics), Reservoir Engineering (fluid flow, recovery mechanisms), Drilling Engineering (wellbore stability, operations) and Production Engineering (completions, artificial lift). Questions may belong to multiple domains when the topic spans disciplines.
+Questions cover seven domains: Petrophysics (well logging, formation evaluation), Petroleum Geology (source rocks, migration, trapping), Sedimentology (depositional environments, diagenesis), Geophysics (seismic interpretation, rock physics), Reservoir Engineering (fluid flow, recovery mechanisms), Drilling Engineering (wellbore stability, operations) and Production Engineering (completions, artificial lift). Questions can belong to more than one domain.
 
-Each question is assigned a difficulty level (easy, medium or hard) based on cognitive demand: easy questions test definitions and direct recall, medium questions require applying concepts to scenarios, and hard questions involve integrating multiple concepts or analyzing edge cases.
+Difficulty levels reflect educational background. Easy questions (undergraduate) test definitions and direct recall. Medium questions (graduate or professional) require applying concepts to scenarios. Hard questions (specialist) involve integrating multiple concepts or edge cases.
 
 % Source pointers: README.md, data/benchmark/README.md
 
@@ -96,7 +96,7 @@ The benchmark draws from three sources: Ellis \& Singer's \textit{Well Logging f
 
 The benchmark uses a concept-based derivation approach: questions are written from scratch based on concepts extracted from source material, without copying sentences or closely paraphrasing distinctive problem structures. This respects the legal distinction between ideas (not copyrightable) and expression (protected). Standard technical terms (porosity, Archie equation, neutron-density crossplot) may appear as-is since terminology is not copyrightable.
 
-All generated items are tagged with \texttt{derivation\_mode: concept\_based} and include source provenance fields that enable verification without reproducing protected text.
+All generated items are tagged with \texttt{derivation\_mode: concept\_based} and include source tracking fields that enable verification without reproducing protected text.
 
 % Source pointers: data/sources/open/README.md, README.md
 
@@ -127,7 +127,7 @@ The system prompt emphasizes that questions must be standalone---answerable from
 
 % Source pointers: src/README.md
 
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{mcq_pipeline.pdf}
   \caption{MCQ generation pipeline: source PDFs are converted to Markdown via OCR,
@@ -138,7 +138,7 @@ The system prompt emphasizes that questions must be standalone---answerable from
 
 \subsection{Quality assurance and audit}
 
-Human spot-checking is essential despite high LLM instruction-following reliability. For each source chapter, 5--10 questions were manually verified against the source material to confirm: (1) the marked answer is correct and unambiguous; (2) distractors are plausible but clearly wrong; (3) no copied phrases appear in questions or answers; (4) the rationale supports the marked answer.
+Human spot-checking is essential despite high LLM instruction-following reliability. For each source chapter, 2--5 questions were manually verified against the source material to confirm: (1) the marked answer is correct and unambiguous; (2) distractors are plausible but clearly wrong; (3) no copied phrases appear in questions or answers; (4) the rationale supports the marked answer.
 
 The full dataset (505 questions across 45+ chapters) was reviewed in batches grouped by source and chapter. The audit log records batch status and any issues requiring correction. Several questions required fixing during the final review pass.
 
@@ -158,11 +158,13 @@ A model using only surface heuristics could achieve approximately 70\% accuracy 
 
 \textbf{Mitigation applied}: 136 distractors were expanded with technical context to reduce length imbalance (from 64.6\% to 51.5\% longest-is-correct). All ``always'' instances were replaced with varied synonyms (invariably, necessarily, inherently) to break the single-word exploit. The word ``may'' was added to 13 distractors with ``no-effect'' claims to balance hedging language.
 
-\textbf{Residual issues}: Length bias remains above the 25\% baseline. The absolute-word synonyms all have 0\% correct rate, making a combined ``any-absolute-word=wrong'' heuristic still partially exploitable. These limitations are documented for transparency. See Appendix C for detailed before/after metrics.
+\textbf{Residual issues}: Length bias remains above the 25\% baseline. The absolute-word synonyms all have 0\% correct rate, making a combined ``any-absolute-word=wrong'' heuristic still partially exploitable.
+
+For benchmarking purposes, these residual biases are unlikely to significantly affect relative comparisons. Since the same patterns apply to all questions, any bias-based advantage would affect all models equally, preserving the validity of model-to-model comparisons. In practice, modern language models tend to reason about question content rather than exploit surface-level word patterns. The major exploits---length as a proxy for correctness, ``always'' as a marker for wrong answers, ``may'' as a marker for correct answers---have been addressed. After mitigation, correct answers average 87 characters versus 74 for distractors---a difference of roughly 13 characters (2--3 words). With the longest answer correct only 51.5\% of the time, a length-based strategy would fail nearly half the time. The remaining issues with absolute-word synonyms affect fewer than 10\% of questions. These limitations are documented for transparency; see Appendix~C for detailed before/after metrics.
 
 % Source pointers: docs/bias_fix_tracking.md, data/benchmark/README.md
 
-\subsection{Human-readable export}
+\subsection{PDF export for review}
 
 To facilitate human review, the dataset is exported to PDF with a cover page, question cards showing all metadata and bookmarks for navigation. This format is more accessible than raw JSON for domain experts performing quality checks and enables browsing questions by domain or topic without programming tools.
 An accompanying PDF rendering, generated from the JSON release, provides a readable format for browsing and spot checks \cite{formationeval_dataset,formationeval_pdf}.
@@ -171,20 +173,11 @@ An accompanying PDF rendering, generated from the JSON release, provides a reada
 
 \section{Dataset summary}
 
-Version 0.1 of FormationEval contains 505 questions in English covering 811 unique topics. Table~\ref{tab:summary} summarizes key metrics and Table~\ref{tab:distribution} shows the distribution by domain and difficulty. Table~\ref{tab:sources} provides the breakdown by source. Figure~\ref{fig:dataset_composition} visualizes these distributions.
+Version 0.1 of FormationEval contains 505 questions in English covering 811 unique topics. Table~\ref{tab:summary} summarizes key metrics and Table~\ref{tab:distribution} shows the distribution by domain and difficulty. Questions are distributed across three sources: Bj{\o}rlykke's textbook contributes the largest share (262 questions, 52\%), followed by Ellis \& Singer (219 questions, 43\%) and TU Delft open courseware (24 questions, 5\%). Figure~\ref{fig:dataset_composition} visualizes these distributions.
 
 Petrophysics represents the largest domain (54\% of questions) reflecting the depth of coverage in the well logging textbook. The difficulty distribution targets 30\% easy, 50\% medium and 20\% hard; the actual distribution (26\%/54\%/20\%) is close to these targets. Answer positions are balanced: A=27\%, B=26\%, C=25\%, D=22\%.
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=\textwidth]{dataset_composition.pdf}
-  \caption{Dataset composition: (a) questions by domain, with Petrophysics dominating due to source coverage; (b) difficulty distribution close to 30/50/20 targets; (c) answer position distribution near the expected 25\% baseline.}
-  \label{fig:dataset_composition}
-\end{figure}
-
-% Source pointers: data/benchmark/README.md
-
-\begin{table}[h]
+\begin{table}[htbp]
   \centering
   \caption{Dataset summary (v0.1).}
   \label{tab:summary}
@@ -201,7 +194,7 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
   \end{tabular}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[htbp]
   \centering
   \caption{Domain and difficulty distribution. Domain counts are non-exclusive: questions may belong to multiple domains.}
   \label{tab:distribution}
@@ -226,21 +219,16 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
   \end{tabular}
 \end{table}
 
-\begin{table}[h]
+\begin{figure}[htbp]
   \centering
-  \caption{Source breakdown.}
-  \label{tab:sources}
-  \begin{tabular}{lr}
-    \toprule
-    Source & Questions \\
-    \midrule
-    Ellis \& Singer -- Well Logging for Earth Scientists (2007) & 219 \\
-    Bj{\o}rlykke -- Petroleum Geoscience (2010) & 262 \\
-    TU Delft OCW -- Petroleum Geology (2008) & 24 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+  \includegraphics[width=\textwidth]{dataset_composition.pdf}
+  \caption{Dataset composition: (a) questions by domain, with Petrophysics dominating due to source coverage; (b) difficulty distribution close to 30/50/20 targets; (c) answer position distribution near the expected 25\% baseline.}
+  \label{fig:dataset_composition}
+\end{figure}
 
+% Source pointers: data/benchmark/README.md
+
+\FloatBarrier
 \section{Evaluation setup}
 
 \subsection{Models and providers}
@@ -255,7 +243,7 @@ Models range from compact 3B parameter variants to frontier reasoning models. Op
 
 The evaluation uses a zero-shot prompt format to assess model knowledge without providing examples:
 
-\textbf{System prompt:} ``You are taking a multiple-choice exam on Oil \& Gas geoscience. For each question, select the single best answer from the options provided. State your final answer as a single letter: A, B, C, or D.''
+\textbf{System prompt:} ``You are taking a multiple-choice exam on Oil \& Gas geoscience. For each question, select the single best answer from the options provided. State your final answer as a single letter: A, B, C or D.''
 
 \textbf{User prompt:} The question text followed by four labeled choices (A--D) and ``Answer:'' as the final line.
 
@@ -263,7 +251,7 @@ Answer extraction uses flexible regex patterns to handle varied response formats
 
 % Source pointers: docs/evaluation_pipeline_concept.md, eval/extraction.py
 
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{eval_pipeline.pdf}
   \caption{Evaluation pipeline: models are configured via YAML, questions sent to
@@ -284,7 +272,7 @@ Secondary metrics include accuracy by difficulty level (easy, medium, hard) and 
 
 API responses are cached per model and question in a structured directory (\texttt{cache/\{model\}/\{question\_id\}.json}). This enables resuming interrupted evaluation runs, re-analyzing results without additional API costs and debugging extraction failures.
 
-Evaluation can be re-run in analyze-only mode to regenerate reports from cached responses. Output files include machine-readable JSON, human-readable Markdown tables and CSV exports with per-question breakdowns including raw model responses (truncated to 500 characters).
+Evaluation can be re-run in analyze-only mode to regenerate reports from cached responses. Output files include machine-readable JSON, Markdown tables and CSV exports with per-question breakdowns including raw model responses (truncated to 500 characters).
 
 % Source pointers: eval/README.md
 
@@ -298,7 +286,7 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
 
 % Source pointers: eval/results/leaderboard.md
 
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{top20_accuracy.pdf}
   \caption{Top 20 models on FormationEval v0.1 by accuracy. Blue bars indicate open-weight models.
@@ -306,7 +294,7 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
   \label{fig:top20_accuracy}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{accuracy_vs_price.pdf}
   \caption{Cost-effectiveness analysis: accuracy versus average token price.
@@ -317,7 +305,7 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
 
 \FloatBarrier
 
-\begin{table}[h]
+\begin{table}[htbp]
   \centering
   \caption{Top 25 models by accuracy. See Appendix~\ref{app:full_leaderboard} for the complete 72-model leaderboard.}
   \label{tab:leaderboard}
@@ -358,11 +346,11 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
 \FloatBarrier
 \subsection{By difficulty}
 
-Performance decreases with difficulty level, as expected. For top models, easy questions are nearly saturated (100\% for several models), while hard questions remain discriminative. Gemini 3 Pro Preview achieves 100\% on both easy and hard questions, with a single error on a medium question. GLM-4.7 shows 100\% easy, 98.5\% medium and 97.0\% hard.
+Across all model tiers, medium questions show the lowest accuracy—lower than both easy and hard (Figure~\ref{fig:difficulty_breakdown}). Even Gemini 3 Pro Preview made its single error on a medium question. Medium questions are more comparison-heavy and tool-specific, have a higher calculation rate (8.8\% versus 5.1\% for hard), and have less length-bias cueing than hard (correct answer is longest in 48.2\% of medium versus 60.6\% of hard, per the benchmark dataset \cite{formationeval_dataset}).
 
 Smaller models show wider variance by difficulty. Llama-3.2-3b-instruct achieves 62.9\% on easy questions but only 54.7\% on medium, indicating difficulty labels correlate with model performance patterns. Figure~\ref{fig:difficulty_breakdown} compares accuracy by difficulty across model tiers.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.85\textwidth]{difficulty_breakdown.pdf}
   \caption{Accuracy by difficulty level across model tiers. Top-tier models show consistent performance across difficulty levels, while bottom-tier models exhibit larger gaps between easy and harder questions.}
@@ -378,9 +366,28 @@ Petrophysics emerges as the most challenging domain across all models, with typi
 
 The top model (Gemini 3 Pro Preview) achieves near-perfect scores across all domains: 99.6\% Petrophysics, 100\% for all other domains. Open-weight leader GLM-4.7 shows 98.2\% Petrophysics versus 99--100\% for other domains.
 
-Production Engineering and Drilling Engineering show the highest average accuracy, though this may reflect smaller question counts (14 and 24 questions respectively) rather than domain difficulty. Figure~\ref{fig:domain_heatmap} shows accuracy patterns across domains for the top 15 models.
+Table~\ref{tab:domain_avg} shows average accuracy per domain across all 72 models. Reservoir Engineering leads at 95.6\%, while Petrophysics is consistently lowest at 87.5\%. Top models often achieve 100\% on Production and Drilling (which have fewer questions: 14 and 24 respectively), but overall averages place these domains in the middle of the ranking. Figure~\ref{fig:domain_heatmap} shows accuracy patterns for the top 15 models.
 
-\begin{figure}[h]
+\begin{table}[htbp]
+  \centering
+  \caption{Average accuracy by domain across all 72 models.}
+  \label{tab:domain_avg}
+  \begin{tabular}{lr}
+    \toprule
+    Domain & Average accuracy \\
+    \midrule
+    Reservoir Engineering & 95.6\% \\
+    Petroleum Geology & 93.9\% \\
+    Sedimentology & 93.6\% \\
+    Geophysics & 93.2\% \\
+    Production Engineering & 91.5\% \\
+    Drilling Engineering & 91.3\% \\
+    Petrophysics & 87.5\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{domain_heatmap.pdf}
   \caption{Model accuracy by domain for top 15 models. Petrophysics shows consistently lower accuracy than other domains across all models, reflecting the technical depth of well logging concepts.}
@@ -405,18 +412,18 @@ Model agreement analysis shows: 21.6\% of questions were answered correctly by a
 
 A key question for this evaluation was whether open-weight models---especially smaller and cheaper ones---have enough domain knowledge for petroleum geoscience. While larger closed models were expected to perform well, the capabilities of open-weight alternatives in this specialized field were less clear.
 
-Of the 72 models evaluated, 32 have publicly available weights. Open-weight accuracy ranges from 57.6\% (Llama-3.2-3b-instruct) to 98.6\% (GLM-4.7), with mean 85.7\% and median 87.7\%. Eleven open-weight models reach at least 90\%, and 22 reach at least 85\%. Figure~\ref{fig:open_weight_models} visualizes all open-weight models by accuracy; Table~\ref{tab:open_weight} provides the detailed breakdown.
+Of the 72 models evaluated, 32 have publicly available weights. Open-weight accuracy ranges from 57.6\% (Llama-3.2-3b-instruct) to 98.6\% (GLM-4.7), with mean 85.7\% and median 87.7\%. Eleven open-weight models reach at least 90\% and 22 reach at least 85\%. Figure~\ref{fig:open_weight_models} visualizes all open-weight models by accuracy; Table~\ref{tab:open_weight} provides the detailed breakdown.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{open_weight_models.pdf}
   \caption{All 32 open-weight models ranked by accuracy. GLM-4.7 leads at 98.6\%, followed by DeepSeek-R1 (96.2\%) and DeepSeek-V3.2 (94.9\%). Color intensity indicates accuracy level.}
   \label{fig:open_weight_models}
 \end{figure}
 
-The highest-accuracy open-weight models are GLM-4.7, DeepSeek-R1, DeepSeek-V3.2, Llama-4-Scout, and Mistral Medium 3.1, followed by large Qwen3 variants at 93.1\%. Qwen3 base variants span 88.7--93.1\%, Qwen3-VL variants 87.5--90.3\%, and GPT-OSS 89.3--90.7\%. Mistral and Ministral models span 78.8--93.1\%; GLM-4-32B reaches 87.3\%; Phi-4 reasoning-plus reaches 87.7\%; DeepSeek-R1-0528-Qwen3-8B reaches 85.1\%. DeepSeek-R1 at \$0.30/M input offers similar accuracy to GPT-5.1 variants at \$1.25/M input; Qwen3-14b reaches 92.9\% at \$0.05/M input.
+The highest-accuracy open-weight models are GLM-4.7, DeepSeek-R1, DeepSeek-V3.2, Llama-4-Scout and Mistral Medium 3.1, followed by large Qwen3 variants at 93.1\%. Qwen3 base variants span 88.7--93.1\%, Qwen3-VL variants 87.5--90.3\% and GPT-OSS 89.3--90.7\%. Mistral and Ministral models span 78.8--93.1\%; GLM-4-32B reaches 87.3\%; Phi-4 reasoning-plus reaches 87.7\%; DeepSeek-R1-0528-Qwen3-8B reaches 85.1\%. DeepSeek-R1 at \$0.30/M input offers similar accuracy to GPT-5.1 variants at \$1.25/M input; Qwen3-14b reaches 92.9\% at \$0.05/M input.
 
-Across domains, open-weight averages are highest in Reservoir Engineering (93.3\%) and lowest in Petrophysics (82.0\%), with other domains between 86.4\% and 90.2\% (Drilling 87.3\%, Geophysics 89.8\%, Petroleum Geology 90.2\%, Production 86.4\%, Sedimentology 89.6\%). GLM-4.7 is tied for the top open-weight score in every domain and is the sole top model in Geophysics, Petroleum Geology, Petrophysics, and Sedimentology. The lowest scores across all domains come from Llama-3.2-3b-instruct, including 45.8\% in Drilling and 51.1\% in Petrophysics.
+Across domains, open-weight averages are highest in Reservoir Engineering (93.3\%) and lowest in Petrophysics (82.0\%), with other domains between 86.4\% and 90.2\% (Drilling 87.3\%, Geophysics 89.8\%, Petroleum Geology 90.2\%, Production 86.4\%, Sedimentology 89.6\%). GLM-4.7 is tied for the top open-weight score in every domain and is the sole top model in Geophysics, Petroleum Geology, Petrophysics and Sedimentology. The lowest scores across all domains come from Llama-3.2-3b-instruct, including 45.8\% in Drilling and 51.1\% in Petrophysics.
 
 These results suggest that petroleum geoscience knowledge is reasonably well-represented in open-weight models. Even models with fewer parameters and lower costs show useful domain understanding, making them practical options for applications where open weights or cost efficiency matter. Smaller closed models also perform well---GPT-5-nano variants achieve 92.9--93.3\%---suggesting that compact models of either type can handle this domain.
 
@@ -516,7 +523,7 @@ The benchmark artifacts are organized for reproducibility:
 
 \textbf{Cached responses} (gitignored): Raw API responses per model/question, enabling re-analysis without API calls.
 
-\textbf{Human-readable formats}: PDF export of the full dataset with question cards, metadata and bookmarks for domain expert review.
+\textbf{PDF formats for review}: PDF export of the full dataset with question cards, metadata and bookmarks for domain expert review.
 
 Evaluation scripts support an analyze-only mode that regenerates reports from cached responses without making API calls, ensuring reproducibility even when model APIs change or become unavailable.
 
@@ -544,35 +551,37 @@ Evaluation of 72 models reveals that frontier models achieve over 97\% accuracy,
 
 Future work includes expanding to additional languages (Norwegian, Russian), adding questions from more sources to balance domain coverage and developing contamination detection methods. The benchmark is intended as a living resource, with new models added to the leaderboard as they become available.
 
+\FloatBarrier
 \appendix
 
 \section{Schema reference}
 
 Each question includes the following fields:
 
-\begin{table}[h]
-  \centering
-  \small
-  \begin{tabular}{ll}
-    \toprule
-    Field & Description \\
-    \midrule
-    \texttt{id} & Unique identifier \\
-    \texttt{question} & Question text \\
-    \texttt{choices} & Array of 4 options (A--D) \\
-    \texttt{answer\_index} & Correct answer index (0--3) \\
-    \texttt{answer\_key} & Correct answer letter (A--D) \\
-    \texttt{rationale} & Explanation of correct answer \\
-    \texttt{difficulty} & easy $|$ medium $|$ hard \\
-    \texttt{domains} & Array of broad categories \\
-    \texttt{topics} & Array of specific subjects \\
-    \texttt{sources} & Provenance metadata array \\
-    \texttt{derivation\_mode} & Always ``concept\_based'' \\
-    \texttt{metadata.calc\_required} & Boolean (calculation needed) \\
-    \texttt{metadata.contamination\_risk} & low $|$ medium $|$ high \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+\vspace{1em}
+\begin{center}
+\small
+\begin{tabular}{ll}
+  \toprule
+  Field & Description \\
+  \midrule
+  \texttt{id} & Unique identifier \\
+  \texttt{question} & Question text \\
+  \texttt{choices} & Array of 4 options (A--D) \\
+  \texttt{answer\_index} & Correct answer index (0--3) \\
+  \texttt{answer\_key} & Correct answer letter (A--D) \\
+  \texttt{rationale} & Explanation of correct answer \\
+  \texttt{difficulty} & easy $|$ medium $|$ hard \\
+  \texttt{domains} & Array of broad categories \\
+  \texttt{topics} & Array of specific subjects \\
+  \texttt{sources} & Provenance metadata array \\
+  \texttt{derivation\_mode} & Always ``concept\_based'' \\
+  \texttt{metadata.calc\_required} & Boolean (calculation needed) \\
+  \texttt{metadata.contamination\_risk} & low $|$ medium $|$ high \\
+  \bottomrule
+\end{tabular}
+\end{center}
+\vspace{1em}
 
 Contamination risk indicates likelihood that similar questions exist in LLM training data: \textit{low} for questions unique to this source, \textit{medium} for common concepts and \textit{high} for standard textbook topics.
 
@@ -582,7 +591,7 @@ Contamination risk indicates likelihood that similar questions exist in LLM trai
 
 \textbf{System prompt:}
 \begin{quote}
-\texttt{You are taking a multiple-choice exam on Oil \& Gas geoscience. For each question, select the single best answer from the options provided. State your final answer as a single letter: A, B, C, or D.}
+\texttt{You are taking a multiple-choice exam on Oil \& Gas geoscience. For each question, select the single best answer from the options provided. State your final answer as a single letter: A, B, C or D.}
 \end{quote}
 
 \textbf{User prompt format:}
@@ -597,26 +606,29 @@ Contamination risk indicates likelihood that similar questions exist in LLM trai
 
 \subsection{Generation prompt summary}
 
-The MCQ generation system prompt instructs the model to:
+The full system prompt (475 lines) is available in the repository at \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{\texttt{src/prompts/mcq\_generator\_system\_prompt.txt}}. Key instructions include:
 
 \begin{enumerate}
 \item Generate questions that test \textbf{understanding of concepts}, not recognition of phrases
+\item Test one concept per question
 \item Never copy sentences or descriptive phrases from source text
 \item Create standalone questions answerable from domain knowledge without access to the source chapter
+\item Cover key concepts without repetition
 \item Distribute difficulty: 30\% easy, 50\% medium, 20\% hard
 \item Balance answer options in length and structure
 \item Distribute correct answers evenly across positions A/B/C/D
+\item Avoid ``All of the above'' and ``None of the above''
+\item Avoid negative phrasing (``Which is NOT...'')
 \item Avoid exploitable patterns with qualifier words
-\item Include provenance metadata and contamination risk assessment
+\item Provide rationale explaining why the answer is correct
+\item Include source metadata and contamination risk assessment
 \end{enumerate}
-
-The full system prompt (475 lines) is available in the repository at \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{\texttt{src/prompts/mcq\_generator\_system\_prompt.txt}}.
 
 \section{Bias mitigation summary}
 
 Tables~\ref{tab:length_bias} and \ref{tab:qualifier_bias} summarize the bias mitigation efforts.
 
-\begin{table}[h]
+\begin{table}[htbp]
   \centering
   \caption{Length bias before and after mitigation.}
   \label{tab:length_bias}
@@ -631,7 +643,7 @@ Tables~\ref{tab:length_bias} and \ref{tab:qualifier_bias} summarize the bias mit
   \end{tabular}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[htbp]
   \centering
   \caption{Qualifier word patterns before and after mitigation.}
   \label{tab:qualifier_bias}
@@ -641,9 +653,9 @@ Tables~\ref{tab:length_bias} and \ref{tab:qualifier_bias} summarize the bias mit
     \midrule
     ``always'' & 0 & 49 & 0\% & Replaced with synonyms \\
     ``invariably'' & 0 & 12 & 0\% & New (from ``always'') \\
-    ``necessarily'' & 0 & 12 & 0\% & New (from ``always'') \\
-    ``inherently'' & 0 & 11 & 0\% & New (from ``always'') \\
-    ``consistently'' & 0 & 8 & 0\% & New (from ``always'') \\
+    ``necessarily'' & 0 & 14 & 0\% & New (from ``always'') \\
+    ``inherently'' & 0 & 12 & 0\% & New (from ``always'') \\
+    ``consistently'' & 0 & 9 & 0\% & New (from ``always'') \\
     ``may'' & 13 & 0 & 100\% & Original (pre-fix) \\
     ``may'' & 13 & 13 & 50\% & After fix \\
     \bottomrule
@@ -656,7 +668,7 @@ Tables~\ref{tab:length_bias} and \ref{tab:qualifier_bias} summarize the bias mit
 
 \section{Audit summary}
 
-Human verification covered 5--10 questions per source chapter (spot-check approach). The full dataset (505 questions across 45+ chapters) was reviewed in batches:
+Human verification covered 2--5 questions per source chapter (spot-check approach). The full dataset (505 questions across 45+ chapters) was reviewed in batches:
 
 \begin{itemize}
 \item Schema compliance: All questions validated
