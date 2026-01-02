@@ -1,5 +1,22 @@
 # Progress log
 
+## 2026-01-02: Paper structure and bias section improvements
+
+- Converted Table 3 (Source breakdown) to inline prose in Section 4, reducing redundancy with Section 3.2
+- Added practical impact explanation to Section 3.6 (Bias analysis and mitigation) explaining why residual biases don't invalidate relative model comparisons
+- Included final character averages (87 vs 74) and interpretation in bias discussion
+- Fixed float placement by reordering floats to match text reference order and adding FloatBarrier before Section 5
+
+## 2026-01-02: Paper wording and data accuracy review
+
+- Updated title to "FormationEval, an open multiple-choice benchmark for petroleum geoscience"
+- Simplified terminology throughout (replaced technical jargon with clearer alternatives)
+- Fixed domain accuracy table to match published leaderboard data
+- Corrected qualifier word counts in bias analysis appendix
+- Revised difficulty analysis with evidence-based explanation
+- Expanded generation prompt summary in appendix
+- Removed unused reference
+
 ## 2026-01-01: Paper polish and figure placement fix
 
 ### What changed
