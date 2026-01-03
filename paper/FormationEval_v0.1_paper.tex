@@ -9,6 +9,7 @@
 \usepackage{placeins}
 \usepackage{tikz}
 \usetikzlibrary{positioning, arrows.meta, shapes.geometric, calc, fit, backgrounds}
+\definecolor{openweight}{HTML}{4477AA}
 
 \graphicspath{{figures/}}
 
@@ -29,7 +30,7 @@ This paper presents FormationEval, an open multiple-choice question benchmark fo
 
 \section{Introduction}
 
-Large language models are increasingly applied to domain-specific tasks in science and engineering, yet their capabilities in specialized fields remain difficult to assess. General benchmarks like MMLU \cite{mmlu} cover broad knowledge but offer limited focus on specialized fields. For petroleum geoscience and subsurface engineering---fields requiring understanding of well logging physics, reservoir characterization and geological interpretation---no widely adopted public benchmark exists.
+Large language models are increasingly applied to domain-specific tasks in science and engineering, yet their capabilities in specialized fields remain difficult to assess. General benchmarks like MMLU \cite{mmlu} cover broad knowledge but offer limited focus on specialized fields. For petroleum geoscience and subsurface engineering (fields requiring understanding of well logging physics, reservoir characterization and geological interpretation), no widely adopted public benchmark exists.
 
 This work addresses the gap with FormationEval, a 505-question multiple-choice benchmark covering seven domains: petrophysics, petroleum geology, geophysics, reservoir engineering, sedimentology, drilling engineering and production engineering. Questions are derived from authoritative textbooks and open courseware using a concept-based methodology that tests understanding rather than phrase recognition, while respecting copyright constraints.
 
@@ -57,7 +58,7 @@ The contributions are: (1) a methodology for generating MCQs from technical sour
 %
 % Code files (for understanding metrics and metadata):
 %   eval/reports.py                  - MODEL_METADATA dict with pricing and open-weight status
-%   eval/metrics.py                  - Accuracy calculation and Wilson CI functions
+%   eval/metrics.py                  - Accuracy calculation functions
 %   eval/extraction.py               - Answer extraction patterns
 %
 % Chart ideas from data:
@@ -94,7 +95,7 @@ Difficulty levels reflect educational background. Easy questions (undergraduate)
 
 The benchmark draws from three sources: Ellis \& Singer's \textit{Well Logging for Earth Scientists} \cite{ellis_singer_2007} (219 questions), Bj{\o}rlykke's \textit{Petroleum Geoscience} \cite{bjorlykke_2010} (262 questions) and TU Delft OpenCourseWare \cite{tudelft_ocw_2008} (24 questions).
 
-The benchmark uses a concept-based derivation approach: questions are written from scratch based on concepts extracted from source material, without copying sentences or closely paraphrasing distinctive problem structures. This respects the legal distinction between ideas (not copyrightable) and expression (protected). Standard technical terms (porosity, Archie equation, neutron-density crossplot) may appear as-is since terminology is not copyrightable.
+The benchmark uses a concept-based derivation approach. Questions are written from scratch based on concepts extracted from source material, without copying sentences or closely paraphrasing distinctive problem structures. This respects the legal distinction between ideas (not copyrightable) and expression (protected). Standard technical terms (porosity, Archie equation, neutron-density crossplot) may appear as-is since terminology is not copyrightable.
 
 All generated items are tagged with \texttt{derivation\_mode: concept\_based} and include source tracking fields that enable verification without reproducing protected text.
 
@@ -102,7 +103,7 @@ All generated items are tagged with \texttt{derivation\_mode: concept\_based} an
 
 \subsection{Schema and metadata}
 
-Each question includes required fields: unique identifier, question text, four choices, answer index (0--3), answer key (A--D), difficulty level, domains, topics and a rationale explaining the correct answer. The rationale serves dual purposes: it aids human verification during development and provides educational value to benchmark users.
+Each question includes required fields: unique identifier, question text, four choices, answer index (0--3), answer key (A--D), difficulty level, domains, topics and a rationale explaining the correct answer. The rationale serves dual purposes. It aids human verification during development and provides educational value to benchmark users.
 
 Each item also includes a \texttt{contamination\_risk} label indicating likelihood that similar questions exist in LLM training data: \textit{low} for novel questions specific to the source, \textit{medium} for common concepts where similar questions may exist and \textit{high} for standard introductory topics almost certainly present in training data. Assessing contamination risk is hard without access to training data; this label is an estimate based on topic commonality and cannot be directly checked. Still, approximate labels help when comparing results by risk level.
 
@@ -123,14 +124,14 @@ The generation pipeline consists of four stages:
 
 Figure~\ref{fig:mcq_pipeline} illustrates this pipeline from source ingestion to final dataset.
 
-The system prompt emphasizes that questions must be standalone---answerable from domain knowledge without access to the source chapter. Phrases like ``according to the chapter'' or ``the text describes'' are explicitly prohibited. A summary of the generation prompt is provided in Appendix B; the full 475-line system prompt is available in the repository at \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{\texttt{src/prompts/mcq\_generator\_system\_prompt.txt}}.
+The system prompt emphasizes that questions must be standalone, answerable from domain knowledge without access to the source chapter. Phrases like ``according to the chapter'' or ``the text describes'' are explicitly prohibited. A summary of the generation prompt is provided in Appendix~B; the full system prompt is available in the repository at \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{\texttt{src/\allowbreak prompts/\allowbreak mcq\_generator\_system\_prompt.txt}}.
 
 % Source pointers: src/README.md
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{mcq_pipeline.pdf}
-  \caption{MCQ generation pipeline: source PDFs are converted to Markdown via OCR,
+  \caption{MCQ generation pipeline. Source PDFs are converted to Markdown via OCR,
            split into chapter chunks, processed by GPT-5.2 to generate candidate questions,
            and verified for schema compliance and source evidence.}
   \label{fig:mcq_pipeline}
@@ -140,9 +141,9 @@ The system prompt emphasizes that questions must be standalone---answerable from
 
 Human spot-checking is essential despite high LLM instruction-following reliability. For each source chapter, 2--5 questions were manually verified against the source material to confirm: (1) the marked answer is correct and unambiguous; (2) distractors are plausible but clearly wrong; (3) no copied phrases appear in questions or answers; (4) the rationale supports the marked answer.
 
-The full dataset (505 questions across 45+ chapters) was reviewed in batches grouped by source and chapter. The audit log records batch status and any issues requiring correction. Several questions required fixing during the final review pass.
+The full dataset (505 questions across 45+ chapters) was reviewed in batches for schema compliance and rationale consistency. The audit log records batch status and any issues requiring correction. Several questions required fixing during the final review pass.
 
-The required rationale field accelerated verification: when a rationale contradicts the answer it claims to support, the error is immediately visible without re-reading source material.
+The required rationale field accelerated verification. When a rationale contradicts the answer it claims to support, the error is immediately visible without re-reading source material.
 
 % Source pointers: docs/lessons_learned.md, docs/notes_and_audit_on_505_MCQs.md
 
@@ -154,19 +155,19 @@ Initial analysis revealed two exploitable patterns:
 
 \textbf{Qualifier word bias}: Absolute words like ``always'' appeared only in distractors (49 instances, 0\% correct rate), while hedged words like ``may'' appeared only in correct answers (13 instances, 100\% correct rate).
 
-A model using only surface heuristics could achieve approximately 70\% accuracy without domain knowledge.
+Combined, these patterns could be exploited well above random chance.
 
-\textbf{Mitigation applied}: 136 distractors were expanded with technical context to reduce length imbalance (from 64.6\% to 51.5\% longest-is-correct). All ``always'' instances were replaced with varied synonyms (invariably, necessarily, inherently) to break the single-word exploit. The word ``may'' was added to 13 distractors with ``no-effect'' claims to balance hedging language.
+\textbf{Mitigation applied}: 136 distractors were expanded with technical context to reduce length imbalance (from 64.6\% to 51.5\% longest-is-correct). All ``always'' instances were replaced with varied synonyms (invariably, necessarily, inherently) to break the single-word exploit. The word ``may'' was added to 13 distractors (e.g., ``has no effect'' $\to$ ``may have no effect'') to balance hedging language.
 
 \textbf{Residual issues}: Length bias remains above the 25\% baseline. The absolute-word synonyms all have 0\% correct rate, making a combined ``any-absolute-word=wrong'' heuristic still partially exploitable.
 
-For benchmarking purposes, these residual biases are unlikely to significantly affect relative comparisons. Since the same patterns apply to all questions, any bias-based advantage would affect all models equally, preserving the validity of model-to-model comparisons. In practice, modern language models tend to reason about question content rather than exploit surface-level word patterns. The major exploits---length as a proxy for correctness, ``always'' as a marker for wrong answers, ``may'' as a marker for correct answers---have been addressed. After mitigation, correct answers average 87 characters versus 74 for distractors---a difference of roughly 13 characters (2--3 words). With the longest answer correct only 51.5\% of the time, a length-based strategy would fail nearly half the time. The remaining issues with absolute-word synonyms affect fewer than 10\% of questions. These limitations are documented for transparency; see Appendix~C for detailed before/after metrics.
+For benchmarking purposes, these residual biases should not significantly affect relative comparisons. Since the same patterns apply to all questions, any bias-based advantage would affect all models equally, preserving the validity of model-to-model comparisons. The major exploits (length as a proxy for correctness, ``always'' as a marker for wrong answers, ``may'' as a marker for correct answers) have been addressed. After mitigation, correct answers average 87 characters versus 74 for distractors, a difference of roughly 13 characters (2--3 words). With the longest answer correct only 51.5\% of the time, a length-based strategy would fail nearly half the time. The remaining issues with absolute-word synonyms affect fewer than 10\% of questions. These limitations are documented for transparency; see Appendix~C for detailed before/after metrics.
 
 % Source pointers: docs/bias_fix_tracking.md, data/benchmark/README.md
 
 \subsection{PDF export for review}
 
-To facilitate human review, the dataset is exported to PDF with a cover page, question cards showing all metadata and bookmarks for navigation. This format is more accessible than raw JSON for domain experts performing quality checks and enables browsing questions by domain or topic without programming tools.
+For easier review, the dataset is exported to PDF with a cover page, question cards showing all metadata and bookmarks for navigation. This format is more accessible than raw JSON for domain experts performing quality checks and enables browsing questions by domain or topic without programming tools.
 An accompanying PDF rendering, generated from the JSON release, provides a readable format for browsing and spot checks \cite{formationeval_dataset,formationeval_pdf}.
 
 % Source pointers: src/README.md, docs/lessons_learned.md
@@ -196,7 +197,7 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
 
 \begin{table}[htbp]
   \centering
-  \caption{Domain and difficulty distribution. Domain counts are non-exclusive: questions may belong to multiple domains.}
+  \caption{Domain and difficulty distribution. Domain counts are non-exclusive (questions may belong to multiple domains).}
   \label{tab:distribution}
   \begin{tabular}{lrr}
     \toprule
@@ -222,7 +223,7 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{dataset_composition.pdf}
-  \caption{Dataset composition: (a) questions by domain, with Petrophysics dominating due to source coverage; (b) difficulty distribution close to 30/50/20 targets; (c) answer position distribution near the expected 25\% baseline.}
+  \caption{Dataset composition. (a) Questions by domain, with Petrophysics dominating due to source coverage; (b) difficulty distribution close to 30/50/20 targets; (c) answer position distribution near the expected 25\% baseline.}
   \label{fig:dataset_composition}
 \end{figure}
 
@@ -235,7 +236,7 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
 
 The evaluation covers 72 language models across two providers: Azure OpenAI \cite{azure_openai} and OpenRouter \cite{openrouter}. This includes models from OpenAI \cite{gpt4,gpt4o,gpt41,gpt5,o3_o4mini} (GPT-4o, GPT-4.1, GPT-5 series, o3-mini, o4-mini), Anthropic \cite{claude3,claude35,claude37,claude_opus45} (Claude 3.5 Haiku, Claude 3.7 Sonnet, Claude Opus 4.5, Claude Sonnet 4.5, Claude Haiku 4.5), Google \cite{gemini,gemini2,gemini25,gemini3,gemma3} (Gemini 2.0, 2.5, 3 series, Gemma 3), Meta \cite{llama3,llama31,llama32,llama4} (Llama 3.1, 3.2, 4), DeepSeek \cite{deepseek_v3,deepseek_v3_2,deepseek_r1} (R1, V3.2), Mistral \cite{mistral} (Small, Medium, Nemo, Ministral), Alibaba \cite{qwen3} (Qwen3 series), Zhipu \cite{glm4,glm47} (GLM-4, GLM-4.7), xAI \cite{grok3,grok} (Grok 3, 4), Moonshot \cite{kimi_k2} (Kimi K2), MiniMax \cite{minimax_m2} (M2), Microsoft \cite{phi4} (Phi-4) and Nvidia \cite{nemotron} (Nemotron).
 
-Models range from compact 3B parameter variants to frontier reasoning models. Open-weight models (32 of 72) include GLM-4.7, DeepSeek-R1, Llama-4-Scout, Qwen3 variants, Mistral models and Gemma 3. Pricing spans from \$0.02/M tokens (Llama-3.2-3b) to \$25/M tokens (Claude Opus 4.5 output).
+Models range from compact 3B parameter variants to frontier reasoning models. Open-weight models (32 of 72) include GLM-4.7, DeepSeek-R1, Llama-4-Scout, Qwen3 variants, Mistral models and Gemma 3. Pricing spans from \$0.02/M input tokens (Llama-3.2-3b) to \$25/M output tokens (Claude Opus 4.5).
 
 % Source pointers: eval/README.md, eval/results/leaderboard.md, eval/reports.py
 
@@ -247,22 +248,22 @@ The evaluation uses a zero-shot prompt format to assess model knowledge without 
 
 \textbf{User prompt:} The question text followed by four labeled choices (A--D) and ``Answer:'' as the final line.
 
-Answer extraction uses flexible regex patterns to handle varied response formats. Preprocessing removes reasoning tags (\texttt{<thinking>}, \texttt{<think>}) from models that expose chain-of-thought traces (o1, o3, DeepSeek-R1). The extraction logic prioritizes explicit patterns (``The answer is B'', ``Answer: C'') over positional heuristics. Failed extractions---where no A/B/C/D letter can be identified---are counted as incorrect answers. Figure~\ref{fig:eval_pipeline} shows the evaluation flow from configuration to report generation.
+Answer extraction uses flexible regex patterns to handle varied response formats. Preprocessing removes reasoning tags (\texttt{<think>}, \texttt{<thinking>}) from models like DeepSeek-R1 that expose chain-of-thought traces. The extraction logic prioritizes explicit patterns (``The answer is B'', ``Answer: C''). Failed extractions (where no A/B/C/D letter can be identified) are counted as incorrect answers. Figure~\ref{fig:eval_pipeline} shows the evaluation flow from configuration to report generation.
 
 % Source pointers: docs/evaluation_pipeline_concept.md, eval/extraction.py
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{eval_pipeline.pdf}
-  \caption{Evaluation pipeline: models are configured via YAML, questions sent to
+  \caption{Evaluation pipeline. Models are configured via YAML, questions sent to
            Azure OpenAI or OpenRouter APIs, responses cached per model/question,
            and analyzed to generate leaderboard and analysis reports.}
   \label{fig:eval_pipeline}
 \end{figure}
 
-\subsection{Metrics and confidence intervals}
+\subsection{Metrics}
 
-The primary metric is overall accuracy: correct answers divided by total questions (505). For each accuracy value, 95\% Wilson score confidence intervals \cite{wilson_ci} are computed, which provide better coverage than normal approximation intervals when accuracy is near 0 or 1.
+The primary metric is overall accuracy, defined as correct answers divided by total questions (505).
 
 Secondary metrics include accuracy by difficulty level (easy, medium, hard) and by domain (seven categories). The analysis also covers bias patterns: position bias (deviation from uniform A/B/C/D selection) and length bias (tendency to select the longest answer choice). The benchmark's residual length bias (correct answer is longest in 51.5\% of questions) provides a reference point for interpreting model length bias.
 
@@ -270,7 +271,8 @@ Secondary metrics include accuracy by difficulty level (easy, medium, hard) and 
 
 \subsection{Caching and reproducibility}
 
-API responses are cached per model and question in a structured directory (\texttt{cache/\{model\}/\{question\_id\}.json}). This enables resuming interrupted evaluation runs, re-analyzing results without additional API costs and debugging extraction failures.
+API responses are cached per model and question
+({\small\texttt{eval/\allowbreak cache/\allowbreak\{model\}/\allowbreak\{question\_id\}.json}}). This enables resuming interrupted evaluation runs, re-analyzing results without additional API costs and debugging extraction failures.
 
 Evaluation can be re-run in analyze-only mode to regenerate reports from cached responses. Output files include machine-readable JSON, Markdown tables and CSV exports with per-question breakdowns including raw model responses (truncated to 500 characters).
 
@@ -280,34 +282,15 @@ Evaluation can be re-run in analyze-only mode to regenerate reports from cached 
 
 \subsection{Overall results}
 
-Table~\ref{tab:leaderboard} presents the top 25 models by accuracy \cite{formationeval_leaderboard}. The highest-performing model is Gemini 3 Pro Preview at 99.8\% (504/505 correct), followed by GLM-4.7 at 98.6\% and Gemini 3 Flash Preview at 98.2\%. Among open-weight models, GLM-4.7 leads, followed by DeepSeek-R1 (96.2\%) and DeepSeek-V3.2 (94.9\%).
+Table~\ref{tab:leaderboard} presents the top 50 models by accuracy \cite{formationeval_leaderboard}. The highest-performing model is Gemini 3 Pro Preview at 99.8\% (504/505 correct), followed by GLM-4.7 at 98.6\% and Gemini 3 Flash Preview at 98.2\%. Among open-weight models, GLM-4.7 leads, followed by DeepSeek-R1 (96.2\%) and DeepSeek-V3.2 (94.9\%).
 
-Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama-3.2-3b-instruct). Models from Google, OpenAI and Zhipu dominate the top positions (Figure~\ref{fig:top20_accuracy}). Pricing varies considerably, with some lower-cost models like Grok-4.1-fast (\$0.20/M input) achieving 97.6\% accuracy. Figure~\ref{fig:accuracy_vs_price} shows the cost-effectiveness trade-off across all models.
+Accuracy spans a wide range, from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama-3.2-3b-instruct). Models from Google, OpenAI and Zhipu dominate the top positions (Figure~\ref{fig:top30_accuracy}). Pricing varies considerably, with some lower-cost models like Grok-4.1-fast (\$0.20/M input) achieving 97.6\% accuracy. Figure~\ref{fig:accuracy_vs_price} shows the cost-effectiveness trade-off across all models.
 
 % Source pointers: eval/results/leaderboard.md
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{top20_accuracy.pdf}
-  \caption{Top 20 models on FormationEval v0.1 by accuracy. Blue bars indicate open-weight models.
-           GLM-4.7 (98.6\%) leads among open-weight models, ranking second overall.}
-  \label{fig:top20_accuracy}
-\end{figure}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{accuracy_vs_price.pdf}
-  \caption{Cost-effectiveness analysis: accuracy versus average token price.
-           Several high-accuracy models (Grok-4.1-fast, DeepSeek-R1) offer strong performance at lower cost.
-           Open-weight models (blue) provide lower-cost alternatives to closed models (orange).}
-  \label{fig:accuracy_vs_price}
-\end{figure}
-
-\FloatBarrier
-
 \begin{table}[htbp]
   \centering
-  \caption{Top 25 models by accuracy. See Appendix~\ref{app:full_leaderboard} for the complete 72-model leaderboard.}
+  \caption{Top 50 models by accuracy. See Appendix~\ref{app:full_leaderboard} for the complete 72-model leaderboard.}
   \label{tab:leaderboard}
   \small
   \begin{tabular}{rlllrr}
@@ -315,7 +298,7 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
     Rank & Model & Open & Price (\$/M) & Accuracy & Correct \\
     \midrule
     1 & gemini-3-pro-preview & No & 2.00/12.00 & 99.8\% & 504/505 \\
-    2 & glm-4.7 & Yes & 0.40/1.50 & 98.6\% & 498/505 \\
+    2 & glm-4.7 & \textcolor{openweight}{Yes} & 0.40/1.50 & 98.6\% & 498/505 \\
     3 & gemini-3-flash-preview & No & 0.50/3.00 & 98.2\% & 496/505 \\
     4 & gemini-2.5-pro & No & 1.25/10.00 & 97.8\% & 494/505 \\
     5 & grok-4.1-fast & No & 0.20/0.50 & 97.6\% & 493/505 \\
@@ -326,7 +309,7 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
     10 & gpt-5.2-chat-low & No & 1.75/14.00 & 96.8\% & 489/505 \\
     11 & gpt-5-mini-medium & No & 0.25/2.00 & 96.4\% & 487/505 \\
     12 & gpt-5.1-chat-medium & No & 1.25/10.00 & 96.4\% & 487/505 \\
-    13 & deepseek-r1 & Yes & 0.30/1.20 & 96.2\% & 486/505 \\
+    13 & deepseek-r1 & \textcolor{openweight}{Yes} & 0.30/1.20 & 96.2\% & 486/505 \\
     14 & grok-4-fast & No & 0.20/0.50 & 96.0\% & 485/505 \\
     15 & gpt-5-mini-high & No & 0.25/2.00 & 95.6\% & 483/505 \\
     16 & gpt-5-mini-low & No & 0.25/2.00 & 95.2\% & 481/505 \\
@@ -334,14 +317,56 @@ Accuracy spans a wide range: from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
     18 & gemini-2.5-flash & No & 0.30/2.50 & 95.0\% & 480/505 \\
     19 & o4-mini-medium & No & 1.10/4.40 & 95.0\% & 480/505 \\
     20 & grok-3-mini & No & 0.30/0.50 & 95.0\% & 480/505 \\
-    21 & deepseek-v3.2 & Yes & 0.22/0.32 & 94.9\% & 479/505 \\
+    21 & deepseek-v3.2 & \textcolor{openweight}{Yes} & 0.22/0.32 & 94.9\% & 479/505 \\
     22 & gpt-5.1-chat-low & No & 1.25/10.00 & 94.9\% & 479/505 \\
     23 & o3-mini-low & No & 1.10/4.40 & 94.9\% & 479/505 \\
     24 & o3-mini-medium & No & 1.10/4.40 & 94.9\% & 479/505 \\
     25 & claude-3.7-sonnet & No & 3.00/15.00 & 94.7\% & 478/505 \\
+    26 & o3-mini-high & No & 1.10/4.40 & 94.7\% & 478/505 \\
+    27 & gpt-5-chat & No & 1.25/10.00 & 94.5\% & 477/505 \\
+    28 & o4-mini-low & No & 1.10/4.40 & 94.3\% & 476/505 \\
+    29 & gpt-5.1-chat-high & No & 1.25/10.00 & 93.9\% & 474/505 \\
+    30 & gpt-4.1 & No & 2.00/8.00 & 93.7\% & 473/505 \\
+    31 & gemini-2.0-flash-001 & No & 0.10/0.40 & 93.3\% & 471/505 \\
+    32 & gpt-5-nano-low & No & 0.05/0.40 & 93.3\% & 471/505 \\
+    33 & llama-4-scout & \textcolor{openweight}{Yes} & 0.08/0.30 & 93.1\% & 470/505 \\
+    34 & mistral-medium-3.1 & \textcolor{openweight}{Yes} & 0.40/2.00 & 93.1\% & 470/505 \\
+    35 & qwen3-235b-a22b-2507 & \textcolor{openweight}{Yes} & 0.07/0.46 & 93.1\% & 470/505 \\
+    36 & qwen3-30b-a3b-thinking-2507 & \textcolor{openweight}{Yes} & 0.05/0.34 & 93.1\% & 470/505 \\
+    37 & gpt-4o & No & 2.50/10.00 & 92.9\% & 469/505 \\
+    38 & gpt-5-nano-high & No & 0.05/0.40 & 92.9\% & 469/505 \\
+    39 & gpt-5-nano-medium & No & 0.05/0.40 & 92.9\% & 469/505 \\
+    40 & minimax-m2 & No & 0.20/1.00 & 92.9\% & 469/505 \\
+    41 & qwen3-14b & \textcolor{openweight}{Yes} & 0.05/0.22 & 92.9\% & 469/505 \\
+    42 & qwen3-32b & \textcolor{openweight}{Yes} & 0.08/0.24 & 92.1\% & 465/505 \\
+    43 & gpt-4.1-mini & No & 0.40/1.60 & 91.7\% & 463/505 \\
+    44 & claude-haiku-4.5 & No & 1.00/5.00 & 91.5\% & 462/505 \\
+    45 & gemini-2.5-flash-lite & No & 0.10/0.40 & 91.3\% & 461/505 \\
+    46 & gpt-oss-120b & \textcolor{openweight}{Yes} & 0.04/0.19 & 90.7\% & 458/505 \\
+    47 & qwen3-vl-8b-thinking & \textcolor{openweight}{Yes} & 0.18/2.10 & 90.3\% & 456/505 \\
+    48 & mistral-small-3.2-24b-instruct & \textcolor{openweight}{Yes} & 0.06/0.18 & 89.3\% & 451/505 \\
+    49 & gpt-oss-20b & \textcolor{openweight}{Yes} & 0.03/0.14 & 89.3\% & 451/505 \\
+    50 & claude-sonnet-4.5 & No & 3.00/15.00 & 89.1\% & 450/505 \\
     \bottomrule
   \end{tabular}
 \end{table}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{top30_accuracy.pdf}
+  \caption{Top 30 models on FormationEval v0.1 by accuracy. Blue bars indicate open-weight models.
+           GLM-4.7 (98.6\%) leads among open-weight models, ranking second overall.}
+  \label{fig:top30_accuracy}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{accuracy_vs_price.pdf}
+  \caption{Cost-effectiveness analysis. Accuracy versus average token price.
+           Several high-accuracy models (Grok-4.1-fast, DeepSeek-R1) offer strong performance at lower cost.
+           Open-weight models (blue) provide lower-cost alternatives to closed models (orange).}
+  \label{fig:accuracy_vs_price}
+\end{figure}
 
 \FloatBarrier
 \subsection{By difficulty}
@@ -399,18 +424,18 @@ Table~\ref{tab:domain_avg} shows average accuracy per domain across all 72 model
 \FloatBarrier
 \subsection{Hardest questions}
 
-The ten hardest questions (by model failure rate) reveal systematic knowledge gaps \cite{formationeval_analysis}. The hardest question---on strike-slip fault stepovers and pull-apart basin formation---was answered incorrectly by 61 of 72 models (85\%). Most models selected option A (left-stepping arrangement) instead of the correct answer D (right-stepping arrangement for dextral motion). The top three hardest questions are documented in the analysis report \cite{formationeval_analysis}.
+The ten hardest questions (by model failure rate) reveal systematic knowledge gaps \cite{formationeval_analysis}. The hardest question (on strike-slip fault stepovers and pull-apart basin formation) was answered incorrectly by 61 of 72 models (85\%). Most models selected option A (left-stepping arrangement) instead of the correct answer D (right-stepping arrangement for dextral motion). The top three hardest questions are documented in the analysis report \cite{formationeval_analysis}.
 
 Eight of the ten hardest questions are from the Petrophysics domain, covering specialized topics like neutron-density crossplot interpretation, invasion profiles and tool calibration. One geology question (strike-slip stepovers) and one easy-labeled question (LWD propagation) also appear in the top 10.
 
-Model agreement analysis shows: 21.6\% of questions were answered correctly by all 72 models, 0\% were missed by all models and 78.4\% showed mixed results---indicating most questions help distinguish model performance levels.
+Model agreement analysis shows that 21.6\% of questions were answered correctly by all 72 models, 0\% were missed by all models and 78.4\% showed mixed results, indicating most questions help distinguish model performance levels.
 
 % Source pointers: eval/results/analysis.md
 
 \FloatBarrier
 \subsection{Open-weight models}
 
-A key question for this evaluation was whether open-weight models---especially smaller and cheaper ones---have enough domain knowledge for petroleum geoscience. While larger closed models were expected to perform well, the capabilities of open-weight alternatives in this specialized field were less clear.
+A key question for this evaluation was whether open-weight models, especially smaller and cheaper ones, have enough domain knowledge for petroleum geoscience. While larger closed models were expected to perform well, the capabilities of open-weight alternatives in this specialized field were less clear.
 
 Of the 72 models evaluated, 32 have publicly available weights. Open-weight accuracy ranges from 57.6\% (Llama-3.2-3b-instruct) to 98.6\% (GLM-4.7), with mean 85.7\% and median 87.7\%. Eleven open-weight models reach at least 90\% and 22 reach at least 85\%. Figure~\ref{fig:open_weight_models} visualizes all open-weight models by accuracy; Table~\ref{tab:open_weight} provides the detailed breakdown.
 
@@ -423,9 +448,9 @@ Of the 72 models evaluated, 32 have publicly available weights. Open-weight accu
 
 The highest-accuracy open-weight models are GLM-4.7, DeepSeek-R1, DeepSeek-V3.2, Llama-4-Scout and Mistral Medium 3.1, followed by large Qwen3 variants at 93.1\%. Qwen3 base variants span 88.7--93.1\%, Qwen3-VL variants 87.5--90.3\% and GPT-OSS 89.3--90.7\%. Mistral and Ministral models span 78.8--93.1\%; GLM-4-32B reaches 87.3\%; Phi-4 reasoning-plus reaches 87.7\%; DeepSeek-R1-0528-Qwen3-8B reaches 85.1\%. DeepSeek-R1 at \$0.30/M input offers similar accuracy to GPT-5.1 variants at \$1.25/M input; Qwen3-14b reaches 92.9\% at \$0.05/M input.
 
-Across domains, open-weight averages are highest in Reservoir Engineering (93.3\%) and lowest in Petrophysics (82.0\%), with other domains between 86.4\% and 90.2\% (Drilling 87.3\%, Geophysics 89.8\%, Petroleum Geology 90.2\%, Production 86.4\%, Sedimentology 89.6\%). GLM-4.7 is tied for the top open-weight score in every domain and is the sole top model in Geophysics, Petroleum Geology, Petrophysics and Sedimentology. The lowest scores across all domains come from Llama-3.2-3b-instruct, including 45.8\% in Drilling and 51.1\% in Petrophysics.
+Across domains, open-weight averages are highest in Reservoir Engineering (93.3\%) and lowest in Petrophysics (82.0\%), with other domains between 86.4\% and 90.2\% (Drilling 87.3\%, Geophysics 89.8\%, Petroleum Geology 90.2\%, Production 86.4\%, Sedimentology 89.6\%). GLM-4.7 achieves the top open-weight score in every domain, leading alone in four (Geophysics, Petroleum Geology, Petrophysics, Sedimentology) and tying with other models in three. The lowest scores across all domains come from Llama-3.2-3b-instruct, including 45.8\% in Drilling and 51.1\% in Petrophysics.
 
-These results suggest that petroleum geoscience knowledge is reasonably well-represented in open-weight models. Even models with fewer parameters and lower costs show useful domain understanding, making them practical options for applications where open weights or cost efficiency matter. Smaller closed models also perform well---GPT-5-nano variants achieve 92.9--93.3\%---suggesting that compact models of either type can handle this domain.
+These results suggest that petroleum geoscience knowledge is well-represented in open-weight models, with 11 of 32 exceeding 90\% accuracy and 22 exceeding 85\%. Even models with fewer parameters and lower costs show useful domain understanding, making them viable options for applications where open weights or cost efficiency matter. Smaller closed models also perform well (GPT-5-nano variants achieve 92.9--93.3\%), suggesting that compact models of either type can handle this domain.
 
 \begin{longtable}{rllrr}
   \caption{Open-weight models by accuracy.} \label{tab:open_weight} \\
@@ -481,7 +506,7 @@ These results suggest that petroleum geoscience knowledge is reasonably well-rep
 
 The ten lowest-scoring models are all compact variants (3B--12B parameters) or older architectures. Llama-3.2-3b-instruct achieves 57.6\%, only marginally above random guessing (25\%). The bottom tier includes Gemma-3-4b-it (71.3\%), Llama-3.1-8b-instruct (72.5\%), Gemma-3n-e4b-it (75.2\%) and Nemotron variants (77--80\%).
 
-These models show consistent patterns: accuracy on easy questions (63--87\%) exceeds medium (55--78\%) and hard (59--82\%), but the gap between easy and medium is larger than for top models. Llama-3.2-3b-instruct shows the widest spread: 62.9\% easy versus 54.7\% medium.
+These models show consistent patterns. Accuracy on easy questions (63--87\%) exceeds medium (55--78\%) and hard (59--82\%), but the gap between easy and medium is larger than for top models. Llama-3.2-3b-instruct shows the widest spread, at 62.9\% easy versus 54.7\% medium.
 
 Petrophysics accuracy for bottom-tier models falls to 51--74\%, while other domains remain at 62--98\%. This suggests that smaller models particularly struggle with the technical specificity of well logging concepts. The full 72-model leaderboard is provided in Appendix~\ref{app:full_leaderboard}.
 
@@ -493,7 +518,7 @@ Petrophysics accuracy for bottom-tier models falls to 51--74\%, while other doma
 
 The benchmark provides relative comparisons between models rather than absolute measures of domain competence. High scores indicate that a model can answer concept-based questions derived from authoritative sources, but do not guarantee expertise in practical applications.
 
-All models exhibit elevated length bias in this analysis---they select the longest answer choice more often than the 25\% baseline. However, this rate (38--47\% across models) is close to or below the benchmark's residual bias (correct answer is longest in 51.5\% of questions), suggesting models are largely tracking content rather than exploiting length as a proxy.
+All models exhibit elevated length bias in this analysis. They select the longest answer choice more often than the 25\% baseline. However, this rate (38--47\% across models) is close to or below the benchmark's residual bias (correct answer is longest in 51.5\% of questions), suggesting models are not simply exploiting length as a proxy.
 
 Position bias is generally low across models, with most showing near-uniform A/B/C/D distributions. Two Nvidia Nemotron variants showed elevated position bias (``High'' level), potentially indicating instruction-following limitations.
 
@@ -511,7 +536,7 @@ Position bias is generally low across models, with most showing near-uniform A/B
 
 Model pricing fluctuates and may not reflect values at time of reading. OpenRouter and Azure pricing differ for the same models. Some models are available through multiple providers at different costs.
 
-Provider reliability varies: rate limits, latency and availability differ across Azure OpenAI and OpenRouter endpoints. The caching strategy mitigates this for reproducibility but may not reflect real-world API behavior.
+Provider reliability varies. Rate limits, latency and availability differ across Azure OpenAI and OpenRouter endpoints. The caching strategy mitigates this for reproducibility but may not reflect real-world API behavior.
 
 % Source pointers: docs/PROGRESS.md, docs/lessons_learned.md
 
@@ -552,6 +577,7 @@ Evaluation of 72 models reveals that frontier models achieve over 97\% accuracy,
 Future work includes expanding to additional languages (Norwegian, Russian), adding questions from more sources to balance domain coverage and developing contamination detection methods. The benchmark is intended as a living resource, with new models added to the leaderboard as they become available.
 
 \FloatBarrier
+\clearpage
 \appendix
 
 \section{Schema reference}
@@ -566,12 +592,14 @@ Each question includes the following fields:
   Field & Description \\
   \midrule
   \texttt{id} & Unique identifier \\
+  \texttt{version} & Version string (e.g., ``0.1'') \\
   \texttt{question} & Question text \\
   \texttt{choices} & Array of 4 options (A--D) \\
   \texttt{answer\_index} & Correct answer index (0--3) \\
   \texttt{answer\_key} & Correct answer letter (A--D) \\
   \texttt{rationale} & Explanation of correct answer \\
   \texttt{difficulty} & easy $|$ medium $|$ hard \\
+  \texttt{language} & Language code: en $|$ ru $|$ no \\
   \texttt{domains} & Array of broad categories \\
   \texttt{topics} & Array of specific subjects \\
   \texttt{sources} & Provenance metadata array \\
@@ -591,7 +619,9 @@ Contamination risk indicates likelihood that similar questions exist in LLM trai
 
 \textbf{System prompt:}
 \begin{quote}
-\texttt{You are taking a multiple-choice exam on Oil \& Gas geoscience. For each question, select the single best answer from the options provided. State your final answer as a single letter: A, B, C or D.}
+\small\texttt{You are taking a multiple-choice exam on Oil \& Gas geoscience.}\\
+\small\texttt{For each question, select the single best answer from the options provided.}\\
+\small\texttt{State your final answer as a single letter: A, B, C or D.}
 \end{quote}
 
 \textbf{User prompt format:}
@@ -606,7 +636,8 @@ Contamination risk indicates likelihood that similar questions exist in LLM trai
 
 \subsection{Generation prompt summary}
 
-The full system prompt (475 lines) is available in the repository at \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{\texttt{src/prompts/mcq\_generator\_system\_prompt.txt}}. Key instructions include:
+The full system prompt (475 lines) is \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{available in the repository}.
+Key instructions include:
 
 \begin{enumerate}
 \item Generate questions that test \textbf{understanding of concepts}, not recognition of phrases
@@ -685,7 +716,7 @@ Several questions were corrected during the final review pass. The required rati
 Table~\ref{tab:full_leaderboard} presents all 72 evaluated models ranked by accuracy.
 
 \begin{longtable}{rlllrr}
-  \caption{Complete leaderboard: all 72 models by accuracy.} \label{tab:full_leaderboard} \\
+  \caption{Complete leaderboard. All 72 models by accuracy.} \label{tab:full_leaderboard} \\
   \toprule
   Rank & Model & Open & Price (\$/M) & Accuracy & Correct \\
   \midrule
