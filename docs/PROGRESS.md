@@ -1,5 +1,18 @@
 # Progress log
 
+## 2026-01-03: Paper clarity and formatting polish
+
+- Improved wording in bias mitigation section: replaced jargon "no-effect claims" with concrete example ("has no effect" → "may have no effect")
+- Simplified PDF export section opening
+- Standardized figure caption style
+- Expanded leaderboard table from top 25 to top 50 models with color highlighting for open-weight entries
+- Renamed accuracy chart from top20 to top30 and reordered figures after table
+- Simplified metrics subsection (removed Wilson CI details, renamed to just "Metrics")
+- Clarified pricing units: "tokens" → "input tokens" / "output tokens"
+- Softened bias exploitation claim
+- Improved long path formatting with \allowbreak for better line breaks
+- Minor punctuation and flow improvements throughout
+
 ## 2026-01-02: Paper structure and bias section improvements
 
 - Converted Table 3 (Source breakdown) to inline prose in Section 4, reducing redundancy with Section 3.2
