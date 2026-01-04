@@ -30,7 +30,7 @@ This paper presents FormationEval, an open multiple-choice question benchmark fo
 
 \section{Introduction}
 
-Large language models are increasingly applied to domain-specific tasks in science and engineering, yet their capabilities in specialized fields remain difficult to assess. General benchmarks like MMLU \cite{mmlu} cover broad knowledge but offer limited focus on specialized fields. For petroleum geoscience and subsurface engineering (fields requiring understanding of well logging physics, reservoir characterization and geological interpretation), no widely adopted public benchmark exists.
+Large language models are increasingly applied to domain-specific tasks in science and engineering, yet their capabilities in specialized fields remain difficult to assess. General benchmarks like MMLU \cite{mmlu} cover broad knowledge but offer limited focus on specialized fields. For petroleum geoscience and subsurface engineering (fields requiring understanding of well logging physics, reservoir characterization and geological interpretation), publicly available benchmarks remain limited.
 
 This work addresses the gap with FormationEval, a 505-question multiple-choice benchmark covering seven domains: petrophysics, petroleum geology, geophysics, reservoir engineering, sedimentology, drilling engineering and production engineering. Questions are derived from authoritative textbooks and open courseware using a concept-based methodology that tests understanding rather than phrase recognition, while respecting copyright constraints.
 
@@ -73,7 +73,7 @@ The contributions are: (1) a methodology for generating MCQs from technical sour
 
 \section{Related work}
 
-General-purpose benchmarks like MMLU \cite{mmlu} evaluate broad knowledge and reasoning capabilities but provide limited coverage of specialized domains. MMLU includes professional exam questions across 57 subjects but only a few relate to earth sciences or engineering. Domain-specific benchmarks exist for medicine, law and computer science, but petroleum geoscience lacks an equivalent evaluation resource.
+General-purpose benchmarks like MMLU \cite{mmlu} evaluate broad knowledge and reasoning capabilities but provide limited coverage of specialized domains. MMLU includes professional exam questions across 57 subjects but only a few relate to earth sciences or engineering. Domain-specific benchmarks exist for medicine \cite{medqa} and law \cite{legalbench}, but petroleum geoscience lacks an equivalent evaluation resource.
 
 Existing MCQ generation methods typically transform source sentences into questions. The concept-based methodology presented here differs by emphasizing original question formulation, prioritizing copyright compliance and testing conceptual understanding.
 
@@ -234,9 +234,9 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
 
 \subsection{Models and providers}
 
-The evaluation covers 72 language models across two providers: Azure OpenAI \cite{azure_openai} and OpenRouter \cite{openrouter}. This includes models from OpenAI \cite{gpt4,gpt4o,gpt41,gpt5,o3_o4mini} (GPT-4o, GPT-4.1, GPT-5 series, o3-mini, o4-mini), Anthropic \cite{claude3,claude35,claude37,claude_opus45} (Claude 3.5 Haiku, Claude 3.7 Sonnet, Claude Opus 4.5, Claude Sonnet 4.5, Claude Haiku 4.5), Google \cite{gemini,gemini2,gemini25,gemini3,gemma3} (Gemini 2.0, 2.5, 3 series, Gemma 3), Meta \cite{llama3,llama31,llama32,llama4} (Llama 3.1, 3.2, 4), DeepSeek \cite{deepseek_v3,deepseek_v3_2,deepseek_r1} (R1, V3.2), Mistral \cite{mistral} (Small, Medium, Nemo, Ministral), Alibaba \cite{qwen3} (Qwen3 series), Zhipu \cite{glm4,glm47} (GLM-4, GLM-4.7), xAI \cite{grok3,grok} (Grok 3, 4), Moonshot \cite{kimi_k2} (Kimi K2), MiniMax \cite{minimax_m2} (M2), Microsoft \cite{phi4} (Phi-4) and Nvidia \cite{nemotron} (Nemotron).
+The evaluation covers 72 models accessed through two API providers: Azure OpenAI \cite{azure_openai} and OpenRouter \cite{openrouter}. The evaluation ran in December 2025. Models come from OpenAI \cite{gpt4,gpt4o,gpt41,gpt5,o3_o4mini} (GPT-4o, GPT-4.1, GPT-5 series, o3-mini, o4-mini), Anthropic \cite{claude3,claude35,claude37,claude_opus45} (Claude 3.5 Haiku, Claude 3.7 Sonnet, Claude Opus 4.5, Claude Sonnet 4.5, Claude Haiku 4.5), Google \cite{gemini,gemini2,gemini25,gemini3,gemma3} (Gemini 2.0, 2.5, 3 series, Gemma 3), Meta \cite{llama3,llama31,llama32,llama4} (Llama 3.1, 3.2, 4), DeepSeek \cite{deepseek_v3,deepseek_v3_2,deepseek_r1} (R1, V3.2), Mistral \cite{mistral} (Small, Medium, Nemo, Ministral), Alibaba \cite{qwen3} (Qwen3 series), Zhipu \cite{glm4,glm47} (GLM-4, GLM-4.7), xAI \cite{grok3,grok} (Grok 3, 4), Moonshot \cite{kimi_k2} (Kimi K2), MiniMax \cite{minimax_m2} (M2), Microsoft \cite{phi4} (Phi-4) and Nvidia \cite{nemotron} (Nemotron).
 
-Models range from compact 3B parameter variants to frontier reasoning models. Open-weight models (32 of 72) include GLM-4.7, DeepSeek-R1, Llama-4-Scout, Qwen3 variants, Mistral models and Gemma 3. Pricing spans from \$0.02/M input tokens (Llama-3.2-3b) to \$25/M output tokens (Claude Opus 4.5).
+Models range from compact 3B parameter variants to frontier reasoning models. Open-weight models (32 of 72) include GLM-4.7, DeepSeek-R1, Llama-4-Scout, Qwen3 variants, Mistral models and Gemma 3. Pricing spans from \$0.02/M input tokens (Llama-3.2-3b-instruct) to \$25/M output tokens (Claude Opus 4.5).
 
 % Source pointers: eval/README.md, eval/results/leaderboard.md, eval/reports.py
 
@@ -362,7 +362,7 @@ Accuracy spans a wide range, from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{accuracy_vs_price.pdf}
-  \caption{Cost-effectiveness analysis. Accuracy versus average token price.
+  \caption{Cost-effectiveness analysis. Accuracy versus average token price (mean of input and output prices).
            Several high-accuracy models (Grok-4.1-fast, DeepSeek-R1) offer strong performance at lower cost.
            Open-weight models (blue) provide lower-cost alternatives to closed models (orange).}
   \label{fig:accuracy_vs_price}
