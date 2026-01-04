@@ -1,5 +1,12 @@
 # Progress log
 
+## 2026-01-04: Pre-arXiv review fixes
+
+- Added MedQA and LegalBench citations in related work section
+- Clarified evaluation setup: added run date (December 2025), distinguished API providers from model developers
+- Hedged claim about benchmark availability in introduction
+- Fixed model naming consistency and clarified cost metric in figure caption
+
 ## 2026-01-03: Paper clarity and formatting polish
 
 - Improved wording in bias mitigation section: replaced jargon "no-effect claims" with concrete example ("has no effect" → "may have no effect")
