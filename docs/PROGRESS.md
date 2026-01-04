@@ -1,5 +1,12 @@
 # Progress log
 
+## 2026-01-04: Paper clarity improvements
+
+- Abstract: added mention of reasoning model with detailed instructions for question generation
+- Section 3.4: expanded heading to full form, added intro explaining reasoning model and chain-of-thought process, added GPT-5.2 citation with official system card URL
+- Section 3.5: added LLM-based batch review in QA description, softened rationale verification wording
+- Section 4: clarified that 811 topics reflects questions addressing multiple topics
+
 ## 2026-01-04: Pre-arXiv review fixes
 
 - Added MedQA and LegalBench citations in related work section
