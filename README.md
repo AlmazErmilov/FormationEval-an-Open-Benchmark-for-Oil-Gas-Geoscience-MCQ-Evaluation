@@ -7,6 +7,8 @@ The project focuses on **reproducibility, provenance, and licensing safety**: pu
 
 📄 **Paper**: [arXiv:2601.02158](https://arxiv.org/abs/2601.02158) ([PDF](https://arxiv.org/pdf/2601.02158) | [local copy](paper/2601.02158v1.pdf))
 
+🤗 **HuggingFace**: [Dataset](https://huggingface.co/datasets/AlmazErmilov/FormationEval) | [Leaderboard](https://huggingface.co/spaces/AlmazErmilov/FormationEval-Leaderboard)
+
 ---
 
 ## Why this benchmark
