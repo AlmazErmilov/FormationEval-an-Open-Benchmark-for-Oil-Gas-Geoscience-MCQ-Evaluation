@@ -2,6 +2,24 @@
 
 Multiple-choice questions for evaluating LLMs on Oil & Gas geoscience knowledge.
 
+📄 **Paper**: [arXiv:2601.02158](https://arxiv.org/abs/2601.02158) ([PDF](https://arxiv.org/pdf/2601.02158) | [local copy](../../paper/2601.02158v1.pdf))
+
+## Citation
+
+If you use this benchmark, please cite:
+
+```bibtex
+@misc{ermilov2026formationeval,
+      title={FormationEval, an open multiple-choice benchmark for petroleum geoscience},
+      author={Almaz Ermilov},
+      year={2026},
+      eprint={2601.02158},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2601.02158},
+}
+```
+
 ## Overview
 
 | Metric | Value |
@@ -83,13 +101,13 @@ Correct answers tend to be longer than distractors (partially addressed in v0.1)
 
 | Metric | Original | After fixes |
 |--------|----------|-------------|
-| Correct answer is longest choice | 64.6% | 51.5% |
+| Correct answer is uniquely longest | >55% | 43.2% |
 | Correct answer avg length | 86.6 chars | 86.6 chars |
 | Distractor avg length | 69.8 chars | 74.0 chars |
 
 **Impact**: Test-takers (human or LLM) may exploit this pattern by selecting the longest answer, artificially inflating scores.
 
-**Status**: Distractor expansions applied to 136 questions containing "always" or "only" qualifiers. Length bias reduced by 13 percentage points but still above the expected 25%.
+**Status**: Distractor expansions applied to 136 questions containing "always" or "only" qualifiers. Length bias reduced by approximately 12 percentage points but still above the expected 25%.
 
 ### Qualifier word bias
 

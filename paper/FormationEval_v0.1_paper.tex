@@ -25,16 +25,16 @@ UiT The Arctic University of Norway\\
 \maketitle
 
 \begin{abstract}
-This paper presents FormationEval, an open multiple-choice question benchmark for evaluating language models on petroleum geoscience and subsurface disciplines. The dataset contains 505 questions across seven domains including petrophysics, petroleum geology and reservoir engineering, derived from three authoritative sources using a reasoning model with detailed instructions and a concept-based approach that avoids verbatim copying of copyrighted text. Each question includes source metadata to support reproducible evaluation. The evaluation covers 72 models from major providers including OpenAI, Anthropic, Google, Meta and open-weight alternatives. The top performers achieve over 97\% accuracy, with Gemini 3 Pro Preview reaching 99.8\%, while tier and domain gaps persist. Among open-weight models, GLM-4.7 leads at 98.6\%, with DeepSeek, Llama, Qwen and Mistral models also exceeding 93\%. The performance gap between open-weight and closed models is narrower than expected, with several lower-cost open-weight models exceeding 90\% accuracy. Petrophysics emerges as the most challenging domain across all models, while smaller models show wider performance variance. Residual length bias in the dataset (correct answers tend to be longer) is documented along with bias mitigation strategies applied during construction. The benchmark, evaluation code and results are publicly available.
+This paper presents FormationEval, an open multiple-choice question benchmark for evaluating language models on petroleum geoscience and subsurface disciplines. The dataset contains 505 questions across seven domains including petrophysics, petroleum geology and reservoir engineering, derived from three authoritative sources using a reasoning model with detailed instructions and a concept-based approach that avoids verbatim copying of copyrighted text. Each question includes source metadata to support traceability and audit. The evaluation covers 72 models from major providers including OpenAI, Anthropic, Google, Meta and open-weight alternatives. The top performers achieve over 97\% accuracy, with Gemini 3 Pro Preview reaching 99.8\%, while tier and domain gaps persist. Among open-weight models, GLM-4.7 leads at 98.6\%, with several DeepSeek, Llama, Qwen and Mistral models also exceeding 93\%. The performance gap between open-weight and closed models is narrower than expected, with several lower-cost open-weight models exceeding 90\% accuracy. Petrophysics emerges as the most challenging domain across all models, while smaller models show wider performance variance. Residual length bias in the dataset (correct answers tend to be longer) is documented along with bias mitigation strategies applied during construction. The benchmark, evaluation code and results are publicly available.
 \end{abstract}
 
 \section{Introduction}
 
-Large language models are increasingly applied to domain-specific tasks in science and engineering, yet their capabilities in specialized fields remain difficult to assess. General benchmarks like MMLU \cite{mmlu} cover broad knowledge but offer limited focus on specialized fields. For petroleum geoscience and subsurface engineering (fields requiring understanding of well logging physics, reservoir characterization and geological interpretation), publicly available benchmarks remain limited.
+Large language models (LLMs) are increasingly applied to domain-specific tasks in science and engineering, yet their capabilities in specialized fields remain difficult to assess. General benchmarks like MMLU \cite{mmlu} cover broad knowledge but offer limited focus on specialized fields. For petroleum geoscience and subsurface engineering (fields requiring understanding of well logging physics, reservoir characterization and geological interpretation), publicly available benchmarks remain limited.
 
 This work addresses the gap with FormationEval, a 505-question multiple-choice benchmark covering seven domains: petrophysics, petroleum geology, geophysics, reservoir engineering, sedimentology, drilling engineering and production engineering. Questions are derived from authoritative textbooks and open courseware using a concept-based methodology that tests understanding rather than phrase recognition, while respecting copyright constraints.
 
-The contributions are: (1) a methodology for generating MCQs from technical sources without verbatim copying; (2) a curated dataset with source metadata and contamination risk labels; and (3) an evaluation of 72 language models across multiple providers, revealing performance patterns by domain and difficulty level.
+The contributions are: (1) a methodology for generating multiple-choice questions (MCQs) from technical sources without verbatim copying; (2) a curated dataset with source metadata and contamination risk labels; and (3) an evaluation of 72 language models across multiple providers, revealing performance patterns by domain and difficulty level.
 
 % Source pointers: README.md, data/benchmark/README.md
 
@@ -116,7 +116,7 @@ Provenance metadata includes source identifier, title, chapter reference, licens
 Questions are generated using a reasoning model (GPT-5.2 \cite{gpt52} with high reasoning effort) that processes source chapters (Section 3.2) through extended chain-of-thought before producing output. The pipeline consists of four stages:
 
 \begin{enumerate}
-\item \textbf{Text extraction} converts source PDFs to Markdown using OCR, preserving structure and mathematical notation.
+\item \textbf{Text extraction} converts source PDFs to Markdown using optical character recognition (OCR), preserving structure and mathematical notation.
 \item \textbf{Chunking} splits documents by chapter or section, with each chunk sized for model context (typically one chapter, approximately 10,000--15,000 tokens).
 \item \textbf{Candidate generation} uses GPT-5.2 with high reasoning effort, which receives the chapter text along with a detailed system prompt specifying schema requirements, concept-based derivation rules, difficulty targets and output format. The model generates 5--12 questions per chapter.
 \item \textbf{Verification} checks schema compliance (no duplicate choices, answer index in range) and confirms support in source text, flagging ambiguous items.
@@ -124,7 +124,7 @@ Questions are generated using a reasoning model (GPT-5.2 \cite{gpt52} with high 
 
 Figure~\ref{fig:mcq_pipeline} illustrates this pipeline from source ingestion to final dataset.
 
-The system prompt emphasizes that questions must be standalone, answerable from domain knowledge without access to the source chapter. Phrases like ``according to the chapter'' or ``the text describes'' are explicitly prohibited. A summary of the generation prompt is provided in Appendix~B; the full system prompt is available in the repository at \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{\texttt{src/\allowbreak prompts/\allowbreak mcq\_generator\_system\_prompt.txt}}.
+The system prompt emphasizes that questions must be standalone, answerable from domain knowledge without access to the source chapter. Phrases like ``according to the chapter'' or ``the text describes'' are explicitly prohibited. A summary of the generation prompt is provided in Appendix~B; the full system prompt is available in the repository at \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{\texttt{src/\allowbreak{}prompts/\allowbreak{}mcq\_generator\_system\_prompt.txt}}.
 
 % Source pointers: src/README.md
 
@@ -151,17 +151,17 @@ The required rationale field accelerated verification. When a rationale contradi
 
 Initial analysis revealed two exploitable patterns.
 
-\textbf{Length bias} was significant. Correct answers were longest in 64.6\% of questions (expected 25\%), averaging 86.6 characters versus 69.8 for distractors.
+\textbf{Length bias} was significant. Correct answers were uniquely longest in over 55\% of questions (expected 25\%), averaging 86.6 characters versus 69.8 for distractors.
 
 \textbf{Qualifier word bias} was also present. Absolute words like ``always'' appeared only in distractors (49 instances, 0\% correct rate), while hedged words like ``may'' appeared only in correct answers (13 instances, 100\% correct rate).
 
 Combined, these patterns could be exploited well above random chance.
 
-\textbf{Mitigation} involved expanding 136 distractors with technical context to reduce length imbalance (from 64.6\% to 51.5\% longest-is-correct). All ``always'' instances were replaced with varied synonyms (invariably, necessarily, inherently) to break the single-word exploit. The word ``may'' was added to 13 distractors (e.g., ``has no effect'' $\to$ ``may have no effect'') to balance hedging language.
+\textbf{Mitigation} involved expanding 136 distractors with technical context to reduce length imbalance (from over 55\% to 43.2\% uniquely-longest-is-correct). All ``always'' instances were replaced with varied synonyms (invariably, necessarily, inherently) to break the single-word exploit. The word ``may'' was added to 13 distractors (e.g., ``has no effect'' $\to$ ``may have no effect'') to balance hedging language.
 
 \textbf{Residual issues} remain. Length bias is still above the 25\% baseline. The absolute-word synonyms all have 0\% correct rate, making a combined ``any-absolute-word=wrong'' heuristic still partially exploitable.
 
-For benchmarking purposes, these residual biases should not significantly affect relative comparisons. Since the same patterns apply to all questions, any bias-based advantage would affect all models equally, preserving the validity of model-to-model comparisons. The major exploits (length as a proxy for correctness, ``always'' as a marker for wrong answers, ``may'' as a marker for correct answers) have been addressed. After mitigation, correct answers average 87 characters versus 74 for distractors, a difference of roughly 13 characters (2--3 words). With the longest answer correct only 51.5\% of the time, a length-based strategy would fail nearly half the time. The remaining issues with absolute-word synonyms affect fewer than 10\% of questions. These limitations are documented for transparency; see Appendix~C for detailed before/after metrics.
+For benchmarking purposes, these residual biases should not significantly affect relative comparisons. Since the same patterns apply to all questions, any bias-based advantage would affect all models equally, preserving the validity of model-to-model comparisons. The major exploits (length as a proxy for correctness, ``always'' as a marker for wrong answers, ``may'' as a marker for correct answers) have been addressed. After mitigation, correct answers average 87 characters versus 74 for distractors, a difference of roughly 13 characters (2--3 words). With the uniquely longest answer correct only 43.2\% of the time, a length-based strategy would fail more often than it succeeds. The remaining issues with absolute-word synonyms affect fewer than 10\% of questions. These limitations are documented for transparency; see Appendix~C for detailed before/after metrics.
 
 % Source pointers: docs/bias_fix_tracking.md, data/benchmark/README.md
 
@@ -265,14 +265,14 @@ Answer extraction uses flexible regex patterns to handle varied response formats
 
 The primary metric is overall accuracy, defined as correct answers divided by total questions (505).
 
-Secondary metrics include accuracy by difficulty level (easy, medium, hard) and by domain (seven categories). The analysis also covers bias patterns: position bias (deviation from uniform A/B/C/D selection) and length bias (tendency to select the longest answer choice). The benchmark's residual length bias (correct answer is longest in 51.5\% of questions) provides a reference point for interpreting model length bias.
+Secondary metrics include accuracy by difficulty level (easy, medium, hard) and by domain (seven categories). The analysis also covers bias patterns: position bias (deviation from uniform A/B/C/D selection) and length bias (tendency to select the longest answer choice). The benchmark's residual length bias (correct answer is uniquely longest in 43.2\% of questions) provides a reference point for interpreting model length bias.
 
 % Source pointers: eval/README.md, eval/metrics.py
 
 \subsection{Caching and reproducibility}
 
 API responses are cached per model and question
-({\small\texttt{eval/\allowbreak cache/\allowbreak\{model\}/\allowbreak\{question\_id\}.json}}). This enables resuming interrupted evaluation runs, re-analyzing results without additional API costs and debugging extraction failures.
+({\small\texttt{eval/\allowbreak{}cache/\allowbreak{}\{model\}/\allowbreak{}\{question\_id\}.json}}). This enables resuming interrupted evaluation runs, re-analyzing results without additional API costs and debugging extraction failures.
 
 Evaluation can be re-run in analyze-only mode to regenerate reports from cached responses. Output files include machine-readable JSON, Markdown tables and CSV exports with per-question breakdowns including raw model responses (truncated to 500 characters).
 
@@ -290,12 +290,12 @@ Accuracy spans a wide range, from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
 
 \begin{table}[htbp]
   \centering
-  \caption{Top 50 models by accuracy. See Appendix~\ref{app:full_leaderboard} for the complete 72-model leaderboard.}
+  \caption{Top 50 models by accuracy (prices in USD per million tokens). See Appendix~\ref{app:full_leaderboard} for the complete 72-model leaderboard.}
   \label{tab:leaderboard}
   \small
   \begin{tabular}{rlllrr}
     \toprule
-    Rank & Model & Open & Price (\$/M) & Accuracy & Correct \\
+    Rank & Model & Open & \$/M (in/out) & Accuracy & Correct \\
     \midrule
     1 & gemini-3-pro-preview & No & 2.00/12.00 & 99.8\% & 504/505 \\
     2 & glm-4.7 & \textcolor{openweight}{Yes} & 0.40/1.50 & 98.6\% & 498/505 \\
@@ -371,7 +371,7 @@ Accuracy spans a wide range, from 99.8\% (Gemini 3 Pro Preview) to 57.6\% (Llama
 \FloatBarrier
 \subsection{By difficulty}
 
-Across all model tiers, medium questions show the lowest accuracy, below both easy and hard (Figure~\ref{fig:difficulty_breakdown}). Even Gemini 3 Pro Preview made its single error on a medium question. Medium questions are more comparison-heavy and tool-specific, have a higher calculation rate (8.8\% versus 5.1\% for hard) and have less length-bias cueing than hard (correct answer is longest in 48.2\% of medium versus 60.6\% of hard, per the benchmark dataset \cite{formationeval_dataset}).
+Across all model tiers, medium questions show the lowest accuracy, below both easy and hard (Figure~\ref{fig:difficulty_breakdown}). Even Gemini 3 Pro Preview made its single error on a medium question. Medium questions are more comparison-heavy and tool-specific, have a higher calculation rate (8.8\% versus 5.1\% for hard) and have less length-bias cueing than hard (correct answer is uniquely longest in 40.5\% of medium versus 55.6\% of hard, per the benchmark dataset \cite{formationeval_dataset}).
 
 Smaller models show wider variance by difficulty. Llama-3.2-3b-instruct achieves 62.9\% on easy questions but only 54.7\% on medium, indicating difficulty labels correlate with model performance patterns. Figure~\ref{fig:difficulty_breakdown} compares accuracy by difficulty across model tiers.
 
@@ -387,7 +387,7 @@ Smaller models show wider variance by difficulty. Llama-3.2-3b-instruct achieves
 \FloatBarrier
 \subsection{By domain}
 
-Petrophysics emerges as the most challenging domain across all models, with typical accuracy 3--5 percentage points lower than other domains. This reflects the technical specificity of well logging physics and formation evaluation concepts.
+Petrophysics emerges as the most challenging domain across all models, with typical accuracy 3--5 percentage points lower than other domains. This reflects the technical detail of well logging physics and formation evaluation concepts.
 
 The top model (Gemini 3 Pro Preview) achieves near-perfect scores across all domains: 99.6\% Petrophysics, 100\% for all other domains. Open-weight leader GLM-4.7 shows 98.2\% Petrophysics versus 99--100\% for other domains.
 
@@ -415,7 +415,7 @@ Table~\ref{tab:domain_avg} shows average accuracy per domain across all 72 model
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{domain_heatmap.pdf}
-  \caption{Model accuracy by domain for top 15 models. Petrophysics shows consistently lower accuracy than other domains across all models, reflecting the technical depth of well logging concepts.}
+  \caption{Model accuracy by domain for top 15 models. Petrophysics shows consistently lower accuracy than other domains across all models, reflecting the technical detail of well logging concepts.}
   \label{fig:domain_heatmap}
 \end{figure}
 
@@ -426,7 +426,7 @@ Table~\ref{tab:domain_avg} shows average accuracy per domain across all 72 model
 
 The ten hardest questions (by model failure rate) reveal systematic knowledge gaps \cite{formationeval_analysis}. The hardest question (on strike-slip fault stepovers and pull-apart basin formation) was answered incorrectly by 61 of 72 models (85\%). Most models selected option A (left-stepping arrangement) instead of the correct answer D (right-stepping arrangement for dextral motion). The top three hardest questions are documented in the analysis report \cite{formationeval_analysis}.
 
-Eight of the ten hardest questions are from the Petrophysics domain, covering specialized topics like neutron-density crossplot interpretation, invasion profiles and tool calibration. One geology question (strike-slip stepovers) and one easy-labeled question (LWD propagation) also appear in the top 10.
+Eight of the ten hardest questions are from the Petrophysics domain, covering specialized topics like neutron-density crossplot interpretation, invasion profiles and tool calibration. One geology question (strike-slip stepovers) and one easy-labeled question (logging-while-drilling (LWD) propagation) also appear in the top 10.
 
 Model agreement analysis shows that 21.6\% of questions were answered correctly by all 72 models, 0\% were missed by all models and 78.4\% showed mixed results, indicating most questions help distinguish model performance levels.
 
@@ -453,14 +453,14 @@ Across domains, open-weight averages are highest in Reservoir Engineering (93.3\
 These results suggest that petroleum geoscience knowledge is well-represented in open-weight models, with 11 of 32 exceeding 90\% accuracy and 22 exceeding 85\%. Even models with fewer parameters and lower costs show useful domain understanding, making them viable options for applications where open weights or cost efficiency matter. Smaller closed models also perform well (GPT-5-nano variants achieve 92.9--93.3\%), suggesting that compact models of either type can handle this domain.
 
 \begin{longtable}{rllrr}
-  \caption{Open-weight models by accuracy.} \label{tab:open_weight} \\
+  \caption{Open-weight models by accuracy (prices in USD per million tokens).} \label{tab:open_weight} \\
   \toprule
-  Overall rank & Model & Price (\$/M) & Accuracy & Correct \\
+  Overall rank & Model & \$/M (in/out) & Accuracy & Correct \\
   \midrule
   \endfirsthead
   \multicolumn{5}{c}{\tablename\ \thetable{} -- continued from previous page} \\
   \toprule
-  Overall rank & Model & Price (\$/M) & Accuracy & Correct \\
+  Overall rank & Model & \$/M (in/out) & Accuracy & Correct \\
   \midrule
   \endhead
   \midrule \multicolumn{5}{r}{Continued on next page} \\
@@ -508,7 +508,7 @@ The ten lowest-scoring models are all compact variants (3B--12B parameters) or o
 
 These models show consistent patterns. Accuracy on easy questions (63--87\%) exceeds medium (55--78\%) and hard (59--82\%), but the gap between easy and medium is larger than for top models. Llama-3.2-3b-instruct shows the widest spread, at 62.9\% easy versus 54.7\% medium.
 
-Petrophysics accuracy for bottom-tier models falls to 51--74\%, while other domains remain at 62--98\%. This suggests that smaller models particularly struggle with the technical specificity of well logging concepts. The full 72-model leaderboard is provided in Appendix~\ref{app:full_leaderboard}.
+Petrophysics accuracy for bottom-tier models falls to 51--74\%, while other domains remain at 62--98\%. This suggests that smaller models particularly struggle with the technical detail of well logging concepts. The full 72-model leaderboard is provided in Appendix~\ref{app:full_leaderboard}.
 
 % Source pointers: eval/results/leaderboard.md
 
@@ -518,13 +518,13 @@ Petrophysics accuracy for bottom-tier models falls to 51--74\%, while other doma
 
 The benchmark provides relative comparisons between models rather than absolute measures of domain competence. High scores indicate that a model can answer concept-based questions derived from authoritative sources, but do not guarantee expertise in practical applications.
 
-All models exhibit elevated length bias in this analysis. They select the longest answer choice more often than the 25\% baseline. However, this rate (38--47\% across models) is close to or below the benchmark's residual bias (correct answer is longest in 51.5\% of questions), suggesting models are not simply exploiting length as a proxy.
+All models exhibit elevated length bias in this analysis. They select the longest answer choice more often than the 25\% baseline. This rate (38--47\% across models) is close to the benchmark's residual bias (correct answer is uniquely longest in 43.2\% of questions), making it difficult to distinguish length exploitation from genuine reasoning that produces longer correct answers.
 
 Position bias is generally low across models, with most showing near-uniform A/B/C/D distributions. Two Nvidia Nemotron variants showed elevated position bias (``High'' level), potentially indicating instruction-following limitations.
 
 \subsection{Limitations and threats to validity}
 
-\textbf{Residual length bias} persists despite mitigation efforts. Correct answers remain longest in 51.5\% of questions (versus 25\% expected), which may inflate scores for models sensitive to answer length.
+\textbf{Residual length bias} persists despite mitigation efforts. Correct answers remain uniquely longest in 43.2\% of questions (versus 25\% expected), which may inflate scores for models sensitive to answer length.
 
 \textbf{Contamination risk} cannot be fully ruled out. While questions are generated from concepts rather than copied, the underlying topics appear in textbooks that may be in model training data. Contamination risk labels are provided but actual training data overlap cannot be verified.
 
@@ -628,9 +628,9 @@ Contamination risk indicates likelihood that similar questions exist in LLM trai
 \texttt{Answer:}
 \end{quote}
 
-\subsection{Generation prompt summary}
+\subsection{Multiple-choice question generation prompt summary}
 
-The full system prompt (475 lines) is \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{available in the repository}.
+The full system prompt for MCQ generation (475 lines) is \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/src/prompts/mcq_generator_system_prompt.txt}{available in the repository}.
 Key instructions include:
 
 \begin{enumerate}
@@ -661,7 +661,7 @@ Tables~\ref{tab:length_bias} and \ref{tab:qualifier_bias} summarize the bias mit
     \toprule
     Metric & Original & After fixes \\
     \midrule
-    Correct answer is longest choice & 64.6\% & 51.5\% \\
+    Correct answer is uniquely longest & $>$55\% & 43.2\% \\
     Correct answer avg length & 86.6 chars & 86.6 chars \\
     Distractor avg length & 69.8 chars & 74.0 chars \\
     \bottomrule
@@ -697,14 +697,14 @@ Tables~\ref{tab:length_bias} and \ref{tab:qualifier_bias} summarize the bias mit
 Table~\ref{tab:full_leaderboard} presents all 72 evaluated models ranked by accuracy.
 
 \begin{longtable}{rlllrr}
-  \caption{Complete leaderboard. All 72 models by accuracy.} \label{tab:full_leaderboard} \\
+  \caption{Complete leaderboard. All 72 models by accuracy (prices in USD per million tokens).} \label{tab:full_leaderboard} \\
   \toprule
-  Rank & Model & Open & Price (\$/M) & Accuracy & Correct \\
+  Rank & Model & Open & \$/M (in/out) & Accuracy & Correct \\
   \midrule
   \endfirsthead
   \multicolumn{6}{c}{\tablename\ \thetable{} -- continued from previous page} \\
   \toprule
-  Rank & Model & Open & Price (\$/M) & Accuracy & Correct \\
+  Rank & Model & Open & \$/M (in/out) & Accuracy & Correct \\
   \midrule
   \endhead
   \midrule \multicolumn{6}{r}{Continued on next page} \\

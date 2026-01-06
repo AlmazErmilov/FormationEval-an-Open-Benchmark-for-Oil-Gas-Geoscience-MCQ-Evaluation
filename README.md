@@ -5,6 +5,8 @@
 
 The project focuses on **reproducibility, provenance, and licensing safety**: public releases contain **only benchmark items + source references**, not copyrighted textbooks or exam PDFs.
 
+📄 **Paper**: [arXiv:2601.02158](https://arxiv.org/abs/2601.02158) ([PDF](https://arxiv.org/pdf/2601.02158) | [local copy](paper/2601.02158v1.pdf))
+
 ---
 
 ## Why this benchmark
@@ -152,8 +154,6 @@ See [`data/sources/open/README.md`](data/sources/open/README.md) for the registr
 
 A PDF version of the benchmark is available at `data/benchmark/formationeval_v0.1.pdf` (generated via `src/export_benchmark_pdf.py`).
 
-The technical paper is available at [`paper/FormationEval_v0.1_paper.pdf`](paper/FormationEval_v0.1_paper.pdf).
-
 ---
 
 ## Contributing
@@ -175,7 +175,14 @@ This project is licensed under [CC BY 4.0](LICENSE). You are free to share and a
 
 If you use FormationEval in your research, please cite:
 
-```
-Ermilov, A. (2025). FormationEval: An open benchmark for oil and gas geoscience MCQ evaluation.
-GitHub repository. https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation
+```bibtex
+@misc{ermilov2026formationeval,
+      title={FormationEval, an open multiple-choice benchmark for petroleum geoscience},
+      author={Almaz Ermilov},
+      year={2026},
+      eprint={2601.02158},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2601.02158},
+}
 ```

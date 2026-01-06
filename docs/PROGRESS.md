@@ -1,5 +1,43 @@
 # Progress log
 
+## 2026-01-06: Interactive leaderboard Space
+
+Created a separate HuggingFace Space for the interactive leaderboard.
+
+- **Space URL**: https://huggingface.co/spaces/AlmazErmilov/FormationEval-Leaderboard
+- **Features**: Sortable tables, filters (search, company, open-weight), 5 tabs (Overall, By difficulty, By domain, Bias analysis, Charts), interactive Plotly charts
+- **Architecture**: Separate Space following industry standard (like Open LLM Leaderboard, MTEB)
+- Updated dataset README to link to the interactive Space
+
+## 2026-01-06: HuggingFace dataset published
+
+Published FormationEval dataset to HuggingFace Hub.
+
+- **Dataset URL**: https://huggingface.co/datasets/AlmazErmilov/FormationEval
+- **Files**: formationeval_v0.1.json, .parquet, .pdf, leaderboard.md, analysis.md, charts
+- **README**: Dataset card with YAML frontmatter linking to arXiv paper
+
+## 2026-01-06: arXiv publication
+
+Paper published on arXiv.
+
+- **arXiv ID**: 2601.02158
+- **URL**: https://arxiv.org/abs/2601.02158
+- **PDF**: https://arxiv.org/pdf/2601.02158
+- **HTML**: https://arxiv.org/html/2601.02158v1
+- **Categories**: cs.CL (primary), cs.AI, cs.LG, physics.geo-ph
+- **License**: CC BY 4.0
+
+Added citation section to `data/benchmark/README.md` with BibTeX entry.
+
+## 2026-01-05: Paper review fixes
+
+- Switched length-bias metric to unique-longest definition (43.2%) with 25% baseline
+- Updated all percentages in paper and README to match new definition
+- Fixed price column headers to clarify in/out format
+- Fixed `\allowbreak{}` spacing in file paths
+- Abstract: added "several" to avoid implying all models in a family exceed 93%
+
 ## 2026-01-04: Paper clarity improvements
 
 - Abstract: added mention of reasoning model with detailed instructions for question generation

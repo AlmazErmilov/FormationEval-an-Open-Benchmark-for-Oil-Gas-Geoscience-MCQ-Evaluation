@@ -58,3 +58,7 @@ paper/figures/generate_charts.py
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+
+# Hugging Face repos (separate git)
+huggingface/
+formationeval-leaderboard/
