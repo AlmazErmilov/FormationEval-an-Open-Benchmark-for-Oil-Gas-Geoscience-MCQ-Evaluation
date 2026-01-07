@@ -9,6 +9,8 @@ The project focuses on **reproducibility, provenance, and licensing safety**: pu
 
 🤗 **HuggingFace**: [Dataset](https://huggingface.co/datasets/AlmazErmilov/FormationEval) | [Leaderboard](https://huggingface.co/spaces/AlmazErmilov/FormationEval-Leaderboard)
 
+**Website**: [formationeval.no](https://www.formationeval.no) — take a quiz, compare with 72 models, browse questions, send feedback
+
 ---
 
 ## Why this benchmark
