@@ -17,6 +17,7 @@ If you use this benchmark, please cite:
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2601.02158},
+      doi={10.48550/arXiv.2601.02158}
 }
 ```
 
