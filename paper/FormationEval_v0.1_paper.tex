@@ -176,6 +176,16 @@ An accompanying PDF rendering, generated from the JSON release, provides a reada
 
 % Source pointers: src/README.md, docs/lessons_learned.md
 
+\subsection{Community feedback through interactive quiz}
+
+Since all manual verification was performed by a single domain expert (spot checks of 2--5 questions per source chapter, Section~3.5), scalable quality assurance requires additional feedback channels. To address this, an interactive website was developed alongside the benchmark \cite{formationeval_website}. The website includes a quiz mode where domain experts answer benchmark questions and compare their scores against the 72 evaluated language models. This gamified format is designed to encourage engagement: after completing a quiz, users see which models they outperformed or matched, with options to share results on social media. The goal is to attract domain experts who might not otherwise review a static dataset.
+
+Each question in both the quiz results and the question browser includes a feedback button that opens a pre-filled email with the question identifier attached. This allows experts to report incorrect answers, ambiguous phrasing or other issues directly while reviewing a specific question. The question browser provides access to all 505 questions with filtering by domain and difficulty, answer rationales and source citations, enabling systematic review without programming tools.
+
+This approach treats community engagement as a continuous quality assurance process. As more domain experts interact with the benchmark through the quiz, the likelihood of identifying remaining errors increases. Feedback collected through this channel will inform corrections in future versions of the dataset.
+
+The website is available at \url{https://www.formationeval.no}.
+
 \section{Dataset summary}
 
 Version 0.1 of FormationEval contains 505 questions in English covering 811 unique topics (as questions can address multiple topics). Table~\ref{tab:summary} summarizes key metrics, Table~\ref{tab:distribution} shows the distribution by domain and difficulty and Table~\ref{tab:diff_domain} provides the difficulty breakdown within each domain. Questions are distributed across three sources: Bj{\o}rlykke's textbook contributes the largest share (262 questions, 52\%), followed by Ellis \& Singer (219 questions, 43\%) and TU Delft open courseware (24 questions, 5\%). Figure~\ref{fig:dataset_composition} visualizes these distributions.
@@ -585,6 +595,7 @@ The benchmark, evaluation reports and code are available in the project reposito
   \item Per-question results: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/blob/v0.1/eval/results/questions.csv}{\texttt{eval/results/questions.csv}}
   \item Generation scripts: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/tree/v0.1/src}{\texttt{src/}}
   \item Evaluation scripts: \href{https://github.com/AlmazErmilov/FormationEval-an-Open-Benchmark-for-Oil-Gas-Geoscience-MCQ-Evaluation/tree/v0.1/eval}{\texttt{eval/}}
+  \item Interactive website and quiz \cite{formationeval_website}: \href{https://www.formationeval.no}{\texttt{formationeval.no}}
 \end{itemize}
 
 \section{Conclusion and future work}
