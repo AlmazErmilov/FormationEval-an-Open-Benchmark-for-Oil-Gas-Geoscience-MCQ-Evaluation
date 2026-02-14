@@ -73,11 +73,11 @@ The contributions are: (1) a methodology for generating multiple-choice question
 
 \section{Related work}
 
-General-purpose benchmarks like MMLU \cite{mmlu} evaluate broad knowledge and reasoning capabilities but provide limited coverage of specialized domains. MMLU includes professional exam questions across 57 subjects but only a few relate to earth sciences or engineering. Domain-specific benchmarks exist for medicine \cite{medqa} and law \cite{legalbench}, but petroleum geoscience lacks an equivalent evaluation resource.
+General-purpose benchmarks like MMLU \cite{mmlu} evaluate broad knowledge across 57 subjects but provide limited coverage of specialized domains. MMLU-Pro \cite{mmlu_pro} addresses some limitations with harder reasoning questions yet remains domain-general. For science, ARC \cite{arc} covers grade-school science questions and SciBench \cite{scibench} targets college-level problem solving in physics, chemistry and mathematics. GPQA \cite{gpqa} provides 448 graduate-level questions where even domain experts achieve only 65\% accuracy. Domain-specific benchmarks exist for medicine (MedQA \cite{medqa}, 12,723 questions from medical licensing exams) and law (LegalBench \cite{legalbench}). However, no public MCQ benchmark exists specifically for petroleum geoscience or subsurface engineering disciplines.
 
-Existing MCQ generation methods typically transform source sentences into questions. The concept-based methodology presented here differs by emphasizing original question formulation, prioritizing copyright compliance and testing conceptual understanding.
+Recent work on large language models for geoscience has produced domain-adapted models such as K2 \cite{k2_geoscience}, which further pre-trains LLaMA on 5.5 billion tokens of geoscience text and introduces GeoBench for evaluation, and GeoGalactica \cite{geogalactica}, a 30-billion parameter model trained on 65 billion tokens of geoscience literature. Hadid et al.\ \cite{hadid_genai_geoscience} survey generative AI applications across geoscience disciplines. These efforts demonstrate growing interest in AI for earth sciences but focus on model development rather than standardized evaluation of existing models across petroleum-specific knowledge areas.
 
-% Suggested citations: MMLU \cite{mmlu}
+Automatic MCQ generation from text is a well-studied problem. Ch and Saha \cite{mcq_survey} survey methods spanning sentence selection, key extraction, question formation and distractor generation. Recent LLM-based approaches include MCQG-SRefine \cite{mcqg_srefine}, which uses iterative self-critique to generate medical exam questions, and various distractor generation techniques surveyed by Alhazmi et al.\ \cite{distractor_survey}. Most existing methods transform source sentences into questions through syntactic manipulation or paraphrasing. The concept-based methodology presented here differs by generating questions from extracted concepts rather than from specific sentences, which avoids close paraphrasing of copyrighted text while testing understanding rather than phrase recognition.
 
 \section{Benchmark design and construction}
 
@@ -113,12 +113,12 @@ Provenance metadata includes source identifier, title, chapter reference, licens
 
 \subsection{Multiple-choice question generation pipeline}
 
-Questions are generated using a reasoning model (GPT-5.2 \cite{gpt52} with high reasoning effort) that processes source chapters (Section 3.2) through extended chain-of-thought before producing output. The pipeline consists of four stages:
+Questions are generated using a reasoning model (GPT-5.2 \cite{gpt52} with extra high reasoning effort) that processes source chapters (Section 3.2) through extended chain-of-thought before producing output. The pipeline consists of four stages:
 
 \begin{enumerate}
 \item \textbf{Text extraction} converts source PDFs to Markdown using optical character recognition (OCR), preserving structure and mathematical notation.
 \item \textbf{Chunking} splits documents by chapter or section, with each chunk sized for model context (typically one chapter, approximately 10,000--15,000 tokens).
-\item \textbf{Candidate generation} uses GPT-5.2 with high reasoning effort, which receives the chapter text along with a detailed system prompt specifying schema requirements, concept-based derivation rules, difficulty targets and output format. The model generates 5--12 questions per chapter.
+\item \textbf{Candidate generation} uses GPT-5.2 with extra high reasoning effort, which receives the chapter text along with a detailed system prompt specifying schema requirements, concept-based derivation rules, difficulty targets and output format. The model generates 5--12 questions per chapter.
 \item \textbf{Verification} checks schema compliance (no duplicate choices, answer index in range) and confirms support in source text, flagging ambiguous items.
 \end{enumerate}
 
@@ -139,11 +139,15 @@ The system prompt emphasizes that questions must be standalone, answerable from 
 
 \subsection{Quality assurance and audit}
 
-Human spot-checking is essential despite high LLM instruction-following reliability. For each source chapter, 2--5 questions were manually verified against the source material to confirm: (1) the marked answer is correct and unambiguous; (2) distractors are plausible but clearly wrong; (3) no copied phrases appear in questions or answers; (4) the rationale supports the marked answer.
+Human spot-checking is essential despite high LLM instruction-following reliability. All manual verification was performed by the author, a petrophysicist with background in well logging, formation evaluation and petroleum geology. For each source chapter, 2--5 questions were verified against the source material to confirm: (1) the marked answer is correct and unambiguous; (2) distractors are plausible but clearly wrong; (3) no copied phrases appear in questions or answers; (4) the rationale supports the marked answer. This domain expertise was particularly important for petrophysics questions (54\% of the dataset), where assessing answer correctness requires familiarity with logging tool physics and interpretation methods.
 
-The full dataset (505 questions across 45+ chapters) was reviewed in batches for schema compliance and rationale consistency. In addition to human spot-checks, LLM-based batch review flagged potential inconsistencies between rationales and correct answers. The audit log records batch status and any issues requiring correction. Several questions required fixing during the final review pass.
+The full dataset (505 questions across 45+ chapters) was reviewed in batches grouped by source and chapter, with each batch cross-checked against the source material. The final audit flagged one issue out of 505 questions (a question where the source text contained internally inconsistent units). All other batches passed with no issues. In addition to human spot-checks, LLM-based batch review flagged potential inconsistencies between rationales and correct answers.
 
-The required rationale field accelerated verification. When a rationale contradicts the answer it claims to support, the error is immediately visible during initial screening, before returning to source material for confirmation.
+Post-generation corrections addressed two categories of issues. First, 55 questions required rewriting to remove chapter self-references (phrases like ``according to the chapter'' or ``the text describes'') that violated the standalone requirement. These were replaced with domain context so that each question is answerable from general petroleum geoscience knowledge. Second, 12 grammar corrections were applied after batch bias-mitigation edits introduced broken sentences.
+
+The generation prompt evolved through eight major iterations over the course of the project. The list of explicit prohibitions (covering self-references, negative phrasing, length balance and qualifier word patterns) grew from 5 to 15 rules. Few-shot examples were also corrected after analysis revealed that two of three examples had the longest option as the correct answer, contradicting the length balance guidance in the prompt text.
+
+The required rationale field accelerated verification throughout this process. When the model produced a plausible-sounding answer but could not write a coherent rationale, the answer was often incorrect or fabricated. This made the rationale field an effective early indicator of generation errors during both automated and manual review.
 
 % Source pointers: docs/lessons_learned.md, docs/notes_and_audit_on_505_MCQs.md
 
@@ -174,7 +178,7 @@ An accompanying PDF rendering, generated from the JSON release, provides a reada
 
 \section{Dataset summary}
 
-Version 0.1 of FormationEval contains 505 questions in English covering 811 unique topics (as questions can address multiple topics). Table~\ref{tab:summary} summarizes key metrics and Table~\ref{tab:distribution} shows the distribution by domain and difficulty. Questions are distributed across three sources: Bj{\o}rlykke's textbook contributes the largest share (262 questions, 52\%), followed by Ellis \& Singer (219 questions, 43\%) and TU Delft open courseware (24 questions, 5\%). Figure~\ref{fig:dataset_composition} visualizes these distributions.
+Version 0.1 of FormationEval contains 505 questions in English covering 811 unique topics (as questions can address multiple topics). Table~\ref{tab:summary} summarizes key metrics, Table~\ref{tab:distribution} shows the distribution by domain and difficulty and Table~\ref{tab:diff_domain} provides the difficulty breakdown within each domain. Questions are distributed across three sources: Bj{\o}rlykke's textbook contributes the largest share (262 questions, 52\%), followed by Ellis \& Singer (219 questions, 43\%) and TU Delft open courseware (24 questions, 5\%). Figure~\ref{fig:dataset_composition} visualizes these distributions.
 
 Petrophysics represents the largest domain (54\% of questions) reflecting the depth of coverage in the well logging textbook. The difficulty distribution targets 30\% easy, 50\% medium and 20\% hard; the actual distribution (26\%/54\%/20\%) is close to these targets. Answer positions are balanced: A=27\%, B=26\%, C=25\%, D=22\%.
 
@@ -219,6 +223,27 @@ Petrophysics represents the largest domain (54\% of questions) reflecting the de
     \bottomrule
   \end{tabular}
 \end{table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Difficulty distribution by domain. Domain counts are non-exclusive (questions may belong to multiple domains). Percentages show within-domain distribution.}
+  \label{tab:diff_domain}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Domain & Easy & Medium & Hard & Total \\
+    \midrule
+    Petrophysics & 49 (18\%) & 159 (58\%) & 64 (24\%) & 272 \\
+    Petroleum Geology & 50 (33\%) & 70 (46\%) & 31 (21\%) & 151 \\
+    Sedimentology & 30 (31\%) & 54 (55\%) & 14 (14\%) & 98 \\
+    Geophysics & 19 (24\%) & 44 (55\%) & 17 (21\%) & 80 \\
+    Reservoir Engineering & 13 (30\%) & 25 (58\%) & 5 (12\%) & 43 \\
+    Drilling Engineering & 10 (42\%) & 11 (46\%) & 3 (12\%) & 24 \\
+    Production Engineering & 5 (36\%) & 8 (57\%) & 1 (7\%) & 14 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Petrophysics has the lowest share of easy questions (18\%) and the highest share of hard questions (24\%), consistent with the technical depth of well logging physics covered in Ellis \& Singer \cite{ellis_singer_2007}. Smaller domains such as Drilling Engineering and Production Engineering contain few hard questions, reflecting the limited coverage of these topics in the selected sources.
 
 \begin{figure}[htbp]
   \centering
@@ -528,7 +553,7 @@ Position bias is generally low across models, with most showing near-uniform A/B
 
 \textbf{Contamination risk} cannot be fully ruled out. While questions are generated from concepts rather than copied, the underlying topics appear in textbooks that may be in model training data. Contamination risk labels are provided but actual training data overlap cannot be verified.
 
-\textbf{Quality assurance} was limited to spot checks rather than exhaustive review. Several questions were corrected during the final pass; additional errors may remain.
+\textbf{Quality assurance} combined batch review of all 505 questions with spot checks against source material (Section~3.5), but did not include independent expert review. Despite 67 corrections identified during the process, additional errors may remain.
 
 \textbf{Domain coverage} is uneven, with petrophysics dominating (54\% of questions) due to source availability. This may not reflect the breadth of petroleum geoscience equally.
 
@@ -784,6 +809,10 @@ Table~\ref{tab:full_leaderboard} presents all 72 evaluated models ranked by accu
   71 & gemma-3-4b-it & Yes & 0.02/0.07 & 71.3\% & 360/505 \\
   72 & llama-3.2-3b-instruct & Yes & 0.02/0.02 & 57.6\% & 291/505 \\
 \end{longtable}
+
+\section*{Declaration of Generative AI and AI-assisted technologies in the writing process}
+
+During the preparation of this work, the author used GPT-5.2 (OpenAI) with extra high reasoning effort to transform textbook chapter content into multiple-choice questions following a structured generation pipeline (Section~3.4). All domain knowledge was derived from the source materials. The model served as a generation and reformatting tool, not as a knowledge source. GenAI tools were also used for language editing. The author reviewed and edited all generated content and takes full responsibility for the publication.
 
 \bibliographystyle{plainurl}
 \bibliography{refs}
