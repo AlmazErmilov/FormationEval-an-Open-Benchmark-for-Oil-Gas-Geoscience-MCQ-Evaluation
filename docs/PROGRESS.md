@@ -1,5 +1,18 @@
 # Progress log
 
+## 2026-02-17: arXiv v2 update
+
+Updated arXiv preprint to v2 (2601.02158v2).
+
+Changes from v1:
+- Expanded Related Work section with 10 new references (MMLU-Pro, GPQA, ARC, MedQA, LegalBench, GeoGalactica, K2, MCQG-SRefine, Alhazmi et al., Ch and Saha)
+- Added Section 3.5 Quality assurance details: author expertise, spot-checking process, prompt iteration history
+- Added Table 3: difficulty breakdown by domain
+- Added Section 3.8: community feedback through interactive quiz (formationeval.no)
+- Corrected reasoning effort references to "extra high"
+- Updated GenAI declaration
+- Fixed factual inaccuracies in Related Work (ARC description, Hadid et al. claim scope)
+
 ## 2026-01-06: Interactive leaderboard Space
 
 Created a separate HuggingFace Space for the interactive leaderboard.

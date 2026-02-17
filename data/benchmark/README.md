@@ -2,7 +2,7 @@
 
 Multiple-choice questions for evaluating LLMs on Oil & Gas geoscience knowledge.
 
-📄 **Paper**: [arXiv:2601.02158](https://arxiv.org/abs/2601.02158) ([PDF](https://arxiv.org/pdf/2601.02158) | [local copy](../../paper/2601.02158v1.pdf))
+📄 **Paper**: [arXiv:2601.02158](https://arxiv.org/abs/2601.02158) ([PDF](https://arxiv.org/pdf/2601.02158) | [local copy](../../paper/2601.02158v2.pdf))
 
 ## Citation
 
