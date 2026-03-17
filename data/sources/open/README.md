@@ -1,10 +1,10 @@
-# Open-Licensed Sources
+# Open-licensed sources
 
-Registry of open-licensed materials for public MCQ generation. Actual PDFs/materials go in this folder alongside this README.
+Registry of open-licensed materials for public MCQ generation. Actual PDFs and materials go in this folder alongside this README.
 
 ---
 
-## Source Catalog
+## Source catalog
 
 | Domain | Resource | License | Risk | Good for | Link | Local |
 |--------|----------|---------|------|----------|------|-------|
@@ -16,7 +16,20 @@ Registry of open-licensed materials for public MCQ generation. Actual PDFs/mater
 
 ---
 
-## Risk Levels Explained
+## Imported external benchmark track
+
+FormationEval now also includes an imported QA benchmark track. This is separate from the MCQ generation source catalog above.
+
+| Resource | Role in FormationEval | Licence note | Link |
+|----------|-----------------------|--------------|------|
+| **DISKOS-QA benchmark** | direct source of imported QA pairs | NLOD 2.0 as stated in upstream README | [GitHub repository](https://github.com/georgeghon/DISKOS-QA) |
+| **Large Oil and Gas industry text dataset** | underlying corpus provenance referenced by DISKOS-QA | CC BY 4.0 | [Zenodo record 10775273](https://zenodo.org/records/10775273) |
+
+For reuse and attribution details, read [../../THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md).
+
+---
+
+## Risk levels explained
 
 | Risk | Meaning |
 |------|---------|
@@ -26,7 +39,7 @@ Registry of open-licensed materials for public MCQ generation. Actual PDFs/mater
 
 ---
 
-## Excluded Resources (Copyrighted)
+## Excluded resources (copyrighted)
 
 These are authoritative industry standards but **cannot be used** for the open benchmark:
 
@@ -40,14 +53,14 @@ These can be used as **reference for human verification** but NOT for dataset co
 
 ---
 
-## Concept-Based Derivation (BYO Model)
+## Concept-based derivation (BYO model)
 
 Even from **copyrighted sources** (used privately), you can create original questions using the `concept_based` approach:
 
 - **Allowed:** Questions written from scratch based on concepts/facts learned
 - **Prohibited:** Verbatim copying, close paraphrases, reproducing unique problem structures
 
-This means you can legally read any textbook and generate original MCQs — just don't copy the source's phrasing or distinctive problems. See main README.md for full policy on `derivation_mode`.
+This means you can legally read any textbook and generate original MCQs, just do not copy the source's phrasing or distinctive problems. See the main `README.md` for the full policy on `derivation_mode`.
 
 ---
 
@@ -73,7 +86,7 @@ This means you can legally read any textbook and generate original MCQs — just
 
 ---
 
-## Adding New Sources
+## Adding new sources
 
 Criteria:
 1. Explicit open license on the page (CC BY/SA/NC, Public Domain, Open Access)

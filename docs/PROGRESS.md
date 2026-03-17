@@ -1,5 +1,27 @@
 # Progress log
 
+## 2026-03-17: Polished DISKOS-QA release notes and validation
+
+Tightened the split-release documentation and website-facing integration details without changing the canonical MCQ or QA row counts.
+
+- Added a short maintainer bio and a clearer public licensing note in the root README
+- Restored concise usage, scope, citation, and limitation notes in `data/benchmark/README.md`
+- Documented that some canonical `metadata.diskos.*` fields intentionally preserve raw upstream string literals
+- Added QA id format checks to `src/validate_benchmark_suite.py`
+- Standardized the public rerun wording around the self funded one person project note
+
+## 2026-03-17: Added DISKOS-QA as a separate public track
+
+Integrated the public DISKOS-QA benchmark into the FormationEval suite as a separate imported QA track.
+
+- Added `data/benchmark/formationeval_diskos_qa_v0.2.json` with 1027 normalized QA rows
+- Added `data/benchmark/formationeval_v0.2_manifest.json` as a machine-readable suite manifest
+- Added `src/import_diskos_qa.py` and `src/validate_benchmark_suite.py`
+- Updated main benchmark documentation to describe the split MCQ and QA release structure
+- Added `THIRD_PARTY_NOTICES.md` for DISKOS-QA and underlying Zenodo corpus provenance
+- Clarified that the paper, leaderboard, quiz, and evaluation pipeline still cover MCQ `v0.1` only
+- Added a consistent pending rerun note and collaboration contact text for the expanded suite
+
 ## 2026-02-17: arXiv v2 update
 
 Updated arXiv preprint to v2 (2601.02158v2).

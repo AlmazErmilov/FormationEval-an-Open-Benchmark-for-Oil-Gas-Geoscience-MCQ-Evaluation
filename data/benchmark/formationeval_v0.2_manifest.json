@@ -1,0 +1,42 @@
+{
+  "suite_id": "formationeval_v0.2",
+  "release_date": "2026-03-17",
+  "summary": "FormationEval is now a split benchmark suite with a frozen evaluated MCQ track and an imported DISKOS-QA track.",
+  "pending_note": "Added March 2026. FormationEval now also includes DISKOS-QA. The public leaderboard and quiz still reflect the 505-question MCQ v0.1 track. That benchmark already answered the original model-comparison goal of the project. A full rerun on the expanded suite is pending because this is a self funded one person project and QA evaluation requires materially more token spend.",
+  "contact": {
+    "email": "almaz.ermilov@gmail.com",
+    "note": "Collaboration, compute support, and professional opportunities are welcome."
+  },
+  "tracks": [
+    {
+      "track_id": "mcq_v0.1",
+      "config_name": "default",
+      "question_format": "mcq",
+      "file": "formationeval_v0.1.json",
+      "version": "formationeval_v0.1",
+      "item_count": 505,
+      "evaluated": true,
+      "current_public_leaderboard": true,
+      "license_note": "FormationEval-authored MCQ track. Project-authored materials remain under CC BY 4.0. See LICENSE.",
+      "source_urls": [
+        "https://huggingface.co/datasets/AlmazErmilov/FormationEval",
+        "https://www.formationeval.no"
+      ]
+    },
+    {
+      "track_id": "diskos_qa_v0.2",
+      "config_name": "diskos_qa",
+      "question_format": "qa",
+      "file": "formationeval_diskos_qa_v0.2.json",
+      "version": "formationeval_v0.2",
+      "item_count": 1027,
+      "evaluated": false,
+      "current_public_leaderboard": false,
+      "license_note": "Contains data under the Norwegian Licence for Open Government Data (NLOD) distributed by the DISKOS-QA benchmark project, as stated in the upstream README. See THIRD_PARTY_NOTICES.md.",
+      "source_urls": [
+        "https://github.com/georgeghon/DISKOS-QA",
+        "https://zenodo.org/records/10775273"
+      ]
+    }
+  ]
+}

@@ -2,6 +2,10 @@
 
 Evaluates LLMs on the FormationEval benchmark via Azure OpenAI and OpenRouter.
 
+This pipeline currently evaluates the FormationEval-authored MCQ `v0.1` track only.
+
+March 2026 update: the public suite now also includes the imported DISKOS-QA track, but a rerun on the expanded suite is still pending. The current leaderboard, analysis, and `questions.csv` remain MCQ `v0.1` artifacts.
+
 ## Quick start
 
 **Azure OpenAI:**

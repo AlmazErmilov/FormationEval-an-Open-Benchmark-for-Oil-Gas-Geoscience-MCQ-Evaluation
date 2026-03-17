@@ -1,183 +1,123 @@
-# 🪨 FormationEval, an Open Benchmark for Oil & Gas Geoscience MCQ Evaluation
-(attempts on creating something like MMLU, but for subsurface and petroleum sciences)
+# FormationEval, an open benchmark for petroleum geoscience evaluation
 
-**FormationEval** is an open, research-oriented benchmark to evaluate language models on **Oil & Gas geoscience** and adjacent subsurface disciplines (petrophysics, petroleum geology, geophysics, reservoir engineering) inspired by **MMLU-style multiple-choice questions (MCQ)**.
+**FormationEval** is a public benchmark suite for evaluating language models on petroleum geoscience and adjacent subsurface disciplines.
 
-The project focuses on **reproducibility, provenance, and licensing safety**: public releases contain **only benchmark items + source references**, not copyrighted textbooks or exam PDFs.
+It currently contains two public tracks:
 
-📄 **Paper**: [arXiv:2601.02158](https://arxiv.org/abs/2601.02158) ([PDF](https://arxiv.org/pdf/2601.02158) | [local copy](paper/2601.02158v2.pdf))
+| Track | Format | Status | Notes |
+|------|--------|--------|------|
+| `formationeval_v0.1.json` | MCQ | evaluated | 505 FormationEval-authored multiple-choice questions across 7 domains and 72 evaluated models |
+| `formationeval_diskos_qa_v0.2.json` | QA | imported, not yet rerun | 1027 public DISKOS-QA question-answer pairs normalized into the FormationEval suite |
 
-🤗 **HuggingFace**: [Dataset](https://huggingface.co/datasets/AlmazErmilov/FormationEval) | [Leaderboard](https://huggingface.co/spaces/AlmazErmilov/FormationEval-Leaderboard)
+Paper: [arXiv:2601.02158](https://arxiv.org/abs/2601.02158) ([PDF](https://arxiv.org/pdf/2601.02158) | [local copy](paper/2601.02158v2.pdf))
 
-**Website**: [formationeval.no](https://www.formationeval.no) — take a quiz, compare with 72 models, browse questions, send feedback
+Hugging Face: [Dataset](https://huggingface.co/datasets/AlmazErmilov/FormationEval) | [Leaderboard](https://huggingface.co/spaces/AlmazErmilov/FormationEval-Leaderboard)
 
----
+**Website**: [formationeval.no](https://www.formationeval.no)
+
+## Current status
+
+- The original model-comparison goal of the project was already addressed by the evaluated 505-question MCQ `v0.1` benchmark.
+- March 2026 update: the suite now also includes the public DISKOS-QA track.
+- The public leaderboard and quiz still reflect only the evaluated MCQ `v0.1` track.
+- A full rerun on the expanded suite is pending because this is a self funded one person project and QA evaluation requires materially more token spend.
+
+If you want to collaborate, support reruns or discuss related research and engineering work, contact `almaz.ermilov@gmail.com`.
+
+Almaz Ermilov is a former petrophysicist and now a full time software engineer focused on LLM transparency, control and security in high hazard industries.
 
 ## Why this benchmark
 
-Subsurface/O&G benchmarks for LLMs are rare or limited (or probably hidden with many resources remaining proprietary or access restricted). FormationEval aims to provide:
+FormationEval is meant to keep three things explicit:
 
-- a **well-defined schema** and validation rules,
-- **transparent origin** for every item,
-- a **clear public-release licensing policy**,
-- an evaluation workflow that integrates with standard tooling.
+- provenance for every released item
+- a clean public-release policy for authored and imported tracks
+- evaluation artifacts that are easy to inspect and reproduce
 
----
+## Public suite structure
 
-## Scope
+The benchmark now has a split release structure.
 
-FormationEval currently targets a single, stable task format:
+| File | Purpose |
+|------|---------|
+| `data/benchmark/formationeval_v0.1.json` | canonical evaluated MCQ track |
+| `data/benchmark/formationeval_diskos_qa_v0.2.json` | canonical imported QA track |
+| `data/benchmark/formationeval_v0.2_manifest.json` | machine-readable suite manifest |
+| `eval/results/leaderboard.md` | current leaderboard for MCQ `v0.1` only |
+| `eval/results/analysis.md` | current analysis for MCQ `v0.1` only |
 
-- **MCQ (4 options, single correct answer)**  
-  Designed for straightforward scoring (accuracy) and leaderboard comparability.
+The paper, published leaderboard, quiz, and current evaluation pipeline cover the MCQ `v0.1` track only.
 
-Planned but optional "future-proof" fields exist (e.g., `image`, `evidence`, `tooling`) while keeping the dataset MCQ first.
+## Data format
 
----
+### MCQ track
 
-## Current release (v0.1)
-
-- **505 questions** across 7 domains (petrophysics, petroleum geology, geophysics, reservoir engineering, sedimentology, drilling, production)
-- **3 sources**: Ellis & Singer (2007), Bjørlykke (2010), TU Delft OCW
-- **72 models evaluated** via Azure OpenAI and OpenRouter
-
-**Top performers:** Gemini 3 Pro Preview (99.8%), GLM-4.7 (98.6%), Gemini 3 Flash Preview (98.2%)
-
-**Open-weight leaders:** GLM-4.7 (98.6%), DeepSeek-R1 (96.2%), DeepSeek-V3.2 (94.9%)
-
-See the [leaderboard](eval/results/leaderboard.md) and [analysis](eval/results/analysis.md) for full results.
-
----
-
-## Dataset format
-
-Recommended storage: **JSONL** (one item per line) or **JSON**.
-
-### Required fields (MCQ core)
-Each item MUST include:
+FormationEval-authored MCQ items use the established schema:
 
 - `id`, `version`
-- `domains` (array, 1-3 broad domains), `topics` (array, 1-3 specific topics)
-- `difficulty` (`easy|medium|hard|unknown`)
-- `language` (`en|ru|no|mixed`)
-- `question`
-- `choices` (exactly 4 strings)
-- `answer_index` (0–3) and `answer_key` (`A–D`)
-- `sources` (at least one entry)
-- `derivation_mode` (`open_licensed|concept_based`)
-- `rationale` (explanation of the answer, written from scratch)
+- `domains`, `topics`
+- `difficulty`, `language`
+- `question`, `choices`, `answer_index`, `answer_key`
+- `rationale`, `sources`, `derivation_mode`
+- `metadata.calc_required`, `metadata.contamination_risk`
 
-### Optional fields (future-proof, keep minimal)
-- `image` (URL or `assets/...` path, **only if redistributable**)
-- `evidence` (short snippet for future grounded workflows)
-- `metadata` (e.g., `time_limit_sec`, `calc_required`, `contamination_risk`)
-- `authors` (for attribution)
+### QA track
 
-> **Note on `contamination_risk`:** This field indicates the likelihood that similar questions appear in LLM training data. Values: `low`, `medium`, `high`. Questions derived from widely-used textbooks or common exam formats carry higher risk, potentially inflating model scores. Original, concept-based questions from niche sources are lower risk.
+The imported DISKOS-QA track uses a separate QA schema:
 
-### Example item
-```json
-{
-  "id": "formationeval_v0.1_petrophysics_porosity_0007",
-  "version": "formationeval_v0.1",
-  "domains": ["Petrophysics"],
-  "topics": ["Porosity", "Neutron-Density Logging"],
-  "difficulty": "medium",
-  "language": "en",
-"question": "In a clean sandstone with highly saline formation water, what is the most typical neutron–density response in a water-filled interval (assuming logs are plotted on a compatible sandstone porosity scale)?",
-  "choices": [
-    "Large crossover consistent with gas effect",
-    "Little to no separation; curves track closely",
-    "Reverse crossover where density indicates much higher porosity than neutron",
-    "Both curves read extremely low porosity regardless of lithology"
-  ],
-  "answer_index": 1,
-  "answer_key": "B",
-  "rationale": "In water-filled, clean clastics, neutron and density porosity estimates generally agree (track closely) when plotted on the appropriate matrix scale; large crossover is more typical of gas.",
-  "sources": [
-    {
-      "source_id": "example_source_pack",
-      "source_url": "https://example.org/resource",
-      "source_title": "Example Open Resource",
-      "source_type": "course",
-      "year": 0,
-      "license": "CC BY",
-      "attribution": "Example University",
-      "retrieved_at": "2025-12-14",
-      "notes": "Concept-based item written from scratch (no verbatim/close paraphrase)."
-    }
-  ],
-  "derivation_mode": "concept_based",
-  "metadata": { "time_limit_sec": 90, "calc_required": false, "contamination_risk": "medium" }
-}
+- `id`, `version`, `question_format`
+- `language`, `topics`
+- `question`, `answer_text`
+- `context_snippets`
+- `sources`
+- `derivation_mode`
+- `metadata.diskos`
+
+`context_snippets` is stored as an array of objects with `chunk_index`, `chunk_id`, and `text`.
+
+## Derivation modes
+
+The suite currently uses three derivation modes:
+
+- `concept_based`: FormationEval-authored questions written from scratch from source concepts
+- `open_licensed`: FormationEval-authored questions derived from explicitly reusable materials
+- `external_open_benchmark`: imported third-party benchmark content kept with its own provenance and licensing notes
+
+## Licensing and provenance
+
+This repository contains both FormationEval-authored material and an imported third-party benchmark track.
+
+- Project-authored materials remain under [CC BY 4.0](LICENSE).
+- The imported DISKOS-QA track is redistributed with upstream attribution and a separate third-party notice.
+- The underlying DISKOS public corpus provenance points to Zenodo record `10775273` under CC BY 4.0.
+
+Read [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) before reusing the imported QA track. (As of March 17, 2026, the upstream DISKOS-QA README states `NLOD 2.0` for the benchmark data, while the upstream Python package metadata still mentions `MIT` for the code package. FormationEval follows the upstream README notice for the imported data track.)
+
+## Repository structure
+
+```text
+data/
+├── benchmark/          # Public benchmark files and manifest
+├── sources/
+│   ├── open/           # Public source registry
+│   └── private/        # Private source material (gitignored)
+└── working/            # Intermediate outputs (gitignored)
+src/                    # MCQ generation and benchmark utilities
+eval/                   # MCQ evaluation pipeline and reports
+assets/                 # Fonts and static assets
+docs/                   # Progress and supporting documentation
+paper/                  # Paper source and figures
 ```
 
----
-
-## Public Release Policy: Licensing & Compliance
-
-FormationEval is designed to avoid redistributing copyrighted content.
-
-### Allowed for public release
-Only the following item derivation modes are accepted in any dataset published in this repo:
-
-1) **open_licensed**  
-   Items derived from sources with explicit reuse terms (e.g., permissive government open data, CC licenses that allow derivatives), with required attribution.
-
-2) **concept_based**  
-   Items written **from scratch** based on concepts/facts learned from sources.  
-   This explicitly **avoids** reproducing the source’s unique phrasing, structure or distinctive problem statements.
-
-### Prohibited for public release
-- **Verbatim copying** of questions/answers/explanations from copyrighted sources.
-- **Close paraphrases** (same question with minor wording changes).
-- Reproducing copyrighted tables/figures/diagrams or large excerpts.
-
-### BYO Sources (private mode)
-Users may generate private question sets from textbooks/exams they are legally entitled to use ("Bring Your Own Sources"). Outputs remain private; this repo provides only schema + tooling.
-
----
-
-## Repository Structure
-
-```
-├── data/
-│   ├── benchmark/          # Final verified MCQ datasets (the deliverable)
-│   ├── sources/
-│   │   ├── open/           # Open-licensed materials (committed)
-│   │   └── private/        # BYO/copyrighted materials owned legally (gitignored)
-│   └── working/            # Intermediate outputs: chunks, candidates (gitignored)
-├── src/                    # Pipeline scripts
-├── eval/                   # Evaluation harness
-│   └── results/            # Leaderboard and analysis (reports tracked, raw data gitignored)
-├── assets/                 # Fonts and static resources
-└── docs/                   # Documentation & source registry
-```
-
-See [`data/sources/open/README.md`](data/sources/open/README.md) for the registry of open-licensed materials.
-
-A PDF version of the benchmark is available at `data/benchmark/formationeval_v0.1.pdf` (generated via `src/export_benchmark_pdf.py`).
-
----
+See [data/benchmark/README.md](data/benchmark/README.md) for file-level details and [data/sources/open/README.md](data/sources/open/README.md) for the public source registry.
 
 ## Contributing
 
-Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
-- Verifying existing questions
-- Adding new questions from allowed sources
-- Schema compliance
-
----
-
-## License
-
-This project is licensed under [CC BY 4.0](LICENSE). You are free to share and adapt the material with appropriate attribution.
-
----
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution rules. FormationEval-authored MCQ additions and fixes follow one workflow. The imported DISKOS-QA track is maintained as a normalized mirror of an upstream benchmark rather than a community-authored extension workflow.
 
 ## Citation
 
-If you use FormationEval in your research, please cite:
+If you use FormationEval in research, cite the current paper for the MCQ `v0.1` benchmark and cite DISKOS-QA separately when discussing the imported QA track.
 
 ```bibtex
 @misc{ermilov2026formationeval,
