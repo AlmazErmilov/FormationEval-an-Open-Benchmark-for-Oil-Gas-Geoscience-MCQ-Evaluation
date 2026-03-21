@@ -27,6 +27,23 @@ Upstream licence note context:
 
 FormationEval treats the benchmark-data notice in the upstream README as the governing notice for the imported QA track and keeps that distinction explicit.
 
+## SPE MCQ imported track
+
+The public MCQ track in `data/benchmark/formationeval_spe_mcq_v0.3.json` is imported from the public Hugging Face dataset:
+
+- upstream dataset: <https://huggingface.co/datasets/ynuwara/spe_mcq_dataset>
+- upstream author attribution: Yohanes Nuwara
+
+Upstream source context:
+
+- the upstream Hugging Face metadata tags the dataset as `MIT`
+- the upstream dataset card also says the MCQ bank is originally from the *Study Guide for the SPE Petroleum Engineering Certification Examination (4th ed., 2011)*
+- the upstream dataset exposes 10 question figures, which FormationEval vendors as local static assets for stable public browsing
+
+FormationEval redistributes this imported MCQ track with explicit provenance and a stronger third-party notice. It does not present the imported question bank or figures as FormationEval-authored CC BY material and does not treat the upstream `MIT` tag as the only relevant reuse context.
+
+Reusers should review the upstream Hugging Face dataset card and the original source context before downstream reuse of the imported SPE MCQ content or figures.
+
 ## Underlying DISKOS corpus provenance
 
 The imported QA track also carries provenance for the public underlying corpus referenced by DISKOS-QA:

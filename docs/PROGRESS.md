@@ -1,5 +1,16 @@
 # Progress log
 
+## 2026-03-21: Added imported SPE MCQ track for suite v0.3
+
+Expanded the public suite with a third track while keeping the evaluated MCQ benchmark and leaderboard frozen at `v0.1`.
+
+- Added `data/benchmark/formationeval_spe_mcq_v0.3.json` with 100 imported MCQ rows from `ynuwara/spe_mcq_dataset`
+- Added `data/benchmark/assets/formationeval_spe_mcq_figures/` with 10 vendored figure assets referenced by the imported SPE questions
+- Added `data/benchmark/formationeval_v0.3_manifest.json` as the new current suite manifest
+- Added `src/import_spe_mcq.py` and extended `src/validate_benchmark_suite.py` for the three-track suite
+- Updated public docs and notices to describe the SPE MCQ track, stronger provenance handling, and the unchanged MCQ `v0.1` evaluation scope
+- Prepared tracked release note drafts for the retrospective `v0.2` release and the new `v0.3` suite release
+
 ## 2026-03-17: Polished DISKOS-QA release notes and validation
 
 Tightened the split-release documentation and website-facing integration details without changing the canonical MCQ or QA row counts.

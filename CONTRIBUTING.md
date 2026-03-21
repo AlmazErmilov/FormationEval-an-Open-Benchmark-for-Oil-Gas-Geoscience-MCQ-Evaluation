@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions to FormationEval are welcome. The repository now contains two different public track types, and they do not follow the same contribution workflow.
+Contributions to FormationEval are welcome. The repository now contains authored and imported public tracks, and they do not follow the same contribution workflow.
 
 ## FormationEval-authored MCQ track
 
@@ -31,9 +31,9 @@ You can help by:
 - close paraphrases of copyrighted material
 - questions without clear source attribution
 
-## Imported DISKOS-QA track
+## Imported external tracks
 
-The DISKOS-QA track is an imported external benchmark track. It is maintained as a normalized mirror of an upstream benchmark with separate provenance and licensing context. It is not a community-authored extension workflow in this repository.
+The DISKOS-QA and SPE MCQ tracks are imported external benchmark tracks. They are maintained as normalized mirrors of upstream releases with separate provenance and licensing context. They are not community-authored extension workflows in this repository.
 
 You can help by:
 
@@ -41,7 +41,7 @@ You can help by:
 - reporting provenance or licensing-note mistakes
 - reporting broken links or schema inconsistencies
 
-Do not open contribution proposals that add new third-party QA rows in an ad hoc format. External benchmark additions should be discussed first as a benchmark integration proposal, not as routine question authoring.
+Do not open contribution proposals that add new third-party QA or MCQ rows in an ad hoc format. External benchmark additions should be discussed first as a benchmark integration proposal, not as routine question authoring.
 
 ## Schema compliance
 
@@ -57,6 +57,15 @@ Do not open contribution proposals that add new third-party QA rows in an ad hoc
 - `question_format` must be `qa`
 - `context_snippets` must preserve `chunk_index`, `chunk_id`, and `text`
 - `derivation_mode` for imported DISKOS-QA rows must be `external_open_benchmark`
+
+### Imported external MCQ requirements
+
+- imported rows must preserve upstream identifiers and provenance
+- `derivation_mode` for imported SPE MCQ rows must be `external_open_benchmark`
+- `topics` may be empty when the upstream dataset does not provide compatible topic labels
+- `difficulty` may be `unknown`
+- `metadata.calc_required` and `metadata.contamination_risk` may be unset for imported tracks
+- optional `figure` references must point to local static assets tracked in the repository
 
 ## How to contribute
 
