@@ -6,9 +6,9 @@ It currently contains three public tracks:
 
 | Track | Format | Status | Notes |
 |------|--------|--------|------|
-| `formationeval_v0.1.json` | MCQ | evaluated | 505 FormationEval-authored multiple-choice questions across 7 domains and 72 evaluated models |
-| `formationeval_diskos_qa_v0.2.json` | QA | imported, not yet rerun | 1027 public DISKOS-QA question-answer pairs normalized into the FormationEval suite |
-| `formationeval_spe_mcq_v0.3.json` | MCQ | imported, not yet rerun | 100 public SPE MCQ items from the `ynuwara/spe_mcq_dataset` Hugging Face dataset |
+| `formationeval_v0.1.json` | MCQ | evaluated | Christmas 2025. 505 FormationEval-authored multiple-choice questions across 7 domains and 72 evaluated models |
+| `formationeval_diskos_qa_v0.2.json` | QA | imported, not yet rerun | Imported 17 March 2026. 1027 public DISKOS-QA question-answer pairs normalized into the FormationEval suite |
+| `formationeval_spe_mcq_v0.3.json` | MCQ | imported, not yet rerun | Imported 21 March 2026. 100 public SPE MCQ items from the `ynuwara/spe_mcq_dataset` Hugging Face dataset |
 
 Paper: [arXiv:2601.02158](https://arxiv.org/abs/2601.02158) ([PDF](https://arxiv.org/pdf/2601.02158) | [local copy](paper/2601.02158v2.pdf))
 
@@ -18,7 +18,7 @@ Hugging Face: [Dataset](https://huggingface.co/datasets/AlmazErmilov/FormationEv
 
 ## Current status
 
-- The original model-comparison goal of the project was already addressed by the evaluated 505-question MCQ `v0.1` benchmark.
+- The original model-comparison goal of the project was already addressed by the evaluated 505-question MCQ `v0.1` benchmark (Christmas 2025).
 - March 2026 update: the suite now also includes the public DISKOS-QA and SPE MCQ tracks.
 - The public leaderboard and quiz still reflect only the evaluated MCQ `v0.1` track.
 - A full rerun on the expanded suite is pending because this is a self funded one person project and expanded suite evaluation requires materially more token spend.
